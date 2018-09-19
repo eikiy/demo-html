@@ -23,9 +23,9 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 *:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 
 /*===== start ======*/
-.contentsBox{ width: 1024px; margin: 0 auto; }
+.contentsBox{ width: 1000px; margin: 0 auto; }
 
-.headerBox{width: 100%; background-color: #81B6C8; padding: 10px 0; height: 46px;}
+.headerBox{width: 100%; min-width: 1024px; background-color: #81B6C8; padding: 10px 0; height: 46px;}
 .headerBox a.logo{ float: left; width: 60px; height: 28px; margin: -2px 0px 0 0; display: block; background: url(../images/logo.png) 8px center no-repeat; background-size: contain; }
 .headerBox .searchBox{ float: left; width:100%; max-width: 320px; position: relative; }
 .headerBox .searchBox input{ height: 24px; line-height: 24px; padding: 2px 40px 2px 8px; width: 100%; font-size: 13px; border-radius: 4px}
@@ -41,7 +41,7 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 .headerBox ul.tools li a.logout{ background-image: url(../images/icon_logout.png); }
 .headerBox ul.tools li a:hover{ opacity: .8; }
 
-.mainBox{ width: 100%; min-height:calc( 100vh - 46px); background-color: #D1E0E5; padding: 20px; }
+.mainBox{ width: 100%; min-width: 1024px; min-height:calc( 100vh - 46px); background-color: #D1E0E5; padding: 20px; }
 .mainBox .contentsBox{ display: -webkit-flex; display: flex; }
 .mainBox .side_menu{ width: 122px; padding-top: 40px;}
 .mainBox .side_menu h1.title{ font-size: 14px; color: #3E3E3D; width: 122px;  padding-bottom: 6px;}
@@ -58,7 +58,7 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 .mainBox .side_menu ul.menu li p a.btn_in{ background-color: #fff; border-color:#a9cbd7; }
 .mainBox .side_menu ul.menu li p a:hover{  color: #666; }
 
-.mainBox .right_contents{  padding:0 20px; -webkit-flex: 1; flex: 1; display: -webkit-flex; display: flex;}
+.mainBox .right_contents{  padding-left:20px; max-width: calc(100% - 142px); -webkit-flex: 1; flex: 1; display: -webkit-flex; display: flex;}
 
 .right_contents .l_Box{ -webkit-flex: 1; flex: 1; max-width: 240px;}
 .right_contents .r_Box{ -webkit-flex: 2; flex: 2; padding-left: 15px;}
