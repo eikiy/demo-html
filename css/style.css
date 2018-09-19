@@ -67,13 +67,19 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 .right_contents .theBox{ background-color: #fff; border: rgba(0,0,0,.2) 1px solid; border-radius: 10px 0 10px 10px; padding:10px 15px; margin-bottom: 15px; }
 .right_contents .theBox h3{ text-align: center; font-size: 13px; letter-spacing: 7px; line-height: 20px; background-color: #EBEBEB; padding: 5px 0; border-radius: 10px 0 10px 10px; }
 .right_contents .theBox .infoBox{ padding: 12px 0; text-align: center; }
-.right_contents .theBox .infoBox a.select_file{ width: 124px; height: 124px; display: block; position: relative; border:dashed 1px #81B6C8; margin: 0 auto; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
-.right_contents .theBox .infoBox a.select_file p.icon{ color: #81B6C8; position: relative; padding-top: 50px;}
-.right_contents .theBox .infoBox a.select_file p.icon::before{ content: ""; position: absolute;  top: 0; left:calc(50% - 25px);  width: 50px; height: 40px; display: block; background: url(../images/icon_select_file.png) center center no-repeat; background-size: contain; } 
-.right_contents .theBox .infoBox a.select_file p.note{ position: absolute; width: 100%; bottom: 3px; left: 0; color: #9B9B9B; }
-.right_contents .theBox .infoBox a.select_file:hover{ background-color: #D1E0E5; border-style: solid;}
+.right_contents .theBox .infoBox .select_file{ width: 124px; height: 124px; display: block; position: relative; border:dashed 1px #81B6C8; margin: 0 auto; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
+.right_contents .theBox .infoBox .select_file p.icon{ color: #81B6C8; position: relative; padding-top: 50px;}
+.right_contents .theBox .infoBox .select_file p.icon::before{ content: ""; position: absolute;  top: 0; left:calc(50% - 25px);  width: 50px; height: 40px; display: block; background: url(../images/icon_select_file.png) center center no-repeat; background-size: contain; } 
+.right_contents .theBox .infoBox .select_file p.note{ position: absolute; width: 100%; bottom: 3px; left: 0; color: #9B9B9B; }
+.right_contents .theBox .infoBox .select_file:hover{ background-color: #D1E0E5; border-style: solid;}
 .right_contents .theBox .infoBox p.sub_title{ text-align: center; font-size: 13px; padding: 5px 0; }
 .right_contents .theBox .infoBox p.money{ font-size: 20px; padding: 8px 0; }
+
+.right_contents .theBox .logo_done{ width: 124px; height: 124px; border:solid 1px #81B6C8; margin: 0 auto; display: block; overflow: hidden; position: relative; }
+.right_contents .theBox .infoBox .logo_done .select_file{ position: absolute !important; top: -1px; left: -1px; background-color: rgba(256,256,256,.9); display: none; border:none; }
+.right_contents .theBox .infoBox .logo_done .select_file p.icon{ margin-top: 25px;}
+.right_contents .theBox .infoBox .logo_done:hover{ border-style: dashed; }
+.right_contents .theBox .infoBox .logo_done:hover .select_file{ display: block; }
 
 .right_contents .theBox p.btn{font-size: 12px; text-align: center; line-height: 24px; padding: 10px 0;}
 .right_contents .theBox p.btn a{ min-width: 60px; margin: 0 3px; padding: 0 5px; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #81B6C8; border-radius:3px 0 3px 3px;}
