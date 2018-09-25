@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>面試人員</title>
+<meta name='description' content=""/>
+<meta name='keywords' content=""/>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+<!-- Magnific Popup core JS file -->
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.popup-link').magnificPopup({
+      removalDelay: 300,
+      mainClass: 'mfp-fade'
+    });
+});
+</script>
+
+</head>
+<body>
+<main class="interviewMainBox">
+	<div class="contentsBox">
+		<div class="top_ivBox clearfix">
+			<a class="img-user popup-link" href="#popup-img-user"></a>
+			<div class="rBox">
+				<div class="top_title clearfix">
+					<h1>明天股份有限公司</h1>
+					<h2>面試人員資料填寫表</h2>
+				</div>
+				<ul class="interviewer_info clearfix">
+					<li><p>您面試的職位：<span>軟體工程師</span></p></li>
+					<li><p>您面試的日期：<span>2018/11/1/13:30</span></p></li>
+					<li><p>請於:<span>2018/10/28</span>前填寫完畢</p></li>
+				</ul>
+				<ul class="topStep experienceStep clearfix">
+					<li class="icon_01"><p>基本資料</p></li>
+					<li class="icon_02 btn_in org_line"><p>近期工作</p></li>
+					<li class="icon_03"><p>離職因素</p></li>
+					<li class="icon_04"><p>工作描述</p></li>
+					<li class="icon_05"><p>工作描述</p></li>
+					<li class="icon_06"><p>個人規劃</p></li>
+					<li class="icon_07"><p>資料送出</p></li>
+				</ul>
+			</div>
+		</div>
+		<form class="use_fillinBox">
+			<h3 class="headline">您目前仍在服務或最後服務的企業</h3>
+			<div class="qaBox last_company">
+					<div class="fBox">
+						<p class="top_title">企業名稱是什麼</p>
+						<input class="i_01" type="text" name="">
+					</div>
+					<div class="fBox">
+						<p class="top_title">擔任的職務是什麼</p>
+						<input class="i_02" type="text" name="">
+					</div>
+					<div class="fBox">
+						<p class="top_title">在職期間，最後薪資及薪資結構為何（請標明所含各項津貼等明細金額）</p>
+					</div>
+					<div class="fBox">
+						<p class="top_title">月薪</p>
+						<input class="i_03" type="text" name="">
+						<p class="top_title">年薪</p>
+						<input class="i_04" type="text" name="">
+					</div>
+					<div class="fBox">
+						<div class="both">
+							<p class="title_s">您（想要）離職的主要原因是什麼</p>
+							<textarea class="red_error" type="text"></textarea> <!-- 格式錯誤會加: red_error -->
+                    	</div>
+					</div>
+			</div>
+			
+			<p class="btn btn-both clearfix">
+				<a class="l-btn" href="interview_07.html">上一步</a> 
+				<a class="yellow" href="interview_09.html">下一步</a>
+			</p>
+		</form>
+	</div>
+
+	<!-- popup 上傳user 照片-->
+	<div id="popup-img-user" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox">
+            <div class="top_title">
+                <h3>照片上傳</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                	<li>
+                		<div class="uploadPhotoBox">
+							<a class="select_file" href="#">
+								<p class="icon">選擇檔案</p>
+							</a>
+						</div>
+						<div class="photo_info"><p>1.圖檔格式限jpg格式<br>
+                        2.照片最適合大小為寬100*高100像素!</p></div>
+					</li>
+                </ul>
+                <p class="btn"><a href="#">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+</main>
+
+
+</body>
+</html>
+
+
+

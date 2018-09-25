@@ -30,6 +30,7 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 .headerBox .searchBox{ float: left; width:100%; max-width: 320px; position: relative; }
 .headerBox .searchBox input{ height: 24px; line-height: 24px; padding: 2px 40px 2px 8px; width: 100%; font-size: 13px; border-radius: 4px}
 .headerBox .searchBox input::placeholder{ color: #9B9B9B; }
+.headerBox .searchBox input:focus{ box-shadow: 0 0 10px rgba(0,0,0,.2);}
 .headerBox .searchBox a{ position: absolute; top: 0; right: 0; z-index: 5; cursor: pointer; width: 34px; height: 24px; border-radius: 0px 4px 0px 0px; display: block; background: url(../images/icon_search.png) center center no-repeat #D1E0E5; background-size: contain;  }
 .headerBox .searchBox a:hover{opacity: .8;}
 
@@ -40,6 +41,9 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 .headerBox ul.tools li a.message span{ position: absolute;  top: -2px; right: 0; width: 15px; height: 15px; border-radius: 50px; background-color: #DB3109; text-align: center; line-height: 15px; color: #fff; font-size: 13px; }
 .headerBox ul.tools li a.logout{ background-image: url(../images/icon_logout.png); }
 .headerBox ul.tools li a:hover{ opacity: .8; }
+
+.headerBox p.add_nterviewee{ float: left; margin-top: -7px; text-align: right; width: 100%; max-width: 306px;} 
+.headerBox p.add_nterviewee a{ color: #558C9E; background-color: #FFFFFF ; height: 38px; min-width: 162px;padding: 0 10px 0 40px; line-height: 32px; border:2.5px solid #558C9E; display: inline-block; border-radius:10px 10px 0 10px;}
 
 .mainBox{ width: 100%; min-width: 1024px; min-height:calc( 100vh - 46px); background-color: #D1E0E5; padding: 20px; }
 .mainBox .contentsBox{ display: -webkit-flex; display: flex; }
@@ -113,11 +117,10 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 .right_contents .theBox p.bottom{ text-align: right; padding-top: 50px; }
 
 /*popup - style*/
-.setBox .styled-select { border: 1px solid #e0e0e0; width:calc(100% - 2px) ; min-height: 22px; -webkit-transition: all 0.30s ease-in-out;  -moz-transition: all 0.30s ease-in-out;  -ms-transition: all 0.30s ease-in-out;  -o-transition: all 0.30s ease-in-out; overflow: hidden; background: url(../images/icon_arr.png) right center no-repeat #fff;}
-.setBox .styled-select select { width:100%; padding: 8px 10px; min-height: 24px; line-height: 24px; *width:120%; _width:120%;  background:transparent; text-align: center;  font-size: 15px; border: 0; border-radius:0; -webkit-appearance: none;  }
-.setBox .styled-select select option{ background-color:#fff; text-align: center; color: #333;}
-.setBox .styled-select:hover{ border-color: #9e9e9e; }
-.setBox .styled-select option.gray{ color: #888888;}
+.styled-select { border: 1px solid #979797;border-radius: 5px; width:calc(100% - 2px) ; max-width: 128px; min-height: 22px; -webkit-transition: all 0.30s ease-in-out;  -moz-transition: all 0.30s ease-in-out;  -ms-transition: all 0.30s ease-in-out;  -o-transition: all 0.30s ease-in-out; overflow: hidden; background: url(../images/icon_arr.png) right center no-repeat #fff; background-size: contain;}
+.styled-select select { width:100%; padding: 2px 10px; min-height: 24px; line-height: 24px; *width:120%; _width:120%;  background:transparent; text-align: center;  font-size: 12px; border: 0; border-radius:0; -webkit-appearance: none;  }
+.styled-select select option{ background-color:#fff; text-align: center; color: #333;}
+.styled-select select option:hover{ background-color: #81B6C8; color: #fff; }
 
 /*.setBox select {-moz-appearance: none;  text-indent: 0.01px; text-overflow: '';text-align: center;}
 *::-ms-backdrop, .setBox .styled-select{ width:100%\0; background: url(../images/icon_arr.png) right center no-repeat #f1f0f0\0; background-size: contain;}
@@ -187,5 +190,349 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 .messageBox .RedBox{ width: 100%; background-color:#EBEBEB; padding:30px; border: 3px solid #C87D86; border-radius: 10px 0 10px 10px; box-shadow: 0px 0px 5px rgba(155,155,155,0.2); overflow: hidden; }
 .messageBox .RedBox p.info{line-height: 24px;}
 .messageBox .RedBox p.info span{color: #81B6C8;}
+
+.messageBox .SendDone{ background-color:#fff;}
+.messageBox .SendDone p.info{line-height: 24px; position: relative;}
+.messageBox .SendDone p.info::after{ content: ""; position: absolute; top:-50%; right:0; width: 96px; height: 47px; display: block; background: url(../images/pop_icon_done.png) center center no-repeat; background-size: contain; }
+
+
+/* --------- 面試人員 --------- */
+.interviewLoginBox{ width: 100%; min-width: 1024px; min-height: 100vh;display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.interviewLoginBox .contentsBox{width:100%; max-width: 625px; height: 625px; display: block; text-align: center; border:solid 34px #81B6C8; border-radius: 20px 0 20px 20px;}
+.interviewLoginBox .main-logo{ width: 250px; height: 250px; display: block; margin:30px auto 5px auto; border:solid 3px #81B6C8; background-size: contain; background-position: center center; background-repeat: no-repeat; border-radius: 10px 0 10px 10px; }
+.interviewLoginBox h1{ font-size: 18px; letter-spacing: 6px; padding: 10px 0;}
+.interviewLoginBox h2{ color: #81B6C8; letter-spacing: 20px; padding: 0px 0 40px 0;}
+.interviewLoginBox input.name{ width: 100%; max-width: 390px; height: 42px; padding: 5px 5px 5px 50px; border: 2px solid #81B6C8; border-radius: 8px 0 8px 8px; margin: 0 auto 15px auto; background: url(../images/login_icon_id.png) 5px center no-repeat; background-size: contain; }
+.interviewLoginBox input.name[type=text]:focus{ box-shadow: inset 0px 2px 7px 0px rgb(0,0,0,.5); }
+.interviewLoginBox input.name::placeholder{ color: #D8D8D8; }
+.interviewLoginBox p.btn{ text-align: center; width: 100%; padding: 10px 0; }
+.interviewLoginBox p.btn a{ background-color: #81B6C8; color: #fff; height: 46px; line-height: 46px; display: block; max-width: 390px; border-radius: 8px 0 8px 8px; margin: 0 auto; }
+.interviewLoginBox p.btn a:hover{ border: 1px solid #fff; box-shadow: 0px 2px 4px 0px rgb(0,0,0,.5);  }
+
+.interviewMainBox{ width: 100%; min-width: 1024px; min-height: 100vh; padding-bottom: 30px;}
+.interviewMainBox p.btn{font-size: 18px; text-align: right; line-height: 36px; padding: 10px 0;}
+.interviewMainBox p.btn a{ min-width: 110px; margin-left:10px; padding: 5px; letter-spacing: 5px; border:1px solid transparent; text-align: center;  display: inline-block; color: #fff; background-color: #81B6C8; border-radius:10px 0 10px 10px;}
+.interviewMainBox p.btn a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
+.interviewMainBox p.btn a.bg_red{ background-color: #C87D86; letter-spacing: 0; }
+.interviewMainBox p.btn a.bg_gary{ background-color: #9B9B9B; }
+.interviewMainBox p.btn-both{ text-align: initial; }
+.interviewMainBox p.btn-both a{float: right;}
+.interviewMainBox p.btn-both a.yellow{ background-color: #E5AF57;}
+.interviewMainBox p.btn-both a.red{ background-color: #EB8B70;}
+.interviewMainBox p.btn-both a.l-btn{ float: left;  margin-left: 0;}
+
+.w-820 .contentsBox{ max-width: 820px; margin: 0 auto; padding-top: 128px;}
+.interviewMainBox .topBpx{ width: 100%; padding-bottom: 50px ; position: relative; }
+.interviewMainBox .topBpx::before{ content: ""; position: absolute; bottom: 10px; right: 0px; width: 320px; height: 180px; display: block; background: url(../images/interviewMainBox_img_01.png) center center no-repeat; background-size: contain; }
+.interviewMainBox .main-logo{ width: 124px; height: 124px; float: left; display: block; margin-right: 10px; border:solid 3px #81B6C8; background-size: contain; background-position: center center; background-repeat: no-repeat; border-radius: 10px 0 10px 10px; }
+.interviewMainBox .topTitle{ width: 100%; max-width: 336px; float: left; padding: 10px 0px 10px 20px ; min-height: 125px; background-color: #81B6C8; border-radius: 0 10px 10px 10px; }
+.interviewMainBox .topTitle h1{ color: #fff; font-size: 18px; line-height: 20px; letter-spacing: 7px; padding: 40px 0 10px 0; }
+.interviewMainBox .topTitle h2{ color: #EBEBEB; letter-spacing: 18px; line-height: 20px; }
+
+.interviewMainBox ul.interviewer_info{ width: 100%; border:solid 3px #81B6C8; border-radius: 10px 0 10px 10px;  padding: 20px 20px 15px 20px;}
+.interviewMainBox ul.interviewer_info li{ float: left; width: 47%; padding: 20px 0 0 0; }
+.interviewMainBox ul.interviewer_info li p{ color: #9B9B9B; letter-spacing: 5px; }
+.interviewMainBox ul.interviewer_info li p span{ color: #4A4A4A; }
+
+.interviewMainBox p.note{ color: #9B9B9B; line-height: 20px; max-width: 655px; padding: 60px 0; }
+
+.interviewMainBox .top_ivBox{ width: 100%; padding: 20px 0; }
+.interviewMainBox .top_ivBox a.img-user{ float: left; position: relative; width: 131px; height: 131px; margin: 60px 30px 0 30px; display: block; border:1px solid #979797; border-radius: 10px; background: url(../images/user_img_default.png) center center no-repeat; background-size: contain; }
+.interviewMainBox .top_ivBox a.img-user::after{ content: ""; position: absolute; top: 0; right: 0; width: 40px; height: 40px; display: block; background-image: url(../images/user_img_edit.png) ; background-position: center center ; background-repeat: no-repeat; background-size: contain;}
+.interviewMainBox .top_ivBox a.img-user:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); }
+.interviewMainBox .top_ivBox a.img-user:hover::after{ background-image: url(../images/user_img_edit_in.png); }
+
+.interviewMainBox .top_ivBox .rBox{ width: 100%; float: left; max-width: calc(100% - 192px); }
+.interviewMainBox .top_ivBox .rBox .top_title{ width: 100%; padding: 10px 0; }
+.interviewMainBox .top_ivBox .rBox .top_title h1{ color: #9B9B9B; line-height: 30px; float: left; font-size: 18px; letter-spacing: 7px; padding-right: 20px; }
+.interviewMainBox .top_ivBox .rBox .top_title h2{ color: #9B9B9B; line-height: 30px; float: left; letter-spacing: 5px;}
+
+.interviewMainBox .top_ivBox .rBox ul.interviewer_info{ border: none; padding: 10px 0;}
+.interviewMainBox .top_ivBox .rBox ul.interviewer_info li{padding: 3px 0;}
+.interviewMainBox .top_ivBox .rBox ul.interviewer_info li:first-child{ width: 100%; }
+.interviewMainBox .top_ivBox .rBox ul.topStep{width: 100%;}
+.interviewMainBox .top_ivBox .rBox ul.topStep li{ float: left; margin-right: 10px; width: 70px; height: 70px;display: block; border: 2px solid #979797; border-radius: 10px; position: relative; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
+.interviewMainBox .top_ivBox .rBox ul.topStep li::after{ content: ""; position: absolute; right: -14px; top: calc(50% - 3px); width: 12px; height: 5px; background-color: #81B6C8; display: block; }
+.interviewMainBox .top_ivBox .rBox ul.topStep li p{ color: #9B9B9B; display: block; width: 100%; text-align: center; position: relative; padding-top: 43px;}
+.interviewMainBox .top_ivBox .rBox ul.topStep li p::before{ height: 45px; -webkit-filter:grayscale(1); opacity: .5; content: ""; top: 0; width: 100%; display: block; position: absolute; background-size: contain; background-position: center center;  background-repeat: no-repeat;}
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_01 p::before{ background-image: url(../images/topStep_icon_01.png); }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_02 p::before{ background-image: url(../images/topStep_icon_02.png); }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_03 p::before{ background-image: url(../images/topStep_icon_03.png); }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_04 p::before{ background-image: url(../images/topStep_icon_04.png); }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_05 p::before{ background-image: url(../images/topStep_icon_05.png); }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_06{ margin-right: 20px; }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_06::after{ width: 22px; right: -22px; }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_06 p::before{ background-image: url(../images/topStep_icon_06.png); }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07 p::before{ background-image: url(../images/topStep_icon_07.png); -webkit-filter:initial; opacity: 1;}
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07{ width: 123px;}
+.interviewMainBox .top_ivBox .rBox ul.topStep li.blue_line{ border-color: #81B6C8;  border-width: 3px; }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.org_line{ border-color: #E5AF57;  border-width: 3px; }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.btn_in p{ color: #81B6C8; }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.btn_in p::before{-webkit-filter:initial; opacity: 1;}
+.interviewMainBox .top_ivBox .rBox ul.topStep li:hover{ border-color: #81B6C8; }
+.interviewMainBox .top_ivBox .rBox ul.topStep li:last-child::after{display: none;}
+
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07:hover{ background-color: #E5AF57; border-color: #E5AF57;}
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07:hover p{ color: #fff; }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07:hover p::before{ background-image: url(../images/topStep_icon_07_in.png); -webkit-filter:initial; opacity: 1; }
+
+
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li::after{ background-color: #E5AF57;}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li:hover{ border-color: #E5AF57; }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in p{ color: #E5AF57; }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_01 { width: 123px; margin-right: 22px;}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_01::after{ width: 22px; right: -24px; }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_01 p::before{ background-image: url(../images/experienceStep_icon_01.png); -webkit-filter:initial; opacity: 1; }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_02 p::before{ background-image: url(../images/experienceStep_icon_02.png); }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_03 p::before{ background-image: url(../images/experienceStep_icon_03.png);}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_04 p::before{ background-image: url(../images/experienceStep_icon_04.png);}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_05 p::before{ background-image: url(../images/experienceStep_icon_05.png);}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_06{ margin-right: 10px; }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_06 p::before{ background-image: url(../images/experienceStep_icon_06.png);}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_06::after{ width: 12px; right: -14px; }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_07 { width: 70px;}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_07 p::before{ background-image: url(../images/experienceStep_icon_07.png); -webkit-filter: grayscale(1); opacity: .5;}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_07:hover{ border-color: #EB8B70; background-color: initial;}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_07:hover p{ color: #9B9B9B; }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_07:hover p::before{ background-image: url(../images/experienceStep_icon_07.png); -webkit-filter: grayscale(1); opacity: .5;}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2{border-color: #EB8B70;  border-width: 3px; }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2 p{ color: #EB8B70; -webkit-filter:initial; opacity: 1;}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2 p::before{ background-image: url(../images/experienceStep_icon_07.png); -webkit-filter: initial; opacity: 1;}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2:hover p{color: #EB8B70; }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2:hover p::before{ background-image: url(../images/experienceStep_icon_07.png); -webkit-filter: initial; opacity: 1;}
+
+.interviewMainBox .use_fillinBox{ width: 100%; max-width: 990px; margin:0px auto; border:2px solid #979797; border-radius: 20px 0 20px 20px;padding: 35px 20px 10px 20px;}
+.interviewMainBox .use_fillinBox ul.fill_in{width: 100%; padding-bottom: 15px;}
+.interviewMainBox .use_fillinBox ul.fill_in li{ padding-bottom: 15px; position: relative; width: 100%; display: -webkit-flex; display: flex;}
+
+.interviewMainBox .use_fillinBox .fBox{ display: -webkit-flex; display: flex; -webkit-flex: 1; flex: 1; padding: 0 5px;}
+.interviewMainBox .use_fillinBox .fBox .both{ -webkit-flex: 1; flex: 1;}
+
+.interviewMainBox .use_fillinBox .fBox p{ color: #9B9B9B;font-size: 12px;}
+.interviewMainBox .use_fillinBox .fBox p.title_s{padding: 3px 0; line-height: 24px; }
+.interviewMainBox .use_fillinBox .fBox input, .interviewMainBox .use_fillinBox .fBox textarea{ border:1px solid #979797; color: #4A4A4A; font-size: 12px; width: 100%; max-width: 128px; border-radius: 5px; min-height: 30px; line-height: 24px; padding:2px 6px;}
+.interviewMainBox .use_fillinBox .fBox input::placeholder{ color: #9B9B9B;}
+.interviewMainBox .use_fillinBox .fBox input[type=text]:focus, .interviewMainBox .use_fillinBox .fBox textarea:focus, .interviewMainBox .styled-select:focus { border-color:#81B6C8;}
+.interviewMainBox .use_fillinBox .fBox input.name{ font-size: 14px; letter-spacing: 5px; }
+.interviewMainBox .use_fillinBox .fBox input.age{ max-width: 42px; text-align: center; margin: 0 7px; }
+.interviewMainBox .use_fillinBox .fBox input.w82{ max-width: 82px; }
+.interviewMainBox .use_fillinBox .fBox input.w100{ max-width:552px; }
+.interviewMainBox .use_fillinBox .fBox input.bg-gray{ background-color: #D8D8D8; }
+.interviewMainBox .use_fillinBox .fBox input.the_checkbox{ max-width:20px; }
+.interviewMainBox .use_fillinBox .fBox textarea{ max-width: 100%; min-height: 60px; }
+.interviewMainBox .use_fillinBox .fBox .red_error{ border-color: #C87D86; }
+.interviewMainBox .use_fillinBox .fBox .red_error:focus{ border-color: #C87D86;}
+
+.interviewMainBox .use_fillinBox .fBox .b01{ -webkit-flex: 1; flex: 1;}
+.interviewMainBox .use_fillinBox .fBox .b02{ -webkit-flex: 2; flex: 2; max-width: 230px;}
+.interviewMainBox .use_fillinBox .fBox .b02 input{ float: right; max-width: 100%;}
+.interviewMainBox .use_fillinBox .flex2{ -webkit-flex: 2; flex: 2;}
+.interviewMainBox .use_fillinBox .flex3{ -webkit-flex: 3; flex: 3;}
+.interviewMainBox .use_fillinBox .flex2 input, .interviewMainBox .use_fillinBox .flex3 input{ max-width: 100%; }
+
+.interviewMainBox .use_fillinBox .fBox-w1{ max-width: 394px; }
+.interviewMainBox .use_fillinBox .fBox-2{ -webkit-flex: 2; flex: 2;}
+.interviewMainBox .use_fillinBox .fBox-3{ min-width: 375px; }
+.interviewMainBox .use_fillinBox .fBox-3 input{ float: left; }
+.interviewMainBox .use_fillinBox .fBox-3 .both:first-child{ -webkit-flex: 3; flex: 3;}
+.interviewMainBox .use_fillinBox .fBox-3 .constellation{ float: left; width: 100%; border:1px solid #979797; font-size: 12px; max-width: 82px ;border-radius: 5px; padding:0px 10px 0px 5px ; }
+.interviewMainBox .use_fillinBox .fBox-3 .constellation p{ color: #4A4A4A; line-height: 16px; text-align: right; line-height: 28px; height: 28px; background-size:contain; background-repeat: no-repeat; background-position: left center; }
+.interviewMainBox .use_fillinBox .fBox-3 .constellation p.icon_01{ background-image: url(../images/constellation_icon_01.png); }
+.interviewMainBox .use_fillinBox .fBox-3 .constellation p.icon_02{ background-image: url(../images/constellation_icon_02.png); }
+.interviewMainBox .use_fillinBox .fBox-3 .constellation p.icon_03{ background-image: url(../images/constellation_icon_03.png); }
+.interviewMainBox .use_fillinBox .fBox-3 .constellation p.icon_04{ background-image: url(../images/constellation_icon_04.png); }
+.interviewMainBox .use_fillinBox .fBox-3 .constellation p.icon_05{ background-image: url(../images/constellation_icon_05.png); }
+.interviewMainBox .use_fillinBox .fBox-3 .constellation p.icon_06{ background-image: url(../images/constellation_icon_06.png); }
+.interviewMainBox .use_fillinBox .fBox-3 .constellation p.icon_07{ background-image: url(../images/constellation_icon_07.png); }
+.interviewMainBox .use_fillinBox .fBox-3 .constellation p.icon_08{ background-image: url(../images/constellation_icon_08.png); }
+.interviewMainBox .use_fillinBox .fBox-3 .constellation p.icon_09{ background-image: url(../images/constellation_icon_09.png); }
+.interviewMainBox .use_fillinBox .fBox-3 .constellation p.icon_10{ background-image: url(../images/constellation_icon_10.png); }
+.interviewMainBox .use_fillinBox .fBox-3 .constellation p.icon_11{ background-image: url(../images/constellation_icon_11.png); }
+.interviewMainBox .use_fillinBox .fBox-3 .constellation p.icon_12{ background-image: url(../images/constellation_icon_12.png); }
+
+.interviewMainBox .use_fillinBox .the_gender{ text-align: center; width: 100%; max-width: 127px; border:1px solid #979797; border-radius: 5px; overflow: hidden;}
+.interviewMainBox .use_fillinBox .the_gender p {float: left; width: 50%; font-size: 12px; text-align: right; }
+.interviewMainBox .use_fillinBox .the_gender p span{ position: absolute; top: 2px; right: 5px;  color: #B9BABA;}
+.interviewMainBox .use_fillinBox .the_gender p a{ width: 100%; position: relative; cursor: pointer; display: block; height: 28px; background-color: #9B9B9B; color: #fff; background-position: 5px center; background-repeat: no-repeat; background-size: contain; }
+.interviewMainBox .use_fillinBox .the_gender p a.icon_male{ background-image: url(../images/gender_icon_01.png); }
+.interviewMainBox .use_fillinBox .the_gender p a.icon_male:hover{ background-image: url(../images/gender_icon_01_in.png); }
+.interviewMainBox .use_fillinBox .the_gender p a.icon_male:hover span{ color: #81B6C8; }
+
+.interviewMainBox .use_fillinBox .the_gender p a.icon_female{ background-image: url(../images/gender_icon_02.png); }
+.interviewMainBox .use_fillinBox .the_gender p a.icon_female:hover{background-image: url(../images/gender_icon_02_in.png); }
+.interviewMainBox .use_fillinBox .the_gender p a.icon_female:hover span{ color: #81B6C8;  }
+
+.interviewMainBox .use_fillinBox .the_gender p.btn_in a.icon_male{ background-image: url(../images/gender_icon_01_in.png); background-color: #fff; }
+.interviewMainBox .use_fillinBox .the_gender p.btn_in a.icon_female{ background-image: url(../images/gender_icon_02_in.png); background-color: #fff; }
+.interviewMainBox .use_fillinBox .the_gender p.btn_in span{  color: #81B6C8; }
+
+.interviewMainBox .use_fillinBox .add { -webkit-flex: 1; flex: 1;}
+.interviewMainBox .use_fillinBox .add .styled-select{ float: left; }
+.interviewMainBox .use_fillinBox .fBox-3 .add input{ float: right; max-width: calc(100% - 135px); }
+
+.interviewMainBox .use_fillinBox ul.select_item{ width: 100%; border:1px solid #979797; border-radius: 5px; padding: 2px 0; height: 30px; }
+.interviewMainBox .use_fillinBox ul.select_item li{ width: initial; float: left; color: #9B9B9B; font-size: 12px; margin-right: 5px; padding: 0; }
+.interviewMainBox .use_fillinBox ul.select_item li input.bottom_line{ border:none; border-bottom:1px solid #979797; display: inline-block;  border-radius: 0; height: 22px; min-height: 18px; line-height: 18px; }
+
+input[type=checkbox]:not(old), input[type=radio ]:not(old){  width : 28px !important;  margin: 0;  padding : 0; opacity : 0;}
+input[type=checkbox]:not(old) + label{  display : inline-block;  margin-left : -28px; padding-left : 28px; line-height : 24px; background : url('../images/checks.png') no-repeat 0 -48px;}
+input[type=checkbox]:not(old):checked + label{ background-position : 0 -73px;}
+input[type=radio]:not(old) + label{  display : inline-block; margin-left : -24px; padding-left : 28px; line-height : 24px;  background: url('../images/checks.png') no-repeat 0 3px;}
+input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
+
+/*popup upload Photo*/
+
+.setBox .uploadPhotoBox{ padding:40px 10px 40px 25px; text-align: center; }
+.setBox .uploadPhotoBox .select_file{ width: 100px; height: 100px; display: block; position: relative; border:dashed 1px #81B6C8; background-color: #D1E0E5; margin: 0 auto; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
+.setBox .uploadPhotoBox .select_file p.icon{ color: #81B6C8; position: relative; padding-top: 50px;}
+.setBox .uploadPhotoBox .select_file p.icon::before{ content: ""; position: absolute;  top: 0; left:calc(50% - 25px);  width: 50px; height: 40px; display: block; background: url(../images/icon_select_file.png) center center no-repeat; background-size: contain; } 
+.setBox .uploadPhotoBox .select_file:hover{border-color: #fff;}
+.setBox .photo_info{ min-height: 174px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+
+/*popup upload Photo**/
+
+.interviewMainBox .use_fillinBox ul.fill_in li a.go_delete{ position: absolute; cursor: pointer;  bottom:18px; right: -30px; width: 24px; height: 24px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
+.interviewMainBox .use_fillinBox ul.fill_in li a.go_delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
+/*.interviewMainBox .use_fillinBox ul.fill_in li a.go_edit{ position: absolute; cursor: pointer;  top: 7px; right: 5px; width: 15px; height: 15px; border:1px solid #81B6C8; border-radius: 3px 0 3px 3px; background-image: url(../images/btn_icon_edit.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
+.interviewMainBox .use_fillinBox ul.fill_in li a.go_edit:hover{ background-color: #81B6C8; background-image: url(../images/btn_icon_edit_w.png); }
+*/
+
+.interviewMainBox p.btn_add_list{font-size: 12px; text-align: right; line-height: 24px; padding: 10px 0;}
+.interviewMainBox p.btn_add_list a{ min-width: 60px; margin: 0 3px; padding: 0 5px; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #81B6C8; border-radius:3px 0 3px 3px;}
+.interviewMainBox p.btn_add_list a:hover{ background-color: #D1E0E5;}
+.interviewMainBox p.btn_add_list a.add{ padding-left: 25px; background-image: url(../images/btn_icon_add.png);}
+.interviewMainBox p.btn_add_list a.add:hover{ background-color: #D1E0E5; }
+
+
+.interviewMainBox .use_fillinBox ul.schoolBox{ padding-right: 30px; }
+.interviewMainBox .use_fillinBox ul.companyBox li .flex1{ max-width: 70px; }
+.interviewMainBox .use_fillinBox ul.companyBox li .flex2{ max-width: 128px; }
+.interviewMainBox .use_fillinBox ul.companyBox li input.icon_calendar{ background: url(../images/icon_calendar.png) right center no-repeat; background-size: contain; padding-right: 30px; }
+.interviewMainBox .use_fillinBox ul.companyBox li input.icon_calendar[type=text]:focus{ background: url(../images/icon_calendar_in.png) right center no-repeat;  background-size: contain;}
+.interviewMainBox .use_fillinBox .infoContent_two{width: 100%; padding-bottom: 30px;}
+.interviewMainBox .use_fillinBox .infoContent_two .tBox{ float: left; width: 50%; padding-right: 15px; }
+.interviewMainBox .use_fillinBox .infoContent_two .tBox:first-child{ padding: 0 30px 0 0; position:relative; }
+.interviewMainBox .use_fillinBox .infoContent_two .tBox:first-child::before{ content: ""; position: absolute; width: 3px; background-color: #979797; height: 100%; min-height: 200px; right: 0; top: 0; }
+.interviewMainBox .use_fillinBox .infoContent_two .tBox:last-child{ padding-left: 30px; }
+
+.interviewMainBox .use_fillinBox .infoContent_two h4.tBox_title{ width: 100%; color: #9B9B9B; font-size: 12px; padding:0 5px;}
+.interviewMainBox .use_fillinBox .infoContent_two ul.schoolBox{padding-bottom: 0;}
+.interviewMainBox .use_fillinBox .infoContent_two p.btn_add_list a{ margin: 0; }
+.interviewMainBox .use_fillinBox ul.referrerBox{ max-width: 760px; }
+
+.interviewMainBox .use_fillinBox h3.headline{ border: 1px solid #979797; background-color: #EBEBEB; color: #9B9B9B; border-radius: 10px 0 10px 10px; font-size: 14px; padding: 15px 30px;  margin: 0 7px;}
+
+.interviewMainBox .referrerTopBox{ padding: 5px 5px 10px 5px; }
+.interviewMainBox .referrerTopBox .top_titleBox{ color: #4A4A4A; padding-bottom: 20px; border-bottom: 2px solid #979797; }
+.interviewMainBox .referrerTopBox .top_titleBox p{font-size: 12px; }
+.interviewMainBox .referrerTopBox .top_titleBox p span{ padding-right: 10px; }
+
+.interviewMainBox .referrerTopBox .many_option{ padding-top: 15px; }
+.interviewMainBox .referrerTopBox .many_option input{ margin-left: 5px; }
+.interviewMainBox .referrerTopBox p.ex{ color: #9B9B9B; font-size: 12px;  padding-top: 20px; }
+
+.interviewMainBox .qaBox {padding-bottom: 30px;}
+.interviewMainBox .qaBox .fBox{padding-top: 15px;}
+.interviewMainBox .qaBox .top_titleBox p{ color: #9B9B9B; line-height: 30px; }
+.interviewMainBox .qaBox .top_titleBox input{ max-width: 500px; }
+
+.interviewMainBox .use_fillinBox .last_company { max-width: 745px; padding-left: 24px; }
+.interviewMainBox .use_fillinBox .last_company p{ font-size: 14px; line-height: 30px; padding-right: 20px; }
+.interviewMainBox .use_fillinBox .last_company input.i_01{ max-width: 310px; }
+.interviewMainBox .use_fillinBox .last_company input.i_02{ max-width: 296px; }
+.interviewMainBox .use_fillinBox .last_company input.i_03{ max-width: 282px; margin-right: 46px; }
+.interviewMainBox .use_fillinBox .last_company input.i_04{ max-width: 282px; }
+
+.interviewMainBox .use_fillinBox .superiority { max-width: inherit; padding-left: 0; max-width: 825px; margin: 0 auto;}
+.interviewMainBox .use_fillinBox .superiority .fBox{ justify-content: flex-end;}
+.interviewMainBox .use_fillinBox .superiority input.i_01{ max-width: 690px; }
+.interviewMainBox .use_fillinBox .superiority input.i_02{ max-width: 578px; }
+.interviewMainBox .use_fillinBox .superiority input.i_03{ max-width: 504px; margin: 0;}
+.interviewMainBox .use_fillinBox .superiority input.i_04{ max-width: 324px;}
+.interviewMainBox .use_fillinBox .superiority input.i_05{ max-width: 648px;}
+
+
+.interviewMainBox .use_fillinBox ul.whyBox{ padding-top: 20px; padding-bottom: 0; min-height: 380px;}
+.interviewMainBox .whyBox .fBox{ padding: 0 7px;}
+.interviewMainBox .whyBox .fBox p.title_s{ font-size: 14px; padding-top: 10px; }
+.interviewMainBox .whyBox .fBox textarea.b-h1{ min-height: 125px; }
+.interviewMainBox .whyBox .fBox textarea.b-h2{ min-height: 185px; }
+
+.interviewMainBox .fillDone{ min-height: 488px; background: url(../images/img_done.png) center bottom no-repeat; background-size: cover; }
+.interviewMainBox .fillDone .thankyou{ min-height: 412px; }
+.interviewMainBox .fillDone .thankyou p{ font-size: 18px; padding: 150px 0 0 296px; color: #9B9B9B; line-height: 25px; }
+
+input.input_yesNo_yes[type=radio]:not(old), input.input_yesNo_yes[type=radio ]:not(old){  width : 33px !important; height: 33px;  margin: 0;  padding : 0; margin-top: -20px; opacity : 0; }
+input.input_yesNo_yes[type=radio]:not(old) + label{  display : inline-block; width: 33px; padding: 0; height: 33px;  line-height : 33px; color: transparent; background : url('../images/input_yesNo_yes.png') center center no-repeat; background-size: contain;}
+input.input_yesNo_yes[type=radio]:not(old):checked + label{ background : url('../images/input_yesNo_yes_in.png') center center no-repeat; background-size: contain;}
+input.input_yesNo_no[type=radio]:not(old), input.input_yesNo_no[type=radio ]:not(old){  width : 33px !important; height: 33px; margin: 0;  padding : 0; opacity : 0;}
+input.input_yesNo_no[type=radio]:not(old) + label{  display : inline-block; width: 33px;padding: 0; height: 33px; line-height : 33px; color: transparent; background : url('../images/input_yesNo_no.png') center center no-repeat; background-size: contain;}
+input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../images/input_yesNo_no_in.png') center center no-repeat; background-size: contain;}
+
+
+/*招募管理頁*/
+.right_contents .managementBox{ float: left; width: 100%; max-width: 545px; }
+.right_contents .managementBox ul.user_list{width: 100%;}
+.right_contents .managementBox ul.user_list li{ margin-bottom: 6px; background-color: #fff; border-radius: 10px 0 10px 10px; border:1px solid #cccccc; position: relative;}
+.right_contents .managementBox ul.user_list li a.go_delete{ position: absolute; cursor: pointer; top:8px; right: 8px; width: 16px; height: 16px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
+.right_contents .managementBox ul.user_list li a.go_delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
+
+.right_contents .managementBox ul.user_list li p{ font-size: 13px;}
+.right_contents .managementBox .user_photo{ float: left; width: 130px; }
+.right_contents .managementBox .user_photo .avatar{ width: 98px; height: 98px; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); display: block; overflow: hidden; border-radius: 20px; border:1px solid #979797; margin: 15px auto 0 auto; position: relative; }
+.right_contents .managementBox .user_photo .avatar .info{ opacity: 0; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(256,256,256, .9);}
+.right_contents .managementBox .user_photo .avatar .info a.edit{ position: absolute; top: 4px; right: 0; z-index: 10; width: 32px; height: 32px; display: block; background: url(../images/user_img_edit_in.png) center center no-repeat; background-size: contain; }
+.right_contents .managementBox .user_photo .avatar .info p.phone {font-size: 12px; color: #726D73; font-weight: bold; padding: 52px 5px 0 5px;}
+.right_contents .managementBox .user_photo .avatar:hover .info{ opacity: 1; }
+.right_contents .managementBox .user_photo .male{ background: url(../images/user_default_male.png) center center no-repeat; background-size: cover; }
+.right_contents .managementBox .user_photo .female{ background: url(../images/user_default_female.png) center center no-repeat; background-size: cover; }
+
+.right_contents .managementBox .user_photo p.name{ text-align: center; padding: 10px 0 5px; color: #4A4A4A; letter-spacing: 4px; }
+.right_contents .managementBox .user_data{ float: left; width: 100%; max-width:calc( 100% - 130px); padding: 15px 15px 5px 0; }
+.right_contents .managementBox .user_data .application_department{ width: 100%; padding: 8px 0; }
+.right_contents .managementBox .user_data .application_department p{ float: left; color: #000000; }
+.right_contents .managementBox .user_data .application_department p.job_title{ min-width: 92px; }
+.right_contents .managementBox .user_data .application_department p.department{ min-width: 122px; }
+
+.right_contents .managementBox ul.user_list li ul.stepBox{padding: 12px 0;}
+.right_contents .managementBox ul.user_list li ul.stepBox li{ float: left; border:none; border-radius: initial; margin-right: 14px; position: relative;}
+.right_contents .managementBox ul.user_list li ul.stepBox li::after{ position: absolute; content: ""; width: 14px; height: 2px; top:20px; right: -14px; display: block; background-color: #9B9B9B; }
+.right_contents .managementBox ul.user_list li ul.stepBox li span{ width: 44px; height: 44px; display: block; background-color: #E7E3E3; border-radius: 10px; background-size: contain; background-position: center center; background-repeat: no-repeat;}
+.right_contents .managementBox ul.user_list li ul.stepBox li span.icon_01{ background-image: url(../images/user_stepBox_01.png); }
+.right_contents .managementBox ul.user_list li ul.stepBox li span.icon_02{ background-image: url(../images/user_stepBox_02.png); }
+.right_contents .managementBox ul.user_list li ul.stepBox li span.icon_03{ background-image: url(../images/user_stepBox_03.png); }
+.right_contents .managementBox ul.user_list li ul.stepBox li span.icon_04{ background-image: url(../images/user_stepBox_04.png); }
+.right_contents .managementBox ul.user_list li ul.stepBox li span.icon_05{ background-image: url(../images/user_stepBox_05.png); }
+.right_contents .managementBox ul.user_list li ul.stepBox li span.icon_06{ background-image: url(../images/user_stepBox_06.png); }
+.right_contents .managementBox ul.user_list li ul.stepBox li.w50{margin-right: 50px;}
+.right_contents .managementBox ul.user_list li ul.stepBox li.w50::after{ width: 50px; right: -50px; }
+.right_contents .managementBox ul.user_list li ul.stepBox li:last-child::after{ display: none; }
+
+.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in span{ border:3px solid #81B6C8; background-color: #fff;  }
+.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in span.icon_01{ background-image: url(../images/user_stepBox_01_in.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in span.icon_02{ background-image: url(../images/user_stepBox_02_in.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in span.icon_03{ background-image: url(../images/user_stepBox_03_in.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in span.icon_04{ background-image: url(../images/user_stepBox_04_in.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in span.icon_05{ background-image: url(../images/user_stepBox_05_in.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in span.icon_06{ background-image: url(../images/user_stepBox_06_in.png);}
+
+.right_contents .managementBox ul.user_list li ul.stepBox li.over span{ background-color: #81B6C8;  }
+.right_contents .managementBox ul.user_list li ul.stepBox li.over::after{ background-color: #81B6C8;  }
+.right_contents .managementBox ul.user_list li ul.stepBox li.over span.icon_01{ background-image: url(../images/user_stepBox_01_w.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.over span.icon_02{ background-image: url(../images/user_stepBox_02_w.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.over span.icon_03{ background-image: url(../images/user_stepBox_03_w.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.over span.icon_04{ background-image: url(../images/user_stepBox_04_w.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.over span.icon_05{ background-image: url(../images/user_stepBox_05_w.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.over span.icon_06{ background-image: url(../images/user_stepBox_06_w.png);}
+
+.right_contents .managementBox .remarkBox{width: 100%;}
+.right_contents .managementBox .remarkBox p{ float: left; width: 100%;  max-width: 230px; }
+.right_contents .managementBox .remarkBox p.day{ width: initial; max-width: initial;}
+.right_contents .managementBox .remarkBox p.day span{ color: #fff; margin-right: 5px; padding: 2px 2px 2px 3px; }
+.right_contents .managementBox .remarkBox p.day span.green{ background-color: #84BE98;}
+.right_contents .managementBox .remarkBox p.day span.red{ background-color: #EC7B86;}
+.right_contents .managementBox .remarkBox p.day span.org{ background-color: #E5AF57;}
+
+
 
 

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>面試人員</title>
+<meta name='description' content=""/>
+<meta name='keywords' content=""/>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+<!-- Magnific Popup core JS file -->
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.popup-link').magnificPopup({
+      removalDelay: 300,
+      mainClass: 'mfp-fade'
+    });
+});
+</script>
+
+</head>
+<body>
+<main class="interviewMainBox">
+	<div class="contentsBox">
+		<div class="top_ivBox clearfix">
+			<a class="img-user popup-link" href="#popup-img-user"></a>
+			<div class="rBox">
+				<div class="top_title clearfix">
+					<h1>明天股份有限公司</h1>
+					<h2>面試人員資料填寫表</h2>
+				</div>
+				<ul class="interviewer_info clearfix">
+					<li><p>您面試的職位：<span>軟體工程師</span></p></li>
+					<li><p>您面試的日期：<span>2018/11/1/13:30</span></p></li>
+					<li><p>請於:<span>2018/10/28</span>前填寫完畢</p></li>
+				</ul>
+				<ul class="topStep clearfix">
+					<li class="icon_01 btn_in"><p>基本資料</p></li>
+					<li class="icon_02 btn_in"><p>教育程度</p></li>
+					<li class="icon_03 btn_in"><p>家庭狀況</p></li>
+					<li class="icon_04 btn_in"><p>工作經驗</p></li>
+					<li class="icon_05 btn_in"><p>專業訓練</p></li>
+					<li class="icon_06 btn_in blue_line"><p>其他問題</p></li>
+					<li class="icon_07"><p>應徵問卷</p></li>
+				</ul>
+			</div>
+		</div>
+		<form class="use_fillinBox">
+			<div class="referrerTopBox qaBox">
+				<div class="top_titleBox">
+					<p class="top_title"><span>1.有無更改過名字？</span>
+					<input class="input_yesNo_yes" id="a1" type="radio" name="yesNo" value="是" checked=""><label for="yesNo">是</label>
+					<input class="input_yesNo_no" id="a2" type="radio" name="yesNo" value="否"><label for="yesNo">否</label></p>
+				</div>
+				<div class="top_titleBox">
+					<p class="top_title"><span>2是否具備原住民身份？</span>
+					<input class="input_yesNo_yes" id="b1" type="radio" name="yesNo2" value="是" checked=""><label for="yesNo2">是</label>
+					<input class="input_yesNo_no" id="b2" type="radio" name="yesNo2" value="否"><label for="yesNo2">否</label></p>
+				</div>
+				<div class="top_titleBox">
+					<p class="top_title"><span>3.是否曾因任何糾紛經警察機關製作筆錄、民刑事或行政訴訟案仍繫於法院或已受法院判決確定在案者？</span>
+					<input class="input_yesNo_yes" id="c1" type="radio" name="yesNo3" value="是" checked=""><label for="yesNo3">是</label>
+					<input class="input_yesNo_no" id="c2" type="radio" name="yesNo3" value="否"><label for="yesNo3">否</label></p>
+					<div class="fBox">
+						<p class="top_title">如果是請說明：</p>
+						<input type="text" name="">
+					</div>
+				</div>
+				<div class="top_titleBox">
+					<p class="top_title"><span>4.本身是否有任何身體障礙，或近五年來是否有住院、罹患傳染性病、或家族有遺傳性疾病？</span>
+					<input class="input_yesNo_yes" id="d1" type="radio" name="yesNo4" value="是" checked=""><label for="yesNo4">是</label>
+					<input class="input_yesNo_no" id="d2" type="radio" name="yesNo4" value="否"><label for="yesNo4">否</label></p>
+					<div class="fBox">
+						<p class="top_title">如果是請說明：</p>
+						<input type="text" name="">
+					</div>
+				</div>
+				<div class="top_titleBox fBox many_option">
+					<p class="top_title"><span>5.如何得知本職缺？</span>
+						<input id="option" type="checkbox" name="field" value="option">
+						<label for="option">公司網站</label>
+						
+						<input id="option" type="checkbox" name="field" value="option">
+						<label for="option">104</label>
+
+						<input id="option" type="checkbox" name="field" value="option">
+						<label for="option">1111</label>
+
+						<input id="option" type="checkbox" name="field" value="option">
+						<label for="option">徵才活動</label>
+
+						<input id="option" type="checkbox" name="field" value="option">
+						<label for="option">就業服務站</label>
+
+						<input id="option" type="checkbox" name="field" value="option">
+						<label for="option">員工推薦</label>
+						<input class="w82" type="text" name="">
+
+						<input id="option" type="checkbox" name="field" value="option">
+						<label for="option">其他管道</label>
+						<input class="w82" type="text" name="">
+					</p>
+				</div>
+			</div>
+			
+			<p class="btn btn-both clearfix">
+				<a class="l-btn" href="interview_06.html">上一步</a> 
+				<a class="yellow" href="interview_08.html">下一步</a>
+			</p>
+		</form>
+	</div>
+
+	<!-- popup 上傳user 照片-->
+	<div id="popup-img-user" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox">
+            <div class="top_title">
+                <h3>照片上傳</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                	<li>
+                		<div class="uploadPhotoBox">
+							<a class="select_file" href="#">
+								<p class="icon">選擇檔案</p>
+							</a>
+						</div>
+						<div class="photo_info"><p>1.圖檔格式限jpg格式<br>
+                        2.照片最適合大小為寬100*高100像素!</p></div>
+					</li>
+                </ul>
+                <p class="btn"><a href="#">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+</main>
+
+
+</body>
+</html>
+
+
+

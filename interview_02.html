@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>面試人員</title>
+<meta name='description' content=""/>
+<meta name='keywords' content=""/>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+<!-- Magnific Popup core JS file -->
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.popup-link').magnificPopup({
+      removalDelay: 300,
+      mainClass: 'mfp-fade'
+    });
+});
+</script>
+
+</head>
+<body>
+<main class="interviewMainBox">
+	<div class="contentsBox">
+		<div class="top_ivBox clearfix">
+			<a class="img-user popup-link" href="#popup-img-user"></a>
+			<div class="rBox">
+				<div class="top_title clearfix">
+					<h1>明天股份有限公司</h1>
+					<h2>面試人員資料填寫表</h2>
+				</div>
+				<ul class="interviewer_info clearfix">
+					<li><p>您面試的職位：<span>軟體工程師</span></p></li>
+					<li><p>您面試的日期：<span>2018/11/1/13:30</span></p></li>
+					<li><p>請於:<span>2018/10/28</span>前填寫完畢</p></li>
+				</ul>
+				<ul class="topStep clearfix">
+					<li class="icon_01 btn_in blue_line"><p>基本資料</p></li>
+					<li class="icon_02"><p>教育程度</p></li>
+					<li class="icon_03"><p>家庭狀況</p></li>
+					<li class="icon_04"><p>工作經驗</p></li>
+					<li class="icon_05"><p>專業訓練</p></li>
+					<li class="icon_06"><p>其他問題</p></li>
+					<li class="icon_07"><p>應徵問卷</p></li>
+				</ul>
+			</div>
+		</div>
+		<form class="use_fillinBox">
+			<ul class="fill_in">
+				<li>
+					<div class="fBox">
+						<div class="both">
+							<p class="title_s">中文姓名</p>
+							<input class="name" type="text" name="" value="王天明">
+						</div>
+						<div class="both">
+							<p class="title_s">英文姓名</p>
+							<input type="text" name="">
+						</div>
+					</div>
+					<div class="fBox">
+						<div class="both">
+							<p class="title_s">性別</p>
+							<div class="the_gender clearfix">
+								<p class="btn_in"><a class="icon_male" href="#"><span>男</span></a></p>
+								<p><a class="icon_female" href="#"><span>女</span></a></p>
+							</div>
+						</div>
+						<div class="both">
+							<p class="title_s">身分證字號</p>
+							<input type="text" name="">
+						</div>
+					</div>
+					<div class="fBox fBox-3">
+						<div class="both clearfix">
+							<p class="title_s">出生日期</p>
+							<input type="text" name="" placeholder="年/月/日"><!-- 應該是判斷日期幫他出現對應的星座？ -->
+							<input class="age" type="text" name="" value="24歲">
+							<!-- 看起來會有12生肖的icon，但我這邊只有一張射手的喔! -->
+							<!-- 但images 和 CSS 內已經先建立好路徑了，再請設計直接照size蓋圖即可-->
+							<div class="constellation"><p class="icon_01">水瓶</p></div>
+						</div>
+						<div class="both">
+							<p class="title_s">血型</p>
+							<div class="styled-select"> <!-- 下拉的樣式，還不確定要用select 還是自己刻div -->
+                            	<select class="md-input" name="">
+	                            	<option value="A型">A型</option>
+	                            	<option value="B型">B型</option>
+	                            	<option value="O型">O型</option>
+	                            	<option value="AB型">AB型</option>
+	                            </select>
+                        	</div>
+                    	</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="fBox">
+						<div class="both">
+							<p class="title_s">身高</p>
+							<input class="w82" type="text" name="" value="王天明">
+						</div>
+						<div class="both">
+							<p class="title_s">體重</p>
+							<input class="w82" type="text" name="">
+						</div>
+						<div class="both">
+							<p class="title_s">國籍籍貫</p>
+							<input class="w82" type="text" name="">
+						</div>
+					</div>
+					<div class="fBox">
+						<div class="both">
+							<p class="title_s">婚姻狀況</p>
+							<div class="styled-select"> <!-- 下拉的樣式，還不確定要用select 還是自己刻div -->
+                            	<select class="md-input" name="">
+	                            	<option value="已婚">已婚</option>
+	                            	<option value="未婚">未婚</option>
+	                            </select>
+                        	</div>
+						</div>
+						<div class="both">
+							<p class="title_s">育有幾名子女</p>
+							<input type="text" name="">
+						</div>
+					</div>
+					<div class="fBox fBox-3">
+						<div class="add clearfix">
+							<p class="title_s">目前居住狀況</p>
+							<div class="styled-select"> <!-- 下拉的樣式，還不確定要用select 還是自己刻div -->
+                            	<select class="md-input" name="">
+	                            	<option value="與家人同住">與家人同住</option>
+	                            	<option value="與家人同住">與家人同住</option>
+	                            </select>
+                        	</div>
+							<input class="bg-gray" type="text" name="" placeholder="">
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="fBox fBox-2">
+						<div class="both">
+							<p class="title_s">興趣與嗜好</p>
+							<input class="w100" type="text" name="" placeholder="">
+						</div>
+					</div>
+					<div class="fBox fBox-3">
+						<div class="b01 clearfix">
+							<p class="title_s">役別</p>
+							<div class="styled-select"> <!-- 下拉的樣式，還不確定要用select 還是自己刻div -->
+                            	<select class="md-input" name="">
+	                            	<option value="役畢">役畢</option>
+	                            	<option value="役畢">役畢</option>
+	                            </select>
+                        	</div>
+                        </div>
+                        <div class="b02 clearfix">
+                        	<p class="title_s">役畢時間/免役理由</p>
+							<input type="text" name="" placeholder="">
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="fBox fBox-w1">
+						<div class="both">
+							<p class="title_s">交通工具（可複選）</p>
+							<ul class="select_item clearfix">
+								<li><input id="option" type="checkbox" name="field" value="option">
+								<label for="option">汽車</label></li>
+
+								<li><input id="option" type="checkbox" name="field" value="option">
+								<label for="option">機車</label></li>
+
+								<li><input id="option" type="checkbox" name="field" value="option">
+								<label for="option">步行</label></li>
+
+								<li><input id="option" type="checkbox" name="field" value="option">
+								<label for="option">捷運</label></li>
+
+								<li><input id="option" type="checkbox" name="field" value="option">
+								<label for="option">公車</label></li>
+
+								<li><input id="option" type="checkbox" name="field" value="option">
+								<label for="option">其它</label></li>
+							</ul>
+						</div>
+					</div>
+					<div class="fBox">
+						<div class="both">
+							<div>
+								<p class="title_s">駕駛種類/有效駕照（可複選）
+							</p>
+							<ul class="select_item clearfix">
+								<li><input id="" type="checkbox" name="field" value="option">
+								<label for="option">汽車</label></li>
+
+								<li><input id="option" type="checkbox" name="field" value="option">
+								<label for="option">機車</label></li>
+
+								<li><input id="option" type="checkbox" name="field" value="option">
+								<label for="option">大客(卡)車</label></li>
+
+								<li><input id="option" type="checkbox" name="field" value="option">
+								<label for="option">堆高機</label></li>
+
+								<li class="clearfix"><input id="option" type="checkbox" name="field" value="option">
+								<label for="option">其它</label><input class="bottom_line" type="text" name=""></li>
+								
+							</ul>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="fBox fBox-w1">
+						<div class="both">
+							<p class="title_s">戶籍地址</p>
+							<input class="w100" type="text" name="">
+						</div>
+					</div>
+					<div class="fBox">
+						<div class="both">
+							<div>
+								<p class="title_s">通訊地址 
+								<input id="option" type="checkbox" name="field" value="option">
+								<label for="option">同戶籍地址</label>
+							</p>
+							<input class="w100" type="text" name="">
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="fBox">
+						<div class="both">
+							<p class="title_s">行動電話</p>
+							<input class="w100" type="text" name="">
+						</div>
+					</div>
+					<div class="fBox">
+						<div class="both">
+							<p class="title_s">聯絡電話</p>
+							<input class="w100" type="text" name="">
+						</div>
+					</div>
+					<div class="fBox fBox-3">
+						<div class="both">
+							<p class="title_s">E-mail</p>
+							<input class="w100" type="text" name="">
+                    	</div>
+					</div>
+				</li>
+			</ul>
+			<p class="btn"><a href="interview_03.html">下一步</a></p>
+		</form>
+	</div>
+
+	<!-- popup 上傳user 照片-->
+	<div id="popup-img-user" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox">
+            <div class="top_title">
+                <h3>照片上傳</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                	<li>
+                		<div class="uploadPhotoBox">
+							<a class="select_file" href="#">
+								<p class="icon">選擇檔案</p>
+							</a>
+						</div>
+						<div class="photo_info"><p>1.圖檔格式限jpg格式<br>
+                        2.照片最適合大小為寬100*高100像素!</p></div>
+					</li>
+                </ul>
+                <p class="btn"><a href="#">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+</main>
+
+
+</body>
+</html>
+
+
+
