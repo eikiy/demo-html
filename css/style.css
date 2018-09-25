@@ -34,6 +34,19 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 .headerBox .searchBox a{ position: absolute; top: 0; right: 0; z-index: 5; cursor: pointer; width: 34px; height: 24px; border-radius: 0px 4px 0px 0px; display: block; background: url(../images/icon_search.png) center center no-repeat #D1E0E5; background-size: contain;  }
 .headerBox .searchBox a:hover{opacity: .8;}
 
+.headerBox .search_all { max-width: 316px; }
+.headerBox .search_all a{ width: 50px; }
+.headerBox .search_all ul.search_list{ position: absolute; z-index: 13; width: 100%; top: 25px; left: 0; background-color: #fff; }
+.headerBox .search_all ul.search_list li{ width: 100%; min-height: 50px; border-bottom: 1px solid #979797; }
+.headerBox .search_all ul.search_list li .avatar{ float: left; margin: 5px 10px 0 10px; border:1px solid #979797; width: 40px; height: 40px; display: block; overflow: hidden; border-radius: 5px; background-color: #D8D8D8; }
+.headerBox .search_all ul.search_list li .info{ float: left; padding: 7px 5px 0 5px; width: 100%; max-width: calc(100% - 110px); }
+.headerBox .search_all ul.search_list li .info p{ width: 100%; float: left; font-size: 12px; line-height: 18px; }
+.headerBox .search_all ul.search_list li .info p.name{ max-width: 50%; }
+.headerBox .search_all ul.search_list li .info p.department{ max-width: 50%; }
+.headerBox .search_all ul.search_list li .statu{ float: right; width: 50px; height: 50px; display: block; text-align: center; background-color: #81B6C8; }
+.headerBox .search_all ul.search_list li .statu p{ font-size: 20px; color: #fff; line-height: 50px; }
+
+
 .headerBox ul.tools{ float: right; text-align: right; }
 .headerBox ul.tools li{ display: inline-block; margin: 0 8px; }
 .headerBox ul.tools li a{ width: 28px; height: 28px; display: block; cursor: pointer; background-repeat: no-repeat; background-position: center center; background-size: contain; }
@@ -43,7 +56,7 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 .headerBox ul.tools li a:hover{ opacity: .8; }
 
 .headerBox p.add_nterviewee{ float: left; margin-top: -7px; text-align: right; width: 100%; max-width: 306px;} 
-.headerBox p.add_nterviewee a{ color: #558C9E; background-color: #FFFFFF ; height: 38px; min-width: 162px;padding: 0 10px 0 40px; line-height: 32px; border:2.5px solid #558C9E; display: inline-block; border-radius:10px 10px 0 10px;}
+.headerBox p.add_nterviewee a{ color: #558C9E; background: url(../images/btn_add_nterviewee.png) 5px center no-repeat #fff; background-size: contain; height: 38px; min-width: 162px;padding: 0 15px 0 40px; line-height: 32px; border:2.5px solid #558C9E; display: inline-block; border-radius:10px 10px 0 10px;}
 
 .mainBox{ width: 100%; min-width: 1024px; min-height:calc( 100vh - 46px); background-color: #D1E0E5; padding: 20px; }
 .mainBox .contentsBox{ display: -webkit-flex; display: flex; }
@@ -253,53 +266,56 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 .interviewMainBox .top_ivBox .rBox ul.topStep{width: 100%;}
 .interviewMainBox .top_ivBox .rBox ul.topStep li{ float: left; margin-right: 10px; width: 70px; height: 70px;display: block; border: 2px solid #979797; border-radius: 10px; position: relative; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
 .interviewMainBox .top_ivBox .rBox ul.topStep li::after{ content: ""; position: absolute; right: -14px; top: calc(50% - 3px); width: 12px; height: 5px; background-color: #81B6C8; display: block; }
-.interviewMainBox .top_ivBox .rBox ul.topStep li p{ color: #9B9B9B; display: block; width: 100%; text-align: center; position: relative; padding-top: 43px;}
-.interviewMainBox .top_ivBox .rBox ul.topStep li p::before{ height: 45px; -webkit-filter:grayscale(1); opacity: .5; content: ""; top: 0; width: 100%; display: block; position: absolute; background-size: contain; background-position: center center;  background-repeat: no-repeat;}
-.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_01 p::before{ background-image: url(../images/topStep_icon_01.png); }
-.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_02 p::before{ background-image: url(../images/topStep_icon_02.png); }
-.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_03 p::before{ background-image: url(../images/topStep_icon_03.png); }
-.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_04 p::before{ background-image: url(../images/topStep_icon_04.png); }
-.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_05 p::before{ background-image: url(../images/topStep_icon_05.png); }
+.interviewMainBox .top_ivBox .rBox ul.topStep li a{ cursor: pointer; font-size: 14px; color: #9B9B9B; display: block; width: 100%; text-align: center; position: relative; padding-top: 43px;}
+.interviewMainBox .top_ivBox .rBox ul.topStep li a::before{ height: 45px; -webkit-filter:grayscale(1); opacity: .5; content: ""; top: 0; width: 100%; display: block; position: absolute; background-size: contain; background-position: center center;  background-repeat: no-repeat;}
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_01 a::before{ background-image: url(../images/topStep_icon_01.png); }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_02 a::before{ background-image: url(../images/topStep_icon_02.png); }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_03 a::before{ background-image: url(../images/topStep_icon_03.png); }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_04 a::before{ background-image: url(../images/topStep_icon_04.png); }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_05 a::before{ background-image: url(../images/topStep_icon_05.png); }
 .interviewMainBox .top_ivBox .rBox ul.topStep li.icon_06{ margin-right: 20px; }
 .interviewMainBox .top_ivBox .rBox ul.topStep li.icon_06::after{ width: 22px; right: -22px; }
-.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_06 p::before{ background-image: url(../images/topStep_icon_06.png); }
-.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07 p::before{ background-image: url(../images/topStep_icon_07.png); -webkit-filter:initial; opacity: 1;}
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_06 a::before{ background-image: url(../images/topStep_icon_06.png); }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07 a::before{ background-image: url(../images/topStep_icon_07.png); -webkit-filter:initial; opacity: 1;}
 .interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07{ width: 123px;}
 .interviewMainBox .top_ivBox .rBox ul.topStep li.blue_line{ border-color: #81B6C8;  border-width: 3px; }
 .interviewMainBox .top_ivBox .rBox ul.topStep li.org_line{ border-color: #E5AF57;  border-width: 3px; }
-.interviewMainBox .top_ivBox .rBox ul.topStep li.btn_in p{ color: #81B6C8; }
-.interviewMainBox .top_ivBox .rBox ul.topStep li.btn_in p::before{-webkit-filter:initial; opacity: 1;}
+.interviewMainBox .top_ivBox .rBox ul.topStep li.btn_in a{ color: #81B6C8; }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.btn_in a::before{-webkit-filter:initial; opacity: 1;}
 .interviewMainBox .top_ivBox .rBox ul.topStep li:hover{ border-color: #81B6C8; }
 .interviewMainBox .top_ivBox .rBox ul.topStep li:last-child::after{display: none;}
 
 .interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07:hover{ background-color: #E5AF57; border-color: #E5AF57;}
-.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07:hover p{ color: #fff; }
-.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07:hover p::before{ background-image: url(../images/topStep_icon_07_in.png); -webkit-filter:initial; opacity: 1; }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07:hover a{ color: #fff; }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07:hover a::before{ background-image: url(../images/topStep_icon_07_in.png); -webkit-filter:initial; opacity: 1; }
 
 
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li::after{ background-color: #E5AF57;}
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li:hover{ border-color: #E5AF57; }
-.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in p{ color: #E5AF57; }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in a{ color: #E5AF57; }
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_01 { width: 123px; margin-right: 22px;}
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_01::after{ width: 22px; right: -24px; }
-.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_01 p::before{ background-image: url(../images/experienceStep_icon_01.png); -webkit-filter:initial; opacity: 1; }
-.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_02 p::before{ background-image: url(../images/experienceStep_icon_02.png); }
-.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_03 p::before{ background-image: url(../images/experienceStep_icon_03.png);}
-.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_04 p::before{ background-image: url(../images/experienceStep_icon_04.png);}
-.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_05 p::before{ background-image: url(../images/experienceStep_icon_05.png);}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_01 a::before{ background-image: url(../images/experienceStep_icon_01.png); -webkit-filter:initial; opacity: 1; }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_01:hover{ background-color: #81B6C8; border-color: #81B6C8;}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_01:hover a{ color: #fff; }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_01:hover a::before{ background-image: url(../images/experienceStep_icon_01_w.png); }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_02 a::before{ background-image: url(../images/experienceStep_icon_02.png); }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_03 a::before{ background-image: url(../images/experienceStep_icon_03.png);}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_04 a::before{ background-image: url(../images/experienceStep_icon_04.png);}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_05 a::before{ background-image: url(../images/experienceStep_icon_05.png);}
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_06{ margin-right: 10px; }
-.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_06 p::before{ background-image: url(../images/experienceStep_icon_06.png);}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_06 a::before{ background-image: url(../images/experienceStep_icon_06.png);}
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_06::after{ width: 12px; right: -14px; }
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_07 { width: 70px;}
-.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_07 p::before{ background-image: url(../images/experienceStep_icon_07.png); -webkit-filter: grayscale(1); opacity: .5;}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_07 a::before{ background-image: url(../images/experienceStep_icon_07.png); -webkit-filter: grayscale(1); opacity: .5;}
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_07:hover{ border-color: #EB8B70; background-color: initial;}
-.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_07:hover p{ color: #9B9B9B; }
-.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_07:hover p::before{ background-image: url(../images/experienceStep_icon_07.png); -webkit-filter: grayscale(1); opacity: .5;}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_07:hover a{ color: #9B9B9B; }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_07:hover a::before{ background-image: url(../images/experienceStep_icon_07.png); -webkit-filter: grayscale(1); opacity: .5;}
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2{border-color: #EB8B70;  border-width: 3px; }
-.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2 p{ color: #EB8B70; -webkit-filter:initial; opacity: 1;}
-.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2 p::before{ background-image: url(../images/experienceStep_icon_07.png); -webkit-filter: initial; opacity: 1;}
-.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2:hover p{color: #EB8B70; }
-.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2:hover p::before{ background-image: url(../images/experienceStep_icon_07.png); -webkit-filter: initial; opacity: 1;}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2 a{ color: #EB8B70; -webkit-filter:initial; opacity: 1;}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2 a::before{ background-image: url(../images/experienceStep_icon_07.png); -webkit-filter: initial; opacity: 1;}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2:hover a{color: #EB8B70; }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2:hover a::before{ background-image: url(../images/experienceStep_icon_07.png); -webkit-filter: initial; opacity: 1;}
 
 .interviewMainBox .use_fillinBox{ width: 100%; max-width: 990px; margin:0px auto; border:2px solid #979797; border-radius: 20px 0 20px 20px;padding: 35px 20px 10px 20px;}
 .interviewMainBox .use_fillinBox ul.fill_in{width: 100%; padding-bottom: 15px;}
@@ -310,7 +326,7 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 
 .interviewMainBox .use_fillinBox .fBox p{ color: #9B9B9B;font-size: 12px;}
 .interviewMainBox .use_fillinBox .fBox p.title_s{padding: 3px 0; line-height: 24px; }
-.interviewMainBox .use_fillinBox .fBox input, .interviewMainBox .use_fillinBox .fBox textarea{ border:1px solid #979797; color: #4A4A4A; font-size: 12px; width: 100%; max-width: 128px; border-radius: 5px; min-height: 30px; line-height: 24px; padding:2px 6px;}
+.interviewMainBox .use_fillinBox .fBox input, .interviewMainBox .use_fillinBox .fBox textarea{ border:1px solid #979797; color: #4A4A4A; font-size: 12px; width: 100%; max-width: 128px; border-radius: 5px;  line-height: 24px; padding:2px 6px;}
 .interviewMainBox .use_fillinBox .fBox input::placeholder{ color: #9B9B9B;}
 .interviewMainBox .use_fillinBox .fBox input[type=text]:focus, .interviewMainBox .use_fillinBox .fBox textarea:focus, .interviewMainBox .styled-select:focus { border-color:#81B6C8;}
 .interviewMainBox .use_fillinBox .fBox input.name{ font-size: 14px; letter-spacing: 5px; }
@@ -455,8 +471,9 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 .interviewMainBox .use_fillinBox ul.whyBox{ padding-top: 20px; padding-bottom: 0; min-height: 380px;}
 .interviewMainBox .whyBox .fBox{ padding: 0 7px;}
 .interviewMainBox .whyBox .fBox p.title_s{ font-size: 14px; padding-top: 10px; }
-.interviewMainBox .whyBox .fBox textarea.b-h1{ min-height: 125px; }
-.interviewMainBox .whyBox .fBox textarea.b-h2{ min-height: 185px; }
+.interviewMainBox .whyBox .fBox textarea.b-h0{ max-width: 301px; }
+.interviewMainBox .whyBox .fBox textarea.b-h1{ min-height: 125px; max-width: 301px; }
+.interviewMainBox .whyBox .fBox textarea.b-h2{ min-height: 185px; max-width: 301px; }
 
 .interviewMainBox .fillDone{ min-height: 488px; background: url(../images/img_done.png) center bottom no-repeat; background-size: cover; }
 .interviewMainBox .fillDone .thankyou{ min-height: 412px; }
@@ -492,7 +509,10 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .managementBox .user_data .application_department{ width: 100%; padding: 8px 0; }
 .right_contents .managementBox .user_data .application_department p{ float: left; color: #000000; }
 .right_contents .managementBox .user_data .application_department p.job_title{ min-width: 92px; }
-.right_contents .managementBox .user_data .application_department p.department{ min-width: 122px; }
+.right_contents .managementBox .user_data .application_department p.department{ min-width: 122px; position: relative;}
+.right_contents .managementBox .user_data .application_department p.department span{ opacity: 0; position: absolute; top: 23px; z-index: 10; left: -25px; background-color: #4A4A4A; border-radius: 3px; padding: 3px 5px; font-size: 9px; color: #fff; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
+.right_contents .managementBox .user_data .application_department p.department span::after{ position: absolute; content: ""; top: -5px; left: 40px; width: 0; height: 0; border-style: solid; border-width: 0 4px 6px 4px; border-color: transparent transparent #4a4a4a transparent; line-height: 0px; _border-color: #000000 #000000 #4a4a4a #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+.right_contents .managementBox .user_data .application_department p.department:hover span{ opacity: 1; }
 
 .right_contents .managementBox ul.user_list li ul.stepBox{padding: 12px 0;}
 .right_contents .managementBox ul.user_list li ul.stepBox li{ float: left; border:none; border-radius: initial; margin-right: 14px; position: relative;}
