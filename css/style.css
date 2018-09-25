@@ -471,9 +471,9 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 .interviewMainBox .use_fillinBox ul.whyBox{ padding-top: 20px; padding-bottom: 0; min-height: 380px;}
 .interviewMainBox .whyBox .fBox{ padding: 0 7px;}
 .interviewMainBox .whyBox .fBox p.title_s{ font-size: 14px; padding-top: 10px; }
-.interviewMainBox .whyBox .fBox textarea.b-h0{ max-width: 301px; }
-.interviewMainBox .whyBox .fBox textarea.b-h1{ min-height: 125px; max-width: 301px; }
-.interviewMainBox .whyBox .fBox textarea.b-h2{ min-height: 185px; max-width: 301px; }
+.interviewMainBox .whyBox .fBox textarea.b-h0{ max-width: 301px; min-width: 301px;}
+.interviewMainBox .whyBox .fBox textarea.b-h1{ min-height: 125px; max-width: 301px; min-width: 301px;}
+.interviewMainBox .whyBox .fBox textarea.b-h2{ min-height: 185px; max-width: 301px; min-width: 301px;}
 
 .interviewMainBox .fillDone{ min-height: 488px; background: url(../images/img_done.png) center bottom no-repeat; background-size: cover; }
 .interviewMainBox .fillDone .thankyou{ min-height: 412px; }
