@@ -25,7 +25,7 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 /*===== start ======*/
 .contentsBox{ width: 1000px; margin: 0 auto; }
 
-.headerBox{width: 100%; min-width: 1024px; background-color: #81B6C8; padding: 10px 0; height: 46px;}
+.headerBox{width: 100%; min-width: 1024px; background-color: #81B6C8; padding-top: 10px; min-height: 46px;}
 .headerBox a.logo{ float: left; width: 60px; height: 28px; margin: -2px 0px 0 0; display: block; background: url(../images/logo.png) 8px center no-repeat; background-size: contain; }
 .headerBox .searchBox{ float: left; width:100%; max-width: 320px; position: relative; }
 .headerBox .searchBox input{ height: 24px; line-height: 24px; padding: 2px 40px 2px 8px; width: 100%; font-size: 13px; border-radius: 4px}
@@ -36,27 +36,39 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 
 .headerBox .search_all { max-width: 316px; }
 .headerBox .search_all a{ width: 50px; }
-.headerBox .search_all ul.search_list{ position: absolute; z-index: 13; width: 100%; top: 25px; left: 0; background-color: #fff; }
-.headerBox .search_all ul.search_list li{ width: 100%; min-height: 50px; border-bottom: 1px solid #979797; }
+.headerBox .search_all ul.search_list{ position: absolute; z-index: 13; width: 100%; top: 25px; left: 0; background-color: #fff; height: 300px; overflow-y: auto; box-shadow: 3px 3px 5px rgba( 0, 0, 0, .2); }
+.headerBox .search_all ul.search_list li{ width: 100%; cursor: pointer; min-height: 50px; border-bottom: 1px solid #979797; }
 .headerBox .search_all ul.search_list li .avatar{ float: left; margin: 5px 10px 0 10px; border:1px solid #979797; width: 40px; height: 40px; display: block; overflow: hidden; border-radius: 5px; background-color: #D8D8D8; }
+.headerBox .search_all ul.search_list li .male{ background: url(../images/user_default_male.png) center center no-repeat #fff; background-size: cover; }
+.headerBox .search_all ul.search_list li .female{ background: url(../images/user_default_female.png) center center no-repeat #fff; background-size: cover; }
+
 .headerBox .search_all ul.search_list li .info{ float: left; padding: 7px 5px 0 5px; width: 100%; max-width: calc(100% - 110px); }
-.headerBox .search_all ul.search_list li .info p{ width: 100%; float: left; font-size: 12px; line-height: 18px; }
-.headerBox .search_all ul.search_list li .info p.name{ max-width: 50%; }
+.headerBox .search_all ul.search_list li .info p{ width: 100%; float: left; font-size: 12px; line-height: 20px; color: #9B9B9B; }
+.headerBox .search_all ul.search_list li .info p.name{ max-width: 50%; color: #4A4A4A; letter-spacing: 6px; }
 .headerBox .search_all ul.search_list li .info p.department{ max-width: 50%; }
 .headerBox .search_all ul.search_list li .statu{ float: right; width: 50px; height: 50px; display: block; text-align: center; background-color: #81B6C8; }
 .headerBox .search_all ul.search_list li .statu p{ font-size: 20px; color: #fff; line-height: 50px; }
+.headerBox .search_all ul.search_list li .statu p.skyblue{ background-color: #D1E0E5; }
+.headerBox .search_all ul.search_list li .statu p.gray{ background-color: #9B9B9B;}
+.headerBox .search_all ul.search_list li:hover{ background-color: #558C9E;}
+.headerBox .search_all ul.search_list li:hover .info p{ color: #fff; }
 
-
-.headerBox ul.tools{ float: right; text-align: right; }
-.headerBox ul.tools li{ display: inline-block; margin: 0 8px; }
-.headerBox ul.tools li a{ width: 28px; height: 28px; display: block; cursor: pointer; background-repeat: no-repeat; background-position: center center; background-size: contain; }
-.headerBox ul.tools li a.message{ background-image: url(../images/icon_message.png); position: relative;}
+.headerBox ul.tools{ float: right; text-align: right; margin-top: -3px; }
+.headerBox ul.tools li{ display: inline-block; margin: 0 5px; vertical-align: middle; }
+.headerBox ul.tools li a{ width: 32px; height: 35px;  position: relative;display: block; cursor: pointer; background-repeat: no-repeat; background-position: center center; background-size: contain; }
+.headerBox ul.tools li a.message{ background-image: url(../images/icon_message.png);}
 .headerBox ul.tools li a.message span{ position: absolute;  top: -2px; right: 0; width: 15px; height: 15px; border-radius: 50px; background-color: #DB3109; text-align: center; line-height: 15px; color: #fff; font-size: 13px; }
-.headerBox ul.tools li a.logout{ background-image: url(../images/icon_logout.png); }
-.headerBox ul.tools li a:hover{ opacity: .8; }
+.headerBox ul.tools li a.message:hover{background-image: url(../images/icon_message_in.png);}
+.headerBox ul.tools li a.logout{ width: 34px; background-image: url(../images/icon_logout.png); }
+.headerBox ul.tools li a.logout:hover{ background-image: url(../images/icon_logout_in.png); }
+.headerBox ul.tools li a .tooltip{ opacity: 0; position: absolute; top: 33px; z-index: 10; min-width: 40px; text-align: center; left: -5px; background-color: #4A4A4A; border-radius: 3px; padding: 3px 5px; font-size: 9px; color: #fff; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
+.headerBox ul.tools li a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 4px); width: 0; height: 0; border-style: solid; border-width: 0 4px 6px 4px; border-color: transparent transparent #4a4a4a transparent; line-height: 0px; _border-color: #000000 #000000 #4a4a4a #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+.headerBox ul.tools li a:hover .tooltip{ opacity: 1; }
+
 
 .headerBox p.add_nterviewee{ float: left; margin-top: -7px; text-align: right; width: 100%; max-width: 306px;} 
 .headerBox p.add_nterviewee a{ color: #558C9E; background: url(../images/btn_add_nterviewee.png) 5px center no-repeat #fff; background-size: contain; height: 38px; min-width: 162px;padding: 0 15px 0 40px; line-height: 32px; border:2.5px solid #558C9E; display: inline-block; border-radius:10px 10px 0 10px;}
+.headerBox p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-color: #D1E0E5; }
 
 .mainBox{ width: 100%; min-width: 1024px; min-height:calc( 100vh - 46px); background-color: #D1E0E5; padding: 20px; }
 .mainBox .contentsBox{ display: -webkit-flex; display: flex; }
@@ -104,7 +116,9 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 .right_contents .theBox p.btn a.add{ padding-left: 25px; background-image: url(../images/btn_icon_add.png);}
 .right_contents .theBox p.btn a.add:hover{ background-color: #D1E0E5; }
 .right_contents .theBox p.btn a.edit{ padding-left: 25px; background-image: url(../images/btn_icon_edit.png);}
+.right_contents .theBox p.btn a.edit_in{ background-image: url(../images/btn_icon_edit_in.png);}
 .right_contents .theBox p.btn a.lock{ padding-left: 25px; background-image: url(../images/btn_icon_lock.png);}
+.right_contents .theBox p.btn a.lock_in{ background-image: url(../images/btn_icon_lock_in.png);}
 .right_contents .theBox p.btn a.btn_none{ opacity: .5; cursor: not-allowed; -webkit-filter:grayscale(1);}
 .right_contents .theBox p.btn a.btn_none:hover{ background-color: initial; }
 
@@ -488,7 +502,11 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 
 
 /*招募管理頁*/
-.right_contents .managementBox{ float: left; width: 100%; max-width: 545px; }
+.for_management_top{ min-width: 1070px;}
+.for_management_top .contentsBox{ width: 1000px; }
+.for_management{ min-width: 1070px;}
+.for_management .contentsBox{ width: 1030px; }
+.right_contents .managementBox{ float: left; width: 100%; max-width: 546px; }
 .right_contents .managementBox ul.user_list{width: 100%;}
 .right_contents .managementBox ul.user_list li{ margin-bottom: 6px; background-color: #fff; border-radius: 10px 0 10px 10px; border:1px solid #cccccc; position: relative;}
 .right_contents .managementBox ul.user_list li a.go_delete{ position: absolute; cursor: pointer; top:8px; right: 8px; width: 16px; height: 16px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
@@ -512,47 +530,96 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .managementBox .user_data .application_department p.department{ min-width: 122px; position: relative;}
 .right_contents .managementBox .user_data .application_department p.department span{ opacity: 0; position: absolute; top: 23px; z-index: 10; left: -25px; background-color: #4A4A4A; border-radius: 3px; padding: 3px 5px; font-size: 9px; color: #fff; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
 .right_contents .managementBox .user_data .application_department p.department span::after{ position: absolute; content: ""; top: -5px; left: 40px; width: 0; height: 0; border-style: solid; border-width: 0 4px 6px 4px; border-color: transparent transparent #4a4a4a transparent; line-height: 0px; _border-color: #000000 #000000 #4a4a4a #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+.right_contents .managementBox .user_data .application_department p.department:hover{ text-shadow: 0 2px 4px rgba(0,0,0,.5); }
 .right_contents .managementBox .user_data .application_department p.department:hover span{ opacity: 1; }
 
 .right_contents .managementBox ul.user_list li ul.stepBox{padding: 12px 0;}
 .right_contents .managementBox ul.user_list li ul.stepBox li{ float: left; border:none; border-radius: initial; margin-right: 14px; position: relative;}
 .right_contents .managementBox ul.user_list li ul.stepBox li::after{ position: absolute; content: ""; width: 14px; height: 2px; top:20px; right: -14px; display: block; background-color: #9B9B9B; }
-.right_contents .managementBox ul.user_list li ul.stepBox li span{ width: 44px; height: 44px; display: block; background-color: #E7E3E3; border-radius: 10px; background-size: contain; background-position: center center; background-repeat: no-repeat;}
-.right_contents .managementBox ul.user_list li ul.stepBox li span.icon_01{ background-image: url(../images/user_stepBox_01.png); }
-.right_contents .managementBox ul.user_list li ul.stepBox li span.icon_02{ background-image: url(../images/user_stepBox_02.png); }
-.right_contents .managementBox ul.user_list li ul.stepBox li span.icon_03{ background-image: url(../images/user_stepBox_03.png); }
-.right_contents .managementBox ul.user_list li ul.stepBox li span.icon_04{ background-image: url(../images/user_stepBox_04.png); }
-.right_contents .managementBox ul.user_list li ul.stepBox li span.icon_05{ background-image: url(../images/user_stepBox_05.png); }
-.right_contents .managementBox ul.user_list li ul.stepBox li span.icon_06{ background-image: url(../images/user_stepBox_06.png); }
+.right_contents .managementBox ul.user_list li ul.stepBox li a{ width: 44px; height: 44px; display: block; background-color: #E7E3E3; border-radius: 10px; background-size: contain; background-position: center center; background-repeat: no-repeat;}
+.right_contents .managementBox ul.user_list li ul.stepBox li a.icon_01{ background-image: url(../images/user_stepBox_01.png); }
+.right_contents .managementBox ul.user_list li ul.stepBox li a.icon_02{ background-image: url(../images/user_stepBox_02.png); }
+.right_contents .managementBox ul.user_list li ul.stepBox li a.icon_03{ background-image: url(../images/user_stepBox_03.png); }
+.right_contents .managementBox ul.user_list li ul.stepBox li a.icon_04{ background-image: url(../images/user_stepBox_04.png); }
+.right_contents .managementBox ul.user_list li ul.stepBox li a.icon_05{ background-image: url(../images/user_stepBox_05.png); }
+.right_contents .managementBox ul.user_list li ul.stepBox li a.icon_06{ background-image: url(../images/user_stepBox_06.png); }
 .right_contents .managementBox ul.user_list li ul.stepBox li.w50{margin-right: 50px;}
 .right_contents .managementBox ul.user_list li ul.stepBox li.w50::after{ width: 50px; right: -50px; }
 .right_contents .managementBox ul.user_list li ul.stepBox li:last-child::after{ display: none; }
 
-.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in span{ border:3px solid #81B6C8; background-color: #fff;  }
-.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in span.icon_01{ background-image: url(../images/user_stepBox_01_in.png);}
-.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in span.icon_02{ background-image: url(../images/user_stepBox_02_in.png);}
-.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in span.icon_03{ background-image: url(../images/user_stepBox_03_in.png);}
-.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in span.icon_04{ background-image: url(../images/user_stepBox_04_in.png);}
-.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in span.icon_05{ background-image: url(../images/user_stepBox_05_in.png);}
-.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in span.icon_06{ background-image: url(../images/user_stepBox_06_in.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in a{ border:3px solid #81B6C8; background-color: #fff;  }
+.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in a.icon_01{ background-image: url(../images/user_stepBox_01_in.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in a.icon_02{ background-image: url(../images/user_stepBox_02_in.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in a.icon_03{ background-image: url(../images/user_stepBox_03_in.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in a.icon_04{ background-image: url(../images/user_stepBox_04_in.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in a.icon_05{ background-image: url(../images/user_stepBox_05_in.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.btn_in a.icon_06{ background-image: url(../images/user_stepBox_06_in.png);}
 
-.right_contents .managementBox ul.user_list li ul.stepBox li.over span{ background-color: #81B6C8;  }
+.right_contents .managementBox ul.user_list li ul.stepBox li.over a{ background-color: #81B6C8;  }
 .right_contents .managementBox ul.user_list li ul.stepBox li.over::after{ background-color: #81B6C8;  }
-.right_contents .managementBox ul.user_list li ul.stepBox li.over span.icon_01{ background-image: url(../images/user_stepBox_01_w.png);}
-.right_contents .managementBox ul.user_list li ul.stepBox li.over span.icon_02{ background-image: url(../images/user_stepBox_02_w.png);}
-.right_contents .managementBox ul.user_list li ul.stepBox li.over span.icon_03{ background-image: url(../images/user_stepBox_03_w.png);}
-.right_contents .managementBox ul.user_list li ul.stepBox li.over span.icon_04{ background-image: url(../images/user_stepBox_04_w.png);}
-.right_contents .managementBox ul.user_list li ul.stepBox li.over span.icon_05{ background-image: url(../images/user_stepBox_05_w.png);}
-.right_contents .managementBox ul.user_list li ul.stepBox li.over span.icon_06{ background-image: url(../images/user_stepBox_06_w.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.over a.icon_01{ background-image: url(../images/user_stepBox_01_w.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.over a.icon_02{ background-image: url(../images/user_stepBox_02_w.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.over a.icon_03{ background-image: url(../images/user_stepBox_03_w.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.over a.icon_04{ background-image: url(../images/user_stepBox_04_w.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.over a.icon_05{ background-image: url(../images/user_stepBox_05_w.png);}
+.right_contents .managementBox ul.user_list li ul.stepBox li.over a.icon_06{ background-image: url(../images/user_stepBox_06_w.png);}
 
 .right_contents .managementBox .remarkBox{width: 100%;}
 .right_contents .managementBox .remarkBox p{ float: left; width: 100%;  max-width: 230px; }
 .right_contents .managementBox .remarkBox p.day{ width: initial; max-width: initial;}
-.right_contents .managementBox .remarkBox p.day span{ color: #fff; margin-right: 5px; padding: 2px 2px 2px 3px; }
+.right_contents .managementBox .remarkBox p.day span{ color: #fff; margin-right: 5px; padding: 2px; }
 .right_contents .managementBox .remarkBox p.day span.green{ background-color: #84BE98;}
 .right_contents .managementBox .remarkBox p.day span.red{ background-color: #EC7B86;}
 .right_contents .managementBox .remarkBox p.day span.org{ background-color: #E5AF57;}
 
+.right_contents .managementBox .top_toolsBox{ width: 100%; padding-bottom: 10px; }
+.right_contents .managementBox .top_toolsBox ul.type{ float: left; width: 350px; background-color: #fff; border-radius: 4px 0 4px 0;  box-shadow: 0 1px 1px rgba(0,0,0,.1); }
+.right_contents .managementBox .top_toolsBox ul.type li{ width: calc(100% / 3); float: left; position: relative;}
+.right_contents .managementBox .top_toolsBox ul.type li p{ text-align: center; line-height: 30px;}
+.right_contents .managementBox .top_toolsBox ul.type li a{ color: #3E3E3D; display: block; height: 30px; }
+.right_contents .managementBox .top_toolsBox ul.type li::before{ content: ""; width: 1px; height: 100%; position: absolute; top: 0; background-color: #cccccc; display: block; right: -0.5px; }
+.right_contents .managementBox .top_toolsBox ul.type li::after{ content: ""; position: absolute; width: 100%; height: 2px; display: none; background-color: #81B6C8; bottom: 0; left: ;}
+.right_contents .managementBox .top_toolsBox ul.type li:hover::after{ display: block; }
+.right_contents .managementBox .top_toolsBox ul.type li.btn_in p a{ color: #81B6C8; }
+.right_contents .managementBox .top_toolsBox ul.type li.btn_in::after{ display: block; }
+.right_contents .managementBox .top_toolsBox ul.type li p span{ position: relative; padding-right: 15px;}
+.right_contents .managementBox .top_toolsBox ul.type li p span::after, .right_contents .managementBox .top_toolsBox ul.type li p span::before{ content: ""; top: 3px; right: 0; position: absolute; width: 0; height: 0; border-style: solid; border-width: 0 4px 4px 4px; border-color: transparent transparent #9B9B9B transparent; line-height: 0px; _border-color: #000000 #000000 #9B9B9B #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+.right_contents .managementBox .top_toolsBox ul.type li p span::before{ top: initial; bottom: 3px; border-width: 4px 4px 0 4px; border-color: #9B9B9B transparent transparent transparent; _border-color: #9B9B9B #000000 #000000 #000000;}
+.right_contents .managementBox .top_toolsBox ul.type li.btn_in p span::after{ border-color: transparent transparent #81B6C8 transparent; _border-color: #000000 #000000 #81B6C8 #000000;}
+
+.right_contents .managementBox .top_toolsBox p.btn_filter{ float: left; font-size: 13px;  line-height: 30px;  padding-left: 40px; text-align: center;}
+.right_contents .managementBox .top_toolsBox p.btn_filter a{ cursor: pointer; display: block; width: 80px; color: #4A4A4A; height: 32px; background-color: #fff; border:1px solid transparent; box-shadow: 0 1px 1px rgba(0,0,0,.1); border-radius: 4px 0 4px 0;}
+.right_contents .managementBox .top_toolsBox p.btn_filter a:hover{ border-color:#81B6C8; }
+.right_contents .managementBox .top_toolsBox p.btn_filter a span{ position: relative; padding-left: 16px; }
+.right_contents .managementBox .top_toolsBox p.btn_filter a span::before{ position: absolute; content: ""; width: 14px; top: 0; left: 0; height: 16px; display: block; background: url(../images/icon_filter.png) center center no-repeat; background-size: contain; }
+.right_contents .managementBox .top_toolsBox p.btn_filter a.btn_in{ color: #81B6C8; }
+.right_contents .managementBox .top_toolsBox p.btn_filter a.btn_in span::before{ background-image: url(../images/icon_filter_in.png);}
+
+.right_contents .calendar_toolsBox{ float: right; width: 100%; width: 300px; margin-left: 15px;}
+.right_contents .calendar_toolsBox .calendar_month{ width: 100%; }
+.right_contents .calendar_toolsBox .calendar_month .calendar_month{}
+.right_contents .calendar_toolsBox .calendar_month .monthBox{ background-color: #707475; width: 100%; height: 285px; border-radius:0 20px 20px 20px ; }
+.right_contents .calendar_toolsBox .calendar_month p.ring_color{ text-align: right; padding: 15px 15px 20px 15px; font-size: 13px; letter-spacing: 8px; color: #000000; }
+.right_contents .calendar_toolsBox .calendar_month p.ring_color span{ display: inline-block;  position: relative; padding-left: 15px;}
+.right_contents .calendar_toolsBox .calendar_month p.ring_color span::before{ content: ""; position: absolute; top: 8px; left: 0; display: block; width: 5px; height: 5px; border-radius: 50%; } 
+.right_contents .calendar_toolsBox .calendar_month p.ring_color span.green::before{ background-color: #84BE98; }
+.right_contents .calendar_toolsBox .calendar_month p.ring_color span.red::before{ background-color: #EC7B86; }
+.right_contents .calendar_toolsBox .calendar_month p.ring_color span.org::before{ background-color: #E5AF57; }
+
+.right_contents .calendar_toolsBox .day_list{ width: 100%; border-radius: 0px 20px 20px 20px; background-color: #fff; border:1px solid #cccccc; overflow:hidden;}
+.right_contents .calendar_toolsBox .day_list ul{ width: 100%; }
+.right_contents .calendar_toolsBox .day_list ul li{ border-bottom: 1px solid #c0dae3; }
+.right_contents .calendar_toolsBox .day_list ul li.top_title{ border-color: #81B6C8; }
+.right_contents .calendar_toolsBox .day_list ul li.top_title h3{ color: #81B6C8; text-align: center; font-size: 14px; letter-spacing: 4px; padding: 15px 0; }
+.right_contents .calendar_toolsBox .day_list ul li .statu{ width: 52px; height: 52px; display: block; float: left; }
+.right_contents .calendar_toolsBox .day_list ul li .statu p{ color: #fff; font-size: 36px; text-align: center; line-height: 52px; }
+.right_contents .calendar_toolsBox .day_list ul li .green{ background-color: #84BE98; }
+.right_contents .calendar_toolsBox .day_list ul li .red{ background-color: #EC7B86; }
+.right_contents .calendar_toolsBox .day_list ul li .org{ background-color: #E5AF57; }
+.right_contents .calendar_toolsBox .day_list ul li p.time{ font-size: 20px; float:left; width: 75px; text-align: center; line-height: 52px;}
+.right_contents .calendar_toolsBox .day_list ul li .info{ float: left; width: 100%; max-width:calc(100% - 137px); padding:8px 5px 0 5px; }
+.right_contents .calendar_toolsBox .day_list ul li .info p{ font-size: 13px; color: #000; }
+.right_contents .calendar_toolsBox .day_list ul li .info p.name{ font-size: 18px }
 
 
 

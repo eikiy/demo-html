@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<title>帳號設定 - 編輯名稱</title>
+<title>招募管理主頁</title>
 <meta name='description' content=""/>
 <meta name='keywords' content=""/>
 <!-- <meta name="MobileOptimized" content="width">
@@ -28,123 +28,339 @@ $(document).ready(function() {
 </head>
 <body>
 
-<header class="headerBox">
+<header class="headerBox for_management_top">
 	<div class="contentsBox clearfix">
 		<a class="logo" href="#"></a>
-		<div class="searchBox">
+		<div class="searchBox search_all">
 			<input type="text" name="" placeholder="搜尋面試人員/現有員工">
 			<a href="#"></a>
+			<!-- <ul class="search_list">
+
+				<li class="clearfix">
+					<div class="avatar male">
+						<img src="images/user_photo_02.png" width="100%">
+					</div>
+					<div class="info clearfix">
+						<p class="name">陳明天</p>
+						<p class="department">人資部部長</p>
+						<p class="job_title">行政管理處/人資部</p>
+					</div>
+					<div class="statu">
+						<p>員</p>
+					</div>
+				</li>
+
+				<li class="clearfix">
+					<div class="avatar male">
+					</div>
+					<div class="info clearfix">
+						<p class="name">陳明天</p>
+						<p class="department">人資部部長</p>
+						<p class="job_title">行政管理處/人資部</p>
+					</div>
+					<div class="statu">
+						<p class="skyblue">招</p>
+					</div>
+				</li>
+
+				<li class="clearfix">
+					<div class="avatar male">
+					</div>
+					<div class="info clearfix">
+						<p class="name">陳明天</p>
+						<p class="department">人資部部長</p>
+						<p class="job_title">行政管理處/人資部</p>
+					</div>
+					<div class="statu">
+						<p class="gray">離</p>
+					</div>
+				</li>
+
+				<li class="clearfix">
+					<div class="avatar male">
+					</div>
+					<div class="info clearfix">
+						<p class="name">陳明天</p>
+						<p class="department">人資部部長</p>
+						<p class="job_title">行政管理處/人資部</p>
+					</div>
+					<div class="statu">
+						<p class="gray">離</p>
+					</div>
+				</li>
+
+			</ul> -->
 		</div>
+		<p class="add_nterviewee"><a href="#">新增面試人員</a></p>
 		<ul class="tools">
-			<li><a class="message" href="#"><span>3</span></a></li>
-			<li><a class="logout" href="#"></a></li>
+			<li><a class="message" href="#"><span>3</span><div class="tooltip">通知</div></a></li>
+			<li><a class="logout" href="#"><div class="tooltip">登出</div></a></li>
 		</ul>
 	</div>
 </header>
 
-<main class="mainBox">
+<main class="mainBox for_management">
 	<div class="contentsBox clearfix">
 		<section class="side_menu">
 			<h1 class="title">明天<br>
 			企業股份有限公司</h1>
 			<ul class="menu">
-				<li><p><a class="icon_01" href="#">招募管理</a></p></li>
+				<li><p><a class="icon_01 btn_in" href="#">招募管理</a></p></li>
 				<li><p><a class="icon_02" href="#">招募紀錄</a></p></li>
 				<li><p><a class="icon_03" href="#">員工資料</a></p></li>
-				<li><p><a class="icon_04 btn_in" href="#">帳號設定</a></p></li>
+				<li><p><a class="icon_04" href="#">帳號設定</a></p></li>
 				<li><p><a class="icon_05" href="#">HR小幫手</a></p></li>
 			</ul>
 		</section>
-		<section class="right_contents">
-			<div class="l_Box">
-				<div class="theBox">
-					<h3>公司LOGO</h3>
-					<div class="infoBox">
-						<a class="logo_done" href="#">
-							<div class="select_file">
-								<p class="icon">選擇檔案</p>
-								<p class="note">建議選擇png檔</p>
+		<section class="right_contents clearfix">
+			<div class="managementBox">
+				<div class="top_toolsBox clearfix">
+					<ul class="type clearfix">
+						<li class="btn_in"><p><a href="#"><span>姓名筆畫</span></a></p></li>
+						<li><p><a href="#"><span>日期</span></a></p></li>
+						<li><p><a href="#"><span>招募進度</span></a></p></li>
+					</ul>
+					<p class="btn_filter"><a class="btn_in" href="#"><span>篩選(3)</span></a></p>
+					<ul class="list_style">
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+				<ul class="user_list">
+					<li class="clearfix">
+						<a class="go_delete" href="#"></a>
+						<div class="user_photo">
+							<div class="avatar">
+								<div class="info">
+									<a class="edit" href="#"></a>
+									<p class="phone">聯絡電話<br>
+									0936.616666</p>
+								</div>
+								<img src="images/user_photo_01.png" width="100%">
 							</div>
-							<img src="images/acer_logo.png" align="logo" width="100%">
-						</a>
-					</div>
-				</div>
-				<div class="theBox">
-					<h3>特質報告</h3>
-					<div class="infoBox">
-						<p class="sub_title">尚可使用點數</p>
-						<p class="money">50</p>
-						<p class="btn">
-							<a class="popup-link" href="#popup-storedValue">儲值紀錄</a>
-							<a class="popup-link" href="#popup-use">使用紀錄</a>
-						</p>
-					</div>
-				</div>
-				<div class="theBox">
-					<h3>帳號設定</h3>
-					<div class="infoBox">
-						<p class="sub_title">帳號名稱：abcde</p>
-						<p class="btn">
-							<a class="popup-link" href="#popup-pw">密碼變更</a>
-						</p>
-					</div>
-				</div>
+							<p class="name">王明天</p>
+						</div>
+						<div class="user_data">
+							<div class="application_department clearfix">
+								<p class="job_title">軟體工程師</p>
+								<p class="department">研發部<span>製造處-研發部</span></p>
+								<p class="supervisor">主管：</p>
+							</div>
+							<ul class="stepBox clearfix">
+								<li class="btn_in"><a class="icon_01"></a></li>
+								<li><a class="icon_02"></a></li>
+								<li><a class="icon_03"></a></li>
+								<li><a class="icon_04"></a></li>
+								<li class="w50"><a class="icon_05"></a></li>
+								<li><a class="icon_06"></a></li>
+							</ul>
+							<div class="remarkBox clearfix">
+								<p>與面試者預約面試時間</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="clearfix">
+						<a class="go_delete" href="#"></a>
+						<div class="user_photo">
+							<div class="avatar male">
+								<div class="info">
+									<a class="edit" href="#"></a>
+									<p class="phone">聯絡電話<br>
+									0936.616666</p>
+								</div>
+							</div>
+							<p class="name">陳日和</p>
+						</div>
+						<div class="user_data">
+							<div class="application_department clearfix">
+								<p class="job_title">軟體工程師</p>
+								<p class="department">研發部<span>製造處-研發部</span></p>
+								<p class="supervisor">主管：</p>
+							</div>
+							<ul class="stepBox clearfix">
+								<li class="over"><a class="icon_01"></a></li>
+								<li class="over"><a class="icon_02"></a></li>
+								<li class="btn_in"><a class="icon_03"></a></li>
+								<li><a class="icon_04"></a></li>
+								<li class="w50"><a class="icon_05"></a></li>
+								<li><a class="icon_06"></a></li>
+							</ul>
+							<div class="remarkBox clearfix">
+								<p>等待面試</p>
+								<p class="day"><span class="green">初</span> 2018/11/01/09:30</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="clearfix">
+						<a class="go_delete" href="#"></a>
+						<div class="user_photo">
+							<div class="avatar female">
+								<div class="info">
+									<a class="edit" href="#"></a>
+									<p class="phone">聯絡電話<br>
+									0936.616666</p>
+								</div>
+							</div>
+							<p class="name">陳天天</p>
+						</div>
+						<div class="user_data">
+							<div class="application_department clearfix">
+								<p class="job_title">軟體工程師</p>
+								<p class="department">研發部<span>製造處-研發部</span></p>
+								<p class="supervisor">主管：</p>
+							</div>
+							<ul class="stepBox clearfix">
+								<li class="over"><a class="icon_01"></a></li>
+								<li class="over"><a class="icon_02"></a></li>
+								<li class="over"><a class="icon_03"></a></li>
+								<li class="btn_in"><a class="icon_04"></a></li>
+								<li class="w50"><a class="icon_05"></a></li>
+								<li><a class="icon_06"></a></li>
+							</ul>
+							<div class="remarkBox clearfix">
+								<p>等待面試官填寫評論</p>
+								<p class="day"><span class="red">複</span> 2018/11/01/09:30</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="clearfix">
+						<a class="go_delete" href="#"></a>
+						<div class="user_photo">
+							<div class="avatar male">
+								<div class="info">
+									<a class="edit" href="#"></a>
+									<p class="phone">聯絡電話<br>
+									0936.616666</p>
+								</div>
+								<img src="images/user_photo_02.png" width="100%">
+							</div>
+							<p class="name">劉雨天</p>
+						</div>
+						<div class="user_data">
+							<div class="application_department clearfix">
+								<p class="job_title">軟體工程師</p>
+								<p class="department">研發部<span>製造處-研發部研發部研發部文字長可能會是這樣</span></p>
+								<p class="supervisor">主管：</p>
+							</div>
+							<ul class="stepBox clearfix">
+								<li class="over"><a class="icon_01"></a></li>
+								<li class="over"><a class="icon_02"></a></li>
+								<li class="over"><a class="icon_03"></a></li>
+								<li class="over"><a class="icon_04"></a></li>
+								<li class="over w50"><a class="icon_05"></a></li>
+								<li class="btn_in"><a class="icon_06"></a></li>
+							</ul>
+							<div class="remarkBox clearfix">
+								<p>與面試者預約面試時間</p>
+								<p class="day"><span class="org">報</span> 2018/11/01/09:30</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="clearfix">
+						<a class="go_delete" href="#"></a>
+						<div class="user_photo">
+							<div class="avatar female">
+								<div class="info">
+									<a class="edit" href="#"></a>
+									<p class="phone">聯絡電話<br>
+									0936.616666</p>
+								</div>
+							</div>
+							<p class="name">陳天天</p>
+						</div>
+						<div class="user_data">
+							<div class="application_department clearfix">
+								<p class="job_title">軟體工程師</p>
+								<p class="department">研發部<span>製造處-研發部</span></p>
+								<p class="supervisor">主管：</p>
+							</div>
+							<ul class="stepBox clearfix">
+								<li class="over"><a class="icon_01"></a></li>
+								<li class="over"><a class="icon_02"></a></li>
+								<li class="over"><a class="icon_03"></a></li>
+								<li class="btn_in"><a class="icon_04"></a></li>
+								<li class="w50"><a class="icon_05"></a></li>
+								<li><a class="icon_06"></a></li>
+							</ul>
+							<div class="remarkBox clearfix">
+								<p>等待面試官填寫評論</p>
+								<p class="day"><span class="red">複</span> 2018/11/01/09:30</p>
+							</div>
+						</div>
+					</li>
+				</ul>
 			</div>
-			<div class="r_Box">
-				<div class="theBox">
-					<h3>組織設定</h3>
-					<div class="infoBox">
-						<div class="stageBox">
-							<h4>第1階</h4>
-							<ul class="item">
-								<li><p><a class="btn_in">明天股份有限公司</a></p></li>
-							</ul>
-							<p class="btn"><a class="add popup-link" href="#popup">新增</a></p>
-						</div>
-						<div class="stageBox">
-							<h4>第2階</h4>
-							<ul class="item">
-								<li><p><a class="btn_in">行政管理處</a><a class="go_edit popup-link" href="#popup-edit"></a></p></li>
-								<li><p><a>製造處</a><a class="go_edit popup-link" href="#popup-edit"></a></p></li>
-								<li><p><a>銷售處</a><a class="go_edit popup-link" href="#popup-edit"></a></p></li>
-								<li><p><a>研發一處</a><a class="go_edit popup-link" href="#popup-edit"></a></p></li>
-								<li><p><a>研發二處</a><a class="go_edit popup-link" href="#popup-edit"></a></p></li>
-								<li><p><a>財務處</a><a class="go_edit popup-link" href="#popup-edit"></a></p></li>
-							</ul>
-							<p class="btn"><a class="add popup-link" href="#popup">新增</a></p>
-						</div>
-						<div class="stageBox">
-							<h4>第3階</h4>
-							<ul class="item">
-								<li><p><a class="btn_in">人資部</a><a class="go_edit popup-link" href="#popup-edit"></a></p></li>
-								<li><p><a>總務部</a><a class="go_edit popup-link" href="#popup-edit"></a></p></li>
-								<li><p><a>資訊部</a><a class="go_edit popup-link" href="#popup-edit"></a></p></li>
-								<li><p><a>廠務部</a><a class="go_edit popup-link" href="#popup-edit"></a></p></li>
-							</ul>
-							<p class="btn"><a class="add popup-link" href="#popup">新增</a></p>
-						</div>
-						<div class="stageBox">
-							<h4>第4階</h4>
-							<ul class="item">
-								<li><p><a>訓練課</a><a class="go_edit popup-link" href="#popup-edit"></a></p></li>
-								<li><p><a class="btn_in">招募課</a><a class="go_edit popup-link" href="#popup-edit"></a></p></li>
-								<li><p><a>薪酬課</a><a class="go_edit popup-link" href="#popup-edit"></a></p></li>
-							</ul>
-							<p class="btn"><a class="add popup-link" href="#popup">新增</a></p>
-						</div>
-						<div class="stageBox">
-							<h4>第5階</h4>
-							<ul class="item">
-								<li><p><a>招募一組</a><a class="go_edit popup-link" href="#popup-edit"></a></p></li>
-								<li><p><a>招募二組</a><a class="go_edit popup-link" href="#popup-edit"></a></p></li>
-							</ul>
-							<p class="btn"><a class="add popup-link" href="#popup">新增</a></p>
-						</div>
+			<div class="calendar_toolsBox">
+				<div class="calendar_month">
+					<div class="monthBox">
+
 					</div>
-					<p class="btn bottom">
-						<a class="edit edit_in" href="account_edit.html">編輯名稱</a>
-						<a class="lock btn_none" href="account_lock.html">刪除解鎖</a>
+					<p class="ring_color">
+						<span class="green">初試</span>
+						<span class="red">複試</span>
+						<span class="org">報到</span>
 					</p>
+
+					<div class="day_list">
+						<ul>
+							<li class="top_title"><h3>2018/11/01  星期四 </h3></li>
+							<li class="clearfix">
+								<div class="statu green"><p>員</p></div>
+								<p class="time">09:30</p>
+								<div class="info">
+									<p class="name">XXX   </p>
+									<p>軟體工程師   研發部</p>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="statu org"><p>報</p></div>
+								<p class="time">09:30</p>
+								<div class="info">
+									<p class="name">XXX   </p>
+									<p>軟體工程師   研發部</p>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="statu red"><p>複</p></div>
+								<p class="time">09:30</p>
+								<div class="info">
+									<p class="name">XXX   </p>
+									<p>軟體工程師   研發部</p>
+								</div>
+							</li>
+						</ul>
+						<ul>
+							<li class="top_title"><h3>2018/11/06  星期二  </h3></li>
+							<li class="clearfix">
+								<div class="statu green"><p>員</p></div>
+								<p class="time">09:30</p>
+								<div class="info">
+									<p class="name">XXX   </p>
+									<p>軟體工程師   研發部</p>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="statu org"><p>報</p></div>
+								<p class="time">09:30</p>
+								<div class="info">
+									<p class="name">XXX   </p>
+									<p>軟體工程師   研發部</p>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="statu org"><p>報<</p></div>
+								<p class="time">09:30</p>
+								<div class="info">
+									<p class="name">XXX   </p>
+									<p>軟體工程師   研發部</p>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -446,40 +662,6 @@ $(document).ready(function() {
             </div>
         </form>
     </div>
-
-    <!-- popup 部門刪除紅色按鈕 - delete-->
-	<div id="popup-delete" class="white-popup popup-w-s mfp-hide">
-        <div class="setBox messageBox">
-            <div class="RedBox">
-                <p class="info">請問確定刪除<span>資訊部</span>嗎？<br>
-                 如確定刪除，隸屬階層也會一並刪除。</p>
-            </div>
-            <p class="btn"><a class="bg_gary" href="#">取消</a><a class="bg_red" href="#">確認刪除</a></p>
-        </div>
-    </div>
-
-    <!-- popup 部門編輯藍色按鈕 - edit-->
-    <div id="popup-edit" class="white-popup popup-w-s mfp-hide">
-        <form class="setBox">
-            <div class="top_title">
-                <h3>編輯部門名稱</h3>
-            </div>
-            <div class="fillinBox">
-                <ul>
-                    <li class="pw_error">
-                        <label class="l_title" for=""><p>隸屬部門</p></label>
-                        <p class="r_info">明天股份有限公司</p>
-                    </li>
-                    <li>
-                        <label class="l_title" for=""><p>部門名稱</p></label>
-                        <input class="r_info" id="" name="" type="text">
-                    </li>
-                </ul>
-                <p class="btn"><a class="popup-link" href="#popup-pw-done">確認</a></p>
-            </div>
-        </form>
-    </div>
-
 </main>
 
 </body>
