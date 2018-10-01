@@ -34,7 +34,7 @@ $(document).ready(function() {
 		<div class="searchBox search_all">
 			<input type="text" name="" placeholder="搜尋面試人員/現有員工">
 			<a href="#"></a>
-			<!-- <ul class="search_list">
+			<ul class="search_list">
 				<li class="clearfix">
 					<div class="avatar male">
 						<img src="images/user_photo_02.png" width="100%">
@@ -87,15 +87,15 @@ $(document).ready(function() {
 						<p class="gray">離</p>
 					</div>
 				</li>
-			</ul> -->
+			</ul>
 		</div>
 		<p class="add_nterviewee"><a class="add popup-link" href="#popup-nterviewee">新增面試人員</a></p>
 		<ul class="tools">
 			<li><a class="message" href="#"><span>3</span><div class="tooltip">通知</div></a>
-				<!-- <div class="message_listBox">
+				<div class="message_listBox">
 					<div class="top_tips"><p><a href="#">全部標示為已讀</a></p></div>
 					<ul>
-						<li class="start"><p>歡迎您開始使用通知功能。</p></li>
+						<li class="start"><p>歡迎您開始使用通知功能。</p></li><!-- 剛開始使用的第一則訊息 -->
 						<li class="new">
 							<a class="info" href="#">
 								<p><span>林和樂</span>已完成個人資料填寫。</p>
@@ -157,7 +157,7 @@ $(document).ready(function() {
 							</a>
 						</li>
 					</ul>
-				</div> -->
+				</div>
 			</li>
 			<li><a class="logout" href="#"><div class="tooltip">登出</div></a></li>
 		</ul>
@@ -167,8 +167,7 @@ $(document).ready(function() {
 <main class="mainBox for_management">
 	<div class="contentsBox clearfix">
 		<section class="side_menu">
-			<h1 class="title">明天<br>
-			企業股份有限公司</h1>
+			<h1 class="title">明天<br>企業股份有限公司</h1>
 			<ul class="menu">
 				<li><p><a class="icon_01 btn_in" href="#">招募管理</a></p></li>
 				<li><p><a class="icon_02" href="#">招募紀錄</a></p></li>
@@ -187,8 +186,8 @@ $(document).ready(function() {
 					</ul>
 					<p class="btn_filter"><a class="btn_in popup-link" href="#popup-btn_filter"><span>篩選(3)</span></a></p>
 					<ul class="list_style">
-						<li><a class="block" href="management_card.html"><div class="tooltip">圖片顯示</div></a></a></li>
-						<li class="btn_in"><a class="list" href="management.html"><div class="tooltip">條列顯示</div></a></a></li>
+						<li class="btn_in"><a class="block" href="management_card.html"><div class="tooltip">圖片顯示</div></a></a></li>
+						<li><a class="list" href="management.html"><div class="tooltip">條列顯示</div></a></a></li>
 					</ul>
 				</div>
 				<ul class="user_list">
@@ -203,7 +202,7 @@ $(document).ready(function() {
 								</div>
 								<img src="images/user_photo_01.png" width="100%">
 							</div>
-							<p class="name">王明天</p>
+							<p class="name">陳日和</p>
 						</div>
 						<div class="user_data">
 							<div class="application_department clearfix">
@@ -212,7 +211,7 @@ $(document).ready(function() {
 								<p class="supervisor">主管：</p>
 							</div>
 							<ul class="stepBox clearfix">
-								<li class="btn_in"><a class="icon_01 popup-link" href="#popup-step-01"></a></li>
+								<li class="btn_in"><a class="icon_01" href="#"></a></li>
 								<li><a class="icon_02 cursor_none"></a></li>
 								<li><a class="icon_03 cursor_none"></a></li>
 								<li><a class="icon_04 cursor_none"></a></li>
@@ -224,141 +223,124 @@ $(document).ready(function() {
 							</div>
 						</div>
 					</li>
+				</ul>
 
-					<li class="clearfix">
-						<a class="go_delete" href="#"></a>
-						<div class="user_photo">
+				<ul class="user_list card_list clearfix">
+					<li class="card_active clearfix">
+						<a class="user_photo">
 							<div class="avatar male">
-								<div class="info">
-									<a class="edit" href="#"></a>
-									<p class="phone">聯絡電話<br>
-									0936.616666</p>
-								</div>
 							</div>
-							<p class="name">陳日和</p>
-						</div>
-						<div class="user_data">
-							<div class="application_department clearfix">
-								<p class="job_title">軟體工程師</p>
-								<p class="department">研發部<span>製造處-研發部</span></p>
-								<p class="supervisor">主管：</p>
-							</div>
-							<ul class="stepBox clearfix">
-								<li class="over"><a class="icon_01"></a></li>
-								<li class="over"><a class="icon_02"></a></li>
-								<li class="btn_in"><a class="icon_03"></a></li>
-								<li><a class="icon_04 cursor_none"></a></li>
-								<li class="w50"><a class="icon_05 cursor_none"></a></li>
-								<li><a class="icon_06 cursor_none"></a></li>
-							</ul>
-							<div class="remarkBox clearfix">
-								<p>等待面試</p>
-								<p class="day"><span class="green">初</span> 2018/11/01/09:30</p>
-							</div>
-						</div>
+							<p class="name">陳日和<br>軟體工程師</p>
+						</a>
 					</li>
-
 					<li class="clearfix">
-						<a class="go_delete" href="#"></a>
-						<div class="user_photo">
-							<div class="avatar female">
-								<div class="info">
-									<a class="edit" href="#"></a>
-									<p class="phone">聯絡電話<br>
-									0936.616666</p>
-								</div>
-							</div>
-							<p class="name">陳天天</p>
-						</div>
-						<div class="user_data">
-							<div class="application_department clearfix">
-								<p class="job_title">軟體工程師</p>
-								<p class="department">研發部<span>製造處-研發部</span></p>
-								<p class="supervisor">主管：</p>
-							</div>
-							<ul class="stepBox clearfix">
-								<li class="over"><a class="icon_01"></a></li>
-								<li class="over"><a class="icon_02"></a></li>
-								<li class="over"><a class="icon_03"></a></li>
-								<li class="btn_in"><a class="icon_04"></a></li>
-								<li class="w50"><a class="icon_05 cursor_none"></a></li>
-								<li><a class="icon_06 cursor_none"></a></li>
-							</ul>
-							<div class="remarkBox clearfix">
-								<p>等待面試官填寫評論</p>
-								<p class="day"><span class="red">複</span> 2018/11/01/09:30</p>
-							</div>
-						</div>
-					</li>
-
-					<li class="clearfix">
-						<a class="go_delete" href="#"></a>
-						<div class="user_photo">
+						<a class="user_photo">
 							<div class="avatar male">
-								<div class="info">
-									<a class="edit" href="#"></a>
-									<p class="phone">聯絡電話<br>
-									0936.616666</p>
-								</div>
-								<img src="images/user_photo_02.png" width="100%">
 							</div>
-							<p class="name">劉雨天</p>
-						</div>
-						<div class="user_data">
-							<div class="application_department clearfix">
-								<p class="job_title">軟體工程師</p>
-								<p class="department">研發部<span>製造處-研發部研發部研發部文字長可能會是這樣</span></p>
-								<p class="supervisor">主管：</p>
-							</div>
-							<ul class="stepBox clearfix">
-								<li class="over"><a class="icon_01"></a></li>
-								<li class="over"><a class="icon_02"></a></li>
-								<li class="over"><a class="icon_03"></a></li>
-								<li class="over"><a class="icon_04"></a></li>
-								<li class="over w50"><a class="icon_05"></a></li>
-								<li class="btn_in"><a class="icon_06"></a></li>
-							</ul>
-							<div class="remarkBox clearfix">
-								<p>與面試者預約面試時間</p>
-								<p class="day"><span class="org">報</span> 2018/11/01/09:30</p>
-							</div>
-						</div>
+							<p class="name">陳天天<br>軟體工程師</p>
+						</a>
 					</li>
-
 					<li class="clearfix">
-						<a class="go_delete" href="#"></a>
-						<div class="user_photo">
-							<div class="avatar female">
-								<div class="info">
-									<a class="edit" href="#"></a>
-									<p class="phone">聯絡電話<br>
-									0936.616666</p>
-								</div>
+						<a class="user_photo">
+							<div class="avatar male">
 							</div>
-							<p class="name">陳天天</p>
-						</div>
-						<div class="user_data">
-							<div class="application_department clearfix">
-								<p class="job_title">軟體工程師</p>
-								<p class="department">研發部<span>製造處-研發部</span></p>
-								<p class="supervisor">主管：</p>
+							<p class="name">劉如如<br>軟體工程師</p>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="user_photo">
+							<div class="avatar male">
 							</div>
-							<ul class="stepBox clearfix">
-								<li class="over"><a class="icon_01"></a></li>
-								<li class="over"><a class="icon_02"></a></li>
-								<li class="over"><a class="icon_03"></a></li>
-								<li class="btn_in"><a class="icon_04"></a></li>
-								<li class="w50"><a class="icon_05 cursor_none"></a></li>
-								<li><a class="icon_06 cursor_none"></a></li>
-							</ul>
-							<div class="remarkBox clearfix">
-								<p>等待面試官填寫評論</p>
-								<p class="day"><span class="red">複</span> 2018/11/01/09:30</p>
+							<p class="name">林木<br>軟體工程師</p>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="user_photo">
+							<div class="avatar male">
 							</div>
-						</div>
+							<p class="name">林林木<br>軟體工程師</p>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="user_photo">
+							<div class="avatar male">
+							</div>
+							<p class="name">陳日和<br>軟體工程師</p>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="user_photo">
+							<div class="avatar male">
+							</div>
+							<p class="name">Lin<br>軟體工程師</p>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="user_photo">
+							<div class="avatar male">
+							</div>
+							<p class="name">陳日和<br>軟體工程師</p>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="user_photo">
+							<div class="avatar male">
+							</div>
+							<p class="name">趙薇<br>軟體工程師</p>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="user_photo">
+							<div class="avatar male">
+							</div>
+							<p class="name">王小明<br>軟體工程師</p>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="user_photo">
+							<div class="avatar male">
+							</div>
+							<p class="name">孫雲<br>軟體工程師</p>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="user_photo">
+							<div class="avatar male">
+							</div>
+							<p class="name">陳日和<br>軟體工程師</p>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="user_photo">
+							<div class="avatar male">
+							</div>
+							<p class="name">CHANG JIE<br>軟體工程師</p>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="user_photo">
+							<div class="avatar male">
+							</div>
+							<p class="name">陳日和<br>軟體工程師</p>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="user_photo">
+							<div class="avatar male">
+							</div>
+							<p class="name">陳日和<br>軟體工程師</p>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="user_photo">
+							<div class="avatar male">
+							</div>
+							<p class="name">陳日和<br>軟體工程師</p>
+						</a>
 					</li>
 				</ul>
 			</div>
+
 			<div class="calendar_toolsBox">
 				<div class="calendar_month">
 					<div class="monthBox">
@@ -838,165 +820,6 @@ $(document).ready(function() {
 	        </div>   
 
             <div class="fillinBox">
-                <p class="btn"><a href="#">確認</a></p>
-            </div>
-        </form>
-    </div>
-
-    <!-- popup-step-01 day-->
-	<div id="popup-step-01" class="white-popup popup-w-s mfp-hide">
-        <form class="setBox">
-            <div class="top_title">
-                <h3>面試排程</h3>
-            </div>
-            <div class="fillinBox time_select">
-                <ul>
-                    <li class="day">
-                        <label class="l_title" for=""><p>面試日期</p></label>
-                        <input class="r_info" id="" name="" type="text" value="2018/11/01">
-                    </li>
-                    <li class="time">
-                        <label class="l_title" for=""><p>面試時間</p></label>
-                        <input class="r_info" id="" name="" type="text" value="13:30">
-                    </li>
-                </ul>
-                <div class="day_selectBpx">
-                	<div class="monthBox">
-						<div class="top_year_month">
-							<p><span>2018年11月</span></p>
-						</div>
-						<div class="dateBox">
-							<table width="100%" border="0" cellpadding="0" cellspacing="0">
-								<tbody><tr>
-									<th><p>日</p></th>
-									<th><p>一</p></th>
-									<th><p>二</p></th>
-									<th><p>三</p></th>	
-									<th><p>四</p></th>
-									<th><p>五</p></th>
-									<th><p>六</p></th>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td><p class="btn_in">1</p>
-									</td>
-									<td><p>2</p></td>
-									<td><p>3</p></td>
-								</tr>
-								<tr>
-									<td><p>4</p></td>
-									<td><p>5</p></td>
-									<td><p>6</p>
-									</td>
-									<td><p>7</p></td>
-									<td><p>8</p></td>
-									<td><p>9</p></td>
-									<td><p>10</p></td>
-								</tr>
-								<tr>
-									<td><p>11</p></td>
-									<td><p>12</p></td>
-									<td><p>13</p></td>
-									<td><p>14</p></td>
-									<td><p>15</p></td>
-									<td><p>16</p></td>
-									<td><p>17</p></td>
-								</tr>
-								<tr>
-									<td><p>18</p></td>
-									<td><p>19</p></td>
-									<td><p>20</p></td>
-									<td><p>21</p></td>
-									<td><p>22</p></td>
-									<td><p>23</p></td>
-									<td><p>24</p></td>
-								</tr>
-								<tr>
-									<td><p>25</p></td>
-									<td><p>26</p></td>
-									<td><p>27</p></td>
-									<td><p>28</p></td>
-									<td><p>29</p></td>
-									<td><p>30</p></td>
-									<td></td>
-								</tr>
-							</tbody></table>
-						</div>
-					</div>
-                </div>
-                <p class="btn"><a class="popup-link" href="#popup-step-02">確認</a></p>
-            </div>
-        </form>
-    </div>
-
-    <!-- popup-step-01 time-->
-	<div id="popup-step-02" class="white-popup popup-w-s mfp-hide">
-        <form class="setBox">
-            <div class="top_title">
-                <h3>面試排程</h3>
-            </div>
-            <div class="fillinBox time_select">
-                <ul>
-                    <li class="day">
-                        <label class="l_title" for=""><p>面試日期</p></label>
-                        <input class="r_info" id="" name="" type="text" value="2018/11/01">
-                    </li>
-                    <li class="time">
-                        <label class="l_title" for=""><p>面試時間</p></label>
-                        <input class="r_info" id="" name="" type="text" value="13:30">
-                    </li>
-                </ul>
-                <div class="time_selectBpx clearfix">
-                	<div class="the_time">
-                		<p>點</p>
-                		<ul>
-                			<li><p><a href="">1</a></p></li>
-                			<li><p><a href="">2</a></p></li>
-                			<li><p><a href="">3</a></p></li>
-                			<li><p><a href="">4</a></p></li>
-                			<li><p><a href="">5</a></p></li>
-                			<li><p><a href="">6</a></p></li>
-                			<li><p><a class="btn_in" href="">7</a></p></li>
-                			<li><p><a href="">8</a></p></li>
-                			<li><p><a href="">9</a></p></li>
-                			<li><p><a href="">10</a></p></li>
-                			<li><p><a href="">11</a></p></li>
-                			<li><p><a href="">12</a></p></li>
-                			<li><p><a href="">13</a></p></li>
-                			<li><p><a href="">14</a></p></li>
-                			<li><p><a href="">15</a></p></li>
-                			<li><p><a href="">16</a></p></li>
-                			<li><p><a href="">17</a></p></li>
-                			<li><p><a href="">18</a></p></li>
-                			<li><p><a href="">19</a></p></li>
-                			<li><p><a href="">20</a></p></li>
-                			<li><p><a href="">21</a></p></li>
-                			<li><p><a href="">22</a></p></li>
-                			<li><p><a href="">23</a></p></li>
-                			<li><p><a href="">24</a></p></li>
-                		</ul>
-                	</div>
-                	<div class="the_time">
-                		<p>分</p>
-                		<ul>
-                			<li><p><a href="">00</a></p></li>
-                			<li><p><a href="">05</a></p></li>
-                			<li><p><a class="btn_in" href="">10</a></p></li>
-                			<li><p><a href="">15</a></p></li>
-                			<li><p><a href="">20</a></p></li>
-                			<li><p><a href="">25</a></p></li>
-                			<li><p><a href="">30</a></p></li>
-                			<li><p><a href="">35</a></p></li>
-                			<li><p><a href="">40</a></p></li>
-                			<li><p><a href="">45</a></p></li>
-                			<li><p><a href="">50</a></p></li>
-                			<li><p><a href="">55</a></p></li>
-                		</ul>
-                	</div>
-                </div>
                 <p class="btn"><a href="#">確認</a></p>
             </div>
         </form>
