@@ -34,8 +34,7 @@ $(document).ready(function() {
 		<div class="searchBox search_all">
 			<input type="text" name="" placeholder="搜尋面試人員/現有員工">
 			<a href="#"></a>
-			<!-- <ul class="search_list">
-
+			<ul class="search_list">
 				<li class="clearfix">
 					<div class="avatar male">
 						<img src="images/user_photo_02.png" width="100%">
@@ -88,12 +87,78 @@ $(document).ready(function() {
 						<p class="gray">離</p>
 					</div>
 				</li>
-
-			</ul> -->
+			</ul>
 		</div>
-		<p class="add_nterviewee"><a href="#">新增面試人員</a></p>
+		<p class="add_nterviewee"><a class="add popup-link" href="#popup-nterviewee">新增面試人員</a></p>
 		<ul class="tools">
-			<li><a class="message" href="#"><span>3</span><div class="tooltip">通知</div></a></li>
+			<li><a class="message" href="#"><span>3</span><div class="tooltip">通知</div></a>
+				<div class="message_listBox">
+					<div class="top_tips"><p><a href="#">全部標示為已讀</a></p></div>
+					<ul>
+						<li class="start"><p>歡迎您開始使用通知功能。</p></li><!-- 剛開始使用的第一則訊息 -->
+						<li class="new">
+							<a class="info" href="#">
+								<p><span>林和樂</span>已完成個人資料填寫。</p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li class="new">
+							<a class="info" href="#">
+								<p><span>陳日和</span>已完成個人資料填寫。</p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li class="new">
+							<a class="info icon_review" href="#">
+								<p><span>陳天天</span>的面試評論已全部完成。</p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info" href="#">
+								<p><span>柯學</span>已完成個人資料填寫。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info" href="#">
+								<p><span>劉如如</span>已完成個人資料填寫。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info" href="#">
+								<p><span>戴以樂</span>已完成個人資料填寫。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info icon_review" href="#">
+								<p><span>林木</span>的面試評論已全部完成。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info" href="#">
+								<p><span>劉如如</span>已完成個人資料填寫。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info" href="#">
+								<p><span>戴以樂</span>已完成個人資料填寫。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info icon_review" href="#">
+								<p><span>林木</span>的面試評論已全部完成。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
 			<li><a class="logout" href="#"><div class="tooltip">登出</div></a></li>
 		</ul>
 	</div>
@@ -120,10 +185,10 @@ $(document).ready(function() {
 						<li><p><a href="#"><span>日期</span></a></p></li>
 						<li><p><a href="#"><span>招募進度</span></a></p></li>
 					</ul>
-					<p class="btn_filter"><a class="btn_in" href="#"><span>篩選(3)</span></a></p>
+					<p class="btn_filter"><a class="btn_in popup-link" href="#popup-btn_filter"><span>篩選(3)</span></a></p>
 					<ul class="list_style">
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
+						<li><a class="block" href="#"><div class="tooltip">圖片顯示</div></a></a></li>
+						<li class="btn_in"><a class="list" href="#"><div class="tooltip">條列顯示</div></a></a></li>
 					</ul>
 				</div>
 				<ul class="user_list">
@@ -297,7 +362,78 @@ $(document).ready(function() {
 			<div class="calendar_toolsBox">
 				<div class="calendar_month">
 					<div class="monthBox">
-
+						<div class="top_year_month">
+							<p><span>2018年11月</span></p>
+						</div>
+						<div class="dateBox">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<th><p>日</p></th>
+									<th><p>一</p></th>
+									<th><p>二</p></th>
+									<th><p>三</p></th>	
+									<th><p>四</p></th>
+									<th><p>五</p></th>
+									<th><p>六</p></th>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><p class="btn_in">1</p>
+										<p class="ring_color">
+											<span class="green"></span>
+											<span class="red"></span>
+											<span class="org"></span>
+										</p>
+									</td>
+									<td><p>2</p></td>
+									<td><p>3</p></td>
+								</tr>
+								<tr>
+									<td><p>4</p></td>
+									<td><p>5</p></td>
+									<td><p>6</p>
+										<p class="ring_color">
+											<span class="red"></span>
+											<span class="org"></span>
+										</p>
+									</td>
+									<td><p>7</p></td>
+									<td><p>8</p></td>
+									<td><p>9</p></td>
+									<td><p>10</p></td>
+								</tr>
+								<tr>
+									<td><p>11</p></td>
+									<td><p>12</p></td>
+									<td><p>13</p></td>
+									<td><p>14</p></td>
+									<td><p>15</p></td>
+									<td><p>16</p></td>
+									<td><p>17</p></td>
+								</tr>
+								<tr>
+									<td><p>18</p></td>
+									<td><p>19</p></td>
+									<td><p>20</p></td>
+									<td><p>21</p></td>
+									<td><p>22</p></td>
+									<td><p>23</p></td>
+									<td><p>24</p></td>
+								</tr>
+								<tr>
+									<td><p>25</p></td>
+									<td><p>26</p></td>
+									<td><p>27</p></td>
+									<td><p>28</p></td>
+									<td><p>29</p></td>
+									<td><p>30</p></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
 					</div>
 					<p class="ring_color">
 						<span class="green">初試</span>
@@ -366,302 +502,155 @@ $(document).ready(function() {
 		</section>
 	</div>
 
-	<!-- popup 新增部門 -->
-	<div id="popup" class="white-popup popup-w-s mfp-hide">
-        <form class="setBox">
+	<!-- popup 新增面試人員 -->
+	<div id="popup-nterviewee" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop">
             <div class="top_title">
-                <h3>新增部門</h3>
+                <h3>新增面試人員</h3>
             </div>
             <div class="fillinBox">
                 <ul>
-                    <li>
-                        <label class="l_title" for=""><p>隸屬部門</p></label>
-                        <p class="r_info">明天股份有限公司</p>
+                    <li class="nterviewee_name">
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <div class="MorF">
+                        	<p>
+                        		<a class="M M_in" href="#">先生</a>
+                        		<a class="F" href="#">小姐</a>
+                        	</p>
+                        </div>
                     </li>
                     <li>
-                        <label class="l_title" for=""><p>部門名稱</p></label>
+                        <label class="l_title" for=""><p>聯絡電話</p></label>
                         <input class="r_info" id="" name="" type="text">
+                        <p class="btn"><a class="add" href="#">新增</a></p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>E-Mail</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試部門</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <p class="btn"><a class="select" href="#">選擇</a></p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>直屬主管</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                </ul>
+                <p class="btn"><a class="popup-link" href="#popup-nterviewee-01">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 新增面試人員 01 -->
+	<div id="popup-nterviewee-01" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3>新增面試人員</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                    <li class="nterviewee_name">
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <input class="r_info" id="" name="" type="text" value="王明天">
+                        <div class="MorF">
+                        	<p>
+                        		<a class="M M_in" href="#">先生</a>
+                        		<a class="F" href="#">小姐</a>
+                        	</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>聯絡電話</p></label>
+                        <div class="more">
+                        	<div class="single">
+                        		<input class="r_info" id="" name="" type="text" value="0936-666444">
+	                        	<p class="btn"><a class="delete" href="#">刪除</a></p>
+	                    	</div>
+	                    	<div class="single">
+	                        	<input class="r_info" id="" name="" type="text">
+	                        	<p class="btn"><a class="add" href="#">新增</a></p>
+	                    	</div>
+	                    </div>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>E-Mail</p></label>
+                        <input class="r_info" id="" name="" type="text" value="frog@g">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <input class="r_info" id="" name="" type="text" value="軟體工程師">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試部門</p></label>
+                        <div class="more"><!-- 多個的版行就會是這樣 -->
+                        	<div class="single">
+                        		<p class="r_info">行政管理處 人資部 招募課</p>
+                        		<p class="btn"><a class="select select_active" href="#">選擇</a></p>
+                        	</div>
+                        	<div class="single">
+                        		<p class="r_info">招募一組</p>
+                        	</div>
+                    	</div>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>直屬主管</p></label>
+                        <!-- <input class="r_info" id="" name="" type="text" value="留有針"> -->
+                        <p class="r_info">留有針</p>
                     </li>
                 </ul>
                 <p class="btn"><a href="#">確認</a></p>
             </div>
+
+	        <div class="the_department_list">	
+	        	<h4>部門選擇<button title="Close (Esc)" type="button" class="subBox-close">×</button></h4>
+	        	<ul>
+	        		<li>
+	        			<p class="b_title">第1階</p>
+	        			<p class="type"><a class="btn_in" href="#">明天股份有限公司</a></p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第2階</p>
+	        			<p class="type"><a class="btn_in" href="#">行政管理處</a>
+	        				<a href="#">製造處</a>
+	        				<a href="#">銷售處</a>
+	        				<a href="#">研發一處</a>
+	        				<a href="#">研發二處</a>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第3階</p>
+	        			<p class="type"><a class="btn_in" href="#">人資部</a>
+	        				<a href="#">總務部</a>
+	        				<a href="#">資訊部</a>
+	        				<a href="#">廠務部</a>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第4階</p>
+	        			<p class="type"><a href="#">訓練課</a>
+	        				<a class="btn_in" href="#">招募課</a>
+	        				<a href="#">薪酬課</a>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第5階</p>
+	        			<p class="type"><a href="#">招募一組</a>
+	        				<a href="#">招募二組</a>
+	        			</p>
+	        		</li>
+	        	</ul>
+	        </div>   
         </form>
     </div>
 
-    <!-- popup 儲值紀錄 -->
-	<div id="popup-storedValue" class="white-popup popup-w-s mfp-hide">
-        <form class="setBox">
-            <div class="top_title">
-                <h3>儲值紀錄</h3>
-            </div>
-            <div class="fillinBox storedValueBox">
-            	<ul class="top_points">
-                    <li>
-                        <p class="p_info">尚可使用點數</p>
-                        <p class="p_info nb">50</p>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <p class="p_info">購買日期</p>
-                        <p class="p_info">購買金額</p>
-                        <p class="p_info">使用次數變更</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/11/01</p>
-                        <p class="p_info">$2000</p>
-                        <p class="p_info">+12</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/08/02</p>
-                        <p class="p_info">$8000</p>
-                        <p class="p_info">+10</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/07/14</p>
-                        <p class="p_info">$10000</p>
-                        <p class="p_info">+12</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/06/09</p>
-                        <p class="p_info">$12000</p>
-                        <p class="p_info">+12</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/05/21</p>
-                        <p class="p_info">$120000</p>
-                        <p class="p_info">+200</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/03/01</p>
-                        <p class="p_info">$12000</p>
-                        <p class="p_info">+12</p>
-                    </li>
-                </ul>
-                <p class="btn page_nb">
-                	<a class="btn_in" href="#">1</a>
-                	<a href="#">2</a>
-                	<a href="#">3</a>
-                </p>
-            </div>
-        </form>
-    </div>
 
-    <!-- popup 使用紀錄 -->
-	<div id="popup-use" class="white-popup popup-M mfp-hide">
-        <form class="setBox">
-            <div class="top_title">
-                <h3>使用紀錄</h3>
-            </div>
-            <div class="fillinBox storedValueBox">
-                <div class="bothBox">
-                	<ul>
-	                    <li>
-	                        <p class="p_info">使用日期</p>
-	                        <p class="p_info">使用時間</p>
-	                        <p class="p_info">使用帳號</p>
-	                        <p class="p_info">報告名稱</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/11/01</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/08/02</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/07/14</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/06/09</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/05/21</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/03/01</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/06/09</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/05/21</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/03/01</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                </ul>
-	                <ul>
-	                    <li>
-	                        <p class="p_info">使用日期</p>
-	                        <p class="p_info">使用時間</p>
-	                        <p class="p_info">使用帳號</p>
-	                        <p class="p_info">報告名稱</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/11/01</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/08/02</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/07/14</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/06/09</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/05/21</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/03/01</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/06/09</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/05/21</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/03/01</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                </ul>
-	            </div>
-                <p class="btn page_nb">
-                	<a href="#">1</a>
-                	<a class="btn_in" href="#">2</a>
-                	<a href="#">3</a>
-                	<a href="#">4</a>
-                	<a href="#">5</a>
-                	<a href="#">6</a>
-                </p>
-            </div>
-        </form>
-    </div>
-
-    <!-- popup 密碼變更 -->
-	<div id="popup-pw" class="white-popup popup-w-s mfp-hide">
-        <form class="setBox">
-            <div class="top_title">
-                <h3>密碼變更</h3>
-            </div>
-            <div class="fillinBox pw-w">
-                <ul>
-                    <li>
-                        <label class="l_title" for=""><p>現有密碼</p></label>
-                        <input class="r_info" id="" name="" type="text" value="***">
-                    </li>
-                    <li>
-                        <label class="l_title" for=""><p>變更密碼</p></label>
-                        <input class="r_info" id="" name="" type="text" value="***">
-                    </li>
-                    <li>
-                        <label class="l_title" for=""><p>重新輸入變更密碼</p></label>
-                        <input class="r_info" id="" name="" type="text">
-                    </li>
-                </ul>
-                <p class="btn"><a class="popup-link" href="#popup-pw-error">確認</a></p>
-            </div>
-        </form>
-    </div>
-
-    <!-- popup 密碼變更 - 發生錯誤 -->
-	<div id="popup-pw-error" class="white-popup popup-w-s mfp-hide">
-        <form class="setBox">
-            <div class="top_title">
-                <h3>密碼變更</h3>
-            </div>
-            <div class="fillinBox pw-w">
-                <ul>
-                    <li class="pw_error">
-                        <label class="l_title" for=""><p>現有密碼</p></label>
-                        <input class="r_info" id="" name="" type="text" value="***">
-                        <p class="the_reminder">密碼錯誤</p>
-                    </li>
-                    <li>
-                        <label class="l_title" for=""><p>變更密碼</p></label>
-                        <input class="r_info" id="" name="" type="text" value="******">
-                    </li>
-                    <li class="pw_error">
-                        <label class="l_title" for=""><p>重新輸入變更密碼</p></label>
-                        <input class="r_info" id="" name="" type="text" value="******">
-                        <p class="the_reminder">密碼不符</p>
-                    </li>
-                </ul>
-                <p class="btn"><a class="popup-link" href="#popup-pw-done">確認</a></p>
-            </div>
-        </form>
-    </div>
-
-    <!-- popup 密碼變更 - 完成-->
-	<div id="popup-pw-done" class="white-popup popup-w-s mfp-hide">
-        <form class="setBox">
-            <div class="top_title">
-                <h3>密碼變更</h3>
-            </div>
-            <div class="fillinBox pw-w">
-                <ul>
-                    <li class="pw_done">
-                        <p>密碼變更成功!</p>
-                    </li>
-                </ul>
-                <p class="btn"><a href="#">確認</a></p>
-            </div>
-        </form>
-    </div>
 </main>
 
 </body>
