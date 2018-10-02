@@ -530,11 +530,15 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 
 /*popup upload Photo*/
 
-.setBox .uploadPhotoBox{ padding:40px 10px 40px 25px; text-align: center; }
-.setBox .uploadPhotoBox .select_file{ width: 100px; height: 100px; display: block; position: relative; border:dashed 1px #81B6C8; background-color: #D1E0E5; margin: 0 auto; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
+.setBox .uploadPhotoBox{ padding:40px 10px 40px 25px; text-align: center; position: relative;}
+.setBox .uploadPhotoBox .select_file{ width: 100px; height: 100px; display: block; border:dashed 1px #81B6C8; background-color: #D1E0E5; margin: 0 auto; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
 .setBox .uploadPhotoBox .select_file p.icon{ color: #81B6C8; position: relative; padding-top: 50px;}
 .setBox .uploadPhotoBox .select_file p.icon::before{ content: ""; position: absolute;  top: 0; left:calc(50% - 25px);  width: 50px; height: 40px; display: block; background: url(../images/icon_select_file.png) center center no-repeat; background-size: contain; } 
 .setBox .uploadPhotoBox .select_file:hover{border-color: #fff;}
+
+.setBox .uploadPhotoBox input.file{  position: absolute;  width: 100px; height: 100px; display: block; color: transparent; z-index: 10; }
+.setBox .uploadPhotoBox .select_file .file-img{ position: absolute; width: 100px; height: 100px; display: block; z-index: 5; }
+
 .setBox .photo_info{ min-height: 174px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 
 /*popup upload Photo**/

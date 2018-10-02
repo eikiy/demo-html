@@ -8,6 +8,11 @@
 <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 
+<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
+
 <!-- Magnific Popup core CSS file -->
 <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
 <!-- Magnific Popup core JS file -->
@@ -268,8 +273,10 @@ $(document).ready(function() {
                 <ul>
                 	<li>
                 		<div class="uploadPhotoBox">
-							<a class="select_file" href="#">
+							<a class="select_file">
 								<p class="icon">選擇檔案</p>
+								<input class="file" type='file' onchange="readURL(this);" />
+								<img class="file-img" id="blah" src="images/user_photo_02.png" alt="images/user_photo_02.png" width="100%" />
 							</a>
 						</div>
 						<div class="photo_info"><p>1.圖檔格式限jpg格式<br>
