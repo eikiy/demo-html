@@ -83,9 +83,9 @@ a:hover .tooltip{ opacity: 1; }
 .headerBox ul.tools li .message_listBox ul li.new { background-color: #D1E0E5; }
 .headerBox ul.tools li .message_listBox ul li.new .info p.day{ color: #fff;}
 
-.headerBox p.add_nterviewee{ float: left; margin-top: -7px; text-align: right; width: 100%; max-width: 306px;} 
-.headerBox p.add_nterviewee a{ color: #558C9E; background: url(../images/btn_add_nterviewee.png) 5px center no-repeat #fff; background-size: contain; height: 38px; min-width: 162px;padding: 0 15px 0 40px; line-height: 32px; border:2.5px solid #558C9E; display: inline-block; border-radius:10px 10px 0 10px;}
-.headerBox p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-color: #D1E0E5; }
+p.add_nterviewee{ float: left; margin-top: -7px; text-align: right; width: 100%; max-width: 306px;} 
+p.add_nterviewee a{ color: #558C9E; background: url(../images/btn_add_nterviewee.png) 5px center no-repeat #fff; background-size: contain; height: 38px; min-width: 162px;padding: 0 15px 0 40px; line-height: 32px; border:2.5px solid #558C9E; display: inline-block; border-radius:10px 10px 0 10px;}
+p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-color: #D1E0E5; }
 
 .headerBox ul.message_listBox{ position: absolute; top: 30px; right: 0; width: 215px; height: 253px; overflow-y: auto;  }
 
@@ -204,23 +204,46 @@ a:hover .tooltip{ opacity: 1; }
 .setBox .fillinBox ul li .r_info a{ color: #81B6C8; }
 .setBox .fillinBox ul li .r_info a:hover{ text-decoration: underline; }
 .setBox .fillinBox ul li .r_info{ font-size: 14px; padding: 5px 12px; line-height: 36px; background-color: transparent; border: none;}
-.setBox .fillinBox ul li .p_long{ max-width: 200px; height: 46px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 32px; height: 46px * 1; overflow:hidden;}
+.setBox .fillinBox ul li .p_long{ max-width: 200px; height: 46px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 35px; height: 46px * 1; overflow:hidden;}
+.setBox .fillinBox ul li.sub_title{ text-align: center; line-height: 46px; }
+.setBox .fillinBox ul li.sub_title p{ width: 100%; }
+.setBox .fillinBox ul li.sub_title p.not_yet{padding: 15px 0;}
+.setBox .fillinBox ul li.sub_title p.text_ing{ width: 70px; margin-left: 120px; position: relative; height: 80px; font-size: 18px; text-align: center; display: block; background: url(../images/icon_text_clock.png) center left no-repeat; background-size: contain; line-height: 85px; }
+.setBox .fillinBox ul li.sub_title p.text_ing span{ font-size: 18px; color: #fff; width: 88px; height: 41px; background:url(../images/icon_text_dialog.png) center center no-repeat; background-size: contain;  display: block; position: absolute; top: 20px; left: 70px; line-height: 41px; text-align: center; padding-left: 10px; }
+.setBox .fillinBox ul li.sub_title p.btn{ width: initial; top: 18px;}
+.setBox .fillinBox ul li.sub_title p.no_top{top: 0;}
 
 .setBox .fillinBox ul li input.r_info{ border-bottom: 2px solid transparent }
-.setBox .fillinBox ul li input[type=text]:focus, .setBox .fillinBox ul li textarea:focus { border-color:#81B6C8;}
+.setBox .fillinBox ul li input[type=text]:hover, .setBox .fillinBox ul li textarea:hover, .setBox .fillinBox ul li input[type=text]:focus, .setBox .fillinBox ul li textarea:focus { border-color:#81B6C8;}
 .setBox .fillinBox ul li.pw_error{ position: relative; }
 .setBox .fillinBox ul li.pw_error input{ border-color:#C87D86 ; }
 .setBox .fillinBox ul li.pw_done{ text-align: center; min-height: 140px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .setBox .fillinBox ul li.pw_done p{ font-size: 18px; letter-spacing: 8px; }
 .setBox .fillinBox p.the_reminder{ position: absolute; top: 15px; right: 15px; color: #C87D86; }
 
+
+.setBox .jobBox{ margin-top: 10px; }
+.setBox .jobBox table.test{ width: 100%; text-align: center; vertical-align: middle; }
+.setBox .jobBox table.test tr th, .setBox .jobBox table.test tr td{ padding: 10px 5px; height: 40px;/* display: block;*/  border-left: 1px solid rgba(155,155,155,0.5);}
+.setBox .jobBox table.test tr td{ border-top: 1px solid rgba(155,155,155,0.5); }
+.setBox .jobBox table.test tr th:first-child, .setBox .jobBox table.test tr td:first-child{ border-left: none; }
+.setBox .jobBox table.test tr td.both{ display: -webkit-flex; display: flex;}
+.setBox .jobBox table.test tr td.both p{ -webkit-flex: 1; flex: 1; color: #9B9B9B;}
+.setBox .jobBox table.test tr td.done p{ color: #81B6C8; }
+.setBox .jobBox p.btn a.cursor_none{ -webkit-filter: grayscale(1); opacity: .5; cursor: not-allowed;}
+.setBox .jobBox p.btn a.cursor_none:hover{ border-color: #C87D86; color: #81B6C8;}
+
+
 .setBox .pw-w ul li .l_title{ max-width: initial; min-width: 150px;}
 
-.setBox p.btn{font-size: 18px; text-align: right; line-height: 36px; padding: 10px 0;}
+.setBox p.btn{font-size: 18px; text-align: right; line-height: 36px; padding: 15px 0;}
 .setBox p.btn a{ min-width: 100px; margin-left:10px; padding: 5px; letter-spacing: 5px; border:1px solid transparent; text-align: center;  display: inline-block; color: #fff; background-color: #81B6C8; border-radius:10px 0 10px 10px;}
 .setBox p.btn a:hover{ border-color: #fff;}
 .setBox p.btn a.bg_red{ background-color: #C87D86; letter-spacing: 0; }
 .setBox p.btn a.bg_gary{ background-color: #9B9B9B; }
+.setBox p.btn a.bg_skyblue{ background-color: #81B6C8; }
+.setBox p.btn a.bg_lightblue{ float: left; margin-left: 0;color: #81B6C8; background-color: #D1E0E5; border:2px solid #81B6C8;}
+.setBox p.btn a.bg_lightblue:hover{ border-color: #fff; }
 
 .setBox .storedValueBox ul li p.p_info{ -webkit-flex: 1; flex: 1; text-align: center; padding: 10px 12px; line-height: 24px; border-right: 1px solid rgba(155,155,155,0.5);} 
 .setBox .storedValueBox ul li p.p_info:last-child{ border: none; }
@@ -249,8 +272,8 @@ a:hover .tooltip{ opacity: 1; }
 .setBox .time_select ul li input.r_info:hover{ box-shadow: inset 0 1px 3px rgba(0,0,0,.3); border-color: #979797;}
 .setBox .time_select ul li::after{ cursor: pointer; content: ""; top: 12px; right: 26px; position: absolute; width: 26px; height: 22px; display: block; background-repeat:no-repeat; background-position: center center; background-size: contain;  }
 .setBox .time_select ul li:hover::after{ opacity: .5 ;}
-.setBox .time_select ul li.day::after{ background-image: url(../images/icon_time_select_01.png);}
-.setBox .time_select ul li.time::after{ background-image: url(../images/icon_time_select_02.png);}
+.setBox ul li.day::after{ background-image: url(../images/icon_time_select_01.png);}
+.setBox ul li.time::after{ background-image: url(../images/icon_time_select_02.png);}
 .setBox .time_select ul li .l_title{ border: none; max-width: 90px;}
 
 .setBox .time_select .day_selectBpx{ position: absolute; width: 300px; top: 10px; right: -310px; z-index: 100;}
@@ -272,15 +295,65 @@ a:hover .tooltip{ opacity: 1; }
 .setBox .time_select .time_selectBpx .the_time ul li p a{  cursor: pointer; display: block; text-align: center; color: #9B9B9B; }
 .setBox .time_select .time_selectBpx .the_time ul li p a.btn_in{background-color: #81B6C8; color: #fff;}
 
+.setBox .for_admit ul li .l_title{ border-right: 1px solid rgba(155,155,155,0.5); max-width: 110px;}
+.setBox .for_admit ul li input.r_info{ margin: 8px;}
+
+.setBox p.add_nterviewee{ float: none; position: absolute; top: -47px; right: 0;}
+.setBox p.add_nterviewee a{ height: 46px; line-height: 40px; background: url(../images/btn_add_boss.png) 13px center no-repeat #fff; background-size: contain; }
+
+.setBox .fillinBox ul li.first_test{ display: block; padding:5px 15px;} 
+.setBox .first_test .lBox{ float: left; padding-top:15px;  }
+.setBox .first_test .lBox p{ color: #9B9B9B; }
+.setBox .first_test .lBox p span{ color: #4A4A4A; }
+.setBox .first_test .lBox p.day{  margin-top: 5px; color: #4A4A4A; }
+.setBox .first_test .lBox p.day span{ width: 20px; height: 20px; text-align: center; line-height: 20px; color: #fff; margin-right: 5px; padding: 2px; }
+.setBox .first_test .lBox p.day span.green{ background-color: #84BE98; }
+.setBox .first_test .lBox p.day span.red{ background-color: #EC7B86;}
+.setBox .first_test .lBox p.day span.org{ background-color: #E5AF57;}
+
+.setBox .first_test .rBox{ float: right; width: 150px; text-align: right; }
+.setBox .first_test .rBox p{ display: inline-block; text-align: center; font-size: 10px; color:#9B9B9B;-webkit-transform: scale(0.8); margin: 0 -4px; }
+.setBox .first_test .rBox p span{ width: 50px; height: 50px; display: block; background-color: #D8D8D8; color: #4A4A4A; font-size: 18px; line-height: 50px; }
+.setBox .first_test .rBox p:last-child span{width: 75px;}
+.setBox p.review_comment{width: 100%; padding-top: 10px; text-align: right; }
+.setBox p.review_comment a{ text-align: center; min-width: 162px; border-radius: 5px 0 5px 5px; border:1px solid #81B6C8; display: inline-block; height: 30px; line-height: 29px; background-color: #D1E0E5; color: #81B6C8; }
+.setBox p.review_comment a:hover{ background-color: #C2D6DD;}
+.setBox p.review_comment a.cursor_none{ background-color:#fff; border-color: #fff; color: #D8D8D8; -webkit-filter: grayscale(1); opacity: 1; cursor: not-allowed;}
+
+.add_bossBox{ position:absolute; top: -53px; right: -288px; width: 275px; background-color: #558C9E; border-radius: 0px 5px 5px 5px; border:3px solid #558C9E;}
+.add_bossBox h4{ color: #fff; font-size: 14px; padding: 0 10px; line-height: 30px; position: relative; }
+.add_bossBox h4 button{ height: 24px; cursor: pointer; line-height: 24px; position: absolute; top: 0; right: 0; background-color: transparent; color: #fff; font-size: 1rem; }
+.add_bossBox h4 button:hover{ color: #81B6C8; }
+.add_bossBox .boss_name{background-color: #fff; position: relative;}
+.add_bossBox .boss_name .l_title{ float: left; text-align: center; line-height: 47px; width: 93px; border-right: 1px solid rgba(155,155,155,0.5);}
+.add_bossBox .boss_name .r_info{ float: left; width: calc(100% - 93px); line-height: 45px; height: 47px; padding: 0 10px;  border-bottom: 2px solid transparent;}
+.add_bossBox .boss_name .r_info:hover, .add_bossBox .boss_name .r_info:focus{ border-color:#81B6C8;}
+.add_bossBox p.btn{ position: absolute; bottom: -35px; right: 0; font-size: 12px; line-height: 24px;  padding: 0;}
+.add_bossBox p.btn a{ min-width: 54px; padding: 0 5px; border-radius: 3px 0 3px 3px; letter-spacing: 0;}
+
 .messageBox .RedBox{ width: 100%; background-color:#EBEBEB; padding:30px; border: 3px solid #C87D86; border-radius: 10px 0 10px 10px; box-shadow: 0px 0px 5px rgba(155,155,155,0.2); overflow: hidden; }
 .messageBox .RedBox p.info{line-height: 24px;}
 .messageBox .RedBox p.info span{color: #81B6C8;}
-.messageBox .border_blue{ border-color: #81B6C8; }
-
+.messageBox .border_blue{ border-color: #81B6C8;}
 
 .messageBox .SendDone{ background-color:#fff;}
 .messageBox .SendDone p.info{line-height: 24px; position: relative;}
 .messageBox .SendDone p.info::after{ content: ""; position: absolute; top:-50%; right:0; width: 96px; height: 47px; display: block; background: url(../images/pop_icon_done.png) center center no-repeat; background-size: contain; }
+
+.enforcementBox .top_title h3{ background-color: #C87D86; color: #fff; }
+.enforcementBox .fillinBox ul{ border:2px solid #C87D86; background-color: #fff; }
+.enforcementBox .fillinBox ul li input::placeholder{ color: #D8D8D8; }
+.enforcementBox .fillinBox ul li textarea{ width: 100%; min-height: 100px; padding: 10px; border-bottom:2px solid transparent; }
+.enforcementBox .fillinBox ul li textarea:hover, .enforcementBox .fillinBox ul li textarea:focus{ border-color:#81B6C8;}
+.enforcementBox .fillinBox ul li .other{max-width: 90px; font-size: 14px; padding-top: 10px;}
+.enforcementBox .fillinBox ul li ul.select_item{ text-align: left; border: none; width: 100%; border-radius: 5px; padding: 10px 0; height: 30px; box-shadow: none;}
+.enforcementBox .fillinBox ul li ul.select_item li{ display: inline-block; width: initial; min-height: initial; color: #4A4A4A; font-size: 14px; margin-right: 5px; padding: 0; }
+
+.check_remind .border_blue{ background-color: #fff; padding:10px 30px;  margin-top: 10px;}
+.check_remind .border_blue p.info{line-height: 20px;}
+
+.popup-padding-top{padding-top: 50px;}
+.popup-padding-top .mfp-close{ top:51px !important; }
 
 .management_pop{position: relative;}
 .management_pop p.btn a{ background-color: #558C9E;}
@@ -296,7 +369,7 @@ a:hover .tooltip{ opacity: 1; }
 .management_pop ul li.nterviewee_name .MorF p a.F_in{background-image:url(../images/MorF_icon_F_in.png); color: #81B6C8;}
 .management_pop ul li.nterviewee_name .MorF p a.F:hover{ background-image:url(../images/MorF_icon_F_in.png);}
 
-.management_pop ul li p.btn{ position: absolute; right: 8px; top: 1px; font-size: 12px; text-align: center; line-height: 24px; padding: 10px 0;}
+.management_pop ul li p.btn{ position: absolute; right: 8px; top: 0px; font-size: 12px; text-align: center; line-height: 24px; padding: 10px 0;}
 .management_pop ul li p.btn a{ min-width: 60px; margin: 0 3px; padding: 0 5px; background-color: #fff; letter-spacing: 0; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #81B6C8; border-radius:3px 0 3px 3px;}
 .management_pop ul li p.btn a:hover{ background-color: #D1E0E5;}
 .management_pop ul li p.btn a.add{ padding-left: 25px; background-image: url(../images/btn_icon_add.png);}
@@ -306,6 +379,12 @@ a:hover .tooltip{ opacity: 1; }
 .management_pop ul li p.btn a.select{ background-color: #D1E0E5; }
 .management_pop ul li p.btn a.select:hover{ border-color: #81B6C8; }
 .management_pop ul li p.btn a.select_active{ box-shadow:0px 2px 4px #999 inset;}
+
+.filter_pop .chosenBox p.btn a.delete{ min-width: 60px; margin: 0 3px; padding: 0 5px 0px 25px; background-color: #fff; letter-spacing: 0; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #C87D86; border-radius:3px 0 3px 3px; color: #C87D86; background-image: url(../images/icon_x.png);}
+.filter_pop .chosenBox p.btn a.delete:hover{ background-color: #C87D86; color: #fff; background-image: url(../images/icon_x_w.png);}
+.filter_pop .chosenBox p.btn a.cursor_none{ -webkit-filter: grayscale(1); opacity: .5; cursor: not-allowed;}
+.filter_pop .chosenBox p.btn a.cursor_none:hover{ background-color:#fff; border-color: #C87D86; color: #81B6C8; background-image: url(../images/icon_x.png);}
+
 .management_pop ul li .more{ width: 280px; }
 .management_pop ul li .more .single{ width: 100%; position: relative; }
 .management_pop ul li .more .single:first-child{ border-bottom: 1px solid rgba(155,155,155,0.5);}
@@ -673,7 +752,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .managementBox .user_data .application_department p.department:hover span{ opacity: 1; }
 
 .right_contents .managementBox ul.user_list li ul.stepBox{padding: 12px 0;}
-.right_contents .managementBox ul.user_list li ul.stepBox li{ float: left; border:none; border-radius: initial; margin-right: 14px; position: relative;}
+.right_contents .managementBox ul.user_list li ul.stepBox li{ float: left; border:none; border-radius: initial; margin-right: 14px; position: relative; box-shadow: none;}
 .right_contents .managementBox ul.user_list li ul.stepBox li::after{ position: absolute; content: ""; width: 14px; height: 2px; top:20px; right: -14px; display: block; background-color: #9B9B9B; }
 .right_contents .managementBox ul.user_list li ul.stepBox li a{ width: 44px; height: 44px; display: block; background-color: #E7E3E3; border-radius: 10px; background-size: contain; background-position: center center; background-repeat: no-repeat;}
 .right_contents .managementBox ul.user_list li ul.stepBox li a.icon_01{ background-image: url(../images/user_stepBox_01.png); }

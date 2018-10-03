@@ -192,7 +192,7 @@ $(document).ready(function() {
 				</div>
 				<ul class="user_list">
 					<li class="clearfix">
-						<a class="go_delete" href="#"></a>
+						<a class="go_delete popup-link" href="#popup-step-15"></a>
 						<div class="user_photo">
 							<div class="avatar">
 								<div class="info">
@@ -821,6 +821,81 @@ $(document).ready(function() {
 
             <div class="fillinBox">
                 <p class="btn"><a href="#">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+	<!-- popup： 強制結束-->
+    <div id="popup-step-15" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox enforcementBox">
+            <div class="top_title">
+                <h3>強制結束</h3>
+            </div>
+
+            <div class="fillinBox">
+                <ul>
+                	<li class="sub_title">
+                		<p>錄取者資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取部門</p></label>
+                        <p class="r_info">研發部</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>部門主管姓名</p></label>
+                        <p class="r_info">留有針</p>
+                    </li>
+                </ul>
+
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>結案原因</p>
+                	</li>
+                    <li>
+                        <ul class="select_item clearfix">
+							<li>
+								<input id="" type="checkbox" name="field" value="option">
+								<label for="option">聯絡不到人</label>
+							</li>
+							<li>
+								<input id="option" type="checkbox" name="field" value="option">
+								<label for="option">未報到</label>
+							</li>
+							<li>
+								<input id="option" type="checkbox" name="field" value="option">
+								<label for="option">取消面試</label>
+							</li>
+						</ul>
+                    </li>
+                    <li>
+                        <div class="l_title other">
+                        	<input id="option" type="checkbox" name="field" value="option">
+							<label for="option">其他</label>
+						</div>
+                        <input type="text" name="" class="r_info" placeholder="請說明">
+                    </li>
+                </ul>
+
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>備註</p>
+                	</li>
+                    <li>
+                        <textarea></textarea>
+                    </li>
+                </ul>
+                <p class="btn">
+                	<a class="bg_gary" href="#">取消</a>
+                	<a class="bg_red" href="#">確認結案</a>
+                </p>
             </div>
         </form>
     </div>
