@@ -192,6 +192,7 @@ a:hover .tooltip{ opacity: 1; }
 .popup-M .mfp-close{ left: 345px !important; }
 .setBox .top_title {width: 100%; position: relative; max-width: 390px;}
 .setBox .top_title h3 { text-align: center; font-size: 18px; letter-spacing: 7px; line-height: 36px; background-color: #D1E0E5; padding: 5px 0; border-radius: 10px 0 10px 10px; }
+.setBox .top_title h3.dark{ background-color: #558C9E; color: #fff;}
 
 .setBox .fillinBox{ padding: 10px 0; width: 100%; }
 .setBox .fillinBox ul{ width: 100%; background-color:#EBEBEB; border-radius: 10px 0 10px 10px; box-shadow: 0px 0px 5px rgba(155,155,155,0.2); overflow: hidden; }
@@ -200,6 +201,8 @@ a:hover .tooltip{ opacity: 1; }
 .setBox .fillinBox ul li .l_title{ -webkit-flex: 1; flex: 1; max-width: 110px; border-right: 1px solid rgba(155,155,155,0.5);}
 .setBox .fillinBox ul li .l_title p{padding: 10px 12px; line-height: 26px;}
 .setBox .fillinBox ul li .r_info{-webkit-flex: 2; flex: 2; }
+.setBox .fillinBox ul li .r_info a{ color: #81B6C8; }
+.setBox .fillinBox ul li .r_info a:hover{ text-decoration: underline; }
 .setBox .fillinBox ul li .r_info{ font-size: 14px; padding: 5px 12px; line-height: 36px; background-color: transparent; border: none;}
 .setBox .fillinBox ul li input.r_info{ border-bottom: 2px solid transparent }
 .setBox .fillinBox ul li input[type=text]:focus, .setBox .fillinBox ul li textarea:focus { border-color:#81B6C8;}
@@ -476,7 +479,9 @@ a:hover .tooltip{ opacity: 1; }
 .interviewMainBox .use_fillinBox .fBox .b02 input{ float: right; max-width: 100%;}
 .interviewMainBox .use_fillinBox .flex2{ -webkit-flex: 2; flex: 2;}
 .interviewMainBox .use_fillinBox .flex3{ -webkit-flex: 3; flex: 3;}
-.interviewMainBox .use_fillinBox .flex2 input, .interviewMainBox .use_fillinBox .flex3 input{ max-width: 100%; }
+.interviewMainBox .use_fillinBox .flex4{ -webkit-flex: 4; flex: 4;}
+.interviewMainBox .use_fillinBox .flex2 input, .interviewMainBox .use_fillinBox .flex3 input, .interviewMainBox .use_fillinBox .flex4 input { max-width: 100%; }
+
 
 .interviewMainBox .use_fillinBox .fBox-w1{ max-width: 394px; }
 .interviewMainBox .use_fillinBox .fBox-2{ -webkit-flex: 2; flex: 2;}
@@ -536,7 +541,7 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 .setBox .uploadPhotoBox .select_file p.icon::before{ content: ""; position: absolute;  top: 0; left:calc(50% - 25px);  width: 50px; height: 40px; display: block; background: url(../images/icon_select_file.png) center center no-repeat; background-size: contain; } 
 .setBox .uploadPhotoBox .select_file:hover{border-color: #fff;}
 
-.setBox .uploadPhotoBox input.file{  position: absolute;  width: 100px; height: 100px; display: block; color: transparent; z-index: 10; }
+.setBox .uploadPhotoBox input.file{  position: absolute;  width: 100px; height: 100px; display: block; color: transparent; z-index: 10; opacity: 0;}
 .setBox .uploadPhotoBox .select_file .file-img{ position: absolute; width: 100px; height: 100px; display: block; z-index: 5; }
 
 .setBox .photo_info{ min-height: 174px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
@@ -557,10 +562,18 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 
 
 .interviewMainBox .use_fillinBox ul.schoolBox{ padding-right: 30px; }
+.interviewMainBox .use_fillinBox ul.companyBox{ max-width: 780px; padding-bottom: 0; }
 .interviewMainBox .use_fillinBox ul.companyBox li .flex1{ max-width: 70px; }
 .interviewMainBox .use_fillinBox ul.companyBox li .flex2{ max-width: 128px; }
 .interviewMainBox .use_fillinBox ul.companyBox li input.icon_calendar{ background: url(../images/icon_calendar.png) right center no-repeat; background-size: contain; padding-right: 30px; }
 .interviewMainBox .use_fillinBox ul.companyBox li input.icon_calendar[type=text]:focus{ background: url(../images/icon_calendar_in.png) right center no-repeat;  background-size: contain;}
+.interviewMainBox .use_fillinBox ul.companyBox li.w50pa{ border-bottom: 1px dashed #979797; padding-bottom: 10px; margin-bottom: 10px;}
+.interviewMainBox .use_fillinBox ul.companyBox li.w50pa .flex1{ max-width: 100px; }
+.interviewMainBox .use_fillinBox ul.companyBox li.w50pa .flex2{ max-width: 142px; }
+.interviewMainBox .use_fillinBox p.max750{ max-width: 750px; padding: 0; }
+.interviewMainBox .use_fillinBox ul.company_experience li{ padding-bottom: 0; }
+.interviewMainBox .use_fillinBox ul.company_experience li a.go_delete{ bottom: 3px; }
+
 .interviewMainBox .use_fillinBox .infoContent_two{width: 100%; padding-bottom: 30px;}
 .interviewMainBox .use_fillinBox .infoContent_two .tBox{ float: left; width: 50%; padding-right: 15px; }
 .interviewMainBox .use_fillinBox .infoContent_two .tBox:first-child{ padding: 0 30px 0 0; position:relative; }
@@ -570,7 +583,7 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 .interviewMainBox .use_fillinBox .infoContent_two h4.tBox_title{ width: 100%; color: #9B9B9B; font-size: 12px; padding:0 5px;}
 .interviewMainBox .use_fillinBox .infoContent_two ul.schoolBox{padding-bottom: 0;}
 .interviewMainBox .use_fillinBox .infoContent_two p.btn_add_list a{ margin: 0; }
-.interviewMainBox .use_fillinBox ul.referrerBox{ max-width: 760px; }
+.interviewMainBox .use_fillinBox ul.referrerBox{ max-width: 780px; }
 
 .interviewMainBox .use_fillinBox h3.headline{ border: 1px solid #979797; background-color: #EBEBEB; color: #9B9B9B; border-radius: 10px 0 10px 10px; font-size: 14px; padding: 15px 30px;  margin: 0 7px;}
 
