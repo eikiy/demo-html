@@ -204,6 +204,8 @@ a:hover .tooltip{ opacity: 1; }
 .setBox .fillinBox ul li .r_info a{ color: #81B6C8; }
 .setBox .fillinBox ul li .r_info a:hover{ text-decoration: underline; }
 .setBox .fillinBox ul li .r_info{ font-size: 14px; padding: 5px 12px; line-height: 36px; background-color: transparent; border: none;}
+.setBox .fillinBox ul li .p_long{ max-width: 200px; height: 46px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 32px; height: 46px * 1; overflow:hidden;}
+
 .setBox .fillinBox ul li input.r_info{ border-bottom: 2px solid transparent }
 .setBox .fillinBox ul li input[type=text]:focus, .setBox .fillinBox ul li textarea:focus { border-color:#81B6C8;}
 .setBox .fillinBox ul li.pw_error{ position: relative; }
@@ -273,13 +275,14 @@ a:hover .tooltip{ opacity: 1; }
 .messageBox .RedBox{ width: 100%; background-color:#EBEBEB; padding:30px; border: 3px solid #C87D86; border-radius: 10px 0 10px 10px; box-shadow: 0px 0px 5px rgba(155,155,155,0.2); overflow: hidden; }
 .messageBox .RedBox p.info{line-height: 24px;}
 .messageBox .RedBox p.info span{color: #81B6C8;}
+.messageBox .border_blue{ border-color: #81B6C8; }
+
 
 .messageBox .SendDone{ background-color:#fff;}
 .messageBox .SendDone p.info{line-height: 24px; position: relative;}
 .messageBox .SendDone p.info::after{ content: ""; position: absolute; top:-50%; right:0; width: 96px; height: 47px; display: block; background: url(../images/pop_icon_done.png) center center no-repeat; background-size: contain; }
 
 .management_pop{position: relative;}
-.management_pop .top_title h3{ background-color: #558C9E; color: #fff; }
 .management_pop p.btn a{ background-color: #558C9E;}
 .management_pop ul li{ position: relative; }
 .management_pop ul li.nterviewee_name .MorF{ position: absolute; right: 8px; top: 5px; }
