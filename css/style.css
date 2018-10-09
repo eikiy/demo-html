@@ -23,7 +23,7 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 *:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 
 /*===== start ======*/
-.contentsBox{ width: 1000px; margin: 0 auto; }
+.contentsBox{ width: 100%; max-width: 1000px; margin: 0 auto; }
 
 .headerBox{width: 100%; min-width: 1024px; background-color: #81B6C8; padding-top: 10px; min-height: 46px;}
 .headerBox a.logo{ float: left; width: 60px; height: 28px; margin: -2px 0px 0 0; display: block; background: url(../images/logo.png) 8px center no-repeat; background-size: contain; }
@@ -145,9 +145,9 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .right_contents .theBox .infoBox .stageBox h4{ position: absolute; top: 10px;left: 0px; color: #81B6C8; font-size: 24px; text-align: initial; } 
 
 .item{ width: 100%; max-width: 400px; display: inline-block; text-align: left; padding-top: 5px; }
-.item li{ display: inline-block; width:calc(100%/3 - 15px); margin: 5px 5px 10px 5px; position: relative; }
+.item li{ display: inline-block; min-width:calc(100%/3 - 15px); margin: 5px 5px 10px 5px; position: relative; }
 .item li p{ text-align:center; color: #4A4A4A; font-size: 11px;}
-.item li a{ border:1px solid #9B9B9B; color: #4A4A4A; padding: 5px 0; display: block; }
+.item li a{ border:1px solid #9B9B9B; color: #4A4A4A; padding: 5px; display: block; }
 .item li a:hover{  border-color: #81B6C8; }
 .item li a.btn_in{ background-color: #81B6C8; color: #fff; border-color: #81B6C8; }
 .item li a.go_delete{ position: absolute; cursor: pointer;  top: 7px; right: 5px; width: 15px; height: 15px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
@@ -179,7 +179,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 */
 
 .white-popup { position: relative;/* background: #FFF;*/ /*padding: 20px;*/ width: auto; max-width: 760px; margin: 20px auto;}
-.mfp-fade.mfp-bg {  opacity: 0; -webkit-transition: all 0.15s ease-out; -moz-transition: all 0.15s ease-out;  transition: all 0.15s ease-out;}
+.mfp-fade.mfp-bg {  opacity: 0; -webkit-transition: all 0.15s ease-out; -moz-transition: all 0.15s ease-out;  transition: all 0.15s ease-out; min-width: 1024px;}
 .mfp-fade.mfp-bg.mfp-ready { opacity: 0.5;}
 .mfp-fade.mfp-bg.mfp-removing { opacity: 0;}
 .mfp-fade.mfp-wrap .mfp-content { opacity: 0; -webkit-transition: all 0.15s ease-out;  -moz-transition: all 0.15s ease-out;  transition: all 0.15s ease-out;}
@@ -386,8 +386,8 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .filter_pop .chosenBox p.btn a.cursor_none:hover{ background-color:#fff; border-color: #C87D86; color: #81B6C8; background-image: url(../images/icon_x.png);}
 
 .management_pop ul li .more{ width: 280px; }
-.management_pop ul li .more .single{ width: 100%; position: relative; }
-.management_pop ul li .more .single:first-child{ border-bottom: 1px solid rgba(155,155,155,0.5);}
+.management_pop ul li .more .single{ width: 100%; position: relative; border-bottom: 1px solid rgba(155,155,155,0.5);}
+.management_pop ul li .more .single:last-child{ border-bottom:none;}
 .management_pop ul li .more .single input{ width: 100%; }
 
 .management_pop .the_department_list{ width: 310px; position: absolute; top: 56px; right: -320px;  background-color: #fff; z-index: 50; border-radius: 0 5px 5px 5px; overflow: hidden; }
@@ -395,7 +395,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .management_pop .the_department_list h4 button{ cursor: pointer; position: absolute; top: 0px; right: 5px; font-size: 22px; color: #fff; background: transparent; }
 .management_pop .the_department_list ul{ width: 100%; } 
 .management_pop .the_department_list ul li{padding: 2px 15px;  border-bottom: 1px dashed #D8D8D8;}
-.management_pop .the_department_list ul li p.type a{ min-width: 31.3%; text-align: center; margin: 0 2px 5px 0; border:1px solid #979797; line-height: 26px; display: inline-block; font-size: 11px; color: #4A4A4A; }
+.management_pop .the_department_list ul li p.type a{ min-width: 31.3%; text-align: center; margin: 0 2px 5px 0; border:1px solid #979797; line-height: 26px; display: inline-block; font-size: 11px; color: #4A4A4A; padding: 0 5px; }
 .management_pop .the_department_list ul li p.type a:hover{ border-color: #81B6C8; }
 .management_pop .the_department_list ul li p.type a.btn_in{ background-color: #81B6C8; color: #fff; border-color: #81B6C8; }
 .management_pop .the_department_list ul li:last-child{ border: none; }
@@ -439,7 +439,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .interviewLoginBox p.btn a{ background-color: #81B6C8; color: #fff; height: 46px; line-height: 46px; display: block; max-width: 390px; border-radius: 8px 0 8px 8px; margin: 0 auto; }
 .interviewLoginBox p.btn a:hover{ border: 1px solid #fff; box-shadow: 0px 2px 4px 0px rgb(0,0,0,.5);  }
 
-.interviewMainBox{ width: 100%; min-width: 1024px; min-height: 100vh; padding-bottom: 30px;}
+.interviewMainBox{ width: 100%; width: 1024px; min-height: 100vh; padding-bottom: 30px; overflow: hidden; margin: 0 auto;}
 .interviewMainBox p.btn{font-size: 18px; text-align: right; line-height: 36px; padding: 10px 0;}
 .interviewMainBox p.btn a{ min-width: 110px; margin-left:10px; padding: 5px; letter-spacing: 5px; border:1px solid transparent; text-align: center;  display: inline-block; color: #fff; background-color: #81B6C8; border-radius:10px 0 10px 10px;}
 .interviewMainBox p.btn a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
@@ -719,9 +719,9 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 
 
 /*招募管理頁*/
-.for_management_top{ min-width: 1070px;}
+/*.for_management_top{ min-width: 1070px;}*/
 .for_management_top .contentsBox{ width: 1000px; }
-.for_management{ min-width: 1070px;}
+/*.for_management{ min-width: 1070px;}*/
 .for_management .contentsBox{ width: 1030px; }
 .right_contents .managementBox{ float: left; width: 100%; max-width: 546px; }
 .right_contents .managementBox ul.user_list{width: 100%;}
@@ -839,14 +839,14 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .calendar_toolsBox .calendar_month .calendar_month{ width: 100%; }
 
 /*跟pop的日曆共用*/
-.monthBox{ background-color: #707475; width: 100%; height: 285px; border-radius:0 20px 20px 20px ; }
+.monthBox{ background-color: #707475; width: 100%; min-height: 270px; border-radius:0 20px 20px 20px ; padding-bottom: 10px; }
 .monthBox p{ color: #fff;  text-align: center; padding: 5px 0 14px 0;}
 .monthBox .top_year_month{ width: 100%; }
-.monthBox .top_year_month p{ letter-spacing: 5px; padding: 15px 0 10px 0;}
+.monthBox .top_year_month p{ letter-spacing: 5px; padding: 15px 0 10px 0; margin: 0 auto;}
 .monthBox .top_year_month p span{ position: relative; }
-.monthBox .top_year_month p span::before{ content: ""; cursor: pointer; position: absolute; top: 2px; left: -50px; display: block; width: 0; height: 0; border-style: solid; border-width: 6.5px 9px 6.5px 0; border-color: transparent #81b6c8 transparent transparent; line-height: 0px; _border-color: #000000 #81b6c8 #000000 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000'); }
-.monthBox .top_year_month p span::after{ content: ""; cursor: pointer; position: absolute; top: 2px; right: -50px; display: block; width: 0; height: 0; border-style: solid; border-width: 6.5px 0 6.5px 9px; border-color: transparent transparent transparent #81b6c8; line-height: 0px; _border-color: #000000 #000000 #000000 #81b6c8; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
-.monthBox .dateBox p.btn_in{ border:2px solid #81B6C8; border-radius: 4px; }
+.monthBox .top_year_month p a{ cursor: pointer; position: absolute; top: 2px; left: -50px; display: block; width: 0; height: 0; border-style: solid; border-width: 6.5px 9px 6.5px 0; border-color: transparent #81b6c8 transparent transparent; line-height: 0px; _border-color: #000000 #81b6c8 #000000 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000'); }
+.monthBox .top_year_month p a.right_arr{ left: initial; right: -50px; display: block; width: 0; height: 0; border-style: solid; border-width: 6.5px 0 6.5px 9px; border-color: transparent transparent transparent #81b6c8; line-height: 0px; _border-color: #000000 #000000 #000000 #81b6c8; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+.monthBox .dateBox p.btn_in{ border:2px solid #81B6C8; border-radius: 4px; max-width: 34px; }
 
 .right_contents .calendar_toolsBox .calendar_month p.ring_color{ text-align: right; padding: 15px 15px 20px 15px; font-size: 13px; letter-spacing: 8px; color: #000000; }
 .right_contents .calendar_toolsBox .calendar_month p.ring_color span{ display: inline-block; text-align: center; padding-left: 12px; position: relative;}
