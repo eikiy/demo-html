@@ -106,7 +106,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .mainBox .side_menu ul.menu li p a.btn_in{ background-color: #fff; border-color:#a9cbd7; }
 .mainBox .side_menu ul.menu li p a:hover{  color: #666; }
 
-.mainBox .right_contents{  padding-left:20px; max-width: calc(100% - 142px); -webkit-flex: 1; flex: 1; display: -webkit-flex; display: flex;}
+.mainBox .right_contents{  padding-left:20px; max-width: calc(100% - 125px); -webkit-flex: 1; flex: 1; display: -webkit-flex; display: flex;}
 
 .right_contents .l_Box{ -webkit-flex: 1; flex: 1; max-width: 240px;}
 .right_contents .r_Box{ -webkit-flex: 2; flex: 2; padding-left: 15px;}
@@ -337,8 +337,10 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .messageBox .border_blue{ border-color: #81B6C8;}
 
 .messageBox .SendDone{ background-color:#fff;}
-.messageBox .SendDone p.info{line-height: 24px; position: relative;}
-.messageBox .SendDone p.info::after{ content: ""; position: absolute; top:-50%; right:0; width: 96px; height: 47px; display: block; background: url(../images/pop_icon_done.png) center center no-repeat; background-size: contain; }
+.messageBox .SendDone p.info{line-height: 24px; position: relative; padding-right: 80px;}
+.messageBox .SendDone p.info::after{ content: ""; position: absolute; top: calc(50% - 23px); right:0; width: 96px; height: 47px; display: block; background: url(../images/pop_icon_done.png) center center no-repeat; background-size: contain; }
+.messageBox .SendDone p.icon_mail::after{ width: 62px; height: 64px; top: calc(50% - 30px); background-image: url(../images/interviewer/pop_icon_done.png)}
+
 
 .enforcementBox .top_title h3{ background-color: #C87D86; color: #fff; }
 .enforcementBox .fillinBox ul{ border:2px solid #C87D86; background-color: #fff; }
@@ -467,7 +469,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .interviewMainBox p.note{ color: #9B9B9B; line-height: 20px; max-width: 655px; padding: 60px 0; }
 
 .interviewMainBox .top_ivBox{ width: 100%; padding: 20px 0; }
-.interviewMainBox .top_ivBox a.img-user{ float: left; position: relative; width: 131px; height: 131px; margin: 60px 30px 0 30px; display: block; border:1px solid #979797; border-radius: 10px; background: url(../images/user_img_default.png) center center no-repeat; background-size: contain; }
+.interviewMainBox .top_ivBox .img-user{ float: left; position: relative; width: 131px; height: 131px; margin: 60px 30px 0 30px; display: block; border:1px solid #979797; border-radius: 10px; background: url(../images/user_img_default.png) center center no-repeat; background-size: contain; }
 .interviewMainBox .top_ivBox a.img-user::after{ content: ""; position: absolute; top: 0; right: 0; width: 40px; height: 40px; display: block; background-image: url(../images/user_img_edit.png) ; background-position: center center ; background-repeat: no-repeat; background-size: contain;}
 .interviewMainBox .top_ivBox a.img-user:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); }
 .interviewMainBox .top_ivBox a.img-user:hover::after{ background-image: url(../images/user_img_edit_in.png); }
@@ -884,5 +886,95 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .calendar_toolsBox .day_list ul li .info p{ font-size: 13px; color: #000; }
 .right_contents .calendar_toolsBox .day_list ul li .info p.name{ font-size: 18px }
 
+/* --------- 面試官評論 --------- */
+.interview_officer_LoginBox{ width: 100%; max-width: 1024px; min-height: 768px; margin: 0 auto; position: relative;  background: url(../images/interviewer/bg_index.png) center bottom no-repeat; background-size: contain;display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
+.interview_officer_LoginBox .contentsBox{width:100%; max-width: 390px; display: block; position: relative;}
+.interview_officer_LoginBox .contentsBox::after{ position: absolute; content: ""; width: 117px; height: 167px; top: 0; right: 0; display: block; background: url(../images/interviewer/bg_index_people.png) center center no-repeat; background-size: contain;  } 
+.interview_officer_LoginBox .top_logo{position: absolute; top: 30px; left: 32px; width: 57px; height: 57px; display: block; background: url(../images/interviewer/kamo_logo.png) center center no-repeat; background-size: contain; }
+
+.interview_officer_LoginBox h1{ color: #81B6C8; font-size: 14px; font-weight: normal; letter-spacing: 20px; padding: 50px 0 20px 0; }
+.interview_officer_LoginBox h3{ color: #9B9B9B; font-size: 14px; letter-spacing: 6px; padding-bottom:18px;}
+.interview_officer_LoginBox h3 span{ color: #4A4A4A; }
+.interview_officer_LoginBox .fill{ padding: 18px 0 25px 0; }
+.interview_officer_LoginBox input.name{ width: 100%; max-width: 390px; height: 42px; padding: 5px 5px 5px 50px; border: 2px solid #81B6C8; border-radius: 8px 0 8px 8px; margin: 0 auto 15px auto; background: url(../images/login_icon_id.png) 5px center no-repeat; background-size: contain; }
+.interview_officer_LoginBox input.name[type=text]:focus{ box-shadow: inset 0px 2px 7px 0px rgb(0,0,0,.5); }
+.interview_officer_LoginBox input.name::placeholder{ color: #D8D8D8; }
+.interview_officer_LoginBox p.btn{ text-align: center; width: 100%; padding: 10px 0; }
+.interview_officer_LoginBox p.btn a{ background-color: #81B6C8; color: #fff; height: 46px; line-height: 46px; display: block; max-width: 390px; border-radius: 8px 0 8px 8px; margin: 0 auto; }
+.interview_officer_LoginBox p.btn a:hover{ border: 1px solid #fff; box-shadow: 0px 2px 4px 0px rgb(0,0,0,.5);  }
+
+.interview_officer_Main{padding-bottom: 10px;}
+.interview_officer_Main p.btn{ padding: 20px 0; }
+.interview_officer_Main p.bottom_title{ position: absolute; bottom: 30px; }
+.interview_officer_Main p.top_title{color: #9B9B9B; font-size: 12px; line-height: 33px;}
+.interview_officer_Main p.top_title span.pad-l{padding-left:30px; }
+.interview_officer_Main p.top_title input.input_yesNo_yes[type=radio]:not(old), input.input_yesNo_yes[type=radio ]:not(old){margin-left: 15px;}
+.interview_officer_Main p.top_title input.input_yesNo_no[type=radio]:not(old), input.input_yesNo_no[type=radio ]:not(old){margin-left: 15px;}
+.interview_officer_Main .top_ivBox .rBox .top_title h2{font-size: 14px;}
+.interview_officer_Main .top_ivBox a.img-user::after{display: none;}
+.interview_officer_Main .use_fillinBox{ border:none; padding: 0; position: relative;}
+.interview_officer_Main .use_fillinBox .g_border{padding: 10px 20px 10px 20px; border-radius: 20px 0 20px 20px; border: 2px solid #979797; }
+.interview_officer_Main .use_fillinBox .bg_gray{position: relative; overflow: hidden; background-color: #EBEBEB; }
+.interview_officer_Main .use_fillinBox .bg_gray .fBox input, .interview_officer_Main .use_fillinBox .bg_gray .fBox textarea, .interview_officer_Main .use_fillinBox .bg_gray .styled-select{ background-color: transparent; }
+
+.interview_officer_Main .use_fillinBox .infoContent_two{ padding-bottom: 0;}
+.interview_officer_Main .use_fillinBox .fBox{ padding: 0 3px; }
+.interview_officer_Main .use_fillinBox .fBox p.title_s{ text-align: center; }
+.interview_officer_Main .use_fillinBox ul.fill_in{ padding-bottom: 0; }
+.interview_officer_Main .use_fillinBox ul.fill_in li{padding-bottom: 8px;}
+.interview_officer_Main .use_fillinBox ul.fill_in li:last-child{padding-bottom: 5px;}
+.interview_officer_Main .use_fillinBox .infoContent_two .tBox:first-child{padding-right: 15px;}
+.interview_officer_Main .use_fillinBox .infoContent_two .tBox:first-child::before{width: 2px; min-height: initial;}
+.interview_officer_Main .use_fillinBox .infoContent_two .tBox:last-child{padding-left: 15px; padding-right: 0;}
+.interview_officer_Main .use_fillinBox textarea.t_w100{width: 100%; min-height: 102px; color: #9B9B9B;}
+.interview_officer_Main .use_fillinBox .styled-select select{ color: #9B9B9B;}
+.interview_officer_Main .use_fillinBox .comment .infoContent_two{ max-width: 726px; float: left;}
+.interview_officer_Main .use_fillinBox .comment .fBox{ width: 100%;}
+.interview_officer_Main .use_fillinBox .comment .infoContent_two p{ line-height: 24px; width: 105px; text-align: right; padding-right: 10px; }
+.interview_officer_Main .use_fillinBox .comment .infoContent_two .styled-select{ float: right; max-width: 248px;}
+.interview_officer_Main .use_fillinBox .comment .infoContent_two .styled-select select{font-size: 14px; min-height: 22px; line-height: 22px; padding: 0px 10px;}
+.interview_officer_Main .use_fillinBox .comment .infoContent_two .tBox:last-child{ padding-left: 0; width: calc(100% - 380px);}
+.interview_officer_Main .use_fillinBox .comment .infoContent_two .tBox:first-child{ padding-right: 0; min-width: 380px; }
+.interview_officer_Main .use_fillinBox .comment .infoContent_two .tBox:first-child p {width: 120px;}
+.interview_officer_Main .use_fillinBox .comment .infoContent_two .tBox:first-child::before{display: none;}
+
+.interview_officer_Main .use_fillinBox .fraction{float: left; padding-left: 40px; text-align: center;}
+.interview_officer_Main .use_fillinBox .fraction .nb{ width: 136px; height: 136px; margin: 15px auto 0 auto; display: block; background-color: #EBEBEB; font-size: 36px; color: #4A4A4A; line-height: 136px; }
+.interview_officer_Main .top_ivBox .rBox{ position: relative; }
+.interview_officer_Main .top_ivBox .rBox::before{ content: ""; bottom: 10px; right: 0; position: absolute; width: 262px; height: 97px; display: block; background: url(../images/interviewer/bg_top_ivBox.png) center center no-repeat; background-size: contain;  }
+.interview_officer_Main .top_ivBox .rBox table.interviewer_info{ width: 100%; max-width: 385px; margin-top: 10px; float: left; color: #9B9B9B; font-size: 14px; letter-spacing: 5px; border: 1px solid #979797;  border-radius: 10px 0 10px 10px;}
+.interview_officer_Main .top_ivBox .rBox table.interviewer_info tr td{ line-height: 21px; padding:2px 10px; border: 1px solid #979797; border-width: 0 1px 1px 0;}
+.interview_officer_Main .top_ivBox .rBox table.interviewer_info tr td:last-child{ border-right: none; }
+.interview_officer_Main .top_ivBox .rBox table.interviewer_info tr:last-child td{ border-bottom: none; }
+.interview_officer_Main .top_ivBox .rBox p.embarrassment{ float: left; font-size: 14px; text-align: center;}
+.interview_officer_Main .top_ivBox .rBox p.embarrassment a{ width: 100px; height: 100px; padding-top: 66px; color: #81B6C8; display: block; border-radius: 0 10px 10px 18px; margin: 34px 0 0 15px; border: 3px solid #81B6C8; background: url(../images/interviewer/icon_embarrassment.png)  center center no-repeat; background-size: contain;}
+.interview_officer_Main .top_ivBox .rBox p.embarrassment a:hover{ background-color: #D1E0E5; }
+
+/*HR小幫手*/
+.mainBox .HR_contents p.top_title{ padding:10px; }
+.mainBox .HR_contents ul.list{ width: 100%; border-bottom: 2px solid #558C9E; padding-bottom: 15px; margin-bottom: 10px; }
+.mainBox .HR_contents ul.list:last-child{border: none;}
+.mainBox .HR_contents ul.list li{ float: left; width: 270px; background-color: #fff; height: 140px; margin:0 15px 8px 0; border-radius: 10px 0 10px 10px; padding-top:18px; }
+.mainBox .HR_contents ul.list li:nth-child(3n){ margin-right: 0; }
+.mainBox .HR_contents ul.list li p.mail_title{ width: 120px; font-size: 13px; letter-spacing: 4px; float: left; position: relative; padding-top: 88px; text-align: center; }
+.mainBox .HR_contents ul.list li p.mail_title::before{ content: ""; position: absolute; top: 0; left: 20px; width: 74px; height: 80px; display: block; background-size: contain; background-repeat: no-repeat; background-position: center center; }
+.mainBox .HR_contents ul.list li p.mail_icon_01::before{ background-image: url(../images/HR/icon_mail_01.png); }
+.mainBox .HR_contents ul.list li p.mail_icon_02::before{ background-image: url(../images/HR/icon_mail_02.png); }
+.mainBox .HR_contents ul.list li p.mail_icon_03::before{ background-image: url(../images/HR/icon_mail_03.png); }
+.mainBox .HR_contents ul.list li p.mail_icon_04::before{ background-image: url(../images/HR/icon_mail_04.png); }
+.mainBox .HR_contents ul.list li p.mail_icon_05::before{ background-image: url(../images/HR/icon_mail_05.png); }
+.mainBox .HR_contents ul.list li p.mail_icon_06::before{ background-image: url(../images/HR/icon_mail_06.png); }
+
+.mainBox .HR_contents ul.list li .tools{float: left; width: 134px; text-align: center; padding-top: 20px;}
+.mainBox .HR_contents ul.list li .tools a{ display: inline-block; width: 54px; height: 54px; position: relative; border: dashed 1px #81B6C8; margin: 0 5px; border-radius: 10px 0 10px 10px; background-size: contain; background-repeat: no-repeat; background-position: center center; }
+.mainBox .HR_contents ul.list li .tools a:hover{ background-color: #D1E0E5; }
+.mainBox .HR_contents ul.list li .tools a .tooltip{ top: 56px; width: 76px; left: -12px; }
+.mainBox .HR_contents ul.list li .tools a.copy-ok .tooltip{ background-color: #81B6C8; width: 96px; left: -22px;}
+.mainBox .HR_contents ul.list li .tools a.copy-ok .tooltip::after{ border-color: transparent transparent #81B6C8 transparent;}
+.mainBox .HR_contents ul.list li .tools a:hover .tooltip{ opacity: 1; }
+.mainBox .HR_contents ul.list li .tools a.copy{ background-image: url(../images/HR/tool_icon_papers.png); }
+.mainBox .HR_contents ul.list li .tools a.edit{ background-image: url(../images/HR/tool_icon_edit.png); }
+.mainBox .HR_contents ul.list li .tools a.print{ background-image: url(../images/HR/tool_icon_print.png); }
+.mainBox .HR_contents ul.list li .tools a.pdf{ background-image: url(../images/HR/tool_icon_pdf.png); }
 
 
