@@ -60,19 +60,19 @@ $(document).ready(function() {
 		<form class="use_fillinBox">
 
 			<p class="top_title">
-				<input id="option" type="checkbox" name="field" value="option">
+				<input id="option" type="checkbox" name="field" value="option" checked="">
 				<label for="option">不使用面試評分表</label>
 			</p>
 
 			<!-- 反灰不能選取時 class + bg_gray，這層以下的 input 和 select 都要加上disabled="disabled" -->
-			<div class="g_border comment clearfix">
+			<div class="g_border comment bg_gray clearfix">
 				<div class="infoContent_two clearfix">
 					<div class="tBox">
 						<ul class="fill_in">
 							<li>
 								<div class="fBox clearfix">
 									<p>準時度</p>
-									<div class="styled-select">
+									<div class="styled-select" disabled="disabled">
 			                           	<select class="md-input" name="">
 				                           	<option value="準時">準時</option>
 				                           	<option value="準時">準時</option>
@@ -84,7 +84,7 @@ $(document).ready(function() {
 								<div class="fBox clearfix">
 									<p>外表/衣著</p>
 									<div class="styled-select">
-			                           	<select class="md-input" name="">
+			                           	<select class="md-input" name="" disabled="disabled">
 				                           	<option value="衣著得體，外表落落大方">衣著得體，外表落落大方</option>
 				                           	<option value="">衣著得體，外表落落大方</option>
 				                        </select>
@@ -95,7 +95,7 @@ $(document).ready(function() {
 								<div class="fBox clearfix">
 									<p>親和力</p>
 									<div class="styled-select">
-			                           	<select class="md-input" name="">
+			                           	<select class="md-input" name="" disabled="disabled">
 				                           	<option value="">可以接近，尚稱友善</option>
 				                           	<option value="">可以接近，尚稱友善</option>
 				                        </select>
@@ -106,7 +106,7 @@ $(document).ready(function() {
 								<div class="fBox clearfix">
 									<p>個性/性格</p>
 									<div class="styled-select">
-			                           	<select class="md-input" name="">
+			                           	<select class="md-input" name="" disabled="disabled">
 				                           	<option value="">可以適合此工作</option>
 				                           	<option value="">可以適合此工作</option>
 				                        </select>
@@ -117,7 +117,7 @@ $(document).ready(function() {
 								<div class="fBox clearfix">
 									<p>溝通技巧及表達能力</p>
 									<div class="styled-select">
-			                           	<select class="md-input" name="">
+			                           	<select class="md-input" name="" disabled="disabled">
 				                           	<option value="">尚稱流利，表達平平</option>
 				                           	<option value="">尚稱流利，表達平平</option>
 				                        </select>
@@ -128,7 +128,7 @@ $(document).ready(function() {
 								<div class="fBox clearfix">
 									<p>問題分析及解決能力</p>
 									<div class="styled-select">
-			                           	<select class="md-input" name="">
+			                           	<select class="md-input" name="" disabled="disabled">
 				                           	<option value="">可以明確判斷及分析問題發生原因</option>
 				                           	<option value="">可以明確判斷及分析問題發生原因可以明確判斷及分析問題發生原因</option>
 				                        </select>
@@ -143,7 +143,7 @@ $(document).ready(function() {
 								<div class="fBox clearfix">
 									<p>工作經驗</p>
 									<div class="styled-select">
-			                           	<select class="md-input" name="">
+			                           	<select class="md-input" name="" disabled="disabled">
 				                           	<option value="">背景很好，有相當多經驗</option>
 				                           	<option value="">背景很好，有相當多經驗</option>
 				                        </select>
@@ -154,7 +154,7 @@ $(document).ready(function() {
 								<div class="fBox clearfix">
 									<p>專業知識/技術</p>
 									<div class="styled-select">
-			                           	<select class="md-input" name="">
+			                           	<select class="md-input" name="" disabled="disabled">
 				                           	<option value="">專業知識技術足以勝任職務</option>
 				                           	<option value=""></option>
 				                        </select>
@@ -165,7 +165,7 @@ $(document).ready(function() {
 								<div class="fBox clearfix">
 									<p>工作穩定度</p>
 									<div class="styled-select">
-			                           	<select class="md-input" name="">
+			                           	<select class="md-input" name="" disabled="disabled">
 				                           	<option value="">穩定性佳</option>
 				                           	<option value="">穩定性佳</option>
 				                        </select>
@@ -176,7 +176,7 @@ $(document).ready(function() {
 								<div class="fBox clearfix">
 									<p>緊覺/反應</p>
 									<div class="styled-select">
-			                           	<select class="md-input" name="">
+			                           	<select class="md-input" name="" disabled="disabled">
 				                           	<option value="">能抓住重點，表現尚可</option>
 				                           	<option value="">能抓住重點，表現尚可</option>
 				                        </select>
@@ -187,7 +187,7 @@ $(document).ready(function() {
 								<div class="fBox clearfix">
 									<p>發展潛力</p>
 									<div class="styled-select">
-			                           	<select class="md-input" name="">
+			                           	<select class="md-input" name="" disabled="disabled">
 				                           	<option value="">守本分且順從，需協助進行職涯</option>
 				                           	<option value="">守本分且順從，需協助進行職涯</option>
 				                        </select>
@@ -198,7 +198,7 @@ $(document).ready(function() {
 								<div class="fBox clearfix">
 									<p>整體而言</p>
 									<div class="styled-select">
-			                           	<select class="md-input" name="">
+			                           	<select class="md-input" name="" disabled="disabled" class + bg_gray>
 				                           	<option value="">中等</option>
 				                           	<option value="">中等</option>
 				                        </select>
@@ -211,17 +211,17 @@ $(document).ready(function() {
 
 				<div class="fraction">
 					<p class="top_title">評核總分（不含語文能力）</p>
-					<p class="nb">57</p>
+					<p class="nb"><!-- 57 --></p>
 				</div>
 			</div>
 
 			<p class="top_title">
-				<input id="option" type="checkbox" name="field" value="option">
+				<input id="option" type="checkbox" name="field" value="option" checked="">
 				<label for="option">不使用語文能力評分表</label>
 			</p>
 
 			<!-- 反灰不能選取時 class + bg_gray，這層以下的 input 和 select 都要加上disabled="disabled" -->
-			<div class="g_border">
+			<div class="g_border bg_gray">
 				<div class="infoContent_two clearfix">
 					<div class="tBox">
 						<ul class="fill_in">
@@ -229,14 +229,14 @@ $(document).ready(function() {
 								<div class="fBox">
 									<div class="both">
 										<p class="title_s">語言</p>
-										<input type="text" name="">
+										<input type="text" name="" disabled="disabled" value="英文">
 			                    	</div>
 								</div>
 								<div class="fBox">
 									<div class="both">
 										<p class="title_s">聽</p>
 										<div class="styled-select">
-			                            	<select class="md-input" name="">
+			                            	<select class="md-input" name="" disabled="disabled">
 				                            	<option value="好">非常流暢</option>
 				                            	<option value="普通">普通</option>
 				                            </select>
@@ -247,7 +247,7 @@ $(document).ready(function() {
 									<div class="both">
 										<p class="title_s">去</p>
 										<div class="styled-select">
-			                            	<select class="md-input" name="">
+			                            	<select class="md-input" name="" disabled="disabled">
 				                            	<option value="好">非常流暢</option>
 				                            	<option value="普通">普通</option>
 				                            </select>
@@ -258,7 +258,7 @@ $(document).ready(function() {
 									<div class="both">
 										<p class="title_s">讀</p>
 										<div class="styled-select">
-			                            	<select class="md-input" name="">
+			                            	<select class="md-input" name=""  disabled="disabled">
 				                            	<option value="好">非常流暢</option>
 				                            	<option value="普通">普通</option>
 				                            </select>
@@ -269,7 +269,7 @@ $(document).ready(function() {
 									<div class="both">
 										<p class="title_s">寫</p>
 										<div class="styled-select">
-			                            	<select class="md-input" name="">
+			                            	<select class="md-input" name="" disabled="disabled">
 				                            	<option value="好">非常流暢</option>
 				                            	<option value="普通">普通</option>
 				                            </select>
@@ -280,13 +280,13 @@ $(document).ready(function() {
 							<li>
 								<div class="fBox">
 									<div class="both">
-										<input type="text" name="">
+										<input type="text" name="" disabled="disabled" value="韓文">
 			                    	</div>
 								</div>
 								<div class="fBox">
 									<div class="both">
 										<div class="styled-select">
-			                            	<select class="md-input" name="">
+			                            	<select class="md-input" name="" disabled="disabled">
 				                            	<option value="好">非常流暢</option>
 				                            	<option value="普通">普通</option>
 				                            </select>
@@ -296,7 +296,7 @@ $(document).ready(function() {
 								<div class="fBox">
 									<div class="both">
 										<div class="styled-select">
-			                            	<select class="md-input" name="">
+			                            	<select class="md-input" name="" disabled="disabled">
 				                            	<option value="好">好</option>
 				                            	<option value="普通">普通</option>
 				                            </select>
@@ -306,7 +306,7 @@ $(document).ready(function() {
 								<div class="fBox">
 									<div class="both">
 										<div class="styled-select">
-			                            	<select class="md-input" name="">
+			                            	<select class="md-input" name="" disabled="disabled">
 				                            	<option value="好">好</option>
 				                            	<option value="普通">普通</option>
 				                            </select>
@@ -316,7 +316,7 @@ $(document).ready(function() {
 								<div class="fBox">
 									<div class="both">
 										<div class="styled-select">
-			                            	<select class="md-input" name="">
+			                            	<select class="md-input" name="" disabled="disabled">
 				                            	<option value="好">好</option>
 				                            	<option value="普通">普通</option>
 				                            </select>
@@ -332,7 +332,7 @@ $(document).ready(function() {
 								<div class="fBox">
 									<div class="both">
 										<p class="title_s">語言</p>
-										<input type="text" name="" disabled="disabled">
+										<input type="text" name="" disabled="disabled" value="義大利文">
 			                    	</div>
 								</div>
 								<div class="fBox">
@@ -442,7 +442,7 @@ $(document).ready(function() {
 			</p>
 
 			<p class="btn">
-				<a href="interview_officer_02.html">送出</a>
+				<a class="popup-link" href="#popup-ok">送出</a>
 			</p>
 		</form>
 	</div>
