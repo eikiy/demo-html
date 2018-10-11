@@ -193,14 +193,14 @@ $(document).ready(function() {
 						<p class="mail_title mail_icon_01">初試通知函</p>
 						<div class="tools"><!-- 完成複製 須即時加上copy-ok -->
 							<a class="copy copy-ok" href="#"><div class="tooltip">複製文字</div></a>
-							<a class="edit" href="#"><div class="tooltip">編輯修改</div></a>
+							<a class="edit popup-link" href="#popup-mail-interview""><div class="tooltip">編輯修改</div></a>
 						</div>
 					</li>
 					<li class="clearfix">
 						<p class="mail_title mail_icon_02">複試通知函</p>
 						<div class="tools">
 							<a class="copy" href="#"><div class="tooltip">複製文字</div></a>
-							<a class="edit" href="#"><div class="tooltip">編輯修改</div></a>
+							<a class="edit popup-link" href="#popup-mail-interview""><div class="tooltip">編輯修改</div></a>
 						</div>
 					</li>
 					<li class="clearfix">
@@ -214,7 +214,7 @@ $(document).ready(function() {
 						<p class="mail_title mail_icon_04">報到通知函</p>
 						<div class="tools">
 							<a class="copy" href="#"><div class="tooltip">複製文字</div></a>
-							<a class="edit" href="#"><div class="tooltip">編輯修改</div></a>
+							<a class="edit popup-link" href="#popup-mail-checkin"><div class="tooltip">編輯修改</div></a>
 						</div>
 					</li>
 					<li class="clearfix">
@@ -392,6 +392,89 @@ $(document).ready(function() {
         </form>
     </div>
 
+    <!-- popup 報到通知函 -->
+	<div id="popup-mail-checkin" class="white-popup popup-w-m mfp-hide">
+        <form class="setBox for_mail_edir">
+            <div class="top_title">
+                <h3 class="dark">報到通知函</h3>
+            </div>
+            <div class="fillinBox">
+                <div class="mail_content">
+                	<textarea>台端   OOO先生/小姐，幸蒙您至敝公司參加入職甄試，經敝公司各級主管複審後，決定聘請您擔任OOOOO職位，我們對於您在面談時傑出的表現留下良好的印象，竭誠地歡迎您加入我們的團隊，並對您將勝任的專職有著很深的期許。
+    
+一、您的相關資料如下：
+      1.月薪資： 
+      2.所屬單位： 
+      3.直屬主管： 
+      4.試用期： 
+      5.新人輔導員： 
+二、報到時間：OOO年OO月OO日OO時OO分
+      報到地址：
+三、請您攜帶下列物件至敝公司管理部辦理報到手續。
+      1.最近三個月內正面二寸脫帽半身彩色照片2張。 
+      2.國民身份証正本(報到當日核對無誤後,立即發還)。
+      3.退伍令正本（男性同仁，報到當日核對無誤後,立即發還）。
+      4.最高學歷畢業證書正本（報到當日核對無誤後,立即發還）。
+      5.最後任職公司離職證明正本。
+      6.薪資轉帳存摺封面影本：OO銀行。
+      7.與工作相關之專業證照（報到當日核對無誤後,立即發還）。
+四、如您不克按時報到或有任何疑問，請於報到前三日來電通知，電話(02)XXXXXXXX 轉分機XXX，O小姐，若逾期未報到，
+      將視為您自動放棄敝公司職位。
+五、如報到時，遇到颱風，經縣市政府公告停班，則報到日期順延一天。
+六、如報到文件無法於報到當天繳交，請於一週內完成補交。
+七、這份錄取通知，經雙方達成共識，未經彼此同意，不得做暗示性的或口頭上或書面上的修訂及更正。
+八、若上述事項經確認無誤，敬請簽回確認，本通知書一式二份，一份個人保留，一份OOO有限公司管理部存放備查。
+
+本報到通知書所載薪資為公司機密資訊之一，請您妥善保管，切勿洩漏。
+OOOOOO有限公司經營團隊，歡迎您！！
+
+
+OOOOOOOO有限公司 管理部  謹致
+OOO年OO月OO日
+                	</textarea>
+                </div>
+                <p class="btn"><a href="#">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 報到通知函 -->
+	<div id="popup-mail-interview" class="white-popup popup-w-m mfp-hide">
+        <form class="setBox for_mail_edir">
+            <div class="top_title">
+                <h3 class="dark">面試通知函</h3>
+            </div>
+            <div class="fillinBox">
+                <div class="mail_content">
+                	<textarea>
+                		OOO 先生/小姐，您好：
+
+很開心能與您連絡上，並邀請您到OOOOO有限公司與我們會談。
+
+相關的約定日期與時間如下：
+
+會談日期：OOO年OO月OO日
+會談時間：上午/下午 00:00
+會談職務：
+會談地點：OOOOO有限公司
+會談地址：
+會談行程：1. 特質測驗－3分鐘
+               2. 初步會談(管理/研發單位) －約1.5小時
+
+注意事項：為縮短當天面試時間，我們隨信附上『基本資料表及問卷』的連結，讓您可以先進行填寫。
+
+基本資料表及問卷的連結：
+
+如您不克按時前來或有任何疑問，請來電通知，電話(02)XXXXXXXX 轉分機XXX，O小姐。
+
+OOOOOOOO有限公司 管理部  謹致
+OOO年OO月OO日
+                	</textarea>
+                </div>
+                <p class="btn"><a href="#">確認</a></p>
+            </div>
+        </form>
+    </div>
 
 </main>
 

@@ -188,6 +188,8 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 
 .popup-w-s{max-width: 390px;}
 .popup-w-s .setBox .top_title::after{ display: none;}
+.popup-w-m{max-width: 720px;}
+
 .popup-M {max-width: 795px;}
 .popup-M .mfp-close{ left: 345px !important; }
 .setBox .top_title {width: 100%; position: relative; max-width: 390px;}
@@ -858,11 +860,12 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .calendar_toolsBox .calendar_month p.ring_color span.org::before{ background-color: #E5AF57; }
 
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox{ padding:0 15px; }
-.right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p{ cursor: pointer; }
+.right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p{ cursor: pointer; border: 2px solid transparent; margin: 0px auto; max-width: 35px; border-radius: 4px;}
+.right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p.btn_in{ border-color: #81b6c8; }
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr th:first-child p, .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr th:last-child p, 
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr td:first-child p, .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr td:last-child p { color: #9B9B9B }
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr td{ position: relative;  }
-.right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p.ring_color{ position: absolute; bottom: 3px; text-align: center; width: 100%; padding: 0; letter-spacing: 2px; }
+.right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p.ring_color{ position: absolute; bottom: 3px; text-align: center; width: 100%; padding: 0; letter-spacing: 1px; border: none; }
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p.ring_color span{padding: 0; position: initial;}
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p.ring_color span::before{ position: initial; top: initial; left: initial; }
 
@@ -932,7 +935,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interview_officer_Main .use_fillinBox .comment .fBox{ width: 100%;}
 .interview_officer_Main .use_fillinBox .comment .infoContent_two p{ line-height: 24px; width: 105px; text-align: right; padding-right: 10px; }
 .interview_officer_Main .use_fillinBox .comment .infoContent_two .styled-select{ float: right; max-width: 248px;}
-.interview_officer_Main .use_fillinBox .comment .infoContent_two .styled-select select{font-size: 14px; min-height: 22px; line-height: 22px; padding: 0px 10px;}
+.interview_officer_Main .use_fillinBox .comment .infoContent_two .styled-select select{font-size: 14px; min-height: 22px; line-height: 22px; padding: 0px 26px 0 10px;}
 .interview_officer_Main .use_fillinBox .comment .infoContent_two .tBox:last-child{ padding-left: 0; width: calc(100% - 380px);}
 .interview_officer_Main .use_fillinBox .comment .infoContent_two .tBox:first-child{ padding-right: 0; min-width: 380px; }
 .interview_officer_Main .use_fillinBox .comment .infoContent_two .tBox:first-child p {width: 120px;}
@@ -976,5 +979,12 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .mainBox .HR_contents ul.list li .tools a.edit{ background-image: url(../images/HR/tool_icon_edit.png); }
 .mainBox .HR_contents ul.list li .tools a.print{ background-image: url(../images/HR/tool_icon_print.png); }
 .mainBox .HR_contents ul.list li .tools a.pdf{ background-image: url(../images/HR/tool_icon_pdf.png); }
+
+/*HR - popup mail edit*/
+.for_mail_edir .top_title{ max-width: 100%; }
+.for_mail_edir .top_title h3.dark{ background-color: #81B6C8; }
+.for_mail_edir .mail_content{ width: 100%; background-color: #EBEBEB; padding: 10px; }
+.for_mail_edir .mail_content textarea{width: 100%; background-color: #FFFFFF; font-size: 12px; min-height: 603px; padding: 30px 15px; text-align:justify; line-height: 17px;}
+
 
 
