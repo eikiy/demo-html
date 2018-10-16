@@ -262,6 +262,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .setBox p.page_nb a:hover{ border-color: #81B6C8; }
 .setBox p.page_nb a.btn_in{ border-color: #81B6C8; background-color: #81B6C8; color: #fff;}
 
+.setBox p.t_title{ color: #000000; padding: 5px 0; }
 .setBox p.b_title{ color: #81B6C8; text-align: left; padding-bottom: 5px; }
 .setBox .item li{ width: initial; margin: 5px 5px 2px 0px; }
 .setBox .item li a{ padding: 5px 30px 5px 8px;}
@@ -728,23 +729,23 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 /*.for_management{ min-width: 1070px;}*/
 .for_management .contentsBox{ width: 1030px; }
 .right_contents .managementBox{ float: left; width: 100%; max-width: 546px; }
-.right_contents .managementBox ul.user_list{width: 100%;}
-.right_contents .managementBox ul.user_list li{ margin-bottom: 8px; background-color: #fff; border-radius: 10px 0 10px 10px; border:3px solid #fff; box-shadow: 0 1px 1px rgba(0,0,0,.1);position: relative;}
-.right_contents .managementBox ul.user_list li a.go_delete{ position: absolute; cursor: pointer; top:8px; right: 8px; width: 16px; height: 16px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
-.right_contents .managementBox ul.user_list li a.go_delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
-.right_contents .managementBox ul.user_list li p{ font-size: 13px;}
-.right_contents .managementBox ul.user_list li:hover{ border-color: #81B6C8; border:3px solid #81B6C8;}
+.right_contents ul.user_list{width: 100%;}
+.right_contents ul.user_list li{ margin-bottom: 8px; background-color: #fff; border-radius: 10px 0 10px 10px; border:3px solid #fff; box-shadow: 0 1px 1px rgba(0,0,0,.1);position: relative;}
+.right_contents ul.user_list li a.go_delete{ position: absolute; cursor: pointer; top:8px; right: 8px; width: 16px; height: 16px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
+.right_contents ul.user_list li a.go_delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
+.right_contents ul.user_list li p{ font-size: 13px;}
+.right_contents ul.user_list li:hover{ border-color: #81B6C8; border:3px solid #81B6C8;}
 
-.right_contents .managementBox .user_photo{ float: left; width: 130px; }
-.right_contents .managementBox .user_photo .avatar{ width: 98px; height: 98px; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); display: block; overflow: hidden; border-radius: 20px; border:1px solid #979797; margin: 15px auto 0 auto; position: relative; }
-.right_contents .managementBox .user_photo .avatar .info{ opacity: 0; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(256,256,256, .9);}
-.right_contents .managementBox .user_photo .avatar .info a.edit{ position: absolute; top: 4px; right: 0; z-index: 10; width: 32px; height: 32px; display: block; background: url(../images/user_img_edit_in.png) center center no-repeat; background-size: contain; }
-.right_contents .managementBox .user_photo .avatar .info p.phone {font-size: 12px; color: #726D73; font-weight: bold; padding: 52px 5px 0 5px;}
-.right_contents .managementBox .user_photo .avatar:hover .info{ opacity: 1; }
-.right_contents .managementBox .user_photo .male{ background: url(../images/user_default_male.png) center center no-repeat; background-size: cover; }
-.right_contents .managementBox .user_photo .female{ background: url(../images/user_default_female.png) center center no-repeat; background-size: cover; }
+.right_contents .user_photo{ float: left; width: 130px; }
+.right_contents .user_photo .avatar{ width: 98px; height: 98px; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); display: block; overflow: hidden; border-radius: 20px; border:1px solid #979797; margin: 15px auto 0 auto; position: relative; }
+.right_contents .user_photo .avatar .info{ opacity: 0; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(256,256,256, .9);}
+.right_contents .user_photo .avatar .info a.edit{ position: absolute; top: 4px; right: 0; z-index: 10; width: 32px; height: 32px; display: block; background: url(../images/user_img_edit_in.png) center center no-repeat; background-size: contain; }
+.right_contents .user_photo .avatar .info p.phone {font-size: 12px; color: #726D73; font-weight: bold; padding: 52px 5px 0 5px;}
+.right_contents .user_photo .avatar:hover .info{ opacity: 1; }
+.right_contents .user_photo .male{ background: url(../images/user_default_male.png) center center no-repeat; background-size: cover; }
+.right_contents .user_photo .female{ background: url(../images/user_default_female.png) center center no-repeat; background-size: cover; }
+.right_contents .user_photo p.name{ text-align: center; padding: 10px 0 5px; color: #4A4A4A; letter-spacing: 4px; }
 
-.right_contents .managementBox .user_photo p.name{ text-align: center; padding: 10px 0 5px; color: #4A4A4A; letter-spacing: 4px; }
 .right_contents .managementBox .user_data{ float: left; width: 100%; max-width:calc( 100% - 130px); padding: 15px 15px 5px 0; }
 .right_contents .managementBox .user_data .application_department{ width: 100%; padding: 8px 0; }
 .right_contents .managementBox .user_data .application_department p{ float: left; color: #000000; }
@@ -795,47 +796,85 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .managementBox ul.card_list li.card_active{ border: solid 3px #81B6C8;}
 .right_contents .managementBox ul.card_list li.card_active:hover{ box-shadow: initial; }
 
+.right_contents p.day span{ color: #fff; margin-right: 5px; padding: 2px; }
+.right_contents p.day span.green{ background-color: #84BE98;}
+.right_contents p.day span.red{ background-color: #EC7B86;}
+.right_contents p.day span.org{ background-color: #E5AF57;}
+
 .right_contents .managementBox .remarkBox{width: 100%;}
 .right_contents .managementBox .remarkBox p{ float: left; width: 100%;  max-width: 230px; }
 .right_contents .managementBox .remarkBox p.day{ width: initial; max-width: initial;}
-.right_contents .managementBox .remarkBox p.day span{ color: #fff; margin-right: 5px; padding: 2px; }
-.right_contents .managementBox .remarkBox p.day span.green{ background-color: #84BE98;}
-.right_contents .managementBox .remarkBox p.day span.red{ background-color: #EC7B86;}
-.right_contents .managementBox .remarkBox p.day span.org{ background-color: #E5AF57;}
 
-.right_contents .managementBox .top_toolsBox{ width: 100%; padding-bottom: 10px; }
-.right_contents .managementBox .top_toolsBox ul.type{ float: left; width: 350px; background-color: #fff; border-radius: 4px 0 4px 0;  box-shadow: 0 1px 1px rgba(0,0,0,.1); }
-.right_contents .managementBox .top_toolsBox ul.type li{ width: calc(100% / 3); float: left; position: relative;}
-.right_contents .managementBox .top_toolsBox ul.type li p{ text-align: center; line-height: 30px;}
-.right_contents .managementBox .top_toolsBox ul.type li a{ color: #3E3E3D; display: block; height: 30px; }
-.right_contents .managementBox .top_toolsBox ul.type li::before{ content: ""; width: 1px; height: 100%; position: absolute; top: 0; background-color: #cccccc; display: block; right: -0.5px; }
-.right_contents .managementBox .top_toolsBox ul.type li::after{ content: ""; position: absolute; width: 100%; height: 2px; display: none; background-color: #81B6C8; bottom: 0; left: ;}
-.right_contents .managementBox .top_toolsBox ul.type li:hover::after{ display: block; }
-.right_contents .managementBox .top_toolsBox ul.type li.btn_in p a{ color: #81B6C8; }
-.right_contents .managementBox .top_toolsBox ul.type li.btn_in::after{ display: block; }
-.right_contents .managementBox .top_toolsBox ul.type li p span{ position: relative; padding-right: 15px;}
-.right_contents .managementBox .top_toolsBox ul.type li p span::after, .right_contents .managementBox .top_toolsBox ul.type li p span::before{ content: ""; top: 3px; right: 0; position: absolute; width: 0; height: 0; border-style: solid; border-width: 0 4px 4px 4px; border-color: transparent transparent #9B9B9B transparent; line-height: 0px; _border-color: #000000 #000000 #9B9B9B #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
-.right_contents .managementBox .top_toolsBox ul.type li p span::before{ top: initial; bottom: 3px; border-width: 4px 4px 0 4px; border-color: #9B9B9B transparent transparent transparent; _border-color: #9B9B9B #000000 #000000 #000000;}
-.right_contents .managementBox .top_toolsBox ul.type li.btn_in p span::after{ border-color: transparent transparent #81B6C8 transparent; _border-color: #000000 #000000 #81B6C8 #000000;}
+.right_contents .top_toolsBox{ width: 100%; padding-bottom: 10px; }
+.right_contents .top_toolsBox ul.type{ float: left; max-width: 350px; background-color: #fff; border-radius: 5px 0 5px 5px; overflow: hidden; box-shadow: 0 1px 1px rgba(0,0,0,.1); }
+.right_contents .top_toolsBox ul.type li{ width:116px; float: left; position: relative;}
+.right_contents .top_toolsBox ul.type li p{ text-align: center; line-height: 30px;}
+.right_contents .top_toolsBox ul.type li a{ color: #3E3E3D; display: block; height: 30px; }
+.right_contents .top_toolsBox ul.type li::before{ content: ""; width: 1px; height: 100%; position: absolute; top: 0; background-color: #cccccc; display: block; right: -0.5px; }
+.right_contents .top_toolsBox ul.type li::after{ content: ""; position: absolute; width: 100%; height: 2px; display: none; background-color: #81B6C8; bottom: 0; left: ;}
+.right_contents .top_toolsBox ul.type li:last-child::before{ display: none; }
+.right_contents .top_toolsBox ul.type li:hover::after{ display: block; }
+.right_contents .top_toolsBox ul.type li.btn_in p a{ color: #81B6C8; }
+.right_contents .top_toolsBox ul.type li.btn_in::after{ display: block; }
+.right_contents .top_toolsBox ul.type li p span{ position: relative; padding-right: 15px;}
+.right_contents .top_toolsBox ul.type li p span::after, .right_contents .top_toolsBox ul.type li p span::before{ content: ""; top: 3px; right: 0; position: absolute; width: 0; height: 0; border-style: solid; border-width: 0 4px 4px 4px; border-color: transparent transparent #9B9B9B transparent; line-height: 0px; _border-color: #000000 #000000 #9B9B9B #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+.right_contents .top_toolsBox ul.type li p span::before{ top: initial; bottom: 3px; border-width: 4px 4px 0 4px; border-color: #9B9B9B transparent transparent transparent; _border-color: #9B9B9B #000000 #000000 #000000;}
+.right_contents .top_toolsBox ul.type li.btn_in p span::after{ border-color: transparent transparent #81B6C8 transparent; _border-color: #000000 #000000 #81B6C8 #000000;}
 
-.right_contents .managementBox .top_toolsBox p.btn_filter{ float: left; font-size: 13px;  line-height: 30px;  padding-left: 35px; text-align: center;}
-.right_contents .managementBox .top_toolsBox p.btn_filter a{ cursor: pointer; display: block; width: 80px; color: #4A4A4A; height: 32px; background-color: #fff; border:1px solid transparent; box-shadow: 0 1px 1px rgba(0,0,0,.1); border-radius: 4px 0 4px 0;}
-.right_contents .managementBox .top_toolsBox p.btn_filter a:hover{ border-color:#81B6C8; }
-.right_contents .managementBox .top_toolsBox p.btn_filter a span{ position: relative; padding-left: 16px; }
-.right_contents .managementBox .top_toolsBox p.btn_filter a span::before{ position: absolute; content: ""; width: 14px; top: 0; left: 0; height: 16px; display: block; background: url(../images/icon_filter.png) center center no-repeat; background-size: contain; }
-.right_contents .managementBox .top_toolsBox p.btn_filter a.btn_in{ color: #81B6C8; }
-.right_contents .managementBox .top_toolsBox p.btn_filter a.btn_in span::before{ background-image: url(../images/icon_filter_in.png);}
 
-.right_contents .managementBox .top_toolsBox ul.list_style{ float: right;  text-align: right; }
-.right_contents .managementBox .top_toolsBox ul.list_style li{ display: inline-block; padding: 6px 0 0 5px; }
-.right_contents .managementBox .top_toolsBox ul.list_style li a{ width: 20px; height: 20px; display: block; background-repeat: no-repeat; background-size:  contain; background-position:  center center; position: relative; }
-.right_contents .managementBox .top_toolsBox ul.list_style li a.block{ background-image: url(../images/list_style_icon_01.png); }
-.right_contents .managementBox .top_toolsBox ul.list_style li a.block:hover{background-image: url(../images/list_style_icon_01_in.png);}
-.right_contents .managementBox .top_toolsBox ul.list_style li a.list{ background-image: url(../images/list_style_icon_02.png); }
-.right_contents .managementBox .top_toolsBox ul.list_style li a.list:hover{ background-image: url(../images/list_style_icon_02_in.png); }
-.right_contents .managementBox .top_toolsBox ul.list_style li a .tooltip{ top: 30px; left: -22px; min-width: 65px; }
-.right_contents .managementBox .top_toolsBox ul.list_style li.btn_in a.block{background-image: url(../images/list_style_icon_01_in.png);}
-.right_contents .managementBox .top_toolsBox ul.list_style li.btn_in a.list{background-image: url(../images/list_style_icon_02_in.png);}
+.right_contents .top_toolsBox .calendar_search{ float: left;  margin-left: 20px; position: relative;}
+.right_contents .top_toolsBox .calendar_search ul.top_day_select { text-align: left; background-color: #fff; border-radius: 5px 0 5px 5px; overflow: hidden; box-shadow: 0 1px 1px rgba(0,0,0,.1);}
+.right_contents .top_toolsBox .calendar_search ul.top_day_select li{ float: left; position: relative;}
+.right_contents .top_toolsBox .calendar_search ul.top_day_select li:first-child::before{content: ""; width: 1px; height: 100%; position: absolute; top: 0; background-color: #cccccc; display: block; right: -0.5px;}
+.right_contents .top_toolsBox .calendar_search ul.top_day_select li p{ float: left; font-size: 12px; line-height: 30px; padding: 0 7px; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
+.right_contents .top_toolsBox .calendar_search ul.top_day_select li input{ float: left; font-size: 12px; width: 116px; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;line-height: 30px; padding: 0 10px; background-image: url(../images/icon_time_select_01.png); background-repeat: no-repeat; background-size: 20%; background-position: 82px 5px; }
+.right_contents .top_toolsBox .calendar_search ul.top_day_select li:hover p{ color: #81B6C8; }
+.right_contents .top_toolsBox .calendar_search ul.top_day_select li:hover input{ color: #81B6C8;  background-image:url(../images/icon_time_select_01_hover.png) }
+
+.right_contents .top_toolsBox .calendar_search .calendar_filter{ position: absolute; top: 31px; left: 0; z-index: 5;  width: 448px; background-color: #fff; border-radius: 0px 20px 20px 20px; overflow: hidden;box-shadow: 0 1px 1px rgba(0,0,0,.1), 0px 2px 4px rgba(0,0,0,.5);}
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox{ width: 308px; float: left; background-color: #fff; padding-top: 10px;}
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox p { color: #9B9B9B; padding: 8px 0;}
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox table{ margin: 0 auto; }
+
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox .dateBox p{ max-width: 100%; margin: 0 auto; border:2px solid transparent; border-radius: 5px; }
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox .dateBox p.btn_in{max-width: 100%; background-color: #fff; border-color: #81B6C8;}
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox .dateBox table p:hover{ border-color: #81B6C8;  }
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox .dateBox .bg_skyblue{ background-color: #D1E0E5; }
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox .dateBox .bg_skyblue:first-child{ border-radius: 6px 0 0 6px;}
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox .dateBox .bg_skyblue:last-child{ border-radius: 0 6px 6px 0;}
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox .dateBox .bg_first{ border-radius: 6px 0 0 6px; }
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox .dateBox .bg_last{ border-radius: 0 6px 6px 0;}
+
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox_type{ width: 140px; height: 100%; float: left; padding: 35px 0 32px 0; position: relative; }
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox_type::after{content: ""; position: absolute; width: 1px; height: 100%; top: 0; left: 0; background-color: #cccccc;}
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox_type ul{ width: 100%;}
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox_type ul li{padding: 4px 0;}
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox_type ul li p{ text-align: center;  font-size: 13px;}
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox_type ul li p a{ width: 100%; padding:0 10px; max-width: 100px; display: inline-block; line-height: 30px; border:1px solid #81B6C8; color: #4A4A4A; border-radius: 0 5px 5px 5px; }
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox_type ul li p a:hover{ color: #81B6C8; }
+.right_contents .top_toolsBox .calendar_search .calendar_filter .monthBox_type ul li p a.btn_in{ background-color: #81B6C8; color: #fff; }
+
+.right_contents .top_toolsBox p.btn_filter{ float: left; font-size: 13px;  line-height: 30px;  padding-left: 35px; text-align: center;}
+.right_contents .top_toolsBox p.btn_filter a{ cursor: pointer; display: block; width: 80px; color: #4A4A4A; height: 30px; background-color: #fff; border:1px solid transparent; box-shadow: 0 1px 1px rgba(0,0,0,.1); border-radius: 5px 0 5px 5px;}
+.right_contents .top_toolsBox p.btn_filter a:hover{ border-color:#81B6C8; }
+.right_contents .top_toolsBox p.btn_filter a span{ position: relative; padding-left: 16px; }
+.right_contents .top_toolsBox p.btn_filter a span::before{ position: absolute; content: ""; width: 14px; top: 0; left: 0; height: 16px; display: block; background: url(../images/icon_filter.png) center center no-repeat; background-size: contain; }
+.right_contents .top_toolsBox p.btn_filter a.btn_in{ color: #81B6C8; }
+.right_contents .top_toolsBox p.btn_filter a.btn_in span::before{ background-image: url(../images/icon_filter_in.png);}
+
+.right_contents .top_toolsBox p.people_nb{ float: right;font-size: 13px; line-height: 30px; }
+
+
+.right_contents .top_toolsBox ul.list_style{ float: right;  text-align: right; }
+.right_contents .top_toolsBox ul.list_style li{ display: inline-block; padding: 6px 0 0 5px; }
+.right_contents .top_toolsBox ul.list_style li a{ width: 20px; height: 20px; display: block; background-repeat: no-repeat; background-size:  contain; background-position:  center center; position: relative; }
+.right_contents .top_toolsBox ul.list_style li a.block{ background-image: url(../images/list_style_icon_01.png); }
+.right_contents .top_toolsBox ul.list_style li a.block:hover{background-image: url(../images/list_style_icon_01_in.png);}
+.right_contents .top_toolsBox ul.list_style li a.list{ background-image: url(../images/list_style_icon_02.png); }
+.right_contents .top_toolsBox ul.list_style li a.list:hover{ background-image: url(../images/list_style_icon_02_in.png); }
+.right_contents .top_toolsBox ul.list_style li a .tooltip{ top: 30px; left: -22px; min-width: 65px; }
+.right_contents .top_toolsBox ul.list_style li.btn_in a.block{background-image: url(../images/list_style_icon_01_in.png);}
+.right_contents .top_toolsBox ul.list_style li.btn_in a.list{background-image: url(../images/list_style_icon_02_in.png);}
 
 
 .right_contents .calendar_toolsBox{ float: right; width: 100%; width: 300px; margin-left: 15px;}
@@ -845,6 +884,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 /*跟pop的日曆共用*/
 .monthBox{ background-color: #707475; width: 100%; min-height: 270px; border-radius:0 20px 20px 20px ; padding-bottom: 10px; }
 .monthBox p{ color: #fff;  text-align: center; padding: 5px 0 14px 0;}
+.monthBox tr th{ width: calc(100% / 7); }
 .monthBox .top_year_month{ width: 100%; }
 .monthBox .top_year_month p{ letter-spacing: 5px; padding: 15px 0 10px 0; margin: 0 auto;}
 .monthBox .top_year_month p span{ position: relative; }
@@ -955,10 +995,12 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 
 /*HR小幫手*/
 .mainBox .HR_contents p.top_title{ padding:10px; }
-.mainBox .HR_contents ul.list{ width: 100%; border-bottom: 2px solid #558C9E; padding-bottom: 15px; margin-bottom: 10px; }
-.mainBox .HR_contents ul.list:last-child{border: none;}
-.mainBox .HR_contents ul.list li{ float: left; width: 270px; background-color: #fff; height: 140px; margin:0 15px 8px 0; border-radius: 10px 0 10px 10px; padding-top:18px; }
-.mainBox .HR_contents ul.list li:nth-child(3n){ margin-right: 0; }
+.mainBox ul.list{ width: 100%; border-bottom: 2px solid #558C9E; padding-bottom: 15px; margin-bottom: 10px; }
+.mainBox ul.list:last-child{border: none;}
+.mainBox ul.list li{ float: left; width: 272px; background-color: #fff; height: 140px; margin:0 16px 10px 0; border-radius: 10px 0 10px 10px;}
+.mainBox ul.list li:nth-child(3n){ margin-right: 0; }
+
+.mainBox .HR_contents ul.list li{ padding-top:18px; }
 .mainBox .HR_contents ul.list li p.mail_title{ width: 120px; font-size: 13px; letter-spacing: 4px; float: left; position: relative; padding-top: 88px; text-align: center; }
 .mainBox .HR_contents ul.list li p.mail_title::before{ content: ""; position: absolute; top: 0; left: 20px; width: 74px; height: 80px; display: block; background-size: contain; background-repeat: no-repeat; background-position: center center; }
 .mainBox .HR_contents ul.list li p.mail_icon_01::before{ background-image: url(../images/HR/icon_mail_01.png); }
@@ -986,5 +1028,17 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .for_mail_edir .mail_content{ width: 100%; background-color: #EBEBEB; padding: 10px; }
 .for_mail_edir .mail_content textarea{width: 100%; background-color: #FFFFFF; font-size: 12px; min-height: 603px; padding: 30px 15px; text-align:justify; line-height: 17px;}
 
+/*招募紀錄*/
+.mainBox .recruit_contents .top_toolsBox p.btn_filter{ padding-left: 17px; }
+.mainBox .recruit_contents .top_toolsBox{ padding-bottom: 32px; }
+.mainBox .recruit_contents .user_list a{ width: 100%; display: block; }
+.mainBox .recruit_contents .user_list .user_photo{ width: 130px; }
+.mainBox .recruit_contents .user_list .user_photo .avatar{ width: 65px; height: 65px; }
+.mainBox .recruit_contents .user_list .right_status{ float: left; width: 130px; padding:17px 0 0 10px; }
+.mainBox .recruit_contents .user_list .right_status p.status_icon{ width: 91px; color: #81B6C8; letter-spacing: 4px; height: 84px; padding-top: 55px; border:1px dashed #81B6C8; border-radius: 10px 0 10px 10px; text-align: center; position: relative; margin-bottom: 7px;}
+.mainBox .recruit_contents .user_list .right_status p.status_icon::before{ position: absolute; top: 10px; left:calc(50% - 20px); width: 41px; height: 41px; display: block; content: ""; background-size: contain; background-repeat: no-repeat; background-position: center center; }
+.mainBox .recruit_contents .user_list .right_status p.status_ok::before{ background-image: url(../images/status/status_ok.png); }
+.mainBox .recruit_contents .user_list .right_status p.status_end::before{ background-image: url(../images/status/status_end.png); }
+.mainBox .recruit_contents .user_list .right_status p.status_not::before{ background-image: url(../images/status/status_not.png); }
 
 

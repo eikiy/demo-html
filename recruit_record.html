@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>招募紀錄</title>
+<meta name='description' content=""/>
+<meta name='keywords' content=""/>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+<!-- Magnific Popup core JS file -->
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.popup-link').magnificPopup({
+      removalDelay: 300,
+      mainClass: 'mfp-fade'
+    });
+});
+</script>
+
+</head>
+<body>
+
+<!--=================================
+	請馬克幫我增加屬性，
+	當點了popup後 header 和 main 的css 
+	都要加以下屬性才會有模糊效果：
+	
+	-webkit-filter: blur(0.4rem);
+    -moz-filter: blur(0.4rem);        
+    -o-filter: blur(0.4rem);
+    -ms-filter: blur(0.4rem);
+    filter: blur(0.4rem); 
+================================= -->
+
+<header class="headerBox for_management_top">
+	<div class="contentsBox clearfix">
+		<a class="logo" href="#"></a>
+		<div class="searchBox search_all">
+			<input type="text" name="" placeholder="搜尋面試人員/現有員工">
+			<a href="#"></a>
+			<!-- <ul class="search_list">
+				<li class="clearfix">
+					<div class="avatar male">
+						<img src="images/user_photo_02.png" width="100%">
+					</div>
+					<div class="info clearfix">
+						<p class="name">陳明天</p>
+						<p class="department">人資部部長</p>
+						<p class="job_title">行政管理處/人資部</p>
+					</div>
+					<div class="statu">
+						<p>員</p>
+					</div>
+				</li>
+
+				<li class="clearfix">
+					<div class="avatar male">
+					</div>
+					<div class="info clearfix">
+						<p class="name">陳明天</p>
+						<p class="department">人資部部長</p>
+						<p class="job_title">行政管理處/人資部</p>
+					</div>
+					<div class="statu">
+						<p class="skyblue">招</p>
+					</div>
+				</li>
+
+				<li class="clearfix">
+					<div class="avatar male">
+					</div>
+					<div class="info clearfix">
+						<p class="name">陳明天</p>
+						<p class="department">人資部部長</p>
+						<p class="job_title">行政管理處/人資部</p>
+					</div>
+					<div class="statu">
+						<p class="gray">離</p>
+					</div>
+				</li>
+
+				<li class="clearfix">
+					<div class="avatar male">
+					</div>
+					<div class="info clearfix">
+						<p class="name">陳明天</p>
+						<p class="department">人資部部長</p>
+						<p class="job_title">行政管理處/人資部</p>
+					</div>
+					<div class="statu">
+						<p class="gray">離</p>
+					</div>
+				</li>
+			</ul> -->
+		</div>
+		<p class="add_nterviewee"><a class="add popup-link" href="#popup-nterviewee">新增面試人員</a></p>
+		<ul class="tools">
+			<li><a class="message" href="#"><span>3</span><div class="tooltip">通知</div></a>
+				<!-- <div class="message_listBox">
+					<div class="top_tips"><p><a href="#">全部標示為已讀</a></p></div>
+					<ul>
+						<li class="start"><p>歡迎您開始使用通知功能。</p></li>
+						<li class="new">
+							<a class="info" href="#">
+								<p><span>林和樂</span>已完成個人資料填寫。</p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li class="new">
+							<a class="info" href="#">
+								<p><span>陳日和</span>已完成個人資料填寫。</p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li class="new">
+							<a class="info icon_review" href="#">
+								<p><span>陳天天</span>的面試評論已全部完成。</p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info" href="#">
+								<p><span>柯學</span>已完成個人資料填寫。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info" href="#">
+								<p><span>劉如如</span>已完成個人資料填寫。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info" href="#">
+								<p><span>戴以樂</span>已完成個人資料填寫。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info icon_review" href="#">
+								<p><span>林木</span>的面試評論已全部完成。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info" href="#">
+								<p><span>劉如如</span>已完成個人資料填寫。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info" href="#">
+								<p><span>戴以樂</span>已完成個人資料填寫。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info icon_review" href="#">
+								<p><span>林木</span>的面試評論已全部完成。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+					</ul>
+				</div> -->
+			</li>
+			<li><a class="logout" href="#"><div class="tooltip">登出</div></a></li>
+		</ul>
+	</div>
+</header>
+
+<main class="mainBox for_management">
+	<div class="contentsBox clearfix">
+		<section class="side_menu">
+			<h1 class="title">明天<br>
+			企業股份有限公司</h1>
+			<ul class="menu">
+				<li><p><a class="icon_01" href="management.html">招募管理</a></p></li>
+				<li><p><a class="icon_02 btn_in" href="recruit_record.html">招募紀錄</a></p></li>
+				<li><p><a class="icon_03" href="#">員工資料</a></p></li>
+				<li><p><a class="icon_04" href="account.html">帳號設定</a></p></li>
+				<li><p><a class="icon_05" href="HR_helper.html">HR小幫手</a></p></li>
+			</ul>
+		</section>
+		<section class="right_contents clearfix">
+			<div class="recruit_contents">
+				<div class="top_toolsBox clearfix">
+					<ul class="type clearfix">
+						<li class="btn_in"><p><a href="#"><span>姓名筆畫</span></a></p></li>
+						<li><p><a href="#"><span>日期</span></a></p></li>
+					</ul>
+					<div class="calendar_search">
+						<ul class="top_day_select" class="clearfix">
+							<li><p>開始</p><input type="" name="" value="2018/11/01"></li>
+							<li><p>結束</p><input type="" name="" value="2018/11/01"></li>
+						</ul>
+						<div class="calendar_filter clearfix">
+							<div class="monthBox">
+								<div class="top_year_month">
+									<p><span>2018年11月
+										<a class="left_arr" href="#"></a>
+										<a class="right_arr" href="#"></a></span>
+									</p>
+								</div>
+								<div class="dateBox">
+									<table width="86%" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<th><p>日</p></th>
+											<th><p>一</p></th>
+											<th><p>二</p></th>
+											<th><p>三</p></th>	
+											<th><p>四</p></th>
+											<th><p>五</p></th>
+											<th><p>六</p></th>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td class="bg_skyblue bg_first"><p class="btn_in">1</p></td>
+											<td class="bg_skyblue"><p>2</p></td>
+											<td class="bg_skyblue"><p>3</p></td>
+										</tr>
+										<tr>
+											<td class="bg_skyblue"><p>4</p></td>
+											<td class="bg_skyblue"><p>5</p></td>
+											<td class="bg_skyblue"><p>6</p></td>
+											<td class="bg_skyblue"><p>7</p></td>
+											<td class="bg_skyblue"><p>8</p></td>
+											<td class="bg_skyblue"><p>9</p></td>
+											<td class="bg_skyblue"><p>10</p></td>
+										</tr>
+										<tr>
+											<td class="bg_skyblue bg_last"><p class="btn_in">11</p></td>
+											<td><p>12</p></td>
+											<td><p>13</p></td>
+											<td><p>14</p></td>
+											<td><p>15</p></td>
+											<td><p>16</p></td>
+											<td><p>17</p></td>
+										</tr>
+										<tr>
+											<td><p>18</p></td>
+											<td><p>19</p></td>
+											<td><p>20</p></td>
+											<td><p>21</p></td>
+											<td><p>22</p></td>
+											<td><p>23</p></td>
+											<td><p>24</p></td>
+										</tr>
+										<tr>
+											<td><p>25</p></td>
+											<td><p>26</p></td>
+											<td><p>27</p></td>
+											<td><p>28</p></td>
+											<td><p>29</p></td>
+											<td><p>30</p></td>
+											<td><p>31</p></td>
+										</tr>
+										<!-- 假設又多了一排 -->
+										<!-- <tr>
+											<td><p>25</p></td>
+											<td><p>26</p></td>
+											<td><p>27</p></td>
+											<td><p>28</p></td>
+											<td><p>29</p></td>
+											<td><p>30</p></td>
+											<td><p>31</p></td>
+										</tr> -->
+										
+									</table>
+								</div>
+							</div>
+							<div class="monthBox_type">
+								<ul>
+									<li><p><a class="btn_in" href="#">過去一週</a></p></li>
+									<li><p><a href="#">這個月</a></p></li>
+									<li><p><a href="#">過去一個月</a></p></li>
+									<li><p><a href="#">過去90天</a></p></li>
+									<li><p><a href="#">今年</a></p></li>
+									<li><p><a href="#">去年</a></p></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<p class="btn_filter"><a class="btn_in popup-link" href="#popup-btn_filter"><span>篩選(3)</span></a></p>
+					<p class="people_nb">共有 50 位人員</p>
+				</div>
+				<ul class="user_list list clearfix">
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar male">
+								</div>
+								<p class="name">劉德華<br>軟體工程師</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_ok">已報到</p>
+								<p class="day"><span class="org">報</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar male">
+								</div>
+								<p class="name">陳日和<br>軟體工程師</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_not">未錄取</p>
+								<p class="day"><span class="green">初</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar male">
+								</div>
+								<p class="name">吳彥祖<br>軟體工程師</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_end">強制結案</p>
+								<p class="day"><span class="green">初</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar male">
+								</div>
+								<p class="name">陳日和<br>軟體工程師</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_ok">已報到</p>
+								<p class="day"><span class="org">報</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar male">
+								</div>
+								<p class="name">陳日和<br>軟體工程師</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_end">強制結案</p>
+								<p class="day"><span class="green">報</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar male">
+								</div>
+								<p class="name">陳日和<br>軟體工程師</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_not">未錄取</p>
+								<p class="day"><span class="red">報</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar male">
+								</div>
+								<p class="name">陳日和<br>軟體工程師</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_not">未錄取</p>
+								<p class="day"><span class="red">報</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar male">
+								</div>
+								<p class="name">陳日和<br>軟體工程師</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_ok">已報到</p>
+								<p class="day"><span class="org">報</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar male">
+								</div>
+								<p class="name">陳日和<br>軟體工程師</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_end">強制結案</p>
+								<p class="day"><span class="green">報</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar female">
+								</div>
+								<p class="name">baby<br>軟體工程師</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_ok">已報到</p>
+								<p class="day"><span class="org">報</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar male">
+								</div>
+								<p class="name">黎明<br>軟體工程師</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_not">未錄取</p>
+								<p class="day"><span class="green">初</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar female">
+								</div>
+								<p class="name">王樂樂<br>軟體工程師</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_end">強制結案</p>
+								<p class="day"><span class="green">初</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar male">
+								</div>
+								<p class="name">王力宏<br>駐唱歌手</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_ok">已報到</p>
+								<p class="day"><span class="org">報</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar male">
+								</div>
+								<p class="name">陳日和<br>設計師</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_end">強制結案</p>
+								<p class="day"><span class="green">報</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar male">
+								</div>
+								<p class="name">王小明<br>軟體工程師</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_not">未錄取</p>
+								<p class="day"><span class="red">報</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar female">
+								</div>
+								<p class="name">孫燕姿<br>PM</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_not">未錄取</p>
+								<p class="day"><span class="red">報</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar female">
+								</div>
+								<p class="name">美惠<br>會計</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_ok">已報到</p>
+								<p class="day"><span class="org">報</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="#">
+							<div class="user_photo">
+								<div class="avatar male">
+								</div>
+								<p class="name">吳宗憲<br>全端工程師</p>
+							</div>
+							<div class="right_status">
+								<p class="status_icon status_end">強制結案</p>
+								<p class="day"><span class="green">報</span> 2018/11/01</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+
+	<!-- popup 新增面試人員 -->
+	<div id="popup-nterviewee" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3 class="dark">新增面試人員</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                    <li class="nterviewee_name">
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <div class="MorF">
+                        	<p>
+                        		<a class="M M_in" href="#">先生</a>
+                        		<a class="F" href="#">小姐</a>
+                        	</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>聯絡電話</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <p class="btn"><a class="add" href="#">新增</a></p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>E-Mail</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試部門</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <p class="btn"><a class="select" href="#">選擇</a></p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>直屬主管</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                </ul>
+                <p class="btn"><a class="popup-link" href="#popup-nterviewee-01">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 新增面試人員 01 -->
+	<div id="popup-nterviewee-01" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3 class="dark">新增面試人員</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                    <li class="nterviewee_name">
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <input class="r_info" id="" name="" type="text" value="王明天">
+                        <div class="MorF">
+                        	<p>
+                        		<a class="M M_in" href="#">先生</a>
+                        		<a class="F" href="#">小姐</a>
+                        	</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>聯絡電話</p></label>
+                        <div class="more">
+                        	<div class="single">
+                        		<input class="r_info" id="" name="" type="text" value="0936-666444">
+	                        	<p class="btn"><a class="delete" href="#">刪除</a></p>
+	                    	</div>
+	                    	<div class="single">
+                        		<input class="r_info" id="" name="" type="text" value="0936-666444">
+	                        	<p class="btn"><a class="delete" href="#">刪除</a></p>
+	                    	</div>
+	                    	<div class="single">
+	                        	<input class="r_info" id="" name="" type="text">
+	                        	<p class="btn"><a class="add" href="#">新增</a></p>
+	                    	</div>
+	                    </div>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>E-Mail</p></label>
+                        <input class="r_info" id="" name="" type="text" value="frog@g">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <input class="r_info" id="" name="" type="text" value="軟體工程師">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試部門</p></label>
+                        <div class="more"><!-- 多個的版行就會是這樣 -->
+                        	<div class="single">
+                        		<p class="r_info">行政管理處 人資部 招募課</p>
+                        		<p class="btn"><a class="select select_active" href="#">選擇</a></p>
+                        	</div>
+                        	<div class="single">
+                        		<p class="r_info">招募一組</p>
+                        	</div>
+                    	</div>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>直屬主管</p></label>
+                        <!-- <input class="r_info" id="" name="" type="text" value="留有針"> -->
+                        <!-- 應該是文字顯示，不是input -->
+                        <p class="r_info">留有針</p>
+                    </li>
+                </ul>
+                <p class="btn"><a href="#">確認</a></p>
+            </div>
+
+	        <div class="the_department_list">	
+	        	<h4>部門選擇<button title="Close (Esc)" type="button" class="subBox-close">×</button></h4>
+	        	<ul>
+	        		<li>
+	        			<p class="b_title">第1階</p>
+	        			<p class="type"><a class="btn_in" href="#">明天股份有限公司</a></p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第2階</p>
+	        			<p class="type"><a class="btn_in" href="#">行政管理處</a>
+	        				<a href="#">製造處</a>
+	        				<a href="#">銷售處</a>
+	        				<a href="#">研發一處</a>
+	        				<a href="#">研發二處</a>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第3階</p>
+	        			<p class="type"><a class="btn_in" href="#">人資部</a>
+	        				<a href="#">總務部</a>
+	        				<a href="#">資訊部</a>
+	        				<a href="#">廠務部</a>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第4階</p>
+	        			<p class="type"><a href="#">訓練課</a>
+	        				<a class="btn_in" href="#">招募課</a>
+	        				<a href="#">薪酬課</a>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第5階</p>
+	        			<p class="type"><a href="#">招募一組</a>
+	        				<a href="#">招募二組</a>
+	        			</p>
+	        		</li>
+	        	</ul>
+	        </div>   
+        </form>
+    </div>
+
+
+    <!-- popup 篩選btn_filter：部門篩選 -->
+	<div id="popup-btn_filter" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>部門篩選</h3>
+            </div>
+
+            <div class="chosenBox">
+            	<p>已選擇</p>
+            	<p class="btn"><a class="delete cursor_none" href="#">全部清除</a></p>
+            </div>
+            
+            <div class="the_chosenBox_list">
+	        	<ul>
+	        		<li>
+	        			<p class="t_title">狀態篩選</p>
+	        			<p class="type"><a href="#">已報到</a>
+	        				<a href="#">未錄取</a>
+	        				<a href="#">強制結案</a>
+	        			</p>
+	        		</li>
+	        	</ul>
+	        </div>   
+
+	        <div class="the_chosenBox_list">
+	        	<ul>
+	        		<li>
+	        			<p class="t_title">部門篩選</p>
+	        			<p class="b_title">第2階</p>
+	        			<p class="type"><a href="#">行政管理處</a>
+	        				<a href="#">製造處</a>
+	        				<a href="#">銷售處</a>
+	        				<a href="#">研發一處</a>
+	        				<a href="#">研發二處</a>
+	        			</p>
+	        		</li>
+	        	</ul>
+	        </div>   
+
+            <div class="fillinBox">
+                <p class="btn"><a class="popup-link" href="#popup-btn_filter-1">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 篩選btn_filter-1：部門篩選 -->
+	<div id="popup-btn_filter-1" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>部門篩選</h3>
+            </div>
+
+            <div class="chosenBox">
+            	<p>已選擇</p>
+            	<p class="btn"><a class="delete" href="#">全部清除</a></p>
+            	<ul class="item">
+					<li><p><a>行政管理處/人資部/招募課</a><a class="go_delete"></a></p></li>
+					<li><p><a>銷售處</a><a class="go_delete"></a></p></li>
+					<li><p><a>研發一處/組務部</a><a class="go_delete"></a></p></li>
+				</ul>
+            </div>
+
+            <div class="the_chosenBox_list">
+	        	<ul>
+	        		<li>
+	        			<p class="t_title">狀態篩選</p>
+	        			<p class="type"><a href="#">已報到</a>
+	        				<a href="#" class="btn_active check_in_01">未錄取</a>
+	        				<a href="#">強制結案</a>
+	        			</p>
+	        		</li>
+	        	</ul>
+	        </div>   
+            
+            <div class="the_chosenBox_list">
+	        	<ul>
+	        		<li>
+	        			<p class="b_title">第2階</p>
+	        			<p class="type"><a class="btn_in" href="#">行政管理處</a>
+	        				<a href="#">製造處</a>
+	        				<a href="#" class="btn_active check_in_01">銷售處</a>
+	        				<a href="#" class="btn_active">研發一處</a>
+	        				<a href="#">研發二處</a>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第3階</p>
+	        			<p class="type"><a class="btn_in" href="#">人資部</a>
+	        				<a href="#">總務部</a>
+	        				<a class="btn_in check_in_01" href="#">資訊部</a>
+	        				<a href="#">廠務部</a>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第4階</p>
+	        			<p class="type"><a href="#">訓練課</a>
+	        				<a class="btn_in" href="#">招募課</a>
+	        				<a href="#">薪酬課</a>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第5階</p>
+	        			<p class="type"><a href="#" class="btn_active check_in_02">招募一組</a>
+	        				<a href="#" class="btn_active check_in_02">招募二組</a>
+	        			</p>
+	        		</li>
+	        	</ul>
+	        </div>   
+
+            <div class="fillinBox">
+                <p class="btn"><a href="#">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+</main>
+
+</body>
+</html>
+
+
+
