@@ -728,17 +728,16 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 
 
 /*招募管理頁*/
-/*.for_management_top{ min-width: 1070px;}*/
 .for_management_top .contentsBox{ width: 1000px; }
-/*.for_management{ min-width: 1070px;}*/
 .for_management .contentsBox{ width: 1030px; }
 .right_contents .managementBox{ float: left; width: 100%; max-width: 546px; }
 .right_contents ul.user_list{width: 100%;}
-.right_contents ul.user_list li{ margin-bottom: 8px; background-color: #fff; border-radius: 10px 0 10px 10px; border:3px solid #fff; box-shadow: 0 1px 1px rgba(0,0,0,.1);position: relative;}
+.right_contents ul.user_list li{ margin-bottom: 8px; background-color: #fff; border-radius: 10px 0 10px 10px; border:3px solid #fff; box-shadow: 0 1px 1px rgba(0,0,0,.1);position: relative; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
 .right_contents ul.user_list li a.go_delete{ position: absolute; cursor: pointer; top:8px; right: 8px; width: 16px; height: 16px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
 .right_contents ul.user_list li a.go_delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
 .right_contents ul.user_list li p{ font-size: 13px;}
 .right_contents ul.user_list li:hover{ border-color: #81B6C8; border:3px solid #81B6C8;}
+.right_contents ul.user_list li:hover .icon_02::after{ opacity: .5; }
 
 .right_contents .user_photo{ float: left; width: 130px; }
 .right_contents .user_photo .avatar{ width: 98px; height: 98px; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); display: block; overflow: hidden; border-radius: 20px; border:1px solid #979797; margin: 15px auto 0 auto; position: relative; }
@@ -804,6 +803,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents p.day span.green{ background-color: #84BE98;}
 .right_contents p.day span.red{ background-color: #EC7B86;}
 .right_contents p.day span.org{ background-color: #E5AF57;}
+.right_contents p.day span.gray{ background-color: #9B9B9B; }
 
 .right_contents .managementBox .remarkBox{width: 100%;}
 .right_contents .managementBox .remarkBox p{ float: left; width: 100%;  max-width: 230px; }
@@ -867,7 +867,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .top_toolsBox p.btn_filter a.btn_in{ color: #81B6C8; }
 .right_contents .top_toolsBox p.btn_filter a.btn_in span::before{ background-image: url(../images/icon_filter_in.png);}
 
-.right_contents .top_toolsBox p.btn_leave{ float: left; font-size: 13px;  line-height: 30px;  padding-left: 8px; text-align: center;}
+.right_contents .top_toolsBox p.btn_leave{ float: left; font-size: 13px;  line-height: 30px;  padding-left: 8px; text-align: center; cursor: pointer;}
 .right_contents .top_toolsBox p.btn_leave a{ cursor: pointer; display: block; width: 80px; color: #9B9B9B; height: 30px; background-color: #fff; border:1px solid transparent; box-shadow: 0 1px 1px rgba(0,0,0,.1); border-radius: 5px 0 5px 5px;}
 .right_contents .top_toolsBox p.btn_leave a:hover{ border-color:#81B6C8; }
 .right_contents .top_toolsBox p.btn_leave a.btn_in{ color: #81B6C8; }
@@ -1050,13 +1050,27 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .mainBox .recruit_contents .user_list .user_photo{ width: 130px; }
 .mainBox .recruit_contents .user_list .user_photo .avatar{ width: 65px; height: 65px; }
 .mainBox .recruit_contents .user_list .right_status{ float: left; width: 130px; padding:17px 0 0 10px; }
-.mainBox .recruit_contents .user_list .right_status p.status_icon{ width: 91px; color: #81B6C8; letter-spacing: 4px; height: 84px; padding-top: 55px; border:1px dashed #81B6C8; border-radius: 10px 0 10px 10px; text-align: center; position: relative; margin-bottom: 7px;}
+.mainBox .recruit_contents .user_list .right_status .status_icon{ width: 91px; color: #81B6C8; letter-spacing: 4px; height: 84px; padding-top: 55px; border:1px dashed #81B6C8; border-radius: 10px 0 10px 10px; text-align: center; position: relative; margin-bottom: 7px;}
 .mainBox .recruit_contents .user_list .right_status p.status_icon::before{ position: absolute; top: 10px; left:calc(50% - 20px); width: 41px; height: 41px; display: block; content: ""; background-size: contain; background-repeat: no-repeat; background-position: center center; }
 .mainBox .recruit_contents .user_list .right_status p.status_ok::before{ background-image: url(../images/status/status_ok.png); }
 .mainBox .recruit_contents .user_list .right_status p.status_end::before{ background-image: url(../images/status/status_end.png); }
 .mainBox .recruit_contents .user_list .right_status p.status_not::before{ background-image: url(../images/status/status_not.png); }
 
+.mainBox .recruit_contents .user_list .right_status p.top_years{ color: #81B6C8; letter-spacing: 5px; text-align: right; max-width: 91px; padding-bottom: 5px; }
+.mainBox .recruit_contents .user_list .right_status p.top_years span{display: inline-block;}
 
+.mainBox .recruit_contents .user_list .years_experience { padding-left: 25px; }
+.mainBox .recruit_contents .user_list .years_experience .status_icon{ padding: 6px 0 0 5px; height: 64px;}
+.mainBox .recruit_contents .user_list .years_experience .status_icon p{ color: #81B6C8; font-size: 18px; line-height: 26px; text-align: center; letter-spacing: 5px;}
+.mainBox .recruit_contents .user_list .years_experience .status_icon::after{ content: ""; left: -42px; top: 8px; width: 29px; height: 33px; position: absolute; background-size: contain; background-position: center center; background-repeat: no-repeat;}
+.mainBox .recruit_contents .user_list .years_experience .icon_01::after{ background-image: url(../images/employee_data_icon_01.png); }
+.mainBox .recruit_contents .user_list .years_experience .icon_02::after{ background-image: url(../images/employee_data_icon_02.png); }
+
+/*離職員工資料*/
+.mainBox ul.leave_list li{ background-color: #EBEBEB; border:1px solid #fff;}
+.mainBox ul.leave_list li:hover{padding: 0; border-width:1px;}
+.mainBox .recruit_contents .leave_list .years_experience .status_icon{padding-top: 18px;}
+.mainBox .recruit_contents .leave_list .years_experience .status_icon p{ color: #4A4A4A; font-size: 14px; letter-spacing: 1px;}
 
 /*特質測驗*/
 .traitTest_LoginBox{ background: url(../images/traitTest/bg_index.png) center bottom no-repeat; background-size: contain;}
