@@ -1062,14 +1062,19 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .mainBox .recruit_contents .user_list .years_experience { padding-left: 25px; }
 .mainBox .recruit_contents .user_list .years_experience .status_icon{ padding: 6px 0 0 5px; height: 64px;}
 .mainBox .recruit_contents .user_list .years_experience .status_icon p{ color: #81B6C8; font-size: 18px; line-height: 26px; text-align: center; letter-spacing: 5px;}
-.mainBox .recruit_contents .user_list .years_experience .status_icon::after{ content: ""; left: -42px; top: 8px; width: 29px; height: 33px; position: absolute; background-size: contain; background-position: center center; background-repeat: no-repeat;}
-.mainBox .recruit_contents .user_list .years_experience .icon_01::after{ background-image: url(../images/employee_data_icon_01.png); }
-.mainBox .recruit_contents .user_list .years_experience .icon_02::after{ background-image: url(../images/employee_data_icon_02.png); }
+
+.mainBox .recruit_contents .user_list a{ display: inline-block; position: relative; }
+.mainBox .recruit_contents .user_list .user_test_icon{ left: 110px; top: 48px; width: 29px; height: 33px; position: absolute; background-size: contain; background-position: center center; background-repeat: no-repeat;}
+.mainBox .recruit_contents .user_list .t_icon_no{ background-image: url(../images/employee_data_icon_01.png); }
+.mainBox .recruit_contents .user_list .t_icon_yes{ background-image: url(../images/employee_data_icon_02.png); }
+.mainBox .recruit_contents .user_list .t_icon_yes:hover{ background-image: url(../images/employee_data_icon_02_in.png) }
+.mainBox .recruit_contents .user_list .tooltip{ min-width: 80px; left: -25px; top: 37px;}
+.mainBox .recruit_contents .user_list a:hover .tooltip{ opacity: 0; }
+.mainBox .recruit_contents .user_list a .user_test_icon:hover .tooltip{ opacity: 1; }
 
 /*離職員工資料*/
-.mainBox ul.leave_list li{ background-color: #EBEBEB; border:1px solid #fff;}
-.mainBox ul.leave_list li:hover{padding: 0; border-width:1px;}
-.mainBox .recruit_contents .leave_list .years_experience .status_icon{padding-top: 18px;}
+.mainBox ul.leave_list li{ border-color: #EBEBEB; background-color: #EBEBEB; }
+.mainBox .recruit_contents .leave_list .years_experience .status_icon{ padding-top: 18px;}
 .mainBox .recruit_contents .leave_list .years_experience .status_icon p{ color: #4A4A4A; font-size: 14px; letter-spacing: 1px;}
 
 /*特質測驗*/
