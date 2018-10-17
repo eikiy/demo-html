@@ -953,6 +953,8 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interview_officer_LoginBox input.name{ width: 100%; max-width: 390px; height: 46px; padding: 5px 5px 5px 55px; border: 2px solid #81B6C8; border-radius: 8px 0 8px 8px; margin: 0 auto 15px auto; background: url(../images/login_icon_id.png) 5px center no-repeat; background-size: contain; }
 .interview_officer_LoginBox input.name[type=text]:focus{ box-shadow: inset 0px 2px 7px 0px rgb(0,0,0,.5); }
 .interview_officer_LoginBox input.name::placeholder{ color: #D8D8D8; }
+.interview_officer_LoginBox input.pw{ margin-bottom: 10px; background: url(../images/login_icon_pw.png) 5px center no-repeat; background-size: contain; }
+
 .interview_officer_LoginBox .name_error{ position: relative; }
 .interview_officer_LoginBox .name_error::after{ content: ""; z-index: 10; position: absolute; display: block; background-color: #C87D86; width: 325px; height: 2px; top: 62px; right: 10px;}
 .interview_officer_LoginBox .name_error p.the_reminder{ position: absolute; top: 32px; right: 15px; color: #C87D86; }
@@ -1142,4 +1144,10 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .traitTestEnd .end_thankyou::after{ content: ""; position: absolute; top: -360px; width: 710px; height: 350px; display: block; background: url(../images/traitTest/end_thankyou.png) center top no-repeat; background-size: contain;  }
 .traitTestEnd .end_thankyou p{ width: 100%; max-width: 588px; margin: 0 auto; color: #81B6C8; font-size: 18px; line-height: 25px; }
 
-
+.main_Login{ background: url(../images/bg_main_login.png) center bottom no-repeat;  background-size: contain; }
+.main_Login .name_error::after{ top: 44px; }
+.main_Login .name_error p.the_reminder{ top: 14px; }
+.main_Login h1{ padding-left: 155px;  padding-bottom: 5px;}
+.main_Login p.btn{padding-top: 0px;}
+.main_Login input.name{ margin-bottom: 30px; }
+.main_Login .contentsBox::after{ width: 122px; height: 95px; top: -27px; right: initial; left: 0; background: url(../images/logo_kamo.png) center center no-repeat; background-size: contain;}
