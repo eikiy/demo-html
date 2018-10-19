@@ -1140,6 +1140,9 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .traitTestEnd .end_thankyou { width: 100%; min-height: 170px; border: 3px solid #81B6C8; border-radius: 10px 0 10px 10px; display: block; padding-top: 60px; position: relative;}
 .traitTestEnd .end_thankyou::after{ content: ""; position: absolute; top: -360px; width: 710px; height: 350px; display: block; background: url(../images/traitTest/end_thankyou.png) center top no-repeat; background-size: contain;  }
 .traitTestEnd .end_thankyou p{ width: 100%; max-width: 588px; margin: 0 auto; color: #81B6C8; font-size: 18px; line-height: 25px; }
+.traitTestEnd .end_thankyou_not { width: 100%; min-height: 170px; border: 3px solid #81B6C8; border-radius: 10px 0 10px 10px; display: block; padding-top: 60px; position: relative;}
+.traitTestEnd .end_thankyou_not::after{ content: ""; position: absolute; top: -360px; width: 710px; height: 350px; display: block; background: url(../images/traitTest/end_thankyou_not.png) center top no-repeat; background-size: contain;  }
+.traitTestEnd .end_thankyou_not p{ width: 100%; max-width: 588px; margin: 0 auto; color: #81B6C8; font-size: 18px; line-height: 25px; }
 
 .main_Login{ background: url(../images/bg_main_login.png) center bottom no-repeat;  background-size: contain; }
 .main_Login .name_error::after{ top: 44px; }
