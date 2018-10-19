@@ -189,12 +189,13 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .popup-w-s{max-width: 390px;}
 .popup-w-s .setBox .top_title::after{ display: none;}
 .popup-w-m{max-width: 720px;}
-
 .popup-M {max-width: 795px;}
 .popup-M .mfp-close{ left: 345px !important; }
+.popup-L {max-width: 958px;}
 .setBox .top_title {width: 100%; position: relative; max-width: 390px;}
 .setBox .top_title h3 { text-align: center; font-size: 18px; letter-spacing: 7px; line-height: 36px; background-color: #D1E0E5; padding: 5px 0; border-radius: 10px 0 10px 10px; }
 .setBox .top_title h3.dark{ background-color: #558C9E; color: #fff;}
+.popup-L .setBox .top_title{ max-width: initial; }
 
 .setBox .fillinBox{ padding: 10px 0; width: 100%; }
 .setBox .fillinBox ul{ width: 100%; background-color:#EBEBEB; border-radius: 10px 0 10px 10px; box-shadow: 0px 0px 5px rgba(155,155,155,0.2); overflow: hidden; }
@@ -384,11 +385,6 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .management_pop ul li p.btn a.select{ background-color: #D1E0E5; }
 .management_pop ul li p.btn a.select:hover{ border-color: #81B6C8; }
 .management_pop ul li p.btn a.select_active{ box-shadow:0px 2px 4px #999 inset;}
-
-.filter_pop .chosenBox p.btn a.delete{ min-width: 60px; margin: 0 3px; padding: 0 5px 0px 25px; background-color: #fff; letter-spacing: 0; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #C87D86; border-radius:3px 0 3px 3px; color: #C87D86; background-image: url(../images/icon_x.png);}
-.filter_pop .chosenBox p.btn a.delete:hover{ background-color: #C87D86; color: #fff; background-image: url(../images/icon_x_w.png);}
-.filter_pop .chosenBox p.btn a.cursor_none{ -webkit-filter: grayscale(1); opacity: .5; cursor: not-allowed;}
-.filter_pop .chosenBox p.btn a.cursor_none:hover{ background-color:#fff; border-color: #C87D86; color: #81B6C8; background-image: url(../images/icon_x.png);}
 
 .management_pop ul li .more{ width: 280px; }
 .management_pop ul li .more .single{ width: 100%; position: relative; border-bottom: 1px solid rgba(155,155,155,0.5);}
@@ -824,6 +820,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .top_toolsBox ul.type li p span::after, .right_contents .top_toolsBox ul.type li p span::before{ content: ""; top: 3px; right: 0; position: absolute; width: 0; height: 0; border-style: solid; border-width: 0 4px 4px 4px; border-color: transparent transparent #9B9B9B transparent; line-height: 0px; _border-color: #000000 #000000 #9B9B9B #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
 .right_contents .top_toolsBox ul.type li p span::before{ top: initial; bottom: 3px; border-width: 4px 4px 0 4px; border-color: #9B9B9B transparent transparent transparent; _border-color: #9B9B9B #000000 #000000 #000000;}
 .right_contents .top_toolsBox ul.type li.btn_in p span::after{ border-color: transparent transparent #81B6C8 transparent; _border-color: #000000 #000000 #81B6C8 #000000;}
+.right_contents .top_toolsBox ul.type li.btn_in_botoom p span::before{ border-color: #81B6C8 transparent transparent transparent; _border-color: #81B6C8 #000000 #000000 #000000;}
 
 
 .right_contents .top_toolsBox .calendar_search{ float: left;  margin-left: 20px; position: relative;}
@@ -1151,3 +1148,21 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .main_Login p.btn{padding-top: 0px;}
 .main_Login input.name{ margin-bottom: 30px; }
 .main_Login .contentsBox::after{ width: 122px; height: 95px; top: -27px; right: initial; left: 0; background: url(../images/logo_kamo.png) center center no-repeat; background-size: contain;}
+
+
+
+/*人員資料 lightbox*/
+.popup-L .filter_pop .chosenBox{ padding: 20px 18px;}
+.interviewee_info{ width: 100%;  }
+.interviewee_info .interviewMainBox{ width: 100%; }
+.interviewee_info .interviewMainBox .top_ivBox .img-user{ width: 125px; height: 125px; margin: 0 10px 0 0; }
+.interviewee_info .interviewMainBox .top_ivBox .rBox{ max-width: calc(100% - 135px);}
+.interviewee_info .interview_officer_Main .top_ivBox .rBox table.interviewer_info{ margin: 0; max-width: 340px; }
+.interviewee_info .interview_officer_Main .top_ivBox .rBox table.interviewer_info tr td{ line-height: 20px; }
+.interviewee_info .interview_officer_Main .top_ivBox .rBox::before{display: none;}
+.interviewee_info .interview_officer_Main .top_ivBox .rBox p.embarrassment a{ float: left; margin: 0px 0px 0 12px;}
+.interviewee_info .interview_officer_Main .top_ivBox .rBox p.embarrassment a.icon_01{}
+.interviewee_info .interview_officer_Main .top_ivBox .rBox p.embarrassment a.icon_01_in{ background-color: #81B6C8; color: #fff; }
+
+
+
