@@ -362,7 +362,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .popup-padding-top .mfp-close{ top:51px !important; }
 
 .management_pop{position: relative;}
-.management_pop p.btn a{ background-color: #558C9E;}
+.management_pop p.btn a{ background-color: #81B6C8;}
 .management_pop ul li{ position: relative; }
 .management_pop ul li.nterviewee_name .MorF{ position: absolute; right: 8px; top: 5px; }
 .management_pop ul li.nterviewee_name .MorF p{ font-size: 11px; text-align: right;}
