@@ -31,7 +31,11 @@ $(document).ready(function() {
 <main class="interviewMainBox">
 	<div class="contentsBox">
 		<div class="top_ivBox clearfix">
-			<a class="img-user popup-link" href="#popup-img-user"></a>
+			<!-- 看是要塞 images 進去，還是把 照片寫在背景  background-image，不過照片 -->
+			<!-- 作法 1 -->
+			<!-- <a class="img-user popup-link" href="#popup-img-user"><img src="images/user_photo_01.png" width="100%"></a> -->
+			<!-- 作法 2 -->
+			<a class="img-user popup-link" href="#popup-img-user" style="background-image: url(images/user_photo_01.png);"></a>
 			<div class="rBox">
 				<div class="top_title clearfix">
 					<h1>明天股份有限公司</h1>
@@ -136,12 +140,12 @@ $(document).ready(function() {
 						<div class="add clearfix">
 							<p class="title_s">目前居住狀況</p>
 							<div class="styled-select"> <!-- 下拉的樣式，還不確定要用select 還是自己刻div -->
-                            	<select class="md-input" name="">
+                            	<select class="md-input" name="" >
 	                            	<option value="與家人同住">與家人同住</option>
 	                            	<option value="與家人同住">與家人同住</option>
 	                            </select>
                         	</div>
-							<input class="bg-gray" type="text" name="" placeholder="">
+							<input class="bg-gray" type="text" name="" placeholder="" disabled>
 						</div>
 					</div>
 				</li>
