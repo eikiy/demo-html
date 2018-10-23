@@ -554,6 +554,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .interviewMainBox .use_fillinBox ul.fill_in{width: 100%; padding-bottom: 15px;}
 .interviewMainBox .use_fillinBox ul.fill_in li{ padding-bottom: 15px; position: relative; width: 100%; display: -webkit-flex; display: flex;}
 .interviewMainBox .use_fillinBox ul.fill_in li:last-child{ padding-bottom: 0; }
+.interviewMainBox .use_fillinBox ul.fill_in li:last-child a.go_delete{ bottom: 4px; }
 
 .interviewMainBox .use_fillinBox .fBox{ display: -webkit-flex; display: flex; -webkit-flex: 1; flex: 1; padding: 0 5px;}
 .interviewMainBox .use_fillinBox .fBox .both{ -webkit-flex: 1; flex: 1;}
