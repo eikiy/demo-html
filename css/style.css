@@ -191,7 +191,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .popup-w-m{max-width: 720px;}
 .popup-M {max-width: 795px;}
 .popup-M .mfp-close{ left: 345px !important; }
-.popup-L {max-width: 958px;}
+.popup-L {max-width: 958px; min-width: 958px;}
 .setBox .top_title {width: 100%; position: relative; max-width: 390px;}
 .setBox .top_title h3 { text-align: center; font-size: 18px; letter-spacing: 7px; line-height: 36px; background-color: #D1E0E5; padding: 5px 0; border-radius: 10px 0 10px 10px; }
 .setBox .top_title h3.dark{ background-color: #558C9E; color: #fff;}
@@ -445,7 +445,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .interviewLoginBox p.btn a:hover{ border: 1px solid #fff; box-shadow: 0px 2px 4px 0px rgb(0,0,0,.5);  }
 
 .interviewMainBox, .traitTestBox{ width: 100%; width: 1024px; min-height: 100vh; padding-bottom: 30px; overflow: hidden; margin: 0 auto;}
-.interviewMainBox p.btn, .traitTestBox p.btn{font-size: 18px; text-align: right; line-height: 36px; padding: 10px 0;}
+.interviewMainBox p.btn, .traitTestBox p.btn{font-size: 18px; text-align: right; line-height: 36px; padding:25px 0 10px 0;}
 .interviewMainBox p.btn a, .traitTestBox p.btn a{ min-width: 110px; margin-left:10px; padding: 5px; letter-spacing: 5px; border:1px solid transparent; text-align: center;  display: inline-block; color: #fff; background-color: #81B6C8; border-radius:10px 0 10px 10px;}
 .interviewMainBox p.btn a:hover, .traitTestBox p.btn a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .interviewMainBox p.btn a.bg_red{ background-color: #C87D86; letter-spacing: 0; }
@@ -542,6 +542,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .interviewMainBox .use_fillinBox{ width: 100%; max-width: 990px; margin:0px auto; border:2px solid #979797; border-radius: 20px 0 20px 20px;padding: 35px 20px 10px 20px;}
 .interviewMainBox .use_fillinBox ul.fill_in{width: 100%; padding-bottom: 15px;}
 .interviewMainBox .use_fillinBox ul.fill_in li{ padding-bottom: 15px; position: relative; width: 100%; display: -webkit-flex; display: flex;}
+.interviewMainBox .use_fillinBox ul.fill_in li:last-child{ padding-bottom: 0; }
 
 .interviewMainBox .use_fillinBox .fBox{ display: -webkit-flex; display: flex; -webkit-flex: 1; flex: 1; padding: 0 5px;}
 .interviewMainBox .use_fillinBox .fBox .both{ -webkit-flex: 1; flex: 1;}
@@ -557,7 +558,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .interviewMainBox .use_fillinBox .fBox input.w100{ max-width:552px; }
 .interviewMainBox .use_fillinBox .fBox input.bg-gray{ background-color: #D8D8D8; }
 .interviewMainBox .use_fillinBox .fBox input.the_checkbox{ max-width:20px; }
-.interviewMainBox .use_fillinBox .fBox textarea{ max-width: 100%; min-height: 60px; }
+.interviewMainBox .use_fillinBox .fBox textarea{ max-width: 100%; min-height: 60px; max-width: 905px; min-width: 905px; }
 .interviewMainBox .use_fillinBox .fBox .red_error{ border-color: #C87D86; }
 .interviewMainBox .use_fillinBox .fBox .red_error:focus{ border-color: #C87D86;}
 
@@ -593,18 +594,25 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .interviewMainBox .use_fillinBox .the_gender{ text-align: center; width: 100%; max-width: 127px; border:1px solid #979797; border-radius: 5px; overflow: hidden;}
 .interviewMainBox .use_fillinBox .the_gender p {float: left; width: 50%; font-size: 12px; text-align: right; }
 .interviewMainBox .use_fillinBox .the_gender p span{ position: absolute; top: 2px; right: 5px;  color: #B9BABA;}
-.interviewMainBox .use_fillinBox .the_gender p a{ width: 100%; position: relative; cursor: pointer; display: block; height: 28px; background-color: #9B9B9B; color: #fff; background-position: 5px center; background-repeat: no-repeat; background-size: contain; }
+.interviewMainBox .use_fillinBox .the_gender p a{ width: 100%; position: relative; cursor: pointer; display: block; height: 28px; background-color: #9B9B9B; color: #B9BABA; background-position: 5px center; background-repeat: no-repeat; background-size: contain; }
 .interviewMainBox .use_fillinBox .the_gender p a.icon_male{ background-image: url(../images/gender_icon_01.png); }
 .interviewMainBox .use_fillinBox .the_gender p a.icon_male:hover{ background-image: url(../images/gender_icon_01_in.png); }
-.interviewMainBox .use_fillinBox .the_gender p a.icon_male:hover span{ color: #81B6C8; }
+.interviewMainBox .use_fillinBox .the_gender p a:hover span{ color: #81B6C8; }
 
 .interviewMainBox .use_fillinBox .the_gender p a.icon_female{ background-image: url(../images/gender_icon_02.png); }
 .interviewMainBox .use_fillinBox .the_gender p a.icon_female:hover{background-image: url(../images/gender_icon_02_in.png); }
-.interviewMainBox .use_fillinBox .the_gender p a.icon_female:hover span{ color: #81B6C8;  }
 
 .interviewMainBox .use_fillinBox .the_gender p.btn_in a.icon_male{ background-image: url(../images/gender_icon_01_in.png); background-color: #fff; }
 .interviewMainBox .use_fillinBox .the_gender p.btn_in a.icon_female{ background-image: url(../images/gender_icon_02_in.png); background-color: #fff; }
 .interviewMainBox .use_fillinBox .the_gender p.btn_in span{  color: #81B6C8; }
+
+.interviewMainBox .use_fillinBox .to_disabled p a{ cursor: initial; }
+.interviewMainBox .use_fillinBox .to_disabled p a.icon_male:hover{background-image: url(../images/gender_icon_01.png);}
+.interviewMainBox .use_fillinBox .to_disabled p.btn_in a.icon_male:hover{background-image: url(../images/gender_icon_01_in.png);}
+.interviewMainBox .use_fillinBox .to_disabled p a.icon_female:hover{background-image: url(../images/gender_icon_02.png);}
+.interviewMainBox .use_fillinBox .to_disabled p a.icon_male:hover span, .interviewMainBox .use_fillinBox .to_disabled p a.icon_female:hover span{ color: #B9BABA; }
+.interviewMainBox .use_fillinBox .to_disabled p.btn_in a.icon_female:hover{background-image: url(../images/gender_icon_02_in.png);}
+.interviewMainBox .use_fillinBox .to_disabled p.btn_in a.icon_male span, .interviewMainBox .use_fillinBox .to_disabled p.btn_in a.icon_female:hover span{ color: #81B6C8; }
 
 .interviewMainBox .use_fillinBox .add { -webkit-flex: 1; flex: 1;}
 .interviewMainBox .use_fillinBox .add .styled-select{ float: left; }
@@ -641,19 +649,19 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 .interviewMainBox .use_fillinBox ul.fill_in li a.go_edit:hover{ background-color: #81B6C8; background-image: url(../images/btn_icon_edit_w.png); }
 */
 
-.interviewMainBox p.btn_add_list{font-size: 12px; text-align: right; line-height: 24px; padding: 10px 0;}
+.interviewMainBox p.btn_add_list{font-size: 12px; text-align: right; line-height: 24px; padding: 10px 0; max-width: 912px;}
 .interviewMainBox p.btn_add_list a{ min-width: 60px; margin: 0 3px; padding: 0 5px; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #81B6C8; border-radius:3px 0 3px 3px;}
 .interviewMainBox p.btn_add_list a:hover{ background-color: #D1E0E5;}
 .interviewMainBox p.btn_add_list a.add{ padding-left: 25px; background-image: url(../images/btn_icon_add.png);}
 .interviewMainBox p.btn_add_list a.add:hover{ background-color: #D1E0E5; }
 
 
-.interviewMainBox .use_fillinBox ul.schoolBox{ padding-right: 30px; }
+.interviewMainBox .use_fillinBox ul.schoolBox{ padding-right: 30px; padding-bottom: 0; }
 .interviewMainBox .use_fillinBox ul.companyBox{ max-width: 780px; padding-bottom: 0; }
 .interviewMainBox .use_fillinBox ul.companyBox li .flex1{ max-width: 70px; }
 .interviewMainBox .use_fillinBox ul.companyBox li .flex2{ max-width: 128px; }
-.interviewMainBox .use_fillinBox ul.companyBox li input.icon_calendar{ background: url(../images/icon_calendar.png) right center no-repeat; background-size: contain; padding-right: 30px; }
-.interviewMainBox .use_fillinBox ul.companyBox li input.icon_calendar[type=text]:focus{ background: url(../images/icon_calendar_in.png) right center no-repeat;  background-size: contain;}
+.interviewMainBox .use_fillinBox ul.companyBox li input.icon_calendar{ /*background: url(../images/icon_calendar.png) right center no-repeat; background-size: contain; padding-right: 30px;*/ }
+.interviewMainBox .use_fillinBox ul.companyBox li input.icon_calendar[type=date]:focus{ border-color: #81B6C8;/* background: url(../images/icon_calendar_in.png) right center no-repeat;  background-size: contain;*/}
 .interviewMainBox .use_fillinBox ul.companyBox li.w50pa{ border-bottom: 1px dashed #979797; padding-bottom: 10px; margin-bottom: 10px;}
 .interviewMainBox .use_fillinBox ul.companyBox li.w50pa .flex1{ max-width: 100px; }
 .interviewMainBox .use_fillinBox ul.companyBox li.w50pa .flex2{ max-width: 142px; }
@@ -662,14 +670,16 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 .interviewMainBox .use_fillinBox ul.company_experience li a.go_delete{ bottom: 3px; }
 
 .interviewMainBox .use_fillinBox .infoContent_two{width: 100%; padding-bottom: 30px;}
-.interviewMainBox .use_fillinBox .infoContent_two .tBox{ float: left; width: 50%; padding-right: 15px; }
-.interviewMainBox .use_fillinBox .infoContent_two .tBox:first-child{ padding: 0 30px 0 0; position:relative; }
+.interviewMainBox .use_fillinBox .infoContent_two .tBox{ float: left; width: 50%; padding-right: 15px;}
+.interviewMainBox .use_fillinBox .infoContent_two .tBox:first-child{ padding: 0 12px 0 0; position:relative; }
 .interviewMainBox .use_fillinBox .infoContent_two .tBox:first-child::before{ content: ""; position: absolute; width: 3px; background-color: #979797; height: 100%; min-height: 200px; right: 0; top: 0; }
-.interviewMainBox .use_fillinBox .infoContent_two .tBox:last-child{ padding-left: 30px; }
+.interviewMainBox .use_fillinBox .infoContent_two .tBox:last-child{ padding-left: 8px; padding-right: 4px; }
 
-.interviewMainBox .use_fillinBox .infoContent_two h4.tBox_title{ width: 100%; color: #9B9B9B; font-size: 12px; padding:0 5px;}
+.interviewMainBox .use_fillinBox .infoContent_two h4.tBox_title{ width: 100%; color: #9B9B9B; font-size: 12px;}
 .interviewMainBox .use_fillinBox .infoContent_two ul.schoolBox{padding-bottom: 0;}
-.interviewMainBox .use_fillinBox .infoContent_two p.btn_add_list a{ margin: 0; }
+.interviewMainBox .use_fillinBox .infoContent_two p.btn_add_list{ max-width: 427px; }
+.interviewMainBox .use_fillinBox .infoContent_two p.btn_add_list a{ margin: 0;}
+.interviewMainBox .use_fillinBox .infoContent_two .fBox{ padding: 0 2px;}
 .interviewMainBox .use_fillinBox ul.referrerBox{ max-width: 780px; }
 
 .interviewMainBox .use_fillinBox h3.headline{ border: 1px solid #979797; background-color: #EBEBEB; color: #9B9B9B; border-radius: 10px 0 10px 10px; font-size: 14px; padding: 15px 30px;  margin: 0 7px;}
@@ -1137,7 +1147,6 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .traitTestEnd{ width: 710px; padding-top: 486px;}
 .traitTestEnd .end_thankyou { width: 100%; min-height: 170px; border: 3px solid #81B6C8; border-radius: 10px 0 10px 10px; display: block; padding-top: 60px; position: relative;}
 .traitTestEnd .end_thankyou::after{ content: ""; position: absolute; top: -360px; width: 710px; height: 350px; display: block; background: url(../images/traitTest/end_thankyou.png) center top no-repeat; background-size: contain;  }
-.traitTestEnd .end_thankyou p{ width: 100%; max-width: 588px; margin: 0 auto; color: #81B6C8; font-size: 18px; line-height: 25px; }
 .traitTestEnd .end_thankyou_not { width: 100%; min-height: 170px; border: 3px solid #81B6C8; border-radius: 10px 0 10px 10px; display: block; padding-top: 60px; position: relative;}
 .traitTestEnd .end_thankyou_not::after{ content: ""; position: absolute; top: -360px; width: 710px; height: 350px; display: block; background: url(../images/traitTest/end_thankyou_not.png) center top no-repeat; background-size: contain;  }
 .traitTestEnd .end_thankyou_not p{ width: 100%; max-width: 588px; margin: 0 auto; color: #81B6C8; font-size: 18px; line-height: 25px; }
@@ -1153,17 +1162,68 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 
 
 /*人員資料 lightbox*/
-.popup-L .filter_pop .chosenBox{ padding: 20px 18px;}
+.popup-L .filter_pop .chosenBox{ padding: 15px 12px;}
 .interviewee_info{ width: 100%;  }
 .interviewee_info .interviewMainBox{ width: 100%; }
+.interviewee_info .interviewMainBox .top_ivBox{padding: 20px 0 35px 0;}
 .interviewee_info .interviewMainBox .top_ivBox .img-user{ width: 125px; height: 125px; margin: 0 10px 0 0; }
 .interviewee_info .interviewMainBox .top_ivBox .rBox{ max-width: calc(100% - 135px);}
 .interviewee_info .interview_officer_Main .top_ivBox .rBox table.interviewer_info{ margin: 0; max-width: 340px; }
 .interviewee_info .interview_officer_Main .top_ivBox .rBox table.interviewer_info tr td{ line-height: 20px; }
+.interviewee_info .interview_officer_Main .top_ivBox .rBox table.interviewer_info tr td:nth-child(1){ width: 110px; }
 .interviewee_info .interview_officer_Main .top_ivBox .rBox::before{display: none;}
-.interviewee_info .interview_officer_Main .top_ivBox .rBox p.embarrassment a{ float: left; margin: 0px 0px 0 12px;}
-.interviewee_info .interview_officer_Main .top_ivBox .rBox p.embarrassment a.icon_01{}
-.interviewee_info .interview_officer_Main .top_ivBox .rBox p.embarrassment a.icon_01_in{ background-color: #81B6C8; color: #fff; }
 
+.interview_officer_Main .top_ivBox .rBox .embarrassment{ float: left;}
+.interview_officer_Main .top_ivBox .rBox .embarrassment p{ float: left; font-size: 14px; text-align: center;margin: 0px 0px 0 14px; border-radius: 0 10px 10px 18px;  border: 3px solid #81B6C8; overflow: hidden; }
+.interview_officer_Main .top_ivBox .rBox .embarrassment p a{ width: 94px; height: 94px; padding-top: 66px; color: #81B6C8; display: block;  background-position: center center; background-repeat: no-repeat; background-size: contain;}
+.interview_officer_Main .top_ivBox .rBox .embarrassment p a:hover{ background-color: #D1E0E5; }
+.interview_officer_Main .top_ivBox .rBox .embarrassment p a.icon_01{ background-image: url(../images/user_info/top_icon_01.png);}
+.interview_officer_Main .top_ivBox .rBox .embarrassment p a.icon_02{ background-image: url(../images/user_info/top_icon_02.png);}
+.interview_officer_Main .top_ivBox .rBox .embarrassment p a.icon_03{ background-image: url(../images/user_info/top_icon_03.png);}
+.interview_officer_Main .top_ivBox .rBox .embarrassment p a.icon_04{ background-image: url(../images/user_info/top_icon_04.png);}
+.interview_officer_Main .top_ivBox .rBox .embarrassment p.btn_in a.icon_01{ background-color: #81B6C8; color: #fff; background-image: url(../images/user_info/top_icon_01_in.png);}
+.interview_officer_Main .top_ivBox .rBox .embarrassment p.btn_in a.icon_02{ background-color: #81B6C8; color: #fff; background-image: url(../images/user_info/top_icon_02_in.png);}
+.interview_officer_Main .top_ivBox .rBox .embarrassment p.btn_in a.icon_03{ background-color: #81B6C8; color: #fff; background-image: url(../images/user_info/top_icon_03_in.png);}
+.interview_officer_Main .top_ivBox .rBox .embarrassment p.btn_in a.icon_04{ background-color: #81B6C8; color: #fff; background-image: url(../images/user_info/top_icon_04_in.png);}
+.interview_officer_Main .top_ivBox .rBox .embarrassment p.btn_none{ border-color: #9B9B9B; }
+.interview_officer_Main .top_ivBox .rBox .embarrassment p.btn_none a{  -webkit-filter:grayscale(1); opacity: .8; cursor: not-allowed; }
+.interview_officer_Main .top_ivBox .rBox .embarrassment p.btn_none a:hover{ background-color: #fff; }
 
+.interview_officer_Main .top_ivBox .bottom_btn{ position: absolute; bottom: -16px; right: 5px; font-size: 14px; letter-spacing: 5px; }
+.interview_officer_Main .top_ivBox .bottom_btn a{ padding-right: 30px; height: 26px; color: #81B6C8; display: inline-block; margin-left: 15px;}
+.interview_officer_Main .top_ivBox .bottom_btn a.edit{ background: url(../images/user_info/btn_edit.png) center right no-repeat; background-size: contain;}
+.interview_officer_Main .top_ivBox .bottom_btn a.print{ background: url(../images/user_info/btn_print.png) center right no-repeat; background-size: contain;}
+.interview_officer_Main .top_ivBox .bottom_btn a:hover{ text-decoration: underline; }
+
+.popup-L .interview_officer_Main .use_fillinBox .fBox p.title_s{ text-align: left; }
+
+.popup-L .interviewer_info{ letter-spacing: 0; }
+.popup-L .interviewer_info tr td{ position: relative;  letter-spacing: 5px;}
+.popup-L .interviewer_info tr td p.btn_back{ position: absolute; bottom: -1px; right: -1px; font-size: 11px; z-index: 50; }
+.popup-L .interviewer_info tr td p.btn_back a{ display: block; border:1px solid #81B6C8; padding: 5px 25px 0 10px; color: #9B9B9B; min-width: 84px; height: 51px; background-color: #fff; border-radius: 0 0 10px 0; position: relative;} 
+.popup-L .interviewer_info tr td p.btn_back a::after{ position: absolute; content: ""; right: 10px; top: 8px; width:22px ; height:30px; display: block; background-image:url(../images/user_info/icon_back.png); background-position: center center; background-repeat: no-repeat; background-size: contain;}
+.popup-L .interviewer_info tr td p.btn_back a:hover{ background-color: #81B6C8; color: #fff; }
+.popup-L .interviewer_info tr td p.btn_back a:hover::after{background-image:url(../images/user_info/icon_back_w.png);}
+
+.popup-L .interviewer_info tr td p.leave{ letter-spacing: 4px; line-height: 41px;}
+.popup-L .interviewer_info tr td p.leave a::after{ top: 3px; width: 24px; height: 42px; background-image:url(../images/user_info/icon_leave.png); }
+.popup-L .interviewer_info tr td p.leave a:hover::after{ background-image:url(../images/user_info/icon_leave_w.png); }
+
+.popup-L .interviewer_info tr td p.leave_reason{ letter-spacing: 4px; text-align: center; line-height: 41px;}
+.popup-L .interviewer_info tr td p.leave_reason a{ border-color: #C87D86; border-radius: 0 0 10px 0; padding: 5px; }
+.popup-L .interviewer_info tr td p.leave_reason a::after{ display: none; padding: 0; }
+.popup-L .interviewer_info tr td p.leave_reason a:hover{ background-color: #C87D86; }
+
+.popup-L .interviewer_info tr:nth-child(4) td:nth-child(2), .popup-L .interviewer_info tr:nth-child(5) td:nth-child(2){ letter-spacing: 0px; }
+
+.u_infoBox{ border:2px solid #81B6C8; border-radius: 10px 0 10px 10px; overflow: hidden;}
+.u_infoBox h3.blue_title{ background-color: #D1E0E5; font-size: 12px; padding: 0 10px; line-height: 25px; color: #4A4A4A; }
+.interview_officer_Main .u_infoBox .use_fillinBox{padding:10px 5px;}
+.interviewMainBox .u_infoBox .use_fillinBox .fBox-3 .add input.l_w128{ float: left; max-width: 128px; }
+.interviewMainBox .u_infoBox .referrerTopBox .top_titleBox p span{ color: #4A4A4A; }
+.interviewMainBox .u_infoBox .qaBox .top_titleBox{ border: none; }
+.interviewMainBox .u_infoBox .referrerTopBox .top_titleBox p.top_title{  width: initial; padding-left: 5px;}
+.interviewMainBox .u_infoBox .referrerTopBox .top_titleBox p.top_title span{ padding-left: 0; }
+.interviewMainBox .u_infoBox .referrerTopBox .top_titleBox .fBox{ padding-top: 15px; }
+.interviewMainBox .u_infoBox input.input_yesNo_yes[type=radio]:not(old), .interviewMainBox .u_infoBox input.input_yesNo_yes[type=radio ]:not(old){ cursor: initial; }
 
