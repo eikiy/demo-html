@@ -1112,7 +1112,7 @@ $(document).ready(function() {
                     <li>
                         <label class="l_title" for=""><p>登入連結</p></label>
                         <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
-                        <p class="btn"><a class="select" href="#">複製</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
                     </li>
                 </ul>
                 <p class="btn">
@@ -1157,7 +1157,7 @@ $(document).ready(function() {
                     <li>
                         <label class="l_title" for=""><p>測驗連結</p></label>
                         <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
-                        <p class="btn"><a class="select" href="#">複製</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
                     </li>
                 </ul>
                 <ul class="jobBox">
@@ -1225,7 +1225,7 @@ $(document).ready(function() {
                     <li>
                         <label class="l_title" for=""><p>測驗連結</p></label>
                         <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
-                        <p class="btn"><a class="select" href="#">複製</a></p>
+                        <p class="btn"><a class="select" href="#"><span class="tooltip blue_tip">複製成功</span>複製</a></p>
                     </li>
                 </ul>
                 <ul class="jobBox">
@@ -1295,7 +1295,7 @@ $(document).ready(function() {
                     <li>
                         <label class="l_title" for=""><p>測驗連結</p></label>
                         <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
-                        <p class="btn"><a class="select" href="#">複製</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
                     </li>
                 </ul>
                 <ul class="jobBox">
@@ -1365,7 +1365,7 @@ $(document).ready(function() {
                     <li>
                         <label class="l_title" for=""><p>評論填寫連結</p></label>
                         <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
-                        <p class="btn"><a class="select" href="#">複製</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
                     </li>
                     <li>
                         <label class="l_title" for=""><p>初試時間</p></label>
@@ -1414,7 +1414,7 @@ $(document).ready(function() {
                     <li>
                         <label class="l_title" for=""><p>評論填寫連結</p></label>
                         <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
-                        <p class="btn"><a class="select" href="#">複製</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
                     </li>
                     <li>
                         <label class="l_title" for=""><p>初試時間</p></label>
@@ -1453,7 +1453,7 @@ $(document).ready(function() {
                     <li>
                         <label class="l_title" for=""><p>評論填寫連結</p></label>
                         <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
-                        <p class="btn"><a class="select" href="#">複製</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
                     </li>
                     <li>
                         <label class="l_title" for=""><p>初試時間</p></label>
@@ -1465,23 +1465,25 @@ $(document).ready(function() {
                     </li>
                 </ul>
                 
-                <p class="review_comment"><a class="cursor_none" href="#">檢視詳細評論內容</a></p>
+                <!-- <p class="review_comment"><a class="cursor_none" href="#">檢視詳細評論內容</a></p> -->
 
-                <ul class="jobBox">
-                	<li class="sub_title">
-                		<p>初試評論1</p>
-                	</li>
-                    <li class="first_test clearfix">
-                    	<div class="lBox">
-	                        <p>面試官姓名：<span>羅森林</span></p>
-	                        <p class="day"><span class="type green">初</span></p>
+                <div class="jobBox">
+                	<a class="go_info" href="#">
+	                	<div class="sub_title">
+	                		<p>初試評論1</p>
+	                	</div>
+	                    <div class="first_test clearfix">
+	                    	<div class="lBox">
+		                        <p>面試官姓名：<span>羅森林</span></p>
+		                        <p class="day"><span class="type green">初</span></p>
+		                    </div>
+		                    <div class="rBox">
+		                    	<p>評核總分<span></span></p>
+		                    	<p>評核建議<span></span></p>
+		                    </div>
 	                    </div>
-	                    <div class="rBox">
-	                    	<p>評核總分<span></span></p>
-	                    	<p>評核建議<span></span></p>
-	                    </div>
-                    </li>
-                </ul>
+                	</a>
+                </div>
                 <p class="btn clearfix">
                 	<a class="bg_lightblue popup-link" href="#popup-step-01">複試</a>
                 	<a class="bg_red popup-link" href="#popup-step-11-none">不 錄 取</a>
@@ -1515,7 +1517,7 @@ $(document).ready(function() {
                     <li>
                         <label class="l_title" for=""><p>評論填寫連結</p></label>
                         <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
-                        <p class="btn"><a class="select" href="#">複製</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
                     </li>
                     <li>
                         <label class="l_title" for=""><p>初試時間</p></label>
@@ -1527,39 +1529,44 @@ $(document).ready(function() {
                     </li>
                 </ul>
                 
-                <p class="review_comment"><a href="#">檢視詳細評論內容</a></p>
-                <ul class="jobBox">
-                	<li class="sub_title">
-                		<p>複試評論1</p>
-                		<p class="btn no_top"><a class="delete popup-link" href="#popup-step-11-delete">刪除</a></p>
-                	</li>
-                    <li class="first_test clearfix">
-                    	<div class="lBox">
-	                        <p>面試官姓名：<span>留有針</span></p>
-	                        <p class="day"><span class="type red">初</span></p>
+                <!-- <p class="review_comment"><a href="#">檢視詳細評論內容</a></p> -->
+                <div class="jobBox">
+                	<a class="go_info" href="#">
+                		<div class="top_btn_s"><div class="delete popup-link" href="#popup-step-11-delete"></div></div>
+	                	<div class="sub_title">
+	                		<p>複試評論1</p>
+	                	</div>
+	                    <div class="first_test clearfix">
+	                    	<div class="lBox">
+		                        <p>面試官姓名：<span>留有針</span></p>
+		                        <p class="day"><span class="type red">初</span></p>
+		                    </div>
+		                    <div class="rBox">
+		                    	<p>評核總分<span></span></p>
+		                    	<p>評核建議<span></span></p>
+		                    </div>
 	                    </div>
-	                    <div class="rBox">
-	                    	<p>評核總分<span></span></p>
-	                    	<p>評核建議<span></span></p>
-	                    </div>
-                    </li>
-                </ul>
+	                </a>
+                </div>
 
-                <ul class="jobBox">
-                	<li class="sub_title">
-                		<p>初試評論1</p>
-                	</li>
-                    <li class="first_test clearfix">
-                    	<div class="lBox">
-	                        <p>面試官姓名：<span>羅森林</span></p>
-	                        <p class="day"><span class="type green">初</span>2018/11/01評論</p>
+                <div class="jobBox">
+                	<a class="go_info" href="#">
+                		<div class="top_btn_s"><div class="delete popup-link" href="#popup-step-11-delete"></div></div>
+                		<div class="sub_title">
+	                		<p>初試評論1</p>
+	                	</div>
+	                    <div class="first_test clearfix">
+	                    	<div class="lBox">
+		                        <p>面試官姓名：<span>羅森林</span></p>
+		                        <p class="day"><span class="type green">初</span>2018/11/01評論</p>
+		                    </div>
+		                    <div class="rBox">
+		                    	<p>評核總分<span>90</span></p>
+		                    	<p>評核建議<span>合格</span></p>
+		                    </div>
 	                    </div>
-	                    <div class="rBox">
-	                    	<p>評核總分<span>90</span></p>
-	                    	<p>評核建議<span>合格</span></p>
-	                    </div>
-                    </li>
-                </ul>
+	                </a>
+                </div>
                 <p class="btn clearfix">
                 	<a class="bg_lightblue popup-link" href="#popup-step-01">複試</a>
                 	<a class="bg_red popup-link" href="#popup-step-11-none">不 錄 取</a>
