@@ -229,7 +229,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .setBox .fillinBox p.the_reminder{ position: absolute; top: 15px; right: 15px; color: #C87D86; }
 
 
-.setBox .jobBox{ margin-top: 10px; width: 100%; background-color: #EBEBEB; width: 390px; height: 125px; border-radius: 10px 0 10px 10px; box-shadow: 0px 0px 5px rgba(155,155,155,0.2); overflow: hidden; position: relative; }
+.setBox .jobBox{ margin-top: 10px; width: 100%; background-color: #EBEBEB; width: 390px; min-height: 125px; border-radius: 10px 0 10px 10px; box-shadow: 0px 0px 5px rgba(155,155,155,0.2); overflow: hidden; position: relative; }
 .setBox .jobBox table.test{ width: 100%; text-align: center; vertical-align: middle; }
 .setBox .jobBox table.test tr th, .setBox .jobBox table.test tr td{ padding: 10px 5px; height: 40px;/* display: block;*/  border-left: 1px solid rgba(155,155,155,0.5);}
 .setBox .jobBox table.test tr td{ border-top: 1px solid rgba(155,155,155,0.5); }
@@ -255,6 +255,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .setBox p.btn a.bg_red{ background-color: #C87D86; letter-spacing: 0; }
 .setBox p.btn a.bg_gary{ background-color: #9B9B9B; }
 .setBox p.btn a.bg_skyblue{ background-color: #81B6C8; }
+.setBox p.btn a.fl{ float: left; }
 .setBox p.btn a.bg_lightblue{ float: left; margin-left: 0;color: #81B6C8; background-color: #D1E0E5; border:2px solid #81B6C8;}
 .setBox p.btn a.bg_lightblue:hover{ border-color: #fff; }
 
@@ -349,6 +350,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .messageBox .RedBox p.info{line-height: 24px;}
 .messageBox .RedBox p.info span{color: #81B6C8;}
 .messageBox .border_blue{ border-color: #81B6C8;}
+.messageBox .border_none{ border-color: transparent; background-color: #fff;}
 
 .messageBox .SendDone{ background-color:#fff;}
 .messageBox .SendDone p.info{line-height: 24px; position: relative; padding-right: 80px;}
@@ -361,9 +363,11 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .enforcementBox .fillinBox ul li input::placeholder{ color: #D8D8D8; }
 .enforcementBox .fillinBox ul li textarea{ width: 100%; min-height: 100px; padding: 10px; border-bottom:2px solid transparent; }
 .enforcementBox .fillinBox ul li textarea:hover, .enforcementBox .fillinBox ul li textarea:focus{ border-color:#81B6C8;}
+.enforcementBox .fillinBox ul li textarea:disabled:hover{ border-color: transparent; }
+
 .enforcementBox .fillinBox ul li .other{max-width: 90px; font-size: 14px; padding-top: 10px;}
-.enforcementBox .fillinBox ul li ul.select_item{ text-align: left; border: none; width: 100%; border-radius: 5px; padding: 10px 0; height: 30px; box-shadow: none;}
-.enforcementBox .fillinBox ul li ul.select_item li{ display: inline-block; width: initial; min-height: initial; color: #4A4A4A; font-size: 14px; margin-right: 5px; padding: 0; }
+.enforcementBox .fillinBox ul li ul.select_item{ text-align: left; border: none; width: 100%; border-radius: 5px; padding: 10px 0; min-height: 30px; box-shadow: none;}
+.enforcementBox .fillinBox ul li ul.select_item li{ display: inline-block; width: initial; min-height: initial; color: #4A4A4A; font-size: 14px; margin-right: 5px; padding: 0; border-bottom: none; }
 
 .check_remind .border_blue{ background-color: #fff; padding:10px 30px;  margin-top: 10px;}
 .check_remind .border_blue p.info{line-height: 20px;}
@@ -726,7 +730,7 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 .interviewMainBox .use_fillinBox .superiority input.i_05{ max-width: 648px;}
 
 
-.interviewMainBox .use_fillinBox ul.whyBox{ padding-top: 20px; padding-bottom: 0; min-height: 380px;}
+.interviewMainBox .use_fillinBox ul.whyBox{ padding-top: 20px; padding-bottom: 0; min-height: 380px; max-width: 100%;}
 .interviewMainBox .whyBox .fBox{ padding: 0 7px;}
 .interviewMainBox .whyBox .fBox p.title_s{ font-size: 14px; padding-top: 10px; }
 .interviewMainBox .whyBox .fBox textarea.b-h0{ max-width: 301px; min-width: 301px;}
@@ -1238,4 +1242,11 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interviewMainBox .u_infoBox .referrerTopBox .top_titleBox p.top_title span{ padding-left: 0; }
 .interviewMainBox .u_infoBox .referrerTopBox .top_titleBox .fBox{ padding-top: 15px; }
 .interviewMainBox .u_infoBox input.input_yesNo_yes[type=radio]:not(old), .interviewMainBox .u_infoBox input.input_yesNo_yes[type=radio ]:not(old){ cursor: initial; }
+.interview_officer_Main .u_infoBox .use_fillinBox .last_company .fBox{ padding:0 0 12px 0; }
+.interview_officer_Main .u_infoBox .use_fillinBox .last_company .fBox:last-child{ padding-bottom: 0; }
+.interview_officer_Main .u_infoBox .use_fillinBox .fBox .top_title{ width: initial; }
+.interviewMainBox .u_infoBox .use_fillinBox .last_company{ padding-left: 5px; padding-bottom: 0; }
+.interviewMainBox .u_infoBox .use_fillinBox .last_company .fBox textarea{ max-width: 706px; min-width: 706px;}
+.interviewMainBox .u_infoBox .use_fillinBox ul.whyBox{ padding: 0; min-height: initial; }
+.interviewMainBox .u_infoBox .use_fillinBox .superiority{ margin: 0; padding-bottom: 15px; }
 
