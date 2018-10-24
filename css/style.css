@@ -287,8 +287,8 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .setBox .day_selectBpx .monthBox .dateBox p{ border: 2px solid transparent; margin: 3px auto; max-width: 33px;} 
 .setBox .day_selectBpx .monthBox .dateBox p.btn_in { border-color: #81B6C8; }
 .setBox .day_selectBpx .monthBox .dateBox table{ max-width: 95%; margin: 0 auto; }
-.setBox .day_selectBpx .monthBox .dateBox table tr td p{ cursor: pointer; }
-.setBox .day_selectBpx .monthBox .dateBox table tr td p:hover{ border-color: #81B6C8; border-radius: 4px;}
+.setBox .day_selectBpx .monthBox .dateBox table tr td p.enable{ cursor: pointer; }
+.setBox .day_selectBpx .monthBox .dateBox table tr td p.enable:hover{ border-color: #81B6C8; border-radius: 4px;}
 
 .setBox .time_select .time_selectBpx{ position: absolute; width: 108px; height: 230px; top: 56px; right: -118px; background-color: #fff;  z-index: 100; border-radius: 0px 10px 10px 10px; display: block; overflow: hidden;}
 .setBox .time_select .time_selectBpx .the_time{ width: 50%; float: left; }
