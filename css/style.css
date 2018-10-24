@@ -690,9 +690,11 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 .interviewMainBox .use_fillinBox .infoContent_two .tBox:first-child{ padding: 0 12px 0 0; position:relative; }
 .interviewMainBox .use_fillinBox .infoContent_two .tBox:first-child::before{ content: ""; position: absolute; width: 3px; background-color: #979797; height: 100%; min-height: 200px; right: 0; top: 0; }
 .interviewMainBox .use_fillinBox .infoContent_two .tBox:last-child{ padding-left: 8px; padding-right: 4px; }
+.interviewMainBox .use_fillinBox .infoContent_two .tBox:first-child .styled-select select{ padding: 2px 10px 2px 7px;}
 
 .interviewMainBox .use_fillinBox .infoContent_two h4.tBox_title{ width: 100%; color: #9B9B9B; font-size: 12px;}
 .interviewMainBox .use_fillinBox .infoContent_two ul.schoolBox{padding-bottom: 0;}
+
 .interviewMainBox .use_fillinBox .infoContent_two p.btn_add_list{ max-width: 427px; }
 .interviewMainBox .use_fillinBox .infoContent_two p.btn_add_list a{ margin: 0;}
 .interviewMainBox .use_fillinBox .infoContent_two .fBox{ padding: 0 2px;}
