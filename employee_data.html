@@ -899,8 +899,8 @@ $(document).ready(function() {
 								<div class="embarrassment clearfix">
 									<p class="btn_in"><a class="icon_01" href="#">個人資料</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
-									<p><a class="icon_03" href="#">測驗報告</a></p>
-									<p class="btn_none"><a class="icon_04" href="#">面試紀錄</a></p>
+									<p class="btn_none"><a class="icon_03" href="#">測驗報告</a></p>
+									<p><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
 								</div>
 								<p class="bottom_btn">
 									<a class="edit" href="#">資料修改</a>
@@ -1806,7 +1806,7 @@ $(document).ready(function() {
 									<p class="btn_in"><a class="icon_01" href="#">個人資料</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
 									<p><a class="icon_03" href="#">測驗報告</a></p>
-									<p class="btn_none"><a class="icon_04" href="#">面試紀錄</a></p>
+									<p><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
 								</div>
 								<p class="bottom_btn">
 									<a class="edit" href="#">資料修改</a>
@@ -2693,7 +2693,7 @@ $(document).ready(function() {
 							<div class="img-user"></div>
 							<div class="rBox clearfix">
 								<table class="interviewer_info" cellspacing="0" cellpadding="0" border="0">
-									<tbody><tr>
+									<tr>
 										<td>姓名</td>
 										<td>王明天</td>
 									</tr>
@@ -2717,12 +2717,12 @@ $(document).ready(function() {
 											<!-- <p class="btn_back leave_reason"><a href="#">離職原因</a></p> -->
 										</td>
 									</tr>
-								</tbody></table>
+								</table>
 								<div class="embarrassment clearfix">
 									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
-									<p class="btn_in"><a class="icon_02" href="#">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
-									<p><a class="icon_03" href="#">測驗報告</a></p>
-									<p class="btn_none"><a class="icon_04" href="#">面試紀錄</a></p>
+									<p class="btn_in"><a class="icon_02 popup-link" href="#opup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
+									<p class="btn_none"><a class="icon_03" href="#">測驗報告</a></p>
+									<p><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
 								</div>
 								<p class="bottom_btn">
 									<a class="edit" href="#">資料修改</a>
@@ -2951,9 +2951,9 @@ $(document).ready(function() {
 								</tbody></table>
 								<div class="embarrassment clearfix">
 									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
-									<p class="btn_in"><a class="icon_02" href="#">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
-									<p><a class="icon_03" href="#">測驗報告</a></p>
-									<p class="btn_none"><a class="icon_04" href="#">面試紀錄</a></p>
+									<p class="btn_in"><a class="icon_02 popup-link" href="#opup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
+									<p class="btn_none"><a class="icon_03" href="#">測驗報告</a></p>
+									<p><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
 								</div>
 								<p class="bottom_btn">
 									<a class="edit" href="#">資料修改</a>
@@ -3307,6 +3307,531 @@ $(document).ready(function() {
                 	<a class="fl popup-link" href="#popup-user-info2">復職</a>
                 	<a class="bg_red popup-link" href="#popup-user-info2-1">確認</a>
                 </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 人員資料：面試紀錄 -->
+    <div id="popup-the-record" class="white-popup popup-L mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>人員資料</h3>
+            </div>
+
+            <div class="chosenBox interviewee_info">
+            	<div class="interviewMainBox interview_officer_Main">
+					<div class="contentsBox">
+						<div class="top_ivBox clearfix">
+							<div class="img-user"></div>
+							<div class="rBox clearfix">
+								<table class="interviewer_info" cellspacing="0" cellpadding="0" border="0">
+									<tbody><tr>
+										<td>姓名</td>
+										<td>王明天</td>
+									</tr>
+									<tr>
+										<td>職位</td>
+										<td>軟體工程師</td>
+									</tr>
+									<tr>
+										<td>部門</td>
+										<td>軟體開發部</td>
+									</tr>
+									<tr>
+										<td>報到時間</td>
+										<td>2018/11/01/13:30</td>
+									</tr>
+									<tr>
+										<td>年資</td>
+										<td>
+											<!-- <p class="btn_back"><a class="popup-link" href="#popup-user-back">返回<br>招募</a></p> -->
+											<p class="btn_back leave"><a class="popup-link" href="#popup-over">離職</a></p>
+											<!-- <p class="btn_back leave_reason"><a class="popup-link" href="#popup-over-why">離職原因</a></p> -->
+										</td>
+									</tr>
+								</tbody></table>
+								<div class="embarrassment clearfix">
+									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
+									<p><a class="icon_02 popup-link" href="#opup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
+									<p><a class="icon_03" href="#">測驗報告</a></p>
+									<p class="btn_in"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
+								</div>
+								<p class="bottom_btn">
+									<!-- <a class="edit" href="#">資料修改</a> -->
+									<a class="print" href="#">列印此頁</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="u_infoBox">
+							<h3 class="blue_title">2018/11/01/複試評論1<span>面試官：留有針</span></h3>
+							<div class="use_fillinBox">
+								<div class=" comment clearfix">
+									<div class="infoContent_two clearfix">
+										<div class="tBox">
+											<ul class="fill_in">
+												<li>
+													<div class="fBox clearfix">
+														<p>準時度</p>
+														<div class="rBox_select"><p>準時</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>外表/衣著</p>
+														<div class="rBox_select"><p>衣著得體，外表落落大方</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>親和力</p>
+														<div class="rBox_select"><p>可以接近，尚稱友善</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>個性/性格</p>
+														<div class="rBox_select"><p>可以適合此工作</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>溝通技巧及表達能力</p>
+														<div class="rBox_select"><p>尚稱流利，表達平平</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>問題分析及解決能力</p>
+														<div class="rBox_select"><p>可以明確判斷及分析問題發生原因</p></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="tBox">
+											<ul class="fill_in">
+												<li>
+													<div class="fBox clearfix">
+														<p>工作經驗</p>
+														<div class="rBox_select"><p>背景很好，有相當多經驗</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>專業知識/技術</p>
+														<div class="rBox_select"><p>專業知識技術足以勝任職務</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>工作穩定度</p>
+														<div class="rBox_select"><p>穩定性佳</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>緊覺/反應</p>
+														<div class="rBox_select"><p>能抓住重點，表現尚可</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>發展潛力</p>
+														<div class="rBox_select"><p>守本分且順從，需協助進行職涯</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>整體而言</p>
+														<div class="rBox_select"><p>中等</p></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="fraction">
+										<p class="top_title">評核總分（不含語文能力）</p>
+										<p class="nb">57</p>
+									</div>
+								</div>
+
+								<div class="pa_h">
+									<div class="infoContent_two clearfix">
+										<div class="tBox">
+											<ul class="fill_in">
+												<li>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">語言</p>
+															<input type="text" name="" value="英文" disabled="">
+								                    	</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">聽</p>
+															<input type="text" name="" value="非常流暢" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">去</p>
+															<input type="text" name="" value="普通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">讀</p>
+															<input type="text" name="" value="普通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">寫</p>
+															<input type="text" name="" value="普通" disabled="">
+								                    	</div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="西班牙文" disabled="">
+								                    	</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="普通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="好" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="好" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="好" disabled="">
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="tBox">
+											<ul class="fill_in">
+												<li>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">語言</p>
+															<input type="text" name="" value="法文" disabled="disabled">
+								                    	</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">聽</p>
+															<input type="text" name="" value="非常流暢" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">去</p>
+															<input type="text" name="" value="非常流暢" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">讀</p>
+															<input type="text" name="" value="非常流暢" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">寫</p>
+															<input type="text" name="" value="非常流暢" disabled="">
+								                    	</div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="德文" disabled="disabled">
+								                    	</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="非常流暢" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="非常流暢" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="非常流暢" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="非常流暢" disabled="">
+								                    	</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<p class="top_title"><span class="pad-l">面試評論</span></p>
+
+								<div class="g_border g_ex" type="text"><textarea class="t_w100" disabled=""></textarea></div>
+
+								<p class="top_title bottom_title"><span>該員是否合適本職位需求</span>
+									<input class="input_yesNo_yes" id="a1" type="radio" name="yesNo" value="是" checked=""><label for="yesNo">是</label>合適
+									<!-- <input class="input_yesNo_no" id="a2" type="radio" name="yesNo" value="否"><label for="yesNo">否</label>不合適 -->
+								</p>
+							</div>
+							<h3 class="blue_title">2018/11/01/複試評論2<span>面試官：羅森林</span></h3>
+							<div class="use_fillinBox">
+								<div class=" comment clearfix">
+									<div class="infoContent_two clearfix">
+										<div class="tBox">
+											<ul class="fill_in">
+												<li>
+													<div class="fBox clearfix">
+														<p>準時度</p>
+														<div class="rBox_select"><p>準時</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>外表/衣著</p>
+														<div class="rBox_select"><p>衣著得體，外表落落大方</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>親和力</p>
+														<div class="rBox_select"><p>可以接近，尚稱友善</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>個性/性格</p>
+														<div class="rBox_select"><p>可以適合此工作</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>溝通技巧及表達能力</p>
+														<div class="rBox_select"><p>尚稱流利，表達平平</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>問題分析及解決能力</p>
+														<div class="rBox_select"><p>可以明確判斷及分析問題發生原因</p></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="tBox">
+											<ul class="fill_in">
+												<li>
+													<div class="fBox clearfix">
+														<p>工作經驗</p>
+														<div class="rBox_select"><p>背景很好，有相當多經驗</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>專業知識/技術</p>
+														<div class="rBox_select"><p>專業知識技術足以勝任職務</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>工作穩定度</p>
+														<div class="rBox_select"><p>穩定性佳</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>緊覺/反應</p>
+														<div class="rBox_select"><p>能抓住重點，表現尚可</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>發展潛力</p>
+														<div class="rBox_select"><p>守本分且順從，需協助進行職涯</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox clearfix">
+														<p>整體而言</p>
+														<div class="rBox_select"><p>中等</p></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="fraction">
+										<p class="top_title">評核總分（不含語文能力）</p>
+										<p class="nb">57</p>
+									</div>
+								</div>
+
+								<div class="pa_h">
+									<div class="infoContent_two clearfix">
+										<div class="tBox">
+											<ul class="fill_in">
+												<li>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">語言</p>
+															<input type="text" name="" value="英文" disabled="">
+								                    	</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">聽</p>
+															<input type="text" name="" value="非常流暢" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">去</p>
+															<input type="text" name="" value="普通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">讀</p>
+															<input type="text" name="" value="普通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">寫</p>
+															<input type="text" name="" value="普通" disabled="">
+								                    	</div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="西班牙文" disabled="">
+								                    	</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="普通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="好" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="好" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="好" disabled="">
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="tBox">
+											<ul class="fill_in">
+												<li>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">語言</p>
+															<input type="text" name="" value="法文" disabled="disabled">
+								                    	</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">聽</p>
+															<input type="text" name="" value="非常流暢" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">去</p>
+															<input type="text" name="" value="非常流暢" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">讀</p>
+															<input type="text" name="" value="非常流暢" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">寫</p>
+															<input type="text" name="" value="非常流暢" disabled="">
+								                    	</div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="德文" disabled="disabled">
+								                    	</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="非常流暢" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="非常流暢" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="非常流暢" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="非常流暢" disabled="">
+								                    	</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<p class="top_title"><span class="pad-l">面試評論</span></p>
+
+								<div class="g_border g_ex" type="text"><textarea class="t_w100" disabled=""></textarea></div>
+
+								<p class="top_title bottom_title"><span>該員是否合適本職位需求</span>
+									<input class="input_yesNo_yes" id="zzz1" type="radio" name="yesNo11" value="是" checked=""><label for="yesNo11">是</label>合適
+									<!-- <input class="input_yesNo_no" id="a2" type="radio" name="yesNo" value="否"><label for="yesNo">否</label>不合適 -->
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
             </div>
         </form>
     </div>
