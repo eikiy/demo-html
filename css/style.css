@@ -566,6 +566,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .interviewMainBox .use_fillinBox .fBox p{ color: #9B9B9B;font-size: 12px;}
 .interviewMainBox .use_fillinBox .fBox p.title_s{padding: 3px 0; line-height: 24px; }
 .interviewMainBox .use_fillinBox .fBox input, .interviewMainBox .use_fillinBox .fBox textarea{ border:1px solid #979797; color: #4A4A4A; font-size: 12px; width: 100%; max-width: 128px; border-radius: 5px;  line-height: 24px; padding:2px 6px;}
+.interviewMainBox .use_fillinBox .fBox input:disabled, .interviewMainBox .use_fillinBox .fBox textarea:disabled{ background-color: #fff; }
 .interviewMainBox .use_fillinBox .fBox input::placeholder{ color: #9B9B9B;}
 .interviewMainBox .use_fillinBox .fBox input[type=text]:focus, .interviewMainBox .use_fillinBox .fBox textarea:focus, .interviewMainBox .styled-select:focus { border-color:#81B6C8;}
 .interviewMainBox .use_fillinBox .fBox input.name{ font-size: 14px; letter-spacing: 5px; }
@@ -1237,6 +1238,13 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .u_infoBox{ border:2px solid #81B6C8; border-radius: 10px 0 10px 10px; overflow: hidden;}
 .u_infoBox h3.blue_title{ background-color: #D1E0E5; font-size: 14px; padding: 0 15px; letter-spacing: 1px; line-height: 25px; color: #4A4A4A; position: relative;}
 .u_infoBox h3.blue_title span{ position: absolute; top: 0px; right: 18px; }
+.u_infoBox .time_course{ width: 100%;}
+.u_infoBox .time_course .tBox{ float: left; width: 50%; min-height: 92px; padding: 0 15px;  }
+.u_infoBox .time_course .tBox:first-child{ position: relative; }
+.u_infoBox .time_course .tBox:first-child::after{ content: "";  position: absolute; right: 0; top: 0; width: 2px; height: 100%;background-color: #979797; }
+.u_infoBox .time_course .tBox table{ font-size: 12px; margin-top: 3px; }
+.u_infoBox .time_course .tBox table th{ color: #9B9B9B; }
+.m_bottom{ margin-bottom: 30px; }
 
 .interviewMainBox .u_infoBox .referrerTopBox .top_titleBox p span{ color: #4A4A4A; }
 .interviewMainBox .u_infoBox .qaBox .top_titleBox{ border: none; }
