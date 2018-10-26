@@ -1235,7 +1235,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .popup-L .interviewer_info tr td p.btn_back a::after{ position: absolute; content: ""; right: 10px; top: 8px; width:22px ; height:30px; display: block; background-image:url(../images/user_info/icon_back.png); background-position: center center; background-repeat: no-repeat; background-size: contain;}
 .popup-L .interviewer_info tr td p.btn_back a:hover{ background-color: #81B6C8; color: #fff; }
 .popup-L .interviewer_info tr td p.btn_back a:hover::after{background-image:url(../images/user_info/icon_back_w.png);}
-.popup-L .interviewer_info tr td p.leave{ letter-spacing: 4px line-height: 41px;}
+.popup-L .interviewer_info tr td p.leave{ letter-spacing: 4px; line-height: 41px;}
 .popup-L .interviewer_info tr td p.leave a{ line-height: 40px;}
 .popup-L .interviewer_info tr td p.leave a::after{ top: 3px; width: 24px; height: 42px; background-image:url(../images/user_info/icon_leave.png); }
 .popup-L .interviewer_info tr td p.leave a:hover::after{ background-image:url(../images/user_info/icon_leave_w.png); }
