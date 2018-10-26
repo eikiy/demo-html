@@ -966,7 +966,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p{ cursor: pointer; border: 2px solid transparent; margin: 0px auto; max-width: 35px; border-radius: 4px;}
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p.btn_in{ border-color: #81b6c8; }
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr th:first-child p, .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr th:last-child p, 
-.right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr td:first-child p, .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr td:last-child p { color: #9B9B9B }
+.right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr td:first-child p, .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr td:nth-child(7n) p { color: #9B9B9B }
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr td{ position: relative;  }
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p.ring_color{ position: absolute; bottom: 3px; text-align: center; width: 100%; padding: 0; letter-spacing: 1px; border: none; }
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p.ring_color span{padding: 0; position: initial;}
@@ -978,6 +978,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .calendar_toolsBox .day_list ul li a::after{content: ""; z-index: 10; position: absolute; top: 0; left: 0; display: inline-block; width:calc(100% - 4px); height: calc(100% - 4px); border: 2px solid transparent; }
 .right_contents .calendar_toolsBox .day_list ul li a:hover::after{ border-color: #81B6C8; }
 .right_contents .calendar_toolsBox .day_list ul:last-child li:last-child a::after{ border-radius: 0 0 18px 18px; }
+.right_contents .calendar_toolsBox .day_list ul li:first-child, .right_contents .calendar_toolsBox .day_list ul li:last-child{border: none;}
 
 .right_contents .calendar_toolsBox .day_list ul li{ border-bottom: 1px solid #c0dae3; }
 .right_contents .calendar_toolsBox .day_list ul li.top_title{ border-color: #81B6C8; }
