@@ -4004,8 +4004,8 @@ $(document).ready(function() {
 								<li class="btn_in open"><a href="#"><p>2018/11/01<br>09:00</p></a></li>
 								<li class="open"><a href="#"><p>2017/06/01<br>09:56</p></a></li>
 								<li class="open"><a href="#"><p>2017/01/02<br>09:24</p></a></li>
-								<li><a href="#"><p>2016/01/02<br>09:34</p></a></li>
-								<li><a href="#"><p>2016/01/02<br>09:34</p></a></li>
+								<li><a class="popup-link" href="#popup-lock_open1"><p>2016/01/02<br>09:34</p></a></li>
+								<li><a class="popup-link" href="#popup-lock_open2"><p>2016/01/02<br>09:34</p></a></li>
 							</ul>
 						</div>
 
@@ -4463,6 +4463,40 @@ $(document).ready(function() {
             </div>
         </form>
     </div>
+
+    <!-- popup 特質測驗解鎖畫面-->
+    <div id="popup-lock_open1" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3>解鎖測驗報告</h3>
+            </div>
+            <div class="setBox messageBox lockBox">
+	            <div class="RedBox border_blue ">
+	                <h4>請問確定解鎖嗎？</h4>
+                	<p class="info">尚可使用點數：<span>50</span> 點，解鎖後將會扣除點數 <span>1</span> 點。</p>
+	            </div>
+	            <p class="btn"><a class="bg_gary" href="#">取消</a><a href="#">確認解鎖</a></p>
+	        </div>
+        </form>
+    </div>
+
+    <!-- popup 特質測驗解鎖畫面-->
+    <div id="popup-lock_open2" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3>解鎖測驗報告</h3>
+            </div>
+            <div class="setBox messageBox lockBox">
+	            <div class="RedBox border_blue ">
+	                <h4>請問確定解鎖嗎？</h4>
+                	<p class="info">尚可使用點數：<span>0</span> 點，請進行儲值。</p>
+	            </div>
+	            <p class="btn"><a class="bg_gary" href="#">取消</a><a class="bg_gary_light" href="#">確認解鎖</a></p>
+	        </div>
+        </form>
+    </div>
+
+
 </main>
 
 </body>

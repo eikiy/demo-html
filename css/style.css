@@ -271,6 +271,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .setBox p.btn a.bg_gary{ background-color: #9B9B9B; }
 .setBox p.btn a.bg_skyblue{ background-color: #81B6C8; }
 .setBox p.btn a.btn_none{opacity: .5;cursor: not-allowed;-webkit-filter: grayscale(1);}
+.setBox p.btn a.bg_gary_light{ background-color: #EBEBEB; color: #D8D8D8; cursor: no-drop;  }
 
 .setBox p.btn a.fl{ float: left; }
 .setBox p.btn a.bg_lightblue{ float: left; margin-left: 0;color: #81B6C8; background-color: #D1E0E5; border:2px solid #81B6C8;}
@@ -374,6 +375,9 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .messageBox .SendDone p.info::after{ content: ""; position: absolute; top: calc(50% - 23px); right:0; width: 96px; height: 47px; display: block; background: url(../images/pop_icon_done.png) center center no-repeat; background-size: contain; }
 .messageBox .SendDone p.icon_mail::after{ width: 62px; height: 64px; top: calc(50% - 30px); background-image: url(../images/interviewer/pop_icon_done.png)}
 
+.lockBox{padding-top: 10px;}
+.lockBox h4{padding-bottom: 20px;}
+.lockBox p{ color: #9B9B9B; }
 
 .enforcementBox .top_title h3{ background-color: #C87D86; color: #fff; }
 .enforcementBox .fillinBox ul{ border:2px solid #C87D86; background-color: #fff; }
@@ -482,6 +486,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .interviewMainBox p.btn a:hover, .traitTestBox p.btn a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .interviewMainBox p.btn a.bg_red{ background-color: #C87D86; letter-spacing: 0; }
 .interviewMainBox p.btn a.bg_gary{ background-color: #9B9B9B; }
+
 .interviewMainBox p.btn-both{ text-align: initial; }
 .interviewMainBox p.btn-both a{float: right;}
 .interviewMainBox p.btn-both a.yellow{ background-color: #E5AF57;}
@@ -1350,7 +1355,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 
 .interviewee_info ul.Lock{ text-align: left; width: 100%; float:left; padding-top: 15px; }
 .interviewee_info ul.Lock li{ display: inline-block; padding: 0 5px; }
-.interviewee_info ul.Lock li a{ width: 90px; height: 90px; cursor: no-drop;  display: block; border-radius: 10px 0 10px 10px; border:3px solid #9B9B9B; padding: 10px 0 0 5px; background-image: url(../images/user_info/bg_lock_l.png); background-position: center center; background-repeat: no-repeat; background-size: contain;}
+.interviewee_info ul.Lock li a{ width: 90px; height: 90px; /*cursor: no-drop; */ display: block; border-radius: 10px 0 10px 10px; border:3px solid #9B9B9B; padding: 10px 0 0 5px; background-image: url(../images/user_info/bg_lock_l.png); background-position: center center; background-repeat: no-repeat; background-size: contain;}
 .interviewee_info ul.Lock li a p{ color: #9B9B9B; }
 .interviewee_info ul.Lock li a:hover{ border-color: #81B6C8;}
 .interviewee_info ul.Lock li.open a{ cursor: pointer;  background-image: url(../images/user_info/bg_lock_s.png); border-color: #81B6C8;  }
