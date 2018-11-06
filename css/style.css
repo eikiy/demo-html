@@ -15,11 +15,11 @@ abbr, acronym { border:0;}
 * html .clearfix {height: 1%;}
 *:first-child + html .clearfix { min-height: 1%;}
 
-body, h1, h2, h3, h4, h5, h6, p {font-family:'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif; font-weight: normal; color: #4A4A4A;}
+body, h1, h2, h3, h4, h5, h6, p {font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4, sans-serif; font-weight: normal; color: #4A4A4A;}
 p{ font-size:14px;}
 a{  text-decoration:none; outline: none; cursor: pointer; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
 a:hover{ text-decoration:none;}
-select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif; font-size: 14px;color: #4A4A4A;}
+select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4, sans-serif; font-size: 14px;color: #4A4A4A;}
 *:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 
 /*===== start ======*/
@@ -104,7 +104,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 
 .headerBox ul.message_listBox{ position: absolute; top: 30px; right: 0; width: 215px; height: 253px; overflow-y: auto;  }
 
-.mainBox{ width: 100%; min-width: 1024px; min-height:calc( 100vh - 46px); background-color: #f8f9f9; padding: 20px; display: block; }
+.mainBox{ width: 100%; min-width: 1024px; min-height:calc( 100vh - 44px); background-color: #f8f9f9; padding: 20px; display: block; }
 .mainBox .contentsBox{ display: -webkit-flex; display: flex; }
 .mainBox .side_menu{ width: 122px; padding-top: 40px;}
 .mainBox .side_menu h1.title{ font-size: 14px; color: #3E3E3D; width: 122px;  padding-bottom: 6px;}
@@ -474,7 +474,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .interviewLoginBox input.name[type=text]:focus{ box-shadow: inset 0px 2px 7px 0px rgb(0,0,0,.5); }
 .interviewLoginBox input.name::placeholder{ color: #D8D8D8; }
 .interviewLoginBox .name_error{ position: relative; }
-.interviewLoginBox .name_error::after{ content: ""; z-index: 10; position: absolute; display: block; background-color: #C87D86; width: 325px; height: 2px; bottom:119px; right: 94px;}
+.interviewLoginBox .name_error::after{ content: ""; z-index: 10; position: absolute; display: block; background-color: #C87D86; width: 325px; height: 2px; bottom:120px; right: 94px;}
 .interviewLoginBox .name_error p.the_reminder{ position: absolute; bottom: 132px; right: 96px; color: #C87D86; }
 
 .interviewLoginBox p.btn{ text-align: center; width: 100%; padding: 10px 0; }
@@ -958,7 +958,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .monthBox p{ color: #717475;  text-align: center; padding: 5px 0 14px 0;}
 .monthBox tr th{ width: calc(100% / 7); }
 .monthBox .top_year_month{ width: 100%; background-color: #717475; border-radius:0 17px 0 0;}
-.monthBox .top_year_month p{ letter-spacing: 5px; padding: 15px 0 10px 0; margin: 0 auto; color: #fff;}
+.monthBox .top_year_month p{ letter-spacing: 5px; padding: 15px 0; margin: 0 auto; color: #fff;}
 .monthBox .top_year_month p span{ position: relative; color:#fff; }
 .monthBox .top_year_month p a{ cursor: pointer; position: absolute; top: 2px; left: -50px; display: block; width: 0; height: 0; border-style: solid; border-width: 6.5px 9px 6.5px 0; border-color: transparent #81b6c8 transparent transparent; line-height: 0px; _border-color: #000000 #81b6c8 #000000 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000'); }
 .monthBox .top_year_month p a.right_arr{ left: initial; right: -50px; display: block; width: 0; height: 0; border-style: solid; border-width: 6.5px 0 6.5px 9px; border-color: transparent transparent transparent #81b6c8; line-height: 0px; _border-color: #000000 #000000 #000000 #81b6c8; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
@@ -1210,7 +1210,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .traitTestEnd .end_thankyou::after{ content: ""; position: absolute; top: -360px; width: 710px; height: 350px; display: block; background: url(../images/traitTest/end_thankyou.png) center top no-repeat; background-size: contain;  }
 .traitTestEnd .end_thankyou_not { width: 100%; min-height: 170px; border: 3px solid #81B6C8; border-radius: 10px 0 10px 10px; display: block; padding-top: 60px; position: relative;}
 .traitTestEnd .end_thankyou_not::after{ content: ""; position: absolute; top: -360px; width: 710px; height: 350px; display: block; background: url(../images/traitTest/end_thankyou_not.png) center top no-repeat; background-size: contain;  }
-.traitTestEnd .end_thankyou_not p{ width: 100%; max-width: 588px; margin: 0 auto; color: #81B6C8; font-size: 18px; line-height: 25px; }
+.traitTestEnd .end_thankyou p, .traitTestEnd .end_thankyou_not p{ width: 100%; max-width: 588px; margin: 0 auto; color: #81B6C8; font-size: 18px; line-height: 25px; }
 
 .main_Login{ background: url(../images/bg_main_login.png) center bottom no-repeat;  background-size: contain; }
 .main_Login .name_error::after{ top: 44px; }
