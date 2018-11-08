@@ -958,7 +958,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .monthBox p{ color: #717475;  text-align: center; padding: 5px 0 14px 0;}
 .monthBox tr th{ width: calc(100% / 7); }
 .monthBox .top_year_month{ width: 100%; background-color: #717475; border-radius:0 17px 0 0;}
-.monthBox .top_year_month p{ letter-spacing: 5px; padding: 15px 0; margin: 0 auto; color: #fff;}
+.monthBox .top_year_month p{ letter-spacing: 4px; padding: 15px 0; margin: 0 auto; color: #fff;}
 .monthBox .top_year_month p span{ position: relative; color:#fff; }
 .monthBox .top_year_month p a{ cursor: pointer; position: absolute; top: 2px; left: -50px; display: block; width: 0; height: 0; border-style: solid; border-width: 6.5px 9px 6.5px 0; border-color: transparent #81b6c8 transparent transparent; line-height: 0px; _border-color: #000000 #81b6c8 #000000 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000'); }
 .monthBox .top_year_month p a.right_arr{ left: initial; right: -50px; display: block; width: 0; height: 0; border-style: solid; border-width: 6.5px 0 6.5px 9px; border-color: transparent transparent transparent #81b6c8; line-height: 0px; _border-color: #000000 #000000 #000000 #81b6c8; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
@@ -979,6 +979,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .calendar_toolsBox .calendar_month .monthBox{margin-bottom: 15px;}
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox{ padding:0 15px; }
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p{ cursor: pointer; border: 2px solid transparent; margin: 0px auto; max-width: 35px; border-radius: 4px;}
+.right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p:hover{border-color: #D1E0E5; }
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p.btn_in{ border-color: #81b6c8; }
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr th:first-child p, .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr th:last-child p, 
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr td:first-child p, .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr td:nth-child(7n) p { color: #9B9B9B }

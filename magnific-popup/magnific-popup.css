@@ -146,7 +146,7 @@ button::-moz-focus-inner {
 .mfp-close-btn-in .mfp-close {
   color: #ffffff; }
 .mfp-close-btn-in .mfp-close:hover{ color: #81B6C8; }
-
+.enforcementBox .mfp-close:hover{ color: #AD5A68; }
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close {
   color: #FFF;
