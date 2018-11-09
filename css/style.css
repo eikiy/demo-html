@@ -234,7 +234,10 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .setBox .fillinBox .sub_title p.text_ing span{ font-size: 18px; color: #fff; width: 88px; height: 41px; background:url(../images/icon_text_dialog.png) center center no-repeat; background-size: contain;  display: block; position: absolute; top: 20px; left: 70px; line-height: 41px; text-align: center; padding-left: 10px; }
 .setBox .fillinBox .sub_title p.btn{ width: initial; top: 18px;}
 .setBox .fillinBox .sub_title p.no_top{top: 0;}
- :root .setBox .fillinBox ul li{ min-height: 46px;}
+.setBox .fillinBox .sub_title a.delete{ position: absolute; cursor: pointer;  top: 15px; right: 19px; width: 15px; height: 15px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
+.setBox .fillinBox .sub_title a.delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
+
+:root .setBox .fillinBox ul li{ min-height: 46px;}
 
 .setBox .fillinBox ul li input.r_info{ border-bottom: 2px solid transparent }
 .setBox .fillinBox ul li input[type=text]:hover, .setBox .fillinBox ul li textarea:hover, .setBox .fillinBox ul li input[type=text]:focus, .setBox .fillinBox ul li textarea:focus { border-color:#81B6C8;}
