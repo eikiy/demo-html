@@ -104,7 +104,7 @@ a .white_tip::after{ border-color: transparent transparent #f8f9f9 transparent;}
 
 p.add_nterviewee{ float: left; margin-top: -7px; text-align: right; width: 100%; max-width: 306px;} 
 p.add_nterviewee a{ color: #558C9E; background: url(../images/btn_add_nterviewee.png) 5px center no-repeat #fff; background-size: contain; height: 38px; min-width: 162px;padding: 0 15px 0 40px; line-height: 32px; border:2.5px solid #558C9E; display: inline-block; border-radius:10px 10px 10px 0px;}
-p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-color: #D1E0E5; }
+p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 
 .headerBox ul.message_listBox{ position: absolute; top: 30px; right: 0; width: 215px; height: 253px; overflow-y: auto;  }
 
@@ -282,7 +282,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5); background-col
 .setBox p.btn a.bg_gary_light{ background-color: #EBEBEB; color: #D8D8D8; cursor: no-drop;  }
 
 .setBox p.btn a.fl{ float: left; }
-.setBox p.btn a.bg_lightblue{ float: left; margin-left: 0;color: #81B6C8; background-color: #D1E0E5; border:2px solid #81B6C8;}
+.setBox p.btn a.bg_lightblue{ margin-left: 0;color: #81B6C8; background-color: #D1E0E5;}
 .setBox p.btn a.bg_lightblue:hover{ border-color: #fff; }
 
 .setBox .storedValueBox ul li p.p_info{ -webkit-flex: 1; flex: 1; text-align: center; padding: 10px 12px; line-height: 24px; border-right: 1px solid rgba(155,155,155,0.5);} 
