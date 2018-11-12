@@ -175,12 +175,37 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .item li a.go_edit:hover{ background-color: #81B6C8; background-image: url(../images/btn_icon_edit_w.png); }
 :root .item li a.go_edit{ top: 5px; }
 
-.right_contents .theBox .infoBox .stageBox p.btn{ position: absolute; bottom:10px; right: 0; padding: 0; }
-
 .right_contents .theBox .infoBox .stageBox:first-child .item{ text-align: center; }
 .right_contents .theBox .infoBox .stageBox:first-child .item li{ width:initial;}
 .right_contents .theBox .infoBox .stageBox:first-child .item li a{ min-width: 192px; }
 .right_contents .theBox p.bottom{ text-align: right; padding-top: 50px; }
+
+.right_contents ul.top_setBtn{ width: 100%; padding-bottom: 15px; }
+.right_contents ul.top_setBtn li{ float: left; width: 50%; }
+.right_contents ul.top_setBtn li p{ text-align: center; padding: 0 5px; font-size: 13px; letter-spacing: 7px; }
+.right_contents ul.top_setBtn li p a{ color: #4A4A4A; width: 100%; display: block; line-height: 33px; background-color: #fff; border: 2px solid #fff; border-radius: 10px 0 10px 10px; }
+.right_contents ul.top_setBtn li p a:hover{ border-color: #81B6C8;}
+.right_contents ul.top_setBtn li p.btn_in a{ background-color: #EBEBEB; border-color: #81B6C8;}
+
+.go_fristBox{ position: relative; }
+.right_contents .theBox .infoBox .conditionBox p.btn{ top: 8px; }
+.right_contents .conditionBox{ border-bottom: 1px dashed #D8D8D8; padding:5px 0 15px 0; position: relative; text-align: left;}
+.right_contents .conditionBox input.input_condition{ width: 100%; max-width: 488px; height: 32px; border: 1px solid #D8D8D8; padding: 5px 10px; }
+.right_contents .conditionBox input.input_condition::placeholder{ font-size: 11px; color: #9B9B9B; }
+
+.right_contents .theBox .infoBox .stageBox p.btn, .right_contents .theBox .infoBox .conditionBox p.btn{ position: absolute; bottom:10px; right: 0; padding: 0; }
+
+.right_contents ul.conditionList{ width: 100%; max-width: 100%; padding-top: 10px;}
+.right_contents ul.conditionList li{ display: block; margin: 5px 0; padding-bottom: 5px; }
+.right_contents ul.conditionList li .border{ border:1px solid #81B6C8; max-width: 488px; color: #9B9B9B; font-size: 11px; padding: 3px;}
+.right_contents ul.conditionList li a.go_delete{width: 24px; height: 24px; top: 5px; right: 35px;}
+
+.right_contents .go_fristBox p.bottom{padding-top: 00px;}
+.right_contents .owl_message{ position: absolute; bottom: 0; left: 0; width: 100%; height: 147px; display: block; background: url(../images/img_owl_03.png) left center no-repeat; background-size: contain; }
+.right_contents .owl_message p{ width: 100%; height: 100%; /*font-size: 16px; color: #000000;*/ position: relative; }
+.right_contents .owl_message p span{ position: absolute; left: 325px; top: -45px; font-weight: bold; text-align: center; letter-spacing: 1px; color: #000000; font-size: 17px; display: inline-block; border:1px dashed #a2a2a3; border-radius: 10px 10px 10px 0px; padding:15px 15px; }
+.right_contents .owl_wings{ background: url(../images/img_owl_04.png) left center no-repeat; background-size: contain; }
+.right_contents .owl_wings p span{ left: 275px; }
 
 /*popup - style*/
 .styled-select { border: 1px solid #979797;border-radius: 5px; width:calc(100% - 2px) ; max-width: 128px; min-height: 22px; -webkit-transition: all 0.30s ease-in-out;  -moz-transition: all 0.30s ease-in-out;  -ms-transition: all 0.30s ease-in-out;  -o-transition: all 0.30s ease-in-out; overflow: hidden; background: url(../images/icon_arr.png) right center no-repeat #fff; background-size: contain;}
@@ -241,7 +266,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .setBox .fillinBox .sub_title a.delete{ position: absolute; cursor: pointer;  top: 15px; right: 19px; width: 15px; height: 15px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
 .setBox .fillinBox .sub_title a.delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
 
-:root .setBox .fillinBox ul li{ min-height: 46px;}
+ :root .setBox .fillinBox ul li{ min-height: 46px;}
 
 .setBox .fillinBox ul li input.r_info{ border-bottom: 2px solid transparent }
 .setBox .fillinBox ul li input[type=text]:hover, .setBox .fillinBox ul li textarea:hover, .setBox .fillinBox ul li input[type=text]:focus, .setBox .fillinBox ul li textarea:focus { border-color:#81B6C8;}
@@ -398,8 +423,16 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .enforcementBox .fillinBox ul li ul.select_item{ text-align: left; border: none; width: 100%; border-radius: 5px; padding: 10px 0; min-height: 30px; box-shadow: none;}
 .enforcementBox .fillinBox ul li ul.select_item li{ display: inline-block; width: initial; min-height: initial; color: #4A4A4A; font-size: 14px; margin-right: 5px; padding: 0; border-bottom: none; }
 
-.check_remind .border_blue{ background-color: #fff; padding:10px 30px;  margin-top: 10px;}
+.check_remind .border_blue{ background-color: #fff; padding:15px 30px;  margin-top: 10px;}
 .check_remind .border_blue p.info{line-height: 20px;}
+.check_remind .border_blue p.p_gray{ color: #9B9B9B;}
+.check_remind .border_blue p.line_gray{ border-bottom: 1px solid #979797; }
+
+.check_remind .bottom_noteBox{ padding: 0; }
+.check_remind .bottom_noteBox p.info{ padding: 15px 32px; }
+.check_remind ul.conditionList{ font-size: 14px; padding: 0; width: 100%;}
+.check_remind ul.conditionList li{ min-width: initial; display: block; border-bottom: 1px solid #979797; padding: 10px 0px; margin: 0; }
+.check_remind ul.conditionList li:last-child{ border: none; }
 
 .popup-padding-top{padding-top: 50px;}
 .popup-padding-top .mfp-close{ top:51px !important; }
@@ -870,7 +903,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents p.day span.gray{ background-color: #9B9B9B; }
 
 .right_contents .managementBox .remarkBox{width: 100%;}
-.right_contents .managementBox .remarkBox p{ float: left; width: 100%;  max-width: 270px; line-height: 18px; }
+.right_contents .managementBox .remarkBox p{ float: left; width: 100%;  max-width: 268px; line-height: 18px; }
 .right_contents .managementBox .remarkBox p.p_red{ color: #c87d86; font-weight: bold; font-size: 14px; }
 .right_contents .managementBox .remarkBox p.day{ width: initial; max-width: initial;}
 
