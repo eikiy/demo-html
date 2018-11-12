@@ -171,7 +171,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .item li a{ border:1px solid #9B9B9B; color: #4A4A4A; padding: 5px; display: block; }
 .item li a:hover{  border-color: #81B6C8; }
 .item li a.btn_in{ background-color: #81B6C8; color: #fff; border-color: #81B6C8; }
-.item li a.go_delete{ position: absolute; cursor: pointer;  top: 7px; right: 5px; width: 15px; height: 15px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
+.item li a.go_delete{ position: absolute; cursor: pointer;  top: 6px; right: 5px; width: 15px; height: 15px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
 .item li a.go_delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
 .item li a.go_edit{ position: absolute; cursor: pointer;  top: 7px; right: 5px; width: 15px; height: 15px; border:1px solid #81B6C8; border-radius: 3px 0 3px 3px; background-image: url(../images/btn_icon_edit.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
 .item li a.go_edit:hover{ background-color: #81B6C8; background-image: url(../images/btn_icon_edit_w.png); }
@@ -200,12 +200,12 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .right_contents ul.conditionList{ width: 100%; max-width: 100%; padding-top: 10px;}
 .right_contents ul.conditionList li{ display: block; margin: 5px 0; padding-bottom: 5px; }
 .right_contents ul.conditionList li .border{ border:1px solid #81B6C8; max-width: 488px; color: #9B9B9B; font-size: 11px; padding: 3px;}
-.right_contents ul.conditionList li a.go_delete{width: 24px; height: 24px; top: 5px; right: 35px;}
+.right_contents ul.conditionList li a.go_delete{width: 20px; height: 20px; top: 5px; right: 35px;}
 
 .right_contents .go_fristBox p.bottom{padding-top: 00px;}
 .right_contents .owl_message{ position: absolute; bottom: 0; left: 0; width: 100%; height: 147px; display: block; background: url(../images/img_owl_03.png) left center no-repeat; background-size: contain; }
 .right_contents .owl_message p{ width: 100%; height: 100%; /*font-size: 16px; color: #000000;*/ position: relative; }
-.right_contents .owl_message p span{ position: absolute; left: 325px; top: -45px; font-weight: bold; text-align: center; letter-spacing: 1px; color: #000000; font-size: 17px; display: inline-block; border:1px dashed #a2a2a3; border-radius: 10px 10px 10px 0px; padding:15px 15px; }
+.right_contents .owl_message p span{ position: absolute; left: 325px; top: -45px; font-weight: bold; text-align: center; letter-spacing: 1px; color: #a2a2a3; font-size: 17px; display: inline-block; border:1px dashed #a2a2a3; border-radius: 10px 10px 10px 0px; padding:15px 15px; }
 .right_contents .owl_wings{ background: url(../images/img_owl_04.png) left center no-repeat; background-size: contain; }
 .right_contents .owl_wings p span{ left: 275px; }
 
@@ -458,8 +458,8 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .management_pop ul li p.btn a:hover{ background-color: #D1E0E5;}
 .management_pop ul li p.btn a.add{ padding-left: 25px; background-image: url(../images/btn_icon_add.png);}
 .management_pop ul li p.btn a.add:hover{ background-color: #D1E0E5; }
-.management_pop ul li p.btn a.delete{ padding-left: 25px; color: #C87D86; border-color: #C87D86; background-image: url(../images/icon_x.png);}
-.management_pop ul li p.btn a.delete:hover{ background-color: #C87D86; color: #fff; background-image: url(../images/icon_x_w.png);}
+.management_pop ul li p.btn a.delete{ padding-left: 25px; color: #C87D86; border-color: #C87D86; background-image: url(../images/icon_x_s.png);}
+.management_pop ul li p.btn a.delete:hover{ background-color: #C87D86; color: #fff; background-image: url(../images/icon_x_s_w.png);}
 /*.management_pop ul li p.btn a.select{ background-color: #D1E0E5; }*/
 .management_pop ul li p.btn a.select:hover{ border-color: #81B6C8; }
 .management_pop ul li p.btn a.select_active{ box-shadow:0px 2px 4px #999 inset;}
@@ -485,8 +485,8 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .filter_pop .chosenBox{ background-color: #fff; width: 100%; min-height: 35px; border-radius: 10px 0 10px 10px; margin-top: 10px; display: block; position: relative; padding: 10px 15px; }
 .filter_pop .chosenBox p span{ color: #C87D86; padding-left: 10px; }
 .filter_pop .chosenBox p.btn{ position: absolute; top: 7px; line-height: 24px; right: 10px; font-size: 12px;  padding: 0;}
-.filter_pop .chosenBox p.btn a.delete{ min-width: 60px; margin: 0 3px; padding: 0 5px 0px 25px; background-color: #fff; letter-spacing: 0; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #C87D86; border-radius:3px 0 3px 3px; color: #C87D86; background-image: url(../images/icon_x.png);}
-.filter_pop .chosenBox p.btn a.delete:hover{ background-color: #C87D86; color: #fff; background-image: url(../images/icon_x_w.png);}
+.filter_pop .chosenBox p.btn a.delete{ min-width: 60px; margin: 0 3px; padding: 0 5px 0px 25px; background-color: #fff; letter-spacing: 0; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #C87D86; border-radius:3px 0 3px 3px; color: #C87D86; background-image: url(../images/icon_x_s.png);}
+.filter_pop .chosenBox p.btn a.delete:hover{ background-color: #C87D86; color: #fff; background-image: url(../images/icon_x_s_w.png);}
 .filter_pop .chosenBox p.btn a.cursor_none{ -webkit-filter: grayscale(1); opacity: .5; cursor: not-allowed;}
 .filter_pop .chosenBox p.btn a.cursor_none:hover{ background-color:#fff; border-color: #C87D86; color: #81B6C8; background-image: url(../images/icon_x.png);}
 
@@ -496,7 +496,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .filter_pop .the_chosenBox_list ul li p.type a{ border:1px solid #979797; color: #4A4A4A; background-color: #fff; line-height: 26px; display: inline-block; padding: 0 8px 0 27px; margin:0 5px 5px 0; position: relative;}
 .filter_pop .the_chosenBox_list ul li p.type a:hover{ background-color: #81B6C8; color: #fff; }
 .filter_pop .the_chosenBox_list ul li:last-child{ border: none; }
-.filter_pop .the_chosenBox_list ul li p.type a::before{ content: ""; top: 8px; left: 10px; position: absolute; width: 10px; height: 10px; display:block; background-image: url(../images/the_chosenBox_input.png) ;background-position: center center ; background-repeat: no-repeat; background-size: contain; }
+.filter_pop .the_chosenBox_list ul li p.type a::before{ content: ""; top: 6px; left: 7px; position: absolute; width: 13px; height: 13px; display:block; background-image: url(../images/the_chosenBox_input.png) ;background-position: center center ; background-repeat: no-repeat; background-size: contain; }
 .filter_pop .the_chosenBox_list ul li p.type a.btn_in{ background-color: #81B6C8; color: #fff; border-color: #fff;}
 .filter_pop .the_chosenBox_list ul li p.type a.check_in_01::before{ background-image: url(../images/the_chosenBox_input_in.png);}
 .filter_pop .the_chosenBox_list ul li p.type a.check_in_02::before{ background-image: url(../images/the_chosenBox_input_active.png);}
@@ -709,10 +709,10 @@ html:root .interviewMainBox .use_fillinBox .fBox input[type=checkbox]{ height: i
 html:root .interviewMainBox .use_fillinBox ul.select_item li{ width: auto; }
 .interviewMainBox .use_fillinBox ul.select_item li input.bottom_line{ border:none; border-bottom:1px solid #979797; display: inline-block;  border-radius: 0; height: 22px; min-height: 18px; line-height: 18px; }
 
-input[type=checkbox]:not(old), input[type=radio ]:not(old){  width : 28px !important;  margin: 0;  padding : 0; opacity : 0;}
+input[type=checkbox]:not(old), input[type=radio ]:not(old){  width : 28px !important;  margin: 0;  padding : 0; opacity : 0; cursor: pointer;}
 input[type=checkbox]:not(old) + label{  display : inline-block;  margin-left : -28px; padding-left : 28px; line-height : 24px; background : url('../images/checks.png') no-repeat 0 -48px;}
 input[type=checkbox]:not(old):checked + label{ background-position : 0 -73px;}
-input[type=radio]:not(old) + label{  display : inline-block; margin-left : -24px; padding-left : 28px; line-height : 24px;  background: url('../images/checks.png') no-repeat 0 3px;}
+input[type=radio]:not(old) + label{ cursor: pointer; display : inline-block; margin-left : -24px; padding-left : 28px; line-height : 24px;  background: url('../images/checks.png') no-repeat 0 3px;}
 input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 
 /*popup upload Photo*/
@@ -730,7 +730,7 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 
 /*popup upload Photo**/
 
-.interviewMainBox .use_fillinBox ul.fill_in li a.go_delete{ position: absolute; cursor: pointer;  bottom:18px; right: -30px; width: 24px; height: 24px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
+.interviewMainBox .use_fillinBox ul.fill_in li a.go_delete{ position: absolute; cursor: pointer;  bottom:18px; right: -28px; width: 19px; height: 20px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
 .interviewMainBox .use_fillinBox ul.fill_in li a.go_delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
 /*.interviewMainBox .use_fillinBox ul.fill_in li a.go_edit{ position: absolute; cursor: pointer;  top: 7px; right: 5px; width: 15px; height: 15px; border:1px solid #81B6C8; border-radius: 3px 0 3px 3px; background-image: url(../images/btn_icon_edit.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
 .interviewMainBox .use_fillinBox ul.fill_in li a.go_edit:hover{ background-color: #81B6C8; background-image: url(../images/btn_icon_edit_w.png); }
@@ -818,7 +818,7 @@ input.input_yesNo_yes[type=radio]:not(old), input.input_yesNo_yes[type=radio ]:n
 input.input_yesNo_yes[type=radio]:not(old) + label{  display : inline-block; width: 33px; padding: 0; height: 33px;  line-height : 33px; color: transparent; background : url('../images/input_yesNo_yes.png') center center no-repeat; background-size: contain;}
 input.input_yesNo_yes[type=radio]:not(old):checked + label{ background : url('../images/input_yesNo_yes_in.png') center center no-repeat; background-size: contain;}
 input.input_yesNo_no[type=radio]:not(old), input.input_yesNo_no[type=radio ]:not(old){ cursor: pointer;  width : 33px !important; height: 33px; margin: 0;  padding : 0; opacity : 0;}
-input.input_yesNo_no[type=radio]:not(old) + label{  display : inline-block; width: 33px;padding: 0; height: 33px; line-height : 33px; color: transparent; background : url('../images/input_yesNo_no.png') center center no-repeat; background-size: contain;}
+input.input_yesNo_no[type=radio]:not(old) + label{ cursor: pointer; display : inline-block; width: 33px;padding: 0; height: 33px; line-height : 33px; color: transparent; background : url('../images/input_yesNo_no.png') center center no-repeat; background-size: contain;}
 input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../images/input_yesNo_no_in.png') center center no-repeat; background-size: contain;}
 
 
@@ -915,11 +915,11 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .top_toolsBox ul.type li p{ text-align: center; line-height: 30px;}
 .right_contents .top_toolsBox ul.type li a{ color: #3E3E3D; display: block; height: 30px; }
 .right_contents .top_toolsBox ul.type li::before{ content: ""; width: 1px; height: 100%; position: absolute; top: 0; background-color: #cccccc; display: block; right: -0.5px; }
-.right_contents .top_toolsBox ul.type li::after{ content: ""; position: absolute; width: 100%; height: 2px; display: none; background-color: #81B6C8; bottom: 0; left: ;}
+.right_contents .top_toolsBox ul.type li::after{ content: ""; position: absolute; width: 100%; height: 2px; display: block; opacity: 0; background-color: #81B6C8; bottom: 0; left: 0; transition: 400ms cubic-bezier(.08,.52,.52,1)background-color, 400ms cubic-bezier(.08,.52,.52,1) border-color, 400ms cubic-bezier(.08,.52,.52,1) opacity;}
 .right_contents .top_toolsBox ul.type li:last-child::before{ display: none; }
-.right_contents .top_toolsBox ul.type li:hover::after{ display: block; }
+.right_contents .top_toolsBox ul.type li:hover::after{ opacity: 1; }
 .right_contents .top_toolsBox ul.type li.btn_in p a{ color: #81B6C8; }
-.right_contents .top_toolsBox ul.type li.btn_in::after{ display: block; }
+.right_contents .top_toolsBox ul.type li.btn_in::after{ opacity: 1;  }
 .right_contents .top_toolsBox ul.type li p span{ position: relative; padding-right: 15px;}
 .right_contents .top_toolsBox ul.type li p span::after, .right_contents .top_toolsBox ul.type li p span::before{ display: inline-block; content: ""; top: 3px; right: 0; position: absolute; width: 0; height: 0; border-style: solid; border-width: 0 4px 4px 4px; border-color: transparent transparent #9B9B9B transparent; line-height: 0px; _border-color: #000000 #000000 #9B9B9B #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
 .right_contents .top_toolsBox ul.type li p span::before{ top: initial; bottom: 3px; border-width: 4px 4px 0 4px; border-color: #9B9B9B transparent transparent transparent; _border-color: #9B9B9B #000000 #000000 #000000;}
