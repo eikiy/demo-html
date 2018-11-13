@@ -925,6 +925,8 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .top_toolsBox ul.type li p span::before{ top: initial; bottom: 3px; border-width: 4px 4px 0 4px; border-color: #9B9B9B transparent transparent transparent; _border-color: #9B9B9B #000000 #000000 #000000;}
 .right_contents .top_toolsBox ul.type li.btn_in p span::after{ border-color: transparent transparent #81B6C8 transparent; _border-color: #000000 #000000 #81B6C8 #000000;}
 .right_contents .top_toolsBox ul.type li.btn_in_botoom p span::before{ border-color: #81B6C8 transparent transparent transparent; _border-color: #81B6C8 #000000 #000000 #000000;}
+.right_contents .top_toolsBox ul.type li.btn_in_botoom::after{ opacity: 1; }
+
 :root .right_contents .top_toolsBox ul.type li p span::after{ top: 3px; }
 :root .right_contents .top_toolsBox ul.type li p span::before{ top: initial; bottom: 3px; }
 
