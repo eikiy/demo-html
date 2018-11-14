@@ -630,6 +630,8 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 
 .interviewMainBox .use_fillinBox .fBox p{ color: #9B9B9B;font-size: 12px;}
 .interviewMainBox .use_fillinBox .fBox p.title_s{padding: 3px 0; line-height: 24px; }
+.interviewMainBox .use_fillinBox .fBox p.title_s input{ min-height: 15px; }
+
 .interviewMainBox .use_fillinBox .fBox input, .interviewMainBox .use_fillinBox .fBox textarea{ border:1px solid #979797; color: #4A4A4A; font-size: 12px; width: 100%; max-width: 128px; border-radius: 5px;  line-height: 24px; padding:2px 6px; min-height: 26px;}
 html:root .interviewMainBox .use_fillinBox .fBox input, html:root .interviewMainBox .use_fillinBox .fBox textarea{ height: 30px; width: calc(100% - 5px); }
 html:root .styled-select select{ height: 28px;}
@@ -736,7 +738,7 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 .interviewMainBox .use_fillinBox ul.fill_in li a.go_edit:hover{ background-color: #81B6C8; background-image: url(../images/btn_icon_edit_w.png); }
 */
 
-.interviewMainBox p.btn_add_list{font-size: 12px; text-align: right; line-height: 24px; padding: 10px 0; max-width: 843px;}
+.interviewMainBox p.btn_add_list{font-size: 12px; text-align: right; line-height: 24px; padding: 10px 0; max-width: 910px;}
 .interviewMainBox p.btn_add_list a{ min-width: 60px; margin: 0 3px; padding: 0 5px; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #81B6C8; border-radius:3px 0 3px 3px;}
 .interviewMainBox p.btn_add_list a:hover{ background-color: #D1E0E5;}
 .interviewMainBox p.btn_add_list a.add{ padding-left: 25px; background-image: url(../images/btn_icon_add.png);}
