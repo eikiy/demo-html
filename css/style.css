@@ -1236,7 +1236,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .traitTestGo .QABox .top_bg{ width: 100%;  height: 202px; border-radius: 20px 0 0 0 ; background-color: #81B6C8; }
 .traitTestGo .QABox .bottom_qa{ width: 100%; min-height: 470px; border: 2px solid #979797; border-width: 0 2px 2px 2px; border-radius: 0 0 20px 20px; padding-top: 82px; position: relative;}
 .traitTestGo .QABox .bottom_qa .question{ width: 900px; min-height: 158px; background-color: #EBEBEB; border-radius: 10px 0 10px 10px; margin: 0 auto; padding:56px 20px 20px 238px; }
-.traitTestGo .QABox .bottom_qa .question p{font-size: 24px; line-height: 33px; letter-spacing: 10px; position: relative;}
+.traitTestGo .QABox .bottom_qa .question p{font-size: 24px; line-height: 33px; position: relative;}
 .traitTestGo .QABox .bottom_qa .question p::after{ z-index: 10; content: "Q"; position: absolute; top: 10px; left: -138px; color: #fff; font-size: 150px;  }
 .traitTestGo .QABox .bottom_qa .time{ z-index: 10; position: absolute; top: -140px; right: 240px; text-align: center; font-size: 36px; padding-top: 75px;  width: 157px; height: 179px; display: block; background: url(../images/traitTest/bg_clock.png) center center no-repeat; background-size: contain; }
 .traitTestGo .QABox .bottom_qa .Q_nb{ z-index: 10; position: absolute;  top: 16px; right: 85px; color: #fff; text-align: center; font-size: 24px; padding-top: 17px;  width: 117px; height: 78px; display: block; background: url(../images/traitTest/bg_Q.png) center center no-repeat; background-size: contain; }
