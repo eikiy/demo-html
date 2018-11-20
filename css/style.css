@@ -279,7 +279,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .setBox .fillinBox p.the_reminder{ position: absolute; top: 15px; right: 15px; color: #C87D86; }
 
 
-.setBox .jobBox{ margin-top: 10px; width: 100%; background-color: #EBEBEB; width: 390px; min-height: 125px; border-radius: 10px 0 10px 10px; box-shadow: 0px 0px 5px rgba(155,155,155,0.2); overflow: hidden; position: relative; }
+.setBox .jobBox{ margin-top: 10px; width: 100%; background-color: #EBEBEB; width: 390px; min-height: 97px; border-radius: 10px 0 10px 10px; box-shadow: 0px 0px 5px rgba(155,155,155,0.2); overflow: hidden; position: relative; }
 .setBox .jobBox table.test{ width: 100%; text-align: center; vertical-align: middle; }
 .setBox .jobBox table.test tr th, .setBox .jobBox table.test tr td{ padding: 10px 5px; height: 40px;/* display: block;*/  border-left: 1px solid rgba(155,155,155,0.5);}
 .setBox .jobBox table.test tr td{ border-top: 1px solid rgba(155,155,155,0.5); }
