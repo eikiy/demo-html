@@ -30,14 +30,14 @@ $(document).ready(function() {
 
 <!--=================================
 	請馬克幫我增加屬性，
-	當點了popup後 header 和 main 的css 
+	當點了popup後 header 和 main 的css
 	都要加以下屬性才會有模糊效果：
-	
+
 	-webkit-filter: blur(0.4rem);
-    -moz-filter: blur(0.4rem);        
+    -moz-filter: blur(0.4rem);
     -o-filter: blur(0.4rem);
     -ms-filter: blur(0.4rem);
-    filter: blur(0.4rem); 
+    filter: blur(0.4rem);
 ================================= -->
 
 <header class="headerBox for_management_top">
@@ -690,11 +690,27 @@ $(document).ready(function() {
 	        	<ul>
 	        		<li>
 	        			<p class="b_title">第2階</p>
-	        			<p class="type"><a href="#">行政管理處</a>
-	        				<a href="#">製造處</a>
-	        				<a href="#">銷售處</a>
-	        				<a href="#">研發一處</a>
-	        				<a href="#">研發二處</a>
+	        			<p class="type">
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">行政管理處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">製造處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">銷售處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發一處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發二處</a>
+	        				</span>
 	        			</p>
 	        		</li>
 	        	</ul>
@@ -727,32 +743,78 @@ $(document).ready(function() {
 	        	<ul>
 	        		<li>
 	        			<p class="b_title">第2階</p>
-	        			<p class="type"><a class="btn_in" href="#">行政管理處</a>
-	        				<a href="#">製造處</a>
-	        				<a href="#" class="btn_active check_in_01">銷售處</a>
-	        				<a href="#" class="btn_active">研發一處</a>
-	        				<a href="#">研發二處</a>
+	        			<p class="type">
+	        				<span>
+	        					<a class="the_input btn_in" href="#"></a>
+	        					<a class="the_department" href="#">行政管理處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">製造處</a>
+	        				</span>
+	        				<span class="btn_active check_in_01">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">銷售處</a>
+	        				</span>
+	        				<span class="btn_active">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發一處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發二處</a>
+	        				</span>
 	        			</p>
 	        		</li>
 	        		<li>
 	        			<p class="b_title">第3階</p>
-	        			<p class="type"><a class="btn_in" href="#">人資部</a>
-	        				<a href="#">總務部</a>
-	        				<a class="btn_in check_in_01" href="#">資訊部</a>
-	        				<a href="#">廠務部</a>
+	        			<p class="type">
+	        				<span class="btn_in">
+	        					<a class="the_input"  href="#"></a>
+	        					<a class="the_department" href="#">人資部</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input"  href="#"></a>
+	        					<a class="the_department" href="#">總務部</a>
+	        				</span>
+	        				<span class="btn_in check_in_01">
+	        					<a class="the_input"  href="#"></a>
+	        					<a class="the_department" href="#">資訊部</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input"  href="#"></a>
+	        					<a class="the_department" href="#">廠務部</a>
+	        				</span>
 	        			</p>
 	        		</li>
 	        		<li>
 	        			<p class="b_title">第4階</p>
-	        			<p class="type"><a href="#">訓練課</a>
-	        				<a class="btn_in" href="#">招募課</a>
-	        				<a href="#">薪酬課</a>
+	        			<p class="type">
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">訓練課</a>
+	        				</span>
+	        				<span class="btn_in">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">招募課</a>
+	        				</span>
+	        				<span>	
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">薪酬課</a>
+	        				</span>
 	        			</p>
 	        		</li>
 	        		<li>
 	        			<p class="b_title">第5階</p>
-	        			<p class="type"><a href="#" class="btn_active check_in_02">招募一組</a>
-	        				<a href="#" class="btn_active check_in_02">招募二組</a>
+	        			<p class="type">
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">招募一組</a>
+	        				</span>
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">招募二組</a>
+	        				</span>
 	        			</p>
 	        		</li>
 	        	</ul>
@@ -785,24 +847,57 @@ $(document).ready(function() {
 	        	<ul>
 	        		<li>
 	        			<p class="b_title">第2階</p>
-	        			<p class="type"><a class="btn_active" href="#">行政管理處</a>
-	        				<a href="#">製造處</a>
-	        				<a href="#" class="btn_in check_in_01">銷售處</a>
-	        				<a href="#" class="btn_active">研發一處</a>
-	        				<a href="#">研發二處</a>
+	        			<p class="type">
+	        				<span class="btn_active">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">行政管理處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">製造處</a>
+	        				</span>
+	        				<span class="btn_in check_in_01">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">銷售處</a>
+	        				</span>
+	        				<span class="btn_active">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發一處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發二處</a>
+	        				</span>
 	        			</p>
 	        		</li>
 	        		<li>
 	        			<p class="b_title">第3階</p>
-	        			<p class="type"><a class="btn_in check_in_02" href="#">行銷部</a>
-	        				<a href="#" class="btn_active check_in_02">業務部</a>
-	        				<a class="btn_active check_in_02" href="#">客服部</a>
+	        			<p class="type">
+	        				<span class="btn_in check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">行銷部</a>
+	        				</span>
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">業務部</a>
+	        				</span>
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">客服部</a>
+	        				</span>
 	        			</p>
 	        		</li>
 	        		<li>
 	        			<p class="b_title">第4階</p>
-	        			<p class="type"><a class="btn_active check_in_02" href="#">網銷課</a>
-	        				<a class="btn_active check_in_02" href="#">設計課</a>
+	        			<p class="type">
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">網銷課</a>
+	        				</span>
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">設計課</a>
+	        				</span>
 	        			</p>
 	        		</li>
 	        	</ul>
@@ -837,24 +932,57 @@ $(document).ready(function() {
 	        	<ul>
 	        		<li>
 	        			<p class="b_title">第2階</p>
-	        			<p class="type"><a class="btn_active" href="#">行政管理處</a>
-	        				<a href="#" class="btn_active check_in_01">製造處</a>
-	        				<a href="#" class="btn_in check_in_01">銷售處</a>
-	        				<a href="#" class="btn_active">研發一處</a>
-	        				<a href="#" class="btn_active check_in_01">研發二處</a>
+	        			<p class="type">
+	        				<span class="btn_active" >
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">行政管理處</a>
+	        				</span>
+	        				<span class="btn_active check_in_01">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">製造處</a>
+	        				</span>
+	        				<span class="btn_in check_in_01">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">銷售處</a>
+	        				</span>
+	        				<span class="btn_active">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發一處</a>
+	        				</span>
+	        				<span class="btn_active check_in_01">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發二處</a>
+	        				</span>
 	        			</p>
 	        		</li>
 	        		<li>
 	        			<p class="b_title">第3階</p>
-	        			<p class="type"><a class="btn_in check_in_02" href="#">行銷部</a>
-	        				<a href="#" class="btn_active check_in_02">業務部</a>
-	        				<a class="btn_active check_in_02" href="#">客服部</a>
+	        			<p class="type">
+	        				<span class="btn_in check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">行銷部</a>
+	        				</span>
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">業務部</a>
+	        				</span>
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">客服部</a>
+	        				</span>
 	        			</p>
 	        		</li>
 	        		<li>
 	        			<p class="b_title">第4階</p>
-	        			<p class="type"><a class="btn_active check_in_02" href="#">網銷課</a>
-	        				<a class="btn_active check_in_02" href="#">設計課</a>
+	        			<p class="type">
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">網銷課</a>
+	        				</span>
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">設計課</a>
+	        				</span>
 	        			</p>
 	        		</li>
 	        	</ul>

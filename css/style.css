@@ -23,7 +23,7 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 *:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 
 /*===== start ======*/
-.contentsBox{ width: 100%; max-width: 1000px; margin: 0 auto; }
+.contentsBox{ width: 100%; width: 1000px; margin: 0 auto; }
 
 .headerBox{width: 100%; min-width: 1024px; background-color: #81B6C8; padding-top: 10px; min-height: 46px;  position: sticky; top: 0px; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; z-index: 100;}
 .headerBox a.logo{ float: left; width: 60px; height: 28px; margin: -1px 15px 0 0; display: block; background: url(../images/logo.png) 8px center no-repeat; background-size: contain; }
@@ -492,17 +492,20 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 
 .filter_pop .the_chosenBox_list{ background-color: #EBEBEB; border-radius: 10px 0px 10px 10px; margin-top: 10px;}
 .filter_pop .the_chosenBox_list ul li{border-bottom: 1px dashed #D8D8D8; padding: 5px 15px;}
-.filter_pop .the_chosenBox_list ul li p.type{ text-align: left;  font-size: 11px;}
-.filter_pop .the_chosenBox_list ul li p.type a{ border:1px solid #979797; color: #4A4A4A; background-color: #fff; line-height: 26px; display: inline-block; padding: 0 8px 0 27px; margin:0 5px 5px 0; position: relative;}
-.filter_pop .the_chosenBox_list ul li p.type a:hover{ background-color: #81B6C8; color: #fff; }
 .filter_pop .the_chosenBox_list ul li:last-child{ border: none; }
-.filter_pop .the_chosenBox_list ul li p.type a::before{ content: ""; top: 6px; left: 7px; position: absolute; width: 13px; height: 13px; display:block; background-image: url(../images/the_chosenBox_input.png) ;background-position: center center ; background-repeat: no-repeat; background-size: contain; }
-.filter_pop .the_chosenBox_list ul li p.type a.btn_in{ background-color: #81B6C8; color: #fff; border-color: #fff;}
-.filter_pop .the_chosenBox_list ul li p.type a.check_in_01::before{ background-image: url(../images/the_chosenBox_input_in.png);}
-.filter_pop .the_chosenBox_list ul li p.type a.check_in_02::before{ background-image: url(../images/the_chosenBox_input_active.png);}
+.filter_pop .the_chosenBox_list ul li p.type{ text-align: left;  font-size: 11px;}
+.filter_pop .the_chosenBox_list ul li p.type span{ border:1px solid #979797; color: #4A4A4A; background-color: #fff; line-height: 26px; display: inline-block; padding: 0 8px 0 27px; margin:0 5px 5px 0; position: relative;}
+.filter_pop .the_chosenBox_list ul li p.type span:hover{ background-color: #81B6C8; color: #fff;  }
+.filter_pop .the_chosenBox_list ul li p.type span:hover a{color: #fff; }
+.filter_pop .the_chosenBox_list ul li p.type a{ color: #4A4A4A;  cursor: pointer;}
+.filter_pop .the_chosenBox_list ul li p.type a.the_input{ top: 6px; left: 7px; position: absolute; width: 13px; height: 13px; display:block; background-image: url(../images/the_chosenBox_input.png) ;background-position: center center ; background-repeat: no-repeat; background-size: contain; }
+.filter_pop .the_chosenBox_list ul li p.type span.btn_in{ background-color: #81B6C8; color: #fff; border-color: #fff;}
+.filter_pop .the_chosenBox_list ul li p.type span.btn_in a.the_department{color: #fff;}
+.filter_pop .the_chosenBox_list ul li p.type span.check_in_01 a.the_input{ background-image: url(../images/the_chosenBox_input_in.png);}
 
-.filter_pop .the_chosenBox_list ul li p.type a.btn_active{ background-color: #D1E0E5;}
-.filter_pop .the_chosenBox_list ul li p.type a.btn_active:hover{ background-color: #D1E0E5; color: #4A4A4A;}
+.filter_pop .the_chosenBox_list ul li p.type span.check_in_02 a.the_input{ background-image: url(../images/the_chosenBox_input_active.png);}
+.filter_pop .the_chosenBox_list ul li p.type span.btn_active{ background-color: #D1E0E5;}
+.filter_pop .the_chosenBox_list ul li p.type span.btn_active:hover a{ background-color: #D1E0E5; color: #4A4A4A;}
 
 
 
