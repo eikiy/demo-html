@@ -23,7 +23,7 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 *:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 
 /*===== start ======*/
-.contentsBox{ width: 100%; width: 1000px; margin: 0 auto; }
+.contentsBox{ width: 100%; max-width: 1000px; margin: 0 auto; }
 
 .headerBox{width: 100%; min-width: 1024px; background-color: #81B6C8; padding-top: 10px; min-height: 46px;  position: sticky; top: 0px; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; z-index: 100;}
 .headerBox a.logo{ float: left; width: 60px; height: 28px; margin: -1px 15px 0 0; display: block; background: url(../images/logo.png) 8px center no-repeat; background-size: contain; }
@@ -895,7 +895,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 
 .right_contents .managementBox ul.user_list li ul.stepBox li:nth-child(2) a .tooltip, .right_contents .managementBox ul.user_list li ul.stepBox li:nth-child(4) a .tooltip{ left: calc(50% - 45px); min-width: 90px; }
 
-.right_contents .managementBox ul.card_list li{ float: left; width: 100%; max-width: 128px; margin-right: 11px;margin-bottom: 8px; border:3px solid #fff; }
+.right_contents .managementBox ul.card_list li{ float: left; width: 100%; max-width: 126px; margin-right: 11px;margin-bottom: 8px; border:3px solid #fff; }
 .right_contents .managementBox ul.card_list li:nth-child(4n){ margin-right: 0; }
 .right_contents .managementBox ul.card_list .user_photo{ width:100%; float: none; display: block; padding-top: 15px; min-height: 143px; max-height: 143px; border-radius: 10px 0 10px 10px;}
 .right_contents .managementBox ul.card_list .user_photo .avatar{ width: 65px; height: 65px; margin: 0 auto; }
