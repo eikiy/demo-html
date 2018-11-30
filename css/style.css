@@ -499,13 +499,14 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .filter_pop .the_chosenBox_list ul li p.type span:hover a{color: #fff; }
 .filter_pop .the_chosenBox_list ul li p.type a{ color: #4A4A4A;  cursor: pointer;}
 .filter_pop .the_chosenBox_list ul li p.type a.the_input{ top: 6px; left: 7px; position: absolute; width: 13px; height: 13px; display:block; background-image: url(../images/the_chosenBox_input.png) ;background-position: center center ; background-repeat: no-repeat; background-size: contain; }
-.filter_pop .the_chosenBox_list ul li p.type span.btn_in{ background-color: #81B6C8; color: #fff; border-color: #fff;}
-.filter_pop .the_chosenBox_list ul li p.type span.btn_in a.the_department{color: #fff;}
-.filter_pop .the_chosenBox_list ul li p.type span.check_in_01 a.the_input{ background-image: url(../images/the_chosenBox_input_in.png);}
-
-.filter_pop .the_chosenBox_list ul li p.type span.check_in_02 a.the_input{ background-image: url(../images/the_chosenBox_input_active.png);}
 .filter_pop .the_chosenBox_list ul li p.type span.btn_active{ background-color: #D1E0E5;}
 .filter_pop .the_chosenBox_list ul li p.type span.btn_active:hover a{ background-color: #D1E0E5; color: #4A4A4A;}
+.filter_pop .the_chosenBox_list ul li p.type span.btn_in{ background-color: #81B6C8; color: #fff; border-color: #fff;}
+.filter_pop .the_chosenBox_list ul li p.type span.btn_in a.the_department{color: #fff;}
+.filter_pop .the_chosenBox_list ul li p.type span.check_in_02 a.the_input{ background-image: url(../images/the_chosenBox_input_active.png);}
+.filter_pop .the_chosenBox_list ul li p.type span.check_in_01 a.the_input{ background-image: url(../images/the_chosenBox_input_in.png);}
+
+
 
 
 
