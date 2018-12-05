@@ -1002,7 +1002,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 .right_contents .top_toolsBox ul.list_style li.btn_in a.block{background-image: url(../images/list_style_icon_01_in.png);}
 .right_contents .top_toolsBox ul.list_style li.btn_in a.list{background-image: url(../images/list_style_icon_02_in.png);}
 
-.right_contents .calendar_toolsBox{ float: right; width: 100%; width: 300px; margin-left: 5px;  position: sticky; top: 60px; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; z-index: 80;}
+.right_contents .calendar_toolsBox{ float: right; width: 100%; width: 300px; margin-left: 5px;  position: sticky; top: 60px; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; z-index: 80; padding-top: 20px}
 .right_contents .calendar_toolsBox .calendar_month{ width: 100%; }
 .right_contents .calendar_toolsBox .calendar_month .calendar_month{ width: 100%; }
 
