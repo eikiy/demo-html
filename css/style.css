@@ -1002,7 +1002,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 .right_contents .top_toolsBox ul.list_style li.btn_in a.block{background-image: url(../images/list_style_icon_01_in.png);}
 .right_contents .top_toolsBox ul.list_style li.btn_in a.list{background-image: url(../images/list_style_icon_02_in.png);}
 
-.right_contents .calendar_toolsBox{ float: right; width: 100%; width: 300px; margin-left: 5px;  position: sticky; top: 60px; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; z-index: 80; padding-top: 20px}
+.right_contents .calendar_toolsBox{ float: right; width: 100%; width: 300px; margin-left: 5px;  position: sticky; top: 0px; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; z-index: 80; padding-top: 20px}
 .right_contents .calendar_toolsBox .calendar_month{ width: 100%; }
 .right_contents .calendar_toolsBox .calendar_month .calendar_month{ width: 100%; }
 
@@ -1284,7 +1284,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 .interviewee_info .interviewMainBox{ width: 100%; }
 .interviewee_info .interviewMainBox .top_ivBox{padding: 20px 0 15px 0;}
 .interviewee_info .interviewMainBox .top_ivBox .img-user{ width: 125px; height: 125px; margin: 0 10px 20px 0; }
-.interviewee_info .interviewMainBox .top_ivBox .rBox{ max-width: calc(100% - 135px);}
+.interviewee_info .interviewMainBox .top_ivBox .rBox{ max-width:100%;}
 .interviewee_info .interview_officer_Main .top_ivBox .rBox table.interviewer_info{ margin: 0; max-width: 340px; }
 .interviewee_info .interview_officer_Main .top_ivBox .rBox table.interviewer_info tr td{ line-height: 20px; height: 25px; }
 .interviewee_info .interview_officer_Main .top_ivBox .rBox table.interviewer_info tr:last-child td{ height: initial; }
@@ -1314,6 +1314,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 .interview_officer_Main .top_ivBox .bottom_btn a.print{ background: url(../images/user_info/btn_print.png) center right no-repeat; background-size: contain;}
 .interview_officer_Main .top_ivBox .bottom_btn a:hover{ text-decoration: underline; }
 
+.interviewee_info .interview_officer_Main .top_interviewer_info{ width: 470px; float: left; height: 152px; display: block; border: 1px solid #979797; border-radius: 10px 0 10px 0; /*overflow:hidden;*/ }
+.interviewee_info .interview_officer_Main .top_interviewer_info .left_photo{ float: left; width: 125px; }
+.interviewee_info .interview_officer_Main .top_interviewer_info .left_photo p.title {text-align: center; height: 25px; line-height: 24px; border-bottom: 1px solid #979797; color: #9B9B9B;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .left_photo .the_photo{ width: 125px; height: 125px; margin: 0 auto; display: block; overflow: hidden; position: relative; }
+.interviewee_info .interview_officer_Main .top_interviewer_info .left_photo .the_photo .select_file{ position: absolute !important; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(256,256,256,.9); display: none;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .left_photo .the_photo .select_file p.icon{ color: #81B6C8; position: relative; padding-top: 50px; text-align: center; margin-top: 25px;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .left_photo .the_photo .select_file p.icon::before{ content: ""; position: absolute;  top: 0; left:calc(50% - 25px);  width: 50px; height: 40px; display: block; background: url(../images/icon_select_file.png) center center no-repeat; background-size: contain; } 
+
+.interviewee_info .interview_officer_Main .top_interviewer_info .left_photo .the_photo:hover .select_file{ display: block; }
+
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox{ float: left; width: 343px; position: relative; border-left: 1px solid #979797;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox{ border-bottom: 1px solid #979797; height: 25px; line-height: 24px; position: relative; letter-spacing: 2px;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .none_line{border-bottom: none;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p{ float: left; line-height: 24px; padding: 0 10px; color: #9B9B9B; }
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox input{ float: left; line-height: 24px; padding: 0 10px; letter-spacing: 2px; color: #333; }
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p.title{ width: 100px ;border-right: 1px solid #979797;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox .right_info{}
+
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p.btn{ top: 0; right: 5px; }
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p.btn a{ min-width: 41px; line-height: 16px; font-size: 11px; border-radius: 3px 0 3px 3px;  color: #81B6C8; letter-spacing: 0; padding: 0 5px; background-color: #fff; border:1px solid #81B6C8; }
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p.btn a:hover{ background-color: #D1E0E5; box-shadow: none; }
+
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.btn_back{ position: absolute; bottom: -1px; right: -1px; font-size: 11px; z-index: 50; }
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.btn_back a{ display: block; border:1px solid #81B6C8; padding: 5px 25px 0 10px; color: #9B9B9B; min-width: 84px; height:52px; background-color: #fff; border-radius: 0 0 10px 0; position: relative;} 
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.btn_back a::after{ position: absolute; content: ""; right: 10px; top: 8px; width:22px ; height:30px; display: block; background-image:url(../images/user_info/icon_back.png); background-position: center center; background-repeat: no-repeat; background-size: contain;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.btn_back a:hover{ background-color: #81B6C8; color: #fff; }
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.btn_back a:hover::after{background-image:url(../images/user_info/icon_back_w.png);}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.leave{ letter-spacing: 4px; line-height: 41px;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.leave a{ line-height: 40px;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.leave a::after{ top: 3px; width: 24px; height: 42px; background-image:url(../images/user_info/icon_leave.png); }
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.leave a:hover::after{ background-image:url(../images/user_info/icon_leave_w.png); }
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.leave_reason{ letter-spacing: 4px; text-align: center; line-height: 41px;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.leave_reason a{ border-color: #C87D86; border-radius: 0 0 10px 0; padding: 5px; }
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.leave_reason a::after{ display: none; padding: 0; }
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.leave_reason a:hover{ background-color: #C87D86; }
+
 .popup-L .interview_officer_Main .use_fillinBox .fBox p.title_s{ text-align: left; }
 
 .popup-L .interviewer_info{ letter-spacing: 0; }
@@ -1334,6 +1370,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 .popup-L .interviewer_info tr td p.leave_reason a:hover{ background-color: #C87D86; }
 
 .popup-L .interviewer_info tr:nth-child(4) td:nth-child(2), .popup-L .interviewer_info tr:nth-child(5) td:nth-child(2){ letter-spacing: 0px; }
+
 
 .u_infoBox{ border:2px solid #81B6C8; border-radius: 10px 0 10px 10px; overflow: hidden;}
 .u_infoBox h3.blue_title{ background-color: #D1E0E5; font-size: 14px; padding: 0 15px; letter-spacing: 1px; line-height: 25px; color: #4A4A4A; position: relative;}

@@ -949,10 +949,55 @@ $(document).ready(function() {
             <div class="chosenBox interviewee_info">
             	<div class="interviewMainBox interview_officer_Main">
 					<div class="contentsBox">
+						<!-- 新版 -->
 						<div class="top_ivBox clearfix">
-							<div class="img-user"></div>
+							
 							<div class="rBox clearfix">
-								<table class="interviewer_info" cellspacing="0" cellpadding="0" border="0">
+								<div class="top_interviewer_info clearfix">
+									<div class="left_photo">
+										<p class="title">離職員工</p>
+										<div class="the_photo">
+											<!-- <a class="select_file" href="#">
+												<p class="icon">更換照片</p>
+											</a> -->
+											<img src="images/user_photo_01.png" align="logo" width="100%">
+										</div>
+									</div>
+									<div class="rightInfoBox">
+										<div class="iBox clearfix">
+											<p class="title">姓名</p>
+											<p class="right_info">王明天</p>
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">職位</p>
+											<p class="right_info">軟體工程師</p>
+											<!-- <p class="btn"><a class="select" href="#">選擇</a></p> -->
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">部門</p>
+											<p class="right_info">軟體開發部</p>
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">直屬主管</p>
+											<p class="right_info">留有計</p>
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">報到時間</p>
+											<p class="right_info">2018/11/01/13:30</p>
+										</div>
+										<div class="iBox none_line clearfix">
+											<p class="title">年資</p>
+											<p class="right_info"></p>
+											
+										</div>
+										<p class="btn_back"><a class="popup-link" href="#popup-user-back">返回<br>招募</a></p>
+										<!-- <p class="btn_back leave"><a href="#">離職</a></p> -->
+										<!-- <p class="btn_back leave_reason"><a href="#">離職原因</a></p> -->
+									</div>
+								</div>
+
+								<!-- 舊的不要囉 -->
+								<!-- <table class="interviewer_info" cellspacing="0" cellpadding="0" border="0">
 									<tr>
 										<td>姓名</td>
 										<td>王明天</td>
@@ -973,11 +1018,9 @@ $(document).ready(function() {
 										<td>年資</td>
 										<td>
 											<p class="btn_back"><a class="popup-link" href="#popup-user-back">返回<br>招募</a></p>
-											<!-- <p class="btn_back leave"><a href="#">離職</a></p> -->
-											<!-- <p class="btn_back leave_reason"><a href="#">離職原因</a></p> -->
 										</td>
 									</tr>
-								</table>
+								</table> -->
 								<div class="embarrassment clearfix">
 									<p class="btn_in"><a class="icon_01" href="#">個人資料</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
@@ -991,6 +1034,65 @@ $(document).ready(function() {
 								<a class="print" href="#">列印此頁</a>
 							</p>
 						</div>
+						
+						<!-- 修改資料 -->
+						<div class="top_ivBox clearfix">
+							<div class="rBox clearfix">
+								<div class="top_interviewer_info clearfix">
+									<div class="left_photo">
+										<p class="title">招募中</p>
+										<div class="the_photo">
+											<a class="select_file" href="#">
+												<p class="icon">更換照片</p>
+											</a>
+											<img src="images/user_photo_01.png" align="logo" width="100%">
+										</div>
+									</div>
+									<div class="rightInfoBox">
+										<div class="iBox clearfix">
+											<p class="title">姓名</p>
+											<input class="right_info" type="text" name="" value="王明天">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">職位</p>
+											<input class="right_info" type="text" name="" value="軟體工程師">
+											<p class="btn"><a class="select" href="#">選擇</a></p>
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">部門</p>
+											<input class="right_info" type="text" name="" value="軟體開發部">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">直屬主管</p>
+											<input class="right_info" type="text" name="" value="留有計">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">報到時間</p>
+											<input class="right_info" type="text" name="" value="2018/11/01/13:30">
+										</div>
+										<div class="iBox none_line clearfix">
+											<p class="title">年資</p>
+											<input class="right_info" type="text" name="" value="">
+										</div>
+										<p class="btn_back"><a class="popup-link" href="#popup-user-back">返回<br>招募</a></p>
+										<!-- <p class="btn_back leave"><a href="#">離職</a></p> -->
+										<!-- <p class="btn_back leave_reason"><a href="#">離職原因</a></p> -->
+									</div>
+								</div>
+								<div class="embarrassment clearfix">
+									<p class="btn_in"><a class="icon_01" href="#">個人資料</a></p>
+									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
+									<p class="btn_none"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
+									<p><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
+								</div>
+								
+							</div>
+							<p class="bottom_btn">
+								<a class="edit" href="#">儲存修改</a>
+								<a class="print" href="#">列印此頁</a>
+							</p>
+						</div>
+
 						<div class="u_infoBox">
 							<h3 class="blue_title">基本資料</h3>
 							<div class="use_fillinBox">
