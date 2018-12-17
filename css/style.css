@@ -470,16 +470,16 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .management_pop ul li .more .single:last-child{ border-bottom:none;}
 .management_pop ul li .more .single input{ width: 100%; }
 
-.management_pop .the_department_list{ width: 310px; position: absolute; top: 56px; right: -320px;  background-color: #fff; z-index: 50; border-radius: 0 5px 5px 5px; overflow: hidden; }
-.management_pop .the_department_list h4{ background-color: #D8D8D8; text-align: center; line-height: 30px; font-size: 14px; border-bottom: 1px solid #979797; position: relative;}
-.management_pop .the_department_list h4 button{ cursor: pointer; position: absolute; top: 0px; right: 5px; font-size: 22px; color: #fff; background: transparent; }
-.management_pop .the_department_list ul{ width: 100%; } 
-.management_pop .the_department_list ul li{padding: 2px 15px;  border-bottom: 1px dashed #D8D8D8;}
-.management_pop .the_department_list ul li p.type a{ min-width: 31.3%; text-align: center; margin: 0 2px 5px 0; border:1px solid #979797; line-height: 26px; display: inline-block; font-size: 11px; color: #4A4A4A; padding: 0 5px; }
-.management_pop .the_department_list ul li p.type a:hover{ border-color: #81B6C8; }
-.management_pop .the_department_list ul li p.type a.btn_in{ background-color: #81B6C8; color: #fff; border-color: #81B6C8; }
-.management_pop .the_department_list ul li:last-child{ border: none; }
-.management_pop .the_department_list ul li:first-child p.type a{ min-width: 192px; }
+.the_department_list{ width: 310px; position: absolute; top: 56px; right: -320px;  background-color: #fff; z-index: 50; border-radius: 0 5px 5px 5px; overflow: hidden; }
+.the_department_list h4{ background-color: #D8D8D8; text-align: center; line-height: 30px; font-size: 14px; border-bottom: 1px solid #979797; position: relative;}
+.the_department_list h4 button{ cursor: pointer; position: absolute; top: 0px; right: 5px; font-size: 22px; color: #fff; background: transparent; }
+.the_department_list ul{ width: 100%; }
+.the_department_list ul li{padding: 2px 15px;  border-bottom: 1px dashed #D8D8D8;}
+.the_department_list ul li p.type a{ min-width: 31.3%; text-align: center; margin: 0 2px 5px 0; border:1px solid #979797; line-height: 26px; display: inline-block; font-size: 11px; color: #4A4A4A; padding: 0 5px; }
+.the_department_list ul li p.type a:hover{ border-color: #81B6C8; }
+.the_department_list ul li p.type a.btn_in{ background-color: #81B6C8; color: #fff; border-color: #81B6C8; }
+.the_department_list ul li:last-child{ border: none; }
+.the_department_list ul li:first-child p.type a{ min-width: 192px; }
 
 /*篩選*/
 .filter_pop .chosenBox{ background-color: #fff; width: 100%; min-height: 35px; border-radius: 10px 0 10px 10px; margin-top: 10px; display: block; position: relative; padding: 10px 15px; }
@@ -1327,14 +1327,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox{ float: left; width: 343px; position: relative; border-left: 1px solid #979797;}
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox{ border-bottom: 1px solid #979797; height: 25px; line-height: 24px; position: relative; letter-spacing: 2px;}
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .none_line{border-bottom: none;}
-.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p{ float: left; line-height: 24px; padding: 0 10px; color: #9B9B9B; }
-.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox input{ float: left; line-height: 24px; padding: 0 10px; letter-spacing: 2px; color: #333; }
-.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p.title{ width: 100px ;border-right: 1px solid #979797;}
-.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox .right_info{}
-
-.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p.btn{ top: 0; right: 5px; }
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p{/* line-height: 24px; padding: 0 10px; color: #9B9B9B; */}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox input{ float: left; line-height: 24px; padding: 0 10px; letter-spacing: 1px; color: #333; }
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p.title{ width: 100px; float: left; line-height: 24px; padding: 0 10px; color: #9B9B9B; border-right: 1px solid #979797;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox .right_info{ max-width: 240px; line-height: 24px; padding: 0 10px; color: #9B9B9B;  display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 24px; height: 24px * 1; overflow:hidden;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox input.time{ letter-spacing: 1px; padding: 0 20px 0 10px; max-width: 160px; background: url(../images/icon_time_select_02.png) 138px center  no-repeat; background-size: 10%;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox input.right_info{ color: #333; }
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p.btn{ top: 0; right: 0px; padding: 0 5px;}
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p.btn a{ min-width: 41px; line-height: 16px; font-size: 11px; border-radius: 3px 0 3px 3px;  color: #81B6C8; letter-spacing: 0; padding: 0 5px; background-color: #fff; border:1px solid #81B6C8; }
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p.btn a:hover{ background-color: #D1E0E5; box-shadow: none; }
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox .day_selectBpx{ right: -217px; top: 0; }
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox .monthBox{box-shadow: 0px 3px 5px rgba(0,0,0,.2);}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox .monthBox p{ float: none;  padding:3px 0;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox .the_department_list{ width: 340px; top: 0; right: -340px; border: 1px solid #707475; box-shadow: 0px 3px 5px rgba(0,0,0,.2);}
 
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.btn_back{ position: absolute; bottom: -1px; right: -1px; font-size: 11px; z-index: 50; }
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.btn_back a{ display: block; border:1px solid #81B6C8; padding: 5px 25px 0 10px; color: #9B9B9B; min-width: 84px; height:52px; background-color: #fff; border-radius: 0 0 10px 0; position: relative;} 
