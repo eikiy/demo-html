@@ -88,11 +88,12 @@ a .white_tip::after{ border-color: transparent transparent #f8f9f9 transparent;}
 
 .headerBox ul.tools li .message_listBox ul { height: 245px; display: block; overflow-y: auto; }
 .headerBox ul.tools li .message_listBox ul li{ width: 100%; margin: 0; border-bottom:1px solid #979797;  }
-.headerBox ul.tools li .message_listBox ul li .info{ padding: 2px 2px 2px 42px; width: initial;height: initial; background-position: left center; background-repeat: no-repeat; background-size: contain;  background-image:url(../images/message_icon_01.png);}
+.headerBox ul.tools li .message_listBox ul li .info{ padding: 2px 2px 2px 42px; width: initial;height: initial; }
 .headerBox ul.tools li .message_listBox ul li .info p{ font-size: 11px; text-align: left;}
 .headerBox ul.tools li .message_listBox ul li .info p span{ color: #81B6C8;}
-.headerBox ul.tools li .message_listBox ul li .info p.day{ font-size: 13px; color: #D8D8D8; -webkit-transform: scale(0.7); margin-left: -18px;}
-.headerBox ul.tools li .message_listBox ul li .icon_review{ background-image:url(../images/message_icon_02.png);}
+.headerBox ul.tools li .message_listBox ul li .info p.day{ font-size: 13px; color: #D8D8D8; -webkit-transform: scale(0.8); margin-left: -20px;}
+.headerBox ul.tools li .message_listBox ul li .info::after{ content: "";position: absolute; top: 0px; left: 0px; width: 46px; height: 36px; background-position: center center; background-repeat: no-repeat; background-size: contain;  background-image:url(../images/message_icon_01.png); }
+.headerBox ul.tools li .message_listBox ul li .icon_review::after{  background-image:url(../images/message_icon_02.png); }
 
 .headerBox ul.tools li .message_listBox ul li.start { background-color: #D1E0E5; padding: 8px 0; }
 .headerBox ul.tools li .message_listBox ul li.start p{ text-align: center; font-size: 11px; }
