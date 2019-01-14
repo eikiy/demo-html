@@ -1213,7 +1213,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 
 /*特質測驗*/
 .traitTest_LoginBox{ background: url(../images/traitTest/bg_index.png) center bottom no-repeat; background-size: contain;}
-.traitTest_LoginBox .top_logo{ width: 45px; height: 41px; top: 22px; left: 17px; background: url(../images/traitTest/kamo_logo.png) center center no-repeat; background-size: contain;}
+.traitTest_LoginBox .top_logo{top: 22px; left: 17px; background: url(../images/logo.png) center center no-repeat; background-size: contain;}
 .traitTest_LoginBox .contentsBox::after{ display: none; }
 .traitTest_LoginBox h1{ color: #fff; letter-spacing: 0; text-align: right; padding: 0; line-height: 114px;}
 .traitTest_LoginBox h1 span{ width: 114px; height: 114px; display: inline-block; text-align: center; background:url(../images/traitTest/bg_h1.png) center center no-repeat; background-size: contain; }
