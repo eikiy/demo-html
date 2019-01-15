@@ -1188,6 +1188,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 .mainBox .recruit_contents .user_list .right_status p.status_ok::before{ background-image: url(../images/status/status_ok.png); }
 .mainBox .recruit_contents .user_list .right_status p.status_end::before{ background-image: url(../images/status/status_end.png); }
 .mainBox .recruit_contents .user_list .right_status p.status_not::before{ background-image: url(../images/status/status_not.png); }
+.mainBox .recruit_contents .user_list .right_status p.status_reject_ok::before{ background-image: url(../images/status/status_reject_ok.png); }
 
 .mainBox .recruit_contents .user_list .right_status p.top_years{ color: #81B6C8; letter-spacing: 5px; text-align: right; max-width: 91px; padding-bottom: 5px; }
 .mainBox .recruit_contents .user_list .right_status p.top_years span{display: inline-block;}
