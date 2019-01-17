@@ -1661,14 +1661,24 @@ $(document).ready(function() {
             <p class="btn"><a class="bg_gary" href="#">取消</a><a class="bg_red" href="#">確認刪除</a></p>
         </div>
     </div>
-    <!-- popup-step-04-4 icon4：不錄取-->
+    <!-- popup-step-04-4 icon4：不錄取 + 原因-->
     <div id="popup-step-11-none" class="white-popup popup-w-s mfp-hide">
-        <div class="setBox messageBox">
+        <form class="setBox messageBox">
             <div class="RedBox">
                 <p class="info">請問確定不錄取<span>王明天</span>嗎？<br>如確定不錄取，資料將被移至招募紀錄中。</p>
             </div>
+            <div class="fillinBox RedBox no_reason">
+                <ul style="overflow-y: hidden;">
+                    <li>
+                    	<p>不錄取原因</p>
+                    </li>
+                    <li>
+                    	<input class="r_info" id="" name="" type="text" value="" placeholder="請說明">
+                    </li>
+                </ul>
+            </div>
             <p class="btn"><a class="bg_gary" href="#">取消</a><a class="bg_red" href="#">確認不錄取</a></p>
-        </div>
+        </form>
     </div>
 
 

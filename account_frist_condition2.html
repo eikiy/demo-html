@@ -79,7 +79,12 @@ $(document).ready(function() {
 				</div>
 				<div class="theBox">
 					<h3>帳號設定</h3>
-					<div class="infoBox">
+					<div class="infoBox text_left">
+						<ul class="member_status"><p>
+							<li><p>明天股份有限公司</p></li>
+							<li><p>會員狀態：VIP會員</p></li>
+							<li><p>會員到期日：2019/12/12</p></li>
+						</ul>
 						<p class="sub_title">帳號名稱：abcde</p>
 						<p class="btn">
 							<a class="popup-link" href="#popup-pw">密碼變更</a>
@@ -95,8 +100,7 @@ $(document).ready(function() {
 				<div class="theBox go_fristBox">
 					<div class="infoBox">
 						<div class="conditionBox">
-							<input class="input_condition" type="" name="" placeholder="請輸入條件設定，例如：已收到身分證影本乙份。">
-							<p class="btn"><a class="add popup-link" href="#">新增</a></p>
+							<p>請輸入條件設定，例如：已收到身分證影本乙份。</p>
 						</div>
 						<ul class="item conditionList">
 							<li>
@@ -104,6 +108,7 @@ $(document).ready(function() {
 									<input id="" type="checkbox" name="" value="option">
 									<label for="option">已收到身分證影本乙份。</label>
 								</div>
+								<a class="go_edit"></a>
 								<a class="go_delete"></a>
 							</li>
 							<li>
@@ -111,6 +116,7 @@ $(document).ready(function() {
 									<input id="" type="checkbox" name="" value="option">
 									<label for="option">已收到畢業證書影本乙份。</label>
 								</div>
+								<a class="go_edit"></a>
 								<a class="go_delete"></a>
 							</li>
 							<li>
@@ -118,9 +124,11 @@ $(document).ready(function() {
 									<input id="" type="checkbox" name="" value="option">
 									<label for="option">員工手冊已簽章。</label>
 								</div>
+								<a class="go_edit"></a>
 								<a class="go_delete"></a>
 							</li>
 						</ul>
+						<p class="btn"><a class="add popup-link" href="#popup-condition">新增</a></p>
 					</div>
 					<div class="owl_message">
 						<p><span>報到時該準備那些程序呢？</span></p>
@@ -420,6 +428,23 @@ $(document).ready(function() {
                 <ul>
                     <li class="pw_done">
                         <p>密碼變更成功!</p>
+                    </li>
+                </ul>
+                <p class="btn"><a href="#">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 新增部門 -->
+	<div id="popup-condition" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox">
+            <div class="top_title">
+                <h3>新增條件</h3>
+            </div>
+            <div class="fillinBox">
+                <ul style="overflow-y: hidden;">
+                    <li>
+                    	<input class="r_info" id="" name="" type="text" value="兵役役畢證書">
                     </li>
                 </ul>
                 <p class="btn"><a href="#">確認</a></p>

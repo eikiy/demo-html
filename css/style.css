@@ -133,23 +133,28 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .right_contents .l_Box{ /*-webkit-flex: 1; flex: 1;*/ max-width: 240px; width: 100%; float: left;}
 .right_contents .r_Box{/* -webkit-flex: 2; flex: 2;*/ padding-left: 15px; width: 100%; max-width: 618px; float: left;}
 
-.right_contents .r_Box .theBox{ min-height: 568px; }
-.right_contents .theBox{ background-color: #fff; border: rgba(0,0,0,.2) 1px solid; border-radius: 10px 0 10px 10px; padding:10px 15px; margin-bottom: 15px; }
+.right_contents .r_Box .theBox{ min-height: 573px; overflow-y: hidden; padding-bottom: 200px; }
+.right_contents .theBox{ background-color: #fff; border: rgba(0,0,0,.2) 1px solid; border-radius: 10px 0 10px 10px; padding:10px 15px; margin-bottom: 12px; }
 .right_contents .theBox h3{ text-align: center; font-size: 13px; letter-spacing: 7px; line-height: 20px; background-color: #EBEBEB; padding: 5px 0; border-radius: 10px 0 10px 10px; }
-.right_contents .theBox .infoBox{ padding: 12px 0; text-align: center; }
+.right_contents .theBox .infoBox{ padding: 10px 0 2px 0; text-align: center; }
 .right_contents .theBox .infoBox .select_file{ width: 124px; height: 124px; display: block; position: relative; border:dashed 1px #81B6C8; margin: 0 auto; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
 .right_contents .theBox .infoBox .select_file p.icon{ color: #81B6C8; position: relative; padding-top: 50px;}
 .right_contents .theBox .infoBox .select_file p.icon::before{ content: ""; position: absolute;  top: 0; left:calc(50% - 25px);  width: 50px; height: 40px; display: block; background: url(../images/icon_select_file.png) center center no-repeat; background-size: contain; } 
 .right_contents .theBox .infoBox .select_file p.note{ position: absolute; width: 100%; bottom: 3px; left: 0; color: #9B9B9B; }
 .right_contents .theBox .infoBox .select_file:hover{ background-color: #D1E0E5; border-style: solid;}
 .right_contents .theBox .infoBox p.sub_title{ text-align: center; font-size: 13px; padding: 5px 0; }
-.right_contents .theBox .infoBox p.money{ font-size: 20px; padding: 8px 0; }
+.right_contents .theBox .infoBox p.money{ font-size: 20px; padding: 5px 0; }
 
 .right_contents .theBox .logo_done{ width: 124px; height: 124px; border:solid 1px #81B6C8; margin: 0 auto; display: block; overflow: hidden; position: relative; }
 .right_contents .theBox .infoBox .logo_done .select_file{ position: absolute !important; top: -1px; left: -1px; background-color: rgba(256,256,256,.9); display: none; border:none; }
 .right_contents .theBox .infoBox .logo_done .select_file p.icon{ margin-top: 25px;}
 .right_contents .theBox .infoBox .logo_done:hover{ border-style: dashed; }
 .right_contents .theBox .infoBox .logo_done:hover .select_file{ display: block; }
+.right_contents .theBox .infoBox ul.member_status{ width: 100%; border-bottom: 1px solid #979797; padding-bottom: 10px; margin-bottom: 10px;}
+.right_contents .theBox .infoBox ul.member_status li{ padding: 5px 20px;  }
+.right_contents .theBox .infoBox ul.member_status li p{ text-align: left; font-size: 13px; color: #4A4A4A; }
+.right_contents .theBox .text_left p.sub_title{ text-align: left; padding: 5px 20px; }
+.right_contents .theBox .text_left p.btn{ text-align: left; padding-left: 16px;}
 
 .right_contents .theBox p.btn{font-size: 12px; text-align: center; line-height: 24px; padding: 10px 0;}
 .right_contents .theBox p.btn a{ min-width: 60px; margin: 0 3px; padding: 0 5px; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #81B6C8; border-radius:3px 0 3px 3px;}
@@ -191,19 +196,22 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .right_contents ul.top_setBtn li p.btn_in a{ background-color: #EBEBEB; border-color: #81B6C8;}
 
 .go_fristBox{ position: relative; }
+
 .right_contents .theBox .infoBox .conditionBox p.btn{ top: 8px; }
-.right_contents .conditionBox{ border-bottom: 1px dashed #D8D8D8; padding:5px 0 15px 0; position: relative; text-align: left;}
-.right_contents .conditionBox input.input_condition{ width: 100%; max-width: 488px; height: 32px; border: 1px solid #D8D8D8; padding: 5px 10px; }
-.right_contents .conditionBox input.input_condition::placeholder{ font-size: 11px; color: #9B9B9B; }
+.right_contents .conditionBox{ padding:5px 0 15px 0; position: relative; text-align: left;}
+.right_contents .conditionBox input.input_condition{ width: 100%; max-width: 488px; height: 32px; /*border: 1px solid #D8D8D8;*/ }
+.right_contents .conditionBox p{ font-size: 11px; color: #9B9B9B; padding: 5px 10px; }
 
 .right_contents .theBox .infoBox .stageBox p.btn, .right_contents .theBox .infoBox .conditionBox p.btn{ position: absolute; bottom:10px; right: 0; padding: 0; }
 
-.right_contents ul.conditionList{ width: 100%; max-width: 100%; padding-top: 10px;}
+.right_contents ul.conditionList{ width: 100%; max-width: 100%; padding: 10px 0; border: 1px dashed #D8D8D8; border-width: 1px 0 1px 0;}
 .right_contents ul.conditionList li{ display: block; margin: 5px 0; padding-bottom: 5px; }
 .right_contents ul.conditionList li .border{ border:1px solid #81B6C8; max-width: 488px; color: #9B9B9B; font-size: 11px; padding: 3px;}
-.right_contents ul.conditionList li a.go_delete{width: 20px; height: 20px; top: 5px; right: 35px;}
+.right_contents ul.conditionList li a.go_delete{width: 24px; height: 24px; top: 4px; background-size: 80%; right: 10px;}
+.right_contents ul.conditionList li a.go_edit{ width: 24px; height: 24px; top: 4px; background-size: 120%; right: 44px; }
 
-.right_contents .go_fristBox p.bottom{padding-top: 00px;}
+.right_contents .go_fristBox p.btn{ text-align: right; padding: 15px 0;  }
+.right_contents .go_fristBox p.bottom{padding-top: 15px;}
 .right_contents .owl_message{ position: absolute; bottom: 0; left: 0; width: 100%; height: 147px; display: block; background: url(../images/img_owl_03.png) left center no-repeat; background-size: contain; }
 .right_contents .owl_message p{ width: 100%; height: 100%; /*font-size: 16px; color: #000000;*/ position: relative; }
 .right_contents .owl_message p span{ position: absolute; left: 325px; top: -45px; font-weight: bold; text-align: center; letter-spacing: 1px; color: #a2a2a3; font-size: 17px; display: inline-block; border:1px dashed #a2a2a3; border-radius: 10px 10px 10px 0px; padding:15px 15px; }
@@ -301,7 +309,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .setBox .pw-w ul li .l_title{ max-width: initial; min-width: 150px;}
 
 .setBox p.btn{font-size: 18px; text-align: right; line-height: 36px; padding: 20px 0;}
-.setBox p.btn a{ min-width: 100px; margin-left:10px; padding: 5px; letter-spacing: 5px; border:1px solid transparent; text-align: center;  display: inline-block; color: #fff; background-color: #81B6C8; border-radius:10px 0 10px 10px;}
+.setBox p.btn a{ min-width: 100px; margin-left:10px; padding: 5px 10px; letter-spacing: 5px; border:1px solid transparent; text-align: center;  display: inline-block; color: #fff; background-color: #81B6C8; border-radius:10px 0 10px 10px;}
 .setBox p.btn a:hover{ border-color: #fff;}
 .setBox p.btn a.bg_red{ background-color: #C87D86; letter-spacing: 0; }
 .setBox p.btn a.bg_gary{ background-color: #9B9B9B; }
@@ -400,7 +408,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .add_bossBox p.btn{ position: absolute; bottom: -35px; right: 0; font-size: 12px; line-height: 24px;  padding: 0;}
 .add_bossBox p.btn a{ min-width: 54px; padding: 0 5px; border-radius: 3px 0 3px 3px; letter-spacing: 0;}
 
-.messageBox .RedBox{ width: 100%; background-color:#EBEBEB; padding:30px; border: 3px solid #C87D86; border-radius: 10px 0 10px 10px; box-shadow: 0px 0px 5px rgba(155,155,155,0.2); overflow: hidden; }
+.messageBox .RedBox{ width: 100%; background-color:#fff; padding:30px; border: 3px solid #C87D86; border-radius: 10px 0 10px 10px; box-shadow: 0px 0px 5px rgba(155,155,155,0.2); overflow: hidden; }
 .messageBox .RedBox p.info{line-height: 24px;}
 .messageBox .RedBox p.info span{color: #81B6C8;}
 .messageBox .border_blue{ border-color: #81B6C8;}
@@ -410,6 +418,11 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .messageBox .SendDone p.info{line-height: 24px; position: relative; padding-right: 80px;}
 .messageBox .SendDone p.info::after{ content: ""; position: absolute; top: calc(50% - 23px); right:0; width: 96px; height: 47px; display: block; background: url(../images/pop_icon_done.png) center center no-repeat; background-size: contain; }
 .messageBox .SendDone p.icon_mail::after{ width: 62px; height: 64px; top: calc(50% - 30px); background-image: url(../images/interviewer/pop_icon_done.png)}
+
+.messageBox .no_reason{ padding: 0; margin-top: 10px;}
+.messageBox .no_reason p{ text-align: center; line-height: 45px; width: 100%; }
+.messageBox .no_reason ul{ background-color: #fff; }
+.messageBox .no_reason input::placeholder{ color: #D8D8D8; }
 
 .lockBox{padding-top: 10px;}
 .lockBox h4{padding-bottom: 20px;}
@@ -571,7 +584,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .interviewMainBox .top_ivBox .rBox ul.interviewer_info li{padding: 3px 0;}
 .interviewMainBox .top_ivBox .rBox ul.interviewer_info li:first-child{ width: 100%; }
 .interviewMainBox .top_ivBox .rBox ul.topStep{width: 100%;}
-.interviewMainBox .top_ivBox .rBox ul.topStep li{ float: left; margin-right: 10px; width: 70px; height: 70px;display: block; border: 2px solid #979797; border-radius: 10px; position: relative; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
+.interviewMainBox .top_ivBox .rBox ul.topStep li{ float: left; margin-right: 10px; width: 70px; height: 70px; overflow: hidden; display: inline-grid; border: 2px solid #979797; border-radius: 10px; position: relative; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
 .interviewMainBox .top_ivBox .rBox ul.topStep li::after{ content: ""; position: absolute; right: -14px; top: calc(50% - 3px); width: 12px; height: 5px; background-color: #81B6C8; display: block; }
 .interviewMainBox .top_ivBox .rBox ul.topStep li a{ cursor: pointer; font-size: 14px; color: #9B9B9B; display: block; width: 100%; text-align: center; position: relative; padding-top: 43px;}
 .interviewMainBox .top_ivBox .rBox ul.topStep li a::before{ height: 45px; -webkit-filter:grayscale(1); opacity: .5; content: ""; top: 0; width: 100%; display: block; position: absolute; background-size: contain; background-position: center center;  background-repeat: no-repeat;}
@@ -585,10 +598,11 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .interviewMainBox .top_ivBox .rBox ul.topStep li.icon_06 a::before{ background-image: url(../images/topStep_icon_06.png);}
 .interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07 a::before{ background-image: url(../images/topStep_icon_07.png); -webkit-filter:initial; opacity: 1;}
 .interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07{ width: 123px;}
-.interviewMainBox .top_ivBox .rBox ul.topStep li.blue_line{ border-color: #81B6C8;  border-width: 3px; }
-.interviewMainBox .top_ivBox .rBox ul.topStep li.org_line{ border-color: #E5AF57;  border-width: 3px; }
-.interviewMainBox .top_ivBox .rBox ul.topStep li.btn_in a{ color: #81B6C8; }
+.interviewMainBox .top_ivBox .rBox ul.topStep li.btn_in { border-color: #dadde3;}
+.interviewMainBox .top_ivBox .rBox ul.topStep li.btn_in a{ color: #81B6C8; background-color: #F2F8FA; }
 .interviewMainBox .top_ivBox .rBox ul.topStep li.btn_in a::before{-webkit-filter:initial; opacity: 1;}
+.interviewMainBox .top_ivBox .rBox ul.topStep li.blue_line{ border-color: #81B6C8;  border-width: 3px; }
+
 .interviewMainBox .top_ivBox .rBox ul.topStep li:hover{ border-color: #81B6C8; }
 .interviewMainBox .top_ivBox .rBox ul.topStep li:last-child::after{display: none;}
 
@@ -596,10 +610,11 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07:hover a{ color: #fff; }
 .interviewMainBox .top_ivBox .rBox ul.topStep li.icon_07:hover a::before{ background-image: url(../images/topStep_icon_07_in.png); -webkit-filter:initial; opacity: 1; }
 
-
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li::after{ background-color: #E5AF57;}
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li:hover{ border-color: #E5AF57; }
-.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in a{ color: #E5AF57; }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in{ border-color: #e3e0da; }
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.org_line{ border-color: #E5AF57;  border-width: 3px;}
+.interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in a{ color: #E5AF57; background-color: #F7F0E6; }
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_01 { width: 123px; margin-right: 22px;}
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_01::after{ width: 22px; right: -24px; }
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li.icon_01 a::before{ background-image: url(../images/experienceStep_icon_01.png); -webkit-filter:initial; opacity: 1; }
@@ -623,6 +638,8 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2 a::before{ background-image: url(../images/experienceStep_icon_07.png); -webkit-filter: initial; opacity: 1;}
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2:hover a{color: #EB8B70; }
 .interviewMainBox .top_ivBox .rBox ul.experienceStep li.btn_in2:hover a::before{ background-image: url(../images/experienceStep_icon_07.png); -webkit-filter: initial; opacity: 1;}
+
+.interviewMainBox .top_ivBox .rBox ul.topStep li.blue_line a, .interviewMainBox .top_ivBox .rBox ul.experienceStep li.org_line a{ background-color: #fff;}
 
 .interviewMainBox .use_fillinBox{ width: 100%; max-width: 990px; margin:0px auto; border:2px solid #979797; border-radius: 20px 0 20px 20px;padding: 35px 20px 10px 20px;}
 .interviewMainBox .use_fillinBox ul.fill_in{width: 100%; padding-bottom: 15px;}
@@ -784,7 +801,7 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 .interviewMainBox .use_fillinBox .infoContent_two .fBox{ padding: 0 2px;}
 .interviewMainBox .use_fillinBox ul.referrerBox{ max-width: 780px; }
 
-.interviewMainBox .use_fillinBox h3.headline{ border: 1px solid #979797; background-color: #EBEBEB; color: #9B9B9B; border-radius: 10px 0 10px 10px; font-size: 14px; padding: 15px 30px;  margin: 0 7px;}
+.interviewMainBox .use_fillinBox h3.headline{ /*border: 1px solid #979797;*/ background-color: #EBEBEB; color: #888888; border-radius: 10px 0 10px 10px; font-size: 14px; padding: 16px 30px;  margin: 0 7px 8px 7px;}
 
 .interviewMainBox .referrerTopBox{ padding: 5px 5px 10px 5px; }
 .interviewMainBox .referrerTopBox .top_titleBox{ color: #4A4A4A; padding-bottom: 20px; border-bottom: 2px solid #979797; }
