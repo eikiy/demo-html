@@ -26,7 +26,14 @@ $(document).ready(function() {
 <main class="interviewMainBox">
 	<div class="contentsBox">
 		<div class="top_ivBox clearfix">
-			<a class="img-user popup-link" href="#popup-img-user"></a>
+			<!-- 看是要塞 images 進去，還是把 照片寫在背景  background-image，不過照片 -->
+			<!-- 作法 1 -->
+			<a class="img-user popup-link" href="#popup-img-user">
+				<img src="images/img_upload_default.png" width="100%">
+				<p>請選擇大頭照</p>
+			</a>
+			<!-- 作法 2 -->
+			<!-- <a class="img-user popup-link" href="#popup-img-user" style="background-image: url(images/user_photo_01.png);"></a> -->
 			<div class="rBox">
 				<div class="top_title clearfix">
 					<h1>明天股份有限公司</h1>
