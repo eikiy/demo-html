@@ -1167,7 +1167,7 @@ $(document).ready(function() {
 
     <!-- popup-step-02 icon2：個人資料-->
     <div id="popup-step-03" class="white-popup popup-w-s mfp-hide">
-        <form class="setBox management_pop">
+        <form class="setBox management_pop messageBox check_remind">
             <div class="top_title">
                 <h3>個人資料</h3>
             </div>
@@ -1190,6 +1190,12 @@ $(document).ready(function() {
                         <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
                     </li>
                 </ul>
+
+                <div class="RedBox border_blue border_green"> <!-- 持續留著，不會消失 -->
+	                <p class="info">請複製<span class="under_line">登入連結網址</span>，並透過E-MAIL寄給求職者，<br>
+	                	讓求職者 <span>王明天</span> 進行線上履歷填寫。</p>
+	            </div>
+
                 <p class="btn">
                 	<a class="popup-link bg_gary" href="#">強制跳過</a>
                 	<a class="popup-link bg_skyblue" href="#popup-step-04">確認</a>
@@ -1212,7 +1218,7 @@ $(document).ready(function() {
 
     <!-- popup-step-03 icon3：特質測驗-->
     <div id="popup-step-05" class="white-popup popup-w-s mfp-hide">
-        <form class="setBox management_pop">
+        <form class="setBox management_pop messageBox check_remind">
             <div class="top_title">
                 <h3>特質測驗</h3>
             </div>
@@ -1235,6 +1241,12 @@ $(document).ready(function() {
                         <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
                     </li>
                 </ul>
+                
+                <div class="RedBox border_blue border_green"> <!-- 開始測驗後消失 -->
+	                <p class="info">在面試現場使用電腦或平板開啟測驗連結後，<br>
+	                請求職者進行測驗。</p>
+	            </div>
+
                 <ul class="jobBox">
                 	<li class="sub_title">
                 		<p>填寫狀態</p>
@@ -1271,8 +1283,13 @@ $(document).ready(function() {
                     </li>
                 </ul>
                 <p class="btn">
-                	<a class="popup-link bg_gary" href="#">強制跳過</a>
-                	<a class="popup-link bg_skyblue" href="#popup-step-06">確認</a>
+                	<a class="bg_lightblue" href="#">強制跳過</a>
+                	<a class="popup-link bg_gary remind_greenbox" href="#popup-step-06">確認
+                		<span class="tooltip">
+                			<span class="icon_thumbtack">需完成測驗才能按確認鍵，<br>
+                			或可強制跳過此測驗。</span>
+                		</span>
+                	</a>
                 </p>
             </div>
         </form>
@@ -1352,7 +1369,7 @@ $(document).ready(function() {
     <div id="popup-step-07" class="white-popup popup-w-s mfp-hide">
         <form class="setBox management_pop">
             <div class="top_title">
-                <h3>特質測驗</h3>
+                <h3>特質問卷</h3>
             </div>
             <div class="fillinBox">
                 <ul>
@@ -1379,10 +1396,17 @@ $(document).ready(function() {
                 	</li>
                     <li class="sub_title">
                 		<p class="not_yet">本次測驗已結束</p>
-                		<p class="btn"><a href="#">重新測驗</a></p>
+                		<p class="btn">
+                			<a class="cursor_goto_tip remind_greenbox" href="#">重新測驗
+	                			<span class="tooltip s_btn_position"><!-- 按了才會跳出提醒 -->
+		                			<span class="icon_thumbtack">請重新複製<span class="under_line">測驗連結</span>至求職者的測驗電腦或平板。</span>
+	                			</span>
+                			</a>
+                		</p>
                 	</li>
                 </ul>
-                <ul class="jobBox">
+                <ul class="jobBox"><!-- hover狀態修改，按了可以直接連結到特質報告專頁 -->
+                	<a class="go_info p_show" href="#">
                 	<li class="sub_title">
                 		<p>測驗紀錄</p>
                 	</li>
@@ -1405,9 +1429,10 @@ $(document).ready(function() {
                         	</tr>
                         </table>
                     </li>
-                    <li>
+                    <!-- <li>
                         <p class="btn"><a href="#">檢視報告</a></p>
-                    </li>
+                    </li> -->
+                </a>
                 </ul>
                 <p class="btn">
                 	<a class="bg_skyblue" href="#">確認</a>
@@ -1419,7 +1444,7 @@ $(document).ready(function() {
     <!-- popup-step-04 icon4 ：面試官評論 -->
     <!-- 注意：如果有按鈕在最上面的標題以上，一定要＋popup-padding-top -->
     <div id="popup-step-08" class="white-popup popup-w-s mfp-hide popup-padding-top">
-        <form class="setBox management_pop">
+        <form class="setBox management_pop messageBox check_remind">
             <p class="add_nterviewee"><a class="add popup-link" href="#popup-step-09">新增面試官</a></p>
             <div class="top_title">
                 <h3>面試官評論</h3>
@@ -1447,9 +1472,25 @@ $(document).ready(function() {
                         <p class="r_info">2018/10/01</p>
                     </li>
                 </ul>
+                <div class="RedBox border_blue border_green"> <!-- 新增面試官後就消失 -->
+	                <p class="info">請先新增面試官，再複製<span class="under_line">評論填寫連結</span>，傳給此次新增的面試官。<br>
+	                	請確認面試官名字輸入是否正確，<span class="under_line">面試官名字須與登入連結名字相同</span>，中英文皆可。</p>
+	            </div>
                 <p class="btn">
-                	<a class="bg_red popup-link" href="#popup-step-11-none">不 錄 取</a>
-                	<a class="bg_skyblue popup-link" href="#popup-step-10">錄取</a>
+                	<!-- 原本不錄取是紅色按鈕 bg_red 變灰色按鈕 ， popup-link 應該第一次會拉掉，提醒過後才會出現-->
+                	<a class="bg_gary remind_greenbox popup-link" href="#popup-step-11-none">不 錄 取 <!-- 按了才會跳出提醒 tooltip -->
+                		<span class="tooltip tip_left">
+                			<span class="icon_thumbtack">請確認是否尚未完成上一步驟（特質測驗）。</span>
+                			<span class="icon_thumbtack">請確認所有面試官是否都完成評論。</span>
+                		</span>
+                	</a>
+                	<!-- 原本不錄取是藍色按鈕 bg_skyblue 變灰色按鈕 -->
+                	<a class="bg_gary remind_greenbox popup-link" href="#popup-step-10">錄取 <!-- 按了才會跳出提醒 tooltip -->
+                		<span class="tooltip">
+                			<span class="icon_thumbtack">請確認是否尚未完成上一步驟（特質測驗）。</span>
+                			<span class="icon_thumbtack">請確認所有面試官是否都完成評論。</span>
+                		</span>
+                	</a>
                 </p>
             </div>
         </form>
@@ -1571,7 +1612,7 @@ $(document).ready(function() {
     <!-- popup-step-04-3 icon4：面試官評論-->
     <!-- 注意：如果有按鈕在最上面的標題以上，一定要＋popup-padding-top -->
     <div id="popup-step-11" class="white-popup popup-w-s mfp-hide popup-padding-top">
-        <form class="setBox management_pop">
+        <form class="setBox management_pop  messageBox check_remind">
             <p class="add_nterviewee"><a class="add popup-link" href="#popup-step-09">新增面試官</a></p>
             <div class="top_title">
                 <h3>面試官評論</h3>
@@ -1605,7 +1646,7 @@ $(document).ready(function() {
                 </ul>
                 
                 <!-- <p class="review_comment"><a href="#">檢視詳細評論內容</a></p> -->
-                <div class="jobBox">
+                <!-- <div class="jobBox">
                 	<a class="go_info" href="#">
                 		<div class="top_btn_s"><div class="delete popup-link" href="#popup-step-11-delete"></div></div>
 	                	<div class="sub_title">
@@ -1622,13 +1663,13 @@ $(document).ready(function() {
 		                    </div>
 	                    </div>
 	                </a>
-                </div>
+                </div> -->
 
                 <div class="jobBox">
                 	<a class="go_info" href="#">
-                		<div class="top_btn_s"><div class="delete popup-link" href="#popup-step-11-delete"></div></div>
+                		<div class="top_btn_s"><!-- <div class="delete popup-link" href="#popup-step-11-delete"></div> --></div>
                 		<div class="sub_title">
-	                		<p>初試評論1</p>
+	                		<p>第一輪初試評論</p>
 	                	</div>
 	                    <div class="first_test clearfix">
 	                    	<div class="lBox">
@@ -1640,12 +1681,41 @@ $(document).ready(function() {
 		                    	<p>評核建議<span>合格</span></p>
 		                    </div>
 	                    </div>
+	                    <div class="first_test clearfix">
+	                    	<div class="lBox">
+		                        <p>面試官姓名：<span>林美美</span></p>
+		                        <p class="day"><span class="type green">初</span>2018/11/01評論</p>
+		                    </div>
+		                    <div class="rBox">
+		                    	<p>評核總分<span>90</span></p>
+		                    	<p>評核建議<span>合格</span></p>
+		                    </div>
+	                    </div>
 	                </a>
                 </div>
+                <div class="jobBox">
+                		<div class="sub_title">
+	                		<p>第二輪複試評論評論</p>
+	                	</div>
+	                
+                </div>
+                <div class="RedBox border_blue border_green"> <!-- 開始測驗後消失 -->
+	                <p class="info">請先新增第二輪複試面試官，並複製<span class="under_line">評論填寫連結</span>，傳給此次新增的面試官。</p>
+	            </div>
                 <p class="btn clearfix">
-                	<a class="bg_lightblue popup-link" href="#popup-step-01">複試</a>
-                	<a class="bg_red popup-link" href="#popup-step-11-none">不 錄 取</a>
-                	<a class="bg_skyblue" href="#">錄取</a>
+                	<a class="bg_lightblue popup-link" href="#popup-step-01">修改複試時間</a>
+                	<a class="bg_gary remind_greenbox popup-link" href="#popup-step-11-none">不 錄 取
+                		<span class="tooltip tip_left">
+                			<span class="icon_thumbtack">請確認是否尚未完成上一步驟（特質測驗）。</span>
+                			<span class="icon_thumbtack">請確認所有面試官是否都完成評論。</span>
+                		</span>
+                	</a>
+                	<a class="bg_gary remind_greenbox " href="#">錄取
+                		<span class="tooltip">
+                			<span class="icon_thumbtack">請確認是否尚未完成上一步驟（特質測驗）。</span>
+                			<span class="icon_thumbtack">請確認所有面試官是否都完成評論。</span>
+                		</span>
+                	</a>
                 </p>
             </div>
         </form>
@@ -1795,7 +1865,12 @@ $(document).ready(function() {
 					</div>
                 </div>
                 <p class="btn">
-                	<a class="bg_skyblue popup-link" href="#popup-step-13">確認</a>
+                	<a class="bg_red" href="#">婉拒錄取</a>
+                	<a class="bg_gary remind_greenbox popup-link" href="#popup-step-13">確認
+                		<span class="tooltip">
+                			<span class="icon_thumbtack">請先安排報到日期與時間。</span>
+                		</span>
+                	</a>
                 </p>
             </div>
         </form>
@@ -1930,7 +2005,8 @@ $(document).ready(function() {
 
             <p class="btn">
                	<a class="bg_gary" href="#">取消</a>
-               	<a class="bg_skyblue popup-link" href="#popup-step-14-2">確認</a>
+               	<a class="bg_skyblue popup-link" href="#popup-step-14-2">確認
+                </a>
             </p>
         </form>
     </div>
@@ -1986,7 +2062,11 @@ $(document).ready(function() {
 
             <p class="btn">
                	<a class="bg_gary" href="#">取消</a>
-               	<a class="bg_skyblue" href="#">確認</a>
+               	<a class="bg_gary remind_greenbox" href="#">確認
+               		<span class="tooltip">
+                		<span class="icon_thumbtack">報到條件需要全部勾選。</span>
+                	</span>
+               	</a>
             </p>
         </form>
     </div>

@@ -211,7 +211,7 @@ $(document).ready(function() {
 											<th><p>日</p></th>
 											<th><p>一</p></th>
 											<th><p>二</p></th>
-											<th><p>三</p></th>	
+											<th><p>三</p></th>
 											<th><p>四</p></th>
 											<th><p>五</p></th>
 											<th><p>六</p></th>
@@ -339,7 +339,7 @@ $(document).ready(function() {
 						</a>
 					</li>
 					<li class="clearfix">
-						<a href="#">
+						<a class="popup-link" href="#popup-test-new">
 							<div class="user_test_icon t_icon_yes">
 								<div class="tooltip">已做過<br>特質測驗</div>
 							</div>
@@ -951,7 +951,6 @@ $(document).ready(function() {
 					<div class="contentsBox">
 						<!-- 新版 -->
 						<div class="top_ivBox clearfix">
-							
 							<div class="rBox clearfix">
 								<div class="top_interviewer_info clearfix">
 									<div class="left_photo">
@@ -4192,56 +4191,190 @@ $(document).ready(function() {
             	<div class="interviewMainBox interview_officer_Main">
 					<div class="contentsBox">
 						<div class="top_ivBox clearfix">
-							<div class="img-user"></div>
 							<div class="rBox clearfix">
-								<table class="interviewer_info" cellspacing="0" cellpadding="0" border="0">
-									<tr>
-										<td>姓名</td>
-										<td colspan="2">王明天</td>
-									</tr>
-									<tr>
-										<td>職位</td>
-										<td colspan="2">軟體工程師</td>
-									</tr>
-									<tr>
-										<td>部門</td>
-										<td colspan="2">軟體開發部</td>
-									</tr>
-									<tr>
-										<td>報到時間</td>
-										<td>2018/11/01/13:30</td>
-										<td width="82" rowspan="2" style="border:none;">
-											<!-- <p class="btn_back"><a class="popup-link" href="#popup-user-back">返回<br>招募</a></p> -->
-											<p class="btn_back leave"><a class="popup-link" href="#popup-over">離職</a></p>
-											<!-- <p class="btn_back leave_reason"><a class="popup-link" href="#popup-over-why">離職原因</a></p> -->
-										</td>
-									</tr>
-									<tr>
-										<td>年資</td>
-										<td></td>
-									</tr>
-								</table>
-								<div class="embarrassment clearfix">
-									<p class="btn_none"><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
-									<p class="btn_none"><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
-									<p class="btn_none"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
-									<p class="btn_none"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
+								<div class="top_interviewer_info clearfix">
+									<div class="left_photo">
+										<p class="title">招募中</p>
+										<div class="the_photo">
+											<a class="select_file" href="#">
+												<p class="icon">更換照片</p>
+											</a>
+											<img src="images/user_photo_01.png" align="logo" width="100%">
+										</div>
+									</div>
+									<div class="rightInfoBox">
+										<div class="iBox clearfix">
+											<p class="title">姓名</p>
+											<input class="right_info" type="text" name="" value="王明天">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">職位</p>
+											<input class="right_info" type="text" name="" value="軟體工程師">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">部門</p>
+											<input class="right_info" type="text" name="" value="軟體開發部">
+											<p class="btn"><a class="select" href="#">選擇</a></p>
+											<!-- <div class="the_department_list">
+									        	<h4>部門選擇<button title="Close (Esc)" type="button" class="subBox-close">×</button></h4>
+									        	<ul>
+									        		<li>
+									        			<p class="b_title">第1階</p>
+									        			<p class="type"><a class="btn_in" href="#">明天股份有限公司</a></p>
+									        		</li>
+									        		<li>
+									        			<p class="b_title">第2階</p>
+									        			<p class="type"><a class="btn_in" href="#">行政管理處</a>
+									        				<a href="#">製造處</a>
+									        				<a href="#">銷售處</a>
+									        				<a href="#">研發一處</a>
+									        				<a href="#">研發二處</a>
+									        			</p>
+									        		</li>
+									        		<li>
+									        			<p class="b_title">第3階</p>
+									        			<p class="type"><a class="btn_in" href="#">人資部</a>
+									        				<a href="#">總務部</a>
+									        				<a href="#">資訊部</a>
+									        				<a href="#">廠務部</a>
+									        			</p>
+									        		</li>
+									        		<li>
+									        			<p class="b_title">第4階</p>
+									        			<p class="type"><a href="#">訓練課</a>
+									        				<a class="btn_in" href="#">招募課</a>
+									        				<a href="#">薪酬課</a>
+									        			</p>
+									        		</li>
+									        		<li>
+									        			<p class="b_title">第5階</p>
+									        			<p class="type"><a href="#">招募一組</a>
+									        				<a href="#">招募二組</a>
+									        			</p>
+									        		</li>
+									        	</ul>
+									        </div> -->
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">直屬主管</p>
+											<input class="right_info" type="text" name="" value="留有計">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">報到時間</p>
+											<input class="right_info time" type="text" name="" value="2018/11/01/13:30">
+											<!-- <div class="day_selectBpx">
+							                	<div class="monthBox">
+													<div class="top_year_month">
+														<p><span>2018年11月
+														<a class="left_arr" href="#"></a>
+															<a class="right_arr" href="#"></a></span>
+														</p>
+													</div>
+													<div class="dateBox">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<th><p>日</p></th>
+																<th><p>一</p></th>
+																<th><p>二</p></th>
+																<th><p>三</p></th>
+																<th><p>四</p></th>
+																<th><p>五</p></th>
+																<th><p>六</p></th>
+															</tr>
+															<tr>
+																<td></td>
+																<td></td>
+																<td></td>
+																<td></td>
+																<td><p class="btn_in">1</p>
+																</td>
+																<td><p>2</p></td>
+																<td><p>3</p></td>
+															</tr>
+															<tr>
+																<td><p>4</p></td>
+																<td><p>5</p></td>
+																<td><p>6</p>
+																</td>
+																<td><p>7</p></td>
+																<td><p>8</p></td>
+																<td><p>9</p></td>
+																<td><p>10</p></td>
+															</tr>
+															<tr>
+																<td><p>11</p></td>
+																<td><p>12</p></td>
+																<td><p>13</p></td>
+																<td><p>14</p></td>
+																<td><p>15</p></td>
+																<td><p>16</p></td>
+																<td><p>17</p></td>
+															</tr>
+															<tr>
+																<td><p>18</p></td>
+																<td><p>19</p></td>
+																<td><p>20</p></td>
+																<td><p>21</p></td>
+																<td><p>22</p></td>
+																<td><p>23</p></td>
+																<td><p>24</p></td>
+															</tr>
+															<tr>
+																<td><p>25</p></td>
+																<td><p>26</p></td>
+																<td><p>27</p></td>
+																<td><p>28</p></td>
+																<td><p>29</p></td>
+																<td><p>30</p></td>
+																<td><p>31</p></td>
+															</tr>
+															<tr>
+																<td><p class="btn_in">31</p></td>
+																<td></td>
+																<td></td>
+																<td></td>
+																<td></td>
+																<td></td>
+																<td></td>
+															</tr>
+														</table>
+													</div>
+												</div>
+							                </div> -->
+										</div>
+										<div class="iBox none_line clearfix">
+											<p class="title">年資</p>
+											<input class="right_info" type="text" name="" value="">
+										</div>
+										<p class="btn_back"><a class="popup-link" href="#popup-user-back">返回<br>招募</a></p>
+										<!-- <p class="btn_back leave"><a href="#">離職</a></p> -->
+										<!-- <p class="btn_back leave_reason"><a href="#">離職原因</a></p> -->
+									</div>
 								</div>
-								
+								<div class="embarrassment clearfix">
+									<p class="btn_in"><a class="icon_01" href="#">個人資料</a></p>
+									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
+									<p class="btn_none"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
+									<p><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
+								</div>
 							</div>
 							<p class="bottom_btn">
-								<!-- <a class="edit" href="#">資料修改</a> -->
-								<a class="print" href="#">列印此頁</a>
+								<a class="edit" href="#">儲存修改</a>
+								<a class="print" href="#">匯出PDF</a>
 							</p>
 						</div>
 
 						<div class="u_infoBox firstTestBox">
-							<h4>如需進行第一次的員工資料填寫，<br>請至以下連結，進行建立</h4>
+							<!-- <h4>如需進行第一次的員工資料填寫，<br>請至以下連結，進行建立</h4> -->
 							<div class="test_link">
 								<div class="a_link">
 									<p><a href="#" target="_blank">kamo.com.tw/abcde/candidatecandidatecandidatecandidate&ID=jf42jlf4j2jf4j2jf4j2jf4j2jf4j2j</a></p>
 								</div>
 								<p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">已複製</span></a></p>
+							</div>
+							<div class="note">
+								<p>請複製上方<span class="bottom_line">登入連結網址</span>，並寄給現職員工，<br>
+									讓 <span class="name">王明天</span> 進行線上個人資料填寫。</p>
 							</div>
 						</div>
 					</div>
@@ -4261,35 +4394,48 @@ $(document).ready(function() {
             	<div class="interviewMainBox interview_officer_Main">
 					<div class="contentsBox">
 						<div class="top_ivBox clearfix">
-							<div class="img-user"></div>
 							<div class="rBox clearfix">
-								<table class="interviewer_info" cellspacing="0" cellpadding="0" border="0">
-									<tr>
-										<td>姓名</td>
-										<td colspan="2">王明天</td>
-									</tr>
-									<tr>
-										<td>職位</td>
-										<td colspan="2">軟體工程師</td>
-									</tr>
-									<tr>
-										<td>部門</td>
-										<td colspan="2">軟體開發部</td>
-									</tr>
-									<tr>
-										<td>報到時間</td>
-										<td>2018/11/01/13:30</td>
-										<td width="82" rowspan="2" style="border:none;">
-											<!-- <p class="btn_back"><a class="popup-link" href="#popup-user-back">返回<br>招募</a></p> -->
-											<p class="btn_back leave"><a class="popup-link" href="#popup-over">離職</a></p>
-											<!-- <p class="btn_back leave_reason"><a class="popup-link" href="#popup-over-why">離職原因</a></p> -->
-										</td>
-									</tr>
-									<tr>
-										<td>年資</td>
-										<td></td>
-									</tr>
-								</table>
+								<div class="top_interviewer_info clearfix">
+									<div class="left_photo">
+										<p class="title">招募中</p>
+										<div class="the_photo">
+											<a class="select_file" href="#">
+												<p class="icon">更換照片</p>
+											</a>
+											<img src="images/user_photo_01.png" align="logo" width="100%">
+										</div>
+									</div>
+									<div class="rightInfoBox">
+										<div class="iBox clearfix">
+											<p class="title">姓名</p>
+											<input class="right_info" type="text" name="" value="王明天">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">職位</p>
+											<input class="right_info" type="text" name="" value="軟體工程師">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">部門</p>
+											<input class="right_info" type="text" name="" value="軟體開發部">
+											<p class="btn"><a class="select" href="#">選擇</a></p>
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">直屬主管</p>
+											<input class="right_info" type="text" name="" value="留有計">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">報到時間</p>
+											<input class="right_info time" type="text" name="" value="2018/11/01/13:30">
+										</div>
+										<div class="iBox none_line clearfix">
+											<p class="title">年資</p>
+											<input class="right_info" type="text" name="" value="">
+										</div>
+										<p class="btn_back"><a class="popup-link" href="#popup-user-back">返回<br>招募</a></p>
+										<!-- <p class="btn_back leave"><a href="#">離職</a></p> -->
+										<!-- <p class="btn_back leave_reason"><a href="#">離職原因</a></p> -->
+									</div>
+								</div>
 								<div class="embarrassment clearfix">
 									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
@@ -4299,14 +4445,15 @@ $(document).ready(function() {
 							</div>
 							<p class="bottom_btn">
 								<!-- <a class="edit" href="#">資料修改</a> -->
-								<a class="print" href="#">列印此頁</a>
+								<a class="print" href="#">匯出PDF</a>
 							</p>
 							<ul class="Lock">
-								<li class="btn_in open"><a href="#"><p>2018/11/01<br>09:00</p></a></li>
-								<li class="open"><a href="#"><p>2017/06/01<br>09:56</p></a></li>
-								<li class="open"><a href="#"><p>2017/01/02<br>09:24</p></a></li>
-								<li><a class="popup-link" href="#popup-lock_open1"><p>2016/01/02<br>09:34</p></a></li>
-								<li><a class="popup-link" href="#popup-lock_open2"><p>2016/01/02<br>09:34</p></a></li>
+								<li class="add_test"><a class="popup-link" href="#popup-test-add"><p><span>新增測驗</span></p></a></li>
+								<li class="btn_in open"><a href="#"><p>2018/11/01<br>09:00<br><span>報告結果</span></p></a></li>
+								<li class="open"><a href="#"><p>2017/06/01<br>09:56<br><span>報告結果</span></p></a></li>
+								<li class="open"><a href="#"><p>2017/01/02<br>09:24<br><span>報告結果</span></p></a></li>
+								<li><a class="popup-link" href="#popup-lock_open1"><p>2016/01/02<br>09:34<br><span>報告結果</span></p></a></li>
+								<li><a class="popup-link" href="#popup-lock_open2"><p>2016/01/02<br>09:34<br><span>報告結果</span></p></a></li>
 							</ul>
 						</div>
 
@@ -4530,13 +4677,13 @@ $(document).ready(function() {
 									</tr>
 									<tr>
 										<td><p>在意別人的眼光與評價!</p></td>
-										<td><p>設法問出最在意的負面評價或讓自己不舒服的眼光是什麼, 並詢問如何自我調適.<br>
+										<td><p>設法問出最在意的負面評價或讓自己不舒服的眼光是什麼, 並詢問如何自我調適<br>
 											<span class="red">確認情緒上的穩定與可控性</p></td>
 										<td><p>確定個人對達成最終目標的意願與決心後, 陪同制訂詳細的工作計劃, 同時施予機會教育(例如: 考核與眾人眼光評價無關) , 改變工作觀念. 並承諾給予工作上的協助</p></td>
 									</tr>
 									<tr>
 										<td><p>當所學所知, 不符合預期, 產生消極學習!</p></td>
-										<td><p>確認對方, 當沒有良好的表現時, 將會被阻織淘汰時的想法. <br>
+										<td><p>確認對方, 當沒有良好的表現時, 將會被阻織淘汰時的想法<br>
 											<span class="red">如認為淘汰無謂時, 請放棄本次甄選</p></td>
 										<td><p>以激勵的方式取代差異比較或指責, 給予階段性的指示或任務, 加強學習的意願.</p></td>
 									</tr>
@@ -4694,6 +4841,596 @@ $(document).ready(function() {
         </form>
     </div>
 
+    <!-- popup 人員資料：測驗報告 NEW -->
+    <div id="popup-test-new" class="white-popup popup-L mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>人員資料</h3>
+            </div>
+
+            <div class="chosenBox interviewee_info">
+            	<div class="interviewMainBox interview_officer_Main">
+					<div class="contentsBox">
+						<div class="top_ivBox clearfix">
+							<div class="rBox clearfix">
+								<div class="top_interviewer_info clearfix">
+									<div class="left_photo">
+										<p class="title">招募中</p>
+										<div class="the_photo">
+											<a class="select_file" href="#">
+												<p class="icon">更換照片</p>
+											</a>
+											<img src="images/user_photo_01.png" align="logo" width="100%">
+										</div>
+									</div>
+									<div class="rightInfoBox">
+										<div class="iBox clearfix">
+											<p class="title">姓名</p>
+											<input class="right_info" type="text" name="" value="王明天">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">職位</p>
+											<input class="right_info" type="text" name="" value="軟體工程師">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">部門</p>
+											<input class="right_info" type="text" name="" value="軟體開發部">
+											<p class="btn"><a class="select" href="#">選擇</a></p>
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">直屬主管</p>
+											<input class="right_info" type="text" name="" value="留有計">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">報到時間</p>
+											<input class="right_info time" type="text" name="" value="2018/11/01/13:30">
+										</div>
+										<div class="iBox none_line clearfix">
+											<p class="title">年資</p>
+											<input class="right_info" type="text" name="" value="">
+										</div>
+										<p class="btn_back"><a class="popup-link" href="#popup-user-back">返回<br>招募</a></p>
+										<!-- <p class="btn_back leave"><a href="#">離職</a></p> -->
+										<!-- <p class="btn_back leave_reason"><a href="#">離職原因</a></p> -->
+									</div>
+								</div>
+								<div class="embarrassment clearfix">
+									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
+									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
+									<p class="btn_in"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
+									<p><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
+								</div>
+							</div>
+							<p class="bottom_btn">
+								<!-- <a class="edit" href="#">資料修改</a> -->
+								<a class="print" href="#">匯出PDF</a>
+							</p>
+							<ul class="Lock">
+								<li class="add_test"><a class="popup-link" href="#popup-test-add"><p><span>新增測驗</span></p></a></li>
+								<li class="btn_in open"><a href="#"><p>2018/11/01<br>09:00<br><span>報告結果</span></p></a></li>
+								<li class="open"><a href="#"><p>2017/06/01<br>09:56<br><span>報告結果</span></p></a></li>
+								<li class="open"><a href="#"><p>2017/01/02<br>09:24<br><span>報告結果</span></p></a></li>
+								<li><a class="popup-link" href="#popup-lock_open1"><p>2016/01/02<br>09:34<br><span>報告結果</span></p></a></li>
+								<li><a class="popup-link" href="#popup-lock_open2"><p>2016/01/02<br>09:34<br><span>報告結果</span></p></a></li>
+							</ul>
+						</div>
+
+						<div class="test_report new_report">
+							<h3 class="test_report_title">2019/01/01/09:00測驗報告</h3>
+							<div class="top_topic">
+								<p class="info">本報告分析是來自五大人格特質專業研究和多年的台灣求職者實測結果累計，再以大數據統計作為依據分析，本報告是工作績效的有效預測指標。本報告的分數顯示應該被解釋為概率，而不是絕對性，因為人類行為是無法100％準確預測的。<br>
+									<br>
+									本報告是公司篩選求職者的輔助文件。關於這個求職者的最終決定是否錄用，應與求職者其他表現作為綜合評量，例如求職者的工作知識、智力、特定技能和經驗以及求職面試中的表現。<br>
+									<br>
+									重要提醒：<br>
+									請先閱讀本報告最後的「潛在人格特質分析報告」說明；在未事先閱讀「潛在人格特質分析報告」說明的情況下，請勿嘗試解釋此報告。<br>
+									本報告中的分數是百分比分數。<span>落在百分之40~60的可說為普遍大眾的平均值。</span><br>
+									<br>
+								本報告中提出的總體招聘建議書的顏色編碼如下：</p>
+								<p class="color_label">
+									<span class="green">建議錄取</span>
+									<span class="org">可以考慮錄取</span>
+									<span class="red">建議不錄取</span>
+								</p>
+								<p class="red_note">注意：建議不應向求職者顯示此報告內容。<br>
+								　　　使用者需承擔因向未經授權的人（包括同事、求職者）發布此機密信息而產生的所有責任。</p>
+							</div>
+
+							<div class="u_infoBox c_dark_blue positive_behavior">
+								<h4 class="r_title s_icon_04 bg_dark_blue">職場正面行為</h4>
+								<table class="analysis" cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<th width="134"><p>特點分析</p></th>
+										<th width="134"><p>百分比</p></th>
+										<th class="percentage"><p class="p_left">低 0</p>
+											<p>平均50</p>
+											<p class="p_right">高100</p>
+										</th>
+									</tr>
+									<tr>
+										<td><p>執行力</p></td>
+										<td><p class="p_blue">87.3</p></td>
+										<td>
+											<div class="progress_container">
+												<div id="myBar" class="progressbar" style="width:87.3%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><p>工作熱忱</p></td>
+										<td><p class="p_blue">79.4</p></td>
+										<td>
+											<div class="progress_container">
+												<div id="myBar" class="progressbar" style="width:79.4%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><p>升遷性</p></td>
+										<td><p class="p_blue">80.5</p></td>
+										<td>
+											<div class="progress_container">
+												<div id="myBar" class="progressbar" style="width:80.5%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><p>顧客服務</p></td>
+										<td><p class="p_blue">77</p></td>
+										<td>
+											<div class="progress_container">
+												<div id="myBar" class="progressbar" style="width:77%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><p>創新能力</p></td>
+										<td><p class="p_blue">81.5</p></td>
+										<td>
+											<div class="progress_container">
+												<div id="myBar" class="progressbar" style="width:81.5%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><p>學習慾望</p></td>
+										<td><p class="p_blue">82.7</p></td>
+										<td>
+											<div class="progress_container">
+												<div id="myBar" class="progressbar" style="width:82.7%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><p>監督紀律</p></td>
+										<td><p class="p_blue">87.3</p></td>
+										<td>
+											<div class="progress_container">
+												<div id="myBar" class="progressbar" style="width:82.7%"></div>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="note_positive_behavior clearfix">
+								<p>百分比的解釋 - 假設「執行力」得百分比68，意指此求職者是比百分之68的人還要有執行力。</p>
+								<p class="p_right">＊高百分比較優</p>
+							</div>
+
+							<div class="overall">
+								<div class="overall_type">
+									<div class="top_box">
+										<p>勾選需要評核的特質項目（建議執行力、工作熱忱、升遷性、細心度都應列入基本評量特質）</p>
+										<ul class="clearfix">
+											<li>
+												<input id="" type="checkbox" name="" value="option" checked="">
+												<label for="option">執行力</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="option">
+												<label for="option">工作熱誠</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="option" checked="">
+												<label for="option">升遷性</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="option">
+												<label for="option">顧客服務</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="option">
+												<label for="option">創新能力</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="option">
+												<label for="option">學習慾望</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="option">
+												<label for="option">監督紀律</label>
+											</li>
+										</ul>
+									</div>
+									<div class="testfraction_box clearfix">
+										<p class="title">整體招聘評分</p>
+										<p class="fraction">百分比<span>81.4</span></p>
+										<div class="progress_container">
+											<div id="myBar" class="progressbar" style="width:81.4%">建議錄取</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="u_infoBox c_dark_blue">
+								<h4 class="r_title s_icon_06 bg_dark_blue">建議事項</h4>
+								<table class="suggest" cellpadding="0" cellspacing="0" border="0">
+									<tr class="top_title">
+										<th width="200"></th>
+										<th width="325"><p>如果面對求職者</p></th>
+										<th width="357"><p>如果面對現有員工</p></th>
+									</tr>
+									<tr>
+										<td width="200"><p>小心謹慎, 不易說真話</p></td>
+										<td width="335"><p>針對對方回覆, 不斷追問, 前後比對回答, 確認取得真正的答案。<br>
+											<span class="red">務必確認個人在誠信的狀況 </span></p></td>
+										<td><p>如擔任重要機密職位, 請留意接觸到的人事物, 管理流程上, 企業應確實稽核, 簽認必要之保密承諾文件。</p></td>
+									</tr>
+									<tr>
+										<td><p>自信心不足!</p></td>
+										<td><p>取得曾經有成就的經驗回覆, 詢問感到有成就的因素是什麼。<br>
+											<span class="red">可做為錄取後, 在工作上的激勵手法 </span></p></td>
+										<td><p>在非公開的場合裏, 關心詢問工作的狀況, 對過去好表現的事情, 隨時給予鼓勵。</p></td>
+									</tr>
+									<tr>
+										<td><p>對自己在組織中的定位, 沒有安全感!</p></td>
+										<td><p>瞭解沒有安全感的原因是因為權力受限或是組織的不肯定<br>
+											<span class="red">瞭解在個人發展上的企圖心與欲望</span></p></td>
+										<td><p>交代任務時, 同時授予適當的權力, 由他決定任務的處理方式, 並讓他承擔風險與責任</p></td>
+									</tr>
+									<tr>
+										<td><p>無法拒絕別人的請託!</p></td>
+										<td><p>詢問非工作上的請託, 一旦與自己的本份工作產生衝突, 會如何處理<br>
+											<span class="red">確認公私分明的心態與程度</span></p></td>
+										<td><p>在正常工作計劃中, 如仍在可控制範圍, 僅須觀察. 若已影嚮個人工作狀況, 應明確告知提醒, 或是要求定時回報進度.</p></td>
+									</tr>
+									<tr>
+										<td><p>會被態度較強勢的人壓制想法!</p></td>
+										<td><p>詢問被壓制時, 要如何確實將自己的想法或建議, 還是明確表達出來<br>
+											<span class="red">確認是否會走後門或背後私語</p></td>
+										<td><p>可採取指名回答的方式, 給予充份表達看法的時間</p></td>
+									</tr>
+									<tr>
+										<td><p>思考時間長, 想的很複雜!</p></td>
+										<td><p>請對方將正在想的事情說出來或是直接詢問在考慮或評估什麼<br>
+											<span class="red">瞭解邏輯是否清楚, 能否快速抓對重點</p></td>
+										<td><p>可以使用對談引導方式, 協助釐清重點, 並做出決策</p></td>
+									</tr>
+									<tr>
+										<td><p>耳根子軟, 意志不堅定!</p></td>
+										<td><p>詢問當理念與其他人不同時, 會採取的做法是什麼, 如何判斷對錯<br>
+											<span class="red">瞭解自我原則和既定目標的堅守能力</p></td>
+										<td><p>必須訂定明確的工作原則及目標, 並取得共識, 要求遵守與配合</p></td>
+									</tr>
+									<tr>
+										<td><p>解決問題反應慢, 不知變通!</p></td>
+										<td><p>詢問對方在時間有限的壓力下, 如何讓問題可以更快被解決<br>
+											<span class="red">確認適合獨立作業或是團隊合作</p></td>
+										<td><p>適時提供重點、處理方法或是直接給決定, 協助提升工作品質與效率, 但仍由他負擔工作成敗的責任.</p></td>
+									</tr>
+									<tr>
+										<td><p>在意別人的眼光與評價!</p></td>
+										<td><p>設法問出最在意的負面評價或讓自己不舒服的眼光是什麼, 並詢問如何自我調適<br>
+											<span class="red">確認情緒上的穩定與可控性</p></td>
+										<td><p>確定個人對達成最終目標的意願與決心後, 陪同制訂詳細的工作計劃, 同時施予機會教育(例如: 考核與眾人眼光評價無關) , 改變工作觀念. 並承諾給予工作上的協助</p></td>
+									</tr>
+									<tr>
+										<td><p>當所學所知, 不符合預期, 產生消極學習!</p></td>
+										<td><p>確認對方, 當沒有良好的表現時, 將會被阻織淘汰時的想法<br>
+											<span class="red">如認為淘汰無謂時, 請放棄本次甄選</p></td>
+										<td><p>以激勵的方式取代差異比較或指責, 給予階段性的指示或任務, 加強學習的意願.</p></td>
+									</tr>
+								</table>
+							</div>
+							<div class="u_infoBox c_dark_blue">
+								<h4 class="r_title s_icon_00 bg_dark_blue">特質放大鏡</h4>
+								<ul class="cards">
+									<li>
+										<div class="card_info">
+											<!-- 請注意：因為圖片是另外給的，所以寫在html上，圖片需存成(w)240*(h)200px -->
+											<div class="top_pic" style=" background-image:url(images/card_pic/pic_01.png)"></div>
+											<h5 class="top_description">思慮細密</h5>
+											<div class="center">
+												<p>做事情比較謹慎，想得多。<br>
+													喜歡偷偷觀察人事物，<br>不會把事情講出來。</p>
+											</div>
+										</div>
+									</li>
+									<li class="green">
+										<div class="card_info">
+											<!-- 請注意：因為圖片是另外給的，所以寫在html上，圖片需存成(w)240*(h)200px -->
+											<div class="top_pic" style=" background-image: url(images/card_pic/pic_05.png);"></div>
+											<h5 class="top_description">求知若渴</h5>
+											<div class="center">
+												<p>對新的事物有好奇心跟學習力<br>
+													喜歡思考問題、解決問題<br>
+												並提出好的方案</p>
+											</div>
+										</div>
+									</li>
+									<li class="green">
+										<div class="card_info">
+											<div class="top_pic" style=" background-image: url(images/card_pic/pic_04.png);"></div>
+											<h5 class="top_description">自動自發</h5>
+											<div class="center">
+												<p>主動將計畫變成行動<br>
+													會先盡快完成鎖事<br>
+												喜歡規律並根據計畫行事</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="u_infoBox other_test_fraction">
+								<h4 class="r_title s_icon_07 bg_light_blue">其他測驗評分</h4>
+								<div class="testfraction_box clearfix">
+									<p class="title">邏輯推理測驗</p>
+									<p class="fraction">百分比<span>70</span></p>
+									<div class="progress_container">
+										<div class="top_title">
+											<p><span class="f_l">低 0</span>平均50<span class="f_r">高100</span></p>
+										</div>
+										<div id="myBar" class="progressbar" style="width:70%"></div>
+									</div>
+								</div>
+								<div class="testfraction_box clearfix">
+									<p class="title">細心度測驗</p>
+									<p class="fraction">百分比<span>70</span></p>
+									<div class="progress_container">
+										<div class="top_title">
+											<p><span class="f_l">低 0</span>平均50<span class="f_r">高100</span></p>
+										</div>
+										<div id="myBar" class="progressbar" style="width:70%"></div>
+									</div>
+								</div>
+								<div class="testfraction_box clearfix">
+									<p class="title">情境測驗</p>
+									<p class="fraction">百分比<span>60</span></p>
+									<div class="progress_container">
+										<div class="top_title">
+											<p><span class="f_l">低 0</span>平均50<span class="f_r">高100</span></p>
+										</div>
+										<div id="myBar" class="progressbar" style="width:60%"></div>
+									</div>
+								</div>
+							</div>
+
+							<h4 class="dividing_line">請詳閱以下潛在人格特質分析報告說明</h4>
+							<div class="u_infoBox behavior_description">
+								<h4 class="r_title bg_gray">職場正面行為特點說明</h4>
+								<table class="percentage_description" cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<th><p>[ 低百分比 ]</p></th>
+										<th>&nbsp</th>
+										<th align="right"><p>[ 高百分比 ]</p></th>
+									</tr>
+									<tr>
+										<td><p>無法負荷太多的工作量，執行有限。並在工作上很容易因外在因素而分心。</p></td>
+										<td class="bg"><p>執行力</p></td>
+										<td><p>保持高標準的工作態度，喜愛有成就感的工作，會努力完成工作目標。喜歡挑戰目標，擁有不懈的工作習慣， 不容分心並富有高責任感態度。</p></td>
+									</tr>
+									<tr>
+										<td><p>容易會在工作上有多方面的不滿，不會將公司團隊的目標納入自己的工作計畫和個人目標。</p></td>
+										<td class="bg"><p>工作熱忱</p></td>
+										<td><p>喜歡與他人合作，並且體貼、樂觀。對公司團隊和同事有強烈的責任感。 </p></td>
+									</tr>
+									<tr>
+										<td><p>不喜與人親近、常臨時抱佛腳，不負責任，被視為不適合擔任領導角色。</p></td>
+										<td class="bg"><p>升遷性</p></td>
+										<td><p>在工作上能表現出優秀的領導能力、獨立判斷力、可靠性和人際交往能力。 </p></td>
+									</tr>
+									<tr>
+										<td><p>不喜歡主動與客戶聯繫，常與人發生摩擦和爭論，經常無法履行承諾。</p></td>
+										<td class="bg"><p>顧客服務</p></td>
+										<td><p>喜歡與客戶互動，並主動協助客戶解決問題。在壓力下容易保持冷靜，擁有好脾氣，會努力達成客戶需求，並在客戶中保持良好的聲譽。 </p></td>
+									</tr>
+									<tr>
+										<td><p>對抽象想法不感興趣，討厭改變，欠缺想像力，會有先入為主的想法 。</p></td>
+										<td class="bg"><p>創新能力</p></td>
+										<td><p>擁有高度的好奇心，喜歡大方向的思考事物，擁有豐富的想像力，並願意嘗試新的工作方法。 </p></td>
+									</tr>
+									<tr>
+										<td><p>在學習新事物上較為被動，常需要有人推一把或是有其他利益驅使學習 。</p></td>
+										<td class="bg"><p>學習慾望</p></td>
+										<td><p>擁有求知的慾望和動力，會主動學習，努力提升自己的能力，喜歡解決複雜問題。<br>
+											<span>如是招聘新鮮人建議高百分比，較好培訓。 </span></p></td>
+									</tr>
+									<tr>
+										<td><p>不會拒絕別人、較不守規矩並做事較有彈性。</p></td>
+										<td class="bg"><p>監督紀律</p></td>
+										<td><p>遵守規則、回懂的拒絕他人、較有防備心，做事一板一眼，建議可從事法源、稽核單位。 </p></td>
+									</tr>
+								</table>
+								<h4 class="r_title bg_gray">整體招聘建議</h4>
+								<div class="behavior_note">
+									<p>總體招聘建議是依整體測驗分析結果建議，公司可根據工作職位需求，自由地權衡勾選某些特徵做評量。<br>
+									在此特別強調，雖然本測驗是識別優秀求職者的有效工具，但這些結果不應單獨解釋，建議將本報告中的資訊與其他資料（例如求職者的工作知識、智力、特定技能和經驗以及求職面試中的表現等）綜合起來考慮，透過多方評估後再做決定。</p>
+								</div>
+								<h4 class="r_title bg_gray">建議事項說明</h4>
+								<div class="behavior_note">
+									<p>本報告會依此測驗者的人格特質分析，整理出幾點建議事項，並提供面試官可應證提問的問題。另一方面也會針對現有員工提出有效地改善作法，實際執行，也應考慮其他綜合評量。</p>
+								</div>
+								<h4 class="r_title bg_gray">特質放大鏡說明</h4>
+								<div class="behavior_note">
+									<p>本報告會依此測驗者的人格特質分析，找出最值得注意的特質，公司可依職位需求與獲得的卡片來再次審核是否適任此職位。<br>
+										例如：獲得卡片「剛正不阿」就正好適合稽核單位。<br>
+										而卡片在於標示有突出特質的測驗者，所以不是每位次驗者都有機會得到亮眼卡。<br>
+									卡片分成紅色、橘色與綠色。綠色代表有突出的優秀特質，橘色應為多注意事項，而紅色則代表突出負面的特質。</p>
+								</div>
+								<h4 class="r_title bg_gray">其他測驗評分</h4>
+								<div class="behavior_note">
+									<ul class="other">
+										<li>
+											<h5>邏輯推理測驗</h5>
+											<p>邏輯推理測驗是一組廣泛的能力測驗，用於測試求職者的解決問題的能力。任何招聘的位階與職位都適用邏輯推理測驗，尤其是需要大量解決問題能力的職位時（如軟體工程師）。</p>
+										</li>
+										<li>
+											<h5>細心度測驗</h5>
+											<p>細心度測驗用適用於評測需要大量書面文本或數字分析的職位，例如：秘書、會計和行政角色。</p>
+										</li>
+										<li>
+											<h5>情境測驗</h5>
+											<p>情境測驗是考驗求職者的問題解與應對決能力，考題會模擬不同情況下提出待解決的問題，但情境測驗的標準答案是由專家決定，哪些答案最可取或最不可取。此測驗較注重內隱知識（tacit knowledge）或實務專業知識，而不是推理的表現。</p>
+										</li>
+									</ul>
+								</div>
+								<div class="company_info clearfix">
+									<p class="info_logo">凱茂股份有限公司<br>
+									www.kamo.com.tw　TEL. 02 8792 5569　FAX. 02 8792 5693</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 人員資料：測驗報告 - 新增測驗 -->
+    <div id="popup-test-add" class="white-popup popup-L mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>人員資料</h3>
+            </div>
+
+            <div class="chosenBox interviewee_info">
+            	<div class="interviewMainBox interview_officer_Main">
+					<div class="contentsBox">
+						<div class="top_ivBox clearfix">
+							<div class="rBox clearfix">
+								<div class="top_interviewer_info clearfix">
+									<div class="left_photo">
+										<p class="title">招募中</p>
+										<div class="the_photo">
+											<a class="select_file" href="#">
+												<p class="icon">更換照片</p>
+											</a>
+											<img src="images/user_photo_01.png" align="logo" width="100%">
+										</div>
+									</div>
+									<div class="rightInfoBox">
+										<div class="iBox clearfix">
+											<p class="title">姓名</p>
+											<input class="right_info" type="text" name="" value="王明天">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">職位</p>
+											<input class="right_info" type="text" name="" value="軟體工程師">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">部門</p>
+											<input class="right_info" type="text" name="" value="軟體開發部">
+											<p class="btn"><a class="select" href="#">選擇</a></p>
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">直屬主管</p>
+											<input class="right_info" type="text" name="" value="留有計">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">報到時間</p>
+											<input class="right_info time" type="text" name="" value="2018/11/01/13:30">
+										</div>
+										<div class="iBox none_line clearfix">
+											<p class="title">年資</p>
+											<input class="right_info" type="text" name="" value="">
+										</div>
+										<p class="btn_back"><a class="popup-link" href="#popup-user-back">返回<br>招募</a></p>
+										<!-- <p class="btn_back leave"><a href="#">離職</a></p> -->
+										<!-- <p class="btn_back leave_reason"><a href="#">離職原因</a></p> -->
+									</div>
+								</div>
+								<div class="embarrassment clearfix">
+									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
+									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
+									<p class="btn_in"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
+									<p><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
+								</div>
+							</div>
+							<p class="bottom_btn">
+								<!-- <a class="edit" href="#">資料修改</a> -->
+								<a class="print" href="#">匯出PDF</a>
+							</p>
+							<ul class="Lock">
+								<li class="add_test"><a class="popup-link" href="#popup-test-add"><p><span>新增測驗</span></p></a></li>
+								<li class="btn_in open"><a href="#"><p>2018/11/01<br>09:00<br><span>報告結果</span></p></a></li>
+								<li class="open"><a href="#"><p>2017/06/01<br>09:56<br><span>報告結果</span></p></a></li>
+								<li class="open"><a href="#"><p>2017/01/02<br>09:24<br><span>報告結果</span></p></a></li>
+								<li><a class="popup-link" href="#popup-lock_open1"><p>2016/01/02<br>09:34<br><span>報告結果</span></p></a></li>
+								<li><a class="popup-link" href="#popup-lock_open2"><p>2016/01/02<br>09:34<br><span>報告結果</span></p></a></li>
+							</ul>
+						</div>
+						<div class="u_infoBox firstTestBox addTestBox">
+							<h3 class="test_report_title">新增測驗</h3>
+							<div class="topBox clearfix">
+								<div class="test_link">
+									<div class="a_link">
+										<p><a href="#" target="_blank">kamo.com.tw/abcde/candidatecandidatecandidatecandidate&amp;ID=jf42jlf4j2jf4j2jf4j2jf4j2jf4j2j</a></p>
+									</div>
+									<p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">已複製</span></a></p>
+								</div>
+								<div class="note">
+									<p>請將連結複製後，寄給 <span class="name">王明天</span> 開始測驗。</p>
+								</div>
+							</div>
+							<div class="status_record clearfix">
+								<ul class="jobBox">
+				                	<li class="sub_title">
+				                		<p>填寫狀態</p>
+				                	</li>
+				                    <li class="this_time">
+				                    	<p>本次測驗已結束</p>
+				                        <p class="btn"><a class="select" href="#">重新測驗</a></p>
+				                    </li>
+				                </ul>
+								<ul class="jobBox">
+				                	<li class="sub_title">
+				                		<p>測驗紀錄</p>
+				                	</li>
+				                    <li>
+				                        <table class="test" border="0" cellpadding="0" cellspacing="0">
+				                        	<tr>
+				                        		<th><p>項次</p></th>
+				                        		<th><p>填寫日期</p></th>
+				                        		<th><p>結果</p></th>
+				                        	</tr>
+				                        	<tr>
+				                        		<td><p>1</p></td>
+				                        		<td><p>2018/11/01</p></td>
+				                        		<td class="both">
+				                        			<p>48/56</p>
+				                        			<p>未完成</p>
+				                        		</td>
+				                        	</tr>
+				                        	<tr>
+				                        		<td><p>2</p></td>
+				                        		<td><p>2018/11/01</p></td>
+				                        		<td class="both test_finished">
+				                        			<p>2:55</p>
+				                        			<p>完成</p>
+				                        		</td>
+				                        	</tr>
+				                        </table>
+				                    </li>
+				                </ul>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </form>
+    </div>
+
     <!-- popup 人員資料：測驗報告無效 -->
     <div id="popup-test-invalid" class="white-popup popup-L mfp-hide">
         <form class="setBox filter_pop">
@@ -4705,35 +5442,48 @@ $(document).ready(function() {
             	<div class="interviewMainBox interview_officer_Main">
 					<div class="contentsBox">
 						<div class="top_ivBox clearfix">
-							<div class="img-user"></div>
 							<div class="rBox clearfix">
-								<table class="interviewer_info" cellspacing="0" cellpadding="0" border="0">
-									<tr>
-										<td>姓名</td>
-										<td colspan="2">王明天</td>
-									</tr>
-									<tr>
-										<td>職位</td>
-										<td colspan="2">軟體工程師</td>
-									</tr>
-									<tr>
-										<td>部門</td>
-										<td colspan="2">軟體開發部</td>
-									</tr>
-									<tr>
-										<td>報到時間</td>
-										<td>2018/11/01/13:30</td>
-										<td width="82" rowspan="2" style="border:none;">
-											<!-- <p class="btn_back"><a class="popup-link" href="#popup-user-back">返回<br>招募</a></p> -->
-											<p class="btn_back leave"><a class="popup-link" href="#popup-over">離職</a></p>
-											<!-- <p class="btn_back leave_reason"><a class="popup-link" href="#popup-over-why">離職原因</a></p> -->
-										</td>
-									</tr>
-									<tr>
-										<td>年資</td>
-										<td></td>
-									</tr>
-								</table>
+								<div class="top_interviewer_info clearfix">
+									<div class="left_photo">
+										<p class="title">招募中</p>
+										<div class="the_photo">
+											<a class="select_file" href="#">
+												<p class="icon">更換照片</p>
+											</a>
+											<img src="images/user_photo_01.png" align="logo" width="100%">
+										</div>
+									</div>
+									<div class="rightInfoBox">
+										<div class="iBox clearfix">
+											<p class="title">姓名</p>
+											<input class="right_info" type="text" name="" value="王明天">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">職位</p>
+											<input class="right_info" type="text" name="" value="軟體工程師">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">部門</p>
+											<input class="right_info" type="text" name="" value="軟體開發部">
+											<p class="btn"><a class="select" href="#">選擇</a></p>
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">直屬主管</p>
+											<input class="right_info" type="text" name="" value="留有計">
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">報到時間</p>
+											<input class="right_info time" type="text" name="" value="2018/11/01/13:30">
+										</div>
+										<div class="iBox none_line clearfix">
+											<p class="title">年資</p>
+											<input class="right_info" type="text" name="" value="">
+										</div>
+										<p class="btn_back"><a class="popup-link" href="#popup-user-back">返回<br>招募</a></p>
+										<!-- <p class="btn_back leave"><a href="#">離職</a></p> -->
+										<!-- <p class="btn_back leave_reason"><a href="#">離職原因</a></p> -->
+									</div>
+								</div>
 								<div class="embarrassment clearfix">
 									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
@@ -4743,7 +5493,7 @@ $(document).ready(function() {
 							</div>
 							<p class="bottom_btn">
 								<!-- <a class="edit" href="#">資料修改</a> -->
-								<a class="print" href="#">列印此頁</a>
+								<a class="print" href="#">匯出PDF</a>
 							</p>
 							<ul class="Lock">
 								<li class="btn_in open"><a href="#"><p>2018/11/01<br>09:00</p></a></li>
