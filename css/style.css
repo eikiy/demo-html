@@ -307,7 +307,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 
 .setBox .jobBox a.p_show::after{ content: "查看個人特質測驗報告";}
 
-.setBox .jobBox .top_btn_s{ position: absolute; top: 10px; right:10px; z-index: 55; }
+.setBox .jobBox .top_btn_s{ top: 10px; right:10px; z-index: 55;float: right }
 .setBox .jobBox .top_btn_s .delete{ width: 15px; height: 15px; cursor: pointer;  display: block;border:1px solid #C87D86; background-image: url(../images/icon_x.png); background-color: #fff; background-position: center center; background-size: 100%; border-radius: 3px 0 3px 3px;}
 .setBox .jobBox .top_btn_s .delete:hover{ background-color: #C87D86; color: #fff; background-image: url(../images/icon_x_w.png);}
 
