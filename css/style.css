@@ -672,7 +672,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .interviewMainBox .use_fillinBox .fBox .both{ -webkit-flex: 1; flex: 1;}
 
 .interviewMainBox .use_fillinBox .fBox p{ color: #9B9B9B;font-size: 12px;}
-.interviewMainBox .use_fillinBox .fBox p.title_s{padding: 3px 0; line-height: 24px; }
+.interviewMainBox .use_fillinBox .fBox p.title_s{padding: 3px 0; line-height: 24px; position: relative;}
 .interviewMainBox .use_fillinBox .fBox p.title_s input{ min-height: 15px; }
 .interviewMainBox .use_fillinBox .fBox div.border_s{ min-height: 50px; border:1px solid #979797;  border-radius: 4px; padding: 4px}
 
@@ -757,7 +757,7 @@ html:root .interviewMainBox .use_fillinBox .fBox input[type=checkbox]{  max-heig
 
 .interviewMainBox .use_fillinBox ul.select_item{ width: 100%; border:1px solid #979797; border-radius: 5px; padding: 2px 0; height: 30px; }
 .interviewMainBox .use_fillinBox ul.select_item li{ width: initial; width: auto\9; *width:auto; float: left; color: #9B9B9B; font-size: 12px; margin-right: 5px; padding: 0; }
-html:root .interviewMainBox .use_fillinBox ul.select_item li{ width: auto; }
+html:root .interviewMainBox .use_fillinBox ul.select_item li{ width: auto; position: relative;}
 .interviewMainBox .use_fillinBox ul.select_item li input.bottom_line{ border:none; border-bottom:1px solid #979797; display: inline-block;  border-radius: 0; height: 22px; min-height: 18px; line-height: 18px; }
 
 input[type=checkbox]:not(old), input[type=radio ]:not(old){ position: absolute; top: 0; height: 100%;  width : 100% !important;  margin: 0;  padding : 0; opacity : 0; cursor: pointer;}
@@ -825,8 +825,10 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 .interviewMainBox .use_fillinBox h3.headline{ /*border: 1px solid #979797;*/ background-color: #EBEBEB; color: #888888; border-radius: 10px 0 10px 10px; font-size: 14px; padding: 16px 30px;  margin: 0 7px 8px 7px;}
 
 .interviewMainBox .referrerTopBox{ padding: 5px 5px 10px 5px; }
-.interviewMainBox .referrerTopBox .top_titleBox{ color: #4A4A4A; padding-bottom: 20px; border-bottom: 2px solid #979797; }
-.interviewMainBox .referrerTopBox .top_titleBox p{font-size: 12px; }
+.interviewMainBox .referrerTopBox .top_titleBox{ color: #4A4A4A; padding-bottom: 15px; border-bottom: 2px solid #979797; }
+.interviewMainBox .referrerTopBox .top_titleBox p{font-size: 12px; position: relative;}
+.interviewMainBox .referrerTopBox .top_titleBox p.top_title input.input_yesNo_yes[type=radio]:not(old), .interviewMainBox .referrerTopBox .top_titleBox p.top_title input.input_yesNo_no[type=radio ]:not(old){margin-left: 0;}
+.interviewMainBox .referrerTopBox .top_titleBox p.top_title input.input_yesNo_yes[type=radio]:not(old){margin-top:0px;}
 .interviewMainBox .referrerTopBox .top_titleBox p span{ padding-right: 10px; }
 
 .interviewMainBox .referrerTopBox .many_option{ padding-top: 15px; }
@@ -835,7 +837,7 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 
 .interviewMainBox .qaBox {padding-bottom: 30px;}
 .interviewMainBox .qaBox .fBox{padding-top: 15px;}
-.interviewMainBox .qaBox .top_titleBox p{ color: #9B9B9B; line-height: 30px; }
+.interviewMainBox .qaBox .top_titleBox p{ color: #9B9B9B; line-height: 30px; padding-top: 10px; }
 .interviewMainBox .qaBox .top_titleBox input{ max-width: 500px; }
 
 .interviewMainBox .use_fillinBox .last_company { max-width: 745px; padding-left: 24px; }
@@ -1136,8 +1138,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 
 .interview_officer_Main{padding-bottom: 10px;}
 .interview_officer_Main p.btn{ padding: 20px 0; }
+.interview_officer_Main p.top_title{color: #9B9B9B; font-size: 12px; line-height: 33px; position: relative;}
 .interview_officer_Main p.bottom_title{ position: absolute; bottom: 30px; }
-.interview_officer_Main p.top_title{color: #9B9B9B; font-size: 12px; line-height: 33px;}
 .interview_officer_Main p.top_title span.pad-l{padding-left:30px; }
 .interview_officer_Main p.top_title input.input_yesNo_yes[type=radio]:not(old), input.input_yesNo_yes[type=radio ]:not(old){margin-left: 15px;}
 .interview_officer_Main p.top_title input.input_yesNo_no[type=radio]:not(old), input.input_yesNo_no[type=radio ]:not(old){margin-left: 15px;}
