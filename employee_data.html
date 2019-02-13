@@ -5133,9 +5133,26 @@ $(document).ready(function() {
 							<div class="u_infoBox c_dark_blue">
 								<h4 class="r_title s_icon_00 bg_dark_blue">特質放大鏡</h4>
 								<ul class="cards">
-									<li>
+									 <li class="card_info" v-for="(card, index) in current_exam.result.cards" :key="index">
+									 	<div class="top_pic" style=" background-image: url(images/card_pic/特質卡片-1.png);"></div>
+									 </li>
+									 <li class="card_info" v-for="(card, index) in current_exam.result.cards" :key="index">
+									 	<div class="top_pic" style=" background-image: url(images/card_pic/特質卡片-8.png);"></div>
+									 </li>
+									 <li class="card_info" v-for="(card, index) in current_exam.result.cards" :key="index">
+									 	<div class="top_pic" style=" background-image: url(images/card_pic/特質卡片-10.png);"></div>
+									 </li>
+									 <li class="card_info" v-for="(card, index) in current_exam.result.cards" :key="index">
+									 	<div class="top_pic" style=" background-image: url(images/card_pic/特質卡片-15.png);"></div>
+									 </li>
+									 <li class="card_info" v-for="(card, index) in current_exam.result.cards" :key="index">
+									 	<div class="top_pic" style=" background-image: url(images/card_pic/特質卡片-18.png);"></div>
+									 </li>
+									 <li class="card_info" v-for="(card, index) in current_exam.result.cards" :key="index">
+									 	<div class="top_pic" style=" background-image: url(images/card_pic/特質卡片-20.png);"></div>
+									 </li>
+									<!-- <li>
 										<div class="card_info">
-											<!-- 請注意：因為圖片是另外給的，所以寫在html上，圖片需存成(w)240*(h)200px -->
 											<div class="top_pic" style=" background-image:url(images/card_pic/pic_01.png)"></div>
 											<h5 class="top_description">思慮細密</h5>
 											<div class="center">
@@ -5146,7 +5163,6 @@ $(document).ready(function() {
 									</li>
 									<li class="green">
 										<div class="card_info">
-											<!-- 請注意：因為圖片是另外給的，所以寫在html上，圖片需存成(w)240*(h)200px -->
 											<div class="top_pic" style=" background-image: url(images/card_pic/pic_05.png);"></div>
 											<h5 class="top_description">求知若渴</h5>
 											<div class="center">
@@ -5166,7 +5182,7 @@ $(document).ready(function() {
 												喜歡規律並根據計畫行事</p>
 											</div>
 										</div>
-									</li>
+									</li> -->
 								</ul>
 							</div>
 
