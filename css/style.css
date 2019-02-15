@@ -1052,7 +1052,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 .right_contents .top_toolsBox ul.list_style li.btn_in a.block{background-image: url(../images/list_style_icon_01_in.png);}
 .right_contents .top_toolsBox ul.list_style li.btn_in a.list{background-image: url(../images/list_style_icon_02_in.png);}
 
-.right_contents .calendar_toolsBox{ float: right; width: 100%; width: 300px; margin-left: 5px;  position: sticky; top: 0px; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; z-index: 80; padding-top: 20px}
+.right_contents .calendar_toolsBox{ float: right; width: 100%; width: 300px; margin-left: 5px;  /*position: sticky; top: 0px; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; z-index: 80;*/ padding-top: 20px}
 .right_contents .calendar_toolsBox .calendar_month{ width: 100%; }
 .right_contents .calendar_toolsBox .calendar_month .calendar_month{ width: 100%; }
 
@@ -1652,15 +1652,16 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .interviewee_info .test_report .overall{ padding: 15px; background-color: #EFF7FA; }
 .interviewee_info .test_report .overall .overall_type{/* margin:10px 15px 30px 15px;*/ border:10px #EB8B70 solid; border-radius: 15px 0 15px 15px;}
 .interviewee_info .test_report .overall .top_box{ border-bottom:10px #EB8B70 solid; padding: 16px 40px;}
+.interviewee_info .test_report .overall .top_box p{ font-size: 18px; }
 .interviewee_info .test_report .overall .top_box ul{ width: 100%; padding: 15px 0 5px 0; }
-.interviewee_info .test_report .overall .top_box ul li{ float: left; padding-right: 15px; position: relative; }
+.interviewee_info .test_report .overall .top_box ul li{ float: left; width: 25%; padding-right: 15px; padding-bottom: 10px; position: relative; }
 .interviewee_info .test_report .testfraction_box{ padding: 15px 40px;}
 .interviewee_info .test_report .testfraction_box p.title{ float: left; font-size: 24px; color: #558C9E; line-height: 33px; width: 165px; padding-top: 20px;}
 .interviewee_info .test_report .testfraction_box p.fraction{ float: left; width: 90px; float: left; text-align: center; color: #81B6C8; }
 .interviewee_info .test_report .testfraction_box p.fraction span{ color: #558C9E; font-size: 18px; display: block; padding: 0; line-height: 35px; }
 .interviewee_info .test_report .testfraction_box .progress_container{ float: left; width:calc(100% - 255px); height:34px; position:relative; margin-top: 20px;background: url(../images/user_info/bg_progressbar.png) center center no-repeat; background-size: cover;}
 .interviewee_info .test_report .testfraction_box .progressbar{ background-color:#69A07C; top: 5px; color: #fff; text-align: center; letter-spacing: 3px; height:25px; position:absolute; line-height:inherit;}
-
+.interviewee_info .test_report .testfraction_box .progressbar span{ min-width: 100px; display: block; }
 .interviewee_info .test_report .other_test_fraction{ border-color: #D1E0E5; border-width: 3px; }
 .interviewee_info .test_report .other_test_fraction .testfraction_box{ border-top:2px solid #D1E0E5;}
 .interviewee_info .test_report .other_test_fraction .testfraction_box p.title{ font-size: 18px; text-align: center; padding-bottom: 10px; }
