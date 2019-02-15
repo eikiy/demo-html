@@ -6,7 +6,7 @@
 <meta name='description' content=""/>
 <meta name='keywords' content=""/>
 <link rel="stylesheet" href="css/style.css">
-
+<link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
 <main class="traitTestBox traitTestGo">
@@ -14,12 +14,12 @@
 		<div class="QABox">
 			<div class="top_bg"></div>
 			<div class="bottom_qa">
-				<div class="question" data-scroll-reveal="enter top">
+				<div class="question animated fadeIn">
 					<p>我願意冒著很大風險<br>去從事一個可以有很大報酬的事件</p>
 				</div>
 				<p class="time"><span>03:00</span></p>
 				<p class="Q_nb"><span>1/56</span></p>
-				<ul class="answerBox" data-scroll-reveal="enter bottom enter left over 1s after 0.5s">
+				<ul class="answerBox animated fadeInUp" style="animation-duration: 3s;animation-iteration-count:1">
 					<li><p><a href="trait_test_end.html">完全不符合</a></p></li>
 					<li><p><a href="trait_test_end.html">大致不符合</a></p></li>
 					<li><p><a href="trait_test_end.html">大概不是</a></p></li>
@@ -30,17 +30,6 @@
 			</div>
 		</div>
 	</div>
-
-<script src="js/scrollReveal.js"></script>
-	<script>
-      if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
-          (function(){
-          window.scrollReveal = new scrollReveal({reset: true});
-        })();
-      };
-	</script>
-</main>
-
 </body>
 </html>
 
