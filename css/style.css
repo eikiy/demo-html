@@ -1529,38 +1529,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 
 .interviewee_info .c_dark_blue{ border-color: #558C9E; border-width: 3px; }
 .interviewee_info h3.test_report_title { background-color: #D1E0E5; line-height: 25px; padding: 5px 0; border-radius: 10px 0 0 0; text-align: center; }
-.interviewee_info .test_report{ width: 100%; border-radius: 0px 0 10px 10px; border:2px solid #81B6C8; }
-.interviewee_info .test_report h4.r_title{ width: 100%; font-size: 24px; color:#D1E0E5; padding-top: 14px; display: inline-block; height: 57px; position: relative; background-color: #81B6C8; text-align: right; padding-right: 85px;}
-.interviewee_info .test_report h4.r_title::after{ content: ""; width: 65px; height: 55px; position: absolute; bottom: 0; right: 10px; display: block;  background-repeat: no-repeat; background-size: contain; background-position: center center; }
-.interviewee_info .test_report h4.s_icon_00::after{ background-image: url(../images/user_info/r_title_icon_00.png); }
-.interviewee_info .test_report h4.s_icon_01::after{ background-image: url(../images/user_info/r_title_icon_01.png); }
-.interviewee_info .test_report h4.s_icon_02::after{ background-image: url(../images/user_info/r_title_icon_02.png); }
-.interviewee_info .test_report h4.s_icon_03::after{ background-image: url(../images/user_info/r_title_icon_03.png); }
-.interviewee_info .test_report h4.s_icon_04::after{ background-image: url(../images/user_info/r_title_icon_04.png); }
-.interviewee_info .test_report h4.s_icon_05::after{ background-image: url(../images/user_info/r_title_icon_05.png); }
-.interviewee_info .test_report h4.s_icon_06::after{ background-image: url(../images/user_info/r_title_icon_06.png); }
-.interviewee_info .test_report h4.s_icon_07::after{ width: 73px; background-image: url(../images/user_info/r_title_icon_07.png); }
-.interviewee_info .test_report h4.bg_dark_blue{ text-align: left; padding-left: 100px; background-color: #558C9E;}
-.interviewee_info .test_report h4.bg_dark_blue::after{ right: initial; left: 10px;}
-.interviewee_info .test_report h4.bg_light_blue{ text-align: left; padding-left: 100px; background-color: #D1E0E5; color: #81B6C8;}
-.interviewee_info .test_report h4.bg_light_blue::after{ right: initial; left: 10px;}
 
-.interviewee_info .test_report .u_infoBox{ margin: 15px; }
-.interviewee_info .test_report .tBox:first-child .u_infoBox{ margin-right: 10px; }
-.interviewee_info .test_report .tBox:last-child .u_infoBox{ margin-left: 10px; }
+.test_report{ width: 100%; border-radius: 0px 0 10px 10px; border:2px solid #81B6C8; }
+.test_report h4.r_title{ width: 100%; font-size: 24px; color:#D1E0E5; padding-top: 14px; display: inline-block; height: 57px; position: relative; background-color: #81B6C8; text-align: right; padding-right: 85px;}
+.test_report h4.r_title::after{ content: ""; width: 65px; height: 55px; position: absolute; bottom: 0; right: 10px; display: block;  background-repeat: no-repeat; background-size: contain; background-position: center center; }
+.test_report h4.s_icon_00::after{ background-image: url(../images/user_info/r_title_icon_00.png); }
+.test_report h4.s_icon_01::after{ background-image: url(../images/user_info/r_title_icon_01.png); }
+.test_report h4.s_icon_02::after{ background-image: url(../images/user_info/r_title_icon_02.png); }
+.test_report h4.s_icon_03::after{ background-image: url(../images/user_info/r_title_icon_03.png); }
+.test_report h4.s_icon_04::after{ background-image: url(../images/user_info/r_title_icon_04.png); }
+.test_report h4.s_icon_05::after{ background-image: url(../images/user_info/r_title_icon_05.png); }
+.test_report h4.s_icon_06::after{ background-image: url(../images/user_info/r_title_icon_06.png); }
+.test_report h4.s_icon_07::after{ width: 73px; background-image: url(../images/user_info/r_title_icon_07.png); }
+.test_report h4.bg_dark_blue{ text-align: left; padding-left: 100px; background-color: #558C9E;}
+.test_report h4.bg_dark_blue::after{ right: initial; left: 10px;}
+.test_report h4.bg_light_blue{ text-align: left; padding-left: 100px; background-color: #D1E0E5; color: #81B6C8;}
+.test_report h4.bg_light_blue::after{ right: initial; left: 10px;}
 
-.interviewee_info .test_report ul.cards{ text-align:  center; padding: 20px 0; }
-.interviewee_info .test_report ul.cards li.card_info{ display: inline-flex; margin: 10px; }
-.interviewee_info .test_report ul.cards li.card_info .top_pic{ width: 220px; height: 330px; display: block; background-repeat: no-repeat; background-size: contain; background-position: center center; }
+.test_report .u_infoBox{ margin: 15px; }
+.test_report .tBox:first-child .u_infoBox{ margin-right: 10px; }
+.test_report .tBox:last-child .u_infoBox{ margin-left: 10px; }
+
+.test_report ul.cards{ text-align:  center; padding: 20px 0; }
+.test_report ul.cards li.card_info{ display: inline-flex; margin: 10px; }
+.test_report ul.cards li.card_info .top_pic{ width: 220px; height: 330px; display: block; background-repeat: no-repeat; background-size: contain; background-position: center center; }
 
 
-.interviewee_info .test_report table.suggest{ width: 100%; position: relative; }
-.interviewee_info .test_report table.suggest p{line-height: 20px; text-align: justify;}
-.interviewee_info .test_report table.suggest .top_title{ position: absolute; top: -30px; width: 100%; }
-.interviewee_info .test_report table.suggest .top_title p{ text-align: right; color: #fff; }
-.interviewee_info .test_report table.suggest tr td{ padding: 10px; vertical-align: middle; border-left:#558C9E 2px solid; border-top:#558C9E 2px solid;  }
-.interviewee_info .test_report table.suggest tr td:first-child{ border-left: none; }
-.interviewee_info .test_report table.suggest tr td:first-child p {color:#81B6C8; font-size: 18px; font-weight: bold; text-align: center;}
+.test_report table.suggest{ width: 100%; position: relative; }
+.test_report table.suggest p{line-height: 20px; text-align: justify;}
+.test_report table.suggest .top_title{ position: absolute; top: -30px; width: 100%; }
+.test_report table.suggest .top_title p{ text-align: right; color: #fff; }
+.test_report table.suggest tr td{ padding: 10px; vertical-align: middle; border-left:#558C9E 2px solid; border-top:#558C9E 2px solid;  }
+.test_report table.suggest tr td:first-child{ border-left: none; }
+.test_report table.suggest tr td:first-child p {color:#81B6C8; font-size: 18px; font-weight: bold; text-align: center;}
 
 .interviewee_info .test_invalid{ border-color: #C87D86;}
 .interviewee_info .test_invalid h3.test_report_title{ background-color: #C87D86; border-radius: 0; color: #fff; }
@@ -1631,8 +1632,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 .interviewee_info .new_report .top_topic p.info span{ color: inherit; text-decoration: underline; padding: 0; }
 .interviewee_info .new_report .top_topic p.red_note{ color: #C87D86; }
 
-.interviewee_info .test_report .positive_behavior{ max-width: 778px; margin: 35px auto 0 auto; }
-.interviewee_info .test_report .positive_behavior table.analysis{ width: 100%; }
+.test_report .positive_behavior{ max-width: 778px; margin: 35px auto 0 auto; }
+.test_report .positive_behavior table.analysis{ width: 100%; }
 table.analysis tr td{ border-top: 1px solid #558C9E; border-right: 2px solid #558C9E; vertical-align: middle;}
 table.analysis tr th{ border-bottom: 2px solid #558C9E; border-right: 2px solid #558C9E; }
 table.analysis tr th.percentage{ position: relative; }
@@ -1645,33 +1646,33 @@ table.analysis{ text-align: center; }
 table.analysis .progress_container{ width:100%; height:34px; position:relative; background: url(../images/user_info/bg_progressbar.png) center center no-repeat; background-size: cover;}
 table.analysis .progress_container::after{ content: ""; position: absolute; left:calc(50% - 1px); width: 1px; height: 100%; border-right: 2px dashed #558C9E;}
 table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; position:absolute; line-height:inherit;}
-.interviewee_info .test_report .note_positive_behavior{ max-width: 778px; margin: 0px auto 25px auto; position: relative; padding: 15px 0; }
-.interviewee_info .test_report .note_positive_behavior p{ font-size: 12px; }
-.interviewee_info .test_report .note_positive_behavior p.p_right{ font-size: 14px; position: absolute; top: 12px; right: 0px; }
+.test_report .note_positive_behavior{ max-width: 778px; margin: 0px auto 25px auto; position: relative; padding: 15px 0; }
+.test_report .note_positive_behavior p{ font-size: 12px; }
+.test_report .note_positive_behavior p.p_right{ font-size: 14px; position: absolute; top: 12px; right: 0px; }
 
-.interviewee_info .test_report .overall{ padding: 15px; background-color: #EFF7FA; }
-.interviewee_info .test_report .overall .overall_type{/* margin:10px 15px 30px 15px;*/ border:10px #EB8B70 solid; border-radius: 15px 0 15px 15px;}
-.interviewee_info .test_report .overall .top_box{ border-bottom:10px #EB8B70 solid; padding: 16px 40px;}
-.interviewee_info .test_report .overall .top_box p{ font-size: 18px; }
-.interviewee_info .test_report .overall .top_box ul{ width: 100%; padding: 15px 0 5px 0; }
-.interviewee_info .test_report .overall .top_box ul li{ float: left; width: 25%; padding-right: 15px; padding-bottom: 10px; position: relative; }
-.interviewee_info .test_report .testfraction_box{ padding: 15px 40px;}
-.interviewee_info .test_report .testfraction_box p.title{ float: left; font-size: 24px; color: #558C9E; line-height: 33px; width: 165px; padding-top: 20px;}
-.interviewee_info .test_report .testfraction_box p.fraction{ float: left; width: 90px; float: left; text-align: center; color: #81B6C8; }
-.interviewee_info .test_report .testfraction_box p.fraction span{ color: #558C9E; font-size: 18px; display: block; padding: 0; line-height: 35px; }
-.interviewee_info .test_report .testfraction_box .progress_container{ float: left; width:calc(100% - 255px); height:34px; position:relative; margin-top: 20px;background: url(../images/user_info/bg_progressbar.png) center center no-repeat; background-size: cover;}
-.interviewee_info .test_report .testfraction_box .progressbar{ background-color:#69A07C; top: 5px; color: #fff; text-align: center; letter-spacing: 3px; height:25px; position:absolute; line-height:inherit;}
-.interviewee_info .test_report .testfraction_box .progressbar span{ min-width: 100px; display: block; }
-.interviewee_info .test_report .other_test_fraction{ border-color: #D1E0E5; border-width: 3px; }
-.interviewee_info .test_report .other_test_fraction .testfraction_box{ border-top:2px solid #D1E0E5;}
-.interviewee_info .test_report .other_test_fraction .testfraction_box p.title{ font-size: 18px; text-align: center; padding-bottom: 10px; }
-.interviewee_info .test_report .other_test_fraction .testfraction_box .progressbar{ background-color: #81B6C8; }
-.interviewee_info .test_report .other_test_fraction .testfraction_box .progress_container{ position: relative; }
-.interviewee_info .test_report .other_test_fraction .testfraction_box .progress_container .top_title{ position: absolute; top: -19px; }
-.interviewee_info .test_report .other_test_fraction .testfraction_box .progress_container .top_title p{ text-align: center; position: relative; font-size: 12px; }
-.interviewee_info .test_report .other_test_fraction .testfraction_box .progress_container .top_title p span{ position: absolute; color: #4A4A4A; }
-.interviewee_info .test_report .other_test_fraction .testfraction_box .progress_container .top_title p span.f_l{ left: 0; }
-.interviewee_info .test_report .other_test_fraction .testfraction_box .progress_container .top_title p span.f_r{ right: 10px; }
+.test_report .overall{ padding: 15px; background-color: #EFF7FA; }
+.test_report .overall .overall_type{/* margin:10px 15px 30px 15px;*/ border:10px #EB8B70 solid; border-radius: 15px 0 15px 15px;}
+.test_report .overall .top_box{ border-bottom:10px #EB8B70 solid; padding: 16px 40px;}
+.test_report .overall .top_box p{ font-size: 18px; }
+.test_report .overall .top_box ul{ width: 100%; padding: 15px 0 5px 0; }
+.test_report .overall .top_box ul li{ float: left; width: 25%; padding-right: 15px; padding-bottom: 10px; position: relative; }
+.test_report .testfraction_box{ padding: 15px 40px;}
+.test_report .testfraction_box p.title{ float: left; font-size: 24px; color: #558C9E; line-height: 33px; width: 165px; padding-top: 20px;}
+.test_report .testfraction_box p.fraction{ float: left; width: 90px; float: left; text-align: center; color: #81B6C8; }
+.test_report .testfraction_box p.fraction span{ color: #558C9E; font-size: 18px; display: block; padding: 0; line-height: 35px; }
+.test_report .testfraction_box .progress_container{ float: left; width:calc(100% - 255px); height:34px; position:relative; margin-top: 20px;background: url(../images/user_info/bg_progressbar.png) center center no-repeat; background-size: cover;}
+.test_report .testfraction_box .progressbar{ background-color:#69A07C; top: 5px; color: #fff; text-align: center; letter-spacing: 3px; height:25px; position:absolute; line-height:inherit;}
+.test_report .testfraction_box .progressbar span{ min-width: 100px; display: block; }
+.test_report .other_test_fraction{ border-color: #D1E0E5; border-width: 3px; }
+.test_report .other_test_fraction .testfraction_box{ border-top:2px solid #D1E0E5;}
+.test_report .other_test_fraction .testfraction_box p.title{ font-size: 18px; text-align: center; padding-bottom: 10px; }
+.test_report .other_test_fraction .testfraction_box .progressbar{ background-color: #81B6C8; }
+.test_report .other_test_fraction .testfraction_box .progress_container{ position: relative; }
+.test_report .other_test_fraction .testfraction_box .progress_container .top_title{ position: absolute; top: -19px; width: 100%;}
+.test_report .other_test_fraction .testfraction_box .progress_container .top_title p{ text-align: center; position: relative; font-size: 12px; }
+.test_report .other_test_fraction .testfraction_box .progress_container .top_title p span{ position: absolute; color: #4A4A4A; }
+.test_report .other_test_fraction .testfraction_box .progress_container .top_title p span.f_l{ left: 0; }
+.test_report .other_test_fraction .testfraction_box .progress_container .top_title p span.f_r{ right: 10px; }
 
 .interviewee_info h4.dividing_line{ border-top:2px solid #D8D8D8; padding: 15px 60px 0px 60px; margin-top: 10px; font-size: 20px ; color: #4A4A4A;}
 .interviewee_info .behavior_description {border-color: #EBEBEB;}
