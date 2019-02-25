@@ -838,6 +838,7 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 .interviewMainBox .qaBox {padding-bottom: 30px;}
 .interviewMainBox .qaBox .fBox{padding-top: 15px;}
 .interviewMainBox .qaBox .top_titleBox p{ color: #9B9B9B; line-height: 30px; padding-top: 10px; }
+.interviewMainBox .qaBox .top_titleBox .fBox p.top_title{padding-top: 0;}
 .interviewMainBox .qaBox .top_titleBox input{ max-width: 500px; }
 
 .interviewMainBox .use_fillinBox .last_company { max-width: 745px; padding-left: 24px; }
@@ -847,13 +848,13 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 .interviewMainBox .use_fillinBox .last_company input.i_03{ max-width: 282px; margin-right: 46px; }
 .interviewMainBox .use_fillinBox .last_company input.i_04{ max-width: 282px; }
 
-.interviewMainBox .use_fillinBox .superiority { max-width: inherit; padding-left: 0; max-width: 825px; margin: 0 auto;}
+.interviewMainBox .use_fillinBox .superiority { max-width: inherit; padding-left: 0; max-width: 946px; margin: 0 auto;}
 .interviewMainBox .use_fillinBox .superiority .fBox{ justify-content: flex-end;}
 .interviewMainBox .use_fillinBox .superiority input.i_01{ max-width: 690px; }
 .interviewMainBox .use_fillinBox .superiority input.i_02{ max-width: 578px; }
 .interviewMainBox .use_fillinBox .superiority input.i_03{ max-width: 504px; margin: 0;}
-.interviewMainBox .use_fillinBox .superiority input.i_04{ max-width: 324px;}
-.interviewMainBox .use_fillinBox .superiority input.i_05{ max-width: 648px;}
+.interviewMainBox .use_fillinBox .superiority input.i_04{ max-width: 450px;}
+.interviewMainBox .use_fillinBox .superiority input.i_05{ max-width: 772px;}
 
 
 .interviewMainBox .use_fillinBox ul.whyBox{ padding-top: 20px; padding-bottom: 0; min-height: 380px; max-width: 100%;}
@@ -863,7 +864,10 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 .interviewMainBox .whyBox .fBox textarea.b-h1{ min-height: 125px; max-width: 301px; min-width: 301px;}
 .interviewMainBox .whyBox .fBox textarea.b-h2{ min-height: 185px; max-width: 301px; min-width: 301px;}
 
-.interviewMainBox .fillDone{ min-height: 488px; background: url(../images/img_done.png) center bottom no-repeat; background-size: cover; }
+.interviewMainBox .use_fillinBox ul.fill_in li.title_w100{ padding: 0; }
+.interviewMainBox .whyBox .title_w100 p.title_s{ color: #9B9B9B; padding: 0 7px; }
+
+.interviewMainBox .fillDone{ min-height: 488px; background: url(../images/img_done.png) center bottom no-repeat; background-size: contain; }
 .interviewMainBox .fillDone .thankyou{ min-height: 412px; }
 .interviewMainBox .fillDone .thankyou p{ font-size: 18px; padding: 150px 0 0 296px; color: #9B9B9B; line-height: 25px; }
 

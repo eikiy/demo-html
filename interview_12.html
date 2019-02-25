@@ -52,34 +52,57 @@ $(document).ready(function() {
 			</div>
 		</div>
 		<form class="use_fillinBox">
+			<ul class="fill_in companyBox whyBox">
+				<li>
+					<div class="fBox">
+						<div class="both">
+							<p class="title_s">您的優點是什麼</p>
+							<textarea class="b-h1" type="text"></textarea>
+	                    </div>
+					</div>
+
+					<div class="fBox">
+						<div class="both">
+							<p class="title_s">您的缺點是什麼</p>
+							<textarea class="b-h1" type="text"></textarea>
+						</div>
+					</div>
+
+					<div class="fBox">
+						<div class="both">
+							<p class="title_s">您的缺點要如何克服、改善或防止</p>
+							<textarea class="b-h1 red_error" type="text"></textarea><!-- 格式錯誤會加: red_error -->
+						</div>
+					</div>
+				</li>
+				<li class="title_w100">
+					<p class="title_s">您未來個人職涯規劃是什麼</p>
+				</li>
+				<li>
+					<div class="fBox">
+						<div class="both">
+							<p class="title_s">短期（2~3年）</p>
+							<textarea class="b-h1" type="text"></textarea>
+	                   	</div>
+					</div>
+
+					<div class="fBox">
+						<div class="both">
+							<p class="title_s">中期（3~5年）</p>
+							<textarea class="b-h1" type="text"></textarea>
+						</div>
+					</div>
+
+					<div class="fBox">
+						<div class="both">
+							<p class="title_s">長期（5年之後）</p>
+							<textarea class="b-h1" type="text"></textarea>
+						</div>
+					</div>
+				</li>
+			</ul>
+
 			<div class="qaBox last_company superiority">
-					<div class="fBox">
-						<p class="top_title">您的優點是什麼</p>
-						<input class="i_01" type="text" name="">
-					</div>
-					<div class="fBox">
-						<p class="top_title">您的缺點是什麼</p>
-						<input class="i_01 red_error" type="text" name=""> <!-- 格式錯誤會加: red_error -->
-					</div>
-					<div class="fBox">
-						<p class="top_title">您的缺點要如何克服、改善或防止</p>
-						<input class="i_02" type="text" name="">
-					</div>
-					<div class="fBox">
-						<p class="top_title">您未來個人職涯規劃是什麼</p>
-						<p class="top_title">短期（2~3年）</p>
-						<input class="i_03" type="text" name="">
-					</div>
-					<div class="fBox">
-						<!-- <p class="top_title">您未來個人職涯規劃是什麼</p> -->
-						<p class="top_title">中期（3~5年）</p>
-						<input class="i_03" type="text" name="">
-					</div>
-					<div class="fBox">
-						<!-- <p class="top_title">您未來個人職涯規劃是什麼</p> -->
-						<p class="top_title">長期（5年之後）</p>
-						<input class="i_03" type="text" name="">
-					</div>
 					<div class="fBox">
 						<p class="top_title">您對本公司這份工作，能接受的最低薪資是多少（月薪或年薪可擇一回答）</p>
 						<input class="i_04" type="text" name="">
@@ -89,7 +112,7 @@ $(document).ready(function() {
 						<input class="i_05" type="text" name="">
 					</div>
 			</div>
-			
+
 			<p class="btn btn-both clearfix">
 				<a class="l-btn yellow" href="interview_11.html">上一步</a> 
 				<a class="yellow" href="interview_13.html">下一步</a>
