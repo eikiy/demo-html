@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>系統設定</title>
+<meta name='description' content=""/>
+<meta name='keywords' content=""/>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+<!-- Magnific Popup core JS file -->
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.popup-link').magnificPopup({
+      removalDelay: 300,
+      mainClass: 'mfp-fade'
+    });
+});
+</script>
+
+</head>
+<body>
+
+<header class="headerBox">
+	<div class="contentsBox clearfix">
+		<a class="logo" href="#"></a>
+		<div class="searchBox">
+			<input type="text" name="" placeholder="搜尋公司名稱/統編">
+			<a href="#"></a>
+		</div>
+		<ul class="tools">
+			<li><a class="message" href="#"><span>3</span></a></li>
+			<li><a class="logout" href="#"></a></li>
+		</ul>
+	</div>
+</header>
+
+<main class="mainBox">
+	<div class="contentsBox clearfix">
+		<section class="side_menu">
+			<h1 class="title">明天<br>
+			企業股份有限公司</h1>
+			<ul class="menu">
+				<li><p><a class="icon_01" href="management.html">客戶管理</a></p></li>
+				<li><p><a class="icon_02" href="recruit_record.html">所有招募</a></p></li>
+				<li><p class="btn_in"><a class="icon_04" href="setting.html">系統設定</a></p></li>
+			</ul>
+		</section>
+		<section class="right_contents pad_top clearfix">
+			<div class="theBox settingBox">
+				<ul class="set_list">
+					<li class="top_title clearfix">
+						<div class="set_box"><p>帳號名稱</p></div>
+						<div class="set_box"><p>密碼</p></div>
+						<div class="set_box tools">
+							<p>帳密修改/刪除</p>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="set_box"><p>TOMMY</p></div>
+						<div class="set_box"><p>***********</p></div>
+						<div class="set_box tools">
+							<p class="btn">
+								<a class="" href="#">修改</a>
+							</p>
+							<a class="go_delete popup-link" href="#popup-delete"></a>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="set_box"><p>CINDY</p></div>
+						<div class="set_box"><p>***********</p></div>
+						<div class="set_box tools">
+							<p class="btn">
+								<a class="" href="#">修改</a>
+							</p>
+							<a class="go_delete popup-link" href="#popup-delete"></a>
+						</div>
+					</li>
+				</ul>
+				<div class="the_department_list" style="top: 108px;">
+		        	<h4>新增帳號<button title="Close (Esc)" type="button" class="subBox-close">×</button></h4>
+		        	<div class="fillinBox the_contract">
+		                <ul>
+		                    <li class="day">
+		                        <label class="l_title" for=""><p>帳號名稱</p></label>
+		                        <input class="r_info" id="" name="" type="text" value="CINDY">
+		                    </li>
+		                    <li class="time">
+		                        <label class="l_title" for=""><p>輸入密碼</p></label>
+		                        <input class="r_info" id="" name="" type="text" value="asdfghjklsd">
+		                    </li>
+		                    <li>
+		                        <label class="l_title" for=""><p>確認密碼</p></label>
+		                        <input class="r_info" id="" name="" type="text" value="************">
+		                    </li>
+		                    <li>
+		                    	<p class="btn">
+		                    		<a class="" href="#">複製</a>
+		                    		<a class="" href="#">隨機產生密碼</a>
+		                    	</p>
+		                    </li>
+		                    <li>
+		                    	<p class="btn blue_small"><a class="" href="#">確認</a></p>
+		                    </li>
+		                </ul>
+		            </div>
+		        </div>
+			</div>
+		</section>
+	</div>
+	<!-- popup 部門刪除紅色按鈕 - delete-->
+	<div id="popup-delete" class="white-popup popup-w-s mfp-hide">
+        <div class="setBox messageBox">
+            <div class="RedBox">
+                <p class="info">請問確定刪除 <span>TOMMY</span> 嗎？
+            </div>
+            <p class="btn"><a class="bg_gary" href="#">取消</a><a class="bg_red" href="#">確認刪除</a></p>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
+
+
+

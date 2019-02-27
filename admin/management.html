@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>客戶管理</title>
+<meta name='description' content=""/>
+<meta name='keywords' content=""/>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+<!-- Magnific Popup core JS file -->
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.popup-link').magnificPopup({
+      removalDelay: 300,
+      mainClass: 'mfp-fade'
+    });
+});
+</script>
+
+</head>
+<body>
+
+<!--=================================
+	請馬克幫我增加屬性，
+	當點了popup後 header 和 main 的css
+	都要加以下屬性才會有模糊效果：
+
+	-webkit-filter: blur(0.4rem);
+    -moz-filter: blur(0.4rem);
+    -o-filter: blur(0.4rem);
+    -ms-filter: blur(0.4rem);
+    filter: blur(0.4rem);
+================================= -->
+
+<header class="headerBox for_management_top">
+	<div class="contentsBox clearfix">
+		<a class="logo" href="#"></a>
+		<div class="searchBox search_all">
+			<input type="text" name="" placeholder="搜尋公司名稱/統編">
+			<a href="#"></a>
+			<!-- <ul class="search_list">
+				<li class="clearfix">
+					<div class="avatar male">
+						<img src="images/user_photo_02.png" width="100%">
+					</div>
+					<div class="info clearfix">
+						<p class="name">陳明天</p>
+						<p class="department">人資部部長</p>
+						<p class="job_title">行政管理處/人資部</p>
+					</div>
+					<div class="statu">
+						<p>員</p>
+					</div>
+				</li>
+
+				<li class="clearfix">
+					<div class="avatar male">
+					</div>
+					<div class="info clearfix">
+						<p class="name">陳明天</p>
+						<p class="department">人資部部長</p>
+						<p class="job_title">行政管理處/人資部</p>
+					</div>
+					<div class="statu">
+						<p class="skyblue">招</p>
+					</div>
+				</li>
+
+				<li class="clearfix">
+					<div class="avatar male">
+					</div>
+					<div class="info clearfix">
+						<p class="name">陳明天</p>
+						<p class="department">人資部部長</p>
+						<p class="job_title">行政管理處/人資部</p>
+					</div>
+					<div class="statu">
+						<p class="gray">離</p>
+					</div>
+				</li>
+
+				<li class="clearfix">
+					<div class="avatar male">
+					</div>
+					<div class="info clearfix">
+						<p class="name">陳明天</p>
+						<p class="department">人資部部長</p>
+						<p class="job_title">行政管理處/人資部</p>
+					</div>
+					<div class="statu">
+						<p class="gray">離</p>
+					</div>
+				</li>
+			</ul> -->
+		</div>
+		<p class="add_customers"><a class="add popup-link" href="#popup-customers">新增客戶資料</a></p>
+		<ul class="tools">
+			<li><a class="message" href="#"><span>3</span><div class="tooltip">通知</div></a>
+				<div class="message_listBox">
+					<div class="top_tips"><p class="left_p"><a href="#">歷史通知</a></p><p><a href="#">全部標示為已讀</a></p></div>
+					<div class="none_message">
+						<p>目前沒有新的通知<br><span>更多可以查看歷史通知</span></p>
+					</div>
+				</div>
+			</li>
+			<li><a class="logout" href="#"><div class="tooltip">登出</div></a></li>
+		</ul>
+	</div>
+</header>
+
+<main class="mainBox for_management">
+	<div class="contentsBox clearfix" style="width: 1000px;">
+		<section class="side_menu">
+			<h1 class="title">凱茂<br>
+				股份有限公司
+			</h1>
+			<ul class="menu">
+				<li><p class="btn_in"><a class="icon_01" href="management.html">客戶管理</a></p></li>
+				<li><p><a class="icon_02" href="recruit_record.html">所有招募</a></p></li>
+				<li><p><a class="icon_04" href="setting.html">系統設定</a></p></li>
+			</ul>
+		</section>
+
+		<section class="right_contents clearfix">
+			<div class="managementBox">
+				<div class="top_toolsBox clearfix">
+					<ul class="type clearfix">
+						<li class="btn_in"><p><a href="#"><span>加入時間</span></a></p></li>
+						<li class="btn_in_botoom"><p><a href="#"><span>最後購買日</span></a></p></li>
+						<li><p><a href="#"><span>總儲值數</span></a></p></li>
+						<li><p><a href="#"><span>剩餘點數</span></a></p></li>
+					</ul>
+					<p class="btn_filter"><a class="btn_in popup-link" href="#popup-btn_filter"><span>篩選</span></a></p>
+				</div>
+				<ul class="company_list">
+					<li class="clearfix">
+						<div class="user_photo">
+							<div class="avatar">
+								<div class="info">
+									<p class="phone">嚴厲方小姐<br>
+									0936.616666</p>
+								</div>
+								<img src="images/user_photo_02.png" width="100%">
+							</div>
+						</div>
+						<div class="user_data">
+							<div class="application_department clearfix">
+								<p class="company_name">明天顧問有限公司<br>
+								統編：77889988</p>
+								<p class="supervisor">最後購買日：2018/11/01<br>
+								會員到期日：2019/11/11</p>
+							</div>
+							<ul class="stepBox clearfix">
+								<li class="btn_in"><a class="icon_01 popup-link" href="#popup-customers-basic"></a><p class="ex">基本資料</p></li>
+								<li><a class="icon_02 popup-link" href="#popup-account-management"></a><p class="ex">帳號管理</p></li>
+								<li><a class="icon_03 popup-link" href="#popup-storedvalue-record"></a><p class="ex">儲值紀錄</p></li>
+								<li><a class="icon_04 popup-link" href="#popup-use"></a><p class="ex">使用紀錄</p></li>
+								<li><a class="icon_05 popup-link" href="#popup-filter-all"></a><p class="ex">招募紀錄<p></li>
+								<li><p class="points">5</p><p class="ex">剩餘點數</p></li>
+								<li><p class="points">1155</p><p class="ex">總儲值數</p></li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="the_active clearfix">
+						<div class="user_photo">
+							<div class="avatar">
+								<div class="info">
+									<p class="phone">嚴厲方小姐<br>
+									0936.616666</p>
+								</div>
+								<img src="images/user_photo_01.png" width="100%">
+							</div>
+						</div>
+						<div class="user_data">
+							<div class="application_department clearfix">
+								<p class="company_name">興發有限公司<br>
+									統編：34885699</p>
+								<p class="supervisor">最後購買日：2018/01/01<br>
+								會員到期日：2018/11/01</p>
+							</div>
+							<ul class="stepBox clearfix">
+								<li class="btn_in"><a class="icon_01 popup-link" href="#popup-customers-basic"></a><p class="ex">基本資料</p></li>
+								<li><a class="icon_02 popup-link" href="#popup-account-management"></a><p class="ex">帳號管理</p></li>
+								<li><a class="icon_03 popup-link" href="#popup-storedvalue-record"></a><p class="ex">儲值紀錄</p></li>
+								<li><a class="icon_04 popup-link" href="#popup-use"></a><p class="ex">使用紀錄</p></li>
+								<li><a class="icon_05 popup-link" href="#popup-filter-all"></a><p class="ex">招募紀錄<p></li>
+								<li><p class="points">100</p><p class="ex">剩餘點數</p></li>
+								<li><p class="points">0</p><p class="ex">總儲值數</p></li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="clearfix">
+						<div class="user_photo">
+							<div class="avatar">
+								<div class="info">
+									<p class="phone">嚴厲方小姐<br>
+									0936.616666</p>
+								</div>
+								<img src="images/user_photo_03.png" width="100%">
+							</div>
+						</div>
+						<div class="user_data">
+							<div class="application_department clearfix">
+								<p class="company_name">傘客創意股份有限公司<br>統編：12345678</p>
+								<p class="supervisor">最後購買日：2018/01/01<br>
+								會員到期日：2018/11/01</p>
+							</div>
+							<ul class="stepBox clearfix">
+								<li class="btn_in"><a class="icon_01 popup-link" href="#popup-customers-basic"></a><p class="ex">基本資料</p></li>
+								<li><a class="icon_02 popup-link" href="#popup-account-management"></a><p class="ex">帳號管理</p></li>
+								<li><a class="icon_03 popup-link" href="#popup-storedvalue-record"></a><p class="ex">儲值紀錄</p></li>
+								<li><a class="icon_04 popup-link" href="#popup-use"></a><p class="ex">使用紀錄</p></li>
+								<li><a class="icon_05 popup-link" href="#popup-filter-all"></a><p class="ex">招募紀錄<p></li>
+								<li><p class="points">50</p><p class="ex">剩餘點數</p></li>
+								<li><p class="points">50</p><p class="ex">總儲值數</p></li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="clearfix">
+						<div class="user_photo">
+							<div class="avatar">
+								<div class="info">
+									<p class="phone">嚴厲方小姐<br>
+									0936.616666</p>
+								</div>
+								<img src="images/user_photo_04.png" width="100%">
+							</div>
+						</div>
+						<div class="user_data">
+							<div class="application_department clearfix">
+								<p class="company_name">貝比股份有限公司 <br>統編：77889988</p>
+								<p class="supervisor">最後購買日：<br>
+								會員到期日：</p>
+							</div>
+							<ul class="stepBox clearfix">
+								<li class="btn_in"><a class="icon_01 popup-link" href="#popup-customers-basic"></a><p class="ex">基本資料</p></li>
+								<li><a class="icon_02 popup-link" href="#popup-account-management"></a><p class="ex">帳號管理</p></li>
+								<li><a class="icon_03 popup-link" href="#popup-storedvalue-record"></a><p class="ex">儲值紀錄</p></li>
+								<li><a class="icon_04 popup-link" href="#popup-use"></a><p class="ex">使用紀錄</p></li>
+								<li><a class="icon_05 popup-link" href="#popup-filter-all"></a><p class="ex">招募紀錄<p></li>
+								<li><p class="points">50</p><p class="ex">剩餘點數</p></li>
+								<li><p class="points">50</p><p class="ex">總儲值數</p></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="calendar_toolsBox">
+				<div class="calendar_month">
+					<div class="monthBox">
+						<div class="top_year_month">
+							<p><span>2019年1月
+								<a class="left_arr" href="#"></a>
+								<a class="right_arr" href="#"></a></span>
+							</p>
+						</div>
+						<div class="dateBox">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<th><p>日</p></th>
+									<th><p>一</p></th>
+									<th><p>二</p></th>
+									<th><p>三</p></th>
+									<th><p>四</p></th>
+									<th><p>五</p></th>
+									<th><p>六</p></th>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><p class="btn_in">1</p>
+										<p class="ring_color">
+											<span class="green"></span>
+											<span class="red"></span>
+											<span class="org"></span>
+										</p>
+									</td>
+									<td><p>2</p></td>
+									<td><p>3</p></td>
+								</tr>
+								<tr>
+									<td><p>4</p></td>
+									<td><p>5</p></td>
+									<td><p>6</p>
+										<p class="ring_color">
+											<span class="red"></span>
+											<span class="org"></span>
+										</p>
+									</td>
+									<td><p>7</p></td>
+									<td><p>8</p></td>
+									<td><p>9</p></td>
+									<td><p>10</p></td>
+								</tr>
+								<tr>
+									<td><p>11</p></td>
+									<td><p>12</p></td>
+									<td><p>13</p></td>
+									<td><p>14</p></td>
+									<td><p>15</p></td>
+									<td><p>16</p></td>
+									<td><p>17</p></td>
+								</tr>
+								<tr>
+									<td><p>18</p></td>
+									<td><p>19</p></td>
+									<td><p>20</p></td>
+									<td><p>21</p></td>
+									<td><p class="btn_in">22</p></td>
+									<td><p>23</p></td>
+									<td><p>24</p></td>
+								</tr>
+								<tr>
+									<td><p>25</p></td>
+									<td><p>26</p></td>
+									<td><p>27</p></td>
+									<td><p>28</p></td>
+									<td><p>29</p></td>
+									<td><p>30</p></td>
+									<td><p>31</p></td>
+								</tr>
+								<tr><!-- 假設又多了一排 -->
+									<td><p>25</p></td>
+									<td><p class="btn_in">26</p></td>
+									<td><p>27</p></td>
+									<td><p>28</p></td>
+									<td><p>29</p></td>
+									<td><p>30</p></td>
+									<td><p>31</p></td>
+								</tr>
+
+							</table>
+						</div>
+					</div>
+					<p class="ring_color">
+						<span class="green">儲值</span>
+						<span class="red">到期</span>
+						<span class="org">加入VIP</span>
+					</p>
+					<div class="monthBox today_nothingBox">
+						<div class="top_year_month">
+							<p><span>2018年11月 星期四</span></p>
+						</div>
+						<div class="messageBox">
+							<p>今天行程是空白頁~</p>
+						</div>
+					</div>
+					<div class="day_list">
+						<ul>
+							<li class="top_title"><h3>2018/11/01  星期四 </h3></li>
+							<li class="clearfix">
+								<a href="#">
+									<div class="statu green"><p>儲</p></div>
+									<div class="info">
+										<div class="identity">
+											<p class="name">明天顧問有限公司</p>
+											<p>儲值：150點</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="clearfix">
+								<a href="#">
+									<div class="statu red"><p>到</p></div>
+									<div class="info">
+										<div class="identity">
+											<p class="name">興發有限公司</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="clearfix">
+								<a href="#">
+									<div class="statu org"><p>加</p></div>
+									<div class="info">
+										<div class="identity">
+											<p class="name">貝比股份有限公司</p>
+											<p>免費會員</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="clearfix">
+								<a href="#">
+									<div class="statu org"><p>加</p></div>
+									<div class="info">
+										<div class="identity">
+											<p class="name">傘客創意股份有限公司</p>
+											<p>VIP會員</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="clearfix">
+								<a href="#">
+									<div class="statu red"><p>到</p></div>
+									<div class="info">
+										<div class="identity">
+											<p class="name">如果字太長就會點點點點點點點</p>
+											<p>免費會員</p>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- popup 新增客戶資料 -->
+	<div id="popup-customers" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3 class="dark">新增客戶</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                    <li>
+                        <label class="l_title" for=""><p>公司名稱</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>公司統編</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                    <li class="nterviewee_name">
+                        <label class="l_title" for=""><p>公司負責人</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <div class="MorF">
+                        	<p>
+                        		<a class="M M_in" href="#">先生</a>
+                        		<a class="F" href="#">小姐</a>
+                        	</p>
+                        </div>
+                    </li>
+                    <li class="nterviewee_name">
+                        <label class="l_title" for=""><p>聯絡窗口</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <div class="MorF">
+                        	<p>
+                        		<a class="M M_in" href="#">先生</a>
+                        		<a class="F" href="#">小姐</a>
+                        	</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>聯絡電話</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <p class="btn"><a class="add" href="#">新增</a></p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>E-Mail</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>產業類別</p></label>
+                        <div class="r_info" style="padding-top: 8px;">
+                        	<div class="styled-select">
+                        		<select class="md-input">
+                        			<option value="0">零售與百貨</option>
+                        			<option value="1">法律與政府</option>
+                        			<option value="2">新聞、媒體與出版社</option>
+                        		</select>
+                        	</div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>公司LOGO</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <p class="btn"><a class="add" href="#">新增</a></p>
+                    </li>
+                    <li class="time_select">
+                        <label class="l_title" for=""><p>加入日期</p></label>
+                        <div class="r_info day"><input class="" id="" name="" type="text" value="2018/11/01"></div>
+                    </li>
+                </ul>
+
+                <!-- 位置需要算高度，現在是從top計算 -->
+                <div class="day_selectBpx" style="top: 158px;">
+                	<div class="monthBox">
+						<div class="top_year_month">
+							<p><span>2018年11月
+							<a class="left_arr" href="#"></a>
+								<a class="right_arr" href="#"></a></span>
+							</p>
+						</div>
+						<div class="dateBox">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<th><p>日</p></th>
+									<th><p>一</p></th>
+									<th><p>二</p></th>
+									<th><p>三</p></th>	
+									<th><p>四</p></th>
+									<th><p>五</p></th>
+									<th><p>六</p></th>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><p class="btn_in">1</p>
+									</td>
+									<td><p>2</p></td>
+									<td><p>3</p></td>
+								</tr>
+								<tr>
+									<td><p>4</p></td>
+									<td><p>5</p></td>
+									<td><p>6</p>
+									</td>
+									<td><p>7</p></td>
+									<td><p>8</p></td>
+									<td><p>9</p></td>
+									<td><p>10</p></td>
+								</tr>
+								<tr>
+									<td><p>11</p></td>
+									<td><p>12</p></td>
+									<td><p>13</p></td>
+									<td><p>14</p></td>
+									<td><p>15</p></td>
+									<td><p>16</p></td>
+									<td><p>17</p></td>
+								</tr>
+								<tr>
+									<td><p>18</p></td>
+									<td><p>19</p></td>
+									<td><p>20</p></td>
+									<td><p>21</p></td>
+									<td><p>22</p></td>
+									<td><p>23</p></td>
+									<td><p>24</p></td>
+								</tr>
+								<tr>
+									<td><p>25</p></td>
+									<td><p>26</p></td>
+									<td><p>27</p></td>
+									<td><p>28</p></td>
+									<td><p>29</p></td>
+									<td><p>30</p></td>
+									<td><p>31</p></td>
+								</tr>
+								<tr>
+									<td><p class="btn_in">31</p></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+                </div>
+                <p class="btn"><a class="bg_darkblue" href="#">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 基本資料 -->
+	<div id="popup-customers-basic" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3>基本資料</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                    <li>
+                        <label class="l_title" for=""><p>公司名稱</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>公司統編</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                    <li class="nterviewee_name">
+                        <label class="l_title" for=""><p>公司負責人</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <div class="MorF">
+                        	<p>
+                        		<a class="M M_in" href="#">先生</a>
+                        		<a class="F" href="#">小姐</a>
+                        	</p>
+                        </div>
+                    </li>
+                    <li class="nterviewee_name">
+                        <label class="l_title" for=""><p>聯絡窗口</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <div class="MorF">
+                        	<p>
+                        		<a class="M M_in" href="#">先生</a>
+                        		<a class="F" href="#">小姐</a>
+                        	</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>聯絡電話</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <p class="btn"><a class="add" href="#">新增</a></p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>E-Mail</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>產業類別</p></label>
+                        <div class="r_info" style="padding-top: 8px;">
+                        	<div class="styled-select">
+                        		<select class="md-input">
+                        			<option value="0">零售與百貨</option>
+                        			<option value="1">法律與政府</option>
+                        			<option value="2">新聞、媒體與出版社</option>
+                        		</select>
+                        	</div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>公司LOGO</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <p class="btn"><a class="add" href="#">新增</a></p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>公司組織</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <p class="btn"><a class="select select_active" href="#">選擇</a></p>
+                    </li>
+                    <li class="time_select">
+                        <label class="l_title" for=""><p>加入日期</p></label>
+                        <div class="r_info day"><input class="" id="" name="" type="text" value="2018/11/01"></div>
+                    </li>
+                </ul>
+                <!-- 位置需要算高度，現在是從top計算 -->
+                <!-- <div class="day_selectBpx" style="top: 158px;">
+                	<div class="monthBox">
+						<div class="top_year_month">
+							<p><span>2018年11月
+							<a class="left_arr" href="#"></a>
+								<a class="right_arr" href="#"></a></span>
+							</p>
+						</div>
+						<div class="dateBox">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<th><p>日</p></th>
+									<th><p>一</p></th>
+									<th><p>二</p></th>
+									<th><p>三</p></th>	
+									<th><p>四</p></th>
+									<th><p>五</p></th>
+									<th><p>六</p></th>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><p class="btn_in">1</p>
+									</td>
+									<td><p>2</p></td>
+									<td><p>3</p></td>
+								</tr>
+								<tr>
+									<td><p>4</p></td>
+									<td><p>5</p></td>
+									<td><p>6</p>
+									</td>
+									<td><p>7</p></td>
+									<td><p>8</p></td>
+									<td><p>9</p></td>
+									<td><p>10</p></td>
+								</tr>
+								<tr>
+									<td><p>11</p></td>
+									<td><p>12</p></td>
+									<td><p>13</p></td>
+									<td><p>14</p></td>
+									<td><p>15</p></td>
+									<td><p>16</p></td>
+									<td><p>17</p></td>
+								</tr>
+								<tr>
+									<td><p>18</p></td>
+									<td><p>19</p></td>
+									<td><p>20</p></td>
+									<td><p>21</p></td>
+									<td><p>22</p></td>
+									<td><p>23</p></td>
+									<td><p>24</p></td>
+								</tr>
+								<tr>
+									<td><p>25</p></td>
+									<td><p>26</p></td>
+									<td><p>27</p></td>
+									<td><p>28</p></td>
+									<td><p>29</p></td>
+									<td><p>30</p></td>
+									<td><p>31</p></td>
+								</tr>
+								<tr>
+									<td><p class="btn_in">31</p></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+                </div> -->
+                <p class="btn"><a class="" href="#">確認</a></p>
+            </div>
+            <div class="the_department_list">
+	        	<h4>公司組織<button title="Close (Esc)" type="button" class="subBox-close">×</button></h4>
+	        	<ul>
+	        		<li>
+	        			<p class="b_title">第1階</p>
+	        			<p class="type"><a class="btn_in" href="#">明天股份有限公司</a></p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第2階</p>
+	        			<p class="type"><a class="btn_in" href="#">行政管理處</a>
+	        				<a href="#">製造處</a>
+	        				<a href="#">銷售處</a>
+	        				<a href="#">研發一處</a>
+	        				<a href="#">研發二處</a>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第3階</p>
+	        			<p class="type"><a class="btn_in" href="#">人資部</a>
+	        				<a href="#">總務部</a>
+	        				<a href="#">資訊部</a>
+	        				<a href="#">廠務部</a>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第4階</p>
+	        			<p class="type"><a href="#">訓練課</a>
+	        				<a class="btn_in" href="#">招募課</a>
+	        				<a href="#">薪酬課</a>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第5階</p>
+	        			<p class="type"><a href="#">招募一組</a>
+	        				<a href="#">招募二組</a>
+	        			</p>
+	        		</li>
+	        	</ul>
+	        </div>
+        </form>
+    </div>
+
+    <!-- popup 篩選btn_filter：篩選 -->
+	<div id="popup-btn_filter" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>篩選</h3>
+            </div>
+
+            <div class="chosenBox">
+            	<p>已選擇</p>
+            	<p class="btn"><a class="delete cursor_none" href="#">全部清除</a></p>
+            </div>
+            <div class="the_chosenBox_list">
+	        	<ul class="c_type">
+	        		<li>
+	        			<p class="b_title">產業篩選</p>
+	        			<div class="r_info">
+                        	<div class="styled-select">
+                        		<select class="md-input">
+                        			<option value="0">零售與百貨</option>
+                        			<option value="1">法律與政府</option>
+                        			<option value="2">新聞、媒體與出版社</option>
+                        		</select>
+                        	</div>
+                        </div>
+	        		</li>
+	        	</ul>
+	        </div>
+	        <div class="the_chosenBox_list">
+	        	<ul class="c_type">
+	        		<li>
+	        			<p class="b_title">會員類別</p>
+	        			<div class="r_info">
+                        	<div class="styled-select">
+                        		<select class="md-input">
+                        			<option value="0">FREE</option>
+                        			<option value="1">FREE</option>
+                        			<option value="2">FREE</option>
+                        		</select>
+                        	</div>
+                        </div>
+	        		</li>
+	        	</ul>
+	        </div>
+
+            <div class="fillinBox">
+                <p class="btn"><a href="#">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+	<!-- popup 帳號管理 + 修改VIP合約-->
+    <div id="popup-account-management" class="white-popup popup-S mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3>帳號管理</h3>
+            </div>
+            <div class="fillinBox">
+                <ul class="accountBox">
+                    <li>
+                        <table class="list" border="0" cellpadding="0" cellspacing="0">
+                        	<tr>
+                        		<th width="37%"><p>帳號名稱</p></th>
+                        		<th width="20%"><p>帳號權限</p></th>
+                        		<th><p>帳號密碼修改/刪除</p></th>
+                        	</tr>
+                        	<tr>
+                        		<td><p>TOMMY</p></td>
+                        		<td><p>BOSS</p></td>
+                        		<td class="both">
+                        			<p class="btn">
+                        				<a class="" href="#">修改</a>
+                        			</p>
+                        			<a class="go_delete popup-link" href="#popup-delete"></a>
+                        		</td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>CINDY</p></td>
+                        		<td><p>HR</p></td>
+                        		<td class="both">
+                        			<p class="btn">
+                        				<a class="" href="#">修改</a>
+                        			</p>
+                        			<a class="go_delete popup-link" href="#popup-delete"></a>
+                        		</td>
+                        	</tr>
+                        </table>
+                    </li>
+                    <li>
+                        <p class="btn"><a class="add popup-link" href="#popup-account-management-2">新增</a></p>
+                    </li>
+                </ul>
+                <ul class="accountBox">
+                	<li class="sub_title">
+                		<p>會員類別/合約期限</p>
+                	</li>
+                	<li class="level">
+                		<p><span class="free">FREE</span>
+                			<span class="vip_blue">VIP</span>
+                		</p>
+                	</li>
+                	<li class="sub_title none_line">
+                		<p class="t_l">合約始迄日期</p>
+                	</li>
+                    <li>
+                        <table class="list" border="0" cellpadding="0" cellspacing="0">
+                        	<tr>
+                        		<td><p class="t_l">2018/11/01-2019/12/01 </p></td>
+                        		<td><p>$12000 </p></td>
+                        		<td><p>贈1個月</p></td>
+                        		<td width="82"><p class="btn no_absolute">
+                        				<a class="cursor_goto_tip remind_greenbox" href="#">修改</a>
+                        			</p>
+                        		</td>
+                        	</tr>
+                        </table>
+                    </li>
+                    <li>
+                        <p class="btn"><a class="add popup-link" href="#popup-account-management-1">新增</a></p>
+                    </li>
+                </ul>
+                <p class="btn">
+                	<a class="bg_skyblue popup-link" href="#popup-account-management-1">確認</a>
+                </p>
+            </div>
+            <div class="the_department_list">
+	        	<h4>修改VIP合約<button title="Close (Esc)" type="button" class="subBox-close">×</button></h4>
+	        	<div class="fillinBox time_select the_contract">
+	                <ul>
+	                    <li class="day">
+	                        <label class="l_title" for=""><p>開始日期</p></label>
+	                        <input class="r_border_line" id="" name="" type="text" value="2018/11/01">
+	                    </li>
+	                    <li class="time">
+	                        <label class="l_title" for=""><p>結束日期</p></label>
+	                        <input class="r_border_line" id="" name="" type="text" value="13:30">
+	                    </li>
+	                    <li>
+	                        <label class="l_title" for=""><p>收款金額</p></label>
+	                        <input class="r_info" id="" name="" type="text">
+	                    </li>
+	                    <li>
+	                        <label class="l_title" for=""><p>備註</p></label>
+	                        <input class="r_info" id="" name="" type="text">
+	                    </li>
+	                    <li>
+	                    	<p class="btn blue_small"><a class="" href="#">確認</a></p>
+	                    </li>
+	                </ul>
+	                <!-- 因為螢幕寬度，所以位置可能跟其他日曆不太一樣 -->
+	                <div class="day_selectBpx" style=" top: 84px; left: 90px;">
+	                	<div class="monthBox">
+							<div class="top_year_month">
+								<p><span>2018年11月
+								<a class="left_arr" href="#"></a>
+									<a class="right_arr" href="#"></a></span>
+								</p>
+							</div>
+							<div class="dateBox">
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tbody><tr>
+										<th><p>日</p></th>
+										<th><p>一</p></th>
+										<th><p>二</p></th>
+										<th><p>三</p></th>	
+										<th><p>四</p></th>
+										<th><p>五</p></th>
+										<th><p>六</p></th>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td><p class="btn_in">1</p>
+										</td>
+										<td><p>2</p></td>
+										<td><p>3</p></td>
+									</tr>
+									<tr>
+										<td><p>4</p></td>
+										<td><p>5</p></td>
+										<td><p>6</p>
+										</td>
+										<td><p>7</p></td>
+										<td><p>8</p></td>
+										<td><p>9</p></td>
+										<td><p>10</p></td>
+									</tr>
+									<tr>
+										<td><p>11</p></td>
+										<td><p>12</p></td>
+										<td><p>13</p></td>
+										<td><p>14</p></td>
+										<td><p>15</p></td>
+										<td><p>16</p></td>
+										<td><p>17</p></td>
+									</tr>
+									<tr>
+										<td><p>18</p></td>
+										<td><p>19</p></td>
+										<td><p>20</p></td>
+										<td><p>21</p></td>
+										<td><p>22</p></td>
+										<td><p>23</p></td>
+										<td><p>24</p></td>
+									</tr>
+									<tr>
+										<td><p>25</p></td>
+										<td><p>26</p></td>
+										<td><p>27</p></td>
+										<td><p>28</p></td>
+										<td><p>29</p></td>
+										<td><p>30</p></td>
+										<td><p>31</p></td>
+									</tr>
+									<tr>
+										<td><p class="btn_in">31</p></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody></table>
+							</div>
+						</div>
+	                </div>
+	            </div>
+	        </div>
+        </form>
+    </div>
+
+    <!-- popup 帳號管理 : 新增VIP合約-->
+    <div id="popup-account-management-1" class="white-popup popup-S mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3>帳號管理</h3>
+            </div>
+            <div class="fillinBox">
+                <ul class="accountBox">
+                    <li>
+                        <table class="list" border="0" cellpadding="0" cellspacing="0">
+                        	<tr>
+                        		<th width="37%"><p>帳號名稱</p></th>
+                        		<th width="20%"><p>帳號權限</p></th>
+                        		<th><p>帳號密碼修改/刪除</p></th>
+                        	</tr>
+                        	<tr>
+                        		<td><p>TOMMY</p></td>
+                        		<td><p>BOSS</p></td>
+                        		<td class="both">
+                        			<p class="btn">
+                        				<a class="" href="#">修改</a>
+                        			</p>
+                        			<a class="go_delete popup-link" href="#popup-delete"></a>
+                        		</td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>CINDY</p></td>
+                        		<td><p>HR</p></td>
+                        		<td class="both">
+                        			<p class="btn">
+                        				<a class="" href="#">修改</a>
+                        			</p>
+                        			<a class="go_delete popup-link" href="#popup-delete"></a>
+                        		</td>
+                        	</tr>
+                        </table>
+                    </li>
+                    <li>
+                        <p class="btn"><a class="add popup-link" href="#popup-account-management-2">新增</a></p>
+                    </li>
+                </ul>
+                <ul class="accountBox">
+                	<li class="sub_title">
+                		<p>會員類別/合約期限</p>
+                	</li>
+                	<li class="level">
+                		<p><span class="free">FREE</span>
+                			<span class="vip_blue">VIP</span>
+                		</p>
+                	</li>
+                	<li class="sub_title none_line">
+                		<p class="t_l">合約始迄日期</p>
+                	</li>
+                    <li>
+                        <table class="list" border="0" cellpadding="0" cellspacing="0">
+                        	<tr>
+                        		<td><p class="t_l">2018/11/01-2019/12/01 </p></td>
+                        		<td><p>$12000 </p></td>
+                        		<td><p>贈1個月</p></td>
+                        		<td width="82"><p class="btn no_absolute">
+                        				<a href="#">修改</a>
+                        			</p>
+                        		</td>
+                        	</tr>
+                        </table>
+                    </li>
+                    <li>
+                        <p class="btn"><a class="add popup-link" href="#popup-account-management-1">新增</a></p>
+                    </li>
+                </ul>
+                <p class="btn">
+                	<a class="bg_skyblue popup-link" href="#popup-account-management-1">確認</a>
+                </p>
+            </div>
+            <div class="the_department_list">
+	        	<h4>新增VIP合約<button title="Close (Esc)" type="button" class="subBox-close">×</button></h4>
+	        	<div class="fillinBox time_select the_contract">
+	                <ul>
+	                    <li class="day">
+	                        <label class="l_title" for=""><p>開始日期</p></label>
+	                        <input class="r_border_line" id="" name="" type="text" value="2018/11/01">
+	                    </li>
+	                    <li class="time">
+	                        <label class="l_title" for=""><p>結束日期</p></label>
+	                        <input class="r_border_line" id="" name="" type="text" value="13:30">
+	                    </li>
+	                    <li>
+	                        <label class="l_title" for=""><p>備註</p></label>
+	                        <input class="r_info" id="" name="" type="text">
+	                    </li>
+	                    <li>
+	                    	<p class="btn blue_small"><a class="" href="#">確認</a></p>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+        </form>
+    </div>
+
+    <!-- popup 帳號管理 : 新增帳號-->
+    <div id="popup-account-management-2" class="white-popup popup-S mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3>帳號管理</h3>
+            </div>
+            <div class="fillinBox">
+                <ul class="accountBox">
+                    <li>
+                        <table class="list" border="0" cellpadding="0" cellspacing="0">
+                        	<tr>
+                        		<th width="37%"><p>帳號名稱</p></th>
+                        		<th width="20%"><p>帳號權限</p></th>
+                        		<th><p>帳號密碼修改/刪除</p></th>
+                        	</tr>
+                        	<tr>
+                        		<td><p>TOMMY</p></td>
+                        		<td><p>BOSS</p></td>
+                        		<td class="both">
+                        			<p class="btn">
+                        				<a class="cursor_goto_tip remind_greenbox" href="#">修改</a>
+                        			</p>
+                        			<a class="go_delete popup-link" href="#popup-delete"></a>
+                        		</td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>CINDY</p></td>
+                        		<td><p>HR</p></td>
+                        		<td class="both">
+                        			<p class="btn">
+                        				<a class="cursor_goto_tip remind_greenbox" href="#">修改</a>
+                        			</p>
+                        			<a class="go_delete popup-link" href="#popup-delete"></a>
+                        		</td>
+                        	</tr>
+                        </table>
+                    </li>
+                    <li>
+                        <p class="btn"><a class="add popup-link" href="#popup-account-management-2">新增</a></p>
+                    </li>
+                </ul>
+                <ul class="accountBox">
+                	<li class="sub_title">
+                		<p>會員類別/合約期限</p>
+                	</li>
+                	<li class="level">
+                		<p><span class="free">FREE</span>
+                			<span class="vip_blue">VIP</span>
+                		</p>
+                	</li>
+                	<li class="sub_title none_line">
+                		<p class="t_l">合約始迄日期</p>
+                	</li>
+                    <li>
+                        <table class="list" border="0" cellpadding="0" cellspacing="0">
+                        	<tr>
+                        		<td><p class="t_l">2018/11/01-2019/12/01 </p></td>
+                        		<td><p>$12000 </p></td>
+                        		<td><p>贈1個月</p></td>
+                        		<td width="82"><p class="btn no_absolute">
+                        				<a class="cursor_goto_tip remind_greenbox" href="#">修改</a>
+                        			</p>
+                        		</td>
+                        	</tr>
+                        </table>
+                    </li>
+                    <li>
+                        <p class="btn"><a class="add popup-link" href="#popup-account-management-1">新增</a></p>
+                    </li>
+                </ul>
+                <p class="btn">
+                	<a class="bg_skyblue popup-link" href="#popup-account-management-1">確認</a>
+                </p>
+            </div>
+            <div class="the_department_list">
+	        	<h4>新增帳號<button title="Close (Esc)" type="button" class="subBox-close">×</button></h4>
+	        	<div class="fillinBox the_contract">
+	                <ul>
+	                    <li class="day">
+	                        <label class="l_title" for=""><p>帳號名稱</p></label>
+	                        <input class="r_info" id="" name="" type="text" value="">
+	                    </li>
+	                    <li class="time">
+	                        <label class="l_title" for=""><p>輸入密碼</p></label>
+	                        <input class="r_info" id="" name="" type="text" value="asdfghjklsd">
+	                    </li>
+	                    <li>
+	                        <label class="l_title" for=""><p>確認密碼</p></label>
+	                        <input class="r_info" id="" name="" type="text" value="************">
+	                    </li>
+	                    <li>
+	                    	<p class="btn">
+	                    		<a class="" href="#">複製</a>
+	                    		<a class="" href="#">隨機產生密碼</a>
+	                    	</p>
+	                    </li>
+	                    <li>
+	                    	<p class="btn blue_small"><a class="" href="#">確認</a></p>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+        </form>
+    </div>
+
+    <!-- popup 儲值紀錄-->
+    <div id="popup-storedvalue-record" class="white-popup popup-S mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3>儲值紀錄</h3>
+            </div>
+            <div class="fillinBox storedValueBox">
+            	<ul class="top_points">
+                    <li>
+                        <p class="p_info">尚可使用點數</p>
+                        <p class="p_info nb">50</p>
+                        <p class="p_info"></p>
+                        <p class="btn"><a class="add popup-link" href="#popup-storedvalue-record-1">儲值</a></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p class="p_info">購買日期</p>
+                        <p class="p_info">購買金額</p>
+                        <p class="p_info">點數變動</p>
+                        <p class="p_info">備註</p>
+                    </li>
+                    <li>
+                        <p class="p_info">2019/11/01</p>
+                        <p class="p_info"></p>
+                        <p class="p_info">+ 12</p>
+                        <p class="p_info"></p>
+                    </li>
+                    <li>
+                        <p class="p_info">2018/08/02</p>
+                        <p class="p_info"></p>
+                        <p class="p_info">- 4</p>
+                        <p class="p_info">操作錯誤</p>
+                    </li>
+                    <li>
+                        <p class="p_info">2018/05/14</p>
+                        <p class="p_info">$12000</p>
+                        <p class="p_info">+ 12</p>
+                        <p class="p_info"></p>
+                    </li>
+                </ul>
+                <p class="btn">
+                	<a class="bg_skyblue popup-link" href="#popup-storedvalue-record-1">確認</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 儲值紀錄 : 儲值-->
+    <div id="popup-storedvalue-record-1" class="white-popup popup-S mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3>儲值紀錄</h3>
+            </div>
+            <div class="fillinBox storedValueBox">
+            	<ul class="top_points">
+                    <li>
+                        <p class="p_info">尚可使用點數</p>
+                        <p class="p_info nb">50</p>
+                        <p class="p_info"></p>
+                        <p class="btn"><a class="add popup-link" href="#popup-storedvalue-record-1">儲值</a></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p class="p_info">購買日期</p>
+                        <p class="p_info">購買金額</p>
+                        <p class="p_info">點數變動</p>
+                        <p class="p_info">備註</p>
+                    </li>
+                    <li>
+                        <p class="p_info">2019/11/01</p>
+                        <p class="p_info"></p>
+                        <p class="p_info">+ 12</p>
+                        <p class="p_info"></p>
+                    </li>
+                    <li>
+                        <p class="p_info">2018/08/02</p>
+                        <p class="p_info"></p>
+                        <p class="p_info">- 4</p>
+                        <p class="p_info">操作錯誤</p>
+                    </li>
+                    <li>
+                        <p class="p_info">2018/05/14</p>
+                        <p class="p_info">$12000</p>
+                        <p class="p_info">+ 12</p>
+                        <p class="p_info"></p>
+                    </li>
+                    <li>
+                        <p class="p_info">2017/11/01</p>
+                        <p class="p_info"></p>
+                        <p class="p_info">+ 8</p>
+                        <p class="p_info"></p>
+                    </li>
+                    <li>
+                        <p class="p_info">2017/08/02</p>
+                        <p class="p_info"></p>
+                        <p class="p_info">- 4</p>
+                        <p class="p_info">操作錯誤</p>
+                    </li>
+                    <li>
+                        <p class="p_info">2017/05/14</p>
+                        <p class="p_info">$1000</p>
+                        <p class="p_info">+ 12</p>
+                        <p class="p_info"></p>
+                    </li>
+                </ul>
+                <p class="btn page_nb">
+                	<a class="btn_in" href="#">1</a>
+                	<a href="#">2</a>
+                	<a href="#">3</a>
+                </p>
+            </div>
+            <div class="the_department_list">
+	        	<h4>儲  值<button title="Close (Esc)" type="button" class="subBox-close">×</button></h4>
+	        	<div class="fillinBox time_select the_contract">
+	                <ul>
+	                    <li class="day">
+	                        <label class="l_title" for=""><p>匯款日期</p></label>
+	                        <input class="r_border_line" id="" name="" type="text" value="2018/11/01">
+	                    </li>
+	                    <li>
+	                        <label class="l_title" for=""><p>購買金額</p></label>
+	                        <input class="r_info" id="" name="" type="text">
+	                    </li>
+	                    <li>
+	                        <label class="l_title" for=""><p>點數變動</p></label>
+	                        <input class="r_info" id="" name="" type="text">
+	                    </li>
+	                    <li>
+	                        <label class="l_title" for=""><p>點數變動</p></label>
+	                        <input class="r_info" id="" name="" type="text">
+	                    </li>
+	                    <li>
+	                    	<p class="btn blue_small"><a class="" href="#">確認</a></p>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+        </form>
+    </div>
+
+    <!-- popup 使用紀錄 -->
+	<div id="popup-use" class="white-popup popup-M mfp-hide">
+        <form class="setBox">
+            <div class="top_title">
+                <h3>使用紀錄</h3>
+            </div>
+            <div class="fillinBox storedValueBox">
+                <div class="bothBox">
+                	<ul>
+	                    <li>
+	                        <p class="p_info">使用日期</p>
+	                        <p class="p_info">使用時間</p>
+	                        <p class="p_info">使用帳號</p>
+	                        <p class="p_info">報告名稱</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/11/01</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/08/02</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/07/14</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/06/09</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/05/21</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/03/01</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/06/09</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/05/21</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/03/01</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                </ul>
+	                <ul>
+	                    <li>
+	                        <p class="p_info">使用日期</p>
+	                        <p class="p_info">使用時間</p>
+	                        <p class="p_info">使用帳號</p>
+	                        <p class="p_info">報告名稱</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/11/01</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/08/02</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/07/14</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/06/09</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/05/21</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/03/01</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/06/09</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/05/21</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                    <li>
+	                        <p class="p_info">2018/03/01</p>
+	                        <p class="p_info">13:30</p>
+	                        <p class="p_info">abcde</p>
+	                        <p class="p_info">劉雨天</p>
+	                    </li>
+	                </ul>
+	            </div>
+                <p class="btn page_nb">
+                	<a href="#">1</a>
+                	<a class="btn_in" href="#">2</a>
+                	<a href="#">3</a>
+                	<a href="#">4</a>
+                	<a href="#">5</a>
+                	<a href="#">6</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+     <!-- popup-step-04-4 icon4：刪除面試官按鈕-->
+    <div id="popup-step-11-delete" class="white-popup popup-w-s mfp-hide">
+        <div class="setBox messageBox">
+            <div class="RedBox">
+                <p class="info">請問確定要刪除面試官<span>留有針</span>嗎？</p>
+            </div>
+            <p class="btn"><a class="bg_gary" href="#">取消</a><a class="bg_red" href="#">確認刪除</a></p>
+        </div>
+    </div>
+
+    <!-- popup 部門刪除紅色按鈕 - delete-->
+	<div id="popup-delete" class="white-popup popup-w-s mfp-hide">
+        <div class="setBox messageBox">
+            <div class="RedBox">
+                <p class="info">請問確定刪除 <span>TOMMY</span> 嗎？
+            </div>
+            <p class="btn"><a class="bg_gary" href="#">取消</a><a class="bg_red" href="#">確認刪除</a></p>
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>
+
+
+
