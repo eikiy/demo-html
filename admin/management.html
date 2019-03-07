@@ -40,7 +40,7 @@ $(document).ready(function() {
 	<div class="contentsBox clearfix">
 		<a class="logo" href="#"></a>
 		<div class="searchBox search_all">
-			<input type="text" name="" placeholder="搜尋公司名稱/統編">
+			<input type="text" name="" placeholder="搜尋公司名稱/統編/人名">
 			<a href="#"></a>
 			<!-- <ul class="search_list">
 				<li class="clearfix">
@@ -120,7 +120,7 @@ $(document).ready(function() {
 			</h1>
 			<ul class="menu">
 				<li><p class="btn_in"><a class="icon_01" href="management.html">客戶管理</a></p></li>
-				<li><p><a class="icon_02" href="recruit_record.html">所有招募</a></p></li>
+				<li><p><a class="icon_02" href="recruit_record.html">所有人員</a></p></li>
 				<li><p><a class="icon_04" href="setting.html">系統設定</a></p></li>
 			</ul>
 		</section>
@@ -159,7 +159,7 @@ $(document).ready(function() {
 								<li><a class="icon_02 popup-link" href="#popup-account-management"></a><p class="ex">帳號管理</p></li>
 								<li><a class="icon_03 popup-link" href="#popup-storedvalue-record"></a><p class="ex">儲值紀錄</p></li>
 								<li><a class="icon_04 popup-link" href="#popup-use"></a><p class="ex">使用紀錄</p></li>
-								<li><a class="icon_05 popup-link" href="#popup-filter-all"></a><p class="ex">招募紀錄<p></li>
+								<li><a class="icon_05 popup-link" href="#popup-filter-all"></a><p class="ex">所有人員<p></li>
 								<li><p class="points">5</p><p class="ex">剩餘點數</p></li>
 								<li><p class="points">1155</p><p class="ex">總儲值數</p></li>
 							</ul>
@@ -188,7 +188,7 @@ $(document).ready(function() {
 								<li><a class="icon_02 popup-link" href="#popup-account-management"></a><p class="ex">帳號管理</p></li>
 								<li><a class="icon_03 popup-link" href="#popup-storedvalue-record"></a><p class="ex">儲值紀錄</p></li>
 								<li><a class="icon_04 popup-link" href="#popup-use"></a><p class="ex">使用紀錄</p></li>
-								<li><a class="icon_05 popup-link" href="#popup-filter-all"></a><p class="ex">招募紀錄<p></li>
+								<li><a class="icon_05 popup-link" href="#popup-filter-all"></a><p class="ex">所有人員<p></li>
 								<li><p class="points">100</p><p class="ex">剩餘點數</p></li>
 								<li><p class="points">0</p><p class="ex">總儲值數</p></li>
 							</ul>
@@ -216,7 +216,7 @@ $(document).ready(function() {
 								<li><a class="icon_02 popup-link" href="#popup-account-management"></a><p class="ex">帳號管理</p></li>
 								<li><a class="icon_03 popup-link" href="#popup-storedvalue-record"></a><p class="ex">儲值紀錄</p></li>
 								<li><a class="icon_04 popup-link" href="#popup-use"></a><p class="ex">使用紀錄</p></li>
-								<li><a class="icon_05 popup-link" href="#popup-filter-all"></a><p class="ex">招募紀錄<p></li>
+								<li><a class="icon_05 popup-link" href="#popup-filter-all"></a><p class="ex">所有人員<p></li>
 								<li><p class="points">50</p><p class="ex">剩餘點數</p></li>
 								<li><p class="points">50</p><p class="ex">總儲值數</p></li>
 							</ul>
@@ -244,7 +244,7 @@ $(document).ready(function() {
 								<li><a class="icon_02 popup-link" href="#popup-account-management"></a><p class="ex">帳號管理</p></li>
 								<li><a class="icon_03 popup-link" href="#popup-storedvalue-record"></a><p class="ex">儲值紀錄</p></li>
 								<li><a class="icon_04 popup-link" href="#popup-use"></a><p class="ex">使用紀錄</p></li>
-								<li><a class="icon_05 popup-link" href="#popup-filter-all"></a><p class="ex">招募紀錄<p></li>
+								<li><a class="icon_05 popup-link" href="#popup-filter-all"></a><p class="ex">所有人員<p></li>
 								<li><p class="points">50</p><p class="ex">剩餘點數</p></li>
 								<li><p class="points">50</p><p class="ex">總儲值數</p></li>
 							</ul>
@@ -1488,6 +1488,264 @@ $(document).ready(function() {
                 	<a href="#">6</a>
                 </p>
             </div>
+        </form>
+    </div>
+
+    <!-- popup 所有人員 -->
+	<div id="popup-filter-all" class="white-popup popup-L mfp-hide">
+        <form class="setBox">
+            <div class="top_title">
+                <h3>所有人員</h3>
+            </div>
+            <div class="mainBox">
+	            <div class="recruit_contents">
+	            	<ul class="company_list list clearfix">
+						<li class="clearfix">
+							<a href="#">
+								<div class="both clearfix">
+									<div class="user_photo">
+										<div class="avatar male">
+										</div>
+									</div>
+									<div class="right_status clearfix">
+										<p class="test_icon test_icon_no"></p>
+										<div class="status_icon"><p>招募<br><span>安排初試</span></p></div><!-- 狀態 1 -->
+									</div>
+								</div>
+								<div class="name clearfix">
+									<p>劉德華</p>
+									<p class="title">軟體工程師</p>
+								</div>
+								<p class="company">興發有限公司</p>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="#">
+								<div class="both clearfix">
+									<div class="user_photo">
+										<div class="avatar male">
+										</div>
+									</div>
+									<div class="right_status clearfix">
+										<p class="test_icon test_icon_yes"></p>
+										<div class="status_icon"><p>招募<br><span>個人資料</span></p></div><!-- 狀態 2 -->
+									</div>
+								</div>
+								<div class="name clearfix">
+									<p>陳日和</p>
+									<p class="title">軟體工程師</p>
+								</div>
+								<p class="company">興發有限公司</p>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="#">
+								<div class="both clearfix">
+									<div class="user_photo">
+										<div class="avatar male">
+										</div>
+									</div>
+									<div class="right_status clearfix">
+										<p class="test_icon test_icon_yes"></p>
+										<div class="status_icon"><p>招募<br><span>特質測驗</span></p></div><!-- 狀態 3 -->
+									</div>
+								</div>
+								<div class="name clearfix">
+									<p>吳彥祖</p>
+									<p class="title">軟體工程師</p>
+								</div>
+								<p class="company">興發有限公司</p>
+							</a>
+						</li>
+
+						<li class="clearfix">
+							<a href="#">
+								<div class="both clearfix">
+									<div class="user_photo">
+										<div class="avatar male">
+										</div>
+									</div>
+									<div class="right_status clearfix">
+										<p class="test_icon test_icon_no"></p>
+										<div class="status_icon"><p>招募<br><span>面試官</span></p></div><!-- 狀態 4 -->
+									</div>
+								</div>
+								<div class="name clearfix">
+									<p>李敏號</p>
+									<p class="title">韓國藝人</p>
+								</div>
+								<p class="company">興發有限公司</p>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="#">
+								<div class="both clearfix">
+									<div class="user_photo">
+										<div class="avatar male">
+										</div>
+									</div>
+									<div class="right_status clearfix">
+										<p class="test_icon test_icon_yes"></p>
+										<div class="status_icon"><p>招募<br><span>報到排程</span></p></div><!-- 狀態 5 -->
+									</div>
+								</div>
+								<div class="name clearfix">
+									<p>陳小春</p>
+									<p class="title">資深業務</p>
+								</div>
+								<p class="company">多拉A夢有限公司</p>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="#">
+								<div class="both clearfix">
+									<div class="user_photo">
+										<div class="avatar male">
+										</div>
+									</div>
+									<div class="right_status clearfix">
+										<p class="test_icon test_icon_yes"></p>
+										<div class="status_icon"><p>招募<br><span>報到完成</span></p></div><!-- 狀態 6 -->
+									</div>
+								</div>
+								<div class="name clearfix">
+									<p>小小兵</p>
+									<p class="title">全端工程師</p>
+								</div>
+								<p class="company">興發有限公司</p>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="#">
+								<div class="both clearfix">
+									<div class="user_photo">
+										<div class="avatar male">
+										</div>
+									</div>
+									<div class="right_status clearfix">
+										<p class="test_icon test_icon_yes"></p>
+										<div class="status_icon status_end"><p>招募<br>未錄取</p></div><!-- 狀態 7 灰底 -->
+									</div>
+								</div>
+								<div class="name clearfix">
+									<p>ELSA</p>
+									<p class="title">軟體工程師</p>
+								</div>
+								<p class="company">興發有限公司</p>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="#">
+								<div class="both clearfix">
+									<div class="user_photo">
+										<div class="avatar male">
+										</div>
+									</div>
+									<div class="right_status clearfix">
+										<p class="test_icon test_icon_no"></p>
+										<div class="status_icon status_end"><p>招募<br>結案</p></div><!-- 狀態 8 灰底 -->
+									</div>
+								</div>
+								<div class="name clearfix">
+									<p>ANNA</p>
+									<p class="title">插畫家</p>
+								</div>
+								<p class="company">明天有限公司</p>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="#">
+								<div class="both clearfix">
+									<div class="user_photo">
+										<div class="avatar male">
+										</div>
+									</div>
+									<div class="right_status clearfix">
+										<p class="test_icon test_icon_yes"></p>
+										<div class="status_icon status_ok"><p>招募<br>已報到</p></div><!-- 狀態 9 淺藍底 -->
+									</div>
+								</div>
+								<div class="name clearfix">
+									<p>霍正華</p>
+									<p class="title">CEO</p>
+								</div>
+								<p class="company">皇帝股份有限公司</p>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="#">
+								<div class="both clearfix">
+									<div class="user_photo">
+										<div class="avatar male">
+										</div>
+									</div>
+									<div class="right_status clearfix">
+										<p class="test_icon test_icon_no"></p>
+										<div class="status_icon status_not"><p><span>現有員工</span><br>在職</p></div><!-- 狀態 10 米底 ，超過4個字會破，需+span-->
+									</div>
+								</div>
+								<div class="name clearfix">
+									<p>安納貝爾</p>
+									<p class="title">心靈輔導師</p>
+								</div>
+								<p class="company">恐怖蠟像館</p>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="#">
+								<div class="both clearfix">
+									<div class="user_photo">
+										<div class="avatar male">
+										</div>
+									</div>
+									<div class="right_status clearfix">
+										<p class="test_icon test_icon_no"></p>
+										<div class="status_icon status_not"><p><span>現有員工</span><br>離職</p></div><!-- 狀態 11 米底 ，超過4個字會破，需+span -->
+									</div>
+								</div>
+								<div class="name clearfix">
+									<p>樁樁</p>
+									<p class="title">軟體工程師</p>
+								</div>
+								<p class="company">興發有限公司</p>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="#">
+								<div class="both clearfix">
+									<div class="user_photo">
+										<div class="avatar male">
+										</div>
+									</div>
+									<div class="right_status clearfix">
+										<p class="test_icon test_icon_no"></p>
+										<div class="status_icon"><p>招募<br><span>安排初試</span></p></div><!-- 狀態 1 -->
+									</div>
+								</div>
+								<div class="name clearfix">
+									<p>小叮噹</p>
+									<p class="title">軟體工程師</p>
+								</div>
+								<p class="company">興發有限公司</p>
+							</a>
+						</li>
+					</ul>
+					<p class="btn page_nb">
+						<a class="arr left_arr" href="#"></a>
+		                <a class="btn_in" href="#">1</a>
+		                <a href="#">2</a>
+		                <a href="#">3</a>
+		                <a href="#">4</a>
+		                <a href="#">5</a>
+		                <a href="#">6</a>
+		                <a href="#">7</a>
+		                <a href="#">8</a>
+		                <a href="#">9</a>
+		                <a href="#">10</a>
+		                <a class="arr right_arr" href="#"></a>
+		            </p>
+	            </div>
+        	</div>
         </form>
     </div>
 

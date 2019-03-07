@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<title>所有招募</title>
+<title>所有人員</title>
 <meta name='description' content=""/>
 <meta name='keywords' content=""/>
 <link rel="stylesheet" href="css/style.css">
@@ -40,7 +40,7 @@ $(document).ready(function() {
 	<div class="contentsBox clearfix">
 		<a class="logo" href="#"></a>
 		<div class="searchBox search_all">
-			<input type="text" name="" placeholder="搜尋公司名稱/統編">
+			<input type="text" name="" placeholder="搜尋公司名稱/統編/人名">
 			<a href="#"></a>
 			<!-- <ul class="search_list">
 				<li class="clearfix">
@@ -178,7 +178,7 @@ $(document).ready(function() {
 			企業股份有限公司</h1>
 			<ul class="menu">
 				<li><p><a class="icon_01" href="management.html">客戶管理</a></p></li>
-				<li><p class="btn_in"><a class="icon_02" href="recruit_record.html">所有招募</a></p></li>
+				<li><p class="btn_in"><a class="icon_02" href="recruit_record.html">所有人員</a></p></li>
 				<li><p><a class="icon_04" href="setting.html">系統設定</a></p></li>
 			</ul>
 		</section>
@@ -291,7 +291,7 @@ $(document).ready(function() {
 								</div>
 								<div class="right_status clearfix">
 									<p class="test_icon test_icon_no"></p>
-									<p class="status_icon status_ok">已報到</p>
+									<div class="status_icon"><p>招募<br><span>安排初試</span></p></div><!-- 狀態 1 -->
 								</div>
 							</div>
 							<div class="name clearfix">
@@ -310,7 +310,7 @@ $(document).ready(function() {
 								</div>
 								<div class="right_status clearfix">
 									<p class="test_icon test_icon_yes"></p>
-									<p class="status_icon status_not">未錄取</p>
+									<div class="status_icon"><p>招募<br><span>個人資料</span></p></div><!-- 狀態 2 -->
 								</div>
 							</div>
 							<div class="name clearfix">
@@ -329,7 +329,7 @@ $(document).ready(function() {
 								</div>
 								<div class="right_status clearfix">
 									<p class="test_icon test_icon_yes"></p>
-									<p class="status_icon status_end">結案</p>
+									<div class="status_icon"><p>招募<br><span>特質測驗</span></p></div><!-- 狀態 3 -->
 								</div>
 							</div>
 							<div class="name clearfix">
@@ -349,7 +349,7 @@ $(document).ready(function() {
 								</div>
 								<div class="right_status clearfix">
 									<p class="test_icon test_icon_no"></p>
-									<p class="status_icon status_ok">已報到</p>
+									<div class="status_icon"><p>招募<br><span>面試官</span></p></div><!-- 狀態 4 -->
 								</div>
 							</div>
 							<div class="name clearfix">
@@ -368,7 +368,7 @@ $(document).ready(function() {
 								</div>
 								<div class="right_status clearfix">
 									<p class="test_icon test_icon_yes"></p>
-									<p class="status_icon status_not">未錄取</p>
+									<div class="status_icon"><p>招募<br><span>報到排程</span></p></div><!-- 狀態 5 -->
 								</div>
 							</div>
 							<div class="name clearfix">
@@ -387,7 +387,7 @@ $(document).ready(function() {
 								</div>
 								<div class="right_status clearfix">
 									<p class="test_icon test_icon_yes"></p>
-									<p class="status_icon status_end">結案</p>
+									<div class="status_icon"><p>招募<br><span>報到完成</span></p></div><!-- 狀態 6 -->
 								</div>
 							</div>
 							<div class="name clearfix">
@@ -406,7 +406,7 @@ $(document).ready(function() {
 								</div>
 								<div class="right_status clearfix">
 									<p class="test_icon test_icon_yes"></p>
-									<p class="status_icon status_not">未錄取</p>
+									<div class="status_icon status_end"><p>招募<br>未錄取</p></div><!-- 狀態 7 灰底 -->
 								</div>
 							</div>
 							<div class="name clearfix">
@@ -425,7 +425,7 @@ $(document).ready(function() {
 								</div>
 								<div class="right_status clearfix">
 									<p class="test_icon test_icon_no"></p>
-									<p class="status_icon status_ok">已報到</p>
+									<div class="status_icon status_end"><p>招募<br>結案</p></div><!-- 狀態 8 灰底 -->
 								</div>
 							</div>
 							<div class="name clearfix">
@@ -444,7 +444,7 @@ $(document).ready(function() {
 								</div>
 								<div class="right_status clearfix">
 									<p class="test_icon test_icon_yes"></p>
-									<p class="status_icon status_end">結案</p>
+									<div class="status_icon status_ok"><p>招募<br>已報到</p></div><!-- 狀態 9 淺藍底 -->
 								</div>
 							</div>
 							<div class="name clearfix">
@@ -463,7 +463,7 @@ $(document).ready(function() {
 								</div>
 								<div class="right_status clearfix">
 									<p class="test_icon test_icon_no"></p>
-									<p class="status_icon status_ok">已報到</p>
+									<div class="status_icon status_not"><p><span>現有員工</span><br>在職</p></div><!-- 狀態 10 米底 ，超過4個字會破，需+span-->
 								</div>
 							</div>
 							<div class="name clearfix">
@@ -482,7 +482,7 @@ $(document).ready(function() {
 								</div>
 								<div class="right_status clearfix">
 									<p class="test_icon test_icon_no"></p>
-									<p class="status_icon status_not">未錄取</p>
+									<div class="status_icon status_not"><p><span>現有員工</span><br>離職</p></div><!-- 狀態 11 米底 ，超過4個字會破，需+span -->
 								</div>
 							</div>
 							<div class="name clearfix">
@@ -501,7 +501,7 @@ $(document).ready(function() {
 								</div>
 								<div class="right_status clearfix">
 									<p class="test_icon test_icon_no"></p>
-									<p class="status_icon status_end">結案</p>
+									<div class="status_icon"><p>招募<br><span>安排初試</span></p></div><!-- 狀態 1 -->
 								</div>
 							</div>
 							<div class="name clearfix">
