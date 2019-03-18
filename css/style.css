@@ -126,6 +126,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .mainBox .side_menu ul.menu li p a.icon_03{ background-image: url(../images/menu_icon_03.png);}
 .mainBox .side_menu ul.menu li p a.icon_04{ background-image: url(../images/menu_icon_04.png);}
 .mainBox .side_menu ul.menu li p a.icon_05{ background-image: url(../images/menu_icon_05.png);}
+.mainBox .side_menu ul.menu li p a.icon_06{ background-image: url(../images/menu_icon_06.png);}
 .mainBox .side_menu ul.menu li p.btn_in::after, .mainBox .side_menu ul.menu li p:hover::after{ opacity: 1; transition-duration: 100ms; }
 
 .mainBox .right_contents{ float: right; width: 100%; padding-left:15px; width:870px; /*-webkit-flex: 1; flex: 1; display: -webkit-flex; display: flex;*/}
@@ -1701,3 +1702,47 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .interviewee_info .behavior_description .company_info{ padding: 100%; padding: 15px 40px; }
 .interviewee_info .behavior_description .company_info p.info_logo{ color: #9B9B9B; float: right; position: relative; padding-left: 50px; font-size: 12px;}
 .interviewee_info .behavior_description .company_info p.info_logo::after{ position: absolute; top: 0; left: 0; content: ""; width: 40px; height: 31px; display: block; background: url(../images/logo_kamo.png) center center no-repeat; background-size: contain; }
+
+/*人才管理*/
+.talent_contents p.add_nterviewee{ width: initial; text-align: center; }
+.talent_contents p.add_nterviewee a{min-width: 183px; height: 42px; line-height: 38px; border-radius: 10px 10px 0 10px; background-image: url(../images/btn_add_talent.png);}
+.talent_contents .top_toolsBox .talent_filter{ float: left; width: 100%; max-width: 550px; }
+.talent_contents .top_toolsBox .talent_filter .type{ float: right; }
+
+.talent_contents .talent_first_info{ padding: 30px 65px; border:3px solid #84BE98;min-height: 585px; border-radius: 10px 0 10px 10px; position: relative;}
+.talent_contents .talent_first_info::after{ position: absolute; content: "";  left: 50px; bottom: 0; width: 573px; height: 490px; display: block; background: url(../images/img_owl_first_talent.png) center center no-repeat; background-size: contain;  }
+.talent_contents .talent_first_info p span{ color: #81B6C8;}
+
+.talent_contents ul.trait_card{ width: 100%; padding: 20px 25px; background-color: #fff; margin-bottom: 15px; }
+.talent_contents ul.trait_card li{ float: left; max-width: 150px; margin-right: 5px; position: relative; }
+.talent_contents ul.trait_card li img{ max-width: 100%; }
+.talent_contents ul.trait_card li a.go_delete{ position: absolute; cursor: pointer; top:12px; right: 12px; width: 16px; height: 16px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
+.talent_contents ul.trait_card li a.go_delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
+
+.talent_contents ul.trait_card li a.add_card{ position: relative; width: 100%; height: 225px; padding-top: 20px; border:1px dashed #9B9B9B ; color: #9B9B9B; display: block; border-radius: 10px; text-align: center; }
+.talent_contents ul.trait_card li a.add_card span.under_line{ text-decoration: underline; }
+.talent_contents ul.trait_card li a.add_card span.big{ font-size: 55px; }
+.talent_contents ul.trait_card li a.add_card::after{content: ""; background: url(../images/img_owl_talent.png); bottom: -5px; right: -30px; background-size: contain; position: absolute; width: 77px; height: 98px; display: block; }
+
+/*popup*/
+.talent_chosenBox{ width: 100%; padding: 25px 0; }
+.talent_chosenBox ul.top_title{ width:100%;}
+.talent_chosenBox ul.top_title li{ width:calc(25% - 4px);text-align: center; float: left; cursor: pointer; background-color: #707475; padding: 10px 0; border-radius: 10px 10px 0 0; margin-right: 5px; }
+.talent_chosenBox ul.top_title li.btn_in{ background-color: #fff; }
+.talent_chosenBox ul.top_title li:last-child{ margin-right: 0; }
+.talent_chosenBox ul.top_title li p { color: #fff; background-color: #84BE98; line-height: 33px; max-width: 196px; margin: 0 auto; border-radius: 5px 0 5px 5px; }
+.talent_chosenBox ul.top_title li p.org{ background-color: #E5AF57; }
+.talent_chosenBox ul.top_title li p.red{ background-color: #C87D86; }
+.talent_chosenBox ul.top_title li p.block{ background-color:#342949; }
+
+.talent_chosenBox ul.chosen_card_list{ width: 100%; background-color: #fff; border-radius: 0 0 10px 10px; padding: 20px 0 25px 32px; max-height: 500px; overflow-y: auto; background-color: #fff; margin-bottom: 15px; }
+.talent_chosenBox ul.chosen_card_list li{ float: left; max-width: 142px; margin:5px 2.5px; position: relative; position: relative;}
+.talent_chosenBox ul.chosen_card_list li a{ height: 213px; border:5px solid #342949; opacity: 0; position: absolute; width: 100%; display:block; position: absolute; z-index: 10; }
+.talent_chosenBox ul.chosen_card_list li a:hover{ opacity: 1; }
+.talent_chosenBox ul.chosen_card_list li img{ max-width: 100%; /*padding: 4px; */}
+.talent_chosenBox ul.chosen_card_list li p.nb{ position: absolute; color: #fff; top: 15px; left: 15px; width: 28px; text-align: center; line-height: 28px; border-radius: 5px 5px 0 5px; height: 28px; display: block; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#645380+0,342949+100 */ background: #645380; /* Old browsers */background: -moz-linear-gradient(top, #645380 0%, #342949 100%); /* FF3.6-15 */background: -webkit-linear-gradient(top, #645380 0%,#342949 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #645380 0%,#342949 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#645380', endColorstr='#342949',GradientType=0 ); /* IE6-9 */ }
+
+.talent_chosenBox ul.chosen_card_list li a.none_chosen{ opacity: 0; position: absolute; width: 100%; border-color: #fff; height: 100%; background-color: #fff;display: block; border-radius: 10px; text-align: center; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.talent_chosenBox ul.chosen_card_list li a.none_chosen p{ color: #81B6C8; }
+.talent_chosenBox ul.chosen_card_list li a.none_chosen span.under_line{ text-decoration: underline; }
+.talent_chosenBox ul.chosen_card_list li a.none_chosen:hover{ opacity: 1;}

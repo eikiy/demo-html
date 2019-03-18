@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>人才管理</title>
+<meta name='description' content=""/>
+<meta name='keywords' content=""/>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+<!-- Magnific Popup core JS file -->
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.popup-link').magnificPopup({
+      removalDelay: 300,
+      mainClass: 'mfp-fade'
+    });
+});
+</script>
+
+</head>
+<body>
+
+<!--=================================
+	請馬克幫我增加屬性，
+	當點了popup後 header 和 main 的css
+	都要加以下屬性才會有模糊效果：
+
+	-webkit-filter: blur(0.4rem);
+    -moz-filter: blur(0.4rem);
+    -o-filter: blur(0.4rem);
+    -ms-filter: blur(0.4rem);
+    filter: blur(0.4rem);
+================================= -->
+
+<header class="headerBox for_management_top">
+	<div class="contentsBox clearfix">
+		<a class="logo" href="#"></a>
+		<div class="searchBox search_all">
+			<input type="text" name="" placeholder="搜尋面試人員/現有員工">
+			<a href="#"></a>
+			<!-- <ul class="search_list">
+				<li class="clearfix">
+					<div class="avatar male">
+						<img src="images/user_photo_02.png" width="100%">
+					</div>
+					<div class="info clearfix">
+						<p class="name">陳明天</p>
+						<p class="department">人資部部長</p>
+						<p class="job_title">行政管理處/人資部</p>
+					</div>
+					<div class="statu">
+						<p>員</p>
+					</div>
+				</li>
+
+				<li class="clearfix">
+					<div class="avatar male">
+					</div>
+					<div class="info clearfix">
+						<p class="name">陳明天</p>
+						<p class="department">人資部部長</p>
+						<p class="job_title">行政管理處/人資部</p>
+					</div>
+					<div class="statu">
+						<p class="skyblue">招</p>
+					</div>
+				</li>
+
+				<li class="clearfix">
+					<div class="avatar male">
+					</div>
+					<div class="info clearfix">
+						<p class="name">陳明天</p>
+						<p class="department">人資部部長</p>
+						<p class="job_title">行政管理處/人資部</p>
+					</div>
+					<div class="statu">
+						<p class="gray">離</p>
+					</div>
+				</li>
+
+				<li class="clearfix">
+					<div class="avatar male">
+					</div>
+					<div class="info clearfix">
+						<p class="name">陳明天</p>
+						<p class="department">人資部部長</p>
+						<p class="job_title">行政管理處/人資部</p>
+					</div>
+					<div class="statu">
+						<p class="gray">離</p>
+					</div>
+				</li>
+			</ul> -->
+		</div>
+		<!-- <p class="add_nterviewee"><a class="add popup-link" href="#popup-employee">新增員工資料</a></p> -->
+		<ul class="tools">
+			<li><a class="message" href="#"><span>3</span><div class="tooltip">通知</div></a>
+				<!-- <div class="message_listBox">
+					<div class="top_tips"><p><a href="#">全部標示為已讀</a></p></div>
+					<ul>
+						<li class="start"><p>歡迎您開始使用通知功能。</p></li>
+						<li class="new">
+							<a class="info" href="#">
+								<p><span>林和樂</span>已完成個人資料填寫。</p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li class="new">
+							<a class="info" href="#">
+								<p><span>陳日和</span>已完成個人資料填寫。</p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li class="new">
+							<a class="info icon_review" href="#">
+								<p><span>陳天天</span>的面試評論已全部完成。</p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info" href="#">
+								<p><span>柯學</span>已完成個人資料填寫。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info" href="#">
+								<p><span>劉如如</span>已完成個人資料填寫。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info" href="#">
+								<p><span>戴以樂</span>已完成個人資料填寫。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info icon_review" href="#">
+								<p><span>林木</span>的面試評論已全部完成。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info" href="#">
+								<p><span>劉如如</span>已完成個人資料填寫。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info" href="#">
+								<p><span>戴以樂</span>已完成個人資料填寫。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+						<li>
+							<a class="info icon_review" href="#">
+								<p><span>林木</span>的面試評論已全部完成。 </p>
+								<p class="day">2018/11/01/16:56</p>
+							</a>
+						</li>
+					</ul>
+				</div> -->
+			</li>
+			<li><a class="logout" href="#"><div class="tooltip">登出</div></a></li>
+		</ul>
+	</div>
+</header>
+
+<main class="mainBox for_management">
+	<div class="contentsBox clearfix">
+		<section class="side_menu">
+			<h1 class="title">明天<br>
+			企業股份有限公司</h1>
+			<ul class="menu">
+				<li><p><a class="icon_01" href="management.html">招募管理</a></p></li>
+				<li><p><a class="icon_02" href="recruit_record.html">招募紀錄</a></p></li>
+				<li><p><a class="icon_03" href="employee_data.html">現有員工</a></p></li>
+				<li><p class="btn_in"><a class="icon_06" href="talent_management.html">人才管理</a></p></li>
+				<li><p><a class="icon_04" href="account.html">帳號設定</a></p></li>
+				<li><p><a class="icon_05" href="HR_helper.html">HR小幫手</a></p></li>
+			</ul>
+		</section>
+		<section class="right_contents clearfix">
+			<div class="recruit_contents talent_contents">
+				<div class="top_toolsBox clearfix">
+					<p class="add_nterviewee"><a class="add popup-link" href="#popup-seach-talent">尋找人才放大鏡</a></p>
+					<div class="talent_filter clearfix">
+						<ul class="type clearfix">
+							<li class="btn_in"><p><a href="#"><span>執行力</span></a></p></li>
+							<li><p><a href="#"><span>其他測驗</span></a></p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="talent_first_info">
+					<p>此頁可快速搜尋公司內擁有相同特質的人才，並可依職場正面行為（執行力、配合度等）做百分比高低排序。<br>
+						請先點選左上角 <span>尋找人才放大鏡</span> 按鍵，選擇您需要配對的特質卡片。
+					</p>
+				</div>
+			</div>
+		</section>
+	</div>
+
+    <!-- popup 尋找人才放大鏡 -->
+	<div id="popup-seach-talent" class="white-popup popup-L mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>尋找人才放大鏡</h3>
+            </div>
+            <div class="talent_chosenBox">
+            	<ul class="top_title clearfix">
+            		<li class="btn_in"><p>優秀特質卡</p></li>
+            		<li><p class="org">須注意特質卡</p></li>
+            		<li><p class="red">警告特質卡</p></li>
+            		<li><p class="block">測謊卡</p></li>
+            	</ul>
+            	<ul class="chosen_card_list clearfix">
+            		<li>
+						<a href="#"></a>
+						<p class="nb">1</p>
+						<img src="images/card_pic/特質卡片-05.png" alt="">
+					</li>
+					<li>
+						<a class="none_chosen">
+							<p>公司尚未有職員<br>
+							擁有此項特質卡片<br>
+							<span class="under_line">故無法選擇</span>
+							</p>
+						</a>
+						<img src="images/card_pic/特質卡片-06.png" alt="">
+					</li>
+					<li>
+						<a href="#"></a>
+						<p class="nb">4</p>
+						<img src="images/card_pic/特質卡片-07.png" alt="">
+					</li>
+					<li>
+						<a href="#"></a>
+						<p class="nb">14</p>
+						<img src="images/card_pic/特質卡片-08.png" alt="">
+					</li>
+					<li>
+						<a class="none_chosen">
+							<p>公司尚未有職員<br>
+							擁有此項特質卡片<br>
+							<span class="under_line">故無法選擇</span>
+							</p>
+						</a>
+						<img src="images/card_pic/特質卡片-09.png" alt="">
+					</li>
+					<li>
+						<a href="#"></a>
+						<p class="nb">5</p>
+						<img src="images/card_pic/特質卡片-10.png" alt="">
+					</li>
+					<li>
+						<a class="none_chosen">
+							<p>公司尚未有職員<br>
+							擁有此項特質卡片<br>
+							<span class="under_line">故無法選擇</span>
+							</p>
+						</a>
+						<img src="images/card_pic/特質卡片-09.png" alt="">
+					</li>
+					<li>
+						<a href="#"></a>
+						<p class="nb">1</p>
+						<img src="images/card_pic/特質卡片-05.png" alt="">
+					</li>
+					<li>
+						<a class="none_chosen">
+							<p>公司尚未有職員<br>
+							擁有此項特質卡片<br>
+							<span class="under_line">故無法選擇</span>
+							</p>
+						</a>
+						<img src="images/card_pic/特質卡片-06.png" alt="">
+					</li>
+					<li>
+						<a href="#"></a>
+						<p class="nb">12</p>
+						<img src="images/card_pic/特質卡片-08.png" alt="">
+					</li>
+					<li>
+						<a href="#"></a>
+						<p class="nb">2</p>
+						<img src="images/card_pic/特質卡片-10.png" alt="">
+					</li>
+					<li>
+						<a href="#"></a>
+						<p class="nb">1</p>
+						<img src="images/card_pic/特質卡片-07.png" alt="">
+					</li>
+					<li>
+						<a href="#"></a>
+						<p class="nb">12</p>
+						<img src="images/card_pic/特質卡片-08.png" alt="">
+					</li>
+					<li>
+						<a href="#"></a>
+						<p class="nb">2</p>
+						<img src="images/card_pic/特質卡片-10.png" alt="">
+					</li>
+					<li>
+						<a href="#"></a>
+						<p class="nb">1</p>
+						<img src="images/card_pic/特質卡片-07.png" alt="">
+					</li>
+					<li>
+						<a href="#"></a>
+						<p class="nb">12</p>
+						<img src="images/card_pic/特質卡片-08.png" alt="">
+					</li>
+					<li>
+						<a href="#"></a>
+						<p class="nb">2</p>
+						<img src="images/card_pic/特質卡片-10.png" alt="">
+					</li>
+					<li>
+						<a href="#"></a>
+						<p class="nb">1</p>
+						<img src="images/card_pic/特質卡片-07.png" alt="">
+					</li>
+            	</ul>
+            </div>
+        </form>
+    </div>
+</main>
+
+</body>
+</html>
+
+
+
