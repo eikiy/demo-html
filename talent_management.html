@@ -13,14 +13,13 @@
 <!-- Magnific Popup core JS file -->
 <script src="magnific-popup/jquery.magnific-popup.js"></script>
 <script type="text/javascript">
-$(document).ready(function() {
-    $('.popup-link').magnificPopup({
-      removalDelay: 300,
-      mainClass: 'mfp-fade'
-    });
-});
+	$(document).ready(function() {
+	    $('.popup-link').magnificPopup({
+	      removalDelay: 300,
+	      mainClass: 'mfp-fade'
+	    });
+	});
 </script>
-
 </head>
 <body>
 
@@ -188,16 +187,6 @@ $(document).ready(function() {
 		</section>
 		<section class="right_contents clearfix">
 			<div class="recruit_contents talent_contents">
-				<div class="top_toolsBox clearfix">
-					<p class="add_nterviewee"><a class="add popup-link" href="#popup-seach-talent">尋找人才放大鏡</a></p>
-					<div class="talent_filter clearfix">
-						<ul class="type clearfix">
-							<li class="btn_in"><p><a href="#"><span>執行力</span></a></p></li>
-							<li><p><a href="#"><span>其他測驗</span></a></p></li>
-						</ul>
-					</div>
-					<p class="people_nb">共有 3 位人員</p>
-				</div>
 				<ul class="trait_card clearfix">
 					<li>
 						<a class="go_delete" href="#"></a>
@@ -211,11 +200,62 @@ $(document).ready(function() {
 						<a class="add_card popup-link" href="#popup-seach-talent">想要增加另一張<br>
 							特質卡片<br>
 							請再點選一次<br>
-							<span class="under_line">尋找人才放大鏡</span>
+							<span class="under_line">尋找人才</span><br>
 							<span class="big">＋</span>
 						</a>
 					</li>
 				</ul>
+				<div class="top_toolsBox clearfix">
+					<div class="talent_filter talent_filter_sort clearfix">
+						<ul class="type clearfix">
+							<li>
+								<p class="btn_in"><a href="#"><span>正面行為排序</span></a></p> <!-- 選取中 p + "btn_in" -->
+								<ul class="sub_filter" style=" display: block;">
+									<li><p>執行力</p></li>
+									<li><p>配合度</p></li>
+									<li><p>工作投入</p></li>
+									<li><p>升遷性</p></li>
+									<li><p>顧客服務</p></li>
+									<li><p>創新能力</p></li>
+									<li><p>學習慾望</p></li>
+									<li><p>監督紀律</p></li>
+								</ul>
+							</li>
+							<li>
+								<p><a href="#"><span>其他測驗排序</span></a></p>
+								<ul class="sub_filter">
+									<li><p>AAA</p></li>
+									<li><p>BBB</p></li>
+									<li><p>CCC</p></li>
+									<li><p>DDD</p></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<p class="people_nb">按高百分比 至 低百分比排列，共有 3 位</p>
+					<!-- <div class="">
+						<p>正面行為排序</p>
+						<ul>
+							<li><p>執行力</p></li>
+							<li><p>配合度</p></li>
+							<li><p>工作投入</p></li>
+							<li><p>升遷性</p></li>
+							<li><p>顧客服務</p></li>
+							<li><p>創新能力</p></li>
+							<li><p>學習慾望</p></li>
+							<li><p>監督紀律</p></li>
+						</ul>
+					</div>
+					<div class="">
+						<p>其他測驗排序</p>
+						<ul>
+							<li><p>AAA</p></li>
+							<li><p>BBB</p></li>
+							<li><p>CCC</p></li>
+							<li><p>DDD</p></li>
+						</ul>
+					</div> -->
+				</div>
 				<ul class="user_list list clearfix">
 					<li class="clearfix">
 						<a class="popup-link" href="#popup-firstTest">
@@ -279,11 +319,11 @@ $(document).ready(function() {
 		</section>
 	</div>
 
-	<!-- popup 尋找人才放大鏡 -->
+	<!-- popup 特質放大鏡選擇 -->
 	<div id="popup-seach-talent" class="white-popup popup-L mfp-hide">
         <form class="setBox filter_pop">
             <div class="top_title">
-                <h3>尋找人才放大鏡</h3>
+                <h3>特質放大鏡選擇</h3>
             </div>
             <div class="talent_chosenBox">
             	<ul class="top_title clearfix">

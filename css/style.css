@@ -1709,17 +1709,15 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .talent_contents .top_toolsBox .talent_filter{ float: left; width: 100%; max-width: 550px; }
 .talent_contents .top_toolsBox .talent_filter .type{ float: right; }
 
-.talent_contents .talent_first_info{ padding: 30px 65px; border:3px solid #84BE98;min-height: 585px; border-radius: 10px 0 10px 10px; position: relative;}
-.talent_contents .talent_first_info::after{ position: absolute; content: "";  left: 50px; bottom: 0; width: 573px; height: 490px; display: block; background: url(../images/img_owl_first_talent.png) center center no-repeat; background-size: contain;  }
-.talent_contents .talent_first_info p span{ color: #81B6C8;}
+.talent_contents .talent_first_info{ padding: 20px 45px; border:3px solid #84BE98; border-radius: 10px 0 10px 10px;}
 
-.talent_contents ul.trait_card{ width: 100%; padding: 20px 25px; background-color: #fff; margin-bottom: 15px; }
+.talent_contents ul.trait_card{ width: 100%; margin-top: 50px; padding:20px 20px 0px 20px; background-color: #fff; margin-bottom: 15px; }
 .talent_contents ul.trait_card li{ float: left; max-width: 150px; margin-right: 5px; position: relative; }
 .talent_contents ul.trait_card li img{ max-width: 100%; }
 .talent_contents ul.trait_card li a.go_delete{ position: absolute; cursor: pointer; top:12px; right: 12px; width: 16px; height: 16px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
 .talent_contents ul.trait_card li a.go_delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
 
-.talent_contents ul.trait_card li a.add_card{ position: relative; width: 100%; height: 225px; padding-top: 20px; border:1px dashed #9B9B9B ; color: #9B9B9B; display: block; border-radius: 10px; text-align: center; }
+.talent_contents ul.trait_card li a.add_card{ position: relative; width: 100%; height: 225px; min-width: 150px; font-size: 14px; padding-top: 20px; border:1px dashed #9B9B9B ; color: #9B9B9B; display: block; border-radius: 10px; text-align: center; }
 .talent_contents ul.trait_card li a.add_card span.under_line{ text-decoration: underline; }
 .talent_contents ul.trait_card li a.add_card span.big{ font-size: 55px; }
 .talent_contents ul.trait_card li a.add_card::after{content: ""; background: url(../images/img_owl_talent.png); bottom: -5px; right: -30px; background-size: contain; position: absolute; width: 77px; height: 98px; display: block; }
@@ -1742,7 +1740,20 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .talent_chosenBox ul.chosen_card_list li img{ max-width: 100%; /*padding: 4px; */}
 .talent_chosenBox ul.chosen_card_list li p.nb{ position: absolute; color: #fff; top: 15px; left: 15px; width: 28px; text-align: center; line-height: 28px; border-radius: 5px 5px 0 5px; height: 28px; display: block; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#645380+0,342949+100 */ background: #645380; /* Old browsers */background: -moz-linear-gradient(top, #645380 0%, #342949 100%); /* FF3.6-15 */background: -webkit-linear-gradient(top, #645380 0%,#342949 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #645380 0%,#342949 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#645380', endColorstr='#342949',GradientType=0 ); /* IE6-9 */ }
 
-.talent_chosenBox ul.chosen_card_list li a.none_chosen{ opacity: 0; position: absolute; width: 100%; border-color: #fff; height: 100%; background-color: #fff;display: block; border-radius: 10px; text-align: center; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.talent_chosenBox ul.chosen_card_list li a.none_chosen{ opacity: 0; position: absolute; width: 100%; border-color: #fff; height: 100%; background-color: #fff;display: block; text-align: center; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .talent_chosenBox ul.chosen_card_list li a.none_chosen p{ color: #81B6C8; }
 .talent_chosenBox ul.chosen_card_list li a.none_chosen span.under_line{ text-decoration: underline; }
 .talent_chosenBox ul.chosen_card_list li a.none_chosen:hover{ opacity: 1;}
+
+.talent_contents .top_toolsBox .talent_filter_sort{ float: right; width: initial; padding-left: 20px; }
+.talent_contents .top_toolsBox .talent_filter_sort ul.type{ overflow: initial; }
+.talent_contents .top_toolsBox .talent_filter_sort ul.type li{position: relative; width: 134px;}
+.talent_contents .top_toolsBox .talent_filter_sort ul.type li ul.sub_filter{ display: none; position: absolute; top: 30px; left: 0; z-index: 10; background-color: #fff; }
+.talent_contents .top_toolsBox .talent_filter_sort ul.type li ul.sub_filter li{ float: none; position: initial; padding: 2px 10px; }
+.talent_contents .top_toolsBox .talent_filter_sort ul.type li ul.sub_filter li p{ cursor: pointer; text-align: left; padding: 0 9px; line-height: 26px; }
+.talent_contents .top_toolsBox .talent_filter_sort ul.type li ul.sub_filter li:hover p{ background-color: #81B6C8; color: #fff;}
+.talent_contents .top_toolsBox .talent_filter_sort ul.type li ul.sub_filter li::before,
+.talent_contents .top_toolsBox .talent_filter_sort ul.type li::after{ display: none; }
+.talent_contents .top_toolsBox .talent_filter_sort ul.type li p span::after{ display: none;}
+.talent_contents .top_toolsBox .talent_filter_sort ul.type li p span::before{border-width: 8px 8px 0 8px; right: -10px; border-color: #81B6C8 transparent transparent transparent;/* background-color: #81B6C8;*/ }
+.talent_contents .top_toolsBox .talent_filter_sort ul.type li p.btn_in a{ color: #D8D8D8; }

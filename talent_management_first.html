@@ -188,18 +188,46 @@ $(document).ready(function() {
 		</section>
 		<section class="right_contents clearfix">
 			<div class="recruit_contents talent_contents">
+				<ul class="trait_card clearfix">
+					<li>
+						<a class="add_card popup-link" href="#popup-seach-talent">請選擇一張<br>
+							想要搜尋的特質卡片<br>
+							<span class="under_line">尋找人才</span><br>
+							<span class="big">＋</span>
+						</a>
+					</li>
+				</ul>
 				<div class="top_toolsBox clearfix">
-					<p class="add_nterviewee"><a class="add popup-link" href="#popup-seach-talent">尋找人才放大鏡</a></p>
-					<div class="talent_filter clearfix">
+					<div class="talent_filter talent_filter_sort clearfix">
 						<ul class="type clearfix">
-							<li class="btn_in"><p><a href="#"><span>執行力</span></a></p></li>
-							<li><p><a href="#"><span>其他測驗</span></a></p></li>
+							<li>
+								<p><a href="#"><span>正面行為排序</span></a></p> <!-- 選取中 p + "btn_in" -->
+								<ul class="sub_filter">
+									<li><p>執行力</p></li>
+									<li><p>配合度</p></li>
+									<li><p>工作投入</p></li>
+									<li><p>升遷性</p></li>
+									<li><p>顧客服務</p></li>
+									<li><p>創新能力</p></li>
+									<li><p>學習慾望</p></li>
+									<li><p>監督紀律</p></li>
+								</ul>
+							</li>
+							<li>
+								<p><a href="#"><span>其他測驗排序</span></a></p>
+								<ul class="sub_filter">
+									<li><p>AAA</p></li>
+									<li><p>BBB</p></li>
+									<li><p>CCC</p></li>
+									<li><p>DDD</p></li>
+								</ul>
+							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="talent_first_info">
 					<p>此頁可快速搜尋公司內擁有相同特質的人才，並可依職場正面行為（執行力、配合度等）做百分比高低排序。<br>
-						請先點選左上角 <span>尋找人才放大鏡</span> 按鍵，選擇您需要配對的特質卡片。
+						請直接點選上方 ＋ 按鍵，選擇您需要配對的特質卡片。
 					</p>
 				</div>
 			</div>
@@ -216,7 +244,7 @@ $(document).ready(function() {
             	<ul class="top_title clearfix">
             		<li class="btn_in"><p>優秀特質卡</p></li>
             		<li><p class="org">須注意特質卡</p></li>
-            		<li><p class="red">警告特質卡</p></li>
+            		<!-- <li><p class="red">警告特質卡</p></li> -->
             		<li><p class="block">測謊卡</p></li>
             	</ul>
             	<ul class="chosen_card_list clearfix">
