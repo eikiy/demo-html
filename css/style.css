@@ -973,11 +973,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .managementBox .remarkBox p.p_red{ color: #c87d86; font-weight: bold; font-size: 14px; }
 .right_contents .managementBox .remarkBox p.day{ width: initial; max-width: initial;}
 
-.right_contents .top_toolsBox{ width: 100%; padding:20px 0 10px 0; background-color: #f8f9f9 ; position: sticky; top: 40px; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; z-index: 80;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8f9f9+0,f8f9f9+80,000000+100&1+68,0+100 */
-background: -moz-linear-gradient(top, rgba(248,249,249,1) 0%, rgba(248,249,249,1) 68%, rgba(248,249,249,0.63) 80%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(248,249,249,1) 0%,rgba(248,249,249,1) 68%,rgba(248,249,249,0.63) 80%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(248,249,249,1) 0%,rgba(248,249,249,1) 68%,rgba(248,249,249,0.63) 80%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */}
+.right_contents .top_toolsBox{ width: 100%; padding:20px 0 10px 0; background-color: #f8f9f9 ; position: sticky; top: 40px; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; z-index: 80; }
 .right_contents .top_toolsBox ul.type{ float: left; max-width: 350px; background-color: #fff; border-radius: 5px 0 5px 5px; overflow: hidden; box-shadow: 0 0 1px rgba(0,0,0,.5); }
 .right_contents .top_toolsBox ul.type li{ width:116px; float: left; position: relative;}
 .right_contents .top_toolsBox ul.type li p{ text-align: center; line-height: 30px;}
