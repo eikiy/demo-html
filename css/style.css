@@ -467,6 +467,8 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 
 .check_remind .border_blue{ background-color: #fff; padding:15px 30px;  margin-top: 10px;}
 .check_remind .border_blue p.info{line-height: 20px;}
+.check_remind .border_blue p.info a{ color: #81B6C8; }
+.check_remind .border_blue p.info a:hover{ text-decoration: underline; }
 .check_remind .border_blue p.p_gray{ color: #9B9B9B;}
 .check_remind .border_blue p.line_gray{ border-bottom: 1px solid #979797; }
 .check_remind .border_blue p.info span.icon_thumbtack{ position: relative; padding-left: 14px; display: block;  color: #4A4A4A; text-align: left;}
@@ -1360,7 +1362,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 
 
 /*人員資料 lightbox*/
-.popup-L .filter_pop .chosenBox{ padding: 15px 12px; /*overflow-y: auto; max-height: 90vh;*/}
+.popup-L .filter_pop .chosenBox{ padding: 15px 12px; min-height: 395px; /*overflow-y: auto; max-height: 90vh;*/}
 .interviewee_info{ width: 100%;  }
 .interviewee_info .interviewMainBox{ width: 100%; }
 .interviewee_info .interviewMainBox .top_ivBox{padding: 20px 0 15px 0;}
@@ -1390,11 +1392,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 .interview_officer_Main .top_ivBox .rBox .embarrassment p.btn_none a{  -webkit-filter:grayscale(1); opacity: .8; cursor: not-allowed; }
 .interview_officer_Main .top_ivBox .rBox .embarrassment p.btn_none a:hover{ background-color: #fff; }
 
-.interview_officer_Main .top_ivBox .bottom_btn{ position: absolute; bottom: 16px; right: 5px; font-size: 14px; letter-spacing: 5px; }
-.interview_officer_Main .top_ivBox .bottom_btn a{ padding-right: 30px; height: 26px; color: #81B6C8; display: inline-block; margin-left: 15px;}
-.interview_officer_Main .top_ivBox .bottom_btn a.edit{ background: url(../images/user_info/btn_edit.png) center right no-repeat; background-size: contain;}
-.interview_officer_Main .top_ivBox .bottom_btn a.print{ background: url(../images/user_info/btn_print.png) center right no-repeat; background-size: contain;}
-.interview_officer_Main .top_ivBox .bottom_btn a:hover{ text-decoration: underline; }
+.interview_officer_Main .bottom_btn{ position: absolute; bottom: 16px; right: 5px; font-size: 14px; letter-spacing: 5px; }
+.interview_officer_Main .bottom_btn a{ padding-right: 30px; height: 26px; color: #81B6C8; display: inline-block; margin-left: 15px;}
+.interview_officer_Main .bottom_btn a.edit{ background: url(../images/user_info/btn_edit.png) center right no-repeat; background-size: contain;}
+.interview_officer_Main .bottom_btn a.print{ background: url(../images/user_info/btn_print.png) center right no-repeat; background-size: contain;}
+.interview_officer_Main .bottom_btn a:hover{ text-decoration: underline; }
 
 .interviewee_info .interview_officer_Main .top_interviewer_info{ width: 470px; float: left; height: 152px; display: block; border: 1px solid #979797; border-radius: 10px 0 10px 0; /*overflow:hidden;*/ }
 .interviewee_info .interview_officer_Main .top_interviewer_info .left_photo{ float: left; width: 125px; }
@@ -1539,16 +1541,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 .interviewMainBox .firstTestBox p.btn a .tooltip{ left: -15px; color: #fff; min-width: 84px; padding: 3px 5px;}
 
 
-.interviewee_info ul.Lock{ text-align: left; width: 100%; float:left; padding-top: 15px; }
+.interviewee_info ul.Lock{ text-align: left; width: 100%; padding:20px 55px; }
 .interviewee_info ul.Lock li{ display: inline-block; padding: 0 5px; vertical-align: top; }
-.interviewee_info ul.Lock li a{ width: 90px; height: 90px; /*cursor: no-drop; */ display: block; border-radius: 10px 0 10px 10px; border:3px solid #9B9B9B; padding: 17px 0 0 4px; background-image: url(../images/user_info/bg_lock_l.png); background-position: center center; background-repeat: no-repeat; background-size: contain;}
-.interviewee_info ul.Lock li a p{ color: #9B9B9B; }
-.interviewee_info ul.Lock li a p span{ text-align: center; padding: 5px 0 0 0; color: inherit; display: block; }
-.interviewee_info ul.Lock li a:hover{ border-color: #81B6C8;}
+.interviewee_info ul.Lock li a{ width: 90px; height: 90px; /*cursor: no-drop; */ display: block; border-radius: 10px 0 10px 10px; border:3px solid #81B6C8; padding: 0 0 0 4px; background-image: url(../images/user_info/bg_lock_l.png); background-position: center center; background-repeat: no-repeat; background-size: contain;}
+.interviewee_info ul.Lock li a p{ color: #81B6C8; }
+.interviewee_info ul.Lock li a p span{ text-align: center; padding:0; color: inherit; display: block; }
+.interviewee_info ul.Lock li a p span.big{ font-size: 24px;text-align: left; display: block; padding-bottom: 35px; }
+.interviewee_info ul.Lock li a:hover{ border-color: #9B9B9B;}
 .interviewee_info ul.Lock li.open a{ cursor: pointer;  background-image: url(../images/user_info/bg_lock_s.png); border-color: #81B6C8;  }
-.interviewee_info ul.Lock li.open a p{ color: #81B6C8;}
-.interviewee_info ul.Lock li.open a p span{ text-align: left;}
+.interviewee_info ul.Lock li.open a p{ color: #81B6C8; font-size: 13px; text-align: center;}
 .interviewee_info ul.Lock li.open a:hover{ background-color: #D1E0E5; }
+.interviewee_info ul.Lock li.none a{  background-image: url(../images/user_info/bg_lock_none.png); border-color: #C87D86; }
+.interviewee_info ul.Lock li.none a p{color: #C87D86;}
+.interviewee_info ul.Lock li.none a:hover{ background-color: #ffe4e7; }
+.interviewee_info ul.Lock li.none_in a{  background-image: url(../images/user_info/bg_lock_none_w.png);  background-color: #C87D86; }
+.interviewee_info ul.Lock li.none_in a p{color: #fff;}
+.interviewee_info ul.Lock li.none_in a:hover { background-color: #C87D86; }
+
 .interviewee_info ul.Lock li.btn_in a{ background-color: #81B6C8;  background-image: url(../images/user_info/bg_lock_s_w.png);}
 .interviewee_info ul.Lock li.btn_in a p{ color:#fff; }
 .interviewee_info ul.Lock li.btn_in a:hover{ background-color:#81B6C8;}
@@ -1557,7 +1566,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 .interviewee_info ul.Lock li.add_test a:hover{ background-color: #eef6f9; }
 
 .interviewee_info .c_dark_blue{ border-color: #558C9E; border-width: 3px; }
-.interviewee_info h3.test_report_title { background-color: #D1E0E5; line-height: 25px; padding: 5px 0; border-radius: 10px 0 0 0; text-align: center; }
+.interviewee_info h3.test_report_title { background-color: #D1E0E5; line-height: 25px; padding: 5px 0; padding-left: 65px; }
+.interviewee_info h3.test_report_title:first-child{ border-radius: 10px 0 0 0;}
 
 .test_report{ width: 100%; border-radius: 0px 0 10px 10px; border:2px solid #81B6C8; }
 .test_report h4.r_title{ width: 100%; font-size: 24px; color:#D1E0E5; padding-top: 14px; display: inline-block; height: 57px; position: relative; background-color: #81B6C8; text-align: right; padding-right: 85px;}
@@ -1594,9 +1604,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 
 .interviewee_info .test_invalid{ border-color: #C87D86;}
 .interviewee_info .test_invalid h3.test_report_title{ background-color: #C87D86; border-radius: 0; color: #fff; }
-.interviewee_info .test_invalid .p_invalid{ width: 100%; min-height: 320px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
-.interviewee_info .test_invalid .p_invalid p{ font-size: 18px; line-height: 25px;  max-width: 720px; width: 100%; padding:20px 0 0 200px; position:relative;}
-.interviewee_info .test_invalid .p_invalid p::after{ content: ""; position: absolute; top: 0; left: 0; width: 167px; height: 150px; display: block; background: url(../images/user_info/img_invalid.png) center center no-repeat; background-size: contain; }
+.interviewee_info .p_invalid{ width: 100%; min-height: 320px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
+.interviewee_info .p_invalid p{ font-size: 17px; line-height: 25px;  max-width: 720px; width: 100%; padding:0 0 0 200px; position:relative;}
+.interviewee_info .p_invalid p::after{ content: ""; position: absolute; top:calc(50% - 75px); left: 0; width: 167px; height: 150px; display: block; background: url(../images/user_info/img_invalid.png) center center no-repeat; background-size: contain; }
 
 .interviewee_info .box_style2{ border: none; }
 .interviewee_info .box_style2 h4.r_title{ height: 92px; padding-top: 30px; }
@@ -1651,7 +1661,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 .addTestBox .status_record .jobBox table.test tr td.test_finished p{ color: #81B6C8; }
 
 .interviewee_info .new_report{ border-radius: 10px 0 0 0; }
-.interviewee_info .new_report .top_topic{ border-bottom:2px solid #81B6C8; padding: 40px 55px; margin: 0 auto; }
+.interviewee_info .new_report .top_topic{ border-bottom:2px solid #81B6C8; padding: 40px 65px; margin: 0 auto; }
 .interviewee_info .new_report .top_topic p{ text-align: justify; }
 .interviewee_info .new_report .top_topic p.color_label{ padding: 0; text-align: left; padding: 30px 0; }
 .interviewee_info .new_report .top_topic p.color_label span{ padding: 2px 20px;color: #fff; font-weight: normal;  display: inline-block; margin-right: 10px;}
@@ -1660,6 +1670,40 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 .interviewee_info .new_report .top_topic p.color_label span.red{ background-color: #C87D86; }
 .interviewee_info .new_report .top_topic p.info span{ color: inherit; text-decoration: underline; padding: 0; }
 .interviewee_info .new_report .top_topic p.red_note{ color: #C87D86; }
+
+.interviewee_info .r_content_01{ border-color: #558C9E; padding: 40px 0; }
+.interviewee_info .r_content_01 .border_blue{ max-width: 395px; margin: 10px auto;  }
+.interviewee_info .r_content_01 .border_green{padding: 15px; margin-top: 20px;}
+.interviewee_info .r_content_01 ul.jobBox{ margin-top: 0; }
+.interviewee_info .r_content_01 .sub_title p.t_title,.interviewee_info .r_content_03 .sub_title p.t_title{ text-align: center; line-height: 46px; color: #4A4A4A;}
+.interviewee_info .r_content_01 .all_test_list ul.conditionList li .job_type p a span{ color: #4A4A4A; padding-left: 0;}
+.interviewee_info .r_content_01 .all_test_list ul.conditionList li.check_notyet .job_type p a span{ color: #9B9B9B;  }
+.interviewee_info .r_content_01 .all_test_list .link p.btn a .tooltip{ color: #fff; }
+.interviewee_info .r_content_03{ border-color: #B8D3DC; padding: 40px 0; }
+.interviewee_info .r_content_03 .border_blue{ width: 855px; margin: 0 auto; }
+.interviewee_info .r_content_03 table.test_history_list{ width: 100%; }
+.interviewee_info .r_content_03 table.test_history_list p{ padding:12px;  text-align: center;}
+.interviewee_info .r_content_03 table.test_history_list p.p_blue{ color: #81B6C8; }
+.interviewee_info .r_content_03 table.test_history_list p.p_red{ color: #C87D86; }
+
+.interviewee_info .r_content_03 table.test_history_list tr th, .interviewee_info .r_content_03 table.test_history_list tr td{ border-top: 1px solid rgba(155,155,155,0.5); border-right: 1px solid rgba(155,155,155,0.5);}
+
+.interviewee_info .top_test_menu{ width: 100%; padding-left: 10px; margin-bottom: -2px; position: relative; }
+.interviewee_info .top_test_menu ul li{float: left; padding-right: 5px;}
+.interviewee_info .top_test_menu ul li p{ text-align: center; }
+.interviewee_info .top_test_menu ul li a{ border: 3px solid #558C9E; width: 150px; height: 50px; line-height: 50px; color: #558C9E; display: block; border-radius: 10px 10px 0 0; }
+.interviewee_info .top_test_menu ul li a:hover{background-color: #558C9E; color: #fff;}
+
+.interviewee_info .top_test_menu ul li:nth-child(2) a{ border-color: #81B6C8; color: #81B6C8; }
+.interviewee_info .top_test_menu ul li:nth-child(2) a:hover{ background-color: #81B6C8; color: #fff;}
+.interviewee_info .top_test_menu ul li:nth-child(3) a{ border-color: #B8D3DC; color: #B8D3DC; }
+.interviewee_info .top_test_menu ul li:nth-child(3) a:hover{ background-color: #B8D3DC; color: #fff;}
+.interviewee_info .top_test_menu ul li.btn_in a{background-color: #558C9E; color: #fff;}
+.interviewee_info .top_test_menu ul li.btn_in:nth-child(2) a{ background-color: #81B6C8; color: #fff;}
+.interviewee_info .top_test_menu ul li.btn_in:nth-child(3) a{ background-color: #B8D3DC; color: #fff;}
+
+.interviewee_info .open_content{ margin-bottom: 0; }
+.interviewee_info .open_content ul li a{ border-bottom: none; }
 
 .test_report .positive_behavior{ max-width: 778px; margin: 35px auto 0 auto; }
 .test_report .positive_behavior table.analysis{ width: 100%; }
@@ -1678,6 +1722,29 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .test_report .note_positive_behavior{ max-width: 778px; margin: 0px auto 25px auto; position: relative; padding: 15px 0; }
 .test_report .note_positive_behavior p{ font-size: 12px; }
 .test_report .note_positive_behavior p.p_right{ font-size: 14px; position: absolute; top: 12px; right: 0px; }
+
+.positive_behavior .answer_questions{ padding: 50px 0; }
+.positive_behavior .answer_questions ul.no_q{ width: 100%; position: relative; max-width: 600px; margin: 0 auto; padding-left: 64px; }
+.positive_behavior .answer_questions ul.no_q li{ float: left; width:38px; padding: 0 2px; }
+.positive_behavior .answer_questions ul.no_q li p{ font-size: 16px; text-align: center; color: #558C9E; padding-bottom: 38px;position: relative;}
+.positive_behavior .answer_questions ul.no_q li p::after, .positive_behavior ul.no_q li p::before{ content: ""; position: absolute; width: 36px; height: 36px; bottom: 0; left: 0; display: block; }
+.positive_behavior .answer_questions ul.no_q li p::before{z-index: 5; background-repeat: no-repeat; background-position: center center; background-size: contain;}
+.positive_behavior .answer_questions ul.no_q li p.ok::before{ background-image: url(../images/user_info/icon_answer_ok.png); }
+.positive_behavior .answer_questions ul.no_q li p.error::before{ background-image: url(../images/user_info/icon_answer_error.png); }
+.positive_behavior .answer_questions ul.no_q li.first_title{position: absolute; top: 0; left: 0px; width: 65px;}
+.positive_behavior .answer_questions ul.no_q li.first_title p{ text-align: left; }
+.positive_behavior .answer_questions ul.no_q li.first_title p::after{ display: none; }
+.positive_behavior .answer_questions ul.no_q li.bg_green p::after{ background-color: rgba(167,218,185,0.85); }
+.positive_behavior .answer_questions ul.no_q li.bg_blue p::after{ background-color: #D1E0E5;; }
+.positive_behavior .answer_questions ul.no_q li.bg_red p::after{ background-color: #D8BCC1; }
+.positive_behavior .answer_questions ul.difficulty_q{ width: 100%; position: relative; max-width: 600px; margin: 0 auto; padding: 8px 0 15px 0; padding-left: 64px; }
+.positive_behavior .answer_questions ul.difficulty_q li{ float: left; width:150px; margin: 0 2px; }
+.positive_behavior .answer_questions ul.difficulty_q li:nth-child(2){  width:225px; margin: 0 1px; }
+.positive_behavior .answer_questions ul.difficulty_q li p{ text-align: center; line-height: 28px; font-size: 16px; color: #fff; }
+.positive_behavior .answer_questions ul.difficulty_q li.bg_green{ background-color: #84BE98 ;}
+.positive_behavior .answer_questions ul.difficulty_q li.bg_blue{ background-color: #81B6C8 ;}
+.positive_behavior .answer_questions ul.difficulty_q li.bg_red{ background-color: #C87D86 ;}
+.positive_behavior .answer_questions p.note{ font-size: 12px; color: #4A4A4A; margin: 0 auto; padding:0 0 0 65px; max-width: 600px; }
 
 .test_report .overall{ padding: 15px; background-color: #EFF7FA; }
 .test_report .overall .overall_type{/* margin:10px 15px 30px 15px;*/ border:10px #EB8B70 solid; border-radius: 15px 0 15px 15px;}
@@ -1703,6 +1770,10 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .test_report .other_test_fraction .testfraction_box .progress_container .top_title p span.f_l{ left: 0; }
 .test_report .other_test_fraction .testfraction_box .progress_container .top_title p span.f_r{ right: 10px; }
 
+.test_report .test_fraction_percentage table.analysis th:first-child{ border-right: none;}
+.test_report .test_fraction_percentage table.analysis .progress_container{ height: 50px; }
+.test_report .test_fraction_percentage table.analysis .progressbar{ height: 21px; top: 15px; }
+
 .interviewee_info h4.dividing_line{ border-top:2px solid #D8D8D8; padding: 15px 60px 0px 60px; margin-top: 10px; font-size: 20px ; color: #4A4A4A;}
 .interviewee_info .behavior_description {border-color: #EBEBEB;}
 .interviewee_info .behavior_description h4.bg_gray{ background-color: #EBEBEB; color: #9B9B9B; text-align: left; padding-left: 40px;}
@@ -1723,9 +1794,9 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .interviewee_info .behavior_description .behavior_note ul.other li{ border-bottom:1px dashed #D8D8D8; padding: 10px 0;}
 .interviewee_info .behavior_description .behavior_note ul.other li h5{ font-size: 13px; padding:0 20px 5px 20px;}
 
-.interviewee_info .behavior_description .company_info{ padding: 100%; padding: 15px 40px; }
-.interviewee_info .behavior_description .company_info p.info_logo{ color: #9B9B9B; float: right; position: relative; padding-left: 50px; font-size: 12px;}
-.interviewee_info .behavior_description .company_info p.info_logo::after{ position: absolute; top: 0; left: 0; content: ""; width: 40px; height: 31px; display: block; background: url(../images/logo_kamo.png) center center no-repeat; background-size: contain; }
+.interviewee_info .company_info{ padding: 100%; padding: 15px 40px; }
+.interviewee_info .company_info p.info_logo{ color: #9B9B9B; float: right; position: relative; padding-left: 50px; font-size: 12px;}
+.interviewee_info .company_info p.info_logo::after{ position: absolute; top: 0; left: 0; content: ""; width: 40px; height: 31px; display: block; background: url(../images/logo_kamo.png) center center no-repeat; background-size: contain; }
 
 /*人才管理*/
 .talent_contents p.add_nterviewee{ width: initial; text-align: center; }
@@ -1856,29 +1927,29 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .logicTestEnd .end_thankyou::after{height: 400px; top: -412px; display: block; background: url(../images/logicTest/end_thankyou.png) center top no-repeat; background-size: contain; }
 .logicTestEnd .end_thankyou p{ color: #4A4A4A;}
 
-.setBox .fillinBox .the_animation{padding: 20px 45px 10px  5px; display: block; line-height: initial;}
-.setBox .fillinBox .the_animation .animationbox{  width: 100%; text-align: center; }
+.the_animation{padding: 20px 45px 10px  5px; display: inherit !important; line-height: initial;}
+.the_animation .animationbox{  width: 100%; text-align: center; }
 /*.setBox .fillinBox .the_animation .animationbox .ldBar{ width: 100% !important; height: initial !important; border-radius: 40px; }
 .setBox .fillinBox .the_animation .animationbox .ldBar-label{ display: none; }*/
-.setBox .fillinBox .the_animation .top_animation{padding-left: 160px; }
-.setBox .fillinBox .the_animation .progress_container{ float: left; width:195px; height:6px; position:relative; background-color:#fff; margin-top: 6px;}
-.setBox .fillinBox .the_animation .progress_container::before{ content: ""; position: absolute; top: 0; z-index: 5; left:calc(25% - 1px); width: 2px; height: 100%; background-color: #EBEBEB;}
-.setBox .fillinBox .the_animation .progress_container::after{ content: ""; position: absolute; top: 0; z-index: 5; left:calc(50% - 1px); width: 2px; height: 100%; background-color: #EBEBEB;}
-.setBox .fillinBox .the_animation .progressbar{ background-color:#81B6C8; top: 0px; height:6px; position:absolute; line-height:inherit;}
-.setBox .fillinBox .the_animation .color_org{ background-color:#E5AF57;}
+.the_animation .top_animation{padding-left: 160px; }
+.the_animation .progress_container{ float: left; width:195px; height:6px; position:relative; background-color:#fff; margin-top: 6px;}
+.the_animation .progress_container::before{ content: ""; position: absolute; top: 0; z-index: 5; left:calc(25% - 1px); width: 2px; height: 100%; background-color: #EBEBEB;}
+.the_animation .progress_container::after{ content: ""; position: absolute; top: 0; z-index: 5; left:calc(50% - 1px); width: 2px; height: 100%; background-color: #EBEBEB;}
+.the_animation .progressbar{ background-color:#81B6C8; top: 0px; height:6px; position:absolute; line-height:inherit;}
+.the_animation .color_org{ background-color:#E5AF57;}
 
-.setBox .fillinBox .the_animation .line_situation{width: 100%; padding: 6px 0; position: relative; display: inline-table;}
-.setBox .fillinBox .the_animation .line_situation p{ float: left; line-height: initial; text-align: right; width: calc(100% - 195px);padding: 0 15px 0 0;}
-.setBox .fillinBox .the_animation .line_situation::after{ content: ""; position: absolute; top: 11px; visibility: initial; z-index: 5; right:46px; width: 2.5px; height:7px; background-color: #EBEBEB;}
-.setBox .fillinBox .the_animation .none_line::after,.setBox .fillinBox .the_animation .none_line .progress_container::before, .setBox .fillinBox .the_animation .none_line .progress_container::after{ display: none; }
+.the_animation .line_situation{width: 100%; padding: 6px 0; position: relative; display: inline-table;}
+.the_animation .line_situation p{ float: left; line-height: initial; text-align: right; width: calc(100% - 195px) !important;padding: 0 15px 0 0;}
+.the_animation .line_situation::after{ content: ""; position: absolute; top: 11px; visibility: initial; z-index: 5; right:46px; width: 2.5px; height:7px; background-color: #EBEBEB;}
+.the_animation .none_line::after, .the_animation .none_line .progress_container::before, .the_animation .none_line .progress_container::after{ display: none; }
 
-.setBox .fillinBox .the_animation .situation_type::before{ content: ""; position: absolute; top: 5px; visibility: initial; z-index: 5; right:-30px; width: 20px; height:20px; background-position: center center ; background-size: contain; background-repeat: no-repeat;}
-.setBox .fillinBox .the_animation .situation_done::before{ background-image: url(../images/situation_done.png);}
-.setBox .fillinBox .the_animation .situation_done p{ color: #81B6C8; }
-.setBox .fillinBox .the_animation .situation_done p.c_org{ color: #E5AF57; }
+.the_animation .situation_type::before{ content: ""; position: absolute; top: 5px; visibility: initial; z-index: 5; right:-30px; width: 20px; height:20px; background-position: center center ; background-size: contain; background-repeat: no-repeat;}
+.the_animation .situation_done::before{ background-image: url(../images/situation_done.png);}
+.the_animation .situation_done p{ color: #81B6C8; }
+.the_animation .situation_done p.c_org{ color: #E5AF57; }
 
-.setBox .fillinBox .the_animation .situation_none::before{ background-image: url(../images/situation_none.png);}
-.setBox .fillinBox .the_animation .border_blue{ margin-left: 20px; margin-bottom: 20px; }
+.the_animation .situation_none::before{ background-image: url(../images/situation_none.png);}
+.the_animation .border_blue{ margin-left: 20px; margin-bottom: 20px; }
 
 .check_remind .all_test_list{ overflow: initial; }
 .check_remind .all_test_list .sub_title{ border-bottom: 1px solid rgba(155,155,155,0.5);}
