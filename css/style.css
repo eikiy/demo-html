@@ -469,6 +469,10 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .check_remind .border_blue p.info{line-height: 20px;}
 .check_remind .border_blue p.p_gray{ color: #9B9B9B;}
 .check_remind .border_blue p.line_gray{ border-bottom: 1px solid #979797; }
+.check_remind .border_blue p.info span.icon_thumbtack{ position: relative; padding-left: 14px; display: block;  color: #4A4A4A; text-align: left;}
+.check_remind .border_blue p.info span.icon_thumbtack::after{ content: "";width: 18px; height: 19px; display: block; position: absolute; top:0 ; left: -10px; background: url(../images/icon_thumbtack.png) center center no-repeat; background-size: cover; }
+.check_remind .border_blue p.info span.icon_thumbtack a{ color: #81B6C8; }
+.check_remind .border_blue p.info span.icon_thumbtack a:hover{ text-decoration: underline; }
 
 .check_remind .bottom_noteBox{ padding: 0; }
 .check_remind .bottom_noteBox p.info{ padding: 15px 32px; }
@@ -1851,3 +1855,62 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .logicTestEnd .end_thankyou{ border-color: #E5AF57; }
 .logicTestEnd .end_thankyou::after{height: 400px; top: -412px; display: block; background: url(../images/logicTest/end_thankyou.png) center top no-repeat; background-size: contain; }
 .logicTestEnd .end_thankyou p{ color: #4A4A4A;}
+
+.setBox .fillinBox .the_animation{padding: 20px 45px 10px  5px; display: block; line-height: initial;}
+.setBox .fillinBox .the_animation .animationbox{  width: 100%; text-align: center; }
+/*.setBox .fillinBox .the_animation .animationbox .ldBar{ width: 100% !important; height: initial !important; border-radius: 40px; }
+.setBox .fillinBox .the_animation .animationbox .ldBar-label{ display: none; }*/
+.setBox .fillinBox .the_animation .top_animation{padding-left: 160px; }
+.setBox .fillinBox .the_animation .progress_container{ float: left; width:195px; height:6px; position:relative; background-color:#fff; margin-top: 6px;}
+.setBox .fillinBox .the_animation .progress_container::before{ content: ""; position: absolute; top: 0; z-index: 5; left:calc(25% - 1px); width: 2px; height: 100%; background-color: #EBEBEB;}
+.setBox .fillinBox .the_animation .progress_container::after{ content: ""; position: absolute; top: 0; z-index: 5; left:calc(50% - 1px); width: 2px; height: 100%; background-color: #EBEBEB;}
+.setBox .fillinBox .the_animation .progressbar{ background-color:#81B6C8; top: 0px; height:6px; position:absolute; line-height:inherit;}
+.setBox .fillinBox .the_animation .color_org{ background-color:#E5AF57;}
+
+.setBox .fillinBox .the_animation .line_situation{width: 100%; padding: 6px 0; position: relative; display: inline-table;}
+.setBox .fillinBox .the_animation .line_situation p{ float: left; line-height: initial; text-align: right; width: calc(100% - 195px);padding: 0 15px 0 0;}
+.setBox .fillinBox .the_animation .line_situation::after{ content: ""; position: absolute; top: 11px; visibility: initial; z-index: 5; right:46px; width: 2.5px; height:7px; background-color: #EBEBEB;}
+.setBox .fillinBox .the_animation .none_line::after,.setBox .fillinBox .the_animation .none_line .progress_container::before, .setBox .fillinBox .the_animation .none_line .progress_container::after{ display: none; }
+
+.setBox .fillinBox .the_animation .situation_type::before{ content: ""; position: absolute; top: 5px; visibility: initial; z-index: 5; right:-30px; width: 20px; height:20px; background-position: center center ; background-size: contain; background-repeat: no-repeat;}
+.setBox .fillinBox .the_animation .situation_done::before{ background-image: url(../images/situation_done.png);}
+.setBox .fillinBox .the_animation .situation_done p{ color: #81B6C8; }
+.setBox .fillinBox .the_animation .situation_done p.c_org{ color: #E5AF57; }
+
+.setBox .fillinBox .the_animation .situation_none::before{ background-image: url(../images/situation_none.png);}
+.setBox .fillinBox .the_animation .border_blue{ margin-left: 20px; margin-bottom: 20px; }
+
+.check_remind .all_test_list{ overflow: initial; }
+.check_remind .all_test_list .sub_title{ border-bottom: 1px solid rgba(155,155,155,0.5);}
+.check_remind .all_test_list ul.conditionList { background-color: #fff; padding: 15px; box-shadow: none;}
+.check_remind .all_test_list ul.conditionList li{ border:none; min-height: 35px; padding: 5px 0; }
+.check_remind .all_test_list ul.conditionList li.check_in{ color: #81B6C8; }
+.check_remind .all_test_list ul.conditionList li.check_notyet{ color: #9B9B9B;}
+.check_remind .all_test_list ul.conditionList li.check_notyet input{ cursor: no-drop; }
+.check_remind .all_test_list ul.conditionList li .left_test_title{ float: left; width: initial; float: left; position: relative; padding-right: 10px;}
+.check_remind .all_test_list ul.conditionList li .job_type{ float: left; background-color: #fff; border-radius: 5px 0 5px 5px;  box-shadow: 0 0 1px rgba(0,0,0,.5); position: relative;}
+.check_remind .all_test_list ul.conditionList li .job_type p{ font-size: 14px; text-align: left;}
+.check_remind .all_test_list ul.conditionList li .job_type a{ border: none; min-width: 85px; padding:5px 30px 5px 15px;  position: relative;}
+.check_remind .all_test_list ul.conditionList li .job_type a::before{ position: absolute; content: ""; width: 0; height: 0; border-style: solid; border-width: 8px 8px 0 8px; top: 11px; right: 10px; border-color: #81B6C8 transparent transparent transparent;/* background-color: #81B6C8;*/ }
+.check_remind .all_test_list ul.conditionList li .job_type ul.sub_filter{ position: absolute;   z-index: 10; border-radius:0 5px 5px 5px; padding: 8px 0; background-color: #fff; display: none;}
+.check_remind .all_test_list ul.conditionList li .job_type ul.sub_filter li{min-height: initial; padding: 0 10px;}
+.check_remind .all_test_list ul.conditionList li .job_type ul.sub_filter li p{ padding: 0 5px; line-height: 26px; cursor: pointer; }
+.check_remind .all_test_list ul.conditionList li .job_type ul.sub_filter li p:hover{ background-color: #81B6C8; color: #fff; }
+.check_remind .all_test_list ul.conditionList li.check_notyet .job_type p a{ cursor: no-drop; color: #9B9B9B;}
+.check_remind .all_test_list ul.conditionList li.check_notyet .job_type a::before{ border-color: #D8D8D8 transparent transparent transparent;  /* background-color: #D8D8D8; */}
+
+.check_remind .all_test_list .link{ border-bottom: 1px solid rgba(155,155,155,0.5); min-height: 46px; display: -webkit-flex; display: flex; position: relative;border-top: 1px solid rgba(155,155,155,0.5);}
+.check_remind .all_test_list .link .l_title{ -webkit-flex: 1; flex: 1; max-width: 110px; border-right: 1px solid rgba(155,155,155,0.5);}
+.check_remind .all_test_list .link .l_title p{padding: 10px 12px; line-height: 26px;}
+.check_remind .all_test_list .link .r_info{-webkit-flex: 2; flex: 2; }
+.check_remind .all_test_list .link .r_info a{ color: #81B6C8; }
+.check_remind .all_test_list .link .r_info a:hover{ text-decoration: underline; }
+.check_remind .all_test_list .link .r_info{ font-size: 14px; padding: 5px 12px; line-height: 36px; background-color: transparent; border: none;}
+.check_remind .all_test_list .link .p_long{ max-width: 200px; height: 46px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 35px; height: 46px * 1; overflow:hidden;}
+.check_remind .all_test_list .link p.btn{ position: absolute; right: 8px; top: 0px; font-size: 12px; text-align: center; line-height: 24px; padding: 10px 0;}
+.check_remind .all_test_list .link p.btn a{ min-width: 60px; margin: 0 3px; padding: 0 5px; background-color: #fff; letter-spacing: 0; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #81B6C8; border-radius:3px 0 3px 3px;}
+.check_remind .all_test_list .link p.btn a:hover{ background-color: #D1E0E5;}
+.check_remind .all_test_list .link p.btn a .tooltip{ top: 40px; width: 85px; left: -9px; font-size: 12px; padding: 0 5px;}
+
+.setBox p.view_w a{ width: 100%; text-decoration: underline; letter-spacing: 1px; }
+.setBox p.view_w a:hover{ text-decoration: none; }
