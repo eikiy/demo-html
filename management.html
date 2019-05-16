@@ -12,17 +12,27 @@
 <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 
+<!-- https://loading.io/progress/ -->
+<link rel="stylesheet" type="text/css" href="css/loading-bar.css"/>
+<script type ="text/javascript" src="js/loading-bar.js"></script>
+
 <!-- Magnific Popup core CSS file -->
 <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
 <!-- Magnific Popup core JS file -->
 <script src="magnific-popup/jquery.magnific-popup.js"></script>
 <script type="text/javascript">
-$(document).ready(function() {
-    $('.popup-link').magnificPopup({
-      removalDelay: 300,
-      mainClass: 'mfp-fade'
-    });
-});
+	$(document).ready(function() {
+	    $('.popup-link').magnificPopup({
+	      removalDelay: 300,
+	      mainClass: 'mfp-fade'
+	    });
+	});
+	$(function(){
+	  	$(".job_type").click(function(){
+	        $(this).find("ul.sub_filter").stop(true, true).fadeToggle(0);
+	    return false;
+	    });
+	 });
 </script>
 
 </head>
@@ -1202,9 +1212,77 @@ $(document).ready(function() {
 	                	讓求職者 <span>王明天</span> 進行線上履歷填寫。</p>
 	            </div>
 
+	            <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>填寫狀態</p>
+                	</li>
+                    <li class="sub_title">
+                		<p class="not_yet">求職者尚未開啟連結</p>
+                	</li>
+                </ul>
+
                 <p class="btn">
-                	<a class="popup-link bg_gary" href="#">強制跳過</a>
-                	<a class="popup-link bg_skyblue" href="#popup-step-04">確認</a>
+                	<a class="popup-link bg_lightblue" href="#popup-step-04">強制跳過</a>
+                	<a class="popup-link bg_skyblue" href="#popup-step-03-1">確認</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup-step-02-1 icon2：填寫狀態 #190420 - new-->
+    <div id="popup-step-03-1" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop messageBox check_remind">
+            <div class="top_title">
+                <h3>個人資料</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                	<li class="sub_title">
+                		<p>求職者登入資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>登入連結</p></label>
+                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
+                    </li>
+                </ul>
+
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>填寫狀態</p>
+                	</li>
+                    <li class="sub_title the_animation" style="padding-right: 60px;">
+                		<div class="animationbox">
+                			<div class="top_animation" style="padding-left: 126px;">
+                				<img src="images/img_animation.png" style="max-width: 113px;">
+                			</div>
+                			<!-- <div class="ldBar" data-preset="line" data-min="0" data-max="100" data-value="100" data-stroke="#81B6C8"></div> -->
+                		</div>
+                		<div class="line_situation none_line clearfix">
+                			<p>進行中</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar" style="width:50%"></div>
+	                		</div>
+	                	</div>
+                	</li>
+                </ul>
+
+                <div class="RedBox border_blue border_green"> <!-- 持續留著，不會消失 -->
+	                <p class="info">如求職者未在指定時間內完成填寫，<br>
+	                	可按 <span>強制跳過</span> 鍵，即可看完成的資料填寫進度。</p>
+	            </div>
+
+                <p class="btn">
+                	<a class="popup-link bg_lightblue" href="#popup-step-04">強制跳過</a>
+                	<a class="bg_skyblue" href="#">確認</a>
                 </p>
             </div>
         </form>
@@ -1220,7 +1298,6 @@ $(document).ready(function() {
             <p class="btn"><a class="bg_gary" href="#">取消</a><a href="#">確認</a></p>
         </div>
     </div>
-
 
     <!-- popup-step-03 icon3：特質測驗-->
     <div id="popup-step-05" class="white-popup popup-w-s mfp-hide">
@@ -1247,55 +1324,77 @@ $(document).ready(function() {
                         <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
                     </li>
                 </ul>
-                
-                <div class="RedBox border_blue border_green"> <!-- 開始測驗後消失 -->
-	                <p class="info">在面試現場使用電腦或平板開啟測驗連結後，<br>
-	                請求職者進行測驗。</p>
-	            </div>
 
-                <ul class="jobBox">
-                	<li class="sub_title">
-                		<p>填寫狀態</p>
-                	</li>
-                    <li class="sub_title">
-                		<p class="not_yet">測驗尚未開始</p>
-                	</li>
-                </ul>
-                <ul class="jobBox">
-                	<li class="sub_title">
-                		<p>測驗紀錄</p>
-                	</li>
-                    <li>
-                        <table class="test" border="0" cellpadding="0" cellspacing="0">
-                        	<tr>
-                        		<th><p>項次</p></th>
-                        		<th><p>填寫日期</p></th>
-                        		<th><p>結果</p></th>
-                        	</tr>
-                        	<tr>
-                        		<td></td>
-                        		<td></td>
-                        		<td></td>
-                        	</tr>
-                        	<tr>
-                        		<td></td>
-                        		<td></td>
-                        		<td></td>
-                        	</tr>
-                        </table>
-                    </li>
-                    <li>
-                        <p class="btn"><a class="cursor_none" href="#">檢視報告</a></p>
-                    </li>
-                </ul>
+                <div class="RedBox border_blue bottom_noteBox all_test_list">
+                	<div class="sub_title">
+                		<p>選擇需要測驗之項目</p>
+                	</div>
+                	<ul class="item conditionList">
+						<li class="check_in"><!--  藍色字 + check_in -->
+							<input id="" type="checkbox" name="" value="潛在人格特質測驗" checked="">
+							<label for="option">潛在人格特質測驗(5分鐘)</label>
+						</li>
+						<li>
+							<input id="" type="checkbox" name="" value="邏輯測驗">
+							<label for="option">邏輯測驗(20分鐘)</label>
+						</li>
+						<li class="check_notyet">
+							<input id="" type="checkbox" name="" value="細心度測驗" disabled>
+							<label for="option">細心度測驗(尚未開放)</label>
+						</li>
+						<!-- 不可以點的狀態 + class:check_notyet -->
+						<li class="check_notyet">
+							<div class="left_test_title">
+								<input id="" type="checkbox" name="" value="情境測驗" disabled style=" display: inline-block;">
+								<label for="option">情境測驗(尚未開放)</label>
+							</div>
+							<div class="job_type clearfix">
+								<p><a href="#"><span>職業</span></a></p>
+								<ul class="sub_filter" style="  width: 175px;" > <!-- 不知道"職業"最長的名稱多寬 -->
+									<li><p>職業職業職業職業職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業職業職業職業</p></li>
+									<li><p>職業職業職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業</p></li>
+								</ul>
+							</div>
+						</li>
+						<!-- 可以點的狀態 -->
+						<li class="">
+							<div class="left_test_title">
+								<input id="" type="checkbox" name="" value="情境測驗"  style=" display: inline-block;">
+								<label for="option">情境測驗(尚未開放)</label>
+							</div>
+							<div class="job_type clearfix">
+								<p><a href="#"><span>職業</span></a></p>
+								<ul class="sub_filter" style="  width: 175px;" >
+									<li><p>職業職業職業職業職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業職業職業職業</p></li>
+									<li><p>職業職業職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業</p></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="link clearfix">
+                        <label class="l_title" for=""><p>測驗連結</p></label>
+                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
+                    </div>
+                </div>
+                <div class="RedBox border_blue border_green"> <!-- 開始測驗後消失 -->
+	                <p class="info">
+	                	<span class="icon_thumbtack">在面試現場使用電腦或平板開啟測驗連結後，<br>
+                			請求職者進行測驗。</span>
+                	</p>
+	            </div>
                 <p class="btn">
-                	<a class="bg_lightblue" href="#">強制跳過</a>
-                	<a class="popup-link bg_gary remind_greenbox" href="#popup-step-06">確認
-                		<span class="tooltip">
-                			<span class="icon_thumbtack">需完成測驗才能按確認鍵，<br>
-                			或可強制跳過此測驗。</span>
-                		</span>
-                	</a>
+                	<a class="bg_lightblue popup-link" href="#popup-step-06">強制跳過</a>
                 </p>
             </div>
         </form>
@@ -1303,6 +1402,180 @@ $(document).ready(function() {
 
     <!-- popup-step-03-2 icon3：特質測驗-->
     <div id="popup-step-06" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop messageBox check_remind">
+            <div class="top_title">
+                <h3>特質測驗</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                	<li class="sub_title">
+                		<p>求職者登入資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>測驗連結</p></label>
+                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
+                    </li>
+                </ul>
+
+                <div class="RedBox border_blue bottom_noteBox all_test_list">
+                	<div class="sub_title">
+                		<p>選擇需要測驗之項目</p>
+                	</div>
+                	<ul class="item conditionList">
+						<li class="check_in"><!--  藍色字 + check_in -->
+							<input id="" type="checkbox" name="" value="潛在人格特質測驗" checked="">
+							<label for="option">潛在人格特質測驗(5分鐘)</label>
+						</li>
+						<li class="check_in"><!--  藍色字 + check_in -->
+							<input id="" type="checkbox" name="" value="邏輯測驗" checked="">
+							<label for="option">邏輯測驗(20分鐘)</label>
+						</li>
+						<li class="check_notyet">
+							<input id="" type="checkbox" name="" value="細心度測驗" disabled>
+							<label for="option">細心度測驗(尚未開放)</label>
+						</li>
+						<!-- 不可以點的狀態 + class:check_notyet -->
+						<li class="check_notyet">
+							<div class="left_test_title">
+								<input id="" type="checkbox" name="" value="情境測驗" disabled style=" display: inline-block;">
+								<label for="option">情境測驗(尚未開放)</label>
+							</div>
+							<div class="job_type clearfix">
+								<p><a href="#"><span>職業</span></a></p>
+								<ul class="sub_filter" style="  width: 175px;" >
+									<li><p>職業職業職業職業職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業職業職業職業</p></li>
+									<li><p>職業職業職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業</p></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="link clearfix">
+                        <label class="l_title" for=""><p>測驗連結</p></label>
+                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
+                    </div>
+                </div>
+                <!-- 狀態1 -->
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>測驗進度</p>
+                	</li>
+                    <li class="sub_title the_animation clearfix">
+                		<div class="animationbox">
+                			<div class="top_animation">
+                				<img src="images/img_animation2.png" style="max-width: 113px;">
+                			</div>
+                		</div>
+                		<div class="line_situation clearfix">
+                			<p>潛在人格特質測驗</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar" style="width:50%"></div>
+	                		</div>
+	                	</div>
+	                	<div class="line_situation clearfix">
+                			<p>邏輯測驗</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar color_org" style="width:0%"></div>
+	                		</div>
+	                	</div>
+                	</li>
+                </ul>
+                <!-- 狀態2 完成勾勾 -->
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>測驗進度</p>
+                	</li>
+                    <li class="sub_title the_animation clearfix">
+                		<div class="animationbox">
+                			<div class="top_animation">
+                				<img src="images/img_animation3.png" style="max-width: 113px;">
+                			</div>
+                		</div>
+                		<div class="line_situation situation_type situation_done clearfix"> <!-- 100%完成 + situation_type & situation_done 出現勾勾 -->
+                			<p>潛在人格特質測驗</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar" style="width:100%"></div>
+	                		</div>
+	                	</div>
+	                	<div class="line_situation clearfix">
+                			<p>邏輯測驗</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar color_org" style="width:25%"></div>
+	                		</div>
+	                	</div>
+                	</li>
+                </ul>
+                <!-- 狀態3 未完成 XX + 提醒語-->
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>測驗進度</p>
+                	</li>
+                    <li class="sub_title the_animation clearfix">
+
+                		<div class="RedBox border_blue border_green">
+			                <p class="info">
+			                	<span class="icon_thumbtack">第一次測驗未完成，請測試者再按一次<br>
+			                		<a href="#">重新測驗</a>鍵，即可再次測驗。</span>
+		                	</p>
+			            </div>
+
+                		<div class="line_situation situation_type situation_none clearfix"> <!-- 未完成 + situation_type & situation_none 出現XX -->
+                			<p>潛在人格特質測驗</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar" style="width:75%"></div>
+	                		</div>
+	                	</div>
+	                	<div class="line_situation clearfix">
+                			<p>邏輯測驗</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar color_org" style="width:0%"></div>
+	                		</div>
+	                	</div>
+                	</li>
+                </ul>
+                <!-- 狀態4 完成出現勾勾-->
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>測驗進度</p>
+                	</li>
+                    <li class="sub_title the_animation clearfix">
+                		<div class="line_situation situation_type situation_none clearfix">
+                			<p>潛在人格特質測驗</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar" style="width:75%"></div>
+	                		</div>
+	                	</div>
+	                	<div class="line_situation situation_type situation_done clearfix">
+                			<p class="c_org">邏輯測驗</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar color_org" style="width:100%"></div>
+	                		</div>
+	                	</div>
+                	</li>
+                </ul>
+                <p class="btn view_w">
+                	<a class="popup-link" href="#popup-step-06">查看測驗報告</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- 舊的 -->
+    <!-- <div id="popup-step-06" class="white-popup popup-w-s mfp-hide">
         <form class="setBox management_pop">
             <div class="top_title">
                 <h3>特質測驗</h3>
@@ -1369,7 +1642,7 @@ $(document).ready(function() {
                 </p>
             </div>
         </form>
-    </div>
+    </div> -->
 
     <!-- popup-step-03-3 icon3：特質測驗-->
     <div id="popup-step-07" class="white-popup popup-w-s mfp-hide">
