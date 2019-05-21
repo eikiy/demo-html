@@ -1564,6 +1564,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interviewee_info .c_dark_blue{ border-color: #558C9E; border-width: 3px; }
 .interviewee_info h3.test_report_title { background-color: #D1E0E5; line-height: 25px; padding: 5px 0; padding-left: 65px; }
 .interviewee_info h3.test_report_title:first-child{ border-radius: 10px 0 0 0;}
+.interviewee_info h3.child_report_title { background-color: #D1E0E5; line-height: 25px; padding: 5px 0; padding-left: 65px; }
 
 .test_report{ width: 100%; border-radius: 0px 0 10px 10px; border:2px solid #81B6C8; }
 .test_report h4.r_title{ width: 100%; font-size: 24px; color:#D1E0E5; padding-top: 14px; display: inline-block; height: 57px; position: relative; background-color: #81B6C8; text-align: right; padding-right: 85px;}
