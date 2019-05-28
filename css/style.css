@@ -1886,7 +1886,7 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .logicTestBox .QABox .bottom_qa .Q_nb{ width: initial; height: initial; font-size: 72px; right: initial;left:20px; top: -125px; background: none; }
 .logicTestBox .QABox .bottom_qa .Q_nb span{ color: #D0E3D6; }
 
-.logicTestBox ul.logic_question{ float: left; width: 365px; border:1px solid #E5AF57; border-width: 1px 0 0 1px; }
+.logicTestBox ul.logic_question{ float: left; width: 365px; }
 .logicTestBox ul.logic_question li.full{ float: left; width:100%;}
 .logicTestBox ul.logic_question li.ans{ float: left; width:33.33%; border-bottom:1px solid #E5AF57; border-right:1px solid #E5AF57;}
 .logicTestBox ul.logic_question li img{ width: 100%; }
@@ -1898,7 +1898,7 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .logicTestBox .logic_answer_img ul.logic_question{ width: 405px; border:none; }
 .logicTestBox .logic_answer_img ul.logic_question li{  width:33.33%; border:none; padding:0 10px 25px 0; cursor: pointer; }
 .logicTestBox .logic_answer_img ul.logic_question li p{ font-size: 18px; color: #EB8B70; padding-bottom: 5px; }
-.logicTestBox .logic_answer_img ul.logic_question li div{ border:1px solid #E5AF57; max-width: 122px; max-height: 122px; width: 100%;}
+.logicTestBox .logic_answer_img ul.logic_question li div{ max-width: 122px; max-height: 122px; width: 100%;}
 .logicTestBox .logic_answer_img ul.logic_question li .btn_in::after{ left: -1px; top: -1px; width: calc(100% - 6px); height: calc(100% - 6px); }
 .logicTestBox .logic_answer_img ul.logic_question li div:hover{ border-color: #EB8B70; }
 
