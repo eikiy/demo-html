@@ -431,6 +431,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .messageBox .RedBox p.info{line-height: 24px;}
 .messageBox .RedBox p.info span{color: #81B6C8;}
 .messageBox .RedBox p.info span.under_line{ text-decoration: underline; color: inherit; }
+@media all and (-ms-high-contrast:none){ .messageBox .RedBox { overflow: inherit; } /* IE10 */ *::-ms-backdrop, .messageBox .RedBox{ overflow: inherit; } /* IE11 */}
 
 .messageBox .border_blue{ border-color: #81B6C8;}
 .messageBox .border_green{ border-color: #84BE98;}
@@ -1126,10 +1127,11 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 
 .pad_top{padding-top: 20px;}
 /* --------- 面試官評論 --------- */
-.interview_officer_LoginBox{ width: 100%; max-width: 1024px; min-height: 768px; margin: 0 auto; position: relative;  background: url(../images/interviewer/bg_index.png) center bottom no-repeat; background-size: contain;display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
-.interview_officer_LoginBox .contentsBox{width:100%; max-width: 390px; display: block; position: relative;}
-.interview_officer_LoginBox .contentsBox::after{ position: absolute; content: ""; width: 117px; height: 167px; top: 0; right: 0; display: block; background: url(../images/interviewer/bg_index_people.png) center center no-repeat; background-size: contain;  } 
+.interview_officer_LoginBox{ width: 100%; max-width: 1024px; min-height: 768px; margin: 0 auto; position: relative;  background: url(../images/interviewer/bg_index.png) center bottom no-repeat; background-size: contain;display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; flex-direction: column;}
+.interview_officer_LoginBox .contentsBox{width:100%; max-width: 390px; display: block; position: relative; flex-shrink: 0%; flex-basis: 100%!important;}
+.interview_officer_LoginBox .contentsBox::after{ position: absolute; content: ""; width: 117px; height: 167px; top: 0; right: 0; display: block; background: url(../images/interviewer/bg_index_people.png) center center no-repeat; background-size: contain;  }
 .interview_officer_LoginBox .top_logo{position: absolute; top: 30px; left: 32px; width: 57px; height: 57px; display: block; background: url(../images/interviewer/kamo_logo.png) center center no-repeat; background-size: contain; }
+@media all and (-ms-high-contrast:none){ .interview_officer_LoginBox .contentsBox { top: 100px; } /* IE10 */ *::-ms-backdrop, .interview_officer_LoginBox .contentsBox { top: 100px; } /* IE11 */}
 
 .interview_officer_LoginBox h1{ color: #81B6C8; font-size: 14px; font-weight: normal; letter-spacing: 20px; padding: 50px 0 20px 0; }
 .interview_officer_LoginBox h3{ color: #9B9B9B; font-size: 14px; letter-spacing: 6px; padding-bottom:18px;}
@@ -1604,6 +1606,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interviewee_info .p_invalid{ width: 100%; min-height: 320px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
 .interviewee_info .p_invalid p{ font-size: 17px; line-height: 25px;  max-width: 720px; width: 100%; padding:0 0 0 200px; position:relative;}
 .interviewee_info .p_invalid p::after{ content: ""; position: absolute; top:calc(50% - 75px); left: 0; width: 167px; height: 150px; display: block; background: url(../images/user_info/img_invalid.png) center center no-repeat; background-size: contain; }
+@media all and (-ms-high-contrast:none){ .interviewee_info .p_invalid { height: 320px } /* IE10 */ *::-ms-backdrop, .interviewee_info .p_invalid { height: 320px } /* IE11 */}
 
 .interviewee_info .box_style2{ border: none; }
 .interviewee_info .box_style2 h4.r_title{ height: 92px; padding-top: 30px; }
