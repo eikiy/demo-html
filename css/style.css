@@ -913,7 +913,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .user_photo .avatar:hover .info{ opacity: 1; }
 .right_contents .user_photo .male{ background: url(../images/user_default_male.png) center center no-repeat #fff; background-size: cover; }
 .right_contents .user_photo .female{ background: url(../images/user_default_female.png) center center no-repeat #fff; background-size: cover; }
-.right_contents .user_photo p.name{ text-align: center; padding:6px 0 5px; color: #4A4A4A; letter-spacing: 3px; }
+.right_contents .user_photo p.name{ text-align: center; padding:6px 0 5px; color: #4A4A4A; letter-spacing: 3px; overflow: hidden; max-height: 60px; }
 
 .right_contents .managementBox .user_data{ float: left; width: 100%; max-width:calc( 100% - 130px); padding: 15px 15px 5px 0; }
 .right_contents .managementBox .user_data .application_department{ width: 100%; padding: 8px 0; }
@@ -1410,7 +1410,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p{/* line-height: 24px; padding: 0 10px; color: #9B9B9B; */}
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox input{ float: left; line-height: 24px; padding: 0 10px; letter-spacing: 1px; color: #333; }
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p.title{ width: 100px; float: left; line-height: 24px; padding: 0 10px; color: #9B9B9B; border-right: 1px solid #979797;}
-.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox .right_info{ max-width: 240px; line-height: 24px; padding: 0 10px; color: #9B9B9B;  display: block; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 24px; height: 24px * 1; overflow:hidden;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox .right_info{ max-width: 240px; line-height: 24px; padding: 0 10px; color: #9B9B9B;  display: block; -webkit-box-orient: vertical; -webkit-line-clamp: 1; height: 24px; overflow:hidden; }
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox input.time{ letter-spacing: 1px; padding: 0 20px 0 10px; max-width: 160px; background: url(../images/icon_time_select_02.png) 138px center  no-repeat; background-size: 10%;}
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox input.right_info{ color: #333; }
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p.btn{ top: 0; right: 0px; padding: 0 5px;}
