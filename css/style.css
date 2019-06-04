@@ -1880,7 +1880,7 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .logicTestBox .ex-img p.ex_p_05 span{ padding: 6px 8px;}
 .logicTestBox .ex-img p.ex_p_05 span::after{ bottom: -13px; left: calc(50% - 12px);}
 .logicTestBox .ex-img p.ex_p_06{ bottom: -36px; left: 166px;}
-.logicTestBox .ex-img p.ex_p_06 span{ padding: 6px 8px; min-width: 380px;}
+.logicTestBox .ex-img p.ex_p_06 span{ padding: 6px 8px; min-width: 270px;}
 .logicTestBox .ex-img p.ex_p_06 span::after{ border-width: 0 12px 14px 12px; border-color: transparent transparent #84BE98 transparent; bottom: 25px; left: 25px;}
 .logicTestBox .QABox .top_bg{ height: 137px; }
 .logicTestBox .QABox .bottom_qa{padding: 40px 0 0 80px;}
