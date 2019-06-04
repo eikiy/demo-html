@@ -901,10 +901,10 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents ul.user_list li a.go_delete{ position: absolute; cursor: pointer; top:8px; right: 8px; width: 16px; height: 16px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
 .right_contents ul.user_list li a.go_delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
 .right_contents ul.user_list li p{ font-size: 13px;}
+.right_contents ul.user_list li.the_expired{ border-color: #c87d86; }
 .right_contents ul.user_list li.the_active{ background-color: #e7eef0; border-color: #e7eef0; }
 .right_contents ul.user_list li:hover{ border-color: #81B6C8; border:3px solid #81B6C8;}
 .right_contents ul.user_list li:hover .icon_02::after{ opacity: .5; }
-.right_contents ul.user_list li.the_expired{ border-color: #c87d86; }
 
 .right_contents .user_photo{ float: left; width: 130px; }
 .right_contents .user_photo .avatar{ width: 98px; height: 98px; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); display: block; overflow: hidden; border-radius: 20px; border:1px solid #979797; margin: 15px auto 0 auto; position: relative; }
@@ -964,10 +964,10 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .managementBox ul.card_list li:nth-child(4n){ margin-right: 0; }
 .right_contents .managementBox ul.card_list .user_photo{ width:100%; float: none; display: block; padding-top: 15px; min-height: 143px; max-height: 143px; border-radius: 10px 0 10px 10px;}
 .right_contents .managementBox ul.card_list .user_photo .avatar{ width: 65px; height: 65px; margin: 0 auto; }
+.right_contents .managementBox ul.card_list li.the_expired{ border-color: #c87d86; }
 .right_contents .managementBox ul.card_list li:hover{ border-color: #81B6C8; border:3px solid #81B6C8; box-shadow: 0 2px 2px rgba(0,0,0,.2);}
 .right_contents .managementBox ul.card_list li.card_active{ border: solid 3px #81B6C8;}
 .right_contents .managementBox ul.card_list li.card_active:hover{ box-shadow: initial; }
-.right_contents .managementBox ul.card_list li.the_expired{ border-color: #c87d86; }
 
 .right_contents p.day span{ color: #fff; margin-right: 5px; padding: 2px; }
 .right_contents p.day span.green{ background-color: #84BE98;}
