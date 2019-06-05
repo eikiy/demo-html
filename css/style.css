@@ -254,6 +254,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .popup-L {max-width: 958px; min-width: 958px;}
 .setBox .top_title {width: 100%; position: relative; max-width: 390px;}
 .setBox .top_title h3 { text-align: center; font-size: 18px; letter-spacing: 7px; line-height: 36px; background-color: #D1E0E5; padding: 5px 0; border-radius: 10px 0 10px 10px; }
+.setBox .top_title h3.bg_red { text-align: center; font-size: 18px; letter-spacing: 7px; line-height: 36px; background-color: #C87D86; color: #fff; padding: 5px 0; border-radius: 10px 0 10px 10px; }
 .setBox .top_title h3.dark{ background-color: #558C9E; color: #fff;}
 .popup-L .setBox .top_title{ max-width: 100%; }
 
@@ -1307,9 +1308,9 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .traitTestBox .ex-img p span{ background-color: #E5AF57; position: relative;  color: #fff; border-radius: 5px; padding: 6px 15px; text-align: center; min-width: 84px; display: inline-block; }
 .traitTestBox .ex-img p span::after{ z-index: 10; bottom: -14px; left: calc(50% - 12px); position: absolute; content: ""; width: 0; height: 0; border-style: solid; border-width: 14px 12px 0 12px; border-color: #e5af57 transparent transparent transparent; line-height: 0px; _border-color: #e5af57 #000000 #000000 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
 
-.traitTestBox .ex-img p.ex_p_01{ top: 12px; right: 226px; }
+.traitTestBox .ex-img p.ex_p_01{ top: -3px; right: 153px; }
 .traitTestBox .ex-img p.ex_p_02{ top: 140px; left: 160px; }
-.traitTestBox .ex-img p.ex_p_03{ top: 90px; right: 88px; }
+.traitTestBox .ex-img p.ex_p_03{ top: 95px; right: 92px; }
 .traitTestBox .ex-img p.ex_p_04{ bottom: 54px; right: 0px; }
 .traitTestBox .ex-img p.ex_p_04 span{padding: 15px 15px 10px 15px;}
 .traitTestBox .ex-img p.ex_p_03 span::after{ left: 28px; }
