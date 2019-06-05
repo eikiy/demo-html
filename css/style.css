@@ -1739,7 +1739,8 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .positive_behavior .answer_questions ul.no_q li.bg_red p::after{ background-color: #D8BCC1; }
 .positive_behavior .answer_questions ul.difficulty_q{ width: 100%; position: relative; max-width: 600px; margin: 0 auto; padding: 8px 0 15px 0; padding-left: 64px; }
 .positive_behavior .answer_questions ul.difficulty_q li{ float: left; width:150px; margin: 0 2px; }
-.positive_behavior .answer_questions ul.difficulty_q li:nth-child(2){  width:225px; margin: 0 1px; }
+.positive_behavior .answer_questions ul.difficulty_q li:nth-child(2){  width:187.5px; margin: 0 1px; }
+.positive_behavior .answer_questions ul.difficulty_q li:nth-child(3){  width:187.5px; margin: 0 2px; }
 .positive_behavior .answer_questions ul.difficulty_q li p{ text-align: center; line-height: 28px; font-size: 16px; color: #fff; }
 .positive_behavior .answer_questions ul.difficulty_q li.bg_green{ background-color: #84BE98 ;}
 .positive_behavior .answer_questions ul.difficulty_q li.bg_blue{ background-color: #81B6C8 ;}
