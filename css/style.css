@@ -324,6 +324,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .setBox p.btn a.bg_skyblue{ background-color: #81B6C8; }
 .setBox p.btn a.btn_none{opacity: .5;cursor: not-allowed;-webkit-filter: grayscale(1);}
 .setBox p.btn a.bg_gary_light{ background-color: #EBEBEB; color: #D8D8D8; cursor: no-drop;  }
+.setBox p.btn a.dark_purpleBox{ background-color: #342949; }
 
 .setBox p.btn a.fl{ float: left; }
 .setBox p.btn a.bg_lightblue{ margin-left: 0;color: #81B6C8; background-color: #D1E0E5;}
@@ -431,6 +432,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .messageBox .RedBox{ width: 100%; background-color:#fff; padding:30px; border: 3px solid #C87D86; border-radius: 10px 0 10px 10px; box-shadow: 0px 0px 5px rgba(155,155,155,0.2); overflow: hidden; }
 .messageBox .RedBox p.info{line-height: 24px;}
 .messageBox .RedBox p.info span{color: #81B6C8;}
+.messageBox .RedBox p.info span.red{ color: #C87D86; padding: 0 5px; }
 .messageBox .RedBox p.info span.under_line{ text-decoration: underline; color: inherit; }
 @media all and (-ms-high-contrast:none){ .messageBox .RedBox { overflow: inherit; } /* IE10 */ *::-ms-backdrop, .messageBox .RedBox{ overflow: inherit; } /* IE11 */}
 
@@ -451,6 +453,10 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .yelloBox .RedBox{ border-color: #E5AF57;}
 .yelloBox .RedBox p.info{ font-size: 18px; letter-spacing: 4px;}
 .yelloBox .RedBox p.info span{ color:  #E5AF57;}
+
+.dark_purpleBox .RedBox{ border-color: #342949;}
+.dark_purpleBox .RedBox p.info{ font-size: 18px; letter-spacing: 4px;}
+.dark_purpleBox .RedBox p.info span{ color:  #80729A;}
 
 .lockBox{padding-top: 10px;}
 .lockBox h4{padding-bottom: 20px;}
@@ -1300,7 +1306,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .traitTestBox p.note_icon2::after{background-image: url(../images/traitTest/traitTest_icon_02.png);}
 
 .traitTestBox .exampleBox{ border: 3px solid #81B6C8; border-radius: 20px 0 20px 20px; background-color: #D1E0E5; min-height: 588px; overflow: hidden; }
-.traitTestBox .exampleBox .top{ width: 100%; height: 100px; background-color: #81B6C8; }
+.traitTestBox .exampleBox .top{ width: 100%; height: 100px; background-color: #81B6C8; border-radius: 15px 0 0 0 ;}
 .traitTestBox .exampleBox .top p{ color: #fff; font-size: 18px; max-width: 730px; padding-top:40px; margin: 0 auto; }
 
 .traitTestBox .ex-img{ width: 730px; height: 429px; position: relative; background: url(../images/traitTest/bg_exampleBox.png) center left no-repeat; background-size: contain; margin: 25px auto 0 auto;  }
@@ -1891,7 +1897,7 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .logicTestBox .QABox .bottom_qa .Q_nb{ width: initial; height: initial; font-size: 72px; right: initial;left:20px; top: -125px; background: none; }
 .logicTestBox .QABox .bottom_qa .Q_nb span{ color: #D0E3D6; }
 
-.logicTestBox ul.logic_question{ float: left; width: 365px; }
+.logicTestBox ul.logic_question{ float: left; width: 365px; border-top:1px solid #E5AF57; border-left:1px solid #E5AF57; }
 .logicTestBox ul.logic_question li.full{ float: left; width:100%;}
 .logicTestBox ul.logic_question li.ans{ float: left; width:33.33%; border-bottom:1px solid #E5AF57; border-right:1px solid #E5AF57;}
 .logicTestBox ul.logic_question li img{ width: 100%; }
@@ -1901,9 +1907,9 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .logicTestBox .logic_answer_img{ float: left; padding-left: 64px; }
 .logicTestBox .logic_answer_img p{ color: #9B9B9B; font-size:24px; padding-bottom: 20px;}
 .logicTestBox .logic_answer_img ul.logic_question{ width: 405px; border:none; }
-.logicTestBox .logic_answer_img ul.logic_question li{  width:33.33%; border:none; padding:0 10px 25px 0; cursor: pointer; }
+.logicTestBox .logic_answer_img ul.logic_question li{  width:33.33%; border:none; float: left; padding:0 10px 25px 0; cursor: pointer; }
 .logicTestBox .logic_answer_img ul.logic_question li p{ font-size: 18px; color: #EB8B70; padding-bottom: 5px; }
-.logicTestBox .logic_answer_img ul.logic_question li div{ max-width: 122px; max-height: 122px; width: 100%;}
+.logicTestBox .logic_answer_img ul.logic_question li div{ max-width: 122px; max-height: 122px; width: 100%; border:1px solid #E5AF57;}
 .logicTestBox .logic_answer_img ul.logic_question li .btn_in::after{ left: -1px; top: -1px; width: calc(100% - 6px); height: calc(100% - 6px); }
 .logicTestBox .logic_answer_img ul.logic_question li div:hover{ border-color: #EB8B70; }
 
@@ -1953,13 +1959,26 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .the_animation .situation_none::before{ background-image: url(../images/situation_none.png);}
 .the_animation .border_blue{ margin-left: 20px; margin-bottom: 20px; }
 
-.check_remind .all_test_list{ overflow: initial; }
+.check_remind .all_test_list{ overflow: initial;position: relative; }
 .check_remind .all_test_list .sub_title{ border-bottom: 1px solid rgba(155,155,155,0.5);}
 .check_remind .all_test_list ul.conditionList { background-color: #fff; padding: 15px; box-shadow: none;}
-.check_remind .all_test_list ul.conditionList li{ border:none; min-height: 35px; padding: 5px 0; }
+.check_remind .all_test_list ul.conditionList li{ border:none; min-height: 35px; padding: 5px 0 5px 20px; font-size: 18px; }
+.check_remind .all_test_list ul.conditionList li span{ font-size: 15px; }
+
+.check_remind .all_test_list ul.conditionList li.main_item{ color: #558C9E; }
+.check_remind .all_test_list ul.conditionList li.main_item input[type=checkbox]:not(old) + label{   background: url(../images/checks_b.png) no-repeat 0 -48px;}
+.check_remind .all_test_list ul.conditionList li.main_item input[type=checkbox]:not(old):checked + label{ background-position : 0 -73px;}
+.check_remind .all_test_list ul.conditionList li.main_item input[type=radio]:not(old) + label{  background: url(../images/checks_b.png) no-repeat 0 3px;}
+.check_remind .all_test_list ul.conditionList li.main_item input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
+
 .check_remind .all_test_list ul.conditionList li.check_in{ color: #81B6C8; }
+.check_remind .all_test_list ul.conditionList li.check_in_blue{ color: #558C9E; }
 .check_remind .all_test_list ul.conditionList li.check_notyet{ color: #9B9B9B;}
 .check_remind .all_test_list ul.conditionList li.check_notyet input{ cursor: no-drop; }
+
+.check_remind .all_test_list ul.conditionList li.sub_item{ padding-left: 50px; font-size: 14px; }
+.check_remind .all_test_list ul.conditionList li.sub_item span{ font-size: 14px; }
+
 .check_remind .all_test_list ul.conditionList li .left_test_title{ float: left; width: initial; float: left; position: relative; padding-right: 10px;}
 .check_remind .all_test_list ul.conditionList li .job_type{ float: left; background-color: #fff; border-radius: 5px 0 5px 5px;  box-shadow: 0 0 1px rgba(0,0,0,.5); position: relative;}
 .check_remind .all_test_list ul.conditionList li .job_type p{ font-size: 14px; text-align: left;}
@@ -1985,5 +2004,58 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .check_remind .all_test_list .link p.btn a:hover{ background-color: #D1E0E5;}
 .check_remind .all_test_list .link p.btn a .tooltip{ top: 40px; width: 85px; left: -9px; font-size: 12px; padding: 0 5px;}
 
+.check_remind .all_test_list .end_remind{ position: absolute; bottom: -3px; left: -3px; width: calc(100% + 6px); padding: 5px 10px;}
+.check_remind .all_test_list .end_remind p.btn{ padding: 0 ; float: left; text-align: left; font-size: 15px;}
+.check_remind .all_test_list .end_remind p.btn a{ min-width: 90px; padding: inherit; letter-spacing: 2px;}
+.check_remind .all_test_list .end_remind p.note{ float: left; max-width: calc(100% - 95px); text-align: left; padding: 0px 0 0px 10px; font-size: 13.5px;}
+.check_remind .all_test_list .end_remind p.note span{ display: inline-block; vertical-align: top; }
+.check_remind .all_test_list .end_remind p.note span:nth-child(2){max-width: calc(100% - 50px);}
 .setBox p.view_w a{ width: 100%; text-decoration: underline; letter-spacing: 1px; }
 .setBox p.view_w a:hover{ text-decoration: none; }
+
+/*情境測驗*/
+.seceneTestBox .ex-img{ background: url(../images/seceneTest/bg_exampleBox.png) center center no-repeat; background-size: contain;}
+.seceneTestBox .topTitle, .seceneTestBox .exampleBox .top, .seceneTestBox .QABox .top_bg, .seceneTestBox p.btn a{ background-color: #342949; }
+.seceneTestBox .ex-img p span{ background-color: #E5AF57; }
+.seceneTestBox .ex-img p span::after{ border-color: #E5AF57 transparent transparent transparent;}
+.seceneTestBox .ex-img p.ex_p_01{top: 16px;}
+.seceneTestBox .ex-img p.ex_p_01 span::after{ border-color: transparent transparent transparent #E5AF57;}
+.seceneTestBox .ex-img p.ex_p_03{left: 222px;}
+.seceneTestBox .ex-img p.ex_p_03 span::after{ left: 27px;}
+.seceneTestBox .ex-img p.ex_p_04 span::after{ border-color: transparent #E5AF57 transparent transparent;}
+.seceneTestBox .ex-img p.ex_p_05{ top: 184px; left: 188px;}
+.seceneTestBox .ex-img p.ex_p_06{ left: 273px;}
+.seceneTestBox .ex-img p.ex_p_06 span::after{ border-color: transparent transparent #E5AF57 transparent;}
+.seceneTestBox p.note_icon1, .seceneTestBox .QABox .bottom_qa .time p.bg_w{color: #342949;}
+.seceneTestBox .main-logo, .seceneTestBox ul.interviewer_info, .seceneTestBox .exampleBox, .logicTestEnd .end_thankyou{ border-color: #342949; }
+.seceneTestBox .topBpx::before{ width: 313px; height: 240px; bottom: -30px; background-image: url(../images/seceneTest/seceneTest_img_01.png);}
+.seceneTestBox .answerBox .nbBox ul li, .seceneTestBox .answerBox .nbBox ul{border-color: #5A5269;}
+.seceneTestBox .answerBox .nbBox ul li p.done a{ background-color: #5A5269; }
+.seceneTestBox .end_thankyou::after{ top: -400px; height: 383px; background: url(../images/seceneTest/end_thankyou.png) center top no-repeat; background-size: contain;}
+.seceneTestBox .secene_question{ border:3px solid #342949; border-radius: 10px 0 10px 10px; }
+.seceneTestBox .QABox .bottom_qa{padding:10px 20px;}
+.seceneTestBox .QABox .bottom_qa p.secene_story{ max-width: 730px; margin: 0 auto; padding: 20px 0; text-align: justify; letter-spacing: 2px; line-height: 22px; }
+.seceneTestBox .QABox .bottom_qa .q_note{ width: 100%; background-color: #342949; position: relative; }
+.seceneTestBox .QABox .bottom_qa .q_note p{ text-align: center; color: #fff; font-size: 18px; line-height: 42px; }
+.seceneTestBox .QABox .bottom_qa .q_note p span.green{ color: #84BE98; }
+.seceneTestBox .QABox .bottom_qa .q_note p span.red{ color: #C87D86; }
+
+.seceneTestBox .QABox .bottom_qa .q_note p.icon_hand{position: absolute; top: 0;}
+.seceneTestBox .QABox .bottom_qa .q_note p.icon_hand span{position: relative;}
+.seceneTestBox .QABox .bottom_qa .q_note p.icon_hand::after{ position: absolute; top: 5px; content: ''; width: 43px; height: 36px; display: block;  background-position: center center ; background-size: contain; background-repeat: no-repeat; z-index: 2; }
+.seceneTestBox .QABox .bottom_qa .q_note p.worst{ left: 0; padding-left: 60px;}
+.seceneTestBox .QABox .bottom_qa .q_note p.worst::after{ left: 8px; background-image: url(../images/seceneTest/icon_hand_worst.png);}
+.seceneTestBox .QABox .bottom_qa .q_note p.optimal{ right: 0; padding-right: 60px;}
+.seceneTestBox .QABox .bottom_qa .q_note p.optimal::after{ right:8px; background-image: url(../images/seceneTest/icon_hand_optimal.png);}
+.seceneTestBox .answerBox p.btn{ padding-right: 20%}
+.seceneTestBox .answerBox p.pad_none{ padding-right: 0; }
+.seceneTestBox .answerBox .nbBox ul li p.now::after{ border-color: #342949 transparent transparent transparent; }
+.seceneTestBox ul.secene_answer{ width:100%; max-width: 840px; margin: 0 auto; padding: 20px 0; }
+.seceneTestBox ul.secene_answer p{ float: left; font-size: 12.5px; padding: 10px 0; min-height: 65px; width: 100%; max-width: calc(100% - 150px);  border-bottom: 1px dashed #342949; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.seceneTestBox ul.secene_answer p span{ width: 100%; }
+.seceneTestBox ul.secene_answer li:last-child p{  border: none;}
+.seceneTestBox ul.secene_answer a.circle{ float: left; padding:10px 15px;}
+.seceneTestBox ul.secene_answer a.circle span{ width: 45px; height: 45px; border:3px solid #C87D86 ; display: block; border-radius: 50%; }
+.seceneTestBox ul.secene_answer a.circle span.green{border-color: #84BE98; }
+.seceneTestBox ul.secene_answer a.btn_in span.red{ background: url(../images/seceneTest/icon_tick.png) center center no-repeat #C87D86; background-size: contain; border: none; }
+.seceneTestBox ul.secene_answer a.btn_in span.green{ background: url(../images/seceneTest/icon_tick.png) center center no-repeat #84BE98; background-size: contain; border: none; }

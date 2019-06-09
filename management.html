@@ -1330,23 +1330,36 @@
                 		<p>選擇需要測驗之項目</p>
                 	</div>
                 	<ul class="item conditionList">
-						<li class="check_in"><!--  藍色字 + check_in -->
+                		<!-- 加入核心測驗，如果勾選綜合測驗，下面測驗會一起被圈選，報告也會放在一起變“綜合報告” -->
+                		<!--  藍色字 + check_in -->
+                		<!-- 為了大的 checkbox...顏色又不同，所以+ main_item -->
+                		<li class="check_in_blue main_item ">
+							<input id="" type="checkbox" name="" value="核心測驗（建議選取）" checked="">
+							<label for="option">核心測驗<span>（建議選取）</span></label>
+						</li>
+						<!-- 子項目填入 sub_item(文字變小) -->
+						<li class="sub_item check_in"><!--  藍色字 + check_in -->
 							<input id="" type="checkbox" name="" value="潛在人格特質測驗" checked="">
 							<label for="option">潛在人格特質測驗(5分鐘)</label>
 						</li>
-						<li>
-							<input id="" type="checkbox" name="" value="邏輯測驗">
+						<!--  藍色字 + check_in -->
+						<li class="sub_item check_in">
+							<input id="" type="checkbox" name="" value="潛在人格特質測驗" checked="">
+							<label for="option">情境測驗(15分鐘)</label>
+						</li>
+						<li class="sub_item check_in">
+							<input id="" type="checkbox" name="" value="邏輯測驗" checked="">
 							<label for="option">邏輯測驗(20分鐘)</label>
 						</li>
-						<li class="check_notyet">
+						<li class="main_item check_notyet">
 							<input id="" type="checkbox" name="" value="細心度測驗" disabled>
-							<label for="option">細心度測驗(尚未開放)</label>
+							<label for="option">細心度測驗<span>(尚未開放)</span></label>
 						</li>
 						<!-- 不可以點的狀態 + class:check_notyet -->
-						<li class="check_notyet">
+						<li class="sub_item check_notyet">
 							<div class="left_test_title">
 								<input id="" type="checkbox" name="" value="情境測驗" disabled style=" display: inline-block;">
-								<label for="option">情境測驗(尚未開放)</label>
+								<label for="option">情境測驗<span>(尚未開放)</span></label>
 							</div>
 							<div class="job_type clearfix">
 								<p><a href="#"><span>職業</span></a></p>
@@ -1362,10 +1375,10 @@
 							</div>
 						</li>
 						<!-- 可以點的狀態 -->
-						<li class="">
+						<li class="main_item">
 							<div class="left_test_title">
 								<input id="" type="checkbox" name="" value="情境測驗"  style=" display: inline-block;">
-								<label for="option">情境測驗(尚未開放)</label>
+								<label for="option">情境測驗<span>(尚未開放)</span></label>
 							</div>
 							<div class="job_type clearfix">
 								<p><a href="#"><span>職業</span></a></p>
@@ -1385,6 +1398,12 @@
                         <label class="l_title" for=""><p>測驗連結</p></label>
                         <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
                         <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
+                    </div>
+                    <div class="end_remind RedBox clearfix">
+                    	<p class="btn">
+		                	<a class="bg_red popup-link" href="#popup-step-07-end">強制結束</a>
+		                </p>
+                    	<p class="note"><span>提醒：</span><span>確認強制結束，正在進行之測驗結果不會被記錄下來。</span></p>
                     </div>
                 </div>
                 <div class="RedBox border_blue border_green"> <!-- 開始測驗後消失 -->
@@ -1719,6 +1738,15 @@
             </div>
         </form>
     </div>
+	<!-- popup-step-03-4 icon3：特質測驗 > 強制結束-->
+    <div id="popup-step-07-end" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox messageBox">
+            <div class="RedBox">
+                <p class="info">請問是否確定要<span class="red">強制結束</span>此次測驗？<br>正在進行中測驗結果並不會被記錄下來。</p>
+            </div>
+            <p class="btn"><a class="bg_gary" href="#">取消</a><a class="bg_red" href="#">確認結束</a></p>
+        </form>
+    </div>
 
     <!-- popup-step-04 icon4 ：面試官評論 -->
     <!-- 注意：如果有按鈕在最上面的標題以上，一定要＋popup-padding-top -->
@@ -1923,7 +1951,7 @@
                         <p class="r_info">2018/11/01</p>
                     </li>
                 </ul>
-                
+
                 <!-- <p class="review_comment"><a href="#">檢視詳細評論內容</a></p> -->
                 <!-- <div class="jobBox">
                 	<a class="go_info" href="#">
@@ -1976,7 +2004,6 @@
                 		<div class="sub_title">
 	                		<p>第二輪複試評論評論</p>
 	                	</div>
-	                
                 </div>
                 <div class="RedBox border_blue border_green"> <!-- 開始測驗後消失 -->
 	                <p class="info">請先新增第二輪複試面試官，並複製<span class="under_line">評論填寫連結</span>，傳給此次新增的面試官。</p>
