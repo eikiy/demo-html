@@ -1961,12 +1961,12 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 
 .check_remind .all_test_list{ overflow: initial;position: relative; }
 .check_remind .all_test_list .sub_title{ border-bottom: 1px solid rgba(155,155,155,0.5);}
-.check_remind .all_test_list ul.conditionList { background-color: #fff; padding: 15px; box-shadow: none;}
+.check_remind .all_test_list ul.conditionList { background-color: #fff; padding: 15px; padding-left: 40px; box-shadow: none;}
 .check_remind .all_test_list ul.conditionList li{ border:none; min-height: 35px; padding: 5px 0 5px 20px; font-size: 18px; }
 .check_remind .all_test_list ul.conditionList li span{ font-size: 15px; }
 
 .check_remind .all_test_list ul.conditionList li.main_item{ color: #558C9E; }
-.check_remind .all_test_list ul.conditionList li.main_item input[type=checkbox]:not(old) + label{   background: url(../images/checks_b.png) no-repeat 0 -48px;}
+.check_remind .all_test_list ul.conditionList li.main_item input[type=checkbox]:not(old) + label{ padding-left: 30px;  background: url(../images/checks_b.png) no-repeat 0 -48px;}
 .check_remind .all_test_list ul.conditionList li.main_item input[type=checkbox]:not(old):checked + label{ background-position : 0 -73px;}
 .check_remind .all_test_list ul.conditionList li.main_item input[type=radio]:not(old) + label{  background: url(../images/checks_b.png) no-repeat 0 3px;}
 .check_remind .all_test_list ul.conditionList li.main_item input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
@@ -2012,6 +2012,10 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .check_remind .all_test_list .end_remind p.note span:nth-child(2){max-width: calc(100% - 50px);}
 .setBox p.view_w a{ width: 100%; text-decoration: underline; letter-spacing: 1px; }
 .setBox p.view_w a:hover{ text-decoration: none; }
+
+.filter_pop .chosenBox .check_remind .all_test_list .end_remind p.btn{ position: initial; line-height: 36px; }
+.filter_pop .chosenBox .check_remind .all_test_list .end_remind p.btn a{ margin-left: 0; }
+.filter_pop .chosenBox .check_remind .all_test_list .end_remind p.note span{ padding-left: 0; color: #4A4A4A; }
 
 /*情境測驗*/
 .seceneTestBox .ex-img{ background: url(../images/seceneTest/bg_exampleBox.png) center center no-repeat; background-size: contain;}
