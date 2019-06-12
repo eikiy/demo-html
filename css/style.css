@@ -869,7 +869,6 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 .interviewMainBox .use_fillinBox .last_company input.i_04{ max-width: 282px; }
 
 .interviewMainBox .use_fillinBox .superiority { max-width: inherit; padding-left: 0; max-width: 946px; margin: 0 auto;}
-.interviewMainBox .use_fillinBox .superiority .fBox{ justify-content: flex-end;}
 .interviewMainBox .use_fillinBox .superiority input.i_01{ max-width: 690px; }
 .interviewMainBox .use_fillinBox .superiority input.i_02{ max-width: 578px; }
 .interviewMainBox .use_fillinBox .superiority input.i_03{ max-width: 504px; margin: 0;}
@@ -1965,7 +1964,6 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .check_remind .all_test_list ul.conditionList li{ border:none; min-height: 35px; padding: 5px 0 5px 20px; font-size: 18px; }
 .check_remind .all_test_list ul.conditionList li span{ font-size: 15px; }
 
-.check_remind .all_test_list ul.conditionList li.main_item{ color: #558C9E; }
 .check_remind .all_test_list ul.conditionList li.main_item input[type=checkbox]:not(old) + label{ padding-left: 30px;  background: url(../images/checks_b.png) no-repeat 0 -48px;}
 .check_remind .all_test_list ul.conditionList li.main_item input[type=checkbox]:not(old):checked + label{ background-position : 0 -73px;}
 .check_remind .all_test_list ul.conditionList li.main_item input[type=radio]:not(old) + label{  background: url(../images/checks_b.png) no-repeat 0 3px;}
