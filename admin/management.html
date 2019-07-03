@@ -97,9 +97,9 @@ $(document).ready(function() {
 				</li>
 			</ul> -->
 		</div>
-		<p class="add_customers"><a class="add popup-link" href="#popup-customers">新增客戶資料</a></p>
+		<p class="add_customers"><a class="add popup-link" href="#popup-customers" style="display:none">新增客戶資料</a></p>
 		<ul class="tools">
-			<li><a class="message" href="#"><span>3</span><div class="tooltip">通知</div></a>
+			<li style="display:none"><a class="message" href="#"><span>3</span><div class="tooltip">通知</div></a>
 				<div class="message_listBox">
 					<div class="top_tips"><p class="left_p"><a href="#">歷史通知</a></p><p><a href="#">全部標示為已讀</a></p></div>
 					<div class="none_message">
@@ -118,10 +118,10 @@ $(document).ready(function() {
 			<h1 class="title">凱茂<br>
 				股份有限公司
 			</h1>
-			<ul class="menu">
+			<ul class="menu" >
 				<li><p class="btn_in"><a class="icon_01" href="management.html">客戶管理</a></p></li>
-				<li><p><a class="icon_02" href="recruit_record.html">所有人員</a></p></li>
-				<li><p><a class="icon_04" href="setting.html">系統設定</a></p></li>
+				<li><p><a class="icon_02" href="recruit_record.html" style="display:none">所有人員</a></p></li>
+				<li><p><a class="icon_04" href="setting.html" style="display:none">系統設定</a></p></li>
 			</ul>
 		</section>
 
@@ -151,15 +151,14 @@ $(document).ready(function() {
 							<div class="application_department clearfix">
 								<p class="company_name">明天顧問有限公司<br>
 								統編：77889988</p>
-								<p class="supervisor">最後購買日：2018/11/01<br>
-								會員到期日：2019/11/11</p>
+								<p class="supervisor">最後購買日：2018/11/01</p>
 							</div>
 							<ul class="stepBox clearfix">
 								<li class="btn_in"><a class="icon_01 popup-link" href="#popup-customers-basic"></a><p class="ex">基本資料</p></li>
-								<li><a class="icon_02 popup-link" href="#popup-account-management"></a><p class="ex">帳號管理</p></li>
+								<li><a class="icon_02 popup-link" style="background-color:#e7e3e3" href="#popup-account-management"></a><p class="ex">帳號管理</p></li>
 								<li><a class="icon_03 popup-link" href="#popup-storedvalue-record"></a><p class="ex">儲值紀錄</p></li>
-								<li><a class="icon_04 popup-link" href="#popup-use"></a><p class="ex">使用紀錄</p></li>
-								<li><a class="icon_05 popup-link" href="#popup-filter-all"></a><p class="ex">所有人員<p></li>
+								<li><a class="icon_04 popup-link" style="background-color:#e7e3e3" href="#popup-use"></a><p class="ex">使用紀錄</p></li>
+								<li><a class="icon_05 popup-link" style="background-color:#e7e3e3" href="#popup-filter-all"></a><p class="ex">所有人員<p></li>
 								<li><p class="points">5</p><p class="ex">剩餘點數</p></li>
 								<li><p class="points">1155</p><p class="ex">總儲值數</p></li>
 							</ul>
@@ -346,7 +345,7 @@ $(document).ready(function() {
 						<span class="red">到期</span>
 						<span class="org">加入VIP</span>
 					</p>
-					<div class="monthBox today_nothingBox">
+					<div class="monthBox today_nothingBox" style="display:none">
 						<div class="top_year_month">
 							<p><span>2018年11月 星期四</span></p>
 						</div>
@@ -633,7 +632,7 @@ $(document).ready(function() {
                         <input class="r_info" id="" name="" type="text">
                         <p class="btn"><a class="add" href="#">新增</a></p>
                     </li>
-                    <li>
+                    <li style="display:none">
                         <label class="l_title" for=""><p>公司組織</p></label>
                         <input class="r_info" id="" name="" type="text">
                         <p class="btn"><a class="select select_active" href="#">選擇</a></p>
@@ -723,9 +722,9 @@ $(document).ready(function() {
 						</div>
 					</div>
                 </div> -->
-                <p class="btn"><a class="" href="#">確認</a></p>
+                <p class="btn" style="display:none"><a class="" href="#">確認</a></p>
             </div>
-            <div class="the_department_list">
+            <div class="the_department_list" style="display:none">
 	        	<h4>公司組織<button title="Close (Esc)" type="button" class="subBox-close">×</button></h4>
 	        	<ul>
 	        		<li>
@@ -794,10 +793,10 @@ $(document).ready(function() {
 	        		</li>
 	        	</ul>
 	        </div>
-	        <div class="the_chosenBox_list">
+	        <div class="the_chosenBox_list" >
 	        	<ul class="c_type">
 	        		<li>
-	        			<p class="b_title">會員類別</p>
+	        			<p class="b_title">代理商</p>
 	        			<div class="r_info">
                         	<div class="styled-select">
                         		<select class="md-input">
@@ -1216,7 +1215,7 @@ $(document).ready(function() {
                         <p class="p_info">尚可使用點數</p>
                         <p class="p_info nb">50</p>
                         <p class="p_info"></p>
-                        <p class="btn"><a class="add popup-link" href="#popup-storedvalue-record-1">儲值</a></p>
+                        <p class="btn" style="display:none"><a class="add popup-link" href="#popup-storedvalue-record-1">儲值</a></p>
                     </li>
                 </ul>
                 <ul>
@@ -1245,7 +1244,7 @@ $(document).ready(function() {
                         <p class="p_info"></p>
                     </li>
                 </ul>
-                <p class="btn">
+                <p class="btn" style="display:none">
                 	<a class="bg_skyblue popup-link" href="#popup-storedvalue-record-1">確認</a>
                 </p>
             </div>
