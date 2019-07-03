@@ -4994,23 +4994,33 @@
 			                		<p class="t_title">選擇需要測驗之項目</p>
 			                	</div>
 			                	<ul class="item conditionList">
-									<li class="check_in"><!--  藍色字 + check_in -->
+									<li class="check_in_blue main_item ">
+										<input id="" type="checkbox" name="" value="核心測驗（建議選取）" checked="">
+										<label for="option">核心測驗<span>（建議選取）</span></label>
+									</li>
+									<!-- 子項目填入 sub_item(文字變小) -->
+									<li class="sub_item check_in"><!--  藍色字 + check_in -->
 										<input id="" type="checkbox" name="" value="潛在人格特質測驗" checked="">
 										<label for="option">潛在人格特質測驗(5分鐘)</label>
 									</li>
-									<li>
-										<input id="" type="checkbox" name="" value="邏輯測驗">
+									<!--  藍色字 + check_in -->
+									<li class="sub_item check_in">
+										<input id="" type="checkbox" name="" value="潛在人格特質測驗" checked="">
+										<label for="option">情境測驗(15分鐘)</label>
+									</li>
+									<li class="sub_item check_in">
+										<input id="" type="checkbox" name="" value="邏輯測驗" checked="">
 										<label for="option">邏輯測驗(20分鐘)</label>
 									</li>
-									<li class="check_notyet">
+									<li class="main_item check_notyet">
 										<input id="" type="checkbox" name="" value="細心度測驗" disabled>
-										<label for="option">細心度測驗(尚未開放)</label>
+										<label for="option">細心度測驗<span>(尚未開放)</span></label>
 									</li>
 									<!-- 不可以點的狀態 + class:check_notyet -->
-									<li class="check_notyet">
+									<li class="sub_item check_notyet">
 										<div class="left_test_title">
 											<input id="" type="checkbox" name="" value="情境測驗" disabled style=" display: inline-block;">
-											<label for="option">情境測驗(尚未開放)</label>
+											<label for="option">情境測驗<span>(尚未開放)</span></label>
 										</div>
 										<div class="job_type clearfix">
 											<p><a href="#"><span>職業</span></a></p>
@@ -5026,10 +5036,10 @@
 										</div>
 									</li>
 									<!-- 可以點的狀態 -->
-									<li class="">
+									<li class="main_item">
 										<div class="left_test_title">
 											<input id="" type="checkbox" name="" value="情境測驗"  style=" display: inline-block;">
-											<label for="option">情境測驗(尚未開放)</label>
+											<label for="option">情境測驗<span>(尚未開放)</span></label>
 										</div>
 										<div class="job_type clearfix">
 											<p><a href="#"><span>職業</span></a></p>
@@ -5064,23 +5074,33 @@
 			                		<p class="t_title">選擇需要測驗之項目</p>
 			                	</div>
 			                	<ul class="item conditionList">
-									<li class="check_in"><!--  藍色字 + check_in -->
+									<li class="check_in_blue main_item ">
+										<input id="" type="checkbox" name="" value="核心測驗（建議選取）" checked="">
+										<label for="option">核心測驗<span>（建議選取）</span></label>
+									</li>
+									<!-- 子項目填入 sub_item(文字變小) -->
+									<li class="sub_item check_in"><!--  藍色字 + check_in -->
 										<input id="" type="checkbox" name="" value="潛在人格特質測驗" checked="">
 										<label for="option">潛在人格特質測驗(5分鐘)</label>
 									</li>
-									<li>
-										<input id="" type="checkbox" name="" value="邏輯測驗">
+									<!--  藍色字 + check_in -->
+									<li class="sub_item check_in">
+										<input id="" type="checkbox" name="" value="潛在人格特質測驗" checked="">
+										<label for="option">情境測驗(15分鐘)</label>
+									</li>
+									<li class="sub_item check_in">
+										<input id="" type="checkbox" name="" value="邏輯測驗" checked="">
 										<label for="option">邏輯測驗(20分鐘)</label>
 									</li>
-									<li class="check_notyet">
+									<li class="main_item check_notyet">
 										<input id="" type="checkbox" name="" value="細心度測驗" disabled>
-										<label for="option">細心度測驗(尚未開放)</label>
+										<label for="option">細心度測驗<span>(尚未開放)</span></label>
 									</li>
 									<!-- 不可以點的狀態 + class:check_notyet -->
-									<li class="check_notyet">
+									<li class="sub_item check_notyet">
 										<div class="left_test_title">
 											<input id="" type="checkbox" name="" value="情境測驗" disabled style=" display: inline-block;">
-											<label for="option">情境測驗(尚未開放)</label>
+											<label for="option">情境測驗<span>(尚未開放)</span></label>
 										</div>
 										<div class="job_type clearfix">
 											<p><a href="#"><span>職業</span></a></p>
@@ -5096,10 +5116,10 @@
 										</div>
 									</li>
 									<!-- 可以點的狀態 -->
-									<li class="">
+									<li class="main_item">
 										<div class="left_test_title">
 											<input id="" type="checkbox" name="" value="情境測驗"  style=" display: inline-block;">
-											<label for="option">情境測驗(尚未開放)</label>
+											<label for="option">情境測驗<span>(尚未開放)</span></label>
 										</div>
 										<div class="job_type clearfix">
 											<p><a href="#"><span>職業</span></a></p>
@@ -5119,6 +5139,12 @@
 			                        <label class="l_title" for=""><p>測驗連結</p></label>
 			                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
 			                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
+			                    </div>
+			                    <div class="end_remind RedBox clearfix">
+			                    	<p class="btn">
+					                	<a class="bg_red popup-link" href="#popup-step-07-end">強制結束</a>
+					                </p>
+			                    	<p class="note"><span>提醒：</span><span>確認強制結束，正在進行之測驗結果不會被記錄下來。</span></p>
 			                    </div>
 			                </div>
 			                <div class="RedBox border_blue bottom_noteBox">

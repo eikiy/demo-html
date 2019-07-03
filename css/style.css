@@ -869,7 +869,6 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 .interviewMainBox .use_fillinBox .last_company input.i_04{ max-width: 282px; }
 
 .interviewMainBox .use_fillinBox .superiority { max-width: inherit; padding-left: 0; max-width: 946px; margin: 0 auto;}
-.interviewMainBox .use_fillinBox .superiority .fBox{ justify-content: flex-end;}
 .interviewMainBox .use_fillinBox .superiority input.i_01{ max-width: 690px; }
 .interviewMainBox .use_fillinBox .superiority input.i_02{ max-width: 578px; }
 .interviewMainBox .use_fillinBox .superiority input.i_03{ max-width: 504px; margin: 0;}
@@ -924,7 +923,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .user_photo p.name{ text-align: center; padding:6px 0 5px; color: #4A4A4A; letter-spacing: 3px; overflow: hidden; max-height: 60px; }
 
 .right_contents .managementBox .user_data{ float: left; width: 100%; max-width:calc( 100% - 130px); padding: 15px 15px 5px 0; }
-.right_contents .managementBox .user_data .application_department{ width: 100%; padding: 8px 0; }
+.right_contents .managementBox .user_data .application_department{ width: 100%; padding: 8px 0; overflow: hidden;}
 .right_contents .managementBox .user_data .application_department p{ float: left; color: #000000; }
 .right_contents .managementBox .user_data .application_department p.job_title{ min-width: 92px; }
 .right_contents .managementBox .user_data .application_department p.department{ min-width: 122px; position: relative;}
@@ -1113,7 +1112,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 
 .right_contents .calendar_toolsBox .day_list{ width: 100%; border-radius: 0px 20px 20px 20px; background-color: #fff; border: 1px solid #707475; overflow:hidden;}
 .right_contents .calendar_toolsBox .day_list ul{ width: 100%; }
-.right_contents .calendar_toolsBox .day_list ul li a{display: block; position: relative; width: 100%; height: 100%; height: 52px;}
+.right_contents .calendar_toolsBox .day_list ul li a{display: block; position: relative; width: 100%; height: 100%; height: 52px; overflow: hidden; white-space: nowrap;}
 .right_contents .calendar_toolsBox .day_list ul li a::after{content: ""; z-index: 10; position: absolute; top: 0; left: 0; display: inline-block; width:calc(100% - 4px); height: calc(100% - 4px); border: 2px solid transparent; }
 .right_contents .calendar_toolsBox .day_list ul li a:hover::after{ border-color: #81B6C8; }
 .right_contents .calendar_toolsBox .day_list ul:last-child li:last-child a::after{ border-radius: 0 0 18px 18px; }
@@ -1961,12 +1960,11 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 
 .check_remind .all_test_list{ overflow: initial;position: relative; }
 .check_remind .all_test_list .sub_title{ border-bottom: 1px solid rgba(155,155,155,0.5);}
-.check_remind .all_test_list ul.conditionList { background-color: #fff; padding: 15px; box-shadow: none;}
+.check_remind .all_test_list ul.conditionList { background-color: #fff; padding: 15px; padding-left: 40px; box-shadow: none;}
 .check_remind .all_test_list ul.conditionList li{ border:none; min-height: 35px; padding: 5px 0 5px 20px; font-size: 18px; }
 .check_remind .all_test_list ul.conditionList li span{ font-size: 15px; }
 
-.check_remind .all_test_list ul.conditionList li.main_item{ color: #558C9E; }
-.check_remind .all_test_list ul.conditionList li.main_item input[type=checkbox]:not(old) + label{   background: url(../images/checks_b.png) no-repeat 0 -48px;}
+.check_remind .all_test_list ul.conditionList li.main_item input[type=checkbox]:not(old) + label{ padding-left: 30px;  background: url(../images/checks_b.png) no-repeat 0 -48px;}
 .check_remind .all_test_list ul.conditionList li.main_item input[type=checkbox]:not(old):checked + label{ background-position : 0 -73px;}
 .check_remind .all_test_list ul.conditionList li.main_item input[type=radio]:not(old) + label{  background: url(../images/checks_b.png) no-repeat 0 3px;}
 .check_remind .all_test_list ul.conditionList li.main_item input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
@@ -2012,6 +2010,10 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .check_remind .all_test_list .end_remind p.note span:nth-child(2){max-width: calc(100% - 50px);}
 .setBox p.view_w a{ width: 100%; text-decoration: underline; letter-spacing: 1px; }
 .setBox p.view_w a:hover{ text-decoration: none; }
+
+.filter_pop .chosenBox .check_remind .all_test_list .end_remind p.btn{ position: initial; line-height: 36px; }
+.filter_pop .chosenBox .check_remind .all_test_list .end_remind p.btn a{ margin-left: 0; }
+.filter_pop .chosenBox .check_remind .all_test_list .end_remind p.note span{ padding-left: 0; color: #4A4A4A; }
 
 /*情境測驗*/
 .seceneTestBox .ex-img{ background: url(../images/seceneTest/bg_exampleBox.png) center center no-repeat; background-size: contain;}
