@@ -1968,6 +1968,7 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .the_animation .progress_container::after{ content: ""; position: absolute; top: 0; z-index: 5; left:calc(50% - 1px); width: 2px; height: 100%; background-color: #EBEBEB;}
 .the_animation .progressbar{ background-color:#81B6C8; top: 0px; height:6px; position:absolute; line-height:inherit;}
 .the_animation .color_org{ background-color:#E5AF57;}
+.the_animation .color_dark_purple{ background-color:#342949;}
 
 .the_animation .line_situation{width: 100%; padding: 6px 0; position: relative; display: inline-table;}
 .the_animation .line_situation p{ float: left; line-height: initial; text-align: right; width: calc(100% - 195px) !important;padding: 0 15px 0 0;}
@@ -1978,6 +1979,7 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .the_animation .situation_done::before{ background-image: url(../images/situation_done.png);}
 .the_animation .situation_done p{ color: #81B6C8; }
 .the_animation .situation_done p.c_org{ color: #E5AF57; }
+.the_animation .situation_done p.c_dark_purple{ color: #342949; }
 
 .the_animation .situation_none::before{ background-image: url(../images/situation_none.png);}
 .the_animation .border_blue{ margin-left: 20px; margin-bottom: 20px; }
