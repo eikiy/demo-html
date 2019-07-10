@@ -1270,6 +1270,13 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 /*.mainBox .recruit_contents .user_list a:hover .tooltip{ opacity: 0; }*/
 .mainBox .recruit_contents .user_list a .user_test_icon:hover .tooltip{ opacity: 1; }
 
+.mainBox .recruit_contents .user_list .user_test_type{ left: 120px; top: 20px; width: 25px; position: absolute;}
+.mainBox .recruit_contents .user_list .user_test_type p.type{ border:1px solid #D8D8D8; font-size: 12px; color: #D8D8D8; border-radius: 3px; margin-bottom: 4px; display: inline-block; padding: 1px 3px; }
+.mainBox .recruit_contents .user_list .user_test_type p.c_blue{ background-color: #81B6C8; border:none; color: #fff; }
+.mainBox .recruit_contents .user_list .user_test_type p.c_org{ background-color: #E5AF57; border:none; color: #fff; }
+.mainBox .recruit_contents .user_list .user_test_type p.c_k{ background-color: #342949; border:none; color: #fff; }
+.mainBox .recruit_contents .user_list .user_test_type p.c_green{ background-color: #84BE98; border:none; color: #fff;}
+
 /*離職員工資料*/
 .mainBox ul.leave_list li{ border-color: #EBEBEB; background-color: #EBEBEB; }
 .mainBox .recruit_contents .leave_list .years_experience .status_icon{ padding-top: 18px;}
@@ -1369,7 +1376,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .popup-L .filter_pop .chosenBox{ padding: 15px 12px; min-height: 395px; /*overflow-y: auto; max-height: 90vh;*/}
 .interviewee_info{ width: 100%;  }
 .interviewee_info .interviewMainBox{ width: 100%; }
-.interviewee_info .interviewMainBox .top_ivBox{padding: 20px 0 15px 0;}
+.interviewee_info .interviewMainBox .top_ivBox{padding: 40px 0 15px 0;}
 .interviewee_info .interviewMainBox .top_ivBox .img-user{ width: 125px; height: 125px; margin: 0 10px 20px 0; }
 .interviewee_info .interviewMainBox .top_ivBox .rBox{ max-width:100%;}
 .interviewee_info .interview_officer_Main .top_ivBox .rBox table.interviewer_info{ margin: 0; max-width: 340px; }
@@ -1397,12 +1404,16 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interview_officer_Main .top_ivBox .rBox .embarrassment p.btn_none a:hover{ background-color: #fff; }
 
 .interview_officer_Main .bottom_btn{ position: absolute; bottom: 16px; right: 5px; font-size: 14px; letter-spacing: 5px; }
-.interview_officer_Main .bottom_btn a{ padding-right: 30px; height: 26px; color: #81B6C8; display: inline-block; margin-left: 15px;}
+.interview_officer_Main .bottom_btn a{ padding-right: 35px; height: 26px; line-height: 26px; color: #81B6C8; display: inline-block; margin-left: 15px;}
 .interview_officer_Main .bottom_btn a.edit{ background: url(../images/user_info/btn_edit.png) center right no-repeat; background-size: contain;}
 .interview_officer_Main .bottom_btn a.print{ background: url(../images/user_info/btn_print.png) center right no-repeat; background-size: contain;}
 .interview_officer_Main .bottom_btn a:hover{ text-decoration: underline; }
 
-.interviewee_info .interview_officer_Main .top_interviewer_info{ width: 470px; float: left; height: 152px; display: block; border: 1px solid #979797; border-radius: 10px 0 10px 0; /*overflow:hidden;*/ }
+.interviewee_info .interview_officer_Main .top_interviewer_info{ width: 470px; float: left; height: 152px; display: block; border: 1px solid #979797; border-radius: 10px 0 10px 0; position: relative; /*overflow:hidden;*/ }
+.interviewee_info .interview_officer_Main .top_interviewer_info a.edit{ position: absolute; top: -32px; font-size: 14px; letter-spacing: 5px; text-decoration: underline; padding-right: 30px; padding-top: 5px; height: 28px; color: #81B6C8; display: inline-block; right: 0; background: url(../images/btn_icon_edit.png) center right no-repeat; background-size: contain;}
+.interviewee_info .interview_officer_Main .top_interviewer_info a.edit:hover{ text-decoration: none; }
+.interviewee_info .interview_officer_Main .top_interviewer_info a.edit_save{ color: #E5AF57; background: url(../images/btn_icon_save.png) center right no-repeat; background-size: contain;}
+
 .interviewee_info .interview_officer_Main .top_interviewer_info .left_photo{ float: left; width: 125px; }
 .interviewee_info .interview_officer_Main .top_interviewer_info .left_photo p.title {text-align: center; height: 25px; line-height: 24px; border-bottom: 1px solid #979797; color: #9B9B9B;}
 .interviewee_info .interview_officer_Main .top_interviewer_info .left_photo .the_photo{ width: 125px; height: 125px; margin: 0 auto; display: block; overflow: hidden; position: relative; }
@@ -1418,7 +1429,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p{/* line-height: 24px; padding: 0 10px; color: #9B9B9B; */}
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox input{ float: left; line-height: 24px; padding: 0 10px; letter-spacing: 1px; color: #333; }
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p.title{ width: 100px; float: left; line-height: 24px; padding: 0 10px; color: #9B9B9B; border-right: 1px solid #979797;}
-.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox .right_info{ max-width: 240px; line-height: 24px; padding: 0 10px; color: #9B9B9B;  display: block; -webkit-box-orient: vertical; -webkit-line-clamp: 1; height: 24px; overflow:hidden; }
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox .right_info{ max-width: 240px; background-color: transparent; line-height: 24px; padding: 0 10px; color: #9B9B9B;  display: block; -webkit-box-orient: vertical; -webkit-line-clamp: 1; height: 24px; overflow:hidden; }
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox input.time{ letter-spacing: 1px; padding: 0 20px 0 10px; max-width: 160px; background: url(../images/icon_time_select_02.png) 138px center  no-repeat; background-size: 10%;}
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox input.right_info{ color: #333; }
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p.btn{ top: 0; right: 0px; padding: 0 5px;}
@@ -1442,6 +1453,11 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.leave_reason a{ border-color: #C87D86; border-radius: 0 0 10px 0; padding: 5px; }
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.leave_reason a::after{ display: none; padding: 0; }
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox p.leave_reason a:hover{ background-color: #C87D86; }
+
+.interviewee_info .interview_officer_Main .style_org .top_interviewer_info{border: 2px solid #E5AF57; width: 472px; height: 154px; }
+.interviewee_info .interview_officer_Main .style_org .top_interviewer_info .rightInfoBox p.btn_back{ bottom: 0; right: 0; }
+.interviewee_info .interview_officer_Main .style_org .top_interviewer_info .rightInfoBox p.btn_back a{ height: 51px; }
+.interviewee_info .interview_officer_Main .style_org .top_interviewer_info .left_photo .the_photo{ height: 124px; margin: 0 auto 0 0.5px;}
 
 .popup-L .interview_officer_Main .use_fillinBox .fBox p.title_s{ text-align: left; }
 
@@ -1468,6 +1484,9 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .u_infoBox{ border:2px solid #81B6C8; border-radius: 10px 0 10px 10px; overflow: hidden;}
 .u_infoBox h3.blue_title{ background-color: #D1E0E5; font-size: 14px; padding: 0 15px; letter-spacing: 1px; line-height: 25px; color: #4A4A4A; position: relative;}
 .u_infoBox h3.blue_title span{ position: absolute; top: 0px; right: 18px; }
+.u_infoBox h3.blue_title a.edit{ position: absolute; top: 0px; right: 8px; font-size: 14px; letter-spacing: 5px; text-decoration: underline; padding-right: 30px; height: 25px; color: #81B6C8; display: inline-block; background: url(../images/btn_icon_edit.png) center right no-repeat; background-size: contain;}
+.u_infoBox h3.blue_title a.edit:hover{ text-decoration: none; }
+
 .u_infoBox .time_course{ width: 100%;}
 .u_infoBox .time_course .tBox{ float: left; width: 50%; min-height: 92px; padding: 0 15px;  }
 .u_infoBox .time_course .tBox:first-child{ position: relative; }
@@ -1485,6 +1504,11 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .u_infoBox .traitBox ul.icon_warning::after{ background-image: url(../images/card_pic/icon_warning.png); }
 .u_infoBox .traitBox ul.nb li{ padding-bottom: 10px; }
 .u_infoBox .traitBox ul.nb li p{line-height: 20px; text-align: justify;}
+
+.style_org .u_infoBox{ border-color: #E5AF57; }
+.style_org .u_infoBox h3.blue_title{ background-color: #E5AF57; }
+.style_org .u_infoBox h3.blue_title a.edit_save{ color: #fff; background: url(../images/btn_icon_save_w.png) center right no-repeat; background-size: contain;}
+
 
 .test_report .bothBox{ width: 100%; }
 .test_report .bothBox .tBox{ width: 50%; float: left; }
