@@ -431,7 +431,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 
 .messageBox .RedBox{ width: 100%; background-color:#fff; padding:30px; border: 3px solid #C87D86; border-radius: 10px 0 10px 10px; box-shadow: 0px 0px 5px rgba(155,155,155,0.2); overflow: hidden; }
 .messageBox .RedBox p.info{line-height: 24px;}
-.messageBox .RedBox p.info span{color: #81B6C8;}
+.messageBox .RedBox p.info span{color: #81B6C8; padding-left: 0;}
 .messageBox .RedBox p.info span.red{ color: #C87D86; padding: 0 5px; }
 .messageBox .RedBox p.info span.under_line{ text-decoration: underline; color: inherit; }
 @media all and (-ms-high-contrast:none){ .messageBox .RedBox { overflow: inherit; } /* IE10 */ *::-ms-backdrop, .messageBox .RedBox{ overflow: inherit; } /* IE11 */}
@@ -1613,6 +1613,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .test_report h4.bg_dark_blue::after{ right: initial; left: 10px;}
 .test_report h4.bg_light_blue{ text-align: left; padding-left: 100px; background-color: #D1E0E5; color: #81B6C8;}
 .test_report h4.bg_light_blue::after{ right: initial; left: 10px;}
+.test_report h4.r_title a.arr_show_switch{ position: absolute; top: 0; right: 0;z-index: 10; width: 55px; height: 55px; background: url(../images/btn_arr_switch.png) center center no-repeat; background-size: contain; cursor: pointer; }
 
 .test_report .u_infoBox{ margin: 15px; }
 .test_report .tBox:first-child .u_infoBox{ margin-right: 10px; }
@@ -1626,8 +1627,8 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .test_report table.suggest{ width: 100%; position: relative; }
 .test_report table.suggest p{line-height: 20px; text-align: justify;}
 .test_report table.suggest .top_title{ position: absolute; top: -30px; width: 100%; }
-.test_report table.suggest .top_title p{ text-align: right; color: #fff; }
-.test_report table.suggest tr td{ padding: 10px; vertical-align: middle; border-left:#558C9E 2px solid; border-top:#558C9E 2px solid;  }
+.test_report table.suggest .top_title p{ text-align: center; color: #fff; }
+.test_report table.suggest tr td{ padding: 10px; vertical-align: middle; border-left:#81B6C8 2px solid; border-top:#81B6C8 2px solid;  }
 .test_report table.suggest tr td:first-child{ border-left: none; }
 .test_report table.suggest tr td:first-child p {color:#81B6C8; font-size: 18px; font-weight: bold; text-align: center;}
 
@@ -1693,6 +1694,9 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interviewee_info .new_report{ border-radius: 10px 0 0 0; }
 .interviewee_info .new_report .top_topic{ border-bottom:2px solid #81B6C8; padding: 40px 65px; margin: 0 auto; }
 .interviewee_info .new_report .top_topic p{ text-align: justify; }
+.interviewee_info .new_report .top_topic p a{ color: #81B6C8; text-decoration: underline;}
+.interviewee_info .new_report .top_topic p a:hover{ text-decoration: none;}
+
 .interviewee_info .new_report .top_topic p.color_label{ padding: 0; text-align: left; padding: 30px 0; }
 .interviewee_info .new_report .top_topic p.color_label span{ padding: 2px 20px;color: #fff; font-weight: normal;  display: inline-block; margin-right: 10px;}
 .interviewee_info .new_report .top_topic p.color_label span.green{ background-color: #69A07C; }
@@ -1825,7 +1829,7 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .interviewee_info .behavior_description .behavior_note ul.other li{ border-bottom:1px dashed #D8D8D8; padding: 10px 0;}
 .interviewee_info .behavior_description .behavior_note ul.other li h5{ font-size: 13px; padding:0 20px 5px 20px;}
 
-.interviewee_info .company_info{ padding: 100%; padding: 15px 40px; }
+.interviewee_info .company_info{ width: 100%; padding: 15px 40px 35px 40px;}
 .interviewee_info .company_info p.info_logo{ color: #9B9B9B; float: right; position: relative; padding-left: 50px; font-size: 12px;}
 .interviewee_info .company_info p.info_logo::after{ position: absolute; top: 0; left: 0; content: ""; width: 40px; height: 31px; display: block; background: url(../images/logo_kamo.png) center center no-repeat; background-size: contain; }
 
@@ -2087,3 +2091,50 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .seceneTestBox ul.secene_answer a.circle span.green{border-color: #84BE98; }
 .seceneTestBox ul.secene_answer a.btn_in span.red{ background: url(../images/seceneTest/icon_tick.png) center center no-repeat #C87D86; background-size: contain; border: none; }
 .seceneTestBox ul.secene_answer a.btn_in span.green{ background: url(../images/seceneTest/icon_tick.png) center center no-repeat #84BE98; background-size: contain; border: none; }
+
+.interviewee_info .c_desaturated_blue { border-color: #81B6C8; }
+.interviewee_info .c_desaturated_blue h4.bg_dark_blue{ background-color: #81B6C8; }
+
+.interviewee_info .c_logictest_org { border-color: #E5AF57; padding-bottom: 30px; }
+.interviewee_info .c_logictest_org h4.bg_dark_blue{ background-color: #E5AF57; color: #fff; }
+.interviewee_info .c_logictest_org .test_report .positive_behavior table.analysis{ margin-top: -4px;}
+.interviewee_info .c_logictest_org table.analysis tr th, .interviewee_info .c_logictest_org table.analysis tr td,.interviewee_info .c_logictest_org table.analysis .progress_container::after{ border-color: #E5AF57; }
+.interviewee_info .c_logictest_org .positive_behavior {padding-bottom: 0;}
+.interviewee_info .c_logictest_org .positive_behavior .answer_questions{ padding: 30px 0 20px 0; }
+.interviewee_info .c_logictest_org .note_positive_behavior{ border-top: 2px solid #E5AF57; text-align: right; margin:0; }
+.interviewee_info .c_logictest_org .note_positive_behavior p, .interviewee_info .c_dark_purple .note_positive_behavior p{ padding-right: 20px; }
+
+.interviewee_info .c_logictest_org h4.s_icon_05::after{background-image: url(../images/user_info/r_title_icon_05_blue.png); }
+.interviewee_info .c_logictest_org h4.s_icon_07::after{background-image: url(../images/user_info/r_title_icon_07_blue.png); }
+
+.interviewee_info .c_dark_purple { border-color: #342949; padding-bottom: 30px; }
+.interviewee_info .c_dark_purple h4.bg_dark_blue{ background-color: #342949; color: #fff; }
+.interviewee_info .c_dark_purple .note_positive_behavior{ border-top: 2px solid #342949; text-align: right; margin:0; }
+.interviewee_info .c_dark_purple table.analysis tr th, .interviewee_info .c_dark_purple table.analysis tr td,.interviewee_info .c_dark_purple .positive_behavior, .interviewee_info .c_dark_purple .note_positive_behavior,.interviewee_info .c_dark_purple table.analysis .progress_container::after{ border-color: #342949; }
+
+table.potential_personality_trait{ width: 100%; padding: 15px 10px; }
+table.potential_personality_trait tr td{ vertical-align: top; }
+table.potential_personality_trait p.text{ padding:30px 10px 10px 10px; text-align: justify; }
+table.potential_personality_trait .progress_container{ width:100%; height:34px; position:relative; background: url(../images/user_info/bg_progressbar.png) center center no-repeat; background-size: cover;}
+table.potential_personality_trait .progress_container::after{z-index: 5; content: ""; position: absolute; left:calc(50% - 0.5px); width: 1px; height: 100%; display: block;}
+table.potential_personality_trait .progressbar{ background-color:#81B6C8; top: 10px; height:14px; position:absolute; line-height:inherit;}
+table.potential_personality_trait .top_title ul.ex{ width: 100%; padding: 10px 0; }
+table.potential_personality_trait .top_title ul.ex li{ width: 33.33%; float: left; }
+table.potential_personality_trait .top_title ul.ex li:first-child{ text-align: left; }
+table.potential_personality_trait .top_title ul.ex li:first-child p{ margin-left: -10px; }
+table.potential_personality_trait .top_title ul.ex li:last-child{ text-align: right; }
+table.potential_personality_trait .top_title ul.ex li:last-child p{ margin-right: -10px; }
+table.potential_personality_trait .top_title ul.ex li:nth-child(2){ text-align: center; }
+table.potential_personality_trait .top_title ul.ex li p{ color: #81B6C8;}
+
+table.potential_personality_trait .top_title .img_progress_ex{ width: 100%; height: 11px; position: relative; display: block; background: url(../images/user_info/bg_progressbar.png) center center no-repeat; background-size: cover;}
+table.potential_personality_trait .top_title .img_progress_ex::after{ content: ""; position: absolute; width: 1px; height: 11px; display: block; background-color: #9B9B9B; left:calc(50% - 0.5px); top: 0; }
+
+table.potential_personality_trait .progress_box{ width: 100%; border:1px solid #9B9B9B; background-color: #F8F9F9; margin: 10px 0;}
+table.potential_personality_trait .progress_box h4{ background-color: #D1E0E5; width:100%; height:22px ; line-height:22px; text-align:center; font-size: 16px;}
+table.potential_personality_trait .progress_box .img_progress{ margin-top: 30px; width: 100%; height: 34px; position: relative; display: block; background: url(../images/user_info/bg_progressbar.png) center center no-repeat; background-size: cover;}
+table.potential_personality_trait .progress_box .img_progress::after{ z-index: 5; content: ""; position: absolute; left:calc(50% - 0.5px); width: 1px; height: 100%; background-color: #9B9B9B; display: block;}
+table.potential_personality_trait .progress_box .img_progress p{ width: 45px; text-align: center; position: absolute; bottom: 0; color: #81B6C8;} 
+table.potential_personality_trait .progress_box .img_progress p span{ position: relative; padding: 0 0 38px 0; display: block;}
+table.potential_personality_trait .progress_box .img_progress p span::after{ content: ""; bottom: -1px; left: calc(50% - 7px); position: absolute; width: 0; height: 0; border-style: solid; border-width: 0 7px 14px 7px; border-color: transparent transparent #81b6c8 transparent; line-height: 0px; _border-color: #000000 #000000 #81b6c8 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+
