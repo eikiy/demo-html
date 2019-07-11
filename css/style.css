@@ -1270,7 +1270,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 /*.mainBox .recruit_contents .user_list a:hover .tooltip{ opacity: 0; }*/
 .mainBox .recruit_contents .user_list a .user_test_icon:hover .tooltip{ opacity: 1; }
 
-.mainBox .recruit_contents .user_list .user_test_type{ left: 120px; top: 20px; width: 25px; position: absolute;}
+.mainBox .recruit_contents .user_list .user_test_type{ left: 120px; top: 30px; width: 25px; position: absolute;}
 .mainBox .recruit_contents .user_list .user_test_type p.type{ border:1px solid #D8D8D8; font-size: 12px; color: #D8D8D8; border-radius: 3px; margin-bottom: 4px; display: inline-block; padding: 1px 3px; }
 .mainBox .recruit_contents .user_list .user_test_type p.c_blue{ background-color: #81B6C8; border:none; color: #fff; }
 .mainBox .recruit_contents .user_list .user_test_type p.c_org{ background-color: #E5AF57; border:none; color: #fff; }
@@ -1613,7 +1613,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .test_report h4.bg_dark_blue::after{ right: initial; left: 10px;}
 .test_report h4.bg_light_blue{ text-align: left; padding-left: 100px; background-color: #D1E0E5; color: #81B6C8;}
 .test_report h4.bg_light_blue::after{ right: initial; left: 10px;}
-.test_report h4.r_title a.arr_show_switch{ position: absolute; top: 0; right: 0;z-index: 10; width: 55px; height: 55px; background: url(../images/btn_arr_switch.png) center center no-repeat; background-size: contain; cursor: pointer; }
+.test_report h4.r_title a.arr_show_switch{ position: absolute; top: 5px; right: 15px;z-index: 10; width: 28px; height: 48px; background: url(../images/btn_arr_switch.png) center center no-repeat; background-size: contain; cursor: pointer; }
 
 .test_report .u_infoBox{ margin: 15px; }
 .test_report .tBox:first-child .u_infoBox{ margin-right: 10px; }
@@ -2093,7 +2093,7 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .seceneTestBox ul.secene_answer a.btn_in span.green{ background: url(../images/seceneTest/icon_tick.png) center center no-repeat #84BE98; background-size: contain; border: none; }
 
 .interviewee_info .c_desaturated_blue { border-color: #81B6C8; }
-.interviewee_info .c_desaturated_blue h4.bg_dark_blue{ background-color: #81B6C8; }
+.interviewee_info .c_desaturated_blue h4.bg_dark_blue{ background-color: #81B6C8; color: #fff; }
 
 .interviewee_info .c_logictest_org { border-color: #E5AF57; padding-bottom: 30px; }
 .interviewee_info .c_logictest_org h4.bg_dark_blue{ background-color: #E5AF57; color: #fff; }
