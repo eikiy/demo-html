@@ -1779,6 +1779,10 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .positive_behavior .answer_questions ul.difficulty_q li.bg_green{ background-color: #84BE98 ;}
 .positive_behavior .answer_questions ul.difficulty_q li.bg_blue{ background-color: #81B6C8 ;}
 .positive_behavior .answer_questions ul.difficulty_q li.bg_red{ background-color: #C87D86 ;}
+.positive_behavior .answer_questions ul.difficulty_q li.bg_org1{ background-color: #E5CA9E ;}
+.positive_behavior .answer_questions ul.difficulty_q li.bg_org2{ background-color: #E5AF57 ;}
+.positive_behavior .answer_questions ul.difficulty_q li.bg_org3{ background-color: #D87E05 ;}
+
 .positive_behavior .answer_questions p.note{ font-size: 12px; color: #4A4A4A; margin: 0 auto; padding:0 0 0 65px; max-width: 600px; }
 
 .test_report .overall{ padding: 15px; background-color: #EFF7FA; }
@@ -2101,6 +2105,10 @@ table.analysis .progressbar{ background-color:#81B6C8; top: 10px; height:14px; p
 .interviewee_info .c_logictest_org table.analysis tr th, .interviewee_info .c_logictest_org table.analysis tr td,.interviewee_info .c_logictest_org table.analysis .progress_container::after{ border-color: #E5AF57; }
 .interviewee_info .c_logictest_org .positive_behavior {padding-bottom: 0;}
 .interviewee_info .c_logictest_org .positive_behavior .answer_questions{ padding: 30px 0 20px 0; }
+.interviewee_info .c_logictest_org .positive_behavior .answer_questions ul.no_q li p::after{ background-color: #F7F0E6; }
+.interviewee_info .c_logictest_org .positive_behavior .answer_questions ul.no_q li p.ok::before{ background-image: url(../images/user_info/icon_answer_ok_skyblue.png); }
+.interviewee_info .c_logictest_org .positive_behavior .answer_questions ul.no_q li p.error::before{ background-image: url(../images/user_info/icon_answer_error_red.png); }
+
 .interviewee_info .c_logictest_org .note_positive_behavior{ border-top: 2px solid #E5AF57; text-align: right; margin:0; }
 .interviewee_info .c_logictest_org .note_positive_behavior p, .interviewee_info .c_dark_purple .note_positive_behavior p{ padding-right: 20px; }
 
@@ -2138,3 +2146,20 @@ table.potential_personality_trait .progress_box .img_progress p{ width: 45px; te
 table.potential_personality_trait .progress_box .img_progress p span{ position: relative; padding: 0 0 38px 0; display: block;}
 table.potential_personality_trait .progress_box .img_progress p span::after{ content: ""; bottom: -1px; left: calc(50% - 7px); position: absolute; width: 0; height: 0; border-style: solid; border-width: 0 7px 14px 7px; border-color: transparent transparent #81b6c8 transparent; line-height: 0px; _border-color: #000000 #000000 #81b6c8 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
 
+.interviewee_info .c_dark_purple table.potential_personality_trait .top_title ul.ex li p{ color: #342949; }
+.interviewee_info .c_dark_purple table.potential_personality_trait .progress_box h4{ background-color: #342949; color: #fff; }
+.interviewee_info .c_dark_purple table.potential_personality_trait tr td{ vertical-align: bottom; }
+
+.social_IQ_info{ width: 100%; max-width: 778px; margin: 0 auto; padding: 10px 30px 20px 30px; border:3px solid #342949; border-radius: 10px 0 10px 10px;}
+.social_IQ_info .top_average_value{ width: 100%; position: relative; padding: 5px 0 15px 0; }
+.social_IQ_info .top_average_value p{ position: relative; }
+.social_IQ_info .top_average_value p.p_center{ position: absolute; top: 7px; left: calc(50% - 10px); }
+.social_IQ_info .top_average_value p:first-child{ float: left; width: 50%; }
+.social_IQ_info .top_average_value p:first-child::after{ content: ""; position: absolute; left: 125px; top: 9px; width: calc(100% - 155px); height: 1px; border-top: dashed 1px #342949; }
+.social_IQ_info .top_average_value p:last-child{ float: right; width: 50%; text-align: right; }
+.social_IQ_info .top_average_value p:last-child::after{ content: ""; position: absolute; right: 125px; top: 9px; width: calc(100% - 155px); height: 1px; border-top: dashed 1px #342949; }
+
+.social_IQ_info .description{ width: 100% }
+.social_IQ_info .description p{ float: left; width: 50%; padding-top: 15px; }
+.social_IQ_info .description p:last-child{ text-align: right; position: relative; }
+.social_IQ_info .description p:last-child::after{ content: ""; position: absolute; top: 0; width: 2px; height: 100%; display: block; background-color: #342949; }
