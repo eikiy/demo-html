@@ -1542,7 +1542,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interview_officer_Main .u_infoBox .use_fillinBox .pa_h .infoContent_two .tBox:last-child{ padding-left: 30px; }
 
 .popup-L .interview_officer_Main .u_infoBox .use_fillinBox .pa_h .fBox p.title_s{ text-align: center; }
-.popup-L .filter_pop .chosenBox .u_infoBox p span{ color: #9B9B9B; }
+.popup-L .filter_pop .chosenBox .u_infoBox p span{ color: #81B6C8; }
 .popup-L .filter_pop .chosenBox .bottom_title{ text-align: right; padding:15px 30px 10px 0; position: initial; }
 .popup-L .filter_pop .chosenBox .bottom_title label{ margin-right: 15px; }
 .popup-L .filter_pop .chosenBox .t_w100{ max-width: 850px; min-width: 850px;}
