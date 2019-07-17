@@ -1508,9 +1508,9 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .u_infoBox .traitBox ul.nb li{ padding-bottom: 10px; }
 .u_infoBox .traitBox ul.nb li p{line-height: 20px; text-align: justify;}
 
-.style_org .u_infoBox{ border-color: #E5AF57; }
-.style_org .u_infoBox h3.blue_title{ background-color: #E5AF57; }
-.style_org .u_infoBox h3.blue_title a.edit_save{ color: #fff; background: url(../images/btn_icon_save_w.png) center right no-repeat; background-size: contain;}
+.style_org{ border-color: #E5AF57; }
+.style_org h3.blue_title{ background-color: #E5AF57; }
+.style_org h3.blue_title a.edit_save{ color: #fff; background: url(../images/btn_icon_save_w.png) center right no-repeat; background-size: contain;}
 
 
 .test_report .bothBox{ width: 100%; }
