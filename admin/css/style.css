@@ -334,11 +334,11 @@ p.page_nb a.right_arr:hover{ border-color: transparent transparent transparent #
 .setBox .item li a:hover{ border-color: #9B9B9B; }
 
 .setBox .time_select{position: relative;}
-.setBox .time_select ul li, .setBox ul li.new_day{ position: relative;}
+.setBox .time_select ul li{ position: relative;}
 .setBox .time_select ul li input.r_border_line{margin-left: 10px; padding-left: 10px; width: 100%; max-width:calc(100% - 100px); height: 30px; line-height: 30px; border:1px solid #979797; background-color: #fff; margin-top: 8px; }
 .setBox .time_select ul li input.r_border_line:hover{ box-shadow: inset 0 1px 3px rgba(0,0,0,.3); border-color: #979797;}
-.setBox .time_select ul li::after, .setBox ul li.new_day::after{cursor: pointer; content: ""; top: 12px; right: 26px; position: absolute; width: 26px; height: 22px; display: block; background-repeat:no-repeat; background-position: center center; background-size: contain;  }
-.setBox .time_select ul li:hover::after, .setBox ul li.new_day:hover::after{ opacity: .5 ;}
+.setBox .time_select ul li.day::after, .setBox .time_select ul li.time::after{cursor: pointer; content: ""; top: 12px; right: 26px; position: absolute; width: 26px; height: 22px; display: block; background-repeat:no-repeat; background-position: center center; background-size: contain;  }
+.setBox .time_select ul li.day:hover::after, .setBox .time_select ul li.time:hover::after{ opacity: .5 ;}
 
 .setBox .the_contract{padding: 0;}
 .setBox .the_contract ul{border-radius: 0; background-color: #fff; border-radius: 0 0 5px 5px;}
@@ -348,7 +348,7 @@ p.page_nb a.right_arr:hover{ border-color: transparent transparent transparent #
 .setBox .the_contract ul li p.blue_small a{ color: #fff; min-width: 70px; padding: 2px 5px; background-color: #81B6C8; }
 .setBox .the_contract ul li p.blue_small a:hover{ background-color: #81B6C8; opacity: .9;}
 
-.setBox ul li.day::after, .setBox ul li.new_day::after{background-image: url(../images/icon_time_select_01.png);}
+.setBox ul li.day::after{background-image: url(../images/icon_time_select_01.png);}
 .setBox ul li.time::after{ background-image: url(../images/icon_time_select_02.png);}
 .setBox ul li.time_select .r_info{position: relative;}
 .setBox ul li.time_select .r_info input{ width: 100%; padding: 0px 10px; max-width: 285px; height: 30px; line-height: 30px; border:1px solid #979797; background-color: #fff;}
@@ -376,7 +376,7 @@ p.page_nb a.right_arr:hover{ border-color: transparent transparent transparent #
 .setBox .time_select .time_selectBpx .the_time ul li p a.btn_in{background-color: #81B6C8; color: #fff;}
 
 .setBox .for_admit ul li .l_title{ border-right: 1px solid rgba(155,155,155,0.5); max-width: 110px;}
-.setBox .for_admit ul li input.r_info, .setBox ul li.new_day input.r_info { margin: 8px;}
+.setBox .for_admit ul li input.r_info{ margin: 8px;}
 
 .add_bossBox{ position:absolute; top: -53px; right: -288px; width: 275px; background-color: #558C9E; border-radius: 0px 5px 5px 5px; border:3px solid #558C9E;}
 .add_bossBox h4{ color: #fff; font-size: 14px; padding: 0 10px; line-height: 30px; position: relative; }
