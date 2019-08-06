@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>職缺管理</title>
+<meta name='description' content=""/>
+<meta name='keywords' content=""/>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+<!-- Magnific Popup core JS file -->
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	    $('.popup-link').magnificPopup({
+	      removalDelay: 300,
+	      mainClass: 'mfp-fade'
+	    });
+	});
+	$(function(){
+	  	$(".job_type").click(function(){
+	        $(this).find("ul.sub_filter").stop(true, true).fadeToggle(0);
+	    return false;
+	    });
+	 });
+</script>
+</head>
+<body>
+
+<!--=================================
+	請馬克幫我增加屬性，
+	當點了popup後 header 和 main 的css
+	都要加以下屬性才會有模糊效果：
+
+	-webkit-filter: blur(0.4rem);
+    -moz-filter: blur(0.4rem);
+    -o-filter: blur(0.4rem);
+    -ms-filter: blur(0.4rem);
+    filter: blur(0.4rem);
+================================= -->
+
+<header class="headerBox for_management_top">
+	<div class="contentsBox clearfix">
+		<a class="logo" href="#"></a>
+		<div class="searchBox search_all">
+			<input type="text" name="" placeholder="搜尋面試人員/現有員工">
+			<a href="#"></a>
+		</div>
+		<p class="add_job_vacancies"><a class="add popup-link" href="#popup-add_job_vacancies">新增職缺</a></p>
+		<ul class="tools">
+			<li><a class="message" href="#"><span>3</span><div class="tooltip">通知</div></a></li>
+			<li><a class="logout" href="#"><div class="tooltip">登出</div></a></li>
+		</ul>
+	</div>
+</header>
+
+<main class="mainBox for_management">
+	<div class="contentsBox clearfix">
+		<section class="side_menu">
+			<h1 class="title">明天<br>
+			企業股份有限公司</h1>
+			<ul class="menu">
+				<li><p><a class="icon_01" href="management.html">招募管理</a></p></li>
+				<li><p class="btn_in"><a class="icon_07" href="job_management.html">職缺管理</a></p></li>
+				<li><p><a class="icon_02" href="recruit_record.html">招募紀錄</a></p></li>
+				<li><p><a class="icon_03" href="employee_data.html">現有員工</a></p></li>
+				<li><p><a class="icon_06" href="talent_management.html">人才管理</a></p></li>
+				<li><p><a class="icon_04" href="account.html">帳號設定</a></p></li>
+				<li><p><a class="icon_05" href="HR_helper.html">HR小幫手</a></p></li>
+			</ul>
+		</section>
+		<section class="right_contents clearfix">
+			<div class="recruit_contents">
+				<div class="top_toolsBox clearfix">
+					<ul class="type clearfix">
+						<li class="btn_in"><p><a href="#"><span>職缺名稱</span></a></p></li>
+						<li><p><a href="#"><span>部門</span></a></p></li>
+						<li><p><a href="#"><span>建立時間</span></a></p></li>
+					</ul>
+					<p class="btn_filter"><a class="btn_in popup-link" href="#popup-btn_filter"><span>篩選(3)</span></a></p>
+					<p class="btn_past_record"><a href="job_management_past_record.html"><span>職缺管理紀錄</span></a></p>
+					<p class="people_nb">共有 5 個職缺</p>
+				</div>
+				<ul class="user_list list job_management_list clearfix">
+					<li class="clearfix">
+						<a class="popup-link" href="#">
+							<div class="top_title edit">
+								<p class="job_title">軟體工程師</p>
+								<div class="department clearfix">
+									<p>資訊部</p>
+									<p>主管:林怡文</p>
+								</div>
+							</div>
+							<div class="job_type clearfix">
+								<div>
+									<p>招募中</p>
+									<p>2</p>
+								</div>
+								<div>
+									<p>已報到</p>
+									<p>2</p>
+								</div>
+								<div>
+									<p>需求人數</p>
+									<p>4</p>
+								</div>
+							</div>
+							<p class="setup_time">2019/02/03 建立</p> 
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="popup-link" href="#">
+							<div class="top_title edit">
+								<p class="job_title">軟體工程師</p>
+								<div class="department clearfix">
+									<p>資訊部</p>
+									<p>主管:林怡文</p>
+								</div>
+							</div>
+							<div class="job_type clearfix">
+								<div>
+									<p>招募中</p>
+									<p>2</p>
+								</div>
+								<div>
+									<p>已報到</p>
+									<p>2</p>
+								</div>
+								<div>
+									<p>需求人數</p>
+									<p>4</p>
+								</div>
+							</div>
+							<p class="setup_time">2019/02/03 建立</p> 
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="popup-link" href="#">
+							<div class="top_title edit">
+								<p class="job_title">軟體工程師</p>
+								<div class="department clearfix">
+									<p>資訊部</p>
+									<p>主管:林怡文</p>
+								</div>
+							</div>
+							<div class="job_type clearfix">
+								<div>
+									<p>招募中</p>
+									<p>2</p>
+								</div>
+								<div>
+									<p>已報到</p>
+									<p>2</p>
+								</div>
+								<div>
+									<p>需求人數</p>
+									<p>4</p>
+								</div>
+							</div>
+							<p class="setup_time">2019/02/03 建立</p> 
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="popup-link" href="#">
+							<div class="top_title edit">
+								<p class="job_title">軟體工程師</p>
+								<div class="department clearfix">
+									<p>資訊部</p>
+									<p>主管:林怡文</p>
+								</div>
+							</div>
+							<div class="job_type clearfix">
+								<div>
+									<p>招募中</p>
+									<p>2</p>
+								</div>
+								<div>
+									<p>已報到</p>
+									<p>2</p>
+								</div>
+								<div>
+									<p>需求人數</p>
+									<p>4</p>
+								</div>
+							</div>
+							<p class="setup_time">2019/02/03 建立</p> 
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="popup-link" href="#">
+							<div class="top_title edit">
+								<p class="job_title">軟體工程師</p>
+								<div class="department clearfix">
+									<p>資訊部</p>
+									<p>主管:林怡文</p>
+								</div>
+							</div>
+							<div class="job_type clearfix">
+								<div>
+									<p>招募中</p>
+									<p>2</p>
+								</div>
+								<div>
+									<p>已報到</p>
+									<p>2</p>
+								</div>
+								<div>
+									<p>需求人數</p>
+									<p>4</p>
+								</div>
+							</div>
+							<p class="setup_time">2019/02/03 建立</p> 
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+
+	<!-- popup 新增職缺 1-->
+	<div id="popup-add_job_vacancies" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop messageBox check_remind">
+            <div class="top_title">
+                <h3 class="dark">新增職缺</h3>
+            </div>
+            <div class="fillinBox interview_needs">
+                <ul>
+                    <li>
+                        <label class="l_title" for=""><p>職缺名稱</p></label>
+                        <input class="r_info" id="" name="" type="text" placeholder="例如：軟體工程師">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>需求人數</p></label>
+                        <input class="r_info" id="" name="" type="text" placeholder="請輸入阿拉伯數字">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>所屬部門</p></label>
+                        <p class="btn"><a class="select" href="#">選擇</a></p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>直屬主管</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                </ul>
+
+	            <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>面試需求</p>
+                	</li>
+                	<li class="work_complexity">
+                        <label class="l_title" for=""><p>工作複雜程度</p></label>
+                        <div class="grade">
+                        	<p>
+                        		<a class="btn_in" href="#">高</a>
+                        		<a class="" href="#">中</a>
+                        		<a class="" href="#">低</a>
+                        	</p>
+                        </div>
+                    </li>
+                    <li class="height_s">
+                		<p class="ss">高：開發、研發人員 / 中：一般職員等 / 低：一線員工、作業員等。</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>工作職能</p></label>
+                        <p class="btn"><a class="select popup-link" href="#popup-job_duty">選擇</a></p>
+                    </li>
+                    <li class="border_no">
+                        <label class="l_title" for=""><p>專業技能</p></label>
+                    </li>
+                    <li class="professional_skill">
+                    	<p class="btn"><a class="select" href="#">選擇</a></p>
+                    </li>
+                </ul>
+
+                <div class="RedBox border_blue border_green">
+	                <p class="info"><span>面試需求</span>請確實填寫，會產生不同的面試問券。<br>
+	                	工作複雜程度標準由各家公司自行斟酌選擇。</p>
+	            </div>
+                <p class="btn"><a class="bg_darkblue popup-link" href="#popup-add_job_vacancies-2">確認</a></p>
+            </div>
+        </form>
+    </div>
+    <!-- popup 新增職缺 2 -->
+	<div id="popup-add_job_vacancies-2" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop messageBox check_remind">
+            <div class="top_title">
+                <h3 class="dark">新增職缺</h3>
+            </div>
+            <div class="fillinBox interview_needs">
+                <ul>
+                    <li>
+                        <label class="l_title" for=""><p>職缺名稱</p></label>
+                        <input class="r_info" id="" name="" type="text" placeholder="例如：軟體工程師">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>需求人數</p></label>
+                        <input class="r_info" id="" name="" type="text" placeholder="請輸入阿拉伯數字">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>所屬部門</p></label>
+                        <p class="btn"><a class="select" href="#">選擇</a></p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>直屬主管</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                </ul>
+
+	            <ul class="jobBox">
+                	<li class="sub_title remind_greenbox right_tip">
+                		<p>面試需求<span class="tooltip">
+                			<span class="icon_thumbtack">已有求職者完成職能問卷，為求公平性，此區無法再做修改。</span>
+                		</span></p>
+                		
+                	</li>
+                    <li class="border_no">
+                        <label class="l_title" for=""><p>工作職能</p></label>
+                        <p class="btn"><a class="select popup-link" href="#popup-job_duty">選擇</a></p>
+                    </li>
+                    <li class="job_duty clearfix">
+                        <div class="sequence clearfix">
+                        	<p class="text clearfix"><span class="nb">1</span><span class="line">成就和行動/有條不紊</span></p>
+                        	<p class="text clearfix"><span class="nb">2</span><span class="line">管理/指揮命令</span></p>
+                        	<p class="text clearfix"><span class="nb">3</span><span class="line">管理/團隊合作</span></p>
+                        </div>
+                        <div class="sequence clearfix">
+                        	<p class="text clearfix"><span class="nb">4</span><span class="line">感染與影響/關係建立</span></p>
+                        	<p class="text clearfix"><span class="nb">5</span><span class="line">個人效率/組織忠誠</span></p>
+                        	<p class="text clearfix"><span class="nb">6</span><span class="line">個人效率/自信心</span></p>
+                        </div>
+                    </li>
+                    <li class="border_no">
+                        <label class="l_title" for=""><p>專業技能</p></label>
+                    </li>
+                    <li class="professional_skill">
+                    	<p class="btn"><a class="select add popup-link" href="#popup-add_professional_skill_text">新增</a></p>
+                        <div class="professional_skill_list">
+                        	<div class="fill_text clearfix">
+                        		<p class="text">AutoCAD</p>
+                        		<a class="go_edit" href="#"></a>
+                        		<a class="go_delete popup-link" href="#popup-job_over"></a>
+                        	</div>
+                        	<div class="fill_text clearfix">
+                        		<p class="text">3Dmax</p>
+                        		<a class="go_edit" href="#"></a>
+                        		<a class="go_delete" href="#"></a>
+                        	</div>
+                        </div>
+                    </li>
+                </ul>
+                <p class="btn"><a class="bg_darkblue" href="#">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup： 新增 專業技能-->
+    <div id="popup-add_professional_skill_text" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox ">
+            <div class="top_title">
+                <h3>新增專業技能</h3>
+            </div>
+            <div class="fillinBox">
+                <ul class="jobBox" style="overflow: hidden;">
+                    <li>
+                        <input type="text" name="" class="r_info" placeholder="" value="AutoCad 3D">
+                    </li>
+                </ul>
+                <p class="btn">
+                	<a class="popup-link" href="#popup-add_job_vacancies">確認</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup： 強制結束-->
+    <div id="popup-job_over" class="white-popup popup-w-s mfp-hide enforcementBox">
+        <form class="setBox  messageBox check_remind">
+            <div class="fillinBox">
+            	<div class="RedBox" style="padding: 20px 15px;">
+	                <p class="info">您尚有 <span>1個職缺</span> 名額未招滿，請問仍要提前結束職缺嗎？<br>
+	                確認結束，排名結果將會記錄在「職缺管理紀錄」。</p>
+	            </div>
+                <ul class="jobBox" style="overflow: hidden;">
+                	<li class="sub_title">
+                		<p>備註</p>
+                	</li>
+                    <li>
+                        <input type="text" name="" class="r_info" placeholder="請說明">
+                    </li>
+                </ul>
+                <p class="btn">
+                	<a class="bg_gary" href="#">取消</a>
+                	<a class="bg_red" href="#">確認結束</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 工作職能 -->
+	<div id="popup-job_duty" class="white-popup popup-mm mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title top_title_gray">
+                <h3>工作職能</h3>
+            </div>
+            <div class="job_duty_chosenBox">
+            	<div class="top_box clearfix">
+	            	<div class="border_green">
+		                <p class="info">
+		                	請依序選擇所需項目，也可選擇建議項目。<span class="red">最多只能選擇6個項目。</span><br>
+		                	如需取消請同一個項目再按一次，即可取消，排序會重新排列。<br>
+		                	並請確認所選項目之定義是否符合。
+		                </p>
+		            </div>
+		            <div class="job_filter clearfix">
+						<p class="title"><a href="#"><span>建議項目</span></a></p> <!-- 選取中 p + "btn_in" -->
+						<ul class="sub_filter" style=" display: block;">
+							<li><p>設計類</p></li>
+							<li><p>研發類</p></li>
+							<li><p>主管職</p></li>
+							<li><p>助理職</p></li>
+						</ul>
+					</div>
+		        </div>
+		        <div class="job_duty clearfix">
+			        <ul class="duty_list clearfix">
+			        	<li>
+			        		<h3>成就和行動</h3>
+			        		<p>成就導向</p>
+				        	<p class="btn_in">有條不紊<span class="nb">1</span></p>
+				        	<p>資訊蒐集</p>
+				        	<p>自我發展/鑽研學習</p>
+				        </li>
+				        <li>
+			        		<h3>協助和服務</h3>
+			        		<p class="btn_in">同理包容<span class="nb">3</span></p>
+				        	<p>服務精神</p>
+				        </li>
+				        <li>
+			        		<h3>感染與影響</h3>
+			        		<p>影響說服</p>
+				        	<p>組織意識</p>
+				        	<p class="btn_in">關係建立<span class="nb">2</span></p>
+				        </li>
+				        <li>
+			        		<h3>管理</h3>
+			        		<p>培養他人</p>
+			        		<p class="btn_in">指揮命令<span class="nb">4</span></p>
+			        		<p class="btn_in">團隊合作<span class="nb">5</span></p>
+				        	<p>團隊領導</p>
+				        </li>
+				    </ul>
+			    </div>
+			    <div class="job_duty clearfix">
+			        <ul class="duty_list clearfix">
+			        	<li>
+			        		<h3>認知能力</h3>
+			        		<p>分析思考</p>
+				        	<p>概念思考</p>
+				        	<p>創新思維</p>
+				        </li>
+				        <li>
+			        		<h3>個人效率</h3>
+			        		<p>自我調適</p>
+				        	<p>自信果斷</p>
+				        	<p>靈活應變</p>
+			        		<p class="btn_in">組織忠誠<span class="nb">6</span></p>
+				        </li>
+				    </ul>
+				    <div class="note">
+				    	<h4>協助和服務</h4>
+				    	<p>重視秩序，也就是指假設周遭環境出現不確定性的時候，其潛意識會習慣地主動去降低不確定性，希望能有明確的結果。</p>
+				    </div>
+			    </div>
+			    <p class="btn">
+	                <a class="popup-link" href="#popup-add_job_vacancies-2">確認</a>
+	            </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 篩選btn_filter：部門篩選 -->
+	<div id="popup-btn_filter" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>部門篩選</h3>
+            </div>
+            <div class="chosenBox">
+            	<p>已選擇</p>
+            	<p class="btn"><a class="delete cursor_none" href="#">全部清除</a></p>
+            </div>
+            
+            <div class="the_chosenBox_list">
+	        	<ul>
+	        		<li>
+	        			<p class="t_title">狀態篩選</p>
+	        			<p class="type"><!-- 這邊不確定文字是否要再點開“其他內容？” 如果要點開就需要像其他增加<a class="the_department" href="#">已報到</a>-->
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					已報到
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					未錄取
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					強制結案
+	        				</span>
+	        			</p>
+	        		</li>
+	        	</ul>
+	        </div>   
+
+	        <div class="the_chosenBox_list">
+	        	<ul>
+	        		<li>
+	        			<p class="t_title">部門篩選</p>
+	        			<p class="b_title">第2階</p>
+	        			<p class="type">
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">行政管理處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">製造處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">銷售處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發一處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發二處</a>
+	        				</span>
+	        			</p>
+	        		</li>
+	        	</ul>
+	        </div>   
+
+            <div class="fillinBox">
+                <p class="btn"><a class="popup-link" href="#popup-btn_filter-1">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 篩選btn_filter-1：部門篩選 -->
+	<div id="popup-btn_filter-1" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>部門篩選</h3>
+            </div>
+
+            <div class="chosenBox">
+            	<p>已選擇</p>
+            	<p class="btn"><a class="delete" href="#">全部清除</a></p>
+            	<ul class="item">
+					<li><p><a>行政管理處/人資部/招募課</a><a class="go_delete"></a></p></li>
+					<li><p><a>銷售處</a><a class="go_delete"></a></p></li>
+					<li><p><a>研發一處/組務部</a><a class="go_delete"></a></p></li>
+				</ul>
+            </div>
+
+            <div class="the_chosenBox_list">
+	        	<ul>
+	        		<li>
+	        			<p class="t_title">狀態篩選</p>
+	        			<p class="type">
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					已報到
+	        				</span>
+	        				<span class=" btn_active check_in_01">
+	        					<a href="#" class="the_input"></a>
+	        					未錄取
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					強制結案
+	        				</span>
+	        			</p>
+	        		</li>
+	        	</ul>
+	        </div>   
+            
+            <div class="the_chosenBox_list">
+	        	<ul>
+	        		<li>
+	        			<p class="b_title">第2階</p>
+	        			<p class="type">
+	        				<span class="btn_in">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">行政管理處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">製造處</a>
+	        				</span>
+	        				<span class="btn_active check_in_01">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">銷售處</a>
+	        				</span>
+	        				<span class="btn_active">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發一處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發二處</a>
+	        				</span>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第3階</p>
+	        			<p class="type">
+	        				<span class="btn_in">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">人資部</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">總務部</a>
+	        				</span>
+	        				<span class="btn_in check_in_01">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">資訊部</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">廠務部</a>
+	        				</span>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第4階</p>
+	        			<p class="type">
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">訓練課</a>
+	        				</span>
+	        				<span class="btn_in">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">招募課</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">薪酬課</a>
+	        				</span>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第5階</p>
+	        			<p class="type">
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">招募一組</a>
+	        				</span>
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">招募二組</a>
+	        				</span>
+	        			</p>
+	        		</li>
+	        	</ul>
+	        </div>   
+
+            <div class="fillinBox">
+                <p class="btn"><a href="#">確認</a></p>
+            </div>
+        </form>
+    </div>
+</main>
+
+</body>
+</html>
+
+
+
