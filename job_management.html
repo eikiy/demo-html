@@ -20,7 +20,13 @@
 	    });
 	});
 	$(function(){
-	  	$(".job_type").click(function(){
+	  	$(".job_filter").click(function(){
+	        $(this).find("ul.sub_filter").stop(true, true).fadeToggle(0);
+	    return false;
+	    });
+	 });
+	$(function(){
+	  	$(".personality_filter").click(function(){
 	        $(this).find("ul.sub_filter").stop(true, true).fadeToggle(0);
 	    return false;
 	    });
@@ -84,6 +90,58 @@
 					<p class="people_nb">共有 5 個職缺</p>
 				</div>
 				<ul class="user_list list job_management_list clearfix">
+					<li>
+						<a class="popup-link" href="#popup-job_vacancies_ranking">
+							<div class="top_title edit">
+								<p class="job_title">有可能title也會很長長長的軟體工程師</p>
+								<div class="department clearfix">
+									<p>長長長的軟體工資訊部</p>
+									<p>主管:林怡文長長長的軟體工</p>
+								</div>
+							</div>
+							<div class="job_typebox clearfix">
+								<div>
+									<p>招募中</p>
+									<p>200</p>
+								</div>
+								<div>
+									<p>已報到</p>
+									<p>2</p>
+								</div>
+								<div>
+									<p>需求人數</p>
+									<p>4</p>
+								</div>
+							</div>
+							<p class="setup_time">2019/02/03 建立</p> 
+						</a>
+					</li>
+					<li class="clearfix">
+						<a class="popup-link" href="#popup-job_vacancies_ranking">
+							<div class="top_title edit">
+								<p class="job_title">Senior Hardware Engineer</p>
+								<div class="department clearfix">
+									<p>[聯強EMBA]主管的部門運作管理</p>
+									<p>主管:Thomas Stanley Holland</p>
+								</div>
+							</div>
+							<div class="job_typebox clearfix">
+								<div>
+									<p>招募中</p>
+									<p>2</p>
+								</div>
+								<div>
+									<p>已報到</p>
+									<p>2000</p>
+								</div>
+								<div>
+									<p>需求人數</p>
+									<p>4</p>
+								</div>
+							</div>
+							<p class="setup_time">2019/02/03 建立</p> 
+						</a>
+					</li>
 					<li class="clearfix">
 						<a class="popup-link" href="#">
 							<div class="top_title edit">
@@ -93,7 +151,7 @@
 									<p>主管:林怡文</p>
 								</div>
 							</div>
-							<div class="job_type clearfix">
+							<div class="job_typebox clearfix">
 								<div>
 									<p>招募中</p>
 									<p>2</p>
@@ -119,7 +177,7 @@
 									<p>主管:林怡文</p>
 								</div>
 							</div>
-							<div class="job_type clearfix">
+							<div class="job_typebox clearfix">
 								<div>
 									<p>招募中</p>
 									<p>2</p>
@@ -145,59 +203,7 @@
 									<p>主管:林怡文</p>
 								</div>
 							</div>
-							<div class="job_type clearfix">
-								<div>
-									<p>招募中</p>
-									<p>2</p>
-								</div>
-								<div>
-									<p>已報到</p>
-									<p>2</p>
-								</div>
-								<div>
-									<p>需求人數</p>
-									<p>4</p>
-								</div>
-							</div>
-							<p class="setup_time">2019/02/03 建立</p> 
-						</a>
-					</li>
-					<li class="clearfix">
-						<a class="popup-link" href="#">
-							<div class="top_title edit">
-								<p class="job_title">軟體工程師</p>
-								<div class="department clearfix">
-									<p>資訊部</p>
-									<p>主管:林怡文</p>
-								</div>
-							</div>
-							<div class="job_type clearfix">
-								<div>
-									<p>招募中</p>
-									<p>2</p>
-								</div>
-								<div>
-									<p>已報到</p>
-									<p>2</p>
-								</div>
-								<div>
-									<p>需求人數</p>
-									<p>4</p>
-								</div>
-							</div>
-							<p class="setup_time">2019/02/03 建立</p> 
-						</a>
-					</li>
-					<li class="clearfix">
-						<a class="popup-link" href="#">
-							<div class="top_title edit">
-								<p class="job_title">軟體工程師</p>
-								<div class="department clearfix">
-									<p>資訊部</p>
-									<p>主管:林怡文</p>
-								</div>
-							</div>
-							<div class="job_type clearfix">
+							<div class="job_typebox clearfix">
 								<div>
 									<p>招募中</p>
 									<p>2</p>
@@ -374,7 +380,7 @@
         </form>
     </div>
 
-    <!-- popup： 強制結束-->
+    <!-- popup： 結束職缺-->
     <div id="popup-job_over" class="white-popup popup-w-s mfp-hide enforcementBox">
         <form class="setBox  messageBox check_remind">
             <div class="fillinBox">
@@ -391,8 +397,31 @@
                     </li>
                 </ul>
                 <p class="btn">
-                	<a class="bg_gary" href="#">取消</a>
-                	<a class="bg_red" href="#">確認結束</a>
+                	<a class="bg_gary popup-link" href="#popup-job_vacancies_ranking2">取消</a>
+                	<a class="bg_red popup-link" href="#popup-job_vacancies_ranking2">確認結束</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <!-- popup： 結束職缺2-->
+    <div id="popup-job_over2" class="white-popup popup-w-s mfp-hide enforcementBox">
+        <form class="setBox  messageBox check_remind">
+            <div class="fillinBox">
+            	<div class="RedBox" style="padding: 20px 15px;">
+	                <p class="info">請問確定要刪除 <span>軟體工程師此職缺</span> 嗎？ <br>
+	                如確定刪除，此職缺資料與記錄會全部清除。</p>
+	            </div>
+                <ul class="jobBox" style="overflow: hidden;">
+                	<li class="sub_title">
+                		<p>如確定刪除，請輸入密碼</p>
+                	</li>
+                    <li>
+                        <input type="text" name="" class="r_info" placeholder="請輸入密碼">
+                    </li>
+                </ul>
+                <p class="btn">
+                	<a class="bg_gary popup-link" href="#popup-job_vacancies_ranking2">取消</a>
+                	<a class="bg_red popup-link" href="#popup-job_vacancies_ranking2">確認刪除</a>
                 </p>
             </div>
         </form>
@@ -672,6 +701,1125 @@
 
             <div class="fillinBox">
                 <p class="btn"><a href="#">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 排名-進行中 -->
+    <div id="popup-job_vacancies_ranking" class="white-popup popup-L mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>職缺求職者排名</h3>
+            </div>
+
+            <div class="chosenBox interviewee_info j_v_ranking">
+            	<div class="interviewMainBox interview_officer_Main">
+					<div class="contentsBox">
+						<div class="top_test_menu open_content clearfix">
+							<ul>
+								<li class="btn_in"><p><a class="popup-link" href="#">排名表</a></p></li>
+								<li><p><a class="popup-link" href="#">工作職能與專業技能</a></p></li>
+							</ul>
+							<p class="btn">
+								<a class="bg_red popup-link" href="#popup-job_over">結束職缺</a>
+							</p>
+						</div>
+						<div class="test_report new_report">
+							<h3 class="test_report_title">職缺資訊</h3>
+							<div class="top_job_information clearfix">
+								<div class="jobInfo">
+									<div class="iBox clearfix">
+										<p class="title">職缺名稱：</p>
+										<p class="right_info">有可能title也會很長長長的軟體工程師</p>
+									</div>
+									<div class="iBox clearfix">
+										<p class="title">職缺部門：</p>
+										<p class="right_info">資訊部</p>
+									</div>
+									<div class="iBox clearfix">
+										<p class="title">直屬主管：</p>
+										<p class="right_info">Thomas Stanley Holland</p>
+									</div>
+									<div class="iBox clearfix">
+										<p class="title">建立時間：</p>
+										<p class="right_info">2019/07/02</p>
+									</div>
+								</div>
+								<div class="job_typebox clearfix">
+									<div>
+										<p>需求人數</p>
+										<p>2</p>
+									</div>
+									<div>
+										<p>應徵人數</p>
+										<p>9</p>
+									</div>
+									<div class="checkin">
+										<p class="top">已報到</p>
+										<p>1</p>
+									</div>
+									<div>
+										<p>進行天數</p>
+										<p>21</p>
+									</div>
+									<div>
+										<p>招募狀態</p>
+										<p class="the_result">缺1位</p>
+									</div>
+								</div>
+								<div class="download_file clearfix">
+									<a class="excel" href="#"><p>匯出EXCEL</p></a>
+									<a class="pdf" href="#"><p>下載PDF</p></a>
+								</div>
+							</div>
+							<div class="job_leaderboard_container">
+								<!-- 選到第幾個，填入class，寫在css內囉 -->
+								<!-- choose_one, choose_two, choose_three, choose_four, choose_five, choose_six, choose_seven -->
+								<ul class="leaderboard_data choose_two">
+									<li class="top_title clearfix">
+										<div class="abox select_title">
+											<p>請選擇需排序項目</p>
+										</div>
+										<div class="border_line clearfix border_c_dblue">
+											<div class="abox w_a">
+												<p>整體符合度</p>
+											</div>
+										</div>
+										<div class="border_line clearfix">
+											<div class="abox btn_in">
+												<p>工作職能</p>
+											</div>
+											<div class="abox">
+												<p>專業技能</p>
+											</div>
+											<div class="tooltip">面試官評分</div>
+										</div>
+										<div class="border_line clearfix">
+											<div class="abox">
+												<p>績效預測</p>
+											</div>
+											<div class="abox">
+												<p>團隊精神</p>
+											</div>
+											<div class="abox">
+												<p>創新能力</p>
+											</div>
+											<div class="tooltip">核心報告結果</div>
+										</div>
+										<div class="border_line clearfix">
+											<div class="abox">
+												<p>邏輯分析</p>
+											</div>
+											<div class="abox">
+												<p>社交智商</p>
+											</div>
+											<div class="abox personality_filter">
+												<p class="title"><a href="#">情緒穩定性</a></p>
+												<ul class="sub_filter" style=" display: block;">
+													<li><p>盡責性</p></li>
+													<li><p>情緒穩定性</p></li>
+												</ul>
+											</div>
+											<div class="tooltip">單項測驗結果</div>
+										</div>
+									</li>
+
+									<li class="clearfix status_no1">
+										<div class="abox first_nb">
+											<p>1</p>
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_processing"><div class="tooltip">進行中</div></div>
+											<div class="user_box clearfix">
+												<div class="user_photo" style="background-image: url(images/user_photo_01.png);">
+												</div>
+												<div class="user_info">
+													<p>劉小銘銘</p>
+													<p class="sub_info">
+														<span class="gender">男</span>
+														<span class="age">32</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a round round_green">
+											<p class="digital">79.5</p>
+										</div>
+										<div class="abox round round_green">
+											<p class="digital">78.6</p>
+										</div>
+										<div class="abox round round_green">
+											<p class="digital">78</p>
+										</div>
+										<div class="abox">
+											<p class="digital">69.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">66.8</p>
+										</div>
+										<div class="abox">
+											<p class="digital">59.7</p>
+										</div>
+										<div class="abox">
+											<p class="digital">77.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">59.6</p>
+										</div>
+										<div class="abox round round_green">
+											<p class="digital">78.3</p>
+										</div>
+									</li>
+									<li class="clearfix status_no2">
+										<div class="abox first_nb">
+											<p>2</p>
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_processing"></div>
+											<div class="user_box clearfix">
+												<div class="user_photo">
+												</div>
+												<div class="user_info">
+													<p>劉小銘</p>
+													<p class="sub_info">
+														<span class="gender">男</span>
+														<span class="age">29</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a">
+											<p class="digital">77.6</p>
+										</div>
+										<div class="abox">
+											<p class="digital">62</p>
+										</div>
+										<div class="abox">
+											<p class="digital">76.7</p>
+										</div>
+										<div class="abox">
+											<p class="digital">71.2</p>
+										</div>
+										<div class="abox">
+											<p class="digital">65</p>
+										</div>
+										<div class="abox round round_green">
+											<p class="digital">78</p>
+										</div>
+										<div class="abox round round_green">
+											<p class="digital">80.1</p>
+										</div>
+										<div class="abox">
+											<p class="digital">66.9</p>
+										</div>
+										<div class="abox round round_red">
+											<p class="digital">38</p>
+										</div>
+									</li>
+									<li class="clearfix status_no3">
+										<div class="abox first_nb">
+											<p>3</p>
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_processing"></div>
+											<div class="user_box clearfix">
+												<div class="user_photo">
+												</div>
+												<div class="user_info">
+													<p>劉小銘</p>
+													<p class="sub_info">
+														<span class="gender">男</span>
+														<span class="age">28</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a">
+											<p class="digital">64.6</p>
+										</div>
+										<div class="abox">
+											<p class="digital">54.8</p>
+										</div>
+										<div class="abox">
+											<p class="digital">66.3</p>
+										</div>
+										<div class="abox">
+											<p class="digital">63.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">77</p>
+										</div>
+										<div class="abox">
+											<p class="digital">55.8</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78.3</p>
+										</div>
+										<div class="abox round round_green">
+											<p class="digital">78.9</p>
+										</div>
+										<div class="abox round round_green">
+											<p class="digital">66.7</p>
+										</div>
+									</li>
+									
+									<li class="clearfix">
+										<div class="abox first_nb">
+											<p>4</p>
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_processing"></div>
+											<div class="user_box clearfix">
+												<div class="user_photo">
+												</div>
+												<div class="user_info">
+													<p>劉小銘</p>
+													<p class="sub_info">
+														<span class="gender">男</span>
+														<span class="age">28</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a">
+											<p class="digital">79.5</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78.6</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78</p>
+										</div>
+										<div class="abox">
+											<p class="digital">69.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">66.8</p>
+										</div>
+										<div class="abox">
+											<p class="digital">59.7</p>
+										</div>
+										<div class="abox">
+											<p class="digital">77.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">59.6</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78.3</p>
+										</div>
+									</li>
+									<li class="clearfix status_reported">
+										<div class="abox first_nb">
+											<p>5</p>
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_reported"><div class="tooltip">已報到</div></div>
+											<div class="user_box clearfix">
+												<div class="user_photo">
+												</div>
+												<div class="user_info">
+													<p>范姜麗文</p>
+													<p class="sub_info">
+														<span class="gender">女</span>
+														<span class="age">32</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">50.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">88.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital round round_green">86.7</p>
+										</div>
+									</li>
+									<li class="clearfix">
+										<div class="abox first_nb">
+											<p>6</p>
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_processing"></div>
+											<div class="user_box clearfix">
+												<div class="user_photo">
+												</div>
+												<div class="user_info">
+													<p>Thomas Stanley Holland</p>
+													<p class="sub_info">
+														<span class="gender">男</span>
+														<span class="age">26</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox icon_warning">
+											<p class="digital"></p>
+											<div class="tooltip">尚有面試官未完成評論</div>
+										</div>
+										<div class="abox icon_warning">
+											<p class="digital"></p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78.3</p>
+										</div>
+									</li>
+									<li class="clearfix status_none">
+										<div class="abox first_nb">
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_closed"><div class="tooltip">未錄取</div></div>
+											<div class="user_box clearfix">
+												<div class="user_photo">
+												</div>
+												<div class="user_info">
+													<p>劉小銘</p>
+													<p class="sub_info">
+														<span class="gender">男</span>
+														<span class="age">28</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">69.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">66.8</p>
+										</div>
+										<div class="abox">
+											<p class="digital">59.7</p>
+										</div>
+										<div class="abox">
+											<p class="digital">77.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">59.6</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78.3</p>
+										</div>
+									</li>
+									<li class="clearfix status_none">
+										<div class="abox first_nb">
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_reject"><div class="tooltip">結案</div></div>
+											<div class="user_box clearfix">
+												<div class="user_photo">
+												</div>
+												<div class="user_info">
+													<p>劉小銘</p>
+													<p class="sub_info">
+														<span class="gender">男</span>
+														<span class="age">28</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78.6</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">77.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78.3</p>
+										</div>
+									</li>
+									<li class="clearfix status_none">
+										<div class="abox first_nb">
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_not_admitted"><div class="tooltip">婉拒錄取</div></div>
+											<div class="user_box clearfix">
+												<div class="user_photo">
+												</div>
+												<div class="user_info">
+													<p>劉小銘</p>
+													<p class="sub_info">
+														<span class="gender">男</span>
+														<span class="age">28</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a">
+											<p class="digital">79.5</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">59.7</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78.3</p>
+										</div>
+									</li>
+								</ul>
+								<ul class="icon_note">
+									<li><p class="round round_green">百分比78以上</p></li>
+									<li><p class="round round_red">百分比40以下</p></li>
+									<li><p class="icon_warning">尚有面試官未完成評論</p></li>
+								</ul>
+							</div>
+
+							<h3 class="test_report_title">排名表備註說明</h3>
+							<div class="top_topic">
+								<ul class="list">
+									<li><p class="info">本排名表明次，可依各項測驗、核心報告或面試官評論做排名。其中「整體符合度」是凱茂依 核心報告、工作職能與專業技能做綜合加. <br>
+									總的平均，如有缺漏項目未完成，此分數將不會顯示。</p></li>
+									<li><p>排名中如遇同分者，會依姓名筆畫為依序。</p></li>
+									<li><p>績效預測、團隊精神、創新能力為核心測驗之結果，如未作此測驗，將不會顯示百分比分數。</p></li>
+									<li><p>工作職能與專業技能評分，是以面試官評論作為依據，需面試官線上填分才能分析顯示百分比分數。需每位面試官皆完成評分，分數才  會計算，如未顯示，請確認面試官是否皆完成評分，或可勾選跳過評分之選項。</p></li>
+									<li><p>此職缺之排名無法與其他職缺合併排名，個人資料也無法轉移。建議每位求職者的評比項目相同，可使排名更為準確。</p></li>
+									<li><p>此表所顯示分數皆為百分比之分數。  </p></li>
+								</ul>
+
+								<p class="red_note">注意：建議不應向求職者顯示此報告內容。<br>
+								　　　使用者需承擔因向未經授權的人（包括同事、求職者）發布此機密信息而產生的所有責任。</p>
+							</div>
+							<div class="company_info clearfix">
+								<p class="info_logo">凱茂股份有限公司<br>
+								www.kamo.com.tw　TEL. 02 8792 5569　FAX. 02 8792 5693</p>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 排名-進行中 -->
+    <div id="popup-job_vacancies_ranking2" class="white-popup popup-L mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>職缺求職者排名</h3>
+            </div>
+
+            <div class="chosenBox interviewee_info j_v_ranking">
+            	<div class="interviewMainBox interview_officer_Main">
+					<div class="contentsBox">
+						<div class="top_test_menu open_content clearfix">
+							<ul>
+								<li class="btn_in"><p><a class="popup-link" href="#">排名表</a></p></li>
+								<li><p><a class="popup-link" href="#">工作職能與專業技能</a></p></li>
+							</ul>
+							<p class="btn">
+								<a class="bg_red popup-link" href="#popup-job_over2">刪除資料</a>
+							</p>
+						</div>
+						<div class="test_report new_report">
+							<h3 class="test_report_title">職缺資訊</h3>
+							<div class="top_job_information clearfix">
+								<div class="jobInfo">
+									<div class="iBox clearfix">
+										<p class="title">職缺名稱：</p>
+										<p class="right_info">有可能title也會很長長長的軟體工程師</p>
+									</div>
+									<div class="iBox clearfix">
+										<p class="title">職缺部門：</p>
+										<p class="right_info">資訊部</p>
+									</div>
+									<div class="iBox clearfix">
+										<p class="title">直屬主管：</p>
+										<p class="right_info">Thomas Stanley Holland</p>
+									</div>
+									<div class="iBox clearfix">
+										<p class="title">建立時間：</p>
+										<p class="right_info font_s">2019/02/03 建立 - 2019/05/30截止</p>
+									</div>
+								</div>
+								<div class="job_typebox clearfix">
+									<div>
+										<p>需求人數</p>
+										<p>2</p>
+									</div>
+									<div>
+										<p>應徵人數</p>
+										<p>9</p>
+									</div>
+									<div class="checkin">
+										<p class="top">已報到</p>
+										<p>1</p>
+									</div>
+									<div>
+										<p>進行天數</p>
+										<p>21</p>
+									</div>
+									<div>
+										<p>招募狀態</p>
+										<p class="the_result">缺1位</p>
+									</div>
+								</div>
+								<div class="download_file clearfix">
+									<a class="excel" href="#"><p>匯出EXCEL</p></a>
+									<a class="pdf" href="#"><p>下載PDF</p></a>
+								</div>
+							</div>
+							<div class="job_leaderboard_container">
+								<!-- 選到第幾個，填入class，寫在css內囉 -->
+								<!-- choose_one, choose_two, choose_three, choose_four, choose_five, choose_six, choose_seven -->
+								<ul class="leaderboard_data choose_two">
+									<li class="top_title clearfix">
+										<div class="abox select_title">
+											<p>請選擇需排序項目</p>
+										</div>
+										<div class="border_line clearfix border_c_dblue">
+											<div class="abox w_a">
+												<p>整體符合度</p>
+											</div>
+										</div>
+										<div class="border_line clearfix">
+											<div class="abox btn_in">
+												<p>工作職能</p>
+											</div>
+											<div class="abox">
+												<p>專業技能</p>
+											</div>
+											<div class="tooltip">面試官評分</div>
+										</div>
+										<div class="border_line clearfix">
+											<div class="abox">
+												<p>績效預測</p>
+											</div>
+											<div class="abox">
+												<p>團隊精神</p>
+											</div>
+											<div class="abox">
+												<p>創新能力</p>
+											</div>
+											<div class="tooltip">核心報告結果</div>
+										</div>
+										<div class="border_line clearfix">
+											<div class="abox">
+												<p>邏輯分析</p>
+											</div>
+											<div class="abox">
+												<p>社交智商</p>
+											</div>
+											<div class="abox personality_filter">
+												<p class="title"><a href="#">情緒穩定性</a></p>
+												<ul class="sub_filter" style=" display: block;">
+													<li><p>盡責性</p></li>
+													<li><p>情緒穩定性</p></li>
+												</ul>
+											</div>
+											<div class="tooltip">單項測驗結果</div>
+										</div>
+									</li>
+
+									<li class="clearfix status_no1">
+										<div class="abox first_nb">
+											<p>1</p>
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_processing"><div class="tooltip">進行中</div></div>
+											<div class="user_box clearfix">
+												<div class="user_photo" style="background-image: url(images/user_photo_01.png);">
+												</div>
+												<div class="user_info">
+													<p>劉小銘銘</p>
+													<p class="sub_info">
+														<span class="gender">男</span>
+														<span class="age">32</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a round round_green">
+											<p class="digital">79.5</p>
+										</div>
+										<div class="abox round round_green">
+											<p class="digital">78.6</p>
+										</div>
+										<div class="abox round round_green">
+											<p class="digital">78</p>
+										</div>
+										<div class="abox">
+											<p class="digital">69.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">66.8</p>
+										</div>
+										<div class="abox">
+											<p class="digital">59.7</p>
+										</div>
+										<div class="abox">
+											<p class="digital">77.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">59.6</p>
+										</div>
+										<div class="abox round round_green">
+											<p class="digital">78.3</p>
+										</div>
+									</li>
+									<li class="clearfix status_no2">
+										<div class="abox first_nb">
+											<p>2</p>
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_processing"></div>
+											<div class="user_box clearfix">
+												<div class="user_photo">
+												</div>
+												<div class="user_info">
+													<p>劉小銘</p>
+													<p class="sub_info">
+														<span class="gender">男</span>
+														<span class="age">29</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a">
+											<p class="digital">77.6</p>
+										</div>
+										<div class="abox">
+											<p class="digital">62</p>
+										</div>
+										<div class="abox">
+											<p class="digital">76.7</p>
+										</div>
+										<div class="abox">
+											<p class="digital">71.2</p>
+										</div>
+										<div class="abox">
+											<p class="digital">65</p>
+										</div>
+										<div class="abox round round_green">
+											<p class="digital">78</p>
+										</div>
+										<div class="abox round round_green">
+											<p class="digital">80.1</p>
+										</div>
+										<div class="abox">
+											<p class="digital">66.9</p>
+										</div>
+										<div class="abox round round_red">
+											<p class="digital">38</p>
+										</div>
+									</li>
+									<li class="clearfix status_no3">
+										<div class="abox first_nb">
+											<p>3</p>
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_processing"></div>
+											<div class="user_box clearfix">
+												<div class="user_photo">
+												</div>
+												<div class="user_info">
+													<p>劉小銘</p>
+													<p class="sub_info">
+														<span class="gender">男</span>
+														<span class="age">28</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a">
+											<p class="digital">64.6</p>
+										</div>
+										<div class="abox">
+											<p class="digital">54.8</p>
+										</div>
+										<div class="abox">
+											<p class="digital">66.3</p>
+										</div>
+										<div class="abox">
+											<p class="digital">63.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">77</p>
+										</div>
+										<div class="abox">
+											<p class="digital">55.8</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78.3</p>
+										</div>
+										<div class="abox round round_green">
+											<p class="digital">78.9</p>
+										</div>
+										<div class="abox round round_green">
+											<p class="digital">66.7</p>
+										</div>
+									</li>
+									
+									<li class="clearfix">
+										<div class="abox first_nb">
+											<p>4</p>
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_processing"></div>
+											<div class="user_box clearfix">
+												<div class="user_photo">
+												</div>
+												<div class="user_info">
+													<p>劉小銘</p>
+													<p class="sub_info">
+														<span class="gender">男</span>
+														<span class="age">28</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a">
+											<p class="digital">79.5</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78.6</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78</p>
+										</div>
+										<div class="abox">
+											<p class="digital">69.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">66.8</p>
+										</div>
+										<div class="abox">
+											<p class="digital">59.7</p>
+										</div>
+										<div class="abox">
+											<p class="digital">77.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">59.6</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78.3</p>
+										</div>
+									</li>
+									<li class="clearfix status_reported">
+										<div class="abox first_nb">
+											<p>5</p>
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_reported"><div class="tooltip">已報到</div></div>
+											<div class="user_box clearfix">
+												<div class="user_photo">
+												</div>
+												<div class="user_info">
+													<p>范姜麗文</p>
+													<p class="sub_info">
+														<span class="gender">女</span>
+														<span class="age">32</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">50.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">88.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital round round_green">86.7</p>
+										</div>
+									</li>
+									<li class="clearfix">
+										<div class="abox first_nb">
+											<p>6</p>
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_processing"></div>
+											<div class="user_box clearfix">
+												<div class="user_photo">
+												</div>
+												<div class="user_info">
+													<p>Thomas Stanley Holland</p>
+													<p class="sub_info">
+														<span class="gender">男</span>
+														<span class="age">26</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox icon_warning">
+											<p class="digital"></p>
+											<div class="tooltip">尚有面試官未完成評論</div>
+										</div>
+										<div class="abox icon_warning">
+											<p class="digital"></p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78.3</p>
+										</div>
+									</li>
+									<li class="clearfix status_none">
+										<div class="abox first_nb">
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_closed"><div class="tooltip">未錄取</div></div>
+											<div class="user_box clearfix">
+												<div class="user_photo">
+												</div>
+												<div class="user_info">
+													<p>劉小銘</p>
+													<p class="sub_info">
+														<span class="gender">男</span>
+														<span class="age">28</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">69.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">66.8</p>
+										</div>
+										<div class="abox">
+											<p class="digital">59.7</p>
+										</div>
+										<div class="abox">
+											<p class="digital">77.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">59.6</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78.3</p>
+										</div>
+									</li>
+									<li class="clearfix status_none">
+										<div class="abox first_nb">
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_reject"><div class="tooltip">結案</div></div>
+											<div class="user_box clearfix">
+												<div class="user_photo">
+												</div>
+												<div class="user_info">
+													<p>劉小銘</p>
+													<p class="sub_info">
+														<span class="gender">男</span>
+														<span class="age">28</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78.6</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">77.4</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78.3</p>
+										</div>
+									</li>
+									<li class="clearfix status_none">
+										<div class="abox first_nb">
+										</div>
+										<div class="abox the_user clearfix">
+											<div class="icon_status icon_not_admitted"><div class="tooltip">婉拒錄取</div></div>
+											<div class="user_box clearfix">
+												<div class="user_photo">
+												</div>
+												<div class="user_info">
+													<p>劉小銘</p>
+													<p class="sub_info">
+														<span class="gender">男</span>
+														<span class="age">28</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="abox w_a">
+											<p class="digital">79.5</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">59.7</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">–</p>
+										</div>
+										<div class="abox">
+											<p class="digital">78.3</p>
+										</div>
+									</li>
+								</ul>
+								<ul class="icon_note">
+									<li><p class="round round_green">百分比78以上</p></li>
+									<li><p class="round round_red">百分比40以下</p></li>
+									<li><p class="icon_warning">尚有面試官未完成評論</p></li>
+								</ul>
+							</div>
+
+							<h3 class="test_report_title">備註</h3>
+							<p class="over_note">由於范姜麗文薪資預算較高，目前暫時先錄取一位。 </p>
+							<div class="company_info clearfix">
+								<p class="info_logo">凱茂股份有限公司<br>
+								www.kamo.com.tw　TEL. 02 8792 5569　FAX. 02 8792 5693</p>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
         </form>
     </div>
