@@ -2193,22 +2193,23 @@ p.add_job_vacancies a{ color: #558C9E; background: url(../images/btn_add_job_vac
 p.add_job_vacancies a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 
 .mainBox ul.job_management_list li{ height: initial; min-height: 150px;}
-.mainBox ul.job_management_list li a{/*display: block !important; position: initial;*/ padding: 10px 15px 10px 15px; height: 152px !important;}
+.mainBox ul.job_management_list li a{ height: 152px !important;}
 
-ul.job_management_list .top_title{ width: 100%; padding-bottom: 5px; position: relative;}
-ul.job_management_list .edit::after { content: ""; position: absolute; width: 26px; height: 26px; right: 0; top: -6px; display: block; background:url(../images/btn_icon_edit.png) center center no-repeat; background-size: contain;}
-ul.job_management_list .top_title p.job_title{padding-bottom:3px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 19.6px;height: 19.6px; height: 19.6px * 1; overflow:hidden; max-width: calc(100% - 22px);}
-ul.job_management_list .top_title .department{ width: 100%; }
+ul.job_management_list .top_title{ width:calc(100% + 6px); margin: -3px 0 0 -3px; position: relative; padding-bottom: 2px;}
+ul.job_management_list .edit::after { content: ""; position: absolute; width: 26px; height: 26px; right: 5px; top: 0px; display: block; background:url(../images/btn_icon_edit_w.png) center center no-repeat; background-size: contain;}
+ul.job_management_list .top_title p.job_title{ color: #fff; font-size: 14.5px; letter-spacing: 1px; padding-bottom:3px; display: block; background-color: #81B6C8;  padding: 3px 20px 0px 20px; border-radius: 10px 0 0 0; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 20px; height: 26px; height: 26px * 1; overflow:hidden;}
+ul.job_management_list .top_title .department{ width: 100%; padding: 5px 20px 0 20px;}
 ul.job_management_list .top_title .department p{ float: left; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 16.8px; height: 16.8px; height: 16.8px * 1; overflow:hidden; max-width: 144px;}
 ul.job_management_list .top_title .department p:last-child{ float: right; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 16.8px; height: 16.8px; height: 16.8px * 1; overflow:hidden; max-width: 82px;}
-ul.job_management_list .job_typebox{ border: 2px solid #81B6C8; border-radius: 5px 0 5px 5px;}
+
+ul.job_management_list .job_typebox{ border: 2px solid #81B6C8; border-radius: 5px 0 5px 5px; margin: 5px 15px 3px 15px;}
 ul.job_management_list .job_typebox div{ float: left; width: 33.33%; }
 ul.job_management_list .job_typebox div:nth-child(2){border: 1px solid #81B6C8; border-width: 0 1px 0 1px;}
 ul.job_management_list .job_typebox p{ text-align: center; color: #81B6C8; padding: 5px;}
 ul.job_management_list .job_typebox p:last-child{ font-size: 24px; padding-top: 5px;}
 ul.job_management_list .job_typebox p.the_result{ font-size: 13px; background-color: #81B6C8; color: #fff; min-height: 37.2px; padding: 5px 0; letter-spacing: 2px; line-height: 27px; }
-ul.job_management_list p.setup_time{ color: #9B9B9B; text-align: right; padding: 3px 5px;}
-ul.job_management_list p.center{ text-align: center; }
+ul.job_management_list p.setup_time{ color: #9B9B9B; text-align: right; padding: 3px 10px;}
+ul.job_management_list p.text_center{ text-align: center; }
 
 .setBox .interview_needs ul.jobBox li .l_title{ border: none; max-width: 160px; }
 .setBox .interview_needs ul.jobBox li.height_s{ min-height: initial; line-height: 30px; }
