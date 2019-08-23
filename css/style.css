@@ -153,8 +153,19 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .right_contents .theBox .infoBox .logo_done:hover{ border-style: dashed; }
 .right_contents .theBox .infoBox .logo_done:hover .select_file{ display: block; }
 .right_contents .theBox .infoBox ul.member_status{ width: 100%; border-bottom: 1px solid #979797; padding-bottom: 10px; margin-bottom: 10px;}
-.right_contents .theBox .infoBox ul.member_status li{ padding: 5px 20px;  }
+.right_contents .theBox .infoBox ul.member_status li{ padding: 5px 18px;  }
 .right_contents .theBox .infoBox ul.member_status li p{ text-align: left; font-size: 13px; color: #4A4A4A; }
+.right_contents .theBox .infoBox ul.member_status li .l_t_w{ display: inline-block; min-width: 66px; text-align: right; }
+.right_contents .theBox .infoBox ul.member_status li .c_red{ color: #C87D86; }
+.right_contents .theBox .infoBox ul.member_status li .c_green{ color: #84BE98; }
+.right_contents .theBox .infoBox ul.member_status li a.open{ font-size: 12px; border: 1px solid #84BE98; color: #84BE98; border-radius: 3px 0 3px 3px; padding:2px 3px; display: inline-block; margin-left: 4px;}
+.right_contents .theBox .infoBox ul.member_status li a.pause{ border-color: #C87D86; color: #C87D86;}
+.right_contents .theBox .infoBox ul.none_line{ border: none; margin-bottom: 0; padding-bottom: 0; }
+.right_contents .theBox .infoBox p.btn{ line-height: 20px; }
+.right_contents .theBox .setting_item{ position: relative; font-size: 13px; text-align: left;}
+.right_contents .theBox .setting_item input[type=checkbox]:not(old) + label{background: url(../images/checks_off.png) 0 0 no-repeat;}
+.right_contents .theBox .setting_item input[type=checkbox]:not(old):checked + label{ background-image: url(../images/checks_on.png);}
+/*之後改版再統一圖片*/
 .right_contents .theBox .text_left p.sub_title{ text-align: left; padding: 5px 20px; }
 .right_contents .theBox .text_left p.btn{ text-align: left; padding-left: 16px;}
 
