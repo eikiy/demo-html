@@ -261,6 +261,9 @@ p.add_customers a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .setBox .fillinBox ul li.level span.vip{ background-image: url(../images/icon_vip.png); }
 .setBox .fillinBox ul li.level span.vip_blue{ background-image: url(../images/icon_vip_blue.png); }
 
+.setBox .fillinBox ul li.level span.lease{ width: 50px; background-image: url(../images/icon_lease.png); }
+.setBox .fillinBox ul li.level span.lease_blue{ background-image: url(../images/icon_lease_blue.png); }
+
 .setBox .fillinBox ul.accountBox:first-child{ margin-top: 0; }
 .setBox .accountBox{ margin-top: 10px; width: 100%; background-color: #EBEBEB; width: 390px; min-height: 97px; border-radius: 10px 0 10px 10px; box-shadow: 0px 0px 5px rgba(155,155,155,0.2); overflow: hidden; position: relative; }
 .setBox .accountBox table.list{ width: 100%; text-align: center; vertical-align: middle; }
@@ -269,7 +272,7 @@ p.add_customers a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .setBox .accountBox table.list tr th:first-child, .setBox .accountBox table.list tr td:first-child{ border-left: none; }
 .setBox .accountBox table.list tr td.both{ display: -webkit-flex; display: flex; position: relative;}
 .setBox .accountBox table.list tr td p.no_absolute{ position: initial; padding: 0; }
-.setBox .accountBox table.list tr td.both p.btn{ position: initial; max-width: 150px; padding: 0; inline-block;}
+.setBox .accountBox table.list tr td.both p.btn{ position: initial; max-width: 150px; padding: 0;}
 
 .setBox .accountBox table.list a.go_delete{position: absolute; top: 14px; right: 35px; width: 17px; height: 17px; display: block; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
 .setBox .accountBox table.list a.go_delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
@@ -761,3 +764,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', end
 .right_contents .settingBox .the_department_list ul li p.blue_small a{ color: #fff; min-width: 70px; padding: 2px 5px; background-color: #81B6C8; }
 .right_contents .settingBox .the_department_list ul li p.blue_small a:hover{ background-color: #81B6C8; opacity: .9;}
 
+.mainBox .recruit_contents .company_list .user_test_type{ left: 120px; top: 20px; width: 25px; position: absolute;}
+.mainBox .recruit_contents .company_list .user_test_type p.type{ border:1px solid #D8D8D8; font-size: 12px; color: #D8D8D8; border-radius: 3px; margin-bottom: 4px; display: inline-block; padding: 1px 3px; }
+.mainBox .recruit_contents .company_list .user_test_type p.c_border_blue { color: #81B6C8; border-color: #81B6C8; }
+.mainBox .recruit_contents .company_list .user_test_type p.c_border_org { color: #E5AF57; border-color: #E5AF57; }
+.mainBox .recruit_contents .company_list .user_test_type p.c_border_k { color: #342949; border-color: #342949; }
+.mainBox .recruit_contents .company_list .user_test_type p.c_blue{ background-color: #81B6C8; border:none; color: #fff; }
+.mainBox .recruit_contents .company_list .user_test_type p.c_org{ background-color: #E5AF57; border:none; color: #fff; }
+.mainBox .recruit_contents .company_list .user_test_type p.c_k{ background-color: #342949; border:none; color: #fff; }
