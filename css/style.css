@@ -152,14 +152,20 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .right_contents .theBox .infoBox .logo_done .select_file p.icon{ margin-top: 25px;}
 .right_contents .theBox .infoBox .logo_done:hover{ border-style: dashed; }
 .right_contents .theBox .infoBox .logo_done:hover .select_file{ display: block; }
-.right_contents .theBox .infoBox ul.member_status{ width: 100%; border-bottom: 1px solid #979797; padding-bottom: 10px; margin-bottom: 10px;}
-.right_contents .theBox .infoBox ul.member_status li{ padding: 5px 18px;  }
+
+.right_contents .theBox .infoBox ul.member_status{ width: 100%; border-bottom: 1px solid #979797; min-height: 85px; padding-bottom: 10px; margin-bottom: 10px;}
+.right_contents .theBox .infoBox ul.member_status li{ padding: 5px 8px;  }
 .right_contents .theBox .infoBox ul.member_status li p{ text-align: left; font-size: 13px; color: #4A4A4A; }
 .right_contents .theBox .infoBox ul.member_status li .l_t_w{ display: inline-block; min-width: 66px; text-align: right; }
 .right_contents .theBox .infoBox ul.member_status li .c_red{ color: #C87D86; }
 .right_contents .theBox .infoBox ul.member_status li .c_green{ color: #84BE98; }
 .right_contents .theBox .infoBox ul.member_status li a.open{ font-size: 12px; border: 1px solid #84BE98; color: #84BE98; border-radius: 3px 0 3px 3px; padding:2px 3px; display: inline-block; margin-left: 4px;}
 .right_contents .theBox .infoBox ul.member_status li a.pause{ border-color: #C87D86; color: #C87D86;}
+
+.right_contents .theBox .infoBox ul.member_status li p.none_gray a{ border-color: #D8D8D8; color: #D8D8D8; cursor: inherit;  position: relative;}
+.right_contents .theBox .infoBox ul.member_status li p.none_gray .tooltip{ top: -3px; left:60px; min-width: 126px; text-align: left; padding: 5px 8px;}
+.right_contents .theBox .infoBox ul.member_status li p.none_gray .tooltip::after{ left: -9px; top: 5px; border-width: 6.5px 10px 6.5px 0; border-color: transparent #4a4a4a transparent transparent; _border-color: #000000 #4a4a4a #000000 #000000;}
+
 .right_contents .theBox .infoBox ul.none_line{ border: none; margin-bottom: 0; padding-bottom: 0; }
 .right_contents .theBox .infoBox p.btn{ line-height: 20px; }
 .right_contents .theBox .setting_item{ position: relative; font-size: 13px; text-align: left;}
@@ -167,7 +173,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .right_contents .theBox .setting_item input[type=checkbox]:not(old):checked + label{ background-image: url(../images/checks_on.png);}
 /*之後改版再統一圖片*/
 .right_contents .theBox .text_left p.sub_title{ text-align: left; padding: 5px 20px; }
-.right_contents .theBox .text_left p.btn{ text-align: left; padding-left: 16px;}
+.right_contents .theBox .text_left p.btn{ text-align: left; padding-left: 6px;}
 
 .right_contents .theBox p.btn{font-size: 12px; text-align: center; line-height: 24px; padding: 10px 0;}
 .right_contents .theBox p.btn a{ min-width: 60px; margin: 0 3px; padding: 0 5px; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #81B6C8; border-radius:3px 0 3px 3px;}
@@ -2206,10 +2212,11 @@ p.add_job_vacancies a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 
 .mainBox ul.job_management_list li{ height: initial; min-height: 150px;}
 .mainBox ul.job_management_list li a{ height: 152px !important;}
+.mainBox ul.job_management_list li a.icon_edit_job{ position: absolute; top: -3px; height: 23px !important; z-index: 5; background: url(../images/btn_icon_edit_w.png) right center no-repeat; background-size: contain; }
 
 ul.job_management_list .top_title{ width:calc(100% + 6px); margin: -3px 0 0 -3px; position: relative; padding-bottom: 2px;}
-ul.job_management_list .edit::after { content: ""; position: absolute; width: 26px; height: 26px; right: 5px; top: 0px; display: block; background:url(../images/btn_icon_edit_w.png) center center no-repeat; background-size: contain;}
-ul.job_management_list .top_title p.job_title{ color: #fff; font-size: 14.5px; letter-spacing: 1px; padding-bottom:3px; display: block; background-color: #81B6C8;  padding: 3px 20px 0px 20px; border-radius: 10px 0 0 0; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 20px; height: 26px; height: 26px * 1; overflow:hidden;}
+/*ul.job_management_list .edit::after { content: ""; position: absolute; width: 26px; height: 26px; right: 5px; top: 0px; display: block; background:url(../images/btn_icon_edit_w.png) center center no-repeat; background-size: contain;}
+*/ul.job_management_list .top_title p.job_title{ color: #fff; font-size: 14.5px; letter-spacing: 1px; padding-bottom:3px; display: block; background-color: #81B6C8;  padding: 3px 20px 0px 20px; border-radius: 10px 0 0 0; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 21px; height: 26px; height: 26px * 1; overflow:hidden;}
 ul.job_management_list .top_title .department{ width: 100%; padding: 5px 20px 0 20px;}
 ul.job_management_list .top_title .department p{ float: left; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 16.8px; height: 16.8px; height: 16.8px * 1; overflow:hidden; max-width: 144px;}
 ul.job_management_list .top_title .department p:last-child{ float: right; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 16.8px; height: 16.8px; height: 16.8px * 1; overflow:hidden; max-width: 82px;}
@@ -2334,7 +2341,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_leaderboard_container ul.leaderboard_data li .abox:before{ content: ""; position: absolute; top: 8px; right: 0px; width: 1px; height: 43px; border-right: 1px dashed #979797; display: inline-block; }
 .job_leaderboard_container ul.leaderboard_data li .abox:last-child{ width: 85px; }
 .job_leaderboard_container ul.leaderboard_data li .icon_warning{ position: relative;}
-.job_leaderboard_container ul.leaderboard_data li .icon_warning p{ width: 28px; height: 22px; margin:18px auto 0 auto ; background: url(../images/user_info/icon_warning.png) center center no-repeat; background-size: contain; position: relative;}
+.job_leaderboard_container ul.leaderboard_data li .icon_warning p{ width: 100%; height: calc(100% - 2px); top: 1px; background: url(../images/user_info/icon_warning.png) center center no-repeat; position: relative; background-size: 40%;}
 .job_leaderboard_container ul.leaderboard_data li .icon_warning .tooltip{ min-width: 150px; left: calc(50% - 75px); top: 47px; }
 .job_leaderboard_container ul.leaderboard_data li .icon_warning .tooltip::after{ left:calc(50% - 2.5px); }
 
