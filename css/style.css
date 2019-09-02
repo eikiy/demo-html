@@ -800,7 +800,7 @@ html:root .interviewMainBox .use_fillinBox .fBox input[type=checkbox]{  max-heig
 html:root .interviewMainBox .use_fillinBox ul.select_item li{ width: auto; position: relative;}
 .interviewMainBox .use_fillinBox ul.select_item li input.bottom_line{ border:none; border-bottom:1px solid #979797; display: inline-block;  border-radius: 0; height: 22px; min-height: 18px; line-height: 18px; }
 
-input[type=checkbox]:not(old), input[type=radio ]:not(old){ position: absolute;  width : 100% !important;  margin: 0;  padding : 0; opacity : 0; cursor: pointer;}
+input[type=checkbox]:not(old), input[type=radio ]:not(old){ position: absolute; top: 0; height: 100%;  width : 100% !important;  margin: 0;  padding : 0; opacity : 0; cursor: pointer;}
 input[type=checkbox]:not(old) + label{  display : inline-block; /* margin-left : -28px;*/ padding-left : 28px; line-height : 24px; background : url('../images/checks.png') no-repeat 0 -48px;}
 input[type=checkbox]:not(old):checked + label{ background-position : 0 -73px;}
 input[type=radio]:not(old) + label{ cursor: pointer; display : inline-block; /*margin-left : -24px;*/ padding-left : 28px; line-height : 24px;  background: url('../images/checks.png') no-repeat 0 3px;}
