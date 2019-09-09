@@ -2465,29 +2465,77 @@ ul.job_management_list p.text_center{ text-align: center; }
 .talent_contents .job_leaderboard_container ul.leaderboard_data li.top_title .select_title p{height: initial; padding-left: 15px; }
 .talent_contents .job_leaderboard_container ul.leaderboard_data li.status_reported a.the_border{ background-color: #F7F0E6; }
 .talent_contents .job_leaderboard_container ul.leaderboard_data li.status_waiting a.the_border{ background-color: #E7F1EB; }
+
 /*print*/
+.print_box p{ font-size: 12px; }
+.print_box .u_infoBox{ border-width: 3px; }
+.print_box .contentsBox{ width: 735px; padding:0 14px; }
 .print_box .test_report{ border: none; }
 .print_box .test_report .positive_behavior,.print_box .setBox .top_title{ max-width: initial; }
 .print_box .test_report .note_positive_behavior{ max-width: initial; padding: 15px 15px 0 15px; margin-bottom: 0;}
 .print_box .test_report .u_infoBox{ margin:20px 0 0 0; }
+.print_box .test_report .c_dark_purple h4.bg_dark_blue{ border-color: #342949; }
 .print_box .test_report ul.cards{ text-align: left; padding: 15px 25px; }
 .print_box .test_report ul.cards li.card_info{ margin: 6px; }
 .print_box .test_report ul.cards li.card_info .top_pic{ width: 160px; height: initial; }
-.print_box .filter_pop .chosenBox p span{ color: #81B6C8; }
+.print_box .test_report table.suggest tr td:first-child p{ color: #000000; font-size: 14px; font-weight: normal;  text-align: left; }
+.print_box .test_report table.suggest tr td{ border-color: #4A4A4A;}
+.print_box .test_report table.suggest .top_title p{ text-align: right; color: #000000; }
 
-.print_box .interviewee_info h3.test_report_title{ border-radius: 0;}
+.print_box .test_report .positive_behavior table.analysis .progress_container::after{  border-right-style: solid;  }
+.print_box .test_report .test_fraction_percentage table.analysis .progress_container::after{ border-right-style: dashed ; }
+
+.print_box .test_report h4.bg_dark_blue{ background-color: #EBEBEB; color: #000000; border-bottom: 2px solid #558C9E;}
+.print_box .test_report h4.s_icon_00::after{ left: 15px; background-image: url(../images/user_info/r_title_icon_00_blue.png);}
+.print_box .test_report h4.s_icon_02::after{ left: 15px; background-image: url(../images/user_info/r_title_icon_02_blue.png);}
+.print_box .test_report h4.s_icon_04::after{ left: 15px; background-image: url(../images/user_info/r_title_icon_04_blue.png);}
+.print_box .test_report h4.s_icon_06::after{ left: 15px; background-image: url(../images/user_info/r_title_icon_06_blue.png);}
+.print_box .test_report h4.s_icon_07::after{ left: 15px; background-image: url(../images/user_info/r_title_icon_07_blue2.png);}
+
+.print_box .filter_pop .chosenBox p span{ color: #81B6C8; }
+.print_box .interviewee_info h3.test_report_title{ border-radius: 0; background-color: #EBEBEB; font-size: 14px; padding-left: 0; text-align: center;}
 .print_box .interviewee_info .new_report .top_topic{ padding: 20px 40px; margin-bottom: 15px; border-color: #81B6C8; }
 .print_box .interviewee_info .interviewMainBox .top_ivBox{ padding: 0 0 15px 0; }
 .print_box .interviewee_info .interview_officer_Main .top_interviewer_info{ border: none; width: initial; height: initial; }
 .print_box .interviewee_info .interview_officer_Main .top_interviewer_info .left_photo .the_photo{ border:1px solid #979797; border-radius: 10px;}
 .print_box .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox{ margin-left: 15px; border: none; border:1px solid #979797; border-radius: 10px 0 10px 10px; }
+.print_box .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p{ font-size: 14px; }
+.print_box .interviewee_info .c_logictest_org h4.bg_dark_blue{ border-color: #E5AF57; background-color: #F7F0E6;}
 .print_box .interviewee_info .c_logictest_org .positive_behavior{ border: none; margin-top: 0; }
+.print_box .interviewee_info .c_logictest_org .positive_behavior .answer_questions ul.no_q li p::after{ border: 1px solid #D8D8D8; background-color: #fff; }
+.print_box .interviewee_info .c_logictest_org .positive_behavior .answer_questions ul.no_q li p.ok::before{ background-image: url(../images/user_info/icon_answer_ok_blue.png); }
+.print_box .interviewee_info .c_logictest_org table.analysis tr th{ border-right: none; }
+.print_box .interviewee_info .c_desaturated_blue{ border-color: #4A4A4A; }
+.print_box .interviewee_info .c_desaturated_blue h4.bg_dark_blue{ background-color: #E6F0F4; border-color: #4A4A4A; }
+.print_box .interviewee_info .c_dark_purple table.potential_personality_trait .progress_box h4{ background-color: #fff; color: #000000; border-bottom: 1px solid #979797; }
 .print_box .interviewee_info .company_info{ padding: 20px 40px;}
-.print_box .test_report table.suggest .top_title p{ text-align: right; }
-.print_box .test_report table.suggest tr td:first-child p{ text-align: left; }
+
+.print_box .positive_behavior .answer_questions ul.difficulty_q{ max-width: 800px;}
+.print_box .positive_behavior .answer_questions ul.difficulty_q li{ width: 175px; }
+.print_box .positive_behavior .answer_questions ul.difficulty_q li:nth-child(2){ width: 258.5px; }
+.print_box .positive_behavior .answer_questions ul.difficulty_q li p{ background-color: #EBEBEB; color: #4A4A4A; }
+.print_box .positive_behavior .answer_questions ul.no_q{ max-width: 800px; }
+.print_box .positive_behavior .answer_questions ul.no_q li{ margin-right: 4px; width: 40px; }
+.print_box .positive_behavior .answer_questions ul.no_q li p{ padding-bottom: 42px; font-size: 18px; }
+.print_box .positive_behavior .answer_questions ul.no_q li p::after, .positive_behavior ul.no_q li p::before{ width: 40px; height: 40px; }
+.print_box .positive_behavior .answer_questions ul.no_q li.first_title{ left: 20px; }
+.print_box .positive_behavior .answer_questions ul.no_q li.first_title p{ font-size: 12px; }
+
 .print_box .social_IQ_info{ max-width: initial; width: calc(100% - 70px);}
 
+.print_box table.analysis .progress_container{ background: url(../images/user_info/bg_progressbar_print.png) center center no-repeat; background-size: cover;}
+.print_box table.analysis .progress_container::after{ border-color: #707475;}
+.print_box table.analysis .progressbar{ background-color: #558C9E; }
 .print_box table.analysis tr.top_info td .btn_type{ border-color: #D8D8D8; }
 .print_box table.analysis tr.top_info td .btn_type p{ color: #D8D8D8; border: none; padding: 3px 15px;}
-.print_box table.analysis tr.top_info td .btn_type p.btn_in{ color: #81B6C8; position: relative;}
-.print_box table.analysis tr.top_info td .btn_type p.btn_in::after{ content: ""; position: absolute; top:-3px; left: 0;  display: block; width: 100%; height: 100%; border: solid #81B6C8 3px; }
+.print_box table.analysis tr.top_info td .btn_type p.btn_in{ color: #558C9E; position: relative;}
+.print_box table.analysis tr.top_info td .btn_type p.btn_in::after{ content: ""; position: absolute; top:-3px; left: 0;  display: block; width: 100%; height: 100%; border: solid #558C9E 3px; }
+.print_box table.potential_personality_trait .top_title ul.ex li p{ color: #000000; }
+.print_box table.potential_personality_trait .progress_box{ background-color: #fff; }
+.print_box table.potential_personality_trait .progress_box .img_progress{ background: url(../images/user_info/bg_progressbar_print.png) center center no-repeat; background-size: cover;}
+.print_box table.potential_personality_trait .progress_box .img_progress p span{ color:  #558C9E; }
+.print_box table.potential_personality_trait .progress_box .img_progress p span::after{ border-color: transparent transparent #558C9E transparent;}
+.print_box table.potential_personality_trait .progress_box .img_progress::after{ border-right: 1px dotted #9B9B9B; background-color: transparent;}
+.print_box table.potential_personality_trait .progress_box h4{ background-color: #fff; border-bottom: 1px solid #9B9B9B; font-size: 13px; }
+.print_box table.potential_personality_trait .top_title .img_progress_ex{ background: url(../images/user_info/bg_progressbar_print2.png) center center no-repeat; background-size: cover;}
+.print_box table.potential_personality_trait .original .img_progress{ background: url(../images/user_info/bg_progressbar_print2.png) center center no-repeat; background-size: cover;}
