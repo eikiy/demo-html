@@ -287,7 +287,9 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .setBox .fillinBox ul li .r_info a{ color: #81B6C8; }
 .setBox .fillinBox ul li .r_info a:hover{ text-decoration: underline; }
 .setBox .fillinBox ul li .r_info{ font-size: 14px; padding: 5px 12px; line-height: 36px; min-height: 36px; background-color: transparent; border: none;}
-.setBox .fillinBox ul li .p_long{ max-width: 200px; height: 46px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 35px; height: 46px * 1; overflow:hidden;}
+.setBox .fillinBox ul li .p_long{ max-width: 200px; height: 46px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 35px; height: 46px * 1; overflow:hidden; z-index: 2;}
+.setBox .fillinBox ul li.border_line_blue::after{ content: ""; position: absolute; width:calc(100% - 122px); height:calc(100% - 12px); border: 6px solid #81B6C8; top: 0; right: 0;z-index: 1; }
+
 .setBox .fillinBox .sub_title{ text-align: center; line-height: 46px; }
 .setBox .fillinBox .sub_title p{ width: 100%; }
 .setBox .fillinBox .sub_title p.not_yet{padding: 15px 0;}
@@ -527,7 +529,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .management_pop ul li.nterviewee_name .MorF p a.F_in{background-image:url(../images/MorF_icon_F_in.png); color: #81B6C8;}
 .management_pop ul li.nterviewee_name .MorF p a.F:hover{ background-image:url(../images/MorF_icon_F_in.png);}
 
-.management_pop ul li p.btn{ position: absolute; right: 8px; top: 0px; font-size: 12px; text-align: center; line-height: 24px; padding: 10px 0;}
+.management_pop ul li p.btn{ position: absolute; right: 10px; top: 0px; font-size: 12px; text-align: center; line-height: 24px; padding: 10px 0; z-index: 2;}
 .management_pop ul li p.btn a{ min-width: 60px; margin: 0 3px; padding: 0 5px; background-color: #fff; letter-spacing: 0; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #81B6C8; border-radius:3px 0 3px 3px;}
 .management_pop ul li p.btn a:hover{ background-color: #D1E0E5;}
 .management_pop ul li p.btn a.add{ padding-left: 25px; background-image: url(../images/btn_icon_add.png);}
@@ -538,6 +540,8 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .management_pop ul li p.btn a.select:hover{ border-color: #81B6C8; }
 .management_pop ul li p.btn a.select_active{ box-shadow:0px 2px 4px #999 inset;}
 .management_pop ul li p.btn a.select .tooltip{ top: 40px; width: 85px; left: -9px; font-size: 12px; padding: 0 5px;}
+.management_pop ul li p.btn a.select .ontop{ top: -30px; }
+.management_pop ul li p.btn a.select .ontop::after{ top: 23px;  border-color: #81B6C8 transparent transparent transparent; border-width: 6px 4px 0 4px;}
 
 .management_pop ul li .more{ width: 280px; }
 .management_pop ul li .more .single{ width: 100%; position: relative; border-bottom: 1px solid rgba(155,155,155,0.5);}
@@ -558,7 +562,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 /*篩選*/
 .filter_pop .chosenBox{ background-color: #fff; width: 100%; min-height: 35px; border-radius: 10px 0 10px 10px; margin-top: 10px; display: block; position: relative; padding: 10px 15px; }
 .filter_pop .chosenBox p span{ color: #C87D86; padding-left: 10px; }
-.filter_pop .chosenBox p.btn{ position: absolute; top: 7px; line-height: 24px; right: 10px; font-size: 12px;  padding: 0;}
+.filter_pop .chosenBox p.btn{ position: absolute; top: 7px; line-height: 24px; right: 10px; font-size: 12px;  padding: 0; z-index: 2;}
 .filter_pop .chosenBox p.btn a.delete{ min-width: 60px; margin: 0 3px; padding: 0 5px 0px 25px; background-color: #fff; letter-spacing: 0; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #C87D86; border-radius:3px 0 3px 3px; color: #C87D86; background-image: url(../images/icon_x_s.png);}
 .filter_pop .chosenBox p.btn a.delete:hover{ background-color: #C87D86; color: #fff; background-image: url(../images/icon_x_s_w.png);}
 .filter_pop .chosenBox p.btn a.cursor_none{ -webkit-filter: grayscale(1); opacity: .5; cursor: not-allowed;}
@@ -1585,10 +1589,13 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .firstTestBox{ padding-top: 90px; min-height: 440px; position: relative; }
 .firstTestBox::after{content: ""; width: 296px; height: 158px; display: block; position: absolute; bottom: 0; left:calc(50% - 148px); background: url(../images/user_info/br_firstTest.png) center bottom no-repeat; background-size: cover; }
 .firstTestBox h4{ font-size: 18px; line-height: 25px; text-align: center;  padding: 55px 0 20px;}
-.firstTestBox .test_link{ position: relative; margin: 0 auto; max-width: 442px; border:1px dashed #81B6C8; padding: 0 100px 0 20px; margin-bottom: 15px; border-radius: 5px 0 5px 5px;}
+.firstTestBox .test_link{ position: relative; margin: 0 auto; max-width: 442px; border:1px dashed #81B6C8; padding: 0 20px; margin-bottom: 15px; border-radius: 5px 0 5px 5px;}
+.firstTestBox .a_link{ width: 320px; z-index: 2; position: relative; }
 .firstTestBox .a_link p{ line-height: 47px; height: 47px; overflow: hidden; display: block;  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 47px; height: 47px * 1;}
 .firstTestBox .a_link a{ color: #4A4A4A; word-wrap: break-word;}
 .firstTestBox .a_link a:hover{ color: #81B6C8; text-decoration: underline; }
+.firstTestBox .border_line_blue::after{ content: ""; position: absolute; width:calc(100% - 12px); height:calc(100% - 12px); border: 6px solid #81B6C8; top: 0; left: 0; z-index: 1;}
+
 
 .firstTestBox .note{ border:3px solid #84BE98; border-radius: 10px 0 10px 10px; max-width: 442px; margin: 0 auto; padding:12px 30px; }
 .popup-L .filter_pop .chosenBox .firstTestBox .note p span{padding: 0;}
@@ -1596,9 +1603,10 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .popup-L .filter_pop .chosenBox .firstTestBox .note p span.name{ color: #81B6C8; }
 
 .interviewMainBox .firstTestBox p.btn{ top: calc(50% - 13px); }
-.interviewMainBox .firstTestBox p.btn a:hover{ box-shadow: none; }
+.interviewMainBox .firstTestBox p.btn a:hover{ box-shadow: none; background-color: #D1E0E5;}
 .interviewMainBox .firstTestBox p.btn a{ position: relative; min-width: 60px; margin: 0 3px; padding: 0 5px; background-color: #fff; letter-spacing: 0; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #81B6C8; border-radius:3px 0 3px 3px;}
-.interviewMainBox .firstTestBox p.btn a .tooltip{ left: -15px; color: #fff; min-width: 84px; padding: 3px 5px;}
+.interviewMainBox .firstTestBox p.btn a .tooltip{  top: -50px; left: -189px; color: #fff; min-width: 90px; padding: 3px 5px;}
+.interviewMainBox .firstTestBox p.btn a .tooltip::after{ top: 30px;  border-color: #81B6C8 transparent transparent transparent; border-width: 6px 4px 0 4px;}
 
 
 .interviewee_info ul.Lock{ text-align: left; width: 100%; padding:20px 55px; }
@@ -2075,12 +2083,16 @@ table.analysis tr.top_info td .btn_type p a.btn_in{ background-color: #81B6C8; c
 .check_remind .all_test_list .link .r_info a:hover{ text-decoration: underline; }
 .check_remind .all_test_list .link .r_info{ font-size: 14px; padding: 5px 12px; line-height: 36px; background-color: transparent; border: none;}
 .check_remind .all_test_list .link .p_long{ max-width: 200px; height: 46px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 35px; height: 46px * 1; overflow:hidden;}
-.check_remind .all_test_list .link p.btn{ position: absolute; right: 8px; top: 0px; font-size: 12px; text-align: center; line-height: 24px; padding: 10px 0;}
-.check_remind .all_test_list .link p.btn a{ min-width: 60px; margin: 0 3px; padding: 0 5px; background-color: #fff; letter-spacing: 0; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #81B6C8; border-radius:3px 0 3px 3px;}
+.check_remind .all_test_list .link p.btn{ position: absolute; right: 8px; top: 0px; font-size: 12px; text-align: center; line-height: 24px; padding: 10px 0; z-index: 2;}
+.check_remind .all_test_list .link p.btn a{ min-width: 60px; margin: 0 3px; padding: 0 5px; background-color: #fff; letter-spacing: 0; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #81B6C8; border-radius:3px 0 3px 3px; z-index: 2;}
 .check_remind .all_test_list .link p.btn a:hover{ background-color: #D1E0E5;}
 .check_remind .all_test_list .link p.btn a .tooltip{ top: 40px; width: 85px; left: -9px; font-size: 12px; padding: 0 5px;}
+.check_remind .all_test_list .link p.btn a .ontop{ top: -30px; }
+.check_remind .all_test_list .link p.btn a .ontop::after{ top: 23px;  border-color: #81B6C8 transparent transparent transparent; border-width: 6px 4px 0 4px;}
 
-.check_remind .all_test_list .end_remind{ position: absolute; bottom: -3px; left: -3px; width: calc(100% + 6px); padding: 5px 10px;}
+.check_remind .all_test_list .border_line_blue::before{ content: ""; position: absolute; width:calc(100% - 122px); height:calc(100% - 12px); border: 6px solid #81B6C8; top: 0; right: 0;z-index: 1; }
+
+.check_remind .all_test_list .end_remind{ position: absolute; bottom: -3px; left: -3px; width: calc(100% + 6px); padding: 5px 10px; z-index: 3;}
 .check_remind .all_test_list .end_remind p.btn{ padding: 0 ; float: left; text-align: left; font-size: 15px;}
 .check_remind .all_test_list .end_remind p.btn a{ min-width: 90px; padding: inherit; letter-spacing: 2px;}
 .check_remind .all_test_list .end_remind p.note{ float: left; max-width: calc(100% - 95px); text-align: left; padding: 0px 0 0px 10px; font-size: 13.5px;}
