@@ -2235,12 +2235,13 @@ ul.job_management_list .top_title .department{ width: 100%; padding: 5px 20px 0 
 ul.job_management_list .top_title .department p{ float: left; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 16.8px; height: 16.8px; height: 16.8px * 1; overflow:hidden; max-width: 144px;}
 ul.job_management_list .top_title .department p:last-child{ float: right; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 16.8px; height: 16.8px; height: 16.8px * 1; overflow:hidden; max-width: 82px;}
 
-ul.job_management_list .job_typebox{ border: 2px solid #81B6C8; border-radius: 5px 0 5px 5px; margin: 5px 15px 3px 15px;}
-ul.job_management_list .job_typebox div{ float: left; width: 33.33%; }
+ul.job_management_list .job_typebox{ width: 241px; height: 68px; border: 2px solid #81B6C8; border-radius: 5px 0 5px 5px; margin: 5px 15px 3px 15px;}
+ul.job_management_list .job_typebox div{ float: left; width: 79px; }
+ul.job_management_list .job_typebox div p:first-child{ height: 27px; }
 ul.job_management_list .job_typebox div:nth-child(2){border: 1px solid #81B6C8; border-width: 0 1px 0 1px;}
 ul.job_management_list .job_typebox p{ text-align: center; color: #81B6C8; padding: 5px;}
 ul.job_management_list .job_typebox p:last-child{ font-size: 24px; padding-top: 5px;}
-ul.job_management_list .job_typebox p.the_result{ font-size: 13px; background-color: #81B6C8; color: #fff; min-height: 37.2px; padding: 5px 0; letter-spacing: 2px; line-height: 27px; }
+ul.job_management_list .job_typebox p.the_result{ font-size: 13px; background-color: #81B6C8; color: #fff; width: 80px; height: 38px; padding: 5px 0; letter-spacing: 2px; line-height: 27px; }
 ul.job_management_list p.setup_time{ color: #9B9B9B; text-align: right; padding: 3px 10px;}
 ul.job_management_list p.text_center{ text-align: center; }
 
@@ -2322,12 +2323,13 @@ ul.job_management_list p.text_center{ text-align: center; }
 .j_v_ranking .new_report .jobInfo .iBox p.right_info{ max-width: 230px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 24px; height: 24px; height: 24px * 1; overflow:hidden; }
 .j_v_ranking .new_report .jobInfo .iBox p.font_s{ font-size: 12.5px; }
 
-.j_v_ranking .new_report .job_typebox{ border: 2px solid #558C9E; width: 380px; float: left; border-radius: 5px 0 5px 5px; margin-top: 20px; overflow: hidden; margin-left: 5px;}
-.j_v_ranking .new_report .job_typebox div{ float: left; width: 20%; border-right: 1px solid #81B6C8;}
+.j_v_ranking .new_report .job_typebox{ border: 2px solid #558C9E; width: 379px; float: left; border-radius: 5px 0 5px 5px; margin-top: 20px; overflow: hidden; margin-left: 5px;}
+.j_v_ranking .new_report .job_typebox div{ float: left; width: 75px; height: 64px; border-right: 1px solid #81B6C8;}
 .j_v_ranking .new_report .job_typebox div:last-child{ border:none;}
 .j_v_ranking .new_report .job_typebox p{ text-align: center; color: #558C9E; padding: 5px; font-size: 13px;}
+.j_v_ranking .new_report .job_typebox p:first-child{ height: 27px;}
 .j_v_ranking .new_report .job_typebox p:last-child{ font-size: 24px; padding-top: 5px;}
-.j_v_ranking .new_report .job_typebox p.the_result{ font-size: 13px; background-color: #81B6C8; color: #fff; min-height: 37.2px; padding: 5px 0; letter-spacing: 2px; line-height: 27px; }
+.j_v_ranking .new_report .job_typebox p.the_result{ font-size: 13px; background-color: #81B6C8; color: #fff; width: 76px; height: 37px; padding: 5px 0; letter-spacing: 2px; line-height: 27px; }
 .j_v_ranking .new_report .job_typebox .checkin{ background-color: #F7F0E6; }
 .j_v_ranking .new_report .job_typebox .checkin p{ color: #E5AF57;}
 .j_v_ranking .new_report .job_typebox .checkin p.top{ background-color: #E5AF57; color: #fff;}
