@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+	<head>
+		<meta charset="UTF-8">
+		<title>特質測驗</title>
+		<meta name='description' content=""/>
+		<meta name='keywords' content=""/>
+		<meta name="MobileOptimized" content="width">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<style type="text/css">
+			.view_landscape{ position: fixed; left: 0; top: 0; z-index: -1; }
+			@media screen and (orientation: portrait) {
+				.traitTest_mob{ opacity: 0; }
+				.view_landscape{ opacity: 1; }
+			}
+			@media screen and (orientation: landscape) {
+				.traitTest_mob{opacity: 1; }
+				.view_landscape{ opacity: 0; }
+			}
+		</style>
+	</head>
+	<body>
+		<main class="view_landscape">
+			<div class="contentsBox">
+				<p class="p_note">為方便您的作答<br>請先將手機螢幕旋轉橫放</p>
+			</div>
+		</main>	
+		<main class="interviewMainBox traitTestBox for_mob_Test traitTest_mob">
+			<div class="contentsBox">
+				<div class="topBpx clearfix">
+					<div class="main-logo" style="background-image: url(images/acer_logo.png);"></div>
+					<div class="topTitle">
+						<h1>明天股份有限公司</h1>
+						<h2>潛在人格特質測驗</h2>
+					</div>
+					<ul class="interviewer_info clearfix">
+						<li><p>面試者姓名：<span>王天明</span></p></li>
+						<li><p>您面試的職位：<span>軟體工程師</span></p></li>
+						<li><p>您面試的日期：<span>2018/11/1/13:30</span></p></li>
+					</ul>
+				</div>
+				<p class="note note_icon1">請先仔細閱讀以下文字與説明，再按下一步，看測驗樣式圖說說明。</p>
+				<p class="note note_icon2">測驗說明：<br>
+					1.本測驗目的，不在於測試您的能力，所以沒有一定的標準答案，請依照您所想到的據實回答。<br>
+					2.不必深思熟慮，以大致上的感覺，最先想到的答案回答問題。<br>
+					3.對於問題應迅速，請於 <span>3分鐘</span> 內完成所有問題。
+				</p>
+				<p class="btn"><a href="mob_trait_test_02.html">下一步</a></p>
+			</div>
+		</main>
+	</body>
+</html>
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+	<head>
+		<meta charset="UTF-8">
+		<title>特質測驗</title>
+		<meta name='description' content=""/>
+		<meta name='keywords' content=""/>
+		<meta name="MobileOptimized" content="width">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<style type="text/css">
+			.view_landscape{ position: fixed; left: 0; top: 0; z-index: -1; }
+			@media screen and (orientation: portrait) {
+				.traitTestGo_mob{ opacity: 0; }
+				.view_landscape{ opacity: 1; }
+			}
+			@media screen and (orientation: landscape) {
+				.traitTestGo_mob{opacity: 1; }
+				.view_landscape{ opacity: 0; }
+			}
+		</style>
+	</head>
+	<body>
+		<main class="view_landscape">
+			<div class="contentsBox">
+				<p class="p_note">為方便您的作答<br>請先將手機螢幕旋轉橫放</p>
+			</div>
+		</main>	
+		<main class="traitTestBox traitTestGo traitTestGo_mob">
+			<div class="QABox">
+				<div class="top_bg">
+					<div class="time">
+						<p>時間倒數<br>
+							<span>05：00</span>
+						</p>
+					</div>
+					<p class="Q_nb"><span>1/58</span></p>
+				</div>
+				<div class="bottom_qa">
+					<div class="question animated fadeIn">
+						<p>我願意冒著很大風險<br>去從事一個可以有很大報酬的事件</p>
+					</div>
+					<ul class="answerBox animated fadeInUp" style="animation-duration: 3s;animation-iteration-count:1">
+						<li><p><a href="mob_trait_test_agin.html">完全不符合</a></p></li>
+						<li><p><a href="mob_trait_test_agin.html">大致不符合</a></p></li>
+						<li><p><a href="mob_trait_test_agin.html">大概不是</a></p></li>
+						<li><p><a href="mob_trait_test_end.html">有點符合</a></p></li>
+						<li><p><a href="mob_trait_test_end.html">大致符合</a></p></li>
+						<li><p><a class="btn_in" href="mob_trait_test_end.html">完全符合</a></p></li>
+					</ul>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
+
+
+

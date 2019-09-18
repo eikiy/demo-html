@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+	<head>
+		<meta charset="UTF-8">
+		<title>情境測驗</title>
+		<meta name='description' content=""/>
+		<meta name='keywords' content=""/>
+		<meta name="MobileOptimized" content="width">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<style type="text/css">
+			.view_landscape{ position: fixed; left: 0; top: 0; z-index: -1; }
+			@media screen and (orientation: portrait) {
+				.traitTestGo_mob{ opacity: 0; }
+				.view_landscape{ opacity: 1; }
+			}
+			@media screen and (orientation: landscape) {
+				.traitTestGo_mob{opacity: 1; }
+				.view_landscape{ opacity: 0; }
+			}
+		</style>
+	</head>
+	<body>
+		<main class="view_landscape">
+			<div class="contentsBox">
+				<p class="p_note">為方便您的作答<br>請先將手機螢幕旋轉橫放</p>
+			</div>
+		</main>	
+		<main class="traitTestBox traitTestGo logicTestBox seceneTestBox traitTestGo_mob logicTestBox_mob seceneTestBox_mob">
+			<div class="contentsBox clearfix">
+				<div class="QABox">
+					<div class="top_bg">
+						<div class="time">
+							<p>時間倒數<br>
+								<span>05：00</span>
+							</p>
+						</div>
+						<p class="Q_nb">Q.<span>01</span></p>
+					</div>
+					<div class="bottom_qa clearfix">
+						<div class="secene_question">
+							<p class="secene_story">你剛進入一間公司工作，並且尚未通過試用期階段；你的經理要求你代表她參加會議，而在會議中你扮演著關鍵的角色。在會議中，你會報告針對公司一項議題分析，所得到的調查結果；你的報告內容將會影響公司決策的重要環節。因此，你和你的經理密切合作報告內容，並且還請第三人為你檢查了報告中的所有數據。<br>
+							然而，在會議進行時，另一個部門的同事不認同你報告的數據，並表示他認為你的數據缺乏正確性。其他參與會議的人員，突然一致地看向你，希望你可以回答此同事提出的質疑。這時候你該如何處理呢？</p>
+							<div class="q_note">
+								<p class="icon_hand worst"><span class="red">最差答案</span></p>
+								<p>請選擇您認為的<span class="green">『最佳』</span><span class="red">『最差』</span>的處理方式</p>
+								<p class="icon_hand optimal"><span class="green">最佳答案</span></p>
+							</div>
+						</div>
+						<ul class="secene_answer fadeIn" style="animation-duration: 3s;animation-iteration-count:1">
+							<li class="clearfix">
+								<a class="circle"><span class="red"></span></a>
+								<p><span>由於你在會議前已經多次確認過報告內容的數據是正確的，所以禮貌地建議該同事先確認他手邊的數據資料是否無誤，再提出對你報告數據的質疑。 </span></p>
+								<a class="circle"><span class="green"></span></a>
+							</li>
+							<li class="clearfix">
+								<a class="circle"><span class="red"></span></a>
+								<p><span>因為你在會議前已經確認過報告內容的數據是正確無誤的，所以詢問該同事報告中的哪些內容，讓他認為數據不正確。 </span></p>
+								<a class="circle btn_in"><span class="green"></span></a>
+							</li>
+							<li class="clearfix">
+								<a class="circle btn_in"><span class="red"></span></a>
+								<p><span>先向所有會議中的人員道歉，並且表示你將會再重新檢查報告內容的數據；等到確認無誤之後，再次開會討論。 </span></p>
+								<a class="circle"><span class="green"></span></a>
+							</li>
+							<li class="clearfix">
+								<a class="circle"><span class="red"></span></a>
+								<p><span>他可能是誤解你第一次報告的內容，所以你再次有耐心、詳細地解釋你的報告內容。 </span></p>
+								<a class="circle"><span class="green"></span></a>
+							</li>
+						</ul>
+					</div>	
+				</div>
+				<div class="answerBox_mob clearfix animated fadeIn" style="animation-duration: 1s;animation-iteration-count:1">
+					<div class="nbBox">
+						<ul class="clearfix">
+							<li><p class="now"><a href="mob_secene_test_04.html">1</a></p></li>
+							<li><p><a href="mob_secene_test_04.html">2</a></p></li>
+							<li><p><a href="mob_secene_test_04.html">3</a></p></li>
+							<li><p><a href="mob_secene_test_04.html">4</a></p></li>
+							<li><p><a href="mob_secene_test_04.html">5</a></p></li>
+							<li><p><a href="mob_secene_test_04.html">6</a></p></li>
+							<li><p><a href="mob_secene_test_04.html">7</a></p></li>
+						</ul>
+					</div>
+					<p class="test_btn"><a class="add_arr arr_left" href="mob_secene_test_04.html"><span>上一題</span></a></p>
+					<p class="test_btn"><a class="add_arr arr_right" href="mob_secene_test_04.html"><span>下一題</span></a></p>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
+
+
+

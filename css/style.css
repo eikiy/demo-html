@@ -1369,14 +1369,14 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .traitTestGo .QABox{ width: 990px; min-height: 665px; margin: 0 auto; }
 .traitTestGo .QABox .top_bg{ width: 100%;  height: 202px; border-radius: 20px 0 0 0 ; background-color: #81B6C8; }
 .traitTestGo .QABox .bottom_qa{ width: 100%; min-height: 470px; border: 2px solid #979797; border-width: 0 2px 2px 2px; border-radius: 0 0 20px 20px; padding-top: 82px; position: relative;}
-.traitTestGo .QABox .bottom_qa .question{ width: 900px; min-height: 158px; background-color: #EBEBEB; border-radius: 10px 0 10px 10px; margin: 0 auto; padding:56px 20px 20px 238px; }
-.traitTestGo .QABox .bottom_qa .question p{font-size: 24px; line-height: 33px; position: relative;}
-.traitTestGo .QABox .bottom_qa .question p::after{ z-index: 10; content: "Q"; position: absolute; top: 10px; left: -138px; color: #fff; font-size: 150px;  }
-.traitTestGo .QABox .bottom_qa .time{ z-index: 10; position: absolute; top: -180px; right: 40px; text-align: center; display: block;}
-.traitTestGo .QABox .bottom_qa .time p.top{ font-size: 40px; font-weight: bold; color: #fff;}
-.traitTestGo .QABox .bottom_qa .time p.bg_w{ font-size: 20px; color: #81B6C8; }
-.traitTestGo .QABox .bottom_qa .time p.bg_w span{ background-color: #fff; padding: 2px 18px; }
-.traitTestGo .QABox .bottom_qa .Q_nb{ z-index: 10; position: absolute;  top: 16px; right: 85px; color: #fff; text-align: center; font-size: 24px; padding-top: 17px;  width: 117px; height: 78px; display: block; background: url(../images/traitTest/bg_Q.png) center center no-repeat; background-size: contain; }
+.traitTestGo .question{ width: 900px; min-height: 158px; background-color: #EBEBEB; border-radius: 10px 0 10px 10px; margin: 0 auto; padding:56px 20px 20px 238px; }
+.traitTestGo .question p{font-size: 24px; line-height: 33px; position: relative;}
+.traitTestGo .question p::after{ z-index: 10; content: "Q"; position: absolute; top: 10px; left: -138px; color: #fff; font-size: 150px;  }
+.traitTestGo .time{ z-index: 10; position: absolute; top: -180px; right: 40px; text-align: center; display: block;}
+.traitTestGo .time p.top{ font-size: 40px; font-weight: bold; color: #fff;}
+.traitTestGo .time p.bg_w{ font-size: 20px; color: #81B6C8; }
+.traitTestGo .time p.bg_w span{ background-color: #fff; padding: 2px 18px; }
+.traitTestGo .Q_nb{ z-index: 10; position: absolute;  top: 16px; right: 85px; color: #fff; text-align: center; font-size: 24px; padding-top: 17px;  width: 117px; height: 78px; display: block; background: url(../images/traitTest/bg_Q.png) center center no-repeat; background-size: contain; }
 
 .traitTestGo .QABox ul.answerBox{ width: 100%; text-align: center; padding-top: 50px; }
 .traitTestGo .QABox ul.answerBox li{ display: inline-block; padding: 0 8px; }
@@ -1404,7 +1404,6 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .main_Login p.btn{padding-top: 0px;}
 .main_Login input.name{ margin-bottom: 30px; }
 .main_Login .contentsBox::after{ width: 122px; height: 95px; top: -27px; right: initial; left: 0; background: url(../images/logo_kamo.png) center center no-repeat; background-size: contain;}
-
 
 
 /*人員資料 lightbox*/
@@ -1975,15 +1974,15 @@ table.analysis tr.top_info td .btn_type p a.btn_in{ background-color: #81B6C8; c
 .logicTestBox .ex-img p.ex_p_06 span::after{ border-width: 0 12px 14px 12px; border-color: transparent transparent #84BE98 transparent; bottom: 25px; left: 25px;}
 .logicTestBox .QABox .top_bg{ height: 137px; }
 .logicTestBox .QABox .bottom_qa{padding: 40px 0 0 80px;}
-.logicTestBox .QABox .bottom_qa .time{ top: -120px; }
-.logicTestBox .QABox .bottom_qa .time p.bg_w { color: #E5AF57; }
-.logicTestBox .QABox .bottom_qa .Q_nb{ width: initial; height: initial; font-size: 72px; right: initial;left:20px; top: -125px; background: none; }
-.logicTestBox .QABox .bottom_qa .Q_nb span{ color: #D0E3D6; }
+.logicTestBox .time{ top: -120px; }
+.logicTestBox .time p.bg_w { color: #E5AF57; }
+.logicTestBox .Q_nb{ width: initial; height: initial; font-size: 72px; right: initial;left:20px; top: -125px; background: none; }
+.logicTestBox .Q_nb span{ color: #D0E3D6; }
 
 .logicTestBox ul.logic_question{ float: left; width: 365px; border-top:1px solid #E5AF57; border-left:1px solid #E5AF57; }
 .logicTestBox ul.logic_question li.full{ float: left; width:100%;}
 .logicTestBox ul.logic_question li.ans{ float: left; width:33.33%; border-bottom:1px solid #E5AF57; border-right:1px solid #E5AF57;}
-.logicTestBox ul.logic_question li img{ width: 100%; }
+.logicTestBox ul.logic_question li img{ width: 100%; display: inherit; }
 .logicTestBox ul.logic_question .btn_in{ position: relative; }
 .logicTestBox ul.logic_question .btn_in::after{ content: ""; position: absolute; left: 0; top: 0; width:calc(100% - 8px); height:calc(100% - 8px); border:4px solid #EB8B70; }
 
@@ -2558,3 +2557,149 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box table.potential_personality_trait .progress_box h4{ background-color: #fff; border-bottom: 1px solid #9B9B9B; font-size: 13px; }
 .print_box table.potential_personality_trait .top_title .img_progress_ex{ background: url(../images/user_info/bg_progressbar_print2.png) center center no-repeat; background-size: cover;}
 .print_box table.potential_personality_trait .original .img_progress{ background: url(../images/user_info/bg_progressbar_print2.png) center center no-repeat; background-size: cover;}
+
+
+/*手機板測驗*/
+.for_mob_Test{ width: 100%; min-height: initial; height: 100vh; padding: 0; }
+.for_mob_Test h1{right: 0; top: -95px;}
+.for_mob_Test p.btn a{ height: 40px; line-height: 40px; }
+.for_mob_Test p.p_note{ letter-spacing: 1px; padding-bottom: 10px; }
+.for_mob_Test .fill{ padding-bottom: 0; }
+.for_mob_Test .top_logo{ display: none; }
+.for_mob_Test .max_w{ max-width: 320px; }
+.for_mob_Test .contentsBox{ width:calc(100% - 30px); flex-shrink: initial; flex-basis:initial !important; padding:0; }
+.for_mob_Test .traitTest_list{ padding: 20px; margin-top: 0;}
+.for_mob_Test .traitTest_list::after{ width: 56px; height: 63px; top: -96px; left: 5px; }
+.for_mob_Test .traitTest_list ul li p span.title {width: 60%;}
+.for_mob_Test .traitTest_list ul li p span.minute {width: 40%;}
+.for_mob_Test .name_error::after{ width: calc( 100% - 60px); }
+.for_mob_Test .topBpx::before{ display: none; }
+
+.bg_traitTest_mob{ background: url(../images/traitTest/bg_index_mob.png) center bottom no-repeat; background-size: cover;}
+.bg_traitTest_mob h1 span{ position: relative; }
+.bg_traitTest_mob h1 span::before{ content: ""; position: absolute; top: -48px; left: -53px; width: 56px; height: 56px;  display: block; z-index: 5; background: url(../images/traitTest/img_planet.png) center center no-repeat; background-size: contain;}
+
+.traitTest_mob{ display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.traitTest_mob .main-logo{ width: 65px; height: 65px; margin-right: 6px; }
+.traitTest_mob .topTitle { min-height: 65px; padding: 5px 0px 5px 15px; max-width: calc(52% - 80px); margin-right: 5px;}
+.traitTest_mob .topTitle h1{ font-size: 13px; padding: 5px 0; letter-spacing: 6px;}
+.traitTest_mob .topTitle h2{ font-size: 13px; color: #fff; text-indent: 0; letter-spacing: 5px;}
+.traitTest_mob .topBpx{padding-bottom: 10px;}
+.traitTest_mob ul.interviewer_info{ float: left; width: 48%; padding: 5px; min-height: 65px; }
+.traitTest_mob ul.interviewer_info li{ width: 100%; padding: 0; }
+.traitTest_mob ul.interviewer_info li p{ font-size: 12px; letter-spacing: 3px;}
+.traitTest_mob p.note{ font-size: 13px; line-height: initial; padding-top: 20px; }
+.traitTest_mob p.note::after{ top: 14px; }
+.traitTest_mob p.note_icon2{ padding-top: 15px; }
+.traitTest_mob p.btn{ padding: 5px;}
+.traitTest_mob p.btn a{ height: inherit; line-height: inherit; min-width: 110px; }
+
+.traitTestGo_mob{ padding: 0; width: 100%; position: relative;}
+.traitTestGo_mob .contentsBox{ padding: 0; max-width: inherit; }
+.traitTestGo_mob .mob_exampleBox{ width: 80vw; height: 100vh; padding-left: 20px; background-color: #E6F0F4; }
+.traitTestGo_mob .mob_exampleBox .top{ padding:15px 0 0 0; }
+.traitTestGo_mob .mob_exampleBox .top p{ font-size: 14px; color: #558C9E;}
+.traitTestGo_mob .ex-img{ width:90%; margin-left: 20px; height:calc(100vh - 50px); margin: 0; background-image: url(../images/traitTest/bg_exampleBox_mob.png); background-position: center left; background-repeat: no-repeat; background-size: contain;}
+.traitTestGo_mob p.btn{ position: absolute; bottom: 8%; right: 7%; }
+.traitTestGo_mob .QABox{ width: 100%; min-height: inherit; }
+.traitTestGo_mob .QABox .top_bg{ border-radius: 0; height: 28vh;  position: relative;}
+.traitTestGo_mob .QABox .bottom_qa{ height:calc(100vh - 28vh); min-height: initial; border: none; padding-top: 0; position: relative;}
+
+.traitTestGo_mob .time{ top: inherit; bottom: 10px; text-align: left;}
+.traitTestGo_mob .time p{ font-size: 14px; color: #fff; }
+.traitTestGo_mob .time p span{ font-size: 26px; font-weight: bold; }
+.traitTestGo_mob .QABox ul.answerBox{ padding-bottom: 0; padding-top:33vh; text-align: left; padding-left: calc(4% - 8px);}
+.traitTestGo_mob .QABox ul.answerBox li{ padding: 0px 3px 5px 3px; }
+.traitTestGo_mob .QABox ul.answerBox li p a{ min-width: 78px; height: 56px; line-height: 56px;}
+.traitTestGo_mob .QABox ul.answerBox li p a::after{ width: 72px; height: 50px;}
+.traitTestGo_mob .question{ position: absolute; width: 70%; top: -20px; min-height: initial; left: 4%; border-radius: 10px 0 10px 10px; padding: 30px 20px 20px 80px; }
+.traitTestGo_mob .question p{ font-size: 14px;  letter-spacing: 4px; line-height: inherit; font-weight: bold;}
+.traitTestGo_mob .question p::after{ font-size: 70px; left: -66px; top: -20px; }
+.traitTestGo_mob .Q_nb{right: 30vw; top: inherit; bottom: -14px; font-size: 17px; width: 60px; height: 62px;}
+
+.traitTestEnd_mob{ width: 100%; height: 100vh; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.traitTestEnd_mob .contentsBox {max-width: inherit; padding: 0;}
+.traitTestEnd_mob .end_thankyou { width: 100%; min-height: 80px; max-width: 326px; border: 3px solid #81B6C8; border-radius: 10px 0 10px 10px; margin: 0 auto; margin-top: 170px; display: block; position: relative;}
+.traitTestEnd_mob .end_thankyou::after{ content: ""; position: absolute; top:-170px; left: 0px; width: 100%; max-width: 323px; height: 160px; display: block; background-image: url(../images/traitTest/end_thankyou_mob.png); background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.traitTestEnd_mob .end_thankyou_not::after{  background: url(../images/traitTest/end_thankyou_not.png) center bottom no-repeat; background-size: contain;  }
+.traitTestEnd_mob .end_thankyou p, .traitTestEnd_mob .end_thankyou_not p{ margin: 0 auto; color: #4A4A4A; font-size: 12px; padding:5px 20px; }
+.traitTestEnd_mob .end_thankyou_not p{ color: #C87D86;}
+.traitTestEnd_mob .end_thankyou_not p.btn{ font-size: 18px;}
+.traitTestEnd_mob .end_thankyou_not p.btn a{ background-color: #C87D86;}
+
+.logicTestBox_mob{ width: 100%; }
+.logicTestBox_mob .time{ bottom: 5px; right: 25px; }
+.logicTestBox_mob .mob_exampleBox{ width: 85vw; background-color: #F7F0E6;}
+.logicTestBox_mob .mob_exampleBox .top p{ color: #EB8B70; }
+.logicTestBox_mob .ex-img{ width:110%; margin-left: 20px; height:calc(100vh - 50px); margin: 0; background-image: url(../images/logicTest/bg_exampleBox_mob.png);}
+
+.logicTestBox_mob p.btn{ right: 3%; }
+.logicTestBox_mob p.btn a{ background-color: #E5AF57; }
+.logicTestBox_mob .QABox{ width: 77vw;min-width: 400px; float: left; background-color: #fff; height: 100vh;}
+.logicTestBox_mob .QABox .bottom_qa{ height:calc(100vh - 65px); padding: 20px 0 0 20px; }
+.logicTestBox_mob .QABox .top_bg{ height: 65px; }
+.logicTestBox_mob .Q_nb{ font-size: 40px; bottom: 10px; }
+
+.logicTestBox_mob ul.logic_question{ width: 59vh; }
+.logicTestBox_mob .logic_answer_img{ padding-left: 20px; }
+.logicTestBox_mob .logic_answer_img p{ font-size: 12px; padding-bottom: 15px;}
+.logicTestBox_mob .logic_answer_img ul.logic_question{ width: 34vw; }
+.logicTestBox_mob .logic_answer_img ul.logic_question li{ padding: 0 10px 10px 0;}
+.logicTestBox_mob .logic_answer_img ul.logic_question li p{ font-size: 12px }
+.logicTestBox_mob .answerBox_mob{ width: 23vw; float: left; text-align: center; background-color: #F7F0E6; height: 100vh; }
+.logicTestBox_mob .answerBox_mob .nbBox{ padding-top: 10px; }
+.logicTestBox_mob .answerBox_mob .nbBox ul{ width:44px; display: inline-block;}
+.logicTestBox_mob .answerBox_mob .nbBox ul li{ display: inline-block; border:2px solid #EB8B70; border-width:2px 2px 0 2px; width: 36px;}
+.logicTestBox_mob .answerBox_mob .nbBox ul li:last-child{ border-bottom:2px solid #EB8B70 }
+.logicTestBox_mob .answerBox_mob .nbBox ul li p {font-size: 24px; color: #D8D8D8; position: relative;}
+.logicTestBox_mob .answerBox_mob .nbBox ul li p.now::after{ z-index: 10; top: 10px; left:-12px; position: absolute; content: ""; width: 0;height: 0;border-style: solid;border-width: 5px 0 5px 10px;border-color: transparent transparent transparent #e5af57;line-height: 0px;_border-color: #000000 #000000 #000000 #e5af57;_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+.logicTestBox_mob .answerBox_mob .nbBox ul li p a{ color: #D8D8D8; background-color: #fff; line-height: 30px; text-align: center; width: 32px; padding: 0 2px; display: block;}
+.logicTestBox_mob .answerBox_mob .nbBox ul li p.done a{ background-color: #EB8B70; }
+
+.logicTestBox_mob .answerBox_mob p.test_btn{ text-align: center; padding-bottom: 5px; font-size: 12px; }
+.logicTestBox_mob .answerBox_mob p.test_btn a{ background-color: #D87E05; width: 90px; height: 26px; color: #fff; line-height: 26px; display: inline-block; border-radius: 5px 0 5px 5px; }
+.logicTestBox_mob .answerBox_mob p a.add_arr span{ padding-left: 15px; position: relative; }
+.logicTestBox_mob .answerBox_mob p a.add_arr span::after{ content: ""; z-index: 2; top: 1px; position: absolute; width: 7px; height: 12px; display: block; background-position: center center; background-repeat: no-repeat; background-size: contain;}
+.logicTestBox_mob .answerBox_mob p a.arr_left span::after{ left: 0; background-image: url(../images/logicTest/arr_left.png); }
+.logicTestBox_mob .answerBox_mob p a.arr_right span{ padding-left: 0; padding-right: 15px; }
+.logicTestBox_mob .answerBox_mob p a.arr_right span::after{ right: 0; background-image: url(../images/logicTest/arr_right.png);}
+
+.logicTestEnd_mob .end_thankyou{ border-color: #E5AF57; min-height: 60px; margin-top:190px;}
+.logicTestEnd_mob .end_thankyou::after{ top: -190px; height: 180px; background-image: url(../images/logicTest/end_thankyou.png);}
+.logicTestEnd_mob .end_thankyou p{ padding: 10px 20px;}
+
+.seceneTestBox_mob p.btn a{ background-color: #342949; }
+.seceneTestBox_mob .mob_exampleBox{ width: 85vw; background-color: #F8F9F9;}
+.seceneTestBox_mob .mob_exampleBox .top p{ color: #342949; }
+.seceneTestBox_mob .ex-img{ background-image: url(../images/seceneTest/bg_exampleBox_mob.png);}
+.seceneTestBox_mob .answerBox_mob{ position: fixed; top: 0; right: 0; background-color: #F8F9F9; width: 90px;}
+.seceneTestBox_mob .answerBox_mob .nbBox ul li{ border-color:#342949; border-width: 2px 2px 0 2px; }
+.seceneTestBox_mob .answerBox_mob .nbBox ul li:last-child{ border-bottom: 2px solid #342949;}
+.seceneTestBox_mob .answerBox_mob .nbBox ul li p.now::after{ border-color: transparent transparent transparent #342949; line-height: 0px; _border-color: #000000 #000000 #000000 #342949;  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+.seceneTestBox_mob .answerBox_mob .nbBox ul li p.done a{ color: #D8D8D8; background-color:#5A5269;}
+.seceneTestBox_mob .answerBox_mob p.test_btn a{ background-color: #342949; width: 72px}
+
+.seceneTestBox_mob .time{ padding-top: 5px;}
+.seceneTestBox_mob .Q_nb{ padding-top: 10px;}
+.seceneTestBox_mob .secene_question{ width: calc(100% - 84px); max-width: 430px; margin: 0 auto;}
+	
+.seceneTestBox_mob .QABox{ height: inherit; width:calc( 100% - 90px); }
+.seceneTestBox_mob .QABox .top_bg{ position: fixed; top: 0; left: 0; z-index: 5; width:calc( 100% - 90px);}
+.seceneTestBox_mob .QABox .bottom_qa{ padding:75px 20px 20px 20px; height: inherit;}
+.seceneTestBox_mob .QABox .bottom_qa p.secene_story{ font-size: 12px; line-height: 18px; padding: 15px 20px;}
+.seceneTestBox_mob .QABox .bottom_qa .q_note p{ font-size: 16.5px; }
+.seceneTestBox_mob .QABox .bottom_qa .q_note p.icon_hand{ font-size: 14px; line-height: 30px;  padding: 40px 0 0 0;}
+.seceneTestBox_mob .QABox .bottom_qa .q_note p.icon_hand::after{ top: 0px; }
+.seceneTestBox_mob .QABox .bottom_qa .q_note p.worst{ left: -65px;}
+.seceneTestBox_mob .QABox .bottom_qa .q_note p.worst::after{ background-image: url(../images/seceneTest/icon_hand_worst_mob.png);}
+.seceneTestBox_mob .QABox .bottom_qa .q_note p.optimal{ right: -65px;}
+.seceneTestBox_mob .QABox .bottom_qa .q_note p.optimal::after{ background-image: url(../images/seceneTest/icon_hand_optimal_mob.png);}
+.seceneTestBox_mob ul.secene_answer{ padding-bottom: 40px; position: relative; }
+.seceneTestBox_mob ul.secene_answer::before, .seceneTestBox_mob ul.secene_answer::after{ position: absolute; bottom: 3px; content: ''; width: 43px; height: 36px; display: block; left:5px; background-image: url(../images/seceneTest/icon_hand_worst_mob.png); background-position: center center ; background-size: contain; background-repeat: no-repeat; z-index: 2; }
+.seceneTestBox_mob ul.secene_answer::after{ left: inherit; right:5px; background-image: url(../images/seceneTest/icon_hand_optimal_mob.png);}
+.seceneTestBox_mob .end_thankyou{ border-color: #342949; margin-top: 50vh;}
+.seceneTestBox_mob .end_thankyou::after{ height: 50vh; top: calc(-50vh - 10px); background-image: url(../images/seceneTest/end_thankyou.png);}
+
+.view_landscape{ width: 100%; height: 100vh; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.view_landscape p.p_note{ font-size: 20px; color: #84BE98; position: relative; padding: 300px 0 20px 0; width: 100%; text-align: center; }
+.view_landscape p.p_note::before{ content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 260px; background : url(../images/img_landscape.png) center center no-repeat; background-size: contain; }

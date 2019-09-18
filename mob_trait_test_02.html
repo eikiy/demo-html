@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+	<head>
+		<meta charset="UTF-8">
+		<title>特質測驗</title>
+		<meta name='description' content=""/>
+		<meta name='keywords' content=""/>
+		<meta name="MobileOptimized" content="width">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<style type="text/css">
+			.view_landscape{ position: fixed; left: 0; top: 0; z-index: -1; }
+			@media screen and (orientation: portrait) {
+				.traitTestGo_mob{ opacity: 0; }
+				.view_landscape{ opacity: 1; }
+			}
+			@media screen and (orientation: landscape) {
+				.traitTestGo_mob{opacity: 1; }
+				.view_landscape{ opacity: 0; }
+			}
+		</style>
+	</head>
+	<body>
+		<main class="view_landscape">
+			<div class="contentsBox">
+				<p class="p_note">為方便您的作答<br>請先將手機螢幕旋轉橫放</p>
+			</div>
+		</main>	
+		<main class="traitTestBox traitTestGo_mob">
+			<div class="mob_exampleBox">
+				<div class="top">
+					<p>測驗樣式說明：</p>
+				</div>
+				<div class="ex-img"></div>
+			</div>
+			<p class="btn"><a href="mob_trait_test_03.html">開始測驗</a></p>
+		</main>
+	</body>
+</html>
+
+
+
