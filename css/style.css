@@ -1615,7 +1615,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interviewee_info ul.Lock li a p{ color: #81B6C8; }
 .interviewee_info ul.Lock li a p span{ text-align: center; padding:0; color: inherit; display: block; }
 .interviewee_info ul.Lock li a p span.big{ font-size: 24px;text-align: left; display: block; padding-bottom: 35px; }
-.interviewee_info ul.Lock li a:hover{ border-color: #9B9B9B;}
+.interviewee_info ul.Lock li a:hover{ border-color: #558C9E;}
 .interviewee_info ul.Lock li.open a{ cursor: pointer;  background-image: url(../images/user_info/bg_lock_s.png); border-color: #81B6C8;  }
 .interviewee_info ul.Lock li.open a p{ color: #81B6C8; font-size: 13px; text-align: center;}
 .interviewee_info ul.Lock li.open a:hover{ background-color: #D1E0E5; }
@@ -2316,25 +2316,25 @@ ul.job_management_list p.text_center{ text-align: center; }
 .j_v_ranking .new_report p.over_note{ padding: 15px 45px; }
 
 .j_v_ranking .new_report .top_job_information{ padding: 20px 40px 20px 45px; }
-.j_v_ranking .new_report .jobInfo{ float: left; width: 310px;}
+.j_v_ranking .new_report .jobInfo{ float: left; width: 330px;}
 .j_v_ranking .new_report .jobInfo .iBox{ padding: 2px 0;}
 .j_v_ranking .new_report .jobInfo .iBox p{ float: left; color: #4A4A4A; letter-spacing: 1px; line-height: 24px;}
 .j_v_ranking .new_report .jobInfo .iBox p.title{ width: 80px;}
-.j_v_ranking .new_report .jobInfo .iBox p.right_info{ max-width: 230px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 24px; height: 24px; height: 24px * 1; overflow:hidden; }
+.j_v_ranking .new_report .jobInfo .iBox p.right_info{ max-width: 250px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 24px; height: 24px; height: 24px * 1; overflow:hidden; }
 .j_v_ranking .new_report .jobInfo .iBox p.font_s{ font-size: 12.5px; }
 
-.j_v_ranking .new_report .job_typebox{ border: 2px solid #558C9E; width: 379px; float: left; border-radius: 5px 0 5px 5px; margin-top: 20px; overflow: hidden; margin-left: 5px;}
+.j_v_ranking .new_report .job_typebox{ border: 2px solid #558C9E; width: 379px; float: left; border-radius: 5px 0 5px 5px; margin-top: 44px; overflow: hidden; margin-left: 5px;}
 .j_v_ranking .new_report .job_typebox div{ float: left; width: 75px; height: 64px; border-right: 1px solid #81B6C8;}
 .j_v_ranking .new_report .job_typebox div:last-child{ border:none;}
 .j_v_ranking .new_report .job_typebox p{ text-align: center; color: #558C9E; padding: 5px; font-size: 13px;}
 .j_v_ranking .new_report .job_typebox p:first-child{ height: 27px;}
 .j_v_ranking .new_report .job_typebox p:last-child{ font-size: 24px; padding-top: 5px;}
-.j_v_ranking .new_report .job_typebox p.the_result{ font-size: 13px; background-color: #81B6C8; color: #fff; width: 76px; height: 37px; padding: 5px 0; letter-spacing: 2px; line-height: 27px; }
+.j_v_ranking .new_report .job_typebox p.the_result{ font-size: 13px; background-color: #558C9E; color: #fff; width: 76px; height: 37px; padding: 5px 0; letter-spacing: 2px; line-height: 27px; }
 .j_v_ranking .new_report .job_typebox .checkin{ background-color: #F7F0E6; }
 .j_v_ranking .new_report .job_typebox .checkin p{ color: #E5AF57;}
 .j_v_ranking .new_report .job_typebox .checkin p.top{ background-color: #E5AF57; color: #fff;}
 
-.j_v_ranking .new_report .download_file{ float: right; margin-top: 25px;}
+.j_v_ranking .new_report .download_file{ float: right; margin-top: 49px;}
 .j_v_ranking .new_report .download_file a{ float: left; width: 54px; height: 60px; position: relative; padding-top: 42px; margin:0 3px;}
 .j_v_ranking .new_report .download_file a:hover{ opacity: .8;}
 .j_v_ranking .new_report .download_file a::after{ content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 40px; display: block; background-repeat: no-repeat; background-position: center center; background-size: contain; }
@@ -2355,11 +2355,11 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_leaderboard_container ul.leaderboard_data li .abox:before{ content: ""; position: absolute; top: 8px; right: 0px; width: 1px; height: 43px; border-right: 1px dashed #979797; display: inline-block; }
 .job_leaderboard_container ul.leaderboard_data li .abox:last-child{ width: 85px; }
 .job_leaderboard_container ul.leaderboard_data li .icon_warning{ position: relative;}
-.job_leaderboard_container ul.leaderboard_data li .icon_warning p{ width: 100%; height: calc(100% - 2px); top: 1px; background: url(../images/user_info/icon_warning.png) center center no-repeat; position: relative; background-size: 40%;}
+.job_leaderboard_container ul.leaderboard_data li .icon_warning p{ width: 50px; height: 50px; margin: auto; top: 1px; background: url(../images/user_info/icon_warning.png) center center no-repeat; position: relative; background-size: 40%;}
 .job_leaderboard_container ul.leaderboard_data li .icon_warning .tooltip{ min-width: 150px; left: calc(50% - 75px); top: 47px; }
 .job_leaderboard_container ul.leaderboard_data li .icon_warning .tooltip::after{ left:calc(50% - 2.5px); }
 .job_leaderboard_container ul.leaderboard_data li .icon_lock{ position: relative;}
-.job_leaderboard_container ul.leaderboard_data li .icon_lock p{ width: 100%; height: calc(100% - 2px); top: 1px; background: url(../images/user_info/icon_lock.png) center center no-repeat; position: relative; background-size: 40%;}
+.job_leaderboard_container ul.leaderboard_data li .icon_lock p{ width: 50px; height: 50px; margin: auto; top: 1px; background: url(../images/user_info/icon_lock.png) center center no-repeat; position: relative; background-size: 40%;}
 .job_leaderboard_container ul.leaderboard_data li .icon_lock .tooltip{ min-width: 150px; left: calc(50% - 75px); top: 47px; }
 .job_leaderboard_container ul.leaderboard_data li .icon_lock .tooltip::after{ left:calc(50% - 2.5px); }
 
@@ -2478,6 +2478,8 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_leaderboard_container ul.icon_note li p.round::after{ left: 0; top: 5px; }
 .job_leaderboard_container ul.icon_note li p.icon_warning{ padding-left: 27px; }
 .job_leaderboard_container ul.icon_note li p.icon_warning::after{ content: ""; width: 20px; height: 15px; top: 2px; left: 0; background: url(../images/user_info/icon_warning.png) center center no-repeat; background-size: contain; position: absolute;}
+.job_leaderboard_container ul.icon_note li p.icon_lock{ padding-left: 27px; }
+.job_leaderboard_container ul.icon_note li p.icon_lock::after{ content: ""; width: 20px; height: 15px; top: 2px; left: 0; background: url(../images/user_info/icon_lock.png) center center no-repeat; background-size: contain; position: absolute;}
 
 .talent_contents .job_leaderboard_container { width: 820px; margin:0; border: none; padding: 25px 0; }
 .talent_contents .job_leaderboard_container ul.leaderboard_data{ width: 820px; }
