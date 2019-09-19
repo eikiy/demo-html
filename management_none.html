@@ -1,0 +1,2204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>招募管理主頁 - 招募進度</title>
+<meta name='description' content=""/>
+<meta name='keywords' content=""/>
+<!-- <meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ -->
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<!-- https://loading.io/progress/ -->
+<link rel="stylesheet" type="text/css" href="css/loading-bar.css"/>
+<script type ="text/javascript" src="js/loading-bar.js"></script>
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+<!-- Magnific Popup core JS file -->
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	    $('.popup-link').magnificPopup({
+	      removalDelay: 300,
+	      mainClass: 'mfp-fade'
+	    });
+	});
+	$(function(){
+	  	$(".job_type").click(function(){
+	        $(this).find("ul.sub_filter").stop(true, true).fadeToggle(0);
+	    return false;
+	    });
+	 });
+</script>
+
+</head>
+<body>
+
+<!--=================================
+	請馬克幫我增加屬性，
+	當點了popup後 header 和 main 的css
+	都要加以下屬性才會有模糊效果：
+
+	-webkit-filter: blur(0.4rem);
+    -moz-filter: blur(0.4rem);
+    -o-filter: blur(0.4rem);
+    -ms-filter: blur(0.4rem);
+    filter: blur(0.4rem);
+================================= -->
+
+<header class="headerBox for_management_top">
+	<div class="contentsBox clearfix">
+		<a class="logo" href="#"></a>
+		<div class="searchBox search_all">
+			<input type="text" name="" placeholder="搜尋面試人員/現有員工">
+			<a href="#"></a>
+		</div>
+		<ul class="tools">
+			<li><a class="message" href="#"><span>3</span><div class="tooltip">通知</div></a></li>
+			<li><a class="logout" href="#"><div class="tooltip">登出</div></a></li>
+		</ul>
+	</div>
+</header>
+
+<main class="mainBox for_management">
+	<div class="contentsBox clearfix" style="width: 1000px;">
+		<section class="side_menu">
+			<h1 class="title">明天<br>
+			企業股份有限公司</h1>
+			<ul class="menu">
+				<li><p class="btn_in"><a class="icon_01" href="management.html">招募管理</a></p></li>
+				<li><p><a class="icon_07" href="job_management.html">職缺管理</a></p></li>
+				<li><p><a class="icon_02" href="recruit_record.html">招募紀錄</a></p></li>
+				<li><p><a class="icon_03" href="employee_data.html">現有員工</a></p></li>
+				<li><p><a class="icon_06" href="talent_management.html">人才管理</a></p></li>
+				<li><p><a class="icon_04" href="account.html">帳號設定</a></p></li>
+				<li><p><a class="icon_05" href="HR_helper.html">HR小幫手</a></p></li>
+			</ul>
+		</section>
+		<section class="right_contents clearfix">
+			<div class="managementBox">
+				<div class="top_toolsBox clearfix">
+					<div class="clearfix">
+						<ul class="type clearfix">
+							<li><p><a href="#"><span>姓名筆畫</span></a></p></li>
+							<li><p><a href="#"><span>日期</span></a></p></li>
+							<li class="btn_in"><p><a href="management_none.html"><span>招募進度</span></a></p></li>
+						</ul>
+						<p class="btn_filter"><a class="btn_in popup-link" href="#popup-btn_filter"><span>篩選(5)</span></a></p>
+						<ul class="list_style">
+							<li class="btn_in"><a class="list"><div class="tooltip">條列顯示</div></a></a></li>
+						</ul>
+					</div>
+					<p class="add_new_btn"><a class="add popup-link" href="#popup-nterviewee"><span>新增面試人員</span></a></p>
+					<div class="recruit_info_nothing">
+						<p class="">請先至 <a href="job_management.html">職缺管理</a> 頁面中 <span>新增職缺</span><br>才能新增面試人員</p>
+					</div>
+				</div>
+			</div>
+			<div class="calendar_toolsBox">
+				<div class="calendar_month">
+					<div class="monthBox">
+						<div class="top_year_month">
+							<p><span>2018年11月
+								<a class="left_arr" href="#"></a>
+								<a class="right_arr" href="#"></a></span>
+							</p>
+						</div>
+						<div class="dateBox">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<th><p>日</p></th>
+									<th><p>一</p></th>
+									<th><p>二</p></th>
+									<th><p>三</p></th>	
+									<th><p>四</p></th>
+									<th><p>五</p></th>
+									<th><p>六</p></th>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><p class="btn_in">1</p>
+										<p class="ring_color">
+											<span class="green"></span>
+											<span class="red"></span>
+											<span class="org"></span>
+										</p>
+									</td>
+									<td><p>2</p></td>
+									<td><p>3</p></td>
+								</tr>
+								<tr>
+									<td><p>4</p></td>
+									<td><p>5</p></td>
+									<td><p>6</p>
+										<p class="ring_color">
+											<span class="red"></span>
+											<span class="org"></span>
+										</p>
+									</td>
+									<td><p>7</p></td>
+									<td><p>8</p></td>
+									<td><p>9</p></td>
+									<td><p>10</p></td>
+								</tr>
+								<tr>
+									<td><p>11</p></td>
+									<td><p>12</p></td>
+									<td><p>13</p></td>
+									<td><p>14</p></td>
+									<td><p>15</p></td>
+									<td><p>16</p></td>
+									<td><p>17</p></td>
+								</tr>
+								<tr>
+									<td><p>18</p></td>
+									<td><p>19</p></td>
+									<td><p>20</p></td>
+									<td><p>21</p></td>
+									<td><p class="btn_in">22</p></td>
+									<td><p>23</p></td>
+									<td><p>24</p></td>
+								</tr>
+								<tr>
+									<td><p>25</p></td>
+									<td><p>26</p></td>
+									<td><p>27</p></td>
+									<td><p>28</p></td>
+									<td><p>29</p></td>
+									<td><p>30</p></td>
+									<td><p>31</p></td>
+								</tr>
+								<tr><!-- 假設又多了一排 -->
+									<td><p>25</p></td>
+									<td><p class="btn_in">26</p></td>
+									<td><p>27</p></td>
+									<td><p>28</p></td>
+									<td><p>29</p></td>
+									<td><p>30</p></td>
+									<td><p>31</p></td>
+								</tr>
+								
+							</table>
+						</div>
+					</div>
+					<p class="ring_color">
+						<span class="green">初試</span>
+						<span class="red">複試</span>
+						<span class="org">報到</span>
+					</p>
+					<div class="monthBox today_nothingBox">
+						<div class="top_year_month">
+							<p><span>2018年11月 星期四</span></p>
+						</div>
+						<div class="messageBox">
+							<p>今天行程是空白頁~</p>
+						</div>
+					</div>
+					<!-- <div class="day_list">
+						<ul>
+							<li class="top_title"><h3>2018/11/01  星期四 </h3></li>
+							<li class="clearfix">
+								<a href="#">
+									<div class="statu green"><p>員</p></div>
+									<p class="time">09:30</p>
+									<div class="info">
+										<p class="name">XXX   </p>
+										<p>軟體工程師   研發部</p>
+									</div>
+								</a>
+							</li>
+							<li class="clearfix">
+								<a href="#">
+									<div class="statu org"><p>報</p></div>
+									<p class="time">09:30</p>
+									<div class="info">
+										<p class="name">XXX   </p>
+										<p>軟體工程師   研發部</p>
+									</div>
+								</a>
+							</li>
+							<li class="clearfix">
+								<a href="#">
+									<div class="statu red"><p>複</p></div>
+									<p class="time">09:30</p>
+									<div class="info">
+										<p class="name">XXX   </p>
+										<p>軟體工程師   研發部</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li class="top_title"><h3>2018/11/06  星期二  </h3></li>
+							<li class="clearfix">
+								<a href="#">
+									<div class="statu green"><p>員</p></div>
+									<p class="time">09:30</p>
+									<div class="info">
+										<p class="name">XXX   </p>
+										<p>軟體工程師   研發部</p>
+									</div>
+								</a>
+							</li>
+							<li class="clearfix">
+								<a href="#">
+									<div class="statu org"><p>報</p></div>
+									<p class="time">09:30</p>
+									<div class="info">
+										<p class="name">XXX   </p>
+										<p>軟體工程師   研發部</p>
+									</div>
+								</a>
+							</li>
+							<li class="clearfix">
+								<a href="#">
+									<div class="statu org"><p>報<</p></div>
+									<p class="time">09:30</p>
+									<div class="info">
+										<p class="name">XXX   </p>
+										<p>軟體工程師   研發部</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div> -->
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- popup 新增面試人員 -->
+	<div id="popup-nterviewee" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3 class="dark">新增面試人員</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                    <li class="nterviewee_name">
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <div class="MorF">
+                        	<p>
+                        		<a class="M M_in" href="#">先生</a>
+                        		<a class="F" href="#">小姐</a>
+                        	</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>聯絡電話</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <p class="btn"><a class="add" href="#">新增</a></p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>E-Mail</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試部門</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                        <p class="btn"><a class="select" href="#">選擇</a></p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>直屬主管</p></label>
+                        <input class="r_info" id="" name="" type="text">
+                    </li>
+                </ul>
+                <p class="btn"><a class="popup-link" href="#popup-nterviewee-01">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 新增面試人員 01 -->
+	<div id="popup-nterviewee-01" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3 class="dark">新增面試人員</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                    <li class="nterviewee_name">
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <input class="r_info" id="" name="" type="text" value="王明天">
+                        <div class="MorF">
+                        	<p>
+                        		<a class="M M_in" href="#">先生</a>
+                        		<a class="F" href="#">小姐</a>
+                        	</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>聯絡電話</p></label>
+                        <div class="more">
+                        	<div class="single">
+                        		<input class="r_info" id="" name="" type="text" value="0936-666444">
+	                        	<p class="btn"><a class="delete" href="#">刪除</a></p>
+	                    	</div>
+	                    	<div class="single">
+                        		<input class="r_info" id="" name="" type="text" value="0936-666444">
+	                        	<p class="btn"><a class="delete" href="#">刪除</a></p>
+	                    	</div>
+	                    	<div class="single">
+	                        	<input class="r_info" id="" name="" type="text">
+	                        	<p class="btn"><a class="add" href="#">新增</a></p>
+	                    	</div>
+	                    </div>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>E-Mail</p></label>
+                        <input class="r_info" id="" name="" type="text" value="frog@g">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <input class="r_info" id="" name="" type="text" value="軟體工程師">
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試部門</p></label>
+                        <div class="more"><!-- 多個的版行就會是這樣 -->
+                        	<div class="single">
+                        		<p class="r_info">行政管理處 人資部 招募課</p>
+                        		<p class="btn"><a class="select select_active" href="#">選擇</a></p>
+                        	</div>
+                        	<div class="single">
+                        		<p class="r_info">招募一組</p>
+                        	</div>
+                    	</div>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>直屬主管</p></label>
+                        <!-- <input class="r_info" id="" name="" type="text" value="留有針"> -->
+                        <!-- 應該是文字顯示，不是input -->
+                        <p class="r_info">留有針</p>
+                    </li>
+                </ul>
+                <p class="btn"><a href="#">確認</a></p>
+            </div>
+
+	        <div class="the_department_list">	
+	        	<h4>部門選擇<button title="Close (Esc)" type="button" class="subBox-close">×</button></h4>
+	        	<ul>
+	        		<li>
+	        			<p class="b_title">第1階</p>
+	        			<p class="type"><a class="btn_in" href="#">明天股份有限公司</a></p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第2階</p>
+	        			<p class="type"><a class="btn_in" href="#">行政管理處</a>
+	        				<a href="#">製造處</a>
+	        				<a href="#">銷售處</a>
+	        				<a href="#">研發一處</a>
+	        				<a href="#">研發二處</a>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第3階</p>
+	        			<p class="type"><a class="btn_in" href="#">人資部</a>
+	        				<a href="#">總務部</a>
+	        				<a href="#">資訊部</a>
+	        				<a href="#">廠務部</a>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第4階</p>
+	        			<p class="type"><a href="#">訓練課</a>
+	        				<a class="btn_in" href="#">招募課</a>
+	        				<a href="#">薪酬課</a>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第5階</p>
+	        			<p class="type"><a href="#">招募一組</a>
+	        				<a href="#">招募二組</a>
+	        			</p>
+	        		</li>
+	        	</ul>
+	        </div>   
+        </form>
+    </div>
+
+    <!-- popup 篩選btn_filter：部門篩選 -->
+	<div id="popup-btn_filter" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>部門篩選</h3>
+            </div>
+
+            <div class="chosenBox">
+            	<p>已選擇</p>
+            	<p class="btn"><a class="delete cursor_none" href="#">全部清除</a></p>
+            </div>
+            
+            <div class="the_chosenBox_list">
+	        	<ul>
+	        		<li>
+	        			<p class="b_title">第2階</p>
+	        			<p class="type">
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">行政管理處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">製造處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">銷售處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發一處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發二處</a>
+	        				</span>
+	        			</p>
+	        		</li>
+	        	</ul>
+	        </div>   
+
+            <div class="fillinBox">
+                <p class="btn"><a class="popup-link" href="#popup-btn_filter-1">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 篩選btn_filter-1：部門篩選 -->
+	<div id="popup-btn_filter-1" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>部門篩選</h3>
+            </div>
+
+            <div class="chosenBox">
+            	<p>已選擇</p>
+            	<p class="btn"><a class="delete" href="#">全部清除</a></p>
+            	<ul class="item">
+					<li><p><a>行政管理處/人資部/招募課</a><a class="go_delete"></a></p></li>
+					<li><p><a>銷售處</a><a class="go_delete"></a></p></li>
+					<li><p><a>研發一處/組務部</a><a class="go_delete"></a></p></li>
+				</ul>
+            </div>
+            
+            <div class="the_chosenBox_list">
+	        	<ul>
+	        		<li>
+	        			<p class="b_title">第2階</p>
+	        			<p class="type">
+	        				<span>
+	        					<a class="the_input btn_in" href="#"></a>
+	        					<a class="the_department" href="#">行政管理處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">製造處</a>
+	        				</span>
+	        				<span class="btn_active check_in_01">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">銷售處</a>
+	        				</span>
+	        				<span class="btn_active">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發一處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發二處</a>
+	        				</span>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第3階</p>
+	        			<p class="type">
+	        				<span class="btn_in">
+	        					<a class="the_input"  href="#"></a>
+	        					<a class="the_department" href="#">人資部</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input"  href="#"></a>
+	        					<a class="the_department" href="#">總務部</a>
+	        				</span>
+	        				<span class="btn_in check_in_01">
+	        					<a class="the_input"  href="#"></a>
+	        					<a class="the_department" href="#">資訊部</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input"  href="#"></a>
+	        					<a class="the_department" href="#">廠務部</a>
+	        				</span>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第4階</p>
+	        			<p class="type">
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">訓練課</a>
+	        				</span>
+	        				<span class="btn_in">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">招募課</a>
+	        				</span>
+	        				<span>	
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">薪酬課</a>
+	        				</span>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第5階</p>
+	        			<p class="type">
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">招募一組</a>
+	        				</span>
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">招募二組</a>
+	        				</span>
+	        			</p>
+	        		</li>
+	        	</ul>
+	        </div>   
+
+            <div class="fillinBox">
+                <p class="btn"><a class="popup-link" href="#popup-btn_filter-2">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 篩選btn_filter-2：部門篩選 -->
+	<div id="popup-btn_filter-2" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>部門篩選</h3>
+            </div>
+
+            <div class="chosenBox">
+            	<p>已選擇</p>
+            	<p class="btn"><a class="delete" href="#">全部清除</a></p>
+            	<ul class="item">
+					<li><p><a>行政管理處/人資部/招募課</a><a class="go_delete"></a></p></li>
+					<li><p><a>銷售處</a><a class="go_delete"></a></p></li>
+					<li><p><a>研發一處/組務部</a><a class="go_delete"></a></p></li>
+				</ul>
+            </div>
+            
+            <div class="the_chosenBox_list">
+	        	<ul>
+	        		<li>
+	        			<p class="b_title">第2階</p>
+	        			<p class="type">
+	        				<span class="btn_active">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">行政管理處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">製造處</a>
+	        				</span>
+	        				<span class="btn_in check_in_01">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">銷售處</a>
+	        				</span>
+	        				<span class="btn_active">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發一處</a>
+	        				</span>
+	        				<span>
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發二處</a>
+	        				</span>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第3階</p>
+	        			<p class="type">
+	        				<span class="btn_in check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">行銷部</a>
+	        				</span>
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">業務部</a>
+	        				</span>
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">客服部</a>
+	        				</span>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第4階</p>
+	        			<p class="type">
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">網銷課</a>
+	        				</span>
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">設計課</a>
+	        				</span>
+	        			</p>
+	        		</li>
+	        	</ul>
+	        </div>   
+
+            <div class="fillinBox">
+                <p class="btn"><a class="popup-link" href="#popup-btn_filter-3">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 篩選btn_filter-3：部門篩選 -->
+	<div id="popup-btn_filter-3" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>部門篩選</h3>
+            </div>
+
+            <div class="chosenBox">
+            	<p>已選擇<span class="red">最多只能選擇5個項目</span></p>
+            	<p class="btn"><a class="delete" href="#">全部清除</a></p>
+            	<ul class="item">
+					<li><p><a>行政管理處/人資部/招募課</a><a class="go_delete"></a></p></li>
+					<li><p><a>製造處</a><a class="go_delete"></a></p></li>
+					<li><p><a>銷售處</a><a class="go_delete"></a></p></li>
+					<li><p><a>研發一處/組務部</a><a class="go_delete"></a></p></li>
+					<li><p><a>研發二處/組務部</a><a class="go_delete"></a></p></li>
+				</ul>
+            </div>
+            
+            <div class="the_chosenBox_list">
+	        	<ul>
+	        		<li>
+	        			<p class="b_title">第2階</p>
+	        			<p class="type">
+	        				<span class="btn_active" >
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">行政管理處</a>
+	        				</span>
+	        				<span class="btn_active check_in_01">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">製造處</a>
+	        				</span>
+	        				<span class="btn_in check_in_01">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">銷售處</a>
+	        				</span>
+	        				<span class="btn_active">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發一處</a>
+	        				</span>
+	        				<span class="btn_active check_in_01">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">研發二處</a>
+	        				</span>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第3階</p>
+	        			<p class="type">
+	        				<span class="btn_in check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">行銷部</a>
+	        				</span>
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">業務部</a>
+	        				</span>
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">客服部</a>
+	        				</span>
+	        			</p>
+	        		</li>
+	        		<li>
+	        			<p class="b_title">第4階</p>
+	        			<p class="type">
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">網銷課</a>
+	        				</span>
+	        				<span class="btn_active check_in_02">
+	        					<a class="the_input" href="#"></a>
+	        					<a class="the_department" href="#">設計課</a>
+	        				</span>
+	        			</p>
+	        		</li>
+	        	</ul>
+	        </div>   
+
+            <div class="fillinBox">
+                <p class="btn"><a href="#">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup-step-01 icon1：面試排程 day-->
+	<div id="popup-step-01" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox">
+            <div class="top_title">
+                <h3>面試排程</h3>
+            </div>
+            <div class="fillinBox time_select">
+                <ul>
+                    <li class="day">
+                        <label class="l_title" for=""><p>面試日期</p></label>
+                        <input class="r_info" id="" name="" type="text" value="2018/11/01">
+                    </li>
+                    <li class="time">
+                        <label class="l_title" for=""><p>面試時間</p></label>
+                        <input class="r_info" id="" name="" type="text" value="13:30">
+                    </li>
+                </ul>
+                <div class="day_selectBpx">
+                	<div class="monthBox">
+						<div class="top_year_month">
+							<p><span>2018年11月
+							<a class="left_arr" href="#"></a>
+								<a class="right_arr" href="#"></a></span>
+							</p>
+						</div>
+						<div class="dateBox">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<th><p>日</p></th>
+									<th><p>一</p></th>
+									<th><p>二</p></th>
+									<th><p>三</p></th>	
+									<th><p>四</p></th>
+									<th><p>五</p></th>
+									<th><p>六</p></th>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><p class="btn_in">1</p>
+									</td>
+									<td><p>2</p></td>
+									<td><p>3</p></td>
+								</tr>
+								<tr>
+									<td><p>4</p></td>
+									<td><p>5</p></td>
+									<td><p>6</p>
+									</td>
+									<td><p>7</p></td>
+									<td><p>8</p></td>
+									<td><p>9</p></td>
+									<td><p>10</p></td>
+								</tr>
+								<tr>
+									<td><p>11</p></td>
+									<td><p>12</p></td>
+									<td><p>13</p></td>
+									<td><p>14</p></td>
+									<td><p>15</p></td>
+									<td><p>16</p></td>
+									<td><p>17</p></td>
+								</tr>
+								<tr>
+									<td><p>18</p></td>
+									<td><p>19</p></td>
+									<td><p>20</p></td>
+									<td><p>21</p></td>
+									<td><p>22</p></td>
+									<td><p>23</p></td>
+									<td><p>24</p></td>
+								</tr>
+								<tr>
+									<td><p>25</p></td>
+									<td><p>26</p></td>
+									<td><p>27</p></td>
+									<td><p>28</p></td>
+									<td><p>29</p></td>
+									<td><p>30</p></td>
+									<td><p>31</p></td>
+								</tr>
+								<tr>
+									<td><p class="btn_in">31</p></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+                </div>
+                <p class="btn"><a class="popup-link" href="#popup-step-02">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup-step-01-2 icon1：面試排程 time-->
+	<div id="popup-step-02" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox">
+            <div class="top_title">
+                <h3>面試排程</h3>
+            </div>
+            <div class="fillinBox time_select">
+                <ul>
+                    <li class="day">
+                        <label class="l_title" for=""><p>面試日期</p></label>
+                        <input class="r_info" id="" name="" type="text" value="2018/11/01">
+                    </li>
+                    <li class="time">
+                        <label class="l_title" for=""><p>面試時間</p></label>
+                        <input class="r_info" id="" name="" type="text" value="13:30">
+                    </li>
+                </ul>
+                <div class="time_selectBpx clearfix">
+                	<div class="the_time">
+                		<p>點</p>
+                		<ul>
+                			<li><p><a href="">1</a></p></li>
+                			<li><p><a href="">2</a></p></li>
+                			<li><p><a href="">3</a></p></li>
+                			<li><p><a href="">4</a></p></li>
+                			<li><p><a href="">5</a></p></li>
+                			<li><p><a href="">6</a></p></li>
+                			<li><p><a class="btn_in" href="">7</a></p></li>
+                			<li><p><a href="">8</a></p></li>
+                			<li><p><a href="">9</a></p></li>
+                			<li><p><a href="">10</a></p></li>
+                			<li><p><a href="">11</a></p></li>
+                			<li><p><a href="">12</a></p></li>
+                			<li><p><a href="">13</a></p></li>
+                			<li><p><a href="">14</a></p></li>
+                			<li><p><a href="">15</a></p></li>
+                			<li><p><a href="">16</a></p></li>
+                			<li><p><a href="">17</a></p></li>
+                			<li><p><a href="">18</a></p></li>
+                			<li><p><a href="">19</a></p></li>
+                			<li><p><a href="">20</a></p></li>
+                			<li><p><a href="">21</a></p></li>
+                			<li><p><a href="">22</a></p></li>
+                			<li><p><a href="">23</a></p></li>
+                			<li><p><a href="">24</a></p></li>
+                		</ul>
+                	</div>
+                	<div class="the_time">
+                		<p>分</p>
+                		<ul>
+                			<li><p><a href="">00</a></p></li>
+                			<li><p><a href="">05</a></p></li>
+                			<li><p><a class="btn_in" href="">10</a></p></li>
+                			<li><p><a href="">15</a></p></li>
+                			<li><p><a href="">20</a></p></li>
+                			<li><p><a href="">25</a></p></li>
+                			<li><p><a href="">30</a></p></li>
+                			<li><p><a href="">35</a></p></li>
+                			<li><p><a href="">40</a></p></li>
+                			<li><p><a href="">45</a></p></li>
+                			<li><p><a href="">50</a></p></li>
+                			<li><p><a href="">55</a></p></li>
+                		</ul>
+                	</div>
+                </div>
+                <p class="btn"><a class="bg_skyblue" href="#">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup-step-02 icon2：個人資料-->
+    <div id="popup-step-03" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop messageBox check_remind">
+            <div class="top_title">
+                <h3>個人資料</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                	<li class="sub_title">
+                		<p>求職者登入資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <!-- 按了複製 li 增加 border_line_blue 這屬性 -->
+                    <li class="border_line_blue">
+                        <label class="l_title" for=""><p>登入連結</p></label>
+                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip ontop">複製成功</span></a></p>
+                    </li>
+                </ul>
+
+                <div class="RedBox border_blue border_green"> <!-- 持續留著，不會消失 -->
+	                <p class="info">請複製<span class="under_line">登入連結網址</span>，並透過E-MAIL寄給求職者，<br>
+	                	讓求職者 <span>王明天</span> 進行線上履歷填寫。</p>
+	            </div>
+
+	            <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>填寫狀態</p>
+                	</li>
+                    <li class="sub_title">
+                		<p class="not_yet">求職者尚未開啟連結</p>
+                	</li>
+                </ul>
+
+                <p class="btn">
+                	<a class="popup-link bg_lightblue" href="#popup-step-04">強制跳過</a>
+                	<a class="popup-link bg_skyblue" href="#popup-step-03-1">確認</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup-step-02-1 icon2：填寫狀態 #190420 - new-->
+    <div id="popup-step-03-1" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop messageBox check_remind">
+            <div class="top_title">
+                <h3>個人資料</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                	<li class="sub_title">
+                		<p>求職者登入資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>登入連結</p></label>
+                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
+                    </li>
+                </ul>
+
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>填寫狀態</p>
+                	</li>
+                    <li class="sub_title the_animation" style="padding-right: 60px;">
+                		<div class="animationbox">
+                			<div class="top_animation" style="padding-left: 126px;">
+                				<img src="images/img_animation.png" style="max-width: 113px;">
+                			</div>
+                			<!-- <div class="ldBar" data-preset="line" data-min="0" data-max="100" data-value="100" data-stroke="#81B6C8"></div> -->
+                		</div>
+                		<div class="line_situation none_line clearfix">
+                			<p>進行中</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar" style="width:50%"></div>
+	                		</div>
+	                	</div>
+                	</li>
+                </ul>
+
+                <div class="RedBox border_blue border_green"> <!-- 持續留著，不會消失 -->
+	                <p class="info">如求職者未在指定時間內完成填寫，<br>
+	                	可按 <span>強制跳過</span> 鍵，即可看完成的資料填寫進度。</p>
+	            </div>
+
+                <p class="btn">
+                	<a class="popup-link bg_lightblue" href="#popup-step-04">強制跳過</a>
+                	<a class="bg_skyblue" href="#">確認</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup-step-02-2 icon2：強制跳過-->
+    <div id="popup-step-04" class="white-popup popup-w-s mfp-hide">
+        <div class="setBox messageBox">
+            <div class="RedBox border_blue">
+                <p class="info"><span>王明天</span>的個人資料還尚未完成填寫，<br>
+                請問確定要強制跳過嗎？</p>
+            </div>
+            <p class="btn"><a class="bg_gary" href="#">取消</a><a href="#">確認</a></p>
+        </div>
+    </div>
+
+    <!-- popup-step-03 icon3：特質測驗-->
+    <div id="popup-step-05" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop messageBox check_remind">
+            <div class="top_title">
+                <h3>特質測驗</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                	<li class="sub_title">
+                		<p>求職者登入資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <!-- 按了複製 li 增加 border_line_blue 這屬性 -->
+                    <li class="border_line_blue">
+                        <label class="l_title" for=""><p>測驗連結</p></label>
+                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip ontop">複製成功</span></a></p>
+                    </li>
+                </ul>
+
+                <div class="RedBox border_blue bottom_noteBox all_test_list">
+                	<div class="sub_title">
+                		<p>選擇需要測驗之項目</p>
+                	</div>
+                	<ul class="item conditionList">
+                		<!-- 加入核心測驗，如果勾選綜合測驗，下面測驗會一起被圈選，報告也會放在一起變“綜合報告” -->
+                		<!--  藍色字 + check_in -->
+                		<!-- 為了大的 checkbox...顏色又不同，所以+ main_item -->
+                		<li class="check_in_blue main_item ">
+							<input id="" type="checkbox" name="" value="核心測驗（建議選取）" checked="">
+							<label for="option">核心測驗<span>（建議選取）</span></label>
+						</li>
+						<!-- 子項目填入 sub_item(文字變小) -->
+						<li class="sub_item check_in"><!--  藍色字 + check_in -->
+							<input id="" type="checkbox" name="" value="潛在人格特質測驗" checked="">
+							<label for="option">潛在人格特質測驗(5分鐘)</label>
+						</li>
+						<!--  藍色字 + check_in -->
+						<li class="sub_item check_in">
+							<input id="" type="checkbox" name="" value="潛在人格特質測驗" checked="">
+							<label for="option">情境測驗(15分鐘)</label>
+						</li>
+						<li class="sub_item check_in">
+							<input id="" type="checkbox" name="" value="邏輯測驗" checked="">
+							<label for="option">邏輯測驗(20分鐘)</label>
+						</li>
+						<li class="main_item check_notyet">
+							<input id="" type="checkbox" name="" value="細心度測驗" disabled>
+							<label for="option">細心度測驗<span>(尚未開放)</span></label>
+						</li>
+						<!-- 不可以點的狀態 + class:check_notyet -->
+						<li class="sub_item check_notyet">
+							<div class="left_test_title">
+								<input id="" type="checkbox" name="" value="情境測驗" disabled style=" display: inline-block;">
+								<label for="option">情境測驗<span>(尚未開放)</span></label>
+							</div>
+							<div class="job_type clearfix">
+								<p><a href="#"><span>職業</span></a></p>
+								<ul class="sub_filter" style="  width: 175px;" > <!-- 不知道"職業"最長的名稱多寬 -->
+									<li><p>職業職業職業職業職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業職業職業職業</p></li>
+									<li><p>職業職業職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業</p></li>
+								</ul>
+							</div>
+						</li>
+						<!-- 可以點的狀態 -->
+						<li class="main_item">
+							<div class="left_test_title">
+								<input id="" type="checkbox" name="" value="情境測驗"  style=" display: inline-block;">
+								<label for="option">情境測驗<span>(尚未開放)</span></label>
+							</div>
+							<div class="job_type clearfix">
+								<p><a href="#"><span>職業</span></a></p>
+								<ul class="sub_filter" style="  width: 175px;" >
+									<li><p>職業職業職業職業職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業職業職業職業</p></li>
+									<li><p>職業職業職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業</p></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<!-- 按了複製 div 增加 border_line_blue 這屬性 -->
+					<div class="link border_line_blue clearfix">
+                        <label class="l_title" for=""><p>測驗連結</p></label>
+                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip ontop">複製成功</span></a></p>
+                    </div>
+                    <div class="end_remind RedBox clearfix">
+                    	<p class="btn">
+		                	<a class="bg_red popup-link" href="#popup-step-07-end">強制結束</a>
+		                </p>
+                    	<p class="note"><span>提醒：</span><span>確認強制結束，正在進行之測驗結果不會被記錄下來。</span></p>
+                    </div>
+                </div>
+                <div class="RedBox border_blue border_green"> <!-- 開始測驗後消失 -->
+	                <p class="info">
+	                	<span class="icon_thumbtack">在面試現場使用電腦或平板開啟測驗連結後，<br>
+                			請求職者進行測驗。</span>
+                	</p>
+	            </div>
+                <p class="btn">
+                	<a class="bg_lightblue popup-link" href="#popup-step-06">強制跳過</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup-step-03-2 icon3：特質測驗-->
+    <div id="popup-step-06" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop messageBox check_remind">
+            <div class="top_title">
+                <h3>特質測驗</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                	<li class="sub_title">
+                		<p>求職者登入資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <!-- 按了複製 li 增加 border_line_blue 這屬性 -->
+                    <li class="border_line_blue">
+                        <label class="l_title" for=""><p>測驗連結</p></label>
+                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip ontop">複製成功</span></a></p>
+                    </li>
+                </ul>
+
+                <div class="RedBox border_blue bottom_noteBox all_test_list">
+                	<div class="sub_title">
+                		<p>選擇需要測驗之項目</p>
+                	</div>
+                	<ul class="item conditionList">
+						<li class="check_in"><!--  藍色字 + check_in -->
+							<input id="" type="checkbox" name="" value="潛在人格特質測驗" checked="">
+							<label for="option">潛在人格特質測驗(5分鐘)</label>
+						</li>
+						<li class="check_in"><!--  藍色字 + check_in -->
+							<input id="" type="checkbox" name="" value="邏輯測驗" checked="">
+							<label for="option">邏輯測驗(20分鐘)</label>
+						</li>
+						<li class="check_notyet">
+							<input id="" type="checkbox" name="" value="細心度測驗" disabled>
+							<label for="option">細心度測驗(尚未開放)</label>
+						</li>
+						<!-- 不可以點的狀態 + class:check_notyet -->
+						<li class="check_notyet">
+							<div class="left_test_title">
+								<input id="" type="checkbox" name="" value="情境測驗" disabled style=" display: inline-block;">
+								<label for="option">情境測驗(尚未開放)</label>
+							</div>
+							<div class="job_type clearfix">
+								<p><a href="#"><span>職業</span></a></p>
+								<ul class="sub_filter" style="  width: 175px;" >
+									<li><p>職業職業職業職業職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業職業職業職業</p></li>
+									<li><p>職業職業職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業</p></li>
+									<li><p>職業</p></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<!-- 按了複製 div 增加 border_line_blue 這屬性 -->
+					<div class="link clearfix border_line_blue">
+                        <label class="l_title" for=""><p>測驗連結</p></label>
+                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip ontop">複製成功</span></a></p>
+                    </div>
+                </div>
+                <!-- 狀態1 -->
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>測驗進度</p>
+                	</li>
+                    <li class="sub_title the_animation clearfix">
+                		<div class="animationbox">
+                			<div class="top_animation">
+                				<img src="images/img_animation2.png" style="max-width: 113px;">
+                			</div>
+                		</div>
+                		<div class="line_situation clearfix">
+                			<p>潛在人格特質測驗</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar" style="width:50%"></div>
+	                		</div>
+	                	</div>
+	                	<div class="line_situation clearfix">
+                			<p>邏輯測驗</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar color_org" style="width:0%"></div>
+	                		</div>
+	                	</div>
+                	</li>
+                </ul>
+                <!-- 狀態2 完成勾勾 -->
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>測驗進度</p>
+                	</li>
+                    <li class="sub_title the_animation clearfix">
+                		<div class="animationbox">
+                			<div class="top_animation">
+                				<img src="images/img_animation3.png" style="max-width: 113px;">
+                			</div>
+                		</div>
+                		<div class="line_situation situation_type situation_done clearfix"> <!-- 100%完成 + situation_type & situation_done 出現勾勾 -->
+                			<p>潛在人格特質測驗</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar" style="width:100%"></div>
+	                		</div>
+	                	</div>
+	                	<div class="line_situation clearfix">
+                			<p>邏輯測驗</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar color_org" style="width:25%"></div>
+	                		</div>
+	                	</div>
+                	</li>
+                </ul>
+                <!-- 狀態3 未完成 XX + 提醒語-->
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>測驗進度</p>
+                	</li>
+                    <li class="sub_title the_animation clearfix">
+
+                		<div class="RedBox border_blue border_green">
+			                <p class="info">
+			                	<span class="icon_thumbtack">第一次測驗未完成，請測試者再按一次<br>
+			                		<a href="#">重新測驗</a>鍵，即可再次測驗。</span>
+		                	</p>
+			            </div>
+
+                		<div class="line_situation situation_type situation_none clearfix"> <!-- 未完成 + situation_type & situation_none 出現XX -->
+                			<p>潛在人格特質測驗</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar" style="width:75%"></div>
+	                		</div>
+	                	</div>
+	                	<div class="line_situation clearfix">
+                			<p>邏輯測驗</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar color_org" style="width:0%"></div>
+	                		</div>
+	                	</div>
+                	</li>
+                </ul>
+                <!-- 狀態4 完成出現勾勾-->
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>測驗進度</p>
+                	</li>
+                    <li class="sub_title the_animation clearfix">
+                		<div class="line_situation situation_type situation_none clearfix">
+                			<p>潛在人格特質測驗</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar" style="width:75%"></div>
+	                		</div>
+	                	</div>
+	                	<div class="line_situation situation_type situation_done clearfix">
+                			<p class="c_org">邏輯測驗</p>
+	                		<div class="progress_container">
+	                			<div id="myBar" class="progressbar color_org" style="width:100%"></div>
+	                		</div>
+	                	</div>
+                	</li>
+                </ul>
+                <p class="btn view_w">
+                	<a class="popup-link" href="#popup-step-06">查看測驗報告</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- 舊的 -->
+    <!-- <div id="popup-step-06" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3>特質測驗</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                	<li class="sub_title">
+                		<p>求職者登入資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>測驗連結</p></label>
+                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+                        <p class="btn"><a class="select" href="#"><span class="tooltip blue_tip">複製成功</span>複製</a></p>
+                    </li>
+                </ul>
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>填寫狀態</p>
+                	</li>
+                    <li class="sub_title">
+                		<p class="text_ing">
+                			03:00
+                			<span>1/56</span>
+                		</p>
+                	</li>
+                </ul>
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>測驗紀錄</p>
+                	</li>
+                    <li>
+                        <table class="test" border="0" cellpadding="0" cellspacing="0">
+                        	<tr>
+                        		<th><p>項次</p></th>
+                        		<th><p>填寫日期</p></th>
+                        		<th><p>結果</p></th>
+                        	</tr>
+                        	<tr>
+                        		<td></td>
+                        		<td></td>
+                        		<td></td>
+                        	</tr>
+                        	<tr>
+                        		<td></td>
+                        		<td></td>
+                        		<td></td>
+                        	</tr>
+                        </table>
+                    </li>
+                    <li>
+                        <p class="btn"><a class="cursor_none" href="#">檢視報告</a></p>
+                    </li>
+                </ul>
+                <p class="btn">
+                	<a class="popup-link bg_skyblue" href="#popup-step-07">確認</a>
+                </p>
+            </div>
+        </form>
+    </div> -->
+
+    <!-- popup-step-03-3 icon3：特質測驗-->
+    <div id="popup-step-07" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3>特質問卷</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                	<li class="sub_title">
+                		<p>求職者登入資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>測驗連結</p></label>
+                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
+                    </li>
+                </ul>
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>填寫狀態</p>
+                	</li>
+                    <li class="sub_title">
+                		<p class="not_yet">本次測驗已結束</p>
+                		<p class="btn">
+                			<a class="cursor_goto_tip remind_greenbox" href="#">重新測驗
+	                			<span class="tooltip s_btn_position"><!-- 按了才會跳出提醒 -->
+		                			<span class="icon_thumbtack">請重新複製<span class="under_line">測驗連結</span>至求職者的測驗電腦或平板。</span>
+	                			</span>
+                			</a>
+                		</p>
+                	</li>
+                </ul>
+                <ul class="jobBox"><!-- hover狀態修改，按了可以直接連結到特質報告專頁 -->
+                	<a class="go_info p_show" href="#">
+                	<li class="sub_title">
+                		<p>測驗紀錄</p>
+                	</li>
+                    <li>
+                        <table class="test" border="0" cellpadding="0" cellspacing="0">
+                        	<tr>
+                        		<th><p>項次</p></th>
+                        		<th><p>填寫日期</p></th>
+                        		<th><p>結果</p></th>
+                        	</tr>
+                        	<tr>
+                        		<td><p>1</p></td>
+                        		<td><p>2018/11/01</p></td>
+                        		<td class="both"><p>48/56</p><p>未完成</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>2</p></td>
+                        		<td><p>2018/11/01</p></td>
+                        		<td class="both done"><p>2:55</p><p>完成</p></td>
+                        	</tr>
+                        </table>
+                    </li>
+                    <!-- <li>
+                        <p class="btn"><a href="#">檢視報告</a></p>
+                    </li> -->
+                </a>
+                </ul>
+                <p class="btn">
+                	<a class="bg_skyblue" href="#">確認</a>
+                </p>
+            </div>
+        </form>
+    </div>
+	<!-- popup-step-03-4 icon3：特質測驗 > 強制結束-->
+    <div id="popup-step-07-end" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox messageBox">
+            <div class="RedBox">
+                <p class="info">請問是否確定要<span class="red">強制結束</span>此次測驗？<br>正在進行中測驗結果並不會被記錄下來。</p>
+            </div>
+            <p class="btn"><a class="bg_gary" href="#">取消</a><a class="bg_red" href="#">確認結束</a></p>
+        </form>
+    </div>
+
+    <!-- popup-step-04 icon4 ：面試官評論 -->
+    <!-- 注意：如果有按鈕在最上面的標題以上，一定要＋popup-padding-top -->
+    <div id="popup-step-08" class="white-popup popup-w-s mfp-hide popup-padding-top">
+        <form class="setBox management_pop messageBox check_remind">
+            <p class="add_nterviewee"><a class="add popup-link" href="#popup-step-09">新增面試官</a></p>
+            <div class="top_title">
+                <h3>面試官評論</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                	<li class="sub_title">
+                		<p>求職者登入資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <!-- 按了複製 li 增加 border_line_blue 這屬性 -->
+                    <li class="border_line_blue">
+                        <label class="l_title" for=""><p>評論填寫連結</p></label>
+                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip ontop">複製成功</span></a></p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>初試時間</p></label>
+                        <p class="r_info">2018/10/01</p>
+                    </li>
+                </ul>
+                <div class="RedBox border_blue border_green"> <!-- 新增面試官後就消失 -->
+	                <p class="info">請先新增面試官，再複製<span class="under_line">評論填寫連結</span>，傳給此次新增的面試官。<br>
+	                	請確認面試官名字輸入是否正確，<span class="under_line">面試官名字須與登入連結名字相同</span>，中英文皆可。</p>
+	            </div>
+                <p class="btn">
+                	<!-- 原本不錄取是紅色按鈕 bg_red 變灰色按鈕 ， popup-link 應該第一次會拉掉，提醒過後才會出現-->
+                	<a class="bg_gary remind_greenbox popup-link" href="#popup-step-11-none">不 錄 取 <!-- 按了才會跳出提醒 tooltip -->
+                		<span class="tooltip tip_left">
+                			<span class="icon_thumbtack">請確認是否尚未完成上一步驟（特質測驗）。</span>
+                			<span class="icon_thumbtack">請確認所有面試官是否都完成評論。</span>
+                		</span>
+                	</a>
+                	<!-- 原本不錄取是藍色按鈕 bg_skyblue 變灰色按鈕 -->
+                	<a class="bg_gary remind_greenbox popup-link" href="#popup-step-10">錄取 <!-- 按了才會跳出提醒 tooltip -->
+                		<span class="tooltip">
+                			<span class="icon_thumbtack">請確認是否尚未完成上一步驟（特質測驗）。</span>
+                			<span class="icon_thumbtack">請確認所有面試官是否都完成評論。</span>
+                		</span>
+                	</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup-step-04 icon4 ：面試官評論 - 新增面試官-->
+    <!-- 注意：如果有按鈕在最上面的標題以上，一定要＋popup-padding-top -->
+    <div id="popup-step-09" class="white-popup popup-w-s mfp-hide popup-padding-top">
+        <form class="setBox management_pop">
+            <p class="add_nterviewee"><a class="add popup-link" href="#popup-step-09">新增面試官</a></p>
+            <div class="top_title">
+                <h3>面試官評論</h3>
+            </div>
+            <div class="add_bossBox">
+            	<h4>新增面試官<button title="" type="button">×</button></h4>
+            	<div class="boss_name clearfix">
+            		<label class="l_title" for=""><p>面試官姓名</p></label>
+                    <input class="r_info" id="" name="" type="text" value="">
+                    <p class="btn">
+                		<a href="#">確認</a>
+                	</p>
+            	</div>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                	<li class="sub_title">
+                		<p>求職者登入資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>評論填寫連結</p></label>
+                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>初試時間</p></label>
+                        <p class="r_info">2018/10/01</p>
+                    </li>
+                </ul>
+                <p class="btn">
+                	<a class="bg_red popup-link" href="#popup-step-11-none">不 錄 取</a>
+                	<a class="bg_skyblue popup-link" href="#popup-step-10">錄取</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup-step-04-2 icon4：面試官評論-->
+    <!-- 注意：如果有按鈕在最上面的標題以上，一定要＋popup-padding-top -->
+    <div id="popup-step-10" class="white-popup popup-w-s mfp-hide popup-padding-top">
+        <form class="setBox management_pop">
+            <p class="add_nterviewee"><a class="add popup-link" href="#popup-step-09">新增面試官</a></p>
+            <div class="top_title">
+                <h3>面試官評論</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                	<li class="sub_title">
+                		<p>求職者登入資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>評論填寫連結</p></label>
+                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>初試時間</p></label>
+                        <p class="r_info">2018/10/01</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>複試時間</p></label>
+                        <p class="r_info">2018/11/01</p>
+                    </li>
+                </ul>
+                
+                <!-- <p class="review_comment"><a class="cursor_none" href="#">檢視詳細評論內容</a></p> -->
+
+                <div class="jobBox">
+                	<a class="go_info" href="#">
+	                	<div class="sub_title">
+	                		<p>初試評論1</p>
+	                	</div>
+	                    <div class="first_test clearfix">
+	                    	<div class="lBox">
+		                        <p>面試官姓名：<span>羅森林</span></p>
+		                        <p class="day"><span class="type green">初</span></p>
+		                    </div>
+		                    <div class="rBox">
+		                    	<p>評核總分<span></span></p>
+		                    	<p>評核建議<span></span></p>
+		                    </div>
+	                    </div>
+                	</a>
+                </div>
+                <p class="btn clearfix">
+                	<a class="bg_lightblue popup-link" href="#popup-step-01">複試</a>
+                	<a class="bg_red popup-link" href="#popup-step-11-none">不 錄 取</a>
+                	<a class="bg_skyblue popup-link" href="#popup-step-11">錄取</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup-step-04-3 icon4：面試官評論-->
+    <!-- 注意：如果有按鈕在最上面的標題以上，一定要＋popup-padding-top -->
+    <div id="popup-step-11" class="white-popup popup-w-s mfp-hide popup-padding-top">
+        <form class="setBox management_pop  messageBox check_remind">
+            <p class="add_nterviewee"><a class="add popup-link" href="#popup-step-09">新增面試官</a></p>
+            <div class="top_title">
+                <h3>面試官評論</h3>
+            </div>
+            <div class="fillinBox">
+                <ul>
+                	<li class="sub_title">
+                		<p>求職者登入資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>面試者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>面試職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>評論填寫連結</p></label>
+                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>初試時間</p></label>
+                        <p class="r_info">2018/10/01</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>複試時間</p></label>
+                        <p class="r_info">2018/11/01</p>
+                    </li>
+                </ul>
+
+                <!-- <p class="review_comment"><a href="#">檢視詳細評論內容</a></p> -->
+                <!-- <div class="jobBox">
+                	<a class="go_info" href="#">
+                		<div class="top_btn_s"><div class="delete popup-link" href="#popup-step-11-delete"></div></div>
+	                	<div class="sub_title">
+	                		<p>複試評論1</p>
+	                	</div>
+	                    <div class="first_test clearfix">
+	                    	<div class="lBox">
+		                        <p>面試官姓名：<span>留有針</span></p>
+		                        <p class="day"><span class="type red">初</span></p>
+		                    </div>
+		                    <div class="rBox">
+		                    	<p>評核總分<span></span></p>
+		                    	<p>評核建議<span></span></p>
+		                    </div>
+	                    </div>
+	                </a>
+                </div> -->
+
+                <div class="jobBox">
+                	<a class="go_info" href="#">
+                		<div class="top_btn_s"><!-- <div class="delete popup-link" href="#popup-step-11-delete"></div> --></div>
+                		<div class="sub_title">
+	                		<p>第一輪初試評論</p>
+	                	</div>
+	                    <div class="first_test clearfix">
+	                    	<div class="lBox">
+		                        <p>面試官姓名：<span>羅森林</span></p>
+		                        <p class="day"><span class="type green">初</span>2018/11/01評論</p>
+		                    </div>
+		                    <div class="rBox">
+		                    	<p>評核總分<span>90</span></p>
+		                    	<p>評核建議<span>合格</span></p>
+		                    </div>
+	                    </div>
+	                    <div class="first_test clearfix">
+	                    	<div class="lBox">
+		                        <p>面試官姓名：<span>林美美</span></p>
+		                        <p class="day"><span class="type green">初</span>2018/11/01評論</p>
+		                    </div>
+		                    <div class="rBox">
+		                    	<p>評核總分<span>90</span></p>
+		                    	<p>評核建議<span>合格</span></p>
+		                    </div>
+	                    </div>
+	                </a>
+                </div>
+                <div class="jobBox">
+                		<div class="sub_title">
+	                		<p>第二輪複試評論評論</p>
+	                	</div>
+                </div>
+                <div class="RedBox border_blue border_green"> <!-- 開始測驗後消失 -->
+	                <p class="info">請先新增第二輪複試面試官，並複製<span class="under_line">評論填寫連結</span>，傳給此次新增的面試官。</p>
+	            </div>
+                <p class="btn clearfix">
+                	<a class="bg_lightblue popup-link" href="#popup-step-01">修改複試時間</a>
+                	<a class="bg_gary remind_greenbox popup-link" href="#popup-step-11-none">不 錄 取
+                		<span class="tooltip tip_left">
+                			<span class="icon_thumbtack">請確認是否尚未完成上一步驟（特質測驗）。</span>
+                			<span class="icon_thumbtack">請確認所有面試官是否都完成評論。</span>
+                		</span>
+                	</a>
+                	<a class="bg_gary remind_greenbox " href="#">錄取
+                		<span class="tooltip">
+                			<span class="icon_thumbtack">請確認是否尚未完成上一步驟（特質測驗）。</span>
+                			<span class="icon_thumbtack">請確認所有面試官是否都完成評論。</span>
+                		</span>
+                	</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+
+     <!-- popup-step-04-4 icon4：刪除面試官按鈕-->
+    <div id="popup-step-11-delete" class="white-popup popup-w-s mfp-hide">
+        <div class="setBox messageBox">
+            <div class="RedBox">
+                <p class="info">請問確定要刪除面試官<span>留有針</span>嗎？</p>
+            </div>
+            <p class="btn"><a class="bg_gary" href="#">取消</a><a class="bg_red" href="#">確認刪除</a></p>
+        </div>
+    </div>
+    <!-- popup-step-04-4 icon4：不錄取 + 原因-->
+    <div id="popup-step-11-none" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox messageBox">
+            <div class="RedBox">
+                <p class="info">請問確定不錄取<span>王明天</span>嗎？<br>如確定不錄取，資料將被移至招募紀錄中。</p>
+            </div>
+            <div class="fillinBox RedBox no_reason">
+                <ul style="overflow-y: hidden;">
+                    <li>
+                    	<p>不錄取原因</p>
+                    </li>
+                    <li>
+                    	<input class="r_info" id="" name="" type="text" value="" placeholder="請說明">
+                    </li>
+                </ul>
+            </div>
+            <p class="btn"><a class="bg_gary" href="#">取消</a><a class="bg_red" href="#">確認不錄取</a></p>
+        </form>
+    </div>
+
+
+    <!-- popup-step-05 icon5:報到排程-->
+    <div id="popup-step-12" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3>報到排程</h3>
+            </div>
+            <div class="fillinBox time_select for_admit">
+                <ul>
+                	<li class="sub_title">
+                		<p>錄取者資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取部門</p></label>
+                        <p class="r_info">研發部</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>部門主管姓名</p></label>
+                        <p class="r_info">留有針</p>
+                    </li>
+                    <li class="day">
+                        <label class="l_title" for=""><p>報到日期</p></label>
+                        <input class="r_info" id="" name="" type="text" value="2018/11/01">
+                    </li>
+                    <li class="time">
+                        <label class="l_title" for=""><p>報到時間</p></label>
+                        <input class="r_info" id="" name="" type="text" value="13:30">
+                    </li>
+                </ul>
+                <div class="day_selectBpx">
+                	<div class="monthBox">
+						<div class="top_year_month">
+							<p><span>2018年11月</span></p>
+						</div>
+						<div class="dateBox">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<th><p>日</p></th>
+									<th><p>一</p></th>
+									<th><p>二</p></th>
+									<th><p>三</p></th>	
+									<th><p>四</p></th>
+									<th><p>五</p></th>
+									<th><p>六</p></th>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><p class="btn_in">1</p>
+									</td>
+									<td><p>2</p></td>
+									<td><p>3</p></td>
+								</tr>
+								<tr>
+									<td><p>4</p></td>
+									<td><p>5</p></td>
+									<td><p>6</p>
+									</td>
+									<td><p>7</p></td>
+									<td><p>8</p></td>
+									<td><p>9</p></td>
+									<td><p>10</p></td>
+								</tr>
+								<tr>
+									<td><p>11</p></td>
+									<td><p>12</p></td>
+									<td><p>13</p></td>
+									<td><p>14</p></td>
+									<td><p>15</p></td>
+									<td><p>16</p></td>
+									<td><p>17</p></td>
+								</tr>
+								<tr>
+									<td><p>18</p></td>
+									<td><p>19</p></td>
+									<td><p>20</p></td>
+									<td><p>21</p></td>
+									<td><p>22</p></td>
+									<td><p>23</p></td>
+									<td><p>24</p></td>
+								</tr>
+								<tr>
+									<td><p>25</p></td>
+									<td><p>26</p></td>
+									<td><p>27</p></td>
+									<td><p>28</p></td>
+									<td><p>29</p></td>
+									<td><p>30</p></td>
+									<td><p>31</p></td>
+								</tr>
+								<tr>
+									<td><p class="btn_in">31</p></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+                </div>
+                <p class="btn">
+                	<a class="bg_red" href="#">婉拒錄取</a>
+                	<a class="bg_gary remind_greenbox popup-link" href="#popup-step-13">確認
+                		<span class="tooltip">
+                			<span class="icon_thumbtack">請先安排報到日期與時間。</span>
+                		</span>
+                	</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <!-- popup-step-05-2 icon5：報到排程-->
+    <div id="popup-step-13" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3>報到排程</h3>
+            </div>
+            <div class="fillinBox time_select for_admit">
+                <ul>
+                	<li class="sub_title">
+                		<p>錄取者資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取部門</p></label>
+                        <p class="r_info">研發部</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>部門主管姓名</p></label>
+                        <p class="r_info">留有針</p>
+                    </li>
+                    <li class="day">
+                        <label class="l_title" for=""><p>報到日期</p></label>
+                        <input class="r_info" id="" name="" type="text" value="2018/11/01">
+                    </li>
+                    <li class="time">
+                        <label class="l_title" for=""><p>報到時間</p></label>
+                        <input class="r_info" id="" name="" type="text" value="13:30">
+                    </li>
+                </ul>
+                <!-- 日期與時間的位置不是很確定 -->
+                <div class="time_selectBpx clearfix" style="top: 108px;">
+                	<div class="the_time">
+                		<p>點</p>
+                		<ul>
+                			<li><p><a href="">1</a></p></li>
+                			<li><p><a href="">2</a></p></li>
+                			<li><p><a href="">3</a></p></li>
+                			<li><p><a href="">4</a></p></li>
+                			<li><p><a href="">5</a></p></li>
+                			<li><p><a href="">6</a></p></li>
+                			<li><p><a class="btn_in" href="">7</a></p></li>
+                			<li><p><a href="">8</a></p></li>
+                			<li><p><a href="">9</a></p></li>
+                			<li><p><a href="">10</a></p></li>
+                			<li><p><a href="">11</a></p></li>
+                			<li><p><a href="">12</a></p></li>
+                			<li><p><a href="">13</a></p></li>
+                			<li><p><a href="">14</a></p></li>
+                			<li><p><a href="">15</a></p></li>
+                			<li><p><a href="">16</a></p></li>
+                			<li><p><a href="">17</a></p></li>
+                			<li><p><a href="">18</a></p></li>
+                			<li><p><a href="">19</a></p></li>
+                			<li><p><a href="">20</a></p></li>
+                			<li><p><a href="">21</a></p></li>
+                			<li><p><a href="">22</a></p></li>
+                			<li><p><a href="">23</a></p></li>
+                			<li><p><a href="">24</a></p></li>
+                		</ul>
+                	</div>
+                	<div class="the_time">
+                		<p>分</p>
+                		<ul>
+                			<li><p><a href="">00</a></p></li>
+                			<li><p><a href="">05</a></p></li>
+                			<li><p><a class="btn_in" href="">10</a></p></li>
+                			<li><p><a href="">15</a></p></li>
+                			<li><p><a href="">20</a></p></li>
+                			<li><p><a href="">25</a></p></li>
+                			<li><p><a href="">30</a></p></li>
+                			<li><p><a href="">35</a></p></li>
+                			<li><p><a href="">40</a></p></li>
+                			<li><p><a href="">45</a></p></li>
+                			<li><p><a href="">50</a></p></li>
+                			<li><p><a href="">55</a></p></li>
+                		</ul>
+                	</div>
+                </div>
+                <p class="btn">
+                	<a class="bg_skyblue" href="#">確認</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup-step-06 icon6：完成報到-->
+    <div id="popup-step-14" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop messageBox check_remind">
+            <div class="top_title">
+                <h3>完成報到</h3>
+            </div>
+            
+            <div class="fillinBox time_select for_admit">
+                <ul>
+                	<li class="sub_title">
+                		<p>錄取者資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取部門</p></label>
+                        <p class="r_info">研發部</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>部門主管姓名</p></label>
+                        <p class="r_info">留有針</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="RedBox border_blue bottom_noteBox">
+                <p class="info line_gray">請再次確認錄取者已完成所有報到手續，<br>確認後個人資料將移至員工資料及招募紀錄。</p>
+                <p class="info p_gray">如需新增報到條件列表，<br>請至"<span class="blue">帳號設定-報到條件設定</span>"中新增設定。 </p>
+            </div>
+
+            <p class="btn">
+               	<a class="bg_gary" href="#">取消</a>
+               	<a class="bg_skyblue popup-link" href="#popup-step-14-2">確認
+                </a>
+            </p>
+        </form>
+    </div>
+
+    <!-- popup-step-06 icon6：完成報到-2 -->
+    <div id="popup-step-14-2" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox management_pop messageBox check_remind">
+            <div class="top_title">
+                <h3>完成報到</h3>
+            </div>
+            
+            <div class="fillinBox time_select for_admit">
+                <ul>
+                	<li class="sub_title">
+                		<p>錄取者資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取部門</p></label>
+                        <p class="r_info">研發部</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>部門主管姓名</p></label>
+                        <p class="r_info">留有針</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="RedBox border_blue bottom_noteBox">
+                <p class="info line_gray">請再次確認錄取者已完成所有報到手續，<br>確認後個人資料將移至員工資料及招募紀錄。</p>
+                <ul class="item conditionList">
+					<li>
+						<input id="" type="checkbox" name="" value="option">
+						<label for="option">已收到身分證影本乙份。</label>
+					</li>
+					<li>
+						<input id="" type="checkbox" name="" value="option">
+						<label for="option">已收到畢業證書影本乙份。</label>
+					</li>
+					<li>
+						<input id="" type="checkbox" name="" value="option">
+						<label for="option">員工手冊已簽章。</label>
+					</li>
+				</ul>
+            </div>
+
+            <p class="btn">
+               	<a class="bg_gary" href="#">取消</a>
+               	<a class="bg_gary remind_greenbox" href="#">確認
+               		<span class="tooltip">
+                		<span class="icon_thumbtack">報到條件需要全部勾選。</span>
+                	</span>
+               	</a>
+            </p>
+        </form>
+    </div>
+
+     <!-- popup： 強制結束-->
+    <div id="popup-step-15" class="white-popup popup-w-s mfp-hide enforcementBox">
+        <form class="setBox ">
+            <div class="top_title">
+                <h3>強制結束</h3>
+            </div>
+
+            <div class="fillinBox">
+                <ul>
+                	<li class="sub_title">
+                		<p>錄取者資訊</p>
+                	</li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取者姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>錄取部門</p></label>
+                        <p class="r_info">研發部</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>部門主管姓名</p></label>
+                        <p class="r_info">留有針</p>
+                    </li>
+                </ul>
+
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>結案原因</p>
+                	</li>
+                    <li>
+                        <ul class="select_item clearfix">
+							<li>
+								<input id="" type="radio" name="field" value="option">
+								<label for="option">聯絡不到人</label>
+							</li>
+							<li>
+								<input id="option" type="radio" name="field" value="option">
+								<label for="option">未報到</label>
+							</li>
+							<li>
+								<input id="option" type="radio" name="field" value="option">
+								<label for="option">取消面試</label>
+							</li>
+						</ul>
+                    </li>
+                    <li>
+                        <div class="l_title other">
+                        	<input id="option" type="radio" name="field" value="option">
+							<label for="option">其他</label>
+						</div>
+                        <input type="text" name="" class="r_info" placeholder="請說明">
+                    </li>
+                </ul>
+
+                <ul class="jobBox">
+                	<li class="sub_title">
+                		<p>備註</p>
+                	</li>
+                    <li>
+                        <textarea></textarea>
+                    </li>
+                </ul>
+                <p class="btn">
+                	<a class="bg_gary" href="#">取消</a>
+                	<a class="bg_red" href="#">確認結案</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+</main>
+
+</body>
+</html>
+
+
+

@@ -110,6 +110,13 @@ p.add_nterviewee{ float: left; margin-top: -7px; text-align: right; width: 100%;
 p.add_nterviewee a{ color: #558C9E; background: url(../images/btn_add_nterviewee.png) 5px center no-repeat #fff; background-size: contain; height: 38px; min-width: 162px;padding: 0 15px 0 40px; line-height: 32px; border:2.5px solid #558C9E; display: inline-block; border-radius:10px 10px 10px 0px;}
 p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 
+p.add_new_btn{ text-align: center; width: 100%; margin-top: 10px;} 
+p.add_new_btn a{ color: #558C9E; background-color: #E6F0F4; height: 38px; border:1px dashed #558C9E; display: block; border-radius:5px 5px 0px 5px;}
+p.add_new_btn a span{ padding-left: 50px; position: relative; line-height: 36px; display: inline-block;}
+p.add_new_btn a span::before{ content: ""; position: absolute; width: 50px; top: calc(50% - 15px); left: 0; height: 30px; display: block; background-image: url(../images/btn_add_nterviewee.png); background-position: center center; background-repeat: no-repeat; background-size: contain;}
+p.add_new_btn a:hover{ background-color: #558C9E; color: #fff; border-color: #E6F0F4;}
+p.add_new_btn a:hover span::before{ background-image: url(../images/btn_add_nterviewee_w.png);}
+
 .headerBox ul.message_listBox{ position: absolute; top: 30px; right: 0; width: 215px; height: 253px; overflow-y: auto;  }
 
 .mainBox{ width: 100%; min-width: 1024px; min-height:calc( 100vh - 44px); background-color: #f8f9f9; padding:0 20px 20px 20px; display: block; }
@@ -356,7 +363,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .setBox .remind_greenbox{ position: relative; margin-bottom: 80px;}
 .setBox .remind_greenbox .tooltip{ z-index: 100; width: 226px; top: 53px; left: inherit; right: -2px; text-align: justify; padding: 10px 13px;font-size: 14px; letter-spacing: 0; -webkit-transform: scale(1); line-height: initial; border:3px solid #84BE98; border-radius: 10px 0 10px 10px; background-color: #fff; color: #4A4A4A;}
 .setBox .remind_greenbox .tooltip::after{ left:initial; top: -15px; right: 39px; border-width: 0 14px 15px 14px;  border-color: transparent transparent #84BE98 transparent;}
-.setBox .remind_greenbox .tooltip span.icon_thumbtack{ position: relative; padding-left: 24px; display: block; }
+.setBox .remind_greenbox .tooltip span.icon_thumbtack{ position: relative; padding-left: 24px; display: block; line-height: 22px;}
 .setBox .remind_greenbox .tooltip span.icon_thumbtack::after{ content: "";width: 18px; height: 19px; display: block; position: absolute; top:0 ; left: 0; background: url(../images/icon_thumbtack.png) center center no-repeat; background-size: cover; }
 .setBox .remind_greenbox .tip_left{ left: -2px; }
 .setBox .remind_greenbox .tip_left::after{ left: 39px; }
@@ -502,7 +509,7 @@ p.add_nterviewee a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .check_remind .border_blue p.info a:hover{ text-decoration: underline; }
 .check_remind .border_blue p.p_gray{ color: #9B9B9B;}
 .check_remind .border_blue p.line_gray{ border-bottom: 1px solid #979797; }
-.check_remind .border_blue p.info span.icon_thumbtack{ position: relative; padding-left: 14px; display: block;  color: #4A4A4A; text-align: left;}
+.check_remind .border_blue p.info span.icon_thumbtack{ position: relative; padding-left: 14px; display: block;  color: #4A4A4A; text-align: left; line-height: 20px;}
 .check_remind .border_blue p.info span.icon_thumbtack::after{ content: "";width: 18px; height: 19px; display: block; position: absolute; top:0 ; left: -10px; background: url(../images/icon_thumbtack.png) center center no-repeat; background-size: cover; }
 .check_remind .border_blue p.info span.icon_thumbtack a{ color: #81B6C8; }
 .check_remind .border_blue p.info span.icon_thumbtack a:hover{ text-decoration: underline; }
@@ -1028,6 +1035,11 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .top_toolsBox ul.type li.btn_in p span::after{ border-color: transparent transparent #81B6C8 transparent; _border-color: #000000 #000000 #81B6C8 #000000;}
 .right_contents .top_toolsBox ul.type li.btn_in_botoom p span::before{ border-color: #81B6C8 transparent transparent transparent; _border-color: #81B6C8 #000000 #000000 #000000;}
 
+.right_contents .top_toolsBox .recruit_info_nothing{ border: 3px solid #81B6C8; width: 540px; border-radius: 10px 0 10px 10px; min-height: 103px; margin-top: 10px; padding: 10px; position: relative; background-color: #fff;}
+.right_contents .top_toolsBox .recruit_info_nothing p{ color: #9B9B9B; line-height: 22px; padding:15px 0 0 250px; position: relative;}
+.right_contents .top_toolsBox .recruit_info_nothing p::after{ content: ""; width: 168px; height: 91px; display: block; position: absolute; top: -4px; left: 50px; background:url(../images/img_owl_05.png) center center no-repeat; background-size: contain;}
+.right_contents .top_toolsBox .recruit_info_nothing p a, .right_contents .top_toolsBox .recruit_info_nothing p span{ color: #81B6C8; }
+.right_contents .top_toolsBox .recruit_info_nothing p a:hover{ text-decoration: underline; }
 :root .right_contents .top_toolsBox ul.type li p span::after{ top: 3px; }
 :root .right_contents .top_toolsBox ul.type li p span::before{ top: initial; bottom: 3px; }
 
@@ -1776,6 +1788,10 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interviewee_info .top_test_menu ul li.btn_in:nth-child(2) a{ background-color: #81B6C8; color: #fff;}
 .interviewee_info .top_test_menu ul li.btn_in:nth-child(3) a{ background-color: #B8D3DC; color: #fff;}
 
+.filter_pop .interviewee_info .top_test_menu .tooltip{ width: 380px; top: 54px; }
+.filter_pop .interviewee_info .top_test_menu .tooltip::after{ left: inherit; }
+.filter_pop .interviewee_info .top_test_menu p span{ color: #4A4A4A; }
+.filter_pop .interviewee_info .top_test_menu p span.c_green{ color: #84BE98; }
 .interviewee_info .open_content{ margin-bottom: 0; }
 .interviewee_info .open_content ul li a{ border-bottom: none; }
 
@@ -2227,10 +2243,28 @@ p.add_job_vacancies a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 
 .mainBox ul.job_management_list li{ height: initial; min-height: 150px;}
 .mainBox ul.job_management_list li a{ height: 152px !important;}
-.mainBox ul.job_management_list li a.icon_edit_job{ position: absolute; top: -3px; height: 23px !important; z-index: 5; background: url(../images/btn_icon_edit_w.png) right center no-repeat; background-size: contain; }
+.mainBox ul.job_management_list li a.icon_edit_job{ position: absolute; top: 0px; height: 30px !important; background-color: #81B6C8; width:calc(100% + 6px); z-index: 5; padding: 3px 20px 0px 20px; display: block; border-radius: 10px 0 0 0; }
+.mainBox ul.job_management_list li a.icon_edit_job:hover{ background-color: #b8d3dc;}
+.mainBox ul.job_management_list li a.icon_edit_none:hover{ background-color: #81B6C8;}
 
-ul.job_management_list .top_title{ width:calc(100% + 6px); margin: -3px 0 0 -3px; position: relative; padding-bottom: 2px;}
-ul.job_management_list .top_title p.job_title{ color: #fff; font-size: 14.5px; letter-spacing: 1px; padding-bottom:3px; display: block; background-color: #81B6C8;  padding: 3px 20px 0px 20px; border-radius: 10px 0 0 0; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 21px; height: 26px; height: 26px * 1; overflow:hidden;}
+.mainBox ul.job_management_list li a.recruit_status_form{ padding-top: 25px; }
+
+.mainBox ul.list li.add_new_btn{ text-align: center; background-color: #E6F0F4; border:1px dashed #558C9E;} 
+.mainBox ul.list li.add_new_btn a{ height: 138px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.mainBox ul.list li.add_new_btn a p{ color: #558C9E; font-size: 14px; padding:0 5px 0 60px; position: relative; line-height: 36px; display: inline-block;}
+.mainBox ul.list li.add_new_btn a p::before{ content: ""; position: absolute; width: 55px; top: calc(50% - 21px); left: 0; height: 40px; display: block; background-image: url(../images/btn_add_nterviewee.png); background-position: center center; background-repeat: no-repeat ; background-size: contain;}
+.mainBox ul.list li.add_new_btn:hover{ background-color: #558C9E; border-color: #E6F0F4;}
+.mainBox ul.list li.add_new_btn:hover a p{ color: #fff;}
+.mainBox ul.list li.add_new_btn:hover a p::before{ background-image: url(../images/btn_add_nterviewee_w.png);}
+
+.mainBox ul.job_management_list li.add_new_btn a p{ padding-left: 52px; }
+.mainBox ul.job_management_list li.add_new_btn a p::before{  background-image: url(../images/btn_add_job_vacancies.png); }
+.mainBox ul.job_management_list li.add_new_btn:hover a p::before{  background-image: url(../images/btn_add_job_vacancies_w.png); }
+
+ul.job_management_list .icon_edit_job{ width:calc(100% + 6px); margin: -3px 0 0 -3px; position: relative; padding-bottom: 2px;}
+ul.job_management_list .icon_edit_job p.job_title{ width: calc(100% + 20px); color: #fff; font-size: 14.5px; letter-spacing: 1px; padding-right: 20px; padding-bottom:3px; display: block;  background: url(../images/btn_icon_edit_w.png) center right no-repeat; background-size: contain; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 26px; height: 26px; height: 26px * 1; overflow:hidden;}
+ul.job_management_list .icon_edit_none p.job_title{ background-image: none; }
+
 ul.job_management_list .top_title .department{ width: 100%; padding: 5px 20px 0 20px;}
 ul.job_management_list .top_title .department p{ float: left; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 16.8px; height: 16.8px; height: 16.8px * 1; overflow:hidden; max-width: 144px;}
 ul.job_management_list .top_title .department p:last-child{ float: right; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 16.8px; height: 16.8px; height: 16.8px * 1; overflow:hidden; max-width: 82px;}
@@ -2306,7 +2340,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 
 .popup-L .filter_pop .j_v_ranking{ padding-top: 42px; }
 .popup-L .filter_pop .j_v_ranking h3.test_report_title{ padding-left: 45px; }
-.filter_pop .j_v_ranking p.btn{ font-size: 18px; line-height: 32px; top: 0; right: 0; }
+.filter_pop .j_v_ranking p.btn{ font-size: 18px; line-height: 32px; top: 2px; right: 2px; }
 .filter_pop .j_v_ranking p.btn a.bg_red{ letter-spacing: 4px; }
 .filter_pop .j_v_ranking p.btn a.bg_red:hover{ box-shadow: none; }
 
@@ -2342,7 +2376,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .j_v_ranking .new_report .download_file a.pdf::after{ background-image: url(../images/icon_download_file_pdf.png); }
 .j_v_ranking .new_report .download_file p{ color: #81B6C8; font-size: 10px; text-align: center;}
 
-.job_leaderboard_container{ margin:0 auto; border-top: 2px solid #81B6C8; padding: 40px 0px; }
+.job_leaderboard_container{ margin:0 auto; border-top: 2px solid #81B6C8; padding:15px 0 40px 0px; }
 .job_leaderboard_container .round{ position: relative;}
 .job_leaderboard_container .round::after{ content: ""; width: 10px; height: 10px; display: block; border-radius: 50%; position: absolute; }
 .job_leaderboard_container .round_red::after{ background-color:#C87D86;}
@@ -2388,11 +2422,18 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_leaderboard_container ul.leaderboard_data li.top_title:hover{ border-color: #fff; }
 .job_leaderboard_container ul.leaderboard_data li.top_title .select_title{ width: 220px; padding-left: 80px; padding-top: 7px; }
 .job_leaderboard_container ul.leaderboard_data li.top_title .select_title p{ border-left: 5px solid #81B6C8; height: 20px; }
+.job_leaderboard_container ul.leaderboard_data li.top_add{ padding:0 0 40px 80px; }
+.job_leaderboard_container ul.leaderboard_data li.top_add p span{ color: #558C9E; padding-left: 50px; }
+.job_leaderboard_container ul.leaderboard_data li.top_add p a:hover span{ color: #fff; }
+
+.job_leaderboard_container ul.leaderboard_data li.none_data{ padding-left: 80px;}
+.job_leaderboard_container ul.leaderboard_data li.none_data p{ border: 3px solid #81B6C8; line-height: 22px; width: 826px; color: #9B9B9B; padding:25px 20px 100px 20px; position: relative; text-align: center; border-radius: 10px 0 10px 10px; min-height: 103px; margin-top: 10px; position: relative; background-color: #fff;}
+.job_leaderboard_container ul.leaderboard_data li.none_data p::after{ content: ""; width: 100px; height: 93px; display: block; position: absolute; bottom: -4px; left:calc(50% - 50px); background:url(../images/testing_ranking_icon.png) center center no-repeat; background-size: contain;}
+
 
 .job_leaderboard_container ul.leaderboard_data li .first_nb{ width: 35px; border: none;}
 .job_leaderboard_container ul.leaderboard_data li .first_nb:before{ display: none; }
 .job_leaderboard_container ul.leaderboard_data li .first_nb p{ line-height: 60px; font-size: 25px; color: #558C9E; }
-
 
 .job_leaderboard_container ul.leaderboard_data li .not_testing { border-width: 3px; margin: 30px auto; height: 180px; width: 665px; position: relative; padding: 20px; text-align: center; line-height: 26px; }
 .job_leaderboard_container ul.leaderboard_data li .not_testing p { color: #9B9B9B; }

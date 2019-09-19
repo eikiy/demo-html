@@ -54,7 +54,7 @@
 			<input type="text" name="" placeholder="搜尋面試人員/現有員工">
 			<a href="#"></a>
 		</div>
-		<p class="add_job_vacancies"><a class="add popup-link" href="#popup-add_job_vacancies">新增職缺</a></p>
+		<!-- <p class="add_job_vacancies"><a class="add popup-link" href="#popup-add_job_vacancies">新增職缺</a></p> -->
 		<ul class="tools">
 			<li><a class="message" href="#"><span>3</span><div class="tooltip">通知</div></a></li>
 			<li><a class="logout" href="#"><div class="tooltip">登出</div></a></li>
@@ -90,14 +90,18 @@
 					<p class="people_nb">共有 5 個職缺</p>
 				</div>
 				<ul class="user_list list job_management_list clearfix">
+					<li class="add_new_btn">
+						<a class="add popup-link" href="#popup-add_job_vacancies"><p>新增職缺</p></a>
+					</li>
 					<li>
-						<a class="icon_edit_job popup-link" href="#popup-add_job_vacancies"></a>
-						<a class="popup-link" href="#popup-job_vacancies_ranking">
+						<a class="icon_edit_job popup-link" href="#popup-add_job_vacancies">
+							<p class="job_title">有可能title也會很長長長的軟體工程師</p>
+						</a>
+						<a class="recruit_status_form popup-link" href="#popup-job_vacancies_ranking">
 							<div class="top_title">
-								<p class="job_title">有可能title也會很長長長的軟體工程師</p>
 								<div class="department clearfix">
-									<p>長長長的軟體工資訊部</p>
-									<p>主管:林怡文長長長的軟體工</p>
+									<p>[聯強EMBA]主管的部門運作管理</p>
+									<p>主管:Thomas Stanley Holland</p>
 								</div>
 							</div>
 							<div class="job_typebox clearfix">
@@ -118,10 +122,11 @@
 						</a>
 					</li>
 					<li class="clearfix">
-						<a class="icon_edit_job popup-link" href="#popup-add_job_vacancies"></a>
-						<a class="popup-link" href="#popup-job_vacancies_ranking">
+						<a class="icon_edit_job top_title popup-link" href="#popup-add_job_vacancies">
+							<p class="job_title">有可能title也會很長長長的軟體工程師</p>
+						</a>
+						<a class="recruit_status_form popup-link" href="#popup-job_vacancies_ranking">
 							<div class="top_title">
-								<p class="job_title">Senior Hardware Engineer</p>
 								<div class="department clearfix">
 									<p>[聯強EMBA]主管的部門運作管理</p>
 									<p>主管:Thomas Stanley Holland</p>
@@ -145,10 +150,11 @@
 						</a>
 					</li>
 					<li class="clearfix">
-						<a class="icon_edit_job popup-link" href="#popup-add_job_vacancies"></a>
-						<a class="popup-link" href="#">
+						<a class="icon_edit_job top_title popup-link" href="#popup-add_job_vacancies">
+							<p class="job_title">軟體工程師</p>
+						</a>
+						<a class="recruit_status_form popup-link" href="#">
 							<div class="top_title">
-								<p class="job_title">軟體工程師</p>
 								<div class="department clearfix">
 									<p>資訊部</p>
 									<p>主管:林怡文</p>
@@ -172,10 +178,11 @@
 						</a>
 					</li>
 					<li class="clearfix">
-						<a class="icon_edit_job popup-link" href="#popup-add_job_vacancies"></a>
-						<a class="popup-link" href="#">
+						<a class="icon_edit_job top_title popup-link" href="#popup-add_job_vacancies">
+							<p class="job_title">軟體工程師</p>
+						</a>
+						<a class="recruit_status_form popup-link" href="#">
 							<div class="top_title">
-								<p class="job_title">軟體工程師</p>
 								<div class="department clearfix">
 									<p>資訊部</p>
 									<p>主管:林怡文</p>
@@ -199,10 +206,11 @@
 						</a>
 					</li>
 					<li class="clearfix">
-						<a class="icon_edit_job popup-link" href="#popup-add_job_vacancies"></a>
-						<a class="popup-link" href="#">
+						<a class="icon_edit_job top_title popup-link" href="#popup-add_job_vacancies">
+							<p class="job_title">軟體工程師</p>
+						</a>
+						<a class="recruit_status_form popup-link" href="#">
 							<div class="top_title">
-								<p class="job_title">軟體工程師</p>
 								<div class="department clearfix">
 									<p>資訊部</p>
 									<p>主管:林怡文</p>
@@ -726,7 +734,11 @@
 								<li><p><a class="popup-link" href="#">工作職能與專業技能</a></p></li>
 							</ul>
 							<p class="btn">
-								<a class="bg_red popup-link" href="#popup-job_over">結束職缺</a>
+								<a class="bg_gary remind_greenbox popup-link" href="#popup-job_over">結束職缺
+									<span class="tooltip">
+			                			<span class="icon_thumbtack">目前尚有求職者狀態為 <span class="c_green">報到排程</span>，請確認其狀態。</span>
+			                		</span>
+		                		</a>
 							</p>
 						</div>
 						<div class="test_report new_report">
@@ -777,11 +789,15 @@
 									<a class="pdf" href="#"><p>下載PDF</p></a>
 								</div>
 							</div>
+
 							<div class="job_leaderboard_container">
 								<!-- 選到第幾個，填入class，寫在css內囉 -->
 								<!-- choose_one, choose_two, choose_three, choose_four, choose_five, choose_six, choose_seven -->
 								<!-- 除了li.top_title 外的 li 新增class name: crosswise_list，因為一直吃到top_title...so...>< -->
 								<ul class="leaderboard_data choose_two">
+									<li class="top_add">
+										<p class="add_new_btn"><a class="add popup-link" href="#popup-nterviewee"><span>新增面試人員</span></a></p>
+									</li>
 									<li class="top_title clearfix">
 										<div class="abox select_title">
 											<p>請選擇需排序項目</p>
@@ -1288,6 +1304,67 @@
 												<p class="digital">78.3</p>
 											</div>
 										</a>
+									</li>
+								</ul>
+								<ul class="icon_note">
+									<li><p class="round round_green">百分比78以上</p></li>
+									<li><p class="round round_red">百分比40以下</p></li>
+									<li><p class="icon_warning">尚有面試官未完成評論</p></li>
+								</ul>
+							</div>
+
+							<!-- 尚未有資料時 -->
+							<div class="job_leaderboard_container">
+								<ul class="leaderboard_data choose_two">
+									<li class="top_add">
+										<p class="add_new_btn"><a class="add popup-link" href="#popup-nterviewee"><span>新增面試人員</span></a></p>
+									</li>
+									<li class="top_title clearfix">
+										<div class="abox select_title">
+											<p>請選擇需排序項目</p>
+										</div>
+										<div class="border_line clearfix border_c_dblue">
+											<div class="abox w_a">
+												<p>整體符合度</p>
+											</div>
+										</div>
+										<div class="border_line clearfix">
+											<div class="abox btn_in">
+												<p>工作職能</p>
+											</div>
+											<div class="abox">
+												<p>專業技能</p>
+											</div>
+										</div>
+										<div class="border_line clearfix">
+											<div class="abox">
+												<p>績效預測</p>
+											</div>
+											<div class="abox">
+												<p>團隊精神</p>
+											</div>
+											<div class="abox">
+												<p>創新能力</p>
+											</div>
+										</div>
+										<div class="border_line clearfix">
+											<div class="abox">
+												<p>邏輯分析</p>
+											</div>
+											<div class="abox">
+												<p>社交智商</p>
+											</div>
+											<div class="abox personality_filter">
+												<p class="title"><a href="#">情緒穩定性</a></p>
+												<ul class="sub_filter" style=" display: block;">
+													<li><p>盡責性</p></li>
+													<li><p>情緒穩定性</p></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li class="none_data">
+										<p>尚未有測驗結果<br>提醒：測驗報告需解鎖，才會列入排名唷！</p>
 									</li>
 								</ul>
 								<ul class="icon_note">
