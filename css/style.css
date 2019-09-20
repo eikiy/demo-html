@@ -2615,7 +2615,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .for_mob_Test .fill{ padding-bottom: 0; }
 .for_mob_Test .top_logo{ display: none; }
 .for_mob_Test .max_w{ max-width: 320px; }
-.for_mob_Test .contentsBox{ width:calc(100% - 30px); flex-shrink: initial; flex-basis:initial !important; padding:0; }
+.for_mob_Test .contentsBox{ width:calc(100% - 30px); max-width: 640px; flex-shrink: initial; flex-basis:initial !important; padding:0; }
 .for_mob_Test .traitTest_list{ padding: 20px; margin-top: 0;}
 .for_mob_Test .traitTest_list::after{ width: 56px; height: 63px; top: -96px; left: 5px; }
 .for_mob_Test .traitTest_list ul li p span.title {width: 60%;}
@@ -2651,19 +2651,21 @@ ul.job_management_list p.text_center{ text-align: center; }
 .traitTestGo_mob p.btn{ position: absolute; bottom: 8%; right: 7%; }
 .traitTestGo_mob .QABox{ width: 100%; min-height: inherit; }
 .traitTestGo_mob .QABox .top_bg{ border-radius: 0; height: 28vh;  position: relative;}
-.traitTestGo_mob .QABox .bottom_qa{ height:calc(100vh - 28vh); min-height: initial; border: none; padding-top: 0; position: relative;}
+.traitTestGo_mob .QABox .bottom_qa{ height:calc(100vh - 28vh);  min-height: initial; border: none; padding: 0 15px 0 15px; position: relative;}
 
-.traitTestGo_mob .time{ top: inherit; bottom: 10px; text-align: left;}
+.traitTestGo_mob .top_data{ position: relative; height: 100%; max-width: 520px; margin: 0 auto; }
+
+.traitTestGo_mob .time{ top:inherit; bottom:25px; right: 0; text-align: left;}
 .traitTestGo_mob .time p{ font-size: 14px; color: #fff; }
 .traitTestGo_mob .time p span{ font-size: 26px; font-weight: bold; }
-.traitTestGo_mob .QABox ul.answerBox{ padding-bottom: 0; padding-top:33vh; text-align: left; padding-left: calc(4% - 8px);}
+.traitTestGo_mob .QABox ul.answerBox{ padding-bottom: 0; padding-top:10vh; text-align: center; }
 .traitTestGo_mob .QABox ul.answerBox li{ padding: 0px 3px 5px 3px; }
 .traitTestGo_mob .QABox ul.answerBox li p a{ min-width: 78px; height: 56px; line-height: 56px;}
 .traitTestGo_mob .QABox ul.answerBox li p a::after{ width: 72px; height: 50px;}
-.traitTestGo_mob .question{ position: absolute; width: 70%; top: -20px; min-height: initial; left: 4%; border-radius: 10px 0 10px 10px; padding: 30px 20px 20px 80px; }
-.traitTestGo_mob .question p{ font-size: 14px;  letter-spacing: 4px; line-height: inherit; font-weight: bold;}
+.traitTestGo_mob .question{ width:100%; max-width: 520px; margin: -15px auto 0 auto; top: -20px; min-height: initial; left: 4%; border-radius: 10px 0 10px 10px; padding: 30px 20px 20px 80px; }
+.traitTestGo_mob .question p{ font-size: 14px;  line-height: inherit; font-weight: bold;}
 .traitTestGo_mob .question p::after{ font-size: 70px; left: -66px; top: -20px; }
-.traitTestGo_mob .Q_nb{right: 30vw; top: inherit; bottom: -14px; font-size: 17px; width: 60px; height: 62px;}
+.traitTestGo_mob .Q_nb{right: 35vw; top: inherit; bottom: -14px; font-size: 17px; width: 60px; height: 62px;}
 
 .traitTestEnd_mob{ width: 100%; height: 100vh; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .traitTestEnd_mob .contentsBox {max-width: inherit; padding: 0;}
@@ -2688,13 +2690,14 @@ ul.job_management_list p.text_center{ text-align: center; }
 .logicTestBox_mob .QABox .top_bg{ height: 65px; }
 .logicTestBox_mob .Q_nb{ font-size: 40px; bottom: 10px; }
 
-.logicTestBox_mob ul.logic_question{ width: 59vh; }
+.logicTestBox_mob ul.logic_question{ width: 32vw; }
 .logicTestBox_mob .logic_answer_img{ padding-left: 20px; }
 .logicTestBox_mob .logic_answer_img p{ font-size: 12px; padding-bottom: 15px;}
-.logicTestBox_mob .logic_answer_img ul.logic_question{ width: 34vw; }
+.logicTestBox_mob .logic_answer_img ul.logic_question{ width: 32vw; }
 .logicTestBox_mob .logic_answer_img ul.logic_question li{ padding: 0 10px 10px 0;}
 .logicTestBox_mob .logic_answer_img ul.logic_question li p{ font-size: 12px }
-.logicTestBox_mob .answerBox_mob{ width: 23vw; float: left; text-align: center; background-color: #F7F0E6; height: 100vh; }
+
+.logicTestBox_mob .answerBox_mob{ width: 23vw; position: fixed; top: 0; right: 0; text-align: center; background-color: #F7F0E6; height: 100vh; }
 .logicTestBox_mob .answerBox_mob .nbBox{ padding-top: 10px; }
 .logicTestBox_mob .answerBox_mob .nbBox ul{ width:44px; display: inline-block;}
 .logicTestBox_mob .answerBox_mob .nbBox ul li{ display: inline-block; border:2px solid #EB8B70; border-width:2px 2px 0 2px; width: 36px;}
