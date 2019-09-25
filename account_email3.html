@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+	<head>
+		<meta charset="UTF-8">
+		<title>帳號設定 - E-MAIL 設定</title>
+		<meta name='description' content=""/>
+		<meta name='keywords' content=""/>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+		<!-- Magnific Popup core JS file -->
+		<script src="magnific-popup/jquery.magnific-popup.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			    $('.popup-link').magnificPopup({
+			      removalDelay: 300,
+			      mainClass: 'mfp-fade'
+			    });
+			});
+			$(function(){
+			  	$(".mail_filter").click(function(){
+			        $(this).find("ul.sub_filter").stop(true, true).fadeToggle(0);
+			    return false;
+			    });
+			 });
+		</script>
+	</head>
+	<body>
+		<header class="headerBox">
+			<div class="contentsBox clearfix">
+				<a class="logo" href="#"></a>
+				<div class="searchBox">
+					<input type="text" name="" placeholder="搜尋面試人員/現有員工">
+					<a href="#"></a>
+				</div>
+				<ul class="tools">
+					<li><a class="message" href="#"><span>3</span></a></li>
+					<li><a class="logout" href="#"></a></li>
+				</ul>
+			</div>
+		</header>
+		<main class="mainBox">
+			<div class="contentsBox clearfix">
+				<section class="side_menu">
+					<h1 class="title">明天<br>
+					企業股份有限公司</h1>
+					<ul class="menu">
+						<li><p><a class="icon_01" href="management.html">招募管理</a></p></li>
+						<li><p><a class="icon_07" href="job_management.html">職缺管理</a></p></li>
+						<li><p><a class="icon_02" href="recruit_record.html">招募紀錄</a></p></li>
+						<li><p><a class="icon_03" href="employee_data.html">現有員工</a></p></li>
+						<li><p><a class="icon_06" href="talent_management.html">人才管理</a></p></li>
+						<li><p class="btn_in"><a class="icon_04" href="account.html">帳號設定</a></p></li>
+						<li><p><a class="icon_05" href="HR_helper.html">HR小幫手</a></p></li>
+					</ul>
+				</section>
+				<section class="right_contents pad_top clearfix">
+					<div class="clearfix">
+						<ul class="top_setting_menu clearfix">
+							<li><p><a href="account.html">基本設定</a></p></li>
+							<li><p><a href="account_organization.html">組織設定</a></p></li>
+							<li><p><a href="account_registration.html">報到條件設定</a></p></li>
+							<li class="btn_in"><p><a href="account_email.html">E-MAIL 設定</a></p></li>
+							<li class="none"><p><a href="account_questionnaire.html">問卷設定</a></p></li>
+							<li class="none"><p><a href="account_interviewer.html">面試官設定</a></p></li>
+						</ul>
+					</div>
+					<div class="setting_contents set_mailbox clearfix">
+						<div class="theBox">
+							<form class="mail_content">
+								<fieldset class="verification">
+									<p class="content_title tick">寄件者：</p>
+									<div class="clearfix">
+										<input type="text" name="" value="凱茂股份有限公司   hello@kamo.com.tw">
+										<p class="btn block"><a class="bg_green" href="account_email4.html">驗證成功</a></p>
+										<p class="btn edit"><a href="account_email4.html">修改</a></p>
+									</div>
+								</fieldset>
+							</form>
+							<div class="mail_filter clearfix">
+								<p class="title btn_in"><a href="#"><span>報到通知信件</span></a></p>
+								<ul class="sub_filter">
+									<li><p>面試通知信件</p></li>
+									<li><p>求職者測驗連結信件</p></li>
+									<li><p>現有員工測驗連結信件</p></li>
+									<li><p>錄取報到通知信件</p></li>
+									<li><p>未錄取通知信件</p></li>
+								</ul>
+							</div>
+							<form class="mail_content">
+								<fieldset>
+									<p class="content_title">主旨：</p>
+									<input type="text" name="" value="凱茂股份有限公司   hello@kamo.com.tw">
+								</fieldset>
+								<fieldset>
+									<p class="content_title">內容：<span class="red">藍字部分會由系統自動帶入資訊請勿刪除，黑字部分請自行修改所需之內文。</span></p>
+									<div class="text_editbox">
+										<p>台端  <span>//*求職者姓名*//</span>先生/小姐，<br>
+											幸蒙您至敝公司參加入職甄試，經敝公司各級主管複審後，決定聘請您擔任//*面試職務*//職位，我們對於您在面談時傑出的表現留下良好的印象，竭誠地歡迎您加入我們的團隊，並對您將勝任的專職有著很深的期許。<br>
+											<br>
+											您的報到資訊如下：<br>
+											<br>
+											一、報到時間：<span>//*報到時間*//</span><br>
+											　　報到地址：<br>
+											二、請您攜帶下列物件至敝公司管理部辦理報到手續。<br>
+											　　1.最近三個月內正面二寸脫帽半身彩色照片2張。 <br>
+											　　2.國民身份証正本(報到當日核對無誤後,立即發還)。<br>
+											　　3.退伍令正本（男性同仁，報到當日核對無誤後，立即發還）。<br>
+											　　4.最高學歷畢業證書正本（報到當日核對無誤後，立即發還）。<br>
+											　　5.最後任職公司離職證明正本。<br>
+											　　6.薪資轉帳存摺封面影本：OO銀行。<br>
+											　　7.與工作相關之專業證照（報到當日核對無誤後，立即發還）。<br>
+											三、如您不克按時報到或有任何疑問，請於報到前三日來電通知，電話(02)XXXXXXXX 轉分機XXX，O先生/小姐，
+											　　若逾期未報到，將視為您自動放棄敝公司職位。
+											四、如報到時，遇到颱風，經縣市政府公告停班，<br>
+											　　則報到日期順延一天。<br>
+											五、如報到文件無法於報到當天繳交，請於一週內完成補交。<br>
+											六、這份錄取通知，經雙方達成共識，未經彼此同意，不得做暗示性的或口頭上或書面上的修訂及更正。<br>
+											七、若上述事項經確認無誤，敬請簽回確認，本通知書一式二份，一份個人保留，一份OOO有限公司管理部存放備查。<br>
+											<br>
+											OOOOOOOO有限公司 管理部  謹致<br>
+											<span>//*當天日期*//</span></p>
+									</div>
+								</fieldset>
+								<fieldset class="radio">
+									<div class="clearfix">
+										<p class="content_title">此封信件是否要設定為自動寄信</p>
+										<div class="setting_item">
+											<input id="" type="radio" name="mail" value="自動寄信">
+											<label for="option">自動寄信</label>
+										</div>
+										<div class="setting_item">
+											<input id="" type="radio" name="mail" value="不使用自動寄信">
+											<label for="option">不使用自動寄信</label>
+										</div>
+									</div>
+								</fieldset>
+								
+								<p class="btn block">
+									<a class="bg_org" href="account_email4.html">復原初始內容</a>
+									<a class="bg_gray" href="account_email4.html">取消</a>
+									<a href="account_email4.html">儲存</a>
+								</p>
+							</form>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>
+
+
+

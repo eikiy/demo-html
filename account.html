@@ -2,13 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<title>帳號設定</title>
+<title>帳號設定 - 基本設定</title>
 <meta name='description' content=""/>
 <meta name='keywords' content=""/>
-<!-- <meta name="MobileOptimized" content="width">
-<meta name="HandheldFriendly" content="true">
-<meta name="viewport" content="width=device-width, initial-scale=1">
- -->
 <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 
@@ -57,177 +53,85 @@ $(document).ready(function() {
 			</ul>
 		</section>
 		<section class="right_contents pad_top clearfix">
-			<div class="l_Box">
-				<div class="theBox">
-					<h3>公司LOGO</h3>
-					<div class="infoBox">
-						<a class="select_file" href="#">
-							<p class="icon">選擇檔案</p>
-							<p class="note">建議選擇png檔</p>
-						</a>
-					</div>
-				</div>
-				<div class="theBox">
-					<h3>特質報告</h3>
-					<div class="infoBox">
-						<p class="sub_title">尚可使用點數</p>
-						<p class="money">50</p>
-						<p class="btn">
-							<a class="popup-link" href="#popup-storedValue">儲值紀錄</a>
-							<a class="popup-link" href="#popup-use">使用紀錄</a>
-						</p>
-					</div>
-				</div>
-				<div class="theBox">
-					<h3>帳號設定</h3>
-					<div class="infoBox">
-						<p class="sub_title">帳號名稱：abcde</p>
-						<p class="btn">
-							<a class="popup-link" href="#popup-pw">密碼變更</a>
-						</p>
-					</div>
-				</div>
+			<div class="clearfix">
+				<ul class="top_setting_menu clearfix">
+					<li class="btn_in"><p><a href="account.html">基本設定</a></p></li>
+					<li><p><a href="account_organization.html">組織設定</a></p></li>
+					<li><p><a href="account_registration.html">報到條件設定</a></p></li>
+					<li><p><a href="account_email.html">E-MAIL 設定</a></p></li>
+					<li class="none"><p><a href="account_questionnaire.html">問卷設定</a></p></li>
+					<li class="none"><p><a href="account_interviewer.html">面試官設定</a></p></li>
+				</ul>
 			</div>
-			<div class="r_Box">
-				<div class="theBox">
-					<h3>組織設定</h3>
-					<div class="infoBox">
-						<div class="stageBox">
-							<h4>第1階</h4>
-							<ul class="item">
-								<li><p><a class="btn_in">明天股份有限公司</a></p></li>
-							</ul>
-							<p class="btn"><a class="add popup-link" href="#popup">新增</a></p>
-						</div>
-						<div class="stageBox">
-							<h4>第2階</h4>
-							<ul class="item">
-								<li><p><a class="btn_in">行政管理處</a></p></li>
-								<li><p><a>製造處</a></p></li>
-								<li><p><a>銷售處</a></p></li>
-								<li><p><a>研發一處</a></p></li>
-								<li><p><a>研發二處</a></p></li>
-								<li><p><a>財務處</a></p></li>
-							</ul>
-							<p class="btn"><a class="add popup-link" href="#popup">新增</a></p>
-						</div>
-						<div class="stageBox">
-							<h4>第3階</h4>
-							<ul class="item">
-								<li><p><a class="btn_in" href="#">人資部</a></p></li>
-								<li><p><a>總務部</a></p></li>
-								<li><p><a>資訊部</a></p></li>
-								<li><p><a>廠務部</a></p></li>
-							</ul>
-							<p class="btn"><a class="add popup-link" href="#popup">新增</a></p>
-						</div>
-						<div class="stageBox">
-							<h4>第4階</h4>
-							<ul class="item">
-								<li><p><a>訓練課</a></p></li>
-								<li><p><a class="btn_in">招募課</a></p></li>
-								<li><p><a>薪酬課</a></p></li>
-							</ul>
-							<p class="btn"><a class="add popup-link" href="#popup">新增</a></p>
-						</div>
-						<div class="stageBox">
-							<h4>第5階</h4>
-							<ul class="item">
-								<li><p><a>招募一組</a></p></li>
-								<li><p><a>招募二組</a></p></li>
-							</ul>
-							<p class="btn"><a class="add popup-link" href="#popup">新增</a></p>
+			<div class="setting_contents set_layout clearfix">
+				<div class="l_Box">
+					<div class="theBox">
+						<h3>公司LOGO</h3>
+						<div class="infoBox">
+							<a class="select_file" href="#">
+								<p class="icon">選擇檔案</p>
+								<p class="note">建議選擇png檔</p>
+							</a>
 						</div>
 					</div>
-					<p class="btn bottom">
-						<a class="edit" href="account_edit.html">編輯名稱</a>
-						<a class="lock" href="account_lock.html">刪除解鎖</a>
-					</p>
+					<div class="theBox">
+						<h3>更多設定</h3>
+						<div class="infoBox text_left setting_list">
+							<p class="sub_title">請問是否開啟下列功能？</p>
+							<div class="setting_item">
+								<input id="" type="checkbox" name="" value="線上履歷表">
+								<label for="option">線上履歷表</label>
+							</div>
+							<div class="setting_item">
+								<input id="" type="checkbox" name="" value="應徵問卷">
+								<label for="option">應徵問卷</label>
+							</div>
+						</div>
+					</div>
 				</div>
+				<div class="r_Box">
+					<div class="theBox">
+						<h3>帳號設定</h3>
+						<div class="infoBox text_left">
+							<ul class="member_status">
+								<li><p>公司名稱：明天股份有限公司</p></li>
+								<li><p>會員狀態：VIP會員</p></li>
+							</ul>
+							<ul class="member_status none_line">
+								<li><p><span class="l_t_w">帳號名稱：</span><span class="c_k">abcde</span><a class="link popup-link" href="#popup-pw">密碼變更</a></p></li>
+							</ul>
+						</div>
+					</div>
+					<div class="theBox">
+						<h3>使用狀態 </h3>
+						<div class="infoBox text_left">
+							<div class="more_height">
+								<ul class="member_status">
+									<li><p class="none_gray"><span class="l_t_w">使用狀態：</span><span class="c_red">已申請暫停</span><a class="link open" href="#">開啟使用<span class="tooltip">到期日到期後<br>才可重新開啟使用</span></a></p></li>
+									<li><p class="none_gray"><span class="l_t_w">使用狀態：</span><span class="c_green">使用中</span><a class="link pause" href="#">暫停使用<span class="tooltip">剩餘不到一個月份<br>請重新購買月租</span></a></p></li>
+									<li><p><span class="l_t_w">使用狀態：</span><span class="c_red">暫停中</span><a class="link open" href="#">開啟使用</a></p></li>
+									<li><p><span class="l_t_w">使用狀態：</span><span class="c_green">使用中</span><a class="link pause" href="#">暫停使用</a></p></li>
+									<li><p><span class="l_t_w">到期日：</span><span class="c_gray">開啟使用後顯示</span></p></li>
+									<li><p><span class="l_t_w">剩餘月份：</span>3個月</p></li>
+								</ul>
+								<ul class="member_status none_line ">
+									<li><p><span class="l_t_w">剩餘點數：</span><span class="c_k">13點</span></p></li>
+								</ul>
+							</div>
+							<div class="bottom_other_btn">
+								<p class="btn">
+									<a class="popup-link" href="#popup-use">使用紀錄</a>
+									<a href="#popup-storedValue">購買紀錄</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="customer_service">購買點數/服務電話與E-MAIL<br>
+					02-8792.5569   <a href="mailto:hello@kamo.com.tw">hello@kamo.com.tw</a></p>
 			</div>
 		</section>
 	</div>
-
-	<!-- popup 新增部門 -->
-	<div id="popup" class="white-popup popup-w-s mfp-hide">
-        <form class="setBox">
-            <div class="top_title">
-                <h3>新增部門</h3>
-            </div>
-            <div class="fillinBox">
-                <ul>
-                    <li>
-                        <label class="l_title" for=""><p>隸屬部門</p></label>
-                        <p class="r_info">明天股份有限公司</p>
-                    </li>
-                    <li>
-                        <label class="l_title" for=""><p>部門名稱</p></label>
-                        <input class="r_info" id="" name="" type="text">
-                    </li>
-                </ul>
-                <p class="btn"><a href="#">確認</a></p>
-            </div>
-        </form>
-    </div>
-
-    <!-- popup 儲值紀錄 -->
-	<div id="popup-storedValue" class="white-popup popup-w-s mfp-hide">
-        <form class="setBox">
-            <div class="top_title">
-                <h3>儲值紀錄</h3>
-            </div>
-            <div class="fillinBox storedValueBox">
-            	<ul class="top_points">
-                    <li>
-                        <p class="p_info">尚可使用點數</p>
-                        <p class="p_info nb">50</p>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <p class="p_info">購買日期</p>
-                        <p class="p_info">購買金額</p>
-                        <p class="p_info">使用次數變更</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/11/01</p>
-                        <p class="p_info">$2000</p>
-                        <p class="p_info">+12</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/08/02</p>
-                        <p class="p_info">$8000</p>
-                        <p class="p_info">+10</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/07/14</p>
-                        <p class="p_info">$10000</p>
-                        <p class="p_info">+12</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/06/09</p>
-                        <p class="p_info">$12000</p>
-                        <p class="p_info">+12</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/05/21</p>
-                        <p class="p_info">$120000</p>
-                        <p class="p_info">+200</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/03/01</p>
-                        <p class="p_info">$12000</p>
-                        <p class="p_info">+12</p>
-                    </li>
-                </ul>
-                <p class="btn page_nb">
-                	<a class="btn_in" href="#">1</a>
-                	<a href="#">2</a>
-                	<a href="#">3</a>
-                </p>
-            </div>
-        </form>
-    </div>
 
     <!-- popup 使用紀錄 -->
 	<div id="popup-use" class="white-popup popup-M mfp-hide">
@@ -374,6 +278,64 @@ $(document).ready(function() {
         </form>
     </div>
 
+    <!-- popup 儲值紀錄 -->
+	<div id="popup-storedValue" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox">
+            <div class="top_title">
+                <h3>儲值紀錄</h3>
+            </div>
+            <div class="fillinBox storedValueBox">
+            	<ul class="top_points">
+                    <li>
+                        <p class="p_info">尚可使用點數</p>
+                        <p class="p_info nb">50</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p class="p_info">購買日期</p>
+                        <p class="p_info">購買金額</p>
+                        <p class="p_info">使用次數變更</p>
+                    </li>
+                    <li>
+                        <p class="p_info">2018/11/01</p>
+                        <p class="p_info">$2000</p>
+                        <p class="p_info">+12</p>
+                    </li>
+                    <li>
+                        <p class="p_info">2018/08/02</p>
+                        <p class="p_info">$8000</p>
+                        <p class="p_info">+10</p>
+                    </li>
+                    <li>
+                        <p class="p_info">2018/07/14</p>
+                        <p class="p_info">$10000</p>
+                        <p class="p_info">+12</p>
+                    </li>
+                    <li>
+                        <p class="p_info">2018/06/09</p>
+                        <p class="p_info">$12000</p>
+                        <p class="p_info">+12</p>
+                    </li>
+                    <li>
+                        <p class="p_info">2018/05/21</p>
+                        <p class="p_info">$120000</p>
+                        <p class="p_info">+200</p>
+                    </li>
+                    <li>
+                        <p class="p_info">2018/03/01</p>
+                        <p class="p_info">$12000</p>
+                        <p class="p_info">+12</p>
+                    </li>
+                </ul>
+                <p class="btn page_nb">
+                	<a class="btn_in" href="#">1</a>
+                	<a href="#">2</a>
+                	<a href="#">3</a>
+                </p>
+            </div>
+        </form>
+    </div>
     <!-- popup 密碼變更 -->
 	<div id="popup-pw" class="white-popup popup-w-s mfp-hide">
         <form class="setBox">

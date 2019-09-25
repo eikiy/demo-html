@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+	<head>
+		<meta charset="UTF-8">
+		<title>帳號設定 - E-MAIL 設定</title>
+		<meta name='description' content=""/>
+		<meta name='keywords' content=""/>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+		<!-- Magnific Popup core JS file -->
+		<script src="magnific-popup/jquery.magnific-popup.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			    $('.popup-link').magnificPopup({
+			      removalDelay: 300,
+			      mainClass: 'mfp-fade'
+			    });
+			});
+			$(function(){
+			  	$(".mail_filter").click(function(){
+			        $(this).find("ul.sub_filter").stop(true, true).fadeToggle(0);
+			    return false;
+			    });
+			 });
+		</script>
+	</head>
+	<body>
+		<header class="headerBox">
+			<div class="contentsBox clearfix">
+				<a class="logo" href="#"></a>
+				<div class="searchBox">
+					<input type="text" name="" placeholder="搜尋面試人員/現有員工">
+					<a href="#"></a>
+				</div>
+				<ul class="tools">
+					<li><a class="message" href="#"><span>3</span></a></li>
+					<li><a class="logout" href="#"></a></li>
+				</ul>
+			</div>
+		</header>
+		<main class="mainBox">
+			<div class="contentsBox clearfix">
+				<section class="side_menu">
+					<h1 class="title">明天<br>
+					企業股份有限公司</h1>
+					<ul class="menu">
+						<li><p><a class="icon_01" href="management.html">招募管理</a></p></li>
+						<li><p><a class="icon_07" href="job_management.html">職缺管理</a></p></li>
+						<li><p><a class="icon_02" href="recruit_record.html">招募紀錄</a></p></li>
+						<li><p><a class="icon_03" href="employee_data.html">現有員工</a></p></li>
+						<li><p><a class="icon_06" href="talent_management.html">人才管理</a></p></li>
+						<li><p class="btn_in"><a class="icon_04" href="account.html">帳號設定</a></p></li>
+						<li><p><a class="icon_05" href="HR_helper.html">HR小幫手</a></p></li>
+					</ul>
+				</section>
+				<section class="right_contents pad_top clearfix">
+					<div class="clearfix">
+						<ul class="top_setting_menu clearfix">
+							<li><p><a href="account.html">基本設定</a></p></li>
+							<li><p><a href="account_organization.html">組織設定</a></p></li>
+							<li><p><a href="account_registration.html">報到條件設定</a></p></li>
+							<li class="btn_in"><p><a href="account_email.html">E-MAIL 設定</a></p></li>
+							<li class="none"><p><a href="account_questionnaire.html">問卷設定</a></p></li>
+							<li class="none"><p><a href="account_interviewer.html">面試官設定</a></p></li>
+						</ul>
+					</div>
+					<div class="setting_contents set_mailbox clearfix">
+						<div class="theBox">
+							<form class="mail_content">
+								<fieldset class="verification">
+									<p class="content_title tick">寄件者：</p>
+									<div class="clearfix">
+										<input type="text" name="" value="凱茂股份有限公司   hello@kamo.com.tw">
+										<p class="btn block"><a class="bg_green" href="#">驗證成功</a></p>
+										<p class="btn edit"><a href="#">修改</a></p>
+									</div>
+								</fieldset>
+							</form>
+							<div class="mail_filter clearfix">
+								<p class="title btn_in"><a href="#"><span>求職者測驗連結信件</span></a></p>
+								<ul class="sub_filter">
+									<li><p>面試通知信件</p></li>
+									<li><p>求職者測驗連結信件</p></li>
+									<li><p>現有員工測驗連結信件</p></li>
+									<li><p>錄取報到通知信件</p></li>
+									<li><p>未錄取通知信件</p></li>
+								</ul>
+							</div>
+							<form class="mail_content">
+								<fieldset>
+									<p class="content_title">主旨：</p>
+									<input type="text" name="" value="凱茂股份有限公司   hello@kamo.com.tw">
+								</fieldset>
+								<fieldset>
+									<p class="content_title">內容：<span class="red">藍字部分會由系統自動帶入資訊請勿刪除，黑字部分請自行修改所需之內文。</span></p>
+									<div class="text_editbox">
+										<p><span>//*求職者姓名*// </span>先生/小姐，您好：<br>
+											<br>
+											很開心能您能參與本公司的面試活動，先請您協助本公司做以下的測驗：<br>
+											<span>//*測驗項目名稱*//</span><br> 
+											<span>//*測驗連結*//</span><br>
+											<br>
+											備註1. 請直接點開連結即可開始測驗，並請詳閱每項測驗之說明。<br>
+											備註2.建議您使用google瀏覽器 Chrome打開連結<br>
+											<br>
+											OOOOOOOO有限公司 管理部  謹致<br>
+											<span>//*當天日期*//</span></p>
+									</div>
+								</fieldset>
+								<fieldset class="radio">
+									<div class="clearfix">
+										<p class="content_title">此封信件是否要設定為自動寄信</p>
+										<div class="setting_item">
+											<input id="" type="radio" name="mail" value="自動寄信">
+											<label for="option">自動寄信</label>
+										</div>
+										<div class="setting_item">
+											<input id="" type="radio" name="mail" value="不使用自動寄信">
+											<label for="option">不使用自動寄信</label>
+										</div>
+									</div>
+								</fieldset>
+								
+								<p class="btn block">
+									<a class="bg_org" href="#">復原初始內容</a>
+									<a class="bg_gray" href="#">取消</a>
+									<a href="#">儲存</a>
+								</p>
+							</form>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>
+
+
+

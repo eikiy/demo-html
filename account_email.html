@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+	<head>
+		<meta charset="UTF-8">
+		<title>帳號設定 - E-MAIL 設定</title>
+		<meta name='description' content=""/>
+		<meta name='keywords' content=""/>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+		<!-- Magnific Popup core JS file -->
+		<script src="magnific-popup/jquery.magnific-popup.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			    $('.popup-link').magnificPopup({
+			      removalDelay: 300,
+			      mainClass: 'mfp-fade'
+			    });
+			});
+			$(function(){
+			  	$(".mail_filter").click(function(){
+			        $(this).find("ul.sub_filter").stop(true, true).fadeToggle(0);
+			    return false;
+			    });
+			 });
+		</script>
+	</head>
+	<body>
+		<header class="headerBox">
+			<div class="contentsBox clearfix">
+				<a class="logo" href="#"></a>
+				<div class="searchBox">
+					<input type="text" name="" placeholder="搜尋面試人員/現有員工">
+					<a href="#"></a>
+				</div>
+				<ul class="tools">
+					<li><a class="message" href="#"><span>3</span></a></li>
+					<li><a class="logout" href="#"></a></li>
+				</ul>
+			</div>
+		</header>
+		<main class="mainBox">
+			<div class="contentsBox clearfix">
+				<section class="side_menu">
+					<h1 class="title">明天<br>
+					企業股份有限公司</h1>
+					<ul class="menu">
+						<li><p><a class="icon_01" href="management.html">招募管理</a></p></li>
+						<li><p><a class="icon_07" href="job_management.html">職缺管理</a></p></li>
+						<li><p><a class="icon_02" href="recruit_record.html">招募紀錄</a></p></li>
+						<li><p><a class="icon_03" href="employee_data.html">現有員工</a></p></li>
+						<li><p><a class="icon_06" href="talent_management.html">人才管理</a></p></li>
+						<li><p class="btn_in"><a class="icon_04" href="account.html">帳號設定</a></p></li>
+						<li><p><a class="icon_05" href="HR_helper.html">HR小幫手</a></p></li>
+					</ul>
+				</section>
+				<section class="right_contents pad_top clearfix">
+					<div class="clearfix">
+						<ul class="top_setting_menu clearfix">
+							<li><p><a href="account.html">基本設定</a></p></li>
+							<li><p><a href="account_organization.html">組織設定</a></p></li>
+							<li><p><a href="account_registration.html">報到條件設定</a></p></li>
+							<li class="btn_in"><p><a href="account_email.html">E-MAIL 設定</a></p></li>
+							<li class="none"><p><a href="account_questionnaire.html">問卷設定</a></p></li>
+							<li class="none"><p><a href="account_interviewer.html">面試官設定</a></p></li>
+						</ul>
+					</div>
+					<div class="setting_contents set_mailbox bg_mailbox_owl clearfix">
+						<div class="theBox">
+							<form class="mail_content">
+								<fieldset>
+									<p class="content_title">寄件者名稱：<span>使收件者可以立即識別的內容，例如您的公司名稱。</span></p>
+									<input type="text" name="">
+								</fieldset>
+								<fieldset class="verification">
+									<p class="content_title">電子郵件：<span>收件者直接回信將會回覆到此信箱。</span></p>
+									<div class="clearfix">
+										<input type="text" name="">
+										<p class="btn block"><a class="bg_green" href="account_email2.html">驗證</a></p>
+									</div>
+									<p class="remind">輸入錯誤</p>
+								</fieldset>
+								<p class="btn block">
+									<a class="bg_gray" href="account_email2.html">取消</a>
+									<a href="account_email2.html">儲存</a>
+								</p>
+							</form>
+							<div class="mail_filter clearfix">
+								<!-- 選取中 p + "btn_in" -->
+								<!-- <p class="title btn_in"><a href="#"><span>求職者測驗連結信件</span></a></p> -->
+								<p class="title"><a href="#"><span>請選擇寄件項目</span></a></p>
+								<ul class="sub_filter" style=" display: block;">
+									<li><p>面試通知信件</p></li>
+									<li><p>求職者測驗連結信件</p></li>
+									<li><p>現有員工測驗連結信件</p></li>
+									<li><p>錄取報到通知信件</p></li>
+									<li><p>未錄取通知信件</p></li>
+								</ul>
+							</div>
+						</div>
+						<div class="owl_message">
+							<p><span>設定完成後，<br>就能系統自動寄信好方便!</span></p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>
+
+
+
