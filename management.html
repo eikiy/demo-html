@@ -1013,8 +1013,17 @@
     </div>
 
     <!-- popup-step-01 icon1：面試排程 day-->
-	<div id="popup-step-01" class="white-popup popup-w-s mfp-hide">
-        <form class="setBox">
+	<div id="popup-step-01" class="setBox white-popup popup-w-s mfp-hide popup-padding-top">
+		<div class="mail_send_status">
+			<p class="clearfix">
+				<a class="remind_greenbox" href="#">查看寄件紀錄
+					<span class="tooltip">
+						<span class="icon_thumbtack">尚未設定此求職者E-mail</span>
+					</span>
+				</a>
+			<</p>
+		</div>
+        <form class="setBox messageBox check_remind">
             <div class="top_title">
                 <h3>面試排程</h3>
             </div>
@@ -1029,6 +1038,12 @@
                         <input class="r_info" id="" name="" type="text" value="13:30">
                     </li>
                 </ul>
+                <div class="RedBox border_yello"> <!-- #當『面試通知信件』設定自動寄信 『日期與時間都選定後』 出現此提醒! -->
+	                <p class="info">當日期選定按下<span>確認鍵</span>，<br>
+	                	會自動將<span>面試通知信(含履歷與問卷連結)</span>寄出給求職者。<br>
+	                	可至帳號設定中取消自動寄信功能。
+	            	</p>
+	            </div>
                 <div class="day_selectBpx">
                 	<div class="monthBox">
 						<div class="top_year_month">
@@ -1178,15 +1193,67 @@
                 		</ul>
                 	</div>
                 </div>
-                <p class="btn"><a class="bg_skyblue" href="#">確認</a></p>
+                <p class="btn"><a class="bg_skyblue popup-link" href="#popup-send-ok">確認</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup-step-01-3 icon1：已將面試通知信(含履歷與問卷連結)寄出-->
+    <div id="popup-send-ok" class="white-popup popup-w-s mfp-hide popup-padding-top">
+        <form class="setBox messageBox check_remind">
+            <div class="RedBox border_yello">
+            	<p class="info icon_mail_send send_done">已將面試通知信(含履歷與問卷連結)寄出。</p>
+	        </div>
+        </form>
+    </div>
+
+     <!-- popup 查看寄件紀錄 -->
+	<div id="popup-mail-record" class="white-popup popup-w-s mfp-hide">
+        <form class="setBox">
+            <div class="top_title">
+                <h3 class="yello">寄件紀錄</h3>
+            </div>
+            <div class="fillinBox mail_send_record">
+                <ul>
+                    <li>
+                        <p class="p_info">寄件日期/時間</p>
+                        <p class="p_info">寄件項目</p>
+                        <p class="p_info">寄件結果</p>
+                    </li>
+                    <li>
+                        <p class="p_info">2019/10/01/12:00</p>
+                        <p class="p_info">面試取通知信</p>
+                        <p class="p_info c_green">成功</p>
+                    </li>
+                    <li>
+                        <p class="p_info">2019/10/01/12:00</p>
+                        <p class="p_info"><a href="#">未錄取通知信</a></p><!-- #寄件未成功，按寄件項目可直接到那個視窗 -->
+                        <p class="p_info c_red">失敗</p>
+                    </li>
+                    <li>
+                        <p class="p_info">2019/10/01/12:00</p>
+                        <p class="p_info">未錄取通知信</p>
+                        <p class="p_info c_green">成功</p>
+                    </li>
+                </ul>
             </div>
         </form>
     </div>
 
     <!-- popup-step-02 icon2：個人資料-->
-    <div id="popup-step-03" class="white-popup popup-w-s mfp-hide">
+    <div id="popup-step-03" class="white-popup popup-w-s mfp-hide popup-padding-top">
+        <div class="mail_send_status">
+			<p class="send_none clearfix">
+				<a class="bg_w" href="#">重新發送信件
+					<span class="tooltip">
+						<span>未寄件成功</span>
+					</span>
+                </a>
+                <a class="bg_y popup-link" href="#popup-mail-record">查看寄件紀錄</a>
+            </p>
+		</div>
         <form class="setBox management_pop messageBox check_remind">
-            <div class="top_title">
+			<div class="top_title">
                 <h3>個人資料</h3>
             </div>
             <div class="fillinBox">
@@ -2046,9 +2113,14 @@
         </div>
     </div>
     <!-- popup-step-04-4 icon4：不錄取 + 原因-->
-    <div id="popup-step-11-none" class="white-popup popup-w-s mfp-hide">
-        <form class="setBox messageBox">
-            <div class="RedBox">
+    <div id="popup-step-11-none" class="white-popup popup-w-s mfp-hide popup-padding-top">
+        <div class="mail_send_status">
+			<p class="send clearfix">
+                <a class="bg_y popup-link" href="#popup-mail-record">查看寄件紀錄</a>
+            </p>
+		</div>
+        <form class="setBox messageBox check_remind ">
+			<div class="RedBox">
                 <p class="info">請問確定不錄取<span>王明天</span>嗎？<br>如確定不錄取，資料將被移至招募紀錄中。</p>
             </div>
             <div class="fillinBox RedBox no_reason">
@@ -2061,13 +2133,36 @@
                     </li>
                 </ul>
             </div>
-            <p class="btn"><a class="bg_gary" href="#">取消</a><a class="bg_red" href="#">確認不錄取</a></p>
+            <div class="RedBox border_yello">
+            	<p class="info">按下<span class="red">確認不錄取</span>按鍵後，<br>
+            		會自動將<span class="red">未錄取通知信件</span>寄出給求職者。<br>
+            		如需改為手動寄信請至帳號設定中修改。
+            	</p>
+	        </div>
+            <p class="btn"><a class="bg_gary" href="#">取消</a><a class="bg_red popup-link" href="#popup-send-error">確認不錄取</a></p>
+        </form>
+    </div>
+    <!-- popup-step-04-5 icon1：已將面試通知信(含履歷與問卷連結)寄出-->
+    <div id="popup-send-error" class="white-popup popup-w-s mfp-hide popup-padding-top">
+        <form class="setBox messageBox check_remind">
+            <div class="RedBox border_yello">
+            	<p class="info icon_mail_send send_none">未錄取通知信件尚未寄件成功，<br>請確認信箱填寫無誤、網路連線等。</p>
+	        </div>
         </form>
     </div>
 
-
     <!-- popup-step-05 icon5:報到排程-->
-    <div id="popup-step-12" class="white-popup popup-w-s mfp-hide">
+    <div id="popup-step-12" class="white-popup popup-w-s mfp-hide popup-padding-top">
+    	<div class="mail_send_status">
+			<p class="send_done clearfix">
+				<a class="bg_w" href="#">重新發送信件
+					<span class="tooltip">
+						<span>寄件成功</span>
+					</span>
+                </a>
+                <a class="bg_y popup-link" href="#popup-mail-record">查看寄件紀錄</a>
+            </p>
+		</div>
         <form class="setBox management_pop">
             <div class="top_title">
                 <h3>報到排程</h3>
