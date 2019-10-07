@@ -1,0 +1,8 @@
+<svg id="Group_13" data-name="Group 13" xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16">
+  <path id="Fill_1" data-name="Fill 1" d="M16,4H2A2,2,0,0,1,2,0H16a2,2,0,0,1,0,4" transform="translate(5)" fill="#81b6c8"/>
+  <path id="Fill_3" data-name="Fill 3" d="M16,4H2A2,2,0,0,1,2,0H16a2,2,0,0,1,0,4" transform="translate(5 6)" fill="#81b6c8"/>
+  <path id="Fill_5" data-name="Fill 5" d="M16,4H2A2,2,0,0,1,2,0H16a2,2,0,0,1,0,4" transform="translate(5 12)" fill="#81b6c8"/>
+  <path id="Fill_7" data-name="Fill 7" d="M4,2A2,2,0,1,1,2,0,2,2,0,0,1,4,2" fill="#81b6c8"/>
+  <path id="Fill_9" data-name="Fill 9" d="M4,2A2,2,0,1,1,2,0,2,2,0,0,1,4,2" transform="translate(0 6)" fill="#81b6c8"/>
+  <path id="Fill_11" data-name="Fill 11" d="M4,2A2,2,0,1,1,2,0,2,2,0,0,1,4,2" transform="translate(0 12)" fill="#81b6c8"/>
+</svg>
