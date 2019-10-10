@@ -1702,7 +1702,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .popup-L .filter_pop .chosenBox .g_ex{ border-width: 1px; max-width: 890px; margin: 0 auto; }
 .popup-L .interviewMainBox{ min-height: initial; }
 /*.popup-L input[type=checkbox]:not(old) + label{ background-image: url(../images/checks_k.png); background-position: 0 -73px;}*/
-.popup-L input[type=checkbox]:not(old):checked + label{ background-image: url(../images/checks_k.png); background-position: 0 -73px;}
+.popup-L .interview_officer_Main .u_infoBox .use_fillinBox input[type=checkbox]:not(old):checked + label{ background-image: url(../images/checks_k.png); background-position: 0 -73px;}
 .firstTestBox{ padding-top: 90px; min-height: 440px; position: relative; }
 .firstTestBox::after{content: ""; width: 296px; height: 158px; display: block; position: absolute; bottom: 0; left:calc(50% - 148px); background: url(../images/user_info/br_firstTest.png) center bottom no-repeat; background-size: cover; }
 .firstTestBox h4{ font-size: 18px; line-height: 25px; text-align: center;  padding: 55px 0 20px;}
@@ -2683,10 +2683,8 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box .interviewee_info h3.test_report_title{ border-radius: 0; background-color: #EBEBEB; font-size: 14px; padding-left: 0; text-align: center;}
 .print_box .interviewee_info .new_report .top_topic{ padding: 20px 40px; margin-bottom: 15px; border-color: #81B6C8; }
 .print_box .interviewee_info .interviewMainBox .top_ivBox{ padding: 0 0 15px 0; }
-.print_box .interviewee_info .interview_officer_Main .top_interviewer_info{ border: none; width: initial; height: initial; }
-.print_box .interviewee_info .interview_officer_Main .top_interviewer_info .left_photo .the_photo{ border:1px solid #979797; border-radius: 10px;}
-.print_box .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox{ margin-left: 15px; border: none; border:1px solid #979797; border-radius: 10px 0 10px 10px; }
 .print_box .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .iBox p{ font-size: 14px; }
+
 .print_box .interviewee_info .c_logictest_org h4.bg_dark_blue{ border-color: #E5AF57; background-color: #F7F0E6;}
 .print_box .interviewee_info .c_logictest_org .positive_behavior{ border: none; margin-top: 0; }
 .print_box .interviewee_info .c_logictest_org .positive_behavior .answer_questions ul.no_q li p::after{ border: 1px solid #D8D8D8; background-color: #fff; }
