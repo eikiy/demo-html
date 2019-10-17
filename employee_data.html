@@ -26,6 +26,43 @@
 	    });
 	 });
 </script>
+<script type="text/javascript">
+	$(function(){
+    jQuery('img.svg').each(function(){
+        var $img = jQuery(this);
+        var imgID = $img.attr('id');
+        var imgClass = $img.attr('class');
+        var imgURL = $img.attr('src');
+    
+        jQuery.get(imgURL, function(data) {
+            // Get the SVG tag, ignore the rest
+            var $svg = jQuery(data).find('svg');
+    
+            // Add replaced image's ID to the new SVG
+            if(typeof imgID !== 'undefined') {
+                $svg = $svg.attr('id', imgID);
+            }
+            // Add replaced image's classes to the new SVG
+            if(typeof imgClass !== 'undefined') {
+                $svg = $svg.attr('class', imgClass+' replaced-svg');
+            }
+    
+            // Remove any invalid XML tags as per http://validator.w3.org
+            $svg = $svg.removeAttr('xmlns:a');
+            
+            // Check if the viewport is set, else we gonna set it if we can.
+            if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+                $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+            }
+    
+            // Replace image with new SVG
+            $img.replaceWith($svg);
+    
+        }, 'xml');
+    
+    });
+});
+</script>
 </head>
 <body>
 
@@ -1063,7 +1100,7 @@
 										</a>
 									</p>
 									<div class="btn_delete">
-										<a href="#"><span class="tooltip">更改狀態</span></a>
+										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
 										<a class="popup-link" href="#">
@@ -1073,7 +1110,7 @@
 								</div>
 								<div class="embarrassment clearfix">
 									<p class="btn_in"><a class="icon_01" href="#">個人資料</a></p>
-									<p><a class="icon_05" href="#">附件檔案</a></p>
+									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
 									<p class="btn_none"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
 									<p class="btn_none"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
@@ -1251,13 +1288,13 @@
 										</a>
 									</p>
 									<div class="btn_delete">
-										<a href="#"><span class="tooltip">更改狀態</span></a>
+										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record"><a class="popup-link" href="#"><span class="img_default">狀態紀錄</span></a></p>
 								</div>
 								<div class="embarrassment clearfix">
 									<p class="btn_in"><a class="icon_01" href="#">個人資料</a></p>
-									<p><a class="icon_05" href="#">附件檔案</a></p>
+									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p>
 									<p class="btn_none"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
 									<p><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
@@ -2192,13 +2229,13 @@
 										</a>
 									</p>
 									<div class="btn_delete">
-										<a href="#"><span class="tooltip">更改狀態</span></a>
+										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record"><a class="popup-link" href="#"><span class="img_default">狀態紀錄</span></a></p>
 								</div>
 								<div class="embarrassment clearfix">
 									<p class="btn_in"><a class="icon_01" href="#">個人資料</a></p>
-									<p><a class="icon_05" href="#">附件檔案</a></p>
+									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p>
 									<p><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
 									<p><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
@@ -3099,7 +3136,7 @@
 								</table>
 								<div class="embarrassment clearfix">
 									<p class="btn_in"><a class="icon_01" href="#">個人資料</a></p>
-									<p><a class="icon_05" href="#">附件檔案</a></p>
+									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
 									<p><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
 									<p><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
@@ -3979,6 +4016,302 @@
         </div>
     </div>
 
+    <!-- popup 人員資料：附件檔案 1-->
+    <div id="popup-user-file" class="white-popup popup-L mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>人員資料</h3>
+            </div>
+
+            <div class="chosenBox interviewee_info">
+            	<div class="interviewMainBox interview_officer_Main">
+					<div class="contentsBox">
+						<div class="top_ivBox clearfix">
+							<div class="top_interviewer_info clearfix">
+								<div class="left_photo">
+									<div class="the_photo">
+										<img src="images/user_photo_01.png" align="logo" width="100%">
+									</div>
+								</div>
+								<div class="rightInfoBox">
+									<div class="user_name clearfix">
+										<p class="name">林怡文林怡文林怡文林怡文林怡文</p>
+										<p>男</p>
+										<p>37歲</p>
+										<p class="c_org">4個月年資</p>
+										<a class="edit popup-link img_default" href="#popup-user-info-editing"></a>
+									</div>
+									<div class="iBox clearfix">
+										<p class="title">職缺部門：</p>
+										<p class="right_info">資訊部</p>
+									</div>
+									<div class="iBox clearfix">
+										<p class="title">職缺名稱：</p>
+										<p class="right_info">軟體工程師</p>
+									</div>
+									<div class="iBox clearfix">
+										<p class="title">直屬主管：</p>
+										<p class="right_info">林怡文</p>
+									</div>
+									<div class="iBox clearfix">
+										<p class="title">報到時間：</p>
+										<p class="right_info">2019/07/02</p>
+									</div>
+								</div>
+							</div>
+							<div class="rBox clearfix">
+								<div class="top_other_tools clearfix">
+									<p class="the_interviewer_status clearfix">
+										<span class="user img_default c_org">在職中</span>
+										<a class="edit img_default" href="#">
+											<span class="tooltip">更改狀態</span>
+										</a>
+									</p>
+									<div class="btn_delete">
+										<a href="#"><span class="tooltip">刪除</span></a>
+									</div>
+									<p class="btn_status_record">
+										<a class="popup-link" href="#">
+											<span class="img_default">狀態紀錄</span>
+										</a>
+									</p>
+								</div>
+								<div class="embarrassment clearfix">
+									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
+									<p class="btn_in"><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
+									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
+									<p class="btn_none"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
+									<p class="btn_none"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="u_infoBox">
+							<h3 class="blue_title">附件檔案 [ 最多3筆]</h3>
+							<!-- 點了展開+top_open_tools -->
+							<div class="top_file_tools top_open_tools">
+								<h5 class="top_title img_default">+新增檔案</h5>
+								<!-- 新增檔案 -->
+								<div class="add_new_file clearfix">
+									<div class="add_new_content">
+										<ul class="upload_file">
+											<!-- 上傳中 -->
+											<li class="clearfix">
+												<div class="upload_info clearfix">
+													<div class="icon_file icon_pdf img_default"></div>
+													<div class="progress_bar">
+														<p>舞龍舞獅配樂</p>
+														<div class="progress_container">
+								                			<div id="myBar" class="progressbar color_org" style="width:70%"></div>
+								                		</div>
+													</div>
+												</div>
+											</li>
+											<!-- 上傳失敗 li + upload_error -->
+											<li class="upload_error clearfix">
+												<div class="upload_info clearfix">
+													<div class="icon_file icon_pdf img_default"></div>
+													<div class="progress_bar">
+														<p>林怡文身分證影本</p>
+														<div class="progress_container">
+								                			<div id="myBar" class="progressbar color_org" style="width:70%"></div>
+								                		</div>
+													</div>
+												</div>
+												<div class="btn_delete">
+													<a href="#"></a>
+												</div>
+											</li>
+											<!-- 上傳成功 li + upload_error -->
+											<li class="upload_done clearfix">
+												<div class="upload_info clearfix">
+													<div class="icon_file icon_video img_default"></div>
+													<div class="progress_bar">
+														<p>舞龍舞獅形象影片(10Mb)</p>
+													</div>
+												</div>
+												<div class="btn_delete">
+													<a href="#"></a>
+												</div>
+											</li>
+										</ul>
+										<a class="choose_file" href="#">
+											<p class="img_default">請選擇檔案</p>
+										</a>
+										<div class="upload_limit_note clearfix">
+											<p class="left_title">檔案<br>限制</p>
+											<ul>
+												<li><p>最多可上傳3個附件檔案</p></li>
+												<li><p>不可上傳執行檔 .exe 格式</p></li>
+												<li><p>每個檔案大小請勿超過 10MB</p></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- 新增檔案 - 已達上限需增加 full_file 改變 style -->
+								<div class="add_new_file full_file clearfix">
+									<div class="add_new_content">
+										<a class="choose_file" href="#">
+											<p class="img_default">目前檔案數量已達上限，請刪除下方不需要的檔案後，可再重新上傳</p>
+										</a>
+										<div class="upload_limit_note clearfix">
+											<p class="left_title">檔案<br>限制</p>
+											<ul>
+												<li><p>最多可上傳3個附件檔案</p></li>
+												<li><p>不可上傳執行檔 .exe 格式</p></li>
+												<li><p>每個檔案大小請勿超過 10MB</p></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<ul class="all_file_list clearfix">
+								<li>
+									<a class="icon_file icon_pdf img_default" href="#"></a>
+									<div class="btn_delete">
+										<a href="#"><span class="tooltip">刪除</span></a>
+									</div>
+									<p class="file_title" title="舞龍舞獅形象影片">舞龍舞獅形象影片</p>
+								</li>
+								<li>
+									<a class="icon_file icon_gif img_default"></a>
+									<div class="btn_delete">
+										<a href="#"></a>
+									</div>
+									<p class="file_title" title="如果文字太長長長長長長長的話會呈現">如果文字太長長長長長長長的話會呈現</p>
+								</li>
+								<li>
+									<a class="icon_file icon_ps img_default"></a>
+									<div class="btn_delete">
+										<a href="#"></a>
+									</div>
+									<p class="file_title" title="圖片">圖片</p>
+								</li>
+								<li>
+									<a class="icon_file icon_ai img_default" href="#"></a>
+									<div class="btn_delete">
+										<a href="#"><span class="tooltip">刪除</span></a>
+									</div>
+									<p class="file_title" title="舞龍舞獅形象影片">舞龍舞獅形象影片</p>
+								</li>
+								<li>
+									<a class="icon_file icon_zip img_default"></a>
+									<div class="btn_delete">
+										<a href="#"></a>
+									</div>
+									<p class="file_title" title="如果文字太長長長長長長長的話會呈現">如果文字太長長長長長長長的話會呈現</p>
+								</li>
+								<li>
+									<a class="icon_file icon_png img_default"></a>
+									<div class="btn_delete">
+										<a href="#"></a>
+									</div>
+									<p class="file_title" title="圖片">圖片</p>
+								</li>
+								<li>
+									<a class="icon_file icon_jpg img_default"></a>
+									<div class="btn_delete">
+										<a href="#"></a>
+									</div>
+									<p class="file_title" title="icon_jpg">icon_jpg</p>
+								</li>
+								<li>
+									<a class="icon_file icon_video img_default"></a>
+									<div class="btn_delete">
+										<a href="#"></a>
+									</div>
+									<p class="file_title" title="icon_video">icon_video</p>
+								</li>
+								<li>
+									<a class="icon_file icon_music img_default"></a>
+									<div class="btn_delete">
+										<a href="#"></a>
+									</div>
+									<p class="file_title" title="icon_music">icon_music</p>
+								</li>
+								<li>
+									<a class="icon_file icon_word img_default"></a>
+									<div class="btn_delete">
+										<a href="#"></a>
+									</div>
+									<p class="file_title" title="icon_word">icon_word</p>
+								</li>
+								<li>
+									<a class="icon_file icon_excel img_default"></a>
+									<div class="btn_delete">
+										<a href="#"></a>
+									</div>
+									<p class="file_title" title="icon_excel">icon_excel</p>
+								</li>
+								<li>
+									<a class="icon_file icon_ppt img_default"></a>
+									<div class="btn_delete">
+										<a href="#"></a>
+									</div>
+									<p class="file_title" title="icon_ppt">icon_ppt</p>
+								</li>
+								<li>
+									<a class="icon_file icon_excel_arr img_default"></a>
+									<div class="btn_delete">
+										<a href="#"></a>
+									</div>
+									<p class="file_title" title="icon_excel_arr">icon_excel_arr</p>
+								</li>
+								<li>
+									<a class="icon_file icon_more img_default"></a>
+									<div class="btn_delete">
+										<a href="#"></a>
+									</div>
+									<p class="file_title" title="icon_more">icon_more</p>
+								</li>
+							</ul>
+
+							<h3 class="blue_title">附件連結 [ 最多2筆]</h3>
+							<!-- 點了展開+top_open_tools -->
+							<div class="top_file_tools top_open_tools">
+								<h5 class="top_title img_default">+新增連結</h5>
+								<!-- 新增連結 -->
+								<div class="add_attached_link clearfix">
+									<div class="add_new_content">
+										<input type="text" name="" placeholder="連結名稱或敘述，字數限制30字以內">
+										<input type="text" name="" placeholder="https://">
+										<p class="add_btn"><a href="#">確認新增</a></p>
+									</div>
+								</div>
+								<!-- 新增連結 - 已達上限需增加 full_link 改變 style -->
+								<div class="add_attached_link full_link clearfix">
+									<div class="add_new_content">
+										<input type="text" name="" placeholder="連結名稱或敘述，字數限制30字以內" disabled="">
+										<input type="text" name="" placeholder="https://" disabled="">
+										<p class="add_btn"><a href="#">目前檔案數量已達上限，請刪除下方不需要的連結後，可再重新新增</a></p>
+									</div>
+								</div>
+							</div>
+							<ul class="attached_link_list">
+								<li class="clearfix">
+									<p class="nb">連結 1</p>
+									<p class="link"><a href="#">個人網站設計｜於2018年自己架設，自己設計到切版</a></p>
+									<p class="copy_btn"><a class="select" href="#">複製</a></p>
+									<div class="btn_delete">
+										<a href="#"><span class="tooltip">刪除</span></a>
+									</div>
+								</li>
+								<li class="clearfix">
+									<p class="nb">連結 2</p>
+									<p class="link"><a href="#">個人網站設計｜於2018年自己架設，自己設計到切版個人網站設計｜於2018年自己架設，自己設計到切版</a></p>
+									<p class="copy_btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
+									<div class="btn_delete">
+										<a href="#"></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+            </div>
+        </form>
+    </div>
+
     <!-- popup 人員資料：問券部分 1-->
     <div id="popup-user-info2" class="white-popup popup-L mfp-hide">
         <form class="setBox filter_pop">
@@ -4031,7 +4364,7 @@
 										</a>
 									</p>
 									<div class="btn_delete">
-										<a href="#"><span class="tooltip">更改狀態</span></a>
+										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
 										<a class="popup-link" href="#">
@@ -4041,7 +4374,7 @@
 								</div>
 								<div class="embarrassment clearfix">
 									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
-									<p><a class="icon_05 popup-link" href="#">附件檔案</a></p>
+									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
 									<p class="btn_in"><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
 									<p class="btn_none"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
 									<p class="btn_none"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
@@ -4312,7 +4645,7 @@
 								</table>
 								<div class="embarrassment clearfix">
 									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
-									<p><a class="icon_05" href="#">附件檔案</a></p>
+									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
 									<p class="btn_in"><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
 									<p class="btn_none"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
 									<p><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
@@ -4725,7 +5058,7 @@
 										</a>
 									</p>
 									<div class="btn_delete">
-										<a href="#"><span class="tooltip">更改狀態</span></a>
+										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
 										<a class="popup-link" href="#">
@@ -4735,7 +5068,7 @@
 								</div>
 								<div class="embarrassment clearfix">
 									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
-									<p><a class="icon_05 popup-link" href="#">附件檔案</a></p>
+									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
 									<p><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
 									<p class="btn_in"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
@@ -5310,7 +5643,7 @@
 										</a>
 									</p>
 									<div class="btn_delete">
-										<a href="#"><span class="tooltip">更改狀態</span></a>
+										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
 										<a class="popup-link" href="#">
@@ -5320,7 +5653,7 @@
 								</div>
 								<div class="embarrassment clearfix">
 									<p class="btn_in"><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
-									<p><a class="icon_05 popup-link" href="#">附件檔案</a></p>
+									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
 									<p class="btn_none"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
 									<p class="btn_none"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
@@ -5407,7 +5740,7 @@
 										</a>
 									</p>
 									<div class="btn_delete">
-										<a href="#"><span class="tooltip">更改狀態</span></a>
+										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
 										<a class="popup-link" href="#">
@@ -5417,7 +5750,7 @@
 								</div>
 								<div class="embarrassment clearfix">
 									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
-									<p><a class="icon_05 popup-link" href="#">附件檔案</a></p>
+									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
 									<p class="btn_in"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
 									<p class="btn_none"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
@@ -5868,7 +6201,7 @@
 										</a>
 									</p>
 									<div class="btn_delete">
-										<a href="#"><span class="tooltip">更改狀態</span></a>
+										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
 										<a class="popup-link" href="#">
@@ -5878,7 +6211,7 @@
 								</div>
 								<div class="embarrassment clearfix">
 									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
-									<p><a class="icon_05 popup-link" href="#">附件檔案</a></p>
+									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
 									<p class="btn_in"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
 									<p class="btn_none"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
@@ -5948,7 +6281,7 @@
 										</a>
 									</p>
 									<div class="btn_delete">
-										<a href="#"><span class="tooltip">更改狀態</span></a>
+										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
 										<a class="popup-link" href="#">
@@ -5958,7 +6291,7 @@
 								</div>
 								<div class="embarrassment clearfix">
 									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
-									<p><a class="icon_05 popup-link" href="#">附件檔案</a></p>
+									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
 									<p class="btn_in"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
 									<p class="btn_none"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
@@ -6317,7 +6650,7 @@
 										</a>
 									</p>
 									<div class="btn_delete">
-										<a href="#"><span class="tooltip">更改狀態</span></a>
+										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
 										<a class="popup-link" href="#">
@@ -6327,7 +6660,7 @@
 								</div>
 								<div class="embarrassment clearfix">
 									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
-									<p><a class="icon_05 popup-link" href="#">附件檔案</a></p>
+									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
 									<p class="btn_in"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
 									<p class="btn_none"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
@@ -7276,7 +7609,7 @@
 										</a>
 									</p>
 									<div class="btn_delete">
-										<a href="#"><span class="tooltip">更改狀態</span></a>
+										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
 										<a class="popup-link" href="#">
@@ -7286,7 +7619,7 @@
 								</div>
 								<div class="embarrassment clearfix">
 									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
-									<p><a class="icon_05 popup-link" href="#">附件檔案</a></p>
+									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
 									<p class="btn_in"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
 									<p class="btn_none"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
@@ -7406,7 +7739,7 @@
 										</a>
 									</p>
 									<div class="btn_delete">
-										<a href="#"><span class="tooltip">更改狀態</span></a>
+										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
 										<a class="popup-link" href="#">
@@ -7416,7 +7749,7 @@
 								</div>
 								<div class="embarrassment clearfix">
 									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
-									<p><a class="icon_05 popup-link" href="#">附件檔案</a></p>
+									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
 									<p><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
 									<p class="btn_in"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
@@ -7536,7 +7869,7 @@
 										</a>
 									</p>
 									<div class="btn_delete">
-										<a href="#"><span class="tooltip">更改狀態</span></a>
+										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
 										<a class="popup-link" href="#">
@@ -7546,7 +7879,7 @@
 								</div>
 								<div class="embarrassment clearfix">
 									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
-									<p><a class="icon_05 popup-link" href="#">附件檔案</a></p>
+									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
 									<p class="btn_in"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
 									<p class="btn_none"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
