@@ -1532,7 +1532,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .user_name{ position: relative; border-bottom: 3px solid #81B6C8; padding-bottom: 2px; margin-bottom: 5px; }
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .user_name p{ font-size: 18px; float: left; border-right: 1px solid #d1d1d1; padding-right: 8px; margin-right: 8px; }
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .user_name p.c_org{ color: #D87E05; border: none; padding: 0; margin: 0; }
-.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .user_name p.name{ max-width: 120px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 24px; height: 24px * 1; overflow:hidden;}
+.interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .user_name p.name{ max-width: 120px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 24px; height: 24px; overflow:hidden;}
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .user_name a.edit{ position: absolute; top: 0; right: 0; width: 24px; height: 24px; }
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .user_name a.edit::before{ position: absolute; content: ""; top: calc(50% - 8.5px); left:calc(50% - 8.5px); width: 17px; height: 17px; background-image: url(../images/svg/pen_edit.svg);}
 .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .user_name a.edit:hover{ opacity: .8; }
@@ -1657,7 +1657,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .u_infoBox .traitBox ul.nb li p{line-height: 20px; text-align: justify;}
 
 .style_org{ border-color: #E5AF57; }
-.style_org h3.blue_title{ background-color: #E5AF57; }
+/*.style_org h3.blue_title{ background-color: #E5AF57; }*/
 .style_org h3.blue_title a.edit_save{ color: #fff; background: url(../images/btn_icon_save_w.png) center right no-repeat; background-size: contain;}
 
 
