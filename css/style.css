@@ -501,6 +501,7 @@ p.add_new_btn a.add_new_job_vacancies:hover span::before{ background-image: url(
 .messageBox .border_blue{ border-color: #81B6C8;}
 .messageBox .border_green{ border-color: #84BE98;}
 .messageBox .border_yello{ border-color: #E5AF57;}
+.messageBox .border_red{ border-color: #C87D86;}
 .messageBox .border_none{ border-color: transparent; background-color: #fff;}
 
 .messageBox .SendDone{ background-color:#fff;}
@@ -1874,8 +1875,10 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interviewee_info .r_content_03 .border_blue{ width: 855px; margin: 0 auto; }
 .interviewee_info .r_content_03 table.test_history_list{ width: 100%; }
 .interviewee_info .r_content_03 table.test_history_list p{ padding:12px;  text-align: center;}
-.interviewee_info .r_content_03 table.test_history_list p.p_blue{ color: #81B6C8; }
-.interviewee_info .r_content_03 table.test_history_list p.p_red{ color: #C87D86; }
+.interviewee_info .r_content_03 table.test_history_list .p_blue{ color: #81B6C8; }
+.interviewee_info .r_content_03 table.test_history_list .p_red{ color: #C87D86; }
+.interviewee_info .r_content_03 table.test_history_list .p_green{ color: #84BE98; }
+.interviewee_info .r_content_03 table.test_history_list .p_underline{ text-decoration: underline; }
 
 .interviewee_info .r_content_03 table.test_history_list tr th, .interviewee_info .r_content_03 table.test_history_list tr td{ border-top: 1px solid rgba(155,155,155,0.5); border-right: 1px solid rgba(155,155,155,0.5);}
 
@@ -2725,6 +2728,13 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box table.potential_personality_trait .top_title .img_progress_ex{ background: url(../images/user_info/bg_progressbar_print2.png) center center no-repeat; background-size: cover;}
 .print_box table.potential_personality_trait .original .img_progress{ background: url(../images/user_info/bg_progressbar_print2.png) center center no-repeat; background-size: cover;}
 
+.print_box .print_survey{ border: none; border-radius: 0;}
+.print_box .print_survey .interviewee_info .interviewMainBox .top_ivBox{ padding-bottom: 0; }
+.print_box .print_survey h3.blue_title{ padding: 5px 15px; margin-top: 6px; }
+.print_box .print_survey .interview_officer_Main .u_infoBox .use_fillinBox{ padding: 0 10px; }
+.print_box .print_survey .interview_officer_Main .use_fillinBox .fBox p.title_s{ text-align: left; color: #558C9E; }
+.print_box .interview_officer_Main .use_fillinBox ul.company_experience li{ flex-direction: column; border-bottom: 1px dashed #979797; padding: 5px 0 10px 0;}
+.print_box .interview_officer_Main .use_fillinBox ul.company_experience li:last-child{ border: none; }
 
 /*手機板測驗*/
 .for_mob_Test{ width: 100%; min-height: initial; height: 100vh; padding: 0; }
@@ -3146,7 +3156,6 @@ ul.job_management_list p.text_center{ text-align: center; }
 
 /*full file*/
 .top_open_tools .full_file{ padding-top: 20px; }
-/*.top_open_tools .full_file .add_new_content{ padding-bottom: 20px; }*/
 .top_open_tools .full_file .add_new_content a.choose_file{ background-color: #9B9B9B; border-color: #808080; cursor: not-allowed;}
 .top_open_tools .full_file .add_new_content a.choose_file p{ color: #fff; }
 .top_open_tools .full_file .add_new_content a.choose_file p::after{ background-image: url(../images/svg/file_icon/upload_file_w.svg); }
@@ -3227,3 +3236,48 @@ ul.job_management_list p.text_center{ text-align: center; }
 
 .u_infoBox ul.attached_link_list li .btn_delete{ float: right; }
 
+/*寄信紀錄*/
+.interviewee_info .mail_status_record{ padding: 0; }
+.interviewee_info .mail_status_record .border_blue{ width: inherit; box-shadow: none; }
+.interviewee_info .mail_status_record table.test_history_list td p{ text-align: left; }
+.interviewee_info .mail_status_record table.test_history_list td p span{ padding: 0px; color: inherit; }
+.interviewee_info .mail_status_record .send_ok, .interviewee_info .mail_status_record .send_no{ position: relative;}
+.interviewee_info .mail_status_record table.test_history_list td p span.send_ok, .interviewee_info .mail_status_record table.test_history_list td p span.send_no{ padding-right: 30px;}
+.interviewee_info .mail_status_record .send_ok::after{ content: ""; position: absolute; top: 0; right: 0; width: 25px; height: 14px; display: block; background-image: url(../images/icon_mail_send_status_done.png); }
+.interviewee_info .mail_status_record .send_no::after{ content: ""; position: absolute; top: 0; right: 0; width: 25px; height: 14px; display: block; background-image: url(../images/icon_mail_send_status_none.png); }
+
+/*更改狀態*/
+.changestatusBox ul.select_item li{ position: relative; font-size: 13px; text-align: left;  max-width:calc(100% - 35px); margin: 8px auto 8px auto; display: block; }
+.changestatusBox ul.select_item input[type=radio]:not(old) + label{background: url(../images/checks_off.png) 0 0 no-repeat; border: 1px solid #D8D8D8; width: 100%; border-radius: 3px 0 3px 3px;}
+.changestatusBox ul.select_item input[type=radio]:not(old):checked + label{ background-image: url(../images/checks_on.png);}
+
+
+.changestatusBox .fillinBox ul{ background-color: #fff; }
+.changestatusBox .fillinBox ul li input::placeholder{ color: #D8D8D8; }
+.changestatusBox .fillinBox ul li textarea{ width: 100%; min-height: 100px; padding: 10px; border-bottom:2px solid transparent; }
+.changestatusBox .fillinBox ul li textarea:hover, .enforcementBox .fillinBox ul li textarea:focus{ border-color:#81B6C8;}
+.changestatusBox .fillinBox ul li textarea:disabled:hover{ border-color: transparent; }
+
+.changestatusBox .fillinBox ul li .other{max-width: 90px; font-size: 14px; padding-top: 10px; position: relative;}
+.changestatusBox .fillinBox ul li ul.select_item{ text-align: left; border: none; width: 100%; border-radius: 5px; padding: 10px 0; min-height: 30px; box-shadow: none;}
+.changestatusBox .fillinBox ul li ul.select_item li{ position: relative; display: inline-block; min-width: 72px; min-height: initial; color: #4A4A4A; font-size: 14px; margin:5px; padding: 0; border-bottom: none; }
+
+.changestatusBox .fillinBox ul li.day{ position: relative;}
+.changestatusBox .fillinBox ul li.day::after { background-image: url(../images/icon_time_select_01.png); cursor: pointer; content: ""; top: 12px; right: 26px; position: absolute; width: 26px; height: 22px; display: block; background-repeat:no-repeat; background-position: center center; background-size: contain;  }
+.changestatusBox .fillinBox ul li.change_job_type ul.select_item{ width:202px; margin: 0 auto; padding: 15px 0; background-color: transparent;}
+.changestatusBox .fillinBox ul li.change_job_type ul.select_item li{ max-width: 100%; width: 100%; }
+
+.changestatusBox .fillinBox .border_red, .changestatusBox .fillinBox .border_green, .changestatusBox .fillinBox .border_yello{ border-style: solid; border-width: 2px; }
+.changestatusBox .fillinBox .border_red textarea{ border-radius: 0px 0px 10px 10px; }
+.changestatusBox .fillinBox .border_red .change_job_type .select_item input[type=radio]:not(old):checked + label{ background-image: url(../images/checks_on_red.png); border-color: #C87D86;  background-color: #C87D86; color: #fff; width: 100%;}
+.changestatusBox .fillinBox .border_green .change_job_type .select_item input[type=radio]:not(old):checked + label{ background-image: url(../images/checks_on_green.png); border-color: #84BE98;  background-color: #84BE98; color: #fff; width: 100%;}
+.changestatusBox .fillinBox .border_yello .change_job_type .select_item input[type=radio]:not(old):checked + label{ background-image: url(../images/checks_on_yello.png); border-color: #E5AF57;  background-color: #E5AF57; color: #fff; width: 100%;}
+.changestatusBox .interview_officer_Main .top_interviewer_info .rightInfoBox .user_name p{ height: 27px; }
+.changestatusBox .time_select ul li .l_title{ border-right: 1px solid rgba(155,155,155,0.5);}
+.changestatusBox .time_select ul li.day .l_title{ border: none; }
+.changestatusBox .time_select ul li::after{ display: none; }
+
+.changestatusBox .day_selectBpx .monthBox{ border: none; }
+:root .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .user_name p.name{ height: 24px;}
+:root .changestatusBox .fillinBox ul li ul.select_item li{ min-height: inherit; }
+@media all and (-ms-high-contrast:none){ .changestatusBox .time_select ul li input.r_info, .changestatusBox ul li.new_day input.r_info{height: 30px; min-height: 30px;}}

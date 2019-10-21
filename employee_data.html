@@ -1047,6 +1047,83 @@
         </form>
     </div>
 
+    <!-- popup 狀態紀錄 -->
+    <div id="popup-status-record" class="white-popup popup-L mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>紀錄</h3>
+            </div>
+
+            <div class="chosenBox interviewee_info">
+            	<div class="interviewMainBox interview_officer_Main">
+					<div class="contentsBox">
+						<div class="r_content_03 messageBox check_remind mail_status_record">
+							<div class="RedBox border_blue bottom_noteBox">
+			                	<table class="test_history_list" cellpadding="0" cellspacing="0" border="0">
+			                		<tr>
+			                			<th width="155"><p>日期/時間</p></th>
+			                			<th><p>狀態</p></th>
+			                			<th><p>備註</p></th>
+			                		</tr>
+			                		<tr>
+			                			<td><p>2018/11/11</p></td>
+			                			<td><p>進入招募系統</p></td>
+			                			<td></td>
+			                		</tr>
+			                		<tr>
+			                			<td><p>2018/11/11/14:00</p></td>
+			                			<td><p><span class="send_ok img_default">已預約2019/01/11/10:00面試，面試通知信寄出</span></p></td>
+			                			<td><p class="p_green">寄件成功</p></td>
+			                		</tr>
+			                		<tr>
+			                			<td><p>2018/11/11</p></td>
+			                			<td><p>第一次面試</p></td>
+			                			<td></td>
+			                		</tr>
+			                		<tr>
+			                			<td><p>2019/01/28/13:34</p></td>
+			                			<td><p><span class="send_no img_default">不錄取，<span class="p_red p_underline">未錄取通知信</span>寄出</span></p></td>
+			                			<td><p>不錄取原因：資格不符，<span class="p_red">寄件未成功</span></p></td>
+			                		</tr>
+			                		<tr>
+			                			<td><p>2019/01/28/14:00</p></td>
+			                			<td><p><span class="send_ok img_default">不錄取，未錄取通知信寄出</span></p></td>
+			                			<td><p>不錄取原因：資格不符，<span class="p_green">寄件成功</span></p></td>
+			                		</tr>
+			                		<tr>
+			                			<td><p>2019/01/28</p></td>
+			                			<td><p><span class="send_ok img_default">錄取，錄取報到通知信寄出</span></p></td>
+			                			<td><p><span class="p_green">寄件成功</span></p></td>
+			                		</tr>
+			                		<tr>
+			                			<td><p>2019/02/03</p></td>
+			                			<td><p>婉拒錄取</p></td>
+			                			<td></td>
+			                		</tr>
+			                		<tr>
+			                			<td><p>2019/02/03/09:00</p></td>
+			                			<td><p>確認報到，成為現有員工</p></td>
+			                			<td></td>
+			                		</tr>
+			                		<tr>
+			                			<td><p>2019/05/03</p></td>
+			                			<td><p>停職</p></td>
+			                			<td><p>停職原因：留職停薪，預計留職一年</p></td>
+			                		</tr>
+			                		<tr>
+			                			<td><p>2019/05/03</p></td>
+			                			<td><p>復職</p></td>
+			                			<td></td>
+			                		</tr>
+			                	</table>
+			                </div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </form>
+    </div>
+
     <!-- popup 人員資料：個人資料 1 -->
 	<div id="popup-user-info" class="white-popup popup-L mfp-hide">
         <form class="setBox filter_pop">
@@ -1095,7 +1172,7 @@
 								<div class="top_other_tools clearfix">
 									<p class="the_interviewer_status clearfix">
 										<span class="user img_default c_org">在職中</span>
-										<a class="edit img_default" href="#">
+										<a class="edit img_default popup-link" href="#popup-change-status">
 											<span class="tooltip">更改狀態</span>
 										</a>
 									</p>
@@ -1103,7 +1180,7 @@
 										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
-										<a class="popup-link" href="#">
+										<a class="popup-link" href="#popup-status-record">
 											<span class="img_default">狀態紀錄</span>
 										</a>
 									</p>
@@ -1283,7 +1360,7 @@
 								<div class="top_other_tools clearfix">
 									<p class="the_interviewer_status clearfix">
 										<span class="user img_default">結束招募</span>
-										<a class="edit img_default" href="#">
+										<a class="edit img_default popup-link" href="#popup-change-status">
 											<span class="tooltip">更改狀態</span>
 										</a>
 									</p>
@@ -2224,7 +2301,7 @@
 								<div class="top_other_tools clearfix">
 									<p class="the_interviewer_status clearfix">
 										<span class="user img_default c_org">在職中</span>
-										<a class="edit img_default" href="#">
+										<a class="edit img_default popup-link" href="#popup-change-status">
 											<span class="tooltip">更改狀態</span>
 										</a>
 									</p>
@@ -4063,7 +4140,7 @@
 								<div class="top_other_tools clearfix">
 									<p class="the_interviewer_status clearfix">
 										<span class="user img_default c_org">在職中</span>
-										<a class="edit img_default" href="#">
+										<a class="edit img_default popup-link" href="#popup-change-status">
 											<span class="tooltip">更改狀態</span>
 										</a>
 									</p>
@@ -4071,7 +4148,7 @@
 										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
-										<a class="popup-link" href="#">
+										<a class="popup-link" href="#popup-status-record">
 											<span class="img_default">狀態紀錄</span>
 										</a>
 									</p>
@@ -4359,7 +4436,7 @@
 								<div class="top_other_tools clearfix">
 									<p class="the_interviewer_status clearfix">
 										<span class="user img_default c_org">在職中</span>
-										<a class="edit img_default" href="#">
+										<a class="edit img_default popup-link" href="#popup-change-status">
 											<span class="tooltip">更改狀態</span>
 										</a>
 									</p>
@@ -4367,7 +4444,7 @@
 										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
-										<a class="popup-link" href="#">
+										<a class="popup-link" href="#popup-status-record">
 											<span class="img_default">狀態紀錄</span>
 										</a>
 									</p>
@@ -5053,7 +5130,7 @@
 								<div class="top_other_tools clearfix">
 									<p class="the_interviewer_status clearfix">
 										<span class="user img_default c_org">在職中</span>
-										<a class="edit img_default" href="#">
+										<a class="edit img_default popup-link" href="#popup-change-status">
 											<span class="tooltip">更改狀態</span>
 										</a>
 									</p>
@@ -5061,7 +5138,7 @@
 										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
-										<a class="popup-link" href="#">
+										<a class="popup-link" href="#popup-status-record">
 											<span class="img_default">狀態紀錄</span>
 										</a>
 									</p>
@@ -5638,7 +5715,7 @@
 								<div class="top_other_tools clearfix">
 									<p class="the_interviewer_status clearfix">
 										<span class="user img_default c_org">在職中</span>
-										<a class="edit img_default" href="#">
+										<a class="edit img_default popup-link" href="#popup-change-status">
 											<span class="tooltip">更改狀態</span>
 										</a>
 									</p>
@@ -5646,7 +5723,7 @@
 										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
-										<a class="popup-link" href="#">
+										<a class="popup-link" href="#popup-status-record">
 											<span class="img_default">狀態紀錄</span>
 										</a>
 									</p>
@@ -5735,7 +5812,7 @@
 								<div class="top_other_tools clearfix">
 									<p class="the_interviewer_status clearfix">
 										<span class="user img_default c_org">在職中</span>
-										<a class="edit img_default" href="#">
+										<a class="edit img_default popup-link" href="#popup-change-status">
 											<span class="tooltip">更改狀態</span>
 										</a>
 									</p>
@@ -5743,7 +5820,7 @@
 										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
-										<a class="popup-link" href="#">
+										<a class="popup-link" href="#popup-status-record">
 											<span class="img_default">狀態紀錄</span>
 										</a>
 									</p>
@@ -6196,7 +6273,7 @@
 								<div class="top_other_tools clearfix">
 									<p class="the_interviewer_status clearfix">
 										<span class="user img_default c_org">在職中</span>
-										<a class="edit img_default" href="#">
+										<a class="edit img_default popup-link" href="#popup-change-status">
 											<span class="tooltip">更改狀態</span>
 										</a>
 									</p>
@@ -6204,7 +6281,7 @@
 										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
-										<a class="popup-link" href="#">
+										<a class="popup-link" href="#popup-status-record">
 											<span class="img_default">狀態紀錄</span>
 										</a>
 									</p>
@@ -6276,7 +6353,7 @@
 								<div class="top_other_tools clearfix">
 									<p class="the_interviewer_status clearfix">
 										<span class="user img_default c_org">在職中</span>
-										<a class="edit img_default" href="#">
+										<a class="edit img_default popup-link" href="#popup-change-status">
 											<span class="tooltip">更改狀態</span>
 										</a>
 									</p>
@@ -6284,7 +6361,7 @@
 										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
-										<a class="popup-link" href="#">
+										<a class="popup-link" href="#popup-status-record">
 											<span class="img_default">狀態紀錄</span>
 										</a>
 									</p>
@@ -6645,7 +6722,7 @@
 								<div class="top_other_tools clearfix">
 									<p class="the_interviewer_status clearfix">
 										<span class="user img_default c_org">在職中</span>
-										<a class="edit img_default" href="#">
+										<a class="edit img_default popup-link" href="#popup-change-status">
 											<span class="tooltip">更改狀態</span>
 										</a>
 									</p>
@@ -6653,7 +6730,7 @@
 										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
-										<a class="popup-link" href="#">
+										<a class="popup-link" href="#popup-status-record">
 											<span class="img_default">狀態紀錄</span>
 										</a>
 									</p>
@@ -7604,7 +7681,7 @@
 								<div class="top_other_tools clearfix">
 									<p class="the_interviewer_status clearfix">
 										<span class="user img_default c_org">在職中</span>
-										<a class="edit img_default" href="#">
+										<a class="edit img_default popup-link" href="#popup-change-status">
 											<span class="tooltip">更改狀態</span>
 										</a>
 									</p>
@@ -7612,7 +7689,7 @@
 										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
-										<a class="popup-link" href="#">
+										<a class="popup-link" href="#popup-status-record">
 											<span class="img_default">狀態紀錄</span>
 										</a>
 									</p>
@@ -7734,7 +7811,7 @@
 								<div class="top_other_tools clearfix">
 									<p class="the_interviewer_status clearfix">
 										<span class="user img_default c_org">在職中</span>
-										<a class="edit img_default" href="#">
+										<a class="edit img_default popup-link" href="#popup-change-status">
 											<span class="tooltip">更改狀態</span>
 										</a>
 									</p>
@@ -7742,7 +7819,7 @@
 										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
-										<a class="popup-link" href="#">
+										<a class="popup-link" href="#popup-status-record">
 											<span class="img_default">狀態紀錄</span>
 										</a>
 									</p>
@@ -7864,7 +7941,7 @@
 								<div class="top_other_tools clearfix">
 									<p class="the_interviewer_status clearfix">
 										<span class="user img_default c_org">在職中</span>
-										<a class="edit img_default" href="#">
+										<a class="edit img_default popup-link" href="#popup-change-status">
 											<span class="tooltip">更改狀態</span>
 										</a>
 									</p>
@@ -7872,7 +7949,7 @@
 										<a href="#"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
-										<a class="popup-link" href="#">
+										<a class="popup-link" href="#popup-status-record">
 											<span class="img_default">狀態紀錄</span>
 										</a>
 									</p>
@@ -7954,6 +8031,370 @@
             	<a class="popup-link" href="#popup-user-info">確認儲存</a>
             </p>
         </div>
+    </div>
+
+    <!-- popup： 更改狀態-->
+    <div id="popup-change-status" class="white-popup popup-w-s mfp-hide changestatusBox">
+        <form class="setBox messageBox">
+            <div class="top_title">
+                <h3>更改狀態</h3>
+            </div>
+
+            <div class="fillinBox time_select">
+                <ul>
+                    <li>
+                        <label class="l_title" for=""><p>員工姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>所屬部門</p></label>
+                        <p class="r_info">研發部</p>
+                    </li>
+                </ul>
+
+                <ul class="jobBox border_red">
+                	<li class="sub_title">
+                		<p>請選擇目前該員工就職狀態</p>
+                	</li>
+                    <li class="change_job_type">
+						<ul class="select_item clearfix">
+							<li>
+								<input id="option" type="radio" name="field" value="在職中">
+								<label for="option">在職中</label>
+							</li>
+							<li>
+								<input id="option" type="radio" name="field" value="停職" checked="">
+								<label for="option">停職</label>
+							</li>
+						</ul>
+                    </li>
+
+                </ul>
+                <!-- 選擇"停職"時才會出現 -->
+                <ul class="jobBox border_red ">
+                	<li class="sub_title">
+                		<p>停職原因</p>
+                	</li>
+                    <li>
+                        <ul class="select_item clearfix">
+							<li>
+								<input id="" type="checkbox" name="field" value="退休">
+								<label for="option">退休</label>
+							</li>
+							<li>
+								<input id="option" type="checkbox" name="field" value="自請離職">
+								<label for="option">自請離職</label>
+							</li>
+							<li>
+								<input id="option" type="checkbox" name="field" value="資遣">
+								<label for="option">資遣</label>
+							</li>
+							<li>
+								<input id="option" type="checkbox" name="field" value="免職">
+								<label for="option">免職</label>
+							</li>
+							<li>
+								<input id="option" type="checkbox" name="field" value="留職停薪">
+								<label for="option">留職停薪</label>
+							</li>
+							<li>
+								<input id="option" type="checkbox" name="field" value="其他">
+								<label for="option">其他</label>
+							</li>
+						</ul>
+                    </li>
+                    <li class="day">
+                        <label class="l_title" for=""><p>停職日期</p></label>
+                        <input class="r_info" id="" name="" type="text" value="2018/11/01">
+                    </li>
+                </ul>
+
+                <div class="day_selectBpx" style="top: 175px;">
+                	<div class="monthBox">
+						<div class="top_year_month">
+							<p><span>2018年11月
+							<a class="left_arr" href="#"></a>
+								<a class="right_arr" href="#"></a></span>
+							</p>
+						</div>
+						<div class="dateBox">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+								<tbody><tr>
+									<th><p>日</p></th>
+									<th><p>一</p></th>
+									<th><p>二</p></th>
+									<th><p>三</p></th>	
+									<th><p>四</p></th>
+									<th><p>五</p></th>
+									<th><p>六</p></th>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><p class="btn_in">1</p>
+									</td>
+									<td><p>2</p></td>
+									<td><p>3</p></td>
+								</tr>
+								<tr>
+									<td><p>4</p></td>
+									<td><p>5</p></td>
+									<td><p>6</p>
+									</td>
+									<td><p>7</p></td>
+									<td><p>8</p></td>
+									<td><p>9</p></td>
+									<td><p>10</p></td>
+								</tr>
+								<tr>
+									<td><p>11</p></td>
+									<td><p>12</p></td>
+									<td><p>13</p></td>
+									<td><p>14</p></td>
+									<td><p>15</p></td>
+									<td><p>16</p></td>
+									<td><p>17</p></td>
+								</tr>
+								<tr>
+									<td><p>18</p></td>
+									<td><p>19</p></td>
+									<td><p>20</p></td>
+									<td><p>21</p></td>
+									<td><p>22</p></td>
+									<td><p>23</p></td>
+									<td><p>24</p></td>
+								</tr>
+								<tr>
+									<td><p>25</p></td>
+									<td><p>26</p></td>
+									<td><p>27</p></td>
+									<td><p>28</p></td>
+									<td><p>29</p></td>
+									<td><p>30</p></td>
+									<td><p>31</p></td>
+								</tr>
+								<tr>
+									<td><p class="btn_in">31</p></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody></table>
+						</div>
+					</div>
+                </div>
+
+                <ul class="jobBox border_red">
+                	<li class="sub_title">
+                		<p>備註</p>
+                	</li>
+                    <li>
+                        <textarea></textarea>
+                    </li>
+                </ul>
+                <p class="btn">
+                	<a class="bg_gary" href="#popup-change-status">取消</a>
+                	<a class="popup-link" href="#popup-change-status-1">確認儲存</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <div id="popup-change-status-1" class="white-popup popup-w-s mfp-hide changestatusBox">
+        <form class="setBox messageBox">
+            <div class="top_title">
+                <h3>更改狀態</h3>
+            </div>
+
+            <div class="fillinBox time_select">
+                <ul>
+                    <li>
+                        <label class="l_title" for=""><p>員工姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>所屬部門</p></label>
+                        <p class="r_info">研發部</p>
+                    </li>
+                </ul>
+
+                <ul class="jobBox border_yello">
+                	<li class="sub_title">
+                		<p>請選擇目前該員工就職狀態</p>
+                	</li>
+                    <li class="change_job_type">
+						<ul class="select_item clearfix">
+							<li>
+								<input id="option" type="radio" name="field" value="復職" checked="">
+								<label for="option">復職</label>
+							</li>
+							<li>
+								<input id="option" type="radio" name="field" value="停職">
+								<label for="option">停職</label>
+							</li>
+						</ul>
+                    </li>
+
+                </ul>
+                <ul class="jobBox border_yello">
+                    <li class="day">
+                        <label class="l_title" for=""><p>停職日期</p></label>
+                        <input class="r_info" id="" name="" type="text" value="2018/11/01">
+                    </li>
+                </ul>
+                <ul class="jobBox border_yello">
+                	<li class="sub_title">
+                		<p>備註</p>
+                	</li>
+                    <li>
+                        <textarea></textarea>
+                    </li>
+                </ul>
+                <p class="btn">
+                	<a class="bg_gary popup-link" href="#popup-change-status-1">取消</a>
+                	<a class="popup-link" href="#popup-change-status-2">確認儲存</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <div id="popup-change-status-2" class="white-popup popup-w-s mfp-hide changestatusBox">
+        <form class="setBox messageBox">
+            <div class="top_title">
+                <h3>更改狀態</h3>
+            </div>
+
+            <div class="fillinBox time_select">
+                <ul>
+                    <li>
+                        <label class="l_title" for=""><p>員工姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>所屬部門</p></label>
+                        <p class="r_info">研發部</p>
+                    </li>
+                </ul>
+
+                <ul class="jobBox border_green">
+                	<li class="sub_title">
+                		<p>請選擇目前該員工就職狀態</p>
+                	</li>
+                    <li class="change_job_type">
+						<ul class="select_item clearfix">
+							<li>
+								<input id="option" type="radio" name="field" value="招募中" checked="">
+								<label for="option">招募中</label>
+							</li>
+							<li>
+								<input id="option" type="radio" name="field" value="招募中">
+								<label for="option">招募中</label>
+							</li>
+						</ul>
+                    </li>
+
+                </ul>
+                <p class="btn">
+                	<a class="bg_gary" href="#popup-change-status-2">取消</a>
+                	<a class="popup-link" href="#popup-change-status-3">確認儲存</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <div id="popup-change-status-3" class="white-popup popup-w-s mfp-hide changestatusBox">
+        <form class="setBox messageBox">
+            <div class="top_title">
+                <h3>更改狀態</h3>
+            </div>
+
+            <div class="fillinBox time_select">
+                <ul>
+                    <li>
+                        <label class="l_title" for=""><p>員工姓名</p></label>
+                        <p class="r_info">王明天</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>職位</p></label>
+                        <p class="r_info">軟體工程師</p>
+                    </li>
+                    <li>
+                        <label class="l_title" for=""><p>所屬部門</p></label>
+                        <p class="r_info">研發部</p>
+                    </li>
+                </ul>
+
+                <ul class="jobBox border_red">
+                	<li class="sub_title">
+                		<p>請選擇目前該員工就職狀態</p>
+                	</li>
+                    <li class="change_job_type">
+						<ul class="select_item clearfix">
+							<li>
+								<input id="option" type="radio" name="field" value="返回招募">
+								<label for="option">返回招募</label>
+							</li>
+							<li>
+								<input id="option" type="radio" name="field" value="結束招募" checked="">
+								<label for="option">結束招募</label>
+							</li>
+						</ul>
+                    </li>
+                </ul>
+                <ul class="jobBox border_red">
+                	<li class="sub_title">
+                		<p>結束招募原因</p>
+                	</li>
+                    <li>
+                        <ul class="select_item clearfix">
+							<li>
+								<input id="" type="checkbox" name="field" value="取消面試">
+								<label for="option">取消面試</label>
+							</li>
+							<li>
+								<input id="option" type="checkbox" name="field" value="婉拒錄取">
+								<label for="option">婉拒錄取</label>
+							</li>
+							<li>
+								<input id="option" type="checkbox" name="field" value="聯絡不到">
+								<label for="option">聯絡不到</label>
+							</li>
+							<li>
+								<input id="option" type="checkbox" name="field" value="其他">
+								<label for="option">其他</label>
+							</li>
+						</ul>
+                    </li>
+                </ul>
+
+                <ul class="jobBox border_red">
+                	<li class="sub_title">
+                		<p>備註</p>
+                	</li>
+                    <li>
+                        <textarea></textarea>
+                    </li>
+                </ul>
+                <p class="btn">
+                	<a class="bg_gary" href="#">取消</a>
+                	<a class="" href="#">確認儲存</a>
+                </p>
+            </div>
+        </form>
     </div>
 </main>
 
