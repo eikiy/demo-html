@@ -303,7 +303,7 @@ p.add_new_btn a.add_new_job_vacancies:hover span::before{ background-image: url(
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content { opacity: 0;}
 
 .popup-w-s{max-width: 390px;}
-.popup-w-s .setBox .top_title::after{ display: none;}
+/*.popup-w-s .setBox .top_title::after{ display: none;}*/
 .popup-w-m{max-width: 720px;}
 .popup-w-mm{max-width: 750px;}
 .popup-M {max-width: 795px;}
@@ -2498,7 +2498,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .top_file_tools .download_file a.edit::after{ background-image: url(../images/svg/edit_file_s.svg); }
 
 .top_open_tools h5.top_title{ color: #558C9E; }
-.top_open_tools h5.top_title::after{ background-image: url(../images/svg/arrow_up.svg); }
+.top_open_tools h5.top_title::after{ content: ""; display: block; background-image: url(../images/svg/arrow_up.svg); }
 
 .job_leaderboard_container{ margin:0 auto; border-top: 2px solid #81B6C8; padding:15px 0 40px 0px; }
 .job_leaderboard_container .round{ position: relative;}
