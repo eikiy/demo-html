@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
+  <g id="Group_9_Copy" data-name="Group 9 Copy" transform="translate(0 -0.867)">
+    <path id="Fill_1" data-name="Fill 1" d="M37.96,41H3.04A3.041,3.041,0,0,1,0,37.96V3.038A3.041,3.041,0,0,1,3.04,0H37.96A3.039,3.039,0,0,1,41,3.038V37.96A3.039,3.039,0,0,1,37.96,41ZM2.731,11.161v25.7H38.3v-25.7Zm8.35-7.05A2.061,2.061,0,1,0,13.14,6.172,2.063,2.063,0,0,0,11.081,4.111Zm-6.289,0A2.061,2.061,0,1,0,6.851,6.172,2.063,2.063,0,0,0,4.792,4.111Z" transform="translate(0 0.867)" fill="#81B6C8"/>
+    <path id="Fill_3" data-name="Fill 3" d="M0,1H22V0H0Z" transform="translate(16 15.867)" fill="#81B6C8"/>
+    <path id="Fill_4" data-name="Fill 4" d="M0,1H22V0H0Z" transform="translate(16 18.867)" fill="#81B6C8"/>
+    <path id="Fill_5" data-name="Fill 5" d="M0,1H22V0H0Z" transform="translate(16 29.867)" fill="#81B6C8"/>
+    <path id="Fill_6" data-name="Fill 6" d="M0,1H22V0H0Z" transform="translate(16 31.867)" fill="#81B6C8"/>
+    <path id="Fill_7" data-name="Fill 7" d="M9.178,8H.823a.929.929,0,0,1-.581-.2A.634.634,0,0,1,0,7.318V.682A.634.634,0,0,1,.241.2.929.929,0,0,1,.823,0H9.178a.92.92,0,0,1,.581.2A.629.629,0,0,1,10,.682V7.318a.629.629,0,0,1-.241.482A.92.92,0,0,1,9.178,8ZM1.646,1.364V6.636h6.71V1.364Z" transform="translate(5 25.867)" fill="#81B6C8"/>
+    <path id="Fill_8" data-name="Fill 8" d="M9.178,8H.823a.929.929,0,0,1-.581-.2A.634.634,0,0,1,0,7.318V.68A.636.636,0,0,1,.241.2.929.929,0,0,1,.823,0H9.178a.92.92,0,0,1,.581.2A.631.631,0,0,1,10,.68V7.318a.629.629,0,0,1-.241.482A.92.92,0,0,1,9.178,8ZM1.646,1.363V6.636h6.71V1.363Z" transform="translate(5 13.867)" fill="#81B6C8"/>
+  </g>
+</svg>

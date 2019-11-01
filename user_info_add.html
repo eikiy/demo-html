@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+	<head>
+		<meta charset="UTF-8">
+		<title>個人資料填寫 - 上傳附件/新增連結</title>
+		<meta name='description' content=""/>
+		<meta name='keywords' content=""/>
+		<meta name="MobileOptimized" content="width">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/user_info_style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+		<!-- Magnific Popup core JS file -->
+		<script src="magnific-popup/jquery.magnific-popup.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			    $('.popup-link').magnificPopup({
+			      removalDelay: 300,
+			      mainClass: 'mfp-fade'
+			    });
+			});
+		</script>
+	</head>
+	<body>
+		<main class="personal_information_container">
+			<div class="contentsBox">
+				<div class="fillin_content">
+					<div class="top_title">
+						<h3>上傳附件/新增連結</h3>
+					</div>
+					<div class="sub_title">
+						<h4 class="no_arr">+ 增加作品集或個人化履歷 [ 最多3筆 ]</h4>
+					</div>
+					<!-- 新增檔案 -->
+								<div class="add_new_file clearfix">
+									<div class="add_new_content">
+										<ul class="upload_file">
+											<!-- 上傳中 -->
+											<li class="clearfix">
+												<div class="upload_info clearfix">
+													<div class="icon_file icon_pdf img_default"></div>
+													<div class="progress_bar">
+														<p>舞龍舞獅配樂</p>
+														<div class="progress_container">
+								                			<div id="myBar" class="progressbar color_org" style="width:70%"></div>
+								                		</div>
+													</div>
+												</div>
+											</li>
+											<!-- 上傳失敗 li + upload_error -->
+											<li class="upload_error clearfix">
+												<div class="upload_info clearfix">
+													<div class="icon_file icon_pdf img_default"></div>
+													<div class="progress_bar">
+														<p>林怡文身分證影本</p>
+														<div class="progress_container">
+								                			<div id="myBar" class="progressbar color_org" style="width:70%"></div>
+								                		</div>
+													</div>
+												</div>
+												<div class="btn_delete">
+													<a class="popup-link" href="#popup-note"></a>
+												</div>
+											</li>
+											<!-- 上傳成功 li + upload_error -->
+											<li class="upload_done clearfix">
+												<div class="upload_info clearfix">
+													<div class="icon_file icon_video img_default"></div>
+													<div class="progress_bar">
+														<p>舞龍舞獅形象影片(10Mb)</p>
+													</div>
+												</div>
+												<div class="btn_delete">
+													<a href="#"></a>
+												</div>
+											</li>
+										</ul>
+										<a class="choose_file" href="#">
+											<p class="img_default">請選擇檔案</p>
+										</a>
+										<div class="upload_limit_note clearfix">
+											<p class="left_title">檔案<br>限制</p>
+											<ul>
+												<li><p>最多可上傳3個附件檔案</p></li>
+												<li><p>不可上傳執行檔 .exe 格式</p></li>
+												<li><p>每個檔案大小請勿超過 10MB</p></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- 新增檔案 - 已達上限需增加 full_file 改變 style -->
+								<div class="add_new_file full_file clearfix">
+									<div class="add_new_content">
+										<a class="choose_file" href="#">
+											<p class="img_default">目前檔案數量已達上限，請刪除下方不需要的檔案後，可再重新上傳</p>
+										</a>
+										<div class="upload_limit_note clearfix">
+											<p class="left_title">檔案<br>限制</p>
+											<ul>
+												<li><p>最多可上傳3個附件檔案</p></li>
+												<li><p>不可上傳執行檔 .exe 格式</p></li>
+												<li><p>每個檔案大小請勿超過 10MB</p></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+					<div class="sub_title">
+						<h4 class="no_arr">+ 增加相關連結 [ 最多2筆 ]</h4>
+					</div>
+					<div class="data_content">
+						<form class="fillin_list clearfix fillin_w100 bottom_line">
+							<div class="information_info clearfix">
+								<fieldset>
+									<label for="">連結 1</label>
+									<textarea class="f_input h_more" placeholder="連結名稱或敘述，字數限制30字以內">個人網站設計｜於2018年自己架設，自己設計到切版</textarea>
+								</fieldset>
+								<fieldset>
+									<input class="f_input" type="text" name="" id="" placeholder="https://" />
+								</fieldset>
+							</div>
+							<div class="information_info clearfix">
+								<fieldset>
+									<label for="">連結 2</label>
+									<textarea class="f_input h_more" placeholder="連結名稱或敘述，字數限制30字以內"></textarea>
+								</fieldset>
+								<fieldset>
+									<input class="f_input" type="text" name="" id="" placeholder="https://" />
+								</fieldset>
+							</div>
+						</form>
+					</div>
+				</div>
+				<p class="btn"><a href="user_info_00.html">儲存/上一頁</a></p>
+			</div>
+			<!-- popup 提醒-->
+			<div id="popup-note" class="white-popup popup-w-s mfp-hide">
+		        <div class="setBox messageBox">
+		            <div class="RedBox">
+		                <p class="info">提醒：您有檔案未上傳成功，請刪除再重新上傳。</p>
+		            </div>
+		            <p class="btn">
+		                <a class="bg_red" href="#">確認</a>
+		            </p>
+		        </div>
+		    </div>
+		</main>
+	</body>
+</html>
+
+
+
