@@ -48,6 +48,9 @@ p.btn{ text-align: center; width: 100%; padding: 10px 0; }
 p.btn a{ background-color: #81B6C8; color: #fff; height: 46px; line-height: 46px; display: block; width: 100%; border-radius: 8px 0 8px 8px; margin: 0 auto; }
 p.btn a:hover{ background-color: #B8D3DC; }
 
+a .tooltip{ opacity: 1; position: absolute; top: 33px; z-index: 10; min-width: 40px; text-align: center; background-color: #4A4A4A; border-radius: 3px; padding: 3px 5px; font-size: 13px; color: #fff; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;  -webkit-transform: scale(0.9); margin: 0;}
+a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 4px); width: 0; height: 0; border-style: solid; border-width: 0 4px 6px 4px; border-color: transparent transparent #4a4a4a transparent; line-height: 0px; _border-color: #000000 #000000 #4a4a4a #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+
 .personal_information_container{ padding-bottom: 40px; }
 .personal_information_container .top_tips{ width: 100%; background-color: #F8F9F9; padding: 80px 10px 10px 10px;}
 .personal_information_container .top_tips p{ max-width: 575px; margin: 0 auto; color: #C87D86; font-size: 18px;}
@@ -73,7 +76,7 @@ p.btn a:hover{ background-color: #B8D3DC; }
 .personal_information_container .interviewee_data ul.other_info li a.upload_file:hover p::after{ background-image: url(../images/personal_information/upload_file-blue.svg); }
 
 .personal_information_container .fill_project{ width: 100%; border-bottom: 8px solid #81B6C8; margin-bottom: 25px;}
-.personal_information_container .top_title{ background-color: #81B6C8; padding: 5px; }
+.personal_information_container .top_title{ background-color: #81B6C8; padding: 5px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky;  position: -o-sticky;z-index: 2; top: 0;}
 .personal_information_container .top_title h3{ color: #fff; font-size: 16px; max-width: 575px; margin: 0 auto;}
 
 .personal_information_container .sub_title { background-color: #F8F9F9; padding:10px 5px; border-bottom: 1.5px solid #fff;}
@@ -87,7 +90,7 @@ p.btn a:hover{ background-color: #B8D3DC; }
 
 .personal_information_container .fill_project ul.item{ max-width: 625px; margin: 0 auto; padding: 20px 0; }
 .personal_information_container .fill_project ul.item li{ float: left;}
-.personal_information_container .fill_project ul.item li a{ width: 94px; height: 70px; display: block; text-align: center;}
+.personal_information_container .fill_project ul.item li a{ width: 94px; height: 77px; display: block; text-align: center; position: relative; border-radius: 5px; border: 2px solid transparent; }
 .personal_information_container .fill_project ul.item li a p{ color: #9B9B9B; position: relative; width: 100%; padding-top: 46px;}
 .personal_information_container .fill_project ul.item li a p::after{ content: ""; position: absolute; width:100%; height: 32px; top: 8px; left:0; display: block; }
 .personal_information_container .fill_project ul.item li a:hover p, .personal_information_container .fill_project ul.item li.btn_in a p {color: #81B6C8;}
@@ -109,6 +112,9 @@ p.btn a:hover{ background-color: #B8D3DC; }
 .personal_information_container .fill_project ul.item li a.icon_07:hover p::after, .personal_information_container .fill_project ul.item li.btn_in a.icon_07 p::after{ background-image: url(../images/personal_information/fill_project_icon_07-blue.svg);}
 .personal_information_container .fill_project ul.item li a.icon_08:hover p::after, .personal_information_container .fill_project ul.item li.btn_in a.icon_08 p::after{ background-image: url(../images/personal_information/fill_project_icon_08-blue.svg);}
 .personal_information_container .fill_project ul.item li a.icon_09:hover p::after, .personal_information_container .fill_project ul.item li.btn_in a.icon_09 p::after{ background-image: url(../images/personal_information/fill_project_icon_09-blue.svg);}
+
+.personal_information_container .fill_project ul.item li a.remind{ border-color: #4A4A4A; }
+.personal_information_container .fill_project ul.item li a.remind .tooltip{ top: 81px; left: calc(50% - 55px); min-width: 110px; }
 
 .personal_information_container p.btn{ max-width: 575px; margin: 0 auto; font-size: 18px; }
 .personal_information_container p.btn a{ background-color: #B8D3DC; color: #fff; height: 46px; line-height: 46px; display: block; width: 100%; border-radius: 8px 0 8px 8px; margin: 0 auto; }
@@ -168,7 +174,7 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 
 .personal_information_container .fillin_list input::placeholder, .personal_information_container .fillin_list textarea::placeholder{ color: #D8D8D8; }
 .personal_information_container .fillin_list input.f_input:focus, .personal_information_container .fillin_list textarea.f_input:focus{ border-color: #81B6C8; }
-
+.personal_information_container .fillin_list .for_DOB{ position: relative; }
 .personal_information_container .fillin_list .for_DOB fieldset{ position: relative; }
 .personal_information_container .fillin_list .for_DOB fieldset::after{cursor: pointer; content: ""; bottom: 10px; right: 10px; position: absolute; width: 18px; height: 15px; display: block; background-image: url(../images/icon_time_select_01.png);}
 .personal_information_container .fillin_list .for_DOB fieldset{ float: left; max-width: 158px; }
@@ -177,6 +183,24 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .personal_information_container .fillin_list .DOB_100 fieldset{ float: none; padding-top: 10px; max-width: 100%; }
 .personal_information_container .fillin_list .DOB_100 fieldset:first-child{ padding-top: 0; }
 .personal_information_container .fillin_list .for_h01{ min-height: 114px; }
+
+.personal_information_container .fillin_list .for_DOB .monthBox{ background-color: #fff; border: 1px solid #979797; border-radius: 5px; position: absolute; width: 266px; top: 65px; left: 0; z-index: 3; overflow: hidden; padding-bottom: 5px; }
+.personal_information_container .fillin_list .for_DOB .monthBox .top_year_month{padding:10px 15px;}
+.personal_information_container .fillin_list .for_DOB .monthBox .top_year_month fieldset{ min-width: 70px; margin-right: 5px; }
+.personal_information_container .fillin_list .for_DOB .monthBox .top_year_month fieldset::after{ display: none; }
+.personal_information_container .fillin_list .for_DOB .monthBox .top_year_month .styled-select{ border-radius: 2px; background: url(../images/personal_information/icon_arr.png) right center no-repeat #fff; background-size: contain; }
+.personal_information_container .fillin_list .for_DOB .monthBox .top_year_month .styled-select select{ height: 23px; line-height: 23px; }
+
+.personal_information_container .fillin_list .for_DOB .monthBox p{ color: #9B9B9B;  padding:0;}
+.personal_information_container .fillin_list .for_DOB .monthBox .dateBox p{ border-radius: 5px; float: none; width: 85%; line-height: inherit; padding: 7px 0; margin: 4px auto 2px auto; text-align: center;} 
+.personal_information_container .fillin_list .for_DOB .monthBox .dateBox table{ max-width: 100%; margin: 0 auto; }
+.personal_information_container .fillin_list .for_DOB .monthBox .dateBox table th{ background-color: #81B6C8; }
+.personal_information_container .fillin_list .for_DOB .monthBox .dateBox table th p{ color: #fff; text-align: center; font-size: 11px; width: 100%; padding: 4px 0; margin: 0;}
+.personal_information_container .fillin_list .for_DOB .monthBox .dateBox table tr p{ cursor: pointer;}
+.personal_information_container .fillin_list .for_DOB .monthBox .dateBox table tr td p:hover{ background-color: #B8D3DC; color: #fff;}
+.personal_information_container .fillin_list .for_DOB .monthBox .dateBox p.btn_in { background-color: #81B6C8; color: #fff; }
+.personal_information_container .fillin_list .for_DOB .monthBox .dateBox p.gray{ color: #EBEBEB; }
+.personal_information_container .fillin_list .for_DOB .monthBox .dateBox p.btn_in:hover{background-color: #81B6C8;}
 
 .personal_information_container .fillin_list .for_3box fieldset{ float: left; width:calc(33.33% + 5px); padding-right: 10px; }
 .personal_information_container .fillin_list .for_3box fieldset:last-child{ float: right; padding-right: 0; max-width:calc(33.33% - 10px) ;}
@@ -375,8 +399,9 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 	.personal_information_container .sub_title h4 a.delete:hover{ border-color: #C87D86; }
 	.personal_information_container .sub_title h4 a.delete::before{ position: absolute; content: ""; top: calc(50% - 8.5px); left:-25px; width: 18px; height: 19px; background-image: url(../images/svg/garbage.svg);}
 	.personal_information_container .fillin_list .for_h01{ min-height: inherit; }
-	.personal_information_container .fillin_list .information_info:nth-child(3){ border-bottom: 1px dashed #979797; padding-bottom: 15px;}
+	.personal_information_container .fillin_list .information_info:nth-child(3){ border-bottom: 1px dashed #979797; padding-bottom: 15px; margin-bottom: 5px;}
 	.personal_information_container .fillin_list .no_line:nth-child(3){ border: none; padding: 0; }
+	.personal_information_container .fillin_list .information_info textarea.f_input{ max-width: 100%; }
 }
 
 @media (max-width:450px){
@@ -406,6 +431,7 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 	.personal_information_container .add_new_file .add_new_content a.choose_file p{ padding-top: 45px; font-size: 12px;}
 	.personal_information_container .add_new_file .add_new_content a.choose_file p::after{ left: calc(50% - 14px); width: 28px; height: 37px; }
 	.personal_information_container .add_new_file ul.upload_file li .upload_info .progress_bar{ max-width: calc(100% - 56px);}
+	.personal_information_container .fillin_list .for_DOB .monthBox{ width: 282px; }
 }
 
 /*須蓋過上面屬性，這兩個要在最下面*/
