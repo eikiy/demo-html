@@ -88,6 +88,10 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 .personal_information_container .sub_title h4.no_arr{ cursor: inherit; }
 .personal_information_container .sub_title h4.no_arr::after{ display: none; }
 
+.personal_information_container .sub_title_option{ width: 100%; background-color: #F8F9F9;}
+.personal_information_container .sub_title_option .setting_item{ border-bottom: 1px dashed #979797; padding: 10px 0; }
+.personal_information_container .sub_title_option .setting_item label{ font-size: 14px; }
+
 .personal_information_container .fill_project ul.item{ max-width: 625px; margin: 0 auto; padding: 20px 0; }
 .personal_information_container .fill_project ul.item li{ float: left;}
 .personal_information_container .fill_project ul.item li a{ width: 94px; height: 77px; display: block; text-align: center; position: relative; border-radius: 5px; border: 2px solid transparent; }
@@ -156,7 +160,7 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .personal_information_container .fillin_list .information_info label span.text_tips{ color: #4A4A4A; font-size: 14px; position: absolute; right: 0; top: 0; }
 
 .personal_information_container .fillin_list .information_info .setting_item{ background-color: #fff; margin-bottom: 5px; border: 1px solid #979797; border-radius: 5px; min-height: 35px; line-height: 35px; padding: 0; overflow: hidden;}
-.personal_information_container .fillin_list .information_info .setting_item label{ position: absolute; line-height: 35px; color: #9B9B9B; top: 0; left: 0; padding-bottom: 0; }
+.personal_information_container .fillin_list .information_info .setting_item label{ position: absolute; line-height: 35px; color: #9B9B9B; top: 0; left: 0; padding-bottom: 0; padding-top: 0; }
 .personal_information_container .fillin_list .information_info .setting_item input[type=checkbox]:not(old) +label{ background: url(../images/personal_information/checks_off.png) 5px center no-repeat;}
 .personal_information_container .fillin_list .information_info .setting_item input[type=checkbox]:not(old):checked + label{ background-image: url(../images/personal_information/checks_on.png); background-color: #dfeff5;}
 .personal_information_container .fillin_list .information_info .setting_item input[type=radio]:not(old) +label{ background: url(../images/personal_information/checks_off.png) 5px center no-repeat;}
@@ -167,10 +171,11 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .personal_information_container .fillin_list .information_info ul li.setting_item{ float: left; margin-right: 8px;  width:calc(50% - 8px); max-width: 125px;}
 .personal_information_container .fillin_list .information_info ul li.setting_item:nth-child(2n){ margin-right: 0; margin-left: 8px; }
 .personal_information_container .fillin_list .information_info ul li.w100{ width: 100%; max-width: inherit; margin-right: 0; }
-.personal_information_container .fillin_list .information_info ul li.setting_item input.pos_fill{ position: absolute; right: 0; top: 0; width: calc(100% - 80px); z-index: 3; line-height: 35px; background-color:transparent;}
+.personal_information_container .fillin_list .information_info ul li.w100:nth-child(2n){ margin-left: 0px; }
+.personal_information_container .fillin_list .information_info ul li.setting_item input.pos_fill{ position: absolute; right: 0; top: 0; width: calc(100% - 100px); z-index: 3; line-height: 35px; background-color:transparent;}
 .personal_information_container .fillin_list .information_info ul li.no_margin{ margin-left: 0 !important; }
 .personal_information_container .fillin_list .information_info ul.no_margin li{ margin-bottom: 0; }
-.personal_information_container .fillin_list .information_info .pad_top{ padding-top: 10px; }
+.personal_information_container .fillin_list .information_info .pad_top{ padding-top: 5px; }
 
 .personal_information_container .fillin_list input::placeholder, .personal_information_container .fillin_list textarea::placeholder{ color: #D8D8D8; }
 .personal_information_container .fillin_list input.f_input:focus, .personal_information_container .fillin_list textarea.f_input:focus{ border-color: #81B6C8; }
@@ -182,7 +187,11 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .personal_information_container .fillin_list .for_DOB p.age{ padding-left: 10px; }
 .personal_information_container .fillin_list .DOB_100 fieldset{ float: none; padding-top: 10px; max-width: 100%; }
 .personal_information_container .fillin_list .DOB_100 fieldset:first-child{ padding-top: 0; }
-.personal_information_container .fillin_list .for_h01{ min-height: 114px; }
+.personal_information_container .fillin_list .for_h01{ min-height: 117px; }
+.personal_information_container .fillin_list .for_w100{ width: 100%; border-top: 1px dashed #979797; padding-top: 10px;}
+.personal_information_container .fillin_list .for_w100 label{ width: inherit; float: left; line-height: 32px; }
+.personal_information_container .fillin_list .for_w100 ul{ width: inherit; float: right; width: 150px; }
+.personal_information_container .fillin_list .for_w100 ul li label{ width: 100%; }
 
 .personal_information_container .fillin_list .for_DOB .monthBox{ background-color: #fff; border: 1px solid #979797; border-radius: 5px; position: absolute; width: 266px; top: 65px; left: 0; z-index: 3; overflow: hidden; padding-bottom: 5px; }
 .personal_information_container .fillin_list .for_DOB .monthBox .top_year_month{padding:10px 15px;}
@@ -228,9 +237,8 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .personal_information_container p.top_line{ border-top: 1px dashed #979797; padding-top: 15px;}
 
 .personal_information_container .style_for_k label{ color: #4A4A4A; }
-.personal_information_container .style_for_k input[type=checkbox]:not(old) + label{background: url(../images/personal_information/checks_off.png) 0 center no-repeat;}
-.personal_information_container .style_for_k input[type=checkbox]:not(old):checked + label{ background-image: url(../images/personal_information/checks_on.png);}
-
+.personal_information_container .style_for_k input[type=checkbox]:not(old) + label, .personal_information_container .style_for_k input[type=radio]:not(old) + label{background: url(../images/personal_information/checks_off.png) 0 center no-repeat;}
+.personal_information_container .style_for_k input[type=checkbox]:not(old):checked + label, .personal_information_container .style_for_k input[type=radio]:not(old):checked + label{ background-image: url(../images/personal_information/checks_on.png);}
 
 /*upload file & link*/
 /*add link*/
@@ -402,6 +410,8 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 	.personal_information_container .fillin_list .information_info:nth-child(3){ border-bottom: 1px dashed #979797; padding-bottom: 15px; margin-bottom: 5px;}
 	.personal_information_container .fillin_list .no_line:nth-child(3){ border: none; padding: 0; }
 	.personal_information_container .fillin_list .information_info textarea.f_input{ max-width: 100%; }
+	.personal_information_container .fillin_list .for_w100 ul{ width: 100%; }
+	.personal_information_container .fillin_list .for_w100 label{ line-height: inherit; }
 }
 
 @media (max-width:450px){
