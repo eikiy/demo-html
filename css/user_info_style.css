@@ -145,10 +145,10 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .styled-select select option{ background-color:#fff; text-align: center; color: #333;}
 .styled-select select option:hover{ background-color: #81B6C8; color: #fff; }
 .styled-select select::-ms-expand { display: none;}
-/* :root .styled-select select{ padding:2px 5px;}*/
+
 .personal_information_container .fillin_content{ padding-bottom: 5px;}
-.personal_information_container .fillin_list{ width: 100%; max-width: 575px; margin: 0 auto; padding-top: 15px;}
-.personal_information_container .fillin_list .information_info{ width: 50%; float: left; padding-right: 22px;  padding-bottom: 8px; }
+.personal_information_container .fillin_list{ width: 100%; max-width: 575px; margin: 0 auto; padding-top: 15px; justify-content: flex-start; display: flex; flex-wrap: wrap; align-content:flex-start;}
+.personal_information_container .fillin_list .information_info{ width: 50%;  padding-right: 22px; padding-bottom: 8px; display:flow-root; justify-content:flex-start; align-items: flex-start; }
 .personal_information_container .fillin_list .information_info:nth-child(2n){ padding-right: 0; padding-left: 22px; }
 .personal_information_container .fillin_list .information_info input.f_input,
 .personal_information_container .fillin_list .information_info textarea.f_input{ width: 100%; border: 1px solid #979797; border-radius: 5px; height: 35px; line-height: 35px; padding: 0 10px; -webkit-appearance: none;  -moz-appearance: none;  appearance: none;}
@@ -172,7 +172,7 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .personal_information_container .fillin_list .information_info ul li.setting_item:nth-child(2n){ margin-right: 0; margin-left: 8px; }
 .personal_information_container .fillin_list .information_info ul li.w100{ width: 100%; max-width: inherit; margin-right: 0; }
 .personal_information_container .fillin_list .information_info ul li.w100:nth-child(2n){ margin-left: 0px; }
-.personal_information_container .fillin_list .information_info ul li.setting_item input.pos_fill{ position: absolute; right: 0; top: 0; width: calc(100% - 100px); z-index: 3; line-height: 35px; background-color:transparent;}
+.personal_information_container .fillin_list .information_info ul li.setting_item input.pos_fill{ position: absolute; right: 0; top: 0; width: calc(100% - 100px); z-index: 3; height: 35px; line-height: 35px; background-color:transparent;}
 .personal_information_container .fillin_list .information_info ul li.no_margin{ margin-left: 0 !important; }
 .personal_information_container .fillin_list .information_info ul.no_margin li{ margin-bottom: 0; }
 .personal_information_container .fillin_list .information_info .pad_top{ padding-top: 5px; }
@@ -185,10 +185,11 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .personal_information_container .fillin_list .for_DOB fieldset{ float: left; max-width: 158px; }
 .personal_information_container .fillin_list .for_DOB p{ float: left; line-height: 33px; padding: 25px 5px 0 5px; }
 .personal_information_container .fillin_list .for_DOB p.age{ padding-left: 10px; }
+
 .personal_information_container .fillin_list .DOB_100 fieldset{ float: none; padding-top: 10px; max-width: 100%; }
 .personal_information_container .fillin_list .DOB_100 fieldset:first-child{ padding-top: 0; }
-.personal_information_container .fillin_list .for_h01{ min-height: 117px; }
-.personal_information_container .fillin_list .for_w100{ width: 100%; border-top: 1px dashed #979797; padding-top: 10px;}
+
+.personal_information_container .fillin_list .for_w100{ width: 100%; border-top: 1px dashed #979797; padding: 10px 0 0 ;}
 .personal_information_container .fillin_list .for_w100 label{ width: inherit; float: left; line-height: 32px; }
 .personal_information_container .fillin_list .for_w100 ul{ width: inherit; float: right; width: 150px; }
 .personal_information_container .fillin_list .for_w100 ul li label{ width: 100%; }
