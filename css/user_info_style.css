@@ -180,9 +180,8 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .personal_information_container .fillin_list input::placeholder, .personal_information_container .fillin_list textarea::placeholder{ color: #D8D8D8; }
 .personal_information_container .fillin_list input.f_input:focus, .personal_information_container .fillin_list textarea.f_input:focus{ border-color: #81B6C8; }
 .personal_information_container .fillin_list .for_DOB{ position: relative; }
-.personal_information_container .fillin_list .for_DOB fieldset{ position: relative; }
+.personal_information_container .fillin_list .for_DOB fieldset{ position: relative; float: left; width: 100%; max-width: 158px;}
 .personal_information_container .fillin_list .for_DOB fieldset::after{cursor: pointer; content: ""; bottom: 10px; right: 10px; position: absolute; width: 18px; height: 15px; display: block; background-image: url(../images/icon_time_select_01.png);}
-.personal_information_container .fillin_list .for_DOB fieldset{ float: left; max-width: 158px; }
 .personal_information_container .fillin_list .for_DOB p{ float: left; line-height: 33px; padding: 25px 5px 0 5px; }
 .personal_information_container .fillin_list .for_DOB p.age{ padding-left: 10px; }
 
@@ -196,7 +195,7 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 
 .personal_information_container .fillin_list .for_DOB .monthBox{ background-color: #fff; border: 1px solid #979797; border-radius: 5px; position: absolute; width: 266px; top: 65px; left: 0; z-index: 3; overflow: hidden; padding-bottom: 5px; }
 .personal_information_container .fillin_list .for_DOB .monthBox .top_year_month{padding:10px 15px;}
-.personal_information_container .fillin_list .for_DOB .monthBox .top_year_month fieldset{ min-width: 70px; margin-right: 5px; }
+.personal_information_container .fillin_list .for_DOB .monthBox .top_year_month fieldset{ min-width: 70px; margin-right: 5px; width: inherit; }
 .personal_information_container .fillin_list .for_DOB .monthBox .top_year_month fieldset::after{ display: none; }
 .personal_information_container .fillin_list .for_DOB .monthBox .top_year_month .styled-select{ border-radius: 2px; background: url(../images/personal_information/icon_arr.png) right center no-repeat #fff; background-size: contain; }
 .personal_information_container .fillin_list .for_DOB .monthBox .top_year_month .styled-select select{ height: 23px; line-height: 23px; }
