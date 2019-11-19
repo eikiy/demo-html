@@ -1907,6 +1907,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 
 .test_report .positive_behavior{ max-width: 778px; margin: 35px auto 0 auto; }
 .test_report .positive_behavior table.analysis{ width: 100%; }
+
 table.analysis tr td{ border-top: 1px solid #558C9E; border-right: 2px solid #558C9E; vertical-align: middle;}
 table.analysis tr th{ border-bottom: 2px solid #558C9E; border-right: 2px solid #558C9E; }
 table.analysis tr th.percentage{ position: relative; }
@@ -1929,8 +1930,12 @@ table.analysis tr.top_info td .btn_type p a{ display: block; color: #81B6C8; min
 table.analysis tr.top_info td .btn_type p a.btn_in{ background-color: #81B6C8; color: #fff; }
 
 .test_report .note_positive_behavior{ max-width: 778px; margin: 0px auto 25px auto; position: relative; padding: 15px 0; }
-.test_report .note_positive_behavior p{ font-size: 12px; }
+.test_report .note_positive_behavior p, .test_report .note_positive_trait p{ font-size: 12px; }
 .test_report .note_positive_behavior p.p_right{ font-size: 14px; position: absolute; top: 12px; right: 0px; }
+.test_report .note_positive_trait{ max-width:556px; margin: 0px auto 20px auto; padding: 0 0 10px 0; }
+.test_report .note_positive_trait p{ padding-bottom: 5px; }
+.test_report .note_positive_trait span{ border:1px solid #81B6C8; color:#81B6C8; line-height: inherit; padding:1px 8px !important; margin-right: 5px; display: inline-block; border-radius: 5px; }
+.test_report .note_positive_trait span.blue{ background-color:#81B6C8; color: #fff !important;}
 
 .positive_behavior .answer_questions{ padding: 50px 0; }
 .positive_behavior .answer_questions ul.no_q{ width: 100%; position: relative; max-width: 600px; margin: 0 auto; padding-left: 64px; }
@@ -1985,7 +1990,14 @@ table.analysis tr.top_info td .btn_type p a.btn_in{ background-color: #81B6C8; c
 .test_report .other_test_fraction .testfraction_box .progress_container .top_title p span.f_r{ right: 10px; }
 
 .test_report .test_fraction_percentage table.analysis th:first-child{ border-right: none;}
-.test_report .test_fraction_percentage table.analysis .progress_container{ height: 50px; }
+.test_report .test_fraction_percentage table.analysis .progress_container{ height: 50px; position:relative; }
+.test_report .test_fraction_percentage table.analysis .progress_container p{ z-index: 2; width: 45px; text-align: center; line-height: inherit; position: absolute; top: 26px; color: #81B6C8; background-color: #F8F9F9; border: 1px solid #81B6C8; border-radius: 5px;} 
+.test_report .test_fraction_percentage table.analysis .progress_container p span{ position: relative; padding:1.5px 5px; display: block;}
+.test_report .test_fraction_percentage table.analysis .progress_container p span::after{ content: ""; top: -5px; left: calc(50% - 3px); position: absolute; width: 0; height: 0; border-style: solid; border-width: 0 4px 6px 4px; border-color: transparent transparent #fff transparent; line-height: 0px; _border-color: #000000 #000000 #fff #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+.test_report .test_fraction_percentage table.analysis .progress_container p.bg_blue{ top: -8px; background-color: #81B6C8; color: #fff; border-color: #fff; }
+.test_report .test_fraction_percentage table.analysis .progress_container p.bg_blue span{ color: #fff; }
+.test_report .test_fraction_percentage table.analysis .progress_container p.bg_blue span::after{ border-width:6px 4px 0 4px; top:inherit; bottom: -7px; border-color: #fff transparent transparent transparent; line-height: 0px; _border-color: #fff #000000 #000000 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+
 .test_report .test_fraction_percentage table.analysis .progressbar{ height: 21px; top: 15px; }
 
 .interviewee_info h4.dividing_line{ border-top:2px solid #D8D8D8; padding: 15px 60px 0px 60px; margin-top: 10px; font-size: 20px ; color: #4A4A4A;}
@@ -2292,20 +2304,21 @@ table.analysis tr.top_info td .btn_type p a.btn_in{ background-color: #81B6C8; c
 .interviewee_info .c_logictest_org .positive_behavior .answer_questions ul.no_q li p.ok::before{ background-image: url(../images/user_info/icon_answer_ok_skyblue.png); }
 .interviewee_info .c_logictest_org .positive_behavior .answer_questions ul.no_q li p.error::before{ background-image: url(../images/user_info/icon_answer_error_red.png); }
 
-.interviewee_info .c_logictest_org .note_positive_behavior{ border-top: 2px solid #E5AF57; text-align: right; margin:0; }
 .interviewee_info .c_logictest_org .note_positive_behavior p, .interviewee_info .c_dark_purple .note_positive_behavior p{ padding-right: 20px; }
 
 .interviewee_info .c_logictest_org h4.s_icon_05::after{background-image: url(../images/user_info/r_title_icon_05_blue.png); }
 .interviewee_info .c_logictest_org h4.s_icon_07::after{background-image: url(../images/user_info/r_title_icon_07_blue.png); }
+
+.interviewee_info .c_logictest_org .note_positive_trait{ max-width: 100%; padding: 6px 0 0 267px; border-top: 2px solid #E5AF57;}
 
 .interviewee_info .c_dark_purple { border-color: #342949; padding-bottom: 30px; }
 .interviewee_info .c_dark_purple h4.bg_dark_blue{ background-color: #342949; color: #fff; }
 .interviewee_info .c_dark_purple .note_positive_behavior{ border-top: 2px solid #342949; text-align: right; margin:0; }
 .interviewee_info .c_dark_purple table.analysis tr th, .interviewee_info .c_dark_purple table.analysis tr td,.interviewee_info .c_dark_purple .positive_behavior, .interviewee_info .c_dark_purple .note_positive_behavior,.interviewee_info .c_dark_purple table.analysis .progress_container::after{ border-color: #342949; }
 
-table.potential_personality_trait{ width: 100%; padding: 15px 10px; }
-table.potential_personality_trait tr td{ vertical-align: top; }
-table.potential_personality_trait p.text{ padding:30px 10px 10px 10px; text-align: justify; }
+
+table.potential_personality_trait{ width: 100%; padding: 15px 10px 0px 10px; }/*
+table.potential_personality_trait tr td{ vertical-align: top; }*/
 table.potential_personality_trait .progress_container{ width:100%; height:34px; position:relative; background: url(../images/user_info/bg_progressbar.png) center center no-repeat; background-size: cover;}
 table.potential_personality_trait .progress_container::after{z-index: 5; content: ""; position: absolute; left:calc(50% - 0.5px); width: 1px; height: 100%; display: block;}
 table.potential_personality_trait .progressbar{ background-color:#81B6C8; top: 10px; height:14px; position:absolute; line-height:inherit;}
@@ -2321,13 +2334,18 @@ table.potential_personality_trait .top_title ul.ex li p{ color: #81B6C8;}
 table.potential_personality_trait .top_title .img_progress_ex{ width: 100%; height: 11px; position: relative; display: block; background: url(../images/user_info/bg_progressbar.png) center center no-repeat; background-size: cover;}
 table.potential_personality_trait .top_title .img_progress_ex::after{ content: ""; position: absolute; width: 1px; height: 11px; display: block; background-color: #9B9B9B; left:calc(50% - 0.5px); top: 0; }
 
+table.potential_personality_trait tr td p.text{ padding: 7px; }
+
 table.potential_personality_trait .progress_box{ width: 100%; border:1px solid #9B9B9B; background-color: #F8F9F9; margin: 10px 0;}
 table.potential_personality_trait .progress_box h4{ background-color: #D1E0E5; width:100%; height:22px ; line-height:22px; text-align:center; font-size: 16px;}
 table.potential_personality_trait .progress_box .img_progress{ margin-top: 30px; width: 100%; height: 34px; position: relative; display: block; background: url(../images/user_info/bg_progressbar.png) center center no-repeat; background-size: cover;}
 table.potential_personality_trait .progress_box .img_progress::after{ z-index: 5; content: ""; position: absolute; left:calc(50% - 0.5px); width: 1px; height: 100%; background-color: #9B9B9B; display: block;}
-table.potential_personality_trait .progress_box .img_progress p{ width: 45px; text-align: center; position: absolute; bottom: 0; color: #81B6C8;} 
-table.potential_personality_trait .progress_box .img_progress p span{ position: relative; padding: 0 0 38px 0; display: block;}
-table.potential_personality_trait .progress_box .img_progress p span::after{ content: ""; bottom: -1px; left: calc(50% - 7px); position: absolute; width: 0; height: 0; border-style: solid; border-width: 0 7px 14px 7px; border-color: transparent transparent #81b6c8 transparent; line-height: 0px; _border-color: #000000 #000000 #81b6c8 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+table.potential_personality_trait .progress_box .img_progress p{ width: 45px; text-align: center; position: absolute; top: 6px; color: #81B6C8; background-color: #F8F9F9; border: 1px solid #81B6C8; border-radius: 5px;} 
+table.potential_personality_trait .progress_box .img_progress p span{ position: relative; padding:2px 5px; display: block;}
+table.potential_personality_trait .progress_box .img_progress p span::after{ content: ""; top: -7px; left: calc(50% - 3px); position: absolute; width: 0; height: 0; border-style: solid; border-width: 0 4px 6px 4px; border-color: transparent transparent #81b6c8 transparent; line-height: 0px; _border-color: #000000 #000000 #81b6c8 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+table.potential_personality_trait .progress_box .img_progress p.bg_blue{ top: -28px; background-color: #81B6C8; color: #fff; }
+table.potential_personality_trait .progress_box .img_progress p.bg_blue span{ color: #fff; }
+table.potential_personality_trait .progress_box .img_progress p.bg_blue span::after{ border-width:6px 4px 0 4px; top:inherit; bottom: -7px; border-color: #81b6c8 transparent transparent transparent; line-height: 0px; _border-color: #81b6c8 #000000 #000000 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
 
 .interviewee_info .c_dark_purple table.potential_personality_trait .top_title ul.ex li p{ color: #342949; }
 .interviewee_info .c_dark_purple table.potential_personality_trait .progress_box h4{ background-color: #342949; color: #fff; }
@@ -2671,7 +2689,8 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box .test_report table.suggest tr td:first-child p{ color: #000000; font-size: 14px; font-weight: normal;  text-align: left; }
 .print_box .test_report table.suggest tr td{ border-color: #4A4A4A;}
 .print_box .test_report table.suggest .top_title p{ text-align: right; color: #000000; }
-
+.print_box .test_report .note_positive_trait{ max-width: 360px; }
+.print_box .test_report .note_positive_trait p{ font-size: 11px;}
 .print_box .test_report .positive_behavior table.analysis .progress_container::after{  border-right-style: solid;  }
 .print_box .test_report .test_fraction_percentage table.analysis .progress_container::after{ border-right-style: dashed ; }
 
@@ -2693,6 +2712,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box .interviewee_info .c_logictest_org .positive_behavior .answer_questions ul.no_q li p::after{ border: 1px solid #D8D8D8; background-color: #fff; }
 .print_box .interviewee_info .c_logictest_org .positive_behavior .answer_questions ul.no_q li p.ok::before{ background-image: url(../images/user_info/icon_answer_ok_blue.png); }
 .print_box .interviewee_info .c_logictest_org table.analysis tr th{ border-right: none; }
+.print_box .interviewee_info .c_logictest_org .note_positive_trait{ padding-left: 150px; }
 .print_box .interviewee_info .c_desaturated_blue{ border-color: #4A4A4A; }
 .print_box .interviewee_info .c_desaturated_blue h4.bg_dark_blue{ background-color: #E6F0F4; border-color: #4A4A4A; }
 .print_box .interviewee_info .c_dark_purple table.potential_personality_trait .progress_box h4{ background-color: #fff; color: #000000; border-bottom: 1px solid #979797; }
@@ -2705,7 +2725,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box .positive_behavior .answer_questions ul.no_q{ max-width: 800px; }
 .print_box .positive_behavior .answer_questions ul.no_q li{ margin-right: 4px; width: 40px; }
 .print_box .positive_behavior .answer_questions ul.no_q li p{ padding-bottom: 42px; font-size: 18px; }
-.print_box .positive_behavior .answer_questions ul.no_q li p::after, .positive_behavior ul.no_q li p::before{ width: 40px; height: 40px; }
+.print_box .positive_behavior .answer_questions ul.no_q li p::after, .positive_behavior ul.no_q li p::before{ width: 38px; height: 38px; }
 .print_box .positive_behavior .answer_questions ul.no_q li.first_title{ left: 20px; }
 .print_box .positive_behavior .answer_questions ul.no_q li.first_title p{ font-size: 12px; }
 
@@ -2723,6 +2743,8 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box table.potential_personality_trait .progress_box .img_progress{ background: url(../images/user_info/bg_progressbar_print.png) center center no-repeat; background-size: cover;}
 .print_box table.potential_personality_trait .progress_box .img_progress p span{ color:  #558C9E; }
 .print_box table.potential_personality_trait .progress_box .img_progress p span::after{ border-color: transparent transparent #558C9E transparent;}
+.print_box table.potential_personality_trait .progress_box .img_progress p.bg_blue span{ color: #fff; }
+.print_box table.potential_personality_trait .progress_box .img_progress p.bg_blue span::after{border-color: #81b6c8 transparent transparent transparent;{}
 .print_box table.potential_personality_trait .progress_box .img_progress::after{ border-right: 1px dotted #9B9B9B; background-color: transparent;}
 .print_box table.potential_personality_trait .progress_box h4{ background-color: #fff; border-bottom: 1px solid #9B9B9B; font-size: 13px; }
 .print_box table.potential_personality_trait .top_title .img_progress_ex{ background: url(../images/user_info/bg_progressbar_print2.png) center center no-repeat; background-size: cover;}

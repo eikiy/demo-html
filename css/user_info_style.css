@@ -16,21 +16,24 @@ abbr, acronym { border:0;}
 *:first-child + html .clearfix { min-height: 1%;}
 
 body, h1, h2, h3, h4, h5, h6, p {font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4, sans-serif; font-weight: normal; color: #4A4A4A;}
-p{ font-size:14px;}
+.personal_information_container p{ font-size:16px;}
 a{  text-decoration:none; outline: none; cursor: pointer; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
 a:hover{ text-decoration:none;}
-select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4, sans-serif; font-size: 14px;color: #4A4A4A;}
+select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4, sans-serif; font-size: 14px; color: #4A4A4A;}
 *:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 
 /*===== start ======*/
-.contentsBox{ width: 100%; max-width: 1024px; margin: 0 auto; }
+
+.personal_information_login{ min-height: 100vh; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.personal_information_login .contentsBox{ width: 100%; max-width: 1000px; margin: 0 auto; }
+.personal_information_container .contentsBox{ vertical-align: top; width: 100%; max-width: 1000px; margin: 0 auto; }
 .img_default, .img_default::before, .img_default::after{ background-position: center center; background-repeat: no-repeat; background-size: contain;}
 
-.personal_information_login .main-logo{ width: 190px; height:190px; display: block; margin:110px auto 0px auto; border:solid 3px #81B6C8; background-size: contain; background-position: center center; background-repeat: no-repeat; border-radius: 3px; }
-.personal_information_login h1.title{ font-size: 24px; text-align: center; color: #4A4A4A; padding: 25px 0 10px 0; }
-.personal_information_login p.sub_title{ font-size: 14px; text-align: center; color: #707475; padding-bottom: 60px; }
-.personal_information_login .main_info{ border:1px solid #81B6C8; border-width: 18px 0 18px 0; padding: 15px 0;}
-.personal_information_login .main_info p{ position: relative; font-size: 16px; color: #9B9B9B; text-align: justify; max-width: 745px; margin: 0 auto;}
+.personal_information_login .main-logo{ width: 190px; height:190px; display: block; margin:50px auto 0px auto; border:solid 3px #81B6C8; background-size: contain; background-position: center center; background-repeat: no-repeat; border-radius: 3px; }
+.personal_information_login h1.title{ font-size: 30px; text-align: center; color: #4A4A4A; padding: 25px 0 10px 0; }
+.personal_information_login p.sub_title{ font-size: 18px; text-align: center; color: #707475; padding-bottom: 60px; }
+.personal_information_login .main_info{ border:1px solid #81B6C8; border-width: 18px 0 18px 0; padding: 20px 0;}
+.personal_information_login .main_info p{ position: relative; font-size: 18px; color: #9B9B9B; text-align: justify; max-width: 85%; margin: 0 auto;}
 .personal_information_login .main_info p::after{ position: absolute; top: -230px; left:0;  content: ""; width: 213px; height: 182px; display: block; background-image: url(../images/personal_information/login_graphic_01.png); }
 .personal_information_login .main_info p::before{ position: absolute; top: -280px; right: -10px;  content: ""; width: 235px; height: 254px; display: block; background-image: url(../images/personal_information/login_graphic_02.png); }
 
@@ -44,20 +47,21 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 .personal_information_login .name_error::after{ content: ""; z-index: 10; position: absolute; display: block; background-color: #C87D86; width:calc(100% - 65px); max-width: 337px; height: 2px; bottom:0px; right: 10px;}
 .personal_information_login .name_error p.the_reminder{ position: absolute; bottom: 0px; line-height: 46px; right: 15px; color: #C87D86; }
 
-p.btn{ text-align: center; width: 100%; padding: 10px 0; }
-p.btn a{ background-color: #81B6C8; color: #fff; height: 46px; line-height: 46px; display: block; width: 100%; border-radius: 8px 0 8px 8px; margin: 0 auto; }
-p.btn a:hover{ background-color: #B8D3DC; }
+.personal_information_login p.btn, .personal_information_container p.btn{ text-align: center; width: 100%; }
+.personal_information_login p.btn a{ background-color: #81B6C8; color: #fff; height: 46px; line-height: 46px; display: block; width: 100%; border-radius: 8px 0 8px 8px; margin: 0 auto; }
+.personal_information_login p.btn a:hover{ background-color: #B8D3DC; }
+.personal_information_login p.btn{ padding: 10px 0;}
 
-a .tooltip{ opacity: 1; position: absolute; top: 33px; z-index: 10; min-width: 40px; text-align: center; background-color: #4A4A4A; border-radius: 3px; padding: 3px 5px; font-size: 13px; color: #fff; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;  -webkit-transform: scale(0.9); margin: 0;}
+a .tooltip{ opacity: 1; position: absolute; top: 33px; z-index: 10; min-width: 40px; text-align: center; background-color: #4A4A4A; border-radius: 3px; padding: 3px 5px; font-size: 15px; color: #fff; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;  -webkit-transform: scale(0.9); margin: 0;}
 a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 4px); width: 0; height: 0; border-style: solid; border-width: 0 4px 6px 4px; border-color: transparent transparent #4a4a4a transparent; line-height: 0px; _border-color: #000000 #000000 #4a4a4a #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
 
 .personal_information_container{ padding-bottom: 40px; }
-.personal_information_container .top_tips{ width: 100%; background-color: #F8F9F9; padding: 80px 10px 10px 10px;}
-.personal_information_container .top_tips p{ max-width: 575px; margin: 0 auto; color: #C87D86; font-size: 18px;}
-.personal_information_container .interviewee_data{ max-width: 575px; margin: 0 auto; padding: 40px 0 30px 0;}
+.personal_information_container .top_tips{ width: 100%; background-color: #F8F9F9; padding: 80px 10px 15px 10px;}
+.personal_information_container .top_tips p{ max-width: 900px; margin: 0 auto; color: #C87D86; font-size: 22px;}
+.personal_information_container .interviewee_data{ max-width: 900px; margin: 0 auto; padding: 40px 0 30px 0;}
 .personal_information_container .interviewee_data ul.user_info{ float: left; }
 .personal_information_container .interviewee_data ul.user_info li{ padding: 5px 0;}
-.personal_information_container .interviewee_data p{ font-size: 16px; }
+.personal_information_container .interviewee_data p{ font-size: 20px; }
 .personal_information_container .interviewee_data p span{ color: #9B9B9B; }
 .personal_information_container .interviewee_data ul.other_info{ float: right; }
 .personal_information_container .interviewee_data ul.other_info li{ float: left; padding-left: 15px; }
@@ -77,10 +81,10 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 
 .personal_information_container .fill_project{ width: 100%; border-bottom: 8px solid #81B6C8; margin-bottom: 25px;}
 .personal_information_container .top_title{ background-color: #81B6C8; padding: 5px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky;  position: -o-sticky;z-index: 2; top: 0;}
-.personal_information_container .top_title h3{ color: #fff; font-size: 16px; max-width: 575px; margin: 0 auto;}
+.personal_information_container .top_title h3{ color: #fff; font-size: 18px; max-width: 900px; margin: 0 auto;}
 
 .personal_information_container .sub_title { background-color: #F8F9F9; padding:10px 5px; border-bottom: 1.5px solid #fff;}
-.personal_information_container .sub_title h4{ color: #707475; font-size: 15px; max-width: 575px; margin: 0 auto; position: relative; cursor: pointer;}
+.personal_information_container .sub_title h4{ color: #707475; font-size: 15px; max-width: 900px; margin: 0 auto; position: relative; cursor: pointer;}
 .personal_information_container .sub_title h4 a.delete{ border-radius: 4px 0 4px 4px; border:1px solid #C87D86; color: #C87D86; font-size: 12px; padding: 2px 6px; display: inline-block; margin-left: 5px; }
 .personal_information_container .sub_title h4 a.delete:hover{ background-color: #C87D86; color: #fff; }
 .personal_information_container .sub_title h4::after{ content:""; position: absolute; right: 10px; top: 6.5px; width: 15px; height: 10px; display: block; background-image: url(../images/svg/arrow_bottom.svg);  }
@@ -89,14 +93,14 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 .personal_information_container .sub_title h4.no_arr::after{ display: none; }
 
 .personal_information_container .sub_title_option{ width: 100%; background-color: #F8F9F9;}
-.personal_information_container .sub_title_option .setting_item{ border-bottom: 1px dashed #979797; padding: 10px 0; }
+.personal_information_container .sub_title_option .setting_item{ border-bottom: 1px dashed #979797; padding: 10px 0; text-align: left; margin-top: 0;}
 .personal_information_container .sub_title_option .setting_item label{ font-size: 14px; }
 
-.personal_information_container .fill_project ul.item{ max-width: 625px; margin: 0 auto; padding: 20px 0; }
-.personal_information_container .fill_project ul.item li{ float: left;}
-.personal_information_container .fill_project ul.item li a{ width: 94px; height: 77px; display: block; text-align: center; position: relative; border-radius: 5px; border: 2px solid transparent; }
-.personal_information_container .fill_project ul.item li a p{ color: #9B9B9B; position: relative; width: 100%; padding-top: 46px;}
-.personal_information_container .fill_project ul.item li a p::after{ content: ""; position: absolute; width:100%; height: 32px; top: 8px; left:0; display: block; }
+.personal_information_container .fill_project ul.item{ max-width: 900px; /*max-width: 625px;*/ margin: 0 auto; padding: 20px 0; }
+.personal_information_container .fill_project ul.item li{ float: left; width: calc(100% / 6);}
+.personal_information_container .fill_project ul.item li a{ width:100%; height: 95px; display: block; text-align: center; position: relative; border-radius: 5px; border: 2px solid transparent; }
+.personal_information_container .fill_project ul.item li a p{ color: #9B9B9B; position: relative; width: 100%; padding-top: 62px;}
+.personal_information_container .fill_project ul.item li a p::after{ content: ""; position: absolute; width:100%; height: 48px; top: 8px; left:0; display: block; }
 .personal_information_container .fill_project ul.item li a:hover p, .personal_information_container .fill_project ul.item li.btn_in a p {color: #81B6C8;}
 .personal_information_container .fill_project ul.item li a.icon_01 p::after{ background-image: url(../images/personal_information/fill_project_icon_01.svg);}
 .personal_information_container .fill_project ul.item li a.icon_02 p::after{ background-image: url(../images/personal_information/fill_project_icon_02.svg);}
@@ -118,22 +122,22 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 .personal_information_container .fill_project ul.item li a.icon_09:hover p::after, .personal_information_container .fill_project ul.item li.btn_in a.icon_09 p::after{ background-image: url(../images/personal_information/fill_project_icon_09-blue.svg);}
 
 .personal_information_container .fill_project ul.item li a.remind{ border-color: #4A4A4A; }
-.personal_information_container .fill_project ul.item li a.remind .tooltip{ top: 81px; left: calc(50% - 55px); min-width: 110px; }
+.personal_information_container .fill_project ul.item li a.remind .tooltip{ top: 100px; left: calc(50% - 65px); min-width: 130px; }
 
-.personal_information_container p.btn{ max-width: 575px; margin: 0 auto; font-size: 18px; }
+.personal_information_container p.btn{ max-width: 900px; margin: 0 auto; font-size: 18px; padding-top: 10px; }
 .personal_information_container p.btn a{ background-color: #B8D3DC; color: #fff; height: 46px; line-height: 46px; display: block; width: 100%; border-radius: 8px 0 8px 8px; margin: 0 auto; }
 .personal_information_container p.btn a:hover{ background-color: #81B6C8; }
 .personal_information_container p.btn a.bg_light_blue{ background-color: #F2F8FA; color: #558C9E; }
 .personal_information_container p.btn a.bg_light_blue:hover{ background-color: #e2f2f8; }
 .personal_information_container p.btn a.bg_green{ background-color: #84BE98; }
 
-input[type=checkbox]:not(old), input[type=radio ]:not(old){ position: absolute; top: 0; left: 0; height: 100%; width : 100%; margin: 0;  padding : 0; opacity : 0; cursor: pointer; z-index: 2;}
-input[type=checkbox]:not(old) + label{  display : inline-block; padding-left : 30px; line-height : 24px;}
-input[type=checkbox]:not(old):checked + label{ background-position : 0 -73px;}
-input[type=radio]:not(old) + label{  display : inline-block; padding-left : 30px; line-height : 24px;}
-input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
+.personal_information_container input[type=checkbox]:not(old), input[type=radio ]:not(old){ position: absolute; top: 0; left: 0; height: 100%; width : 100%; margin: 0;  padding : 0; opacity : 0; cursor: pointer; z-index: 2;}
+.personal_information_container input[type=checkbox]:not(old) + label{  display : inline-block; padding-left : 30px; line-height : 24px;}
+.personal_information_container input[type=checkbox]:not(old):checked + label{ background-position : 0 -73px;}
+.personal_information_container input[type=radio]:not(old) + label{  display : inline-block; padding-left : 30px; line-height : 24px;}
+.personal_information_container input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 
-.personal_information_container .setting_item{ border-radius: 5px; background-color: #F8F9F9; max-width: 575px; margin: 0 auto; padding: 15px; display: block; position: relative; }
+.personal_information_container .setting_item{ border-radius: 5px; background-color: #F8F9F9; max-width: 900px; margin: 10px auto 0 auto; text-align: center; padding: 15px; display: block; position: relative; }
 .personal_information_container .setting_item label{ color: #C87D86; font-size: 18px;}
 .personal_information_container .setting_item input[type=checkbox]:not(old) + label{background: url(../images/personal_information/checks_off-red.png) 0 center no-repeat;}
 .personal_information_container .setting_item input[type=checkbox]:not(old):checked + label{ background-image: url(../images/personal_information/checks_on-red.png);}
@@ -147,17 +151,17 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .styled-select select::-ms-expand { display: none;}
 
 .personal_information_container .fillin_content{ padding-bottom: 5px;}
-.personal_information_container .fillin_list{ width: 100%; max-width: 575px; margin: 0 auto; padding-top: 15px; justify-content: flex-start; display: flex; flex-wrap: wrap; align-content:flex-start;}
+.personal_information_container .fillin_list{ width:calc(100% - 20px); max-width:900px; margin: 0 auto; padding-top: 15px; justify-content: flex-start; display: flex; flex-wrap: wrap; align-content:flex-start;}
 .personal_information_container .fillin_list .information_info{ width: 50%;  padding-right: 22px; padding-bottom: 8px; display:flow-root; justify-content:flex-start; align-items: flex-start; }
 .personal_information_container .fillin_list .information_info:nth-child(2n){ padding-right: 0; padding-left: 22px; }
 .personal_information_container .fillin_list .information_info input.f_input,
 .personal_information_container .fillin_list .information_info textarea.f_input{ width: 100%; border: 1px solid #979797; border-radius: 5px; height: 35px; line-height: 35px; padding: 0 10px; -webkit-appearance: none;  -moz-appearance: none;  appearance: none;}
-.personal_information_container .fillin_list .information_info textarea.f_input{ max-width: 265px; min-width: 265px; min-height: 35px; overflow-y: hidden;}
+.personal_information_container .fillin_list .information_info textarea.f_input{ max-width: 428px; min-width: 278px; min-height: 35px; overflow-y: hidden;}
 .personal_information_container .fillin_list .information_info textarea.h70{ height: 70px; max-height: 70px; min-height: 70px; line-height: 24px; padding: 5px 10px; overflow-y: auto;}
 
 .personal_information_container .fillin_list .information_info label{ font-size: 15px; color: #558C9E; padding-top: 2px; padding-bottom: 6px; display: block; width: 100%; position: relative;}
 .personal_information_container .fillin_list .information_info label span.note{ background-color: #81B6C8; color: #fff; font-size: 11.5px; margin-left: 5px; border-radius: 3px; padding: 2px 5px; }
-.personal_information_container .fillin_list .information_info label span.text_tips{ color: #4A4A4A; font-size: 14px; position: absolute; right: 0; top: 0; }
+.personal_information_container .fillin_list .information_info label span.text_tips{ color: #4A4A4A; font-size: 14px; position: absolute; right: 0; top: 1px; }
 
 .personal_information_container .fillin_list .information_info .setting_item{ background-color: #fff; margin-bottom: 5px; border: 1px solid #979797; border-radius: 5px; min-height: 35px; line-height: 35px; padding: 0; overflow: hidden;}
 .personal_information_container .fillin_list .information_info .setting_item label{ position: absolute; line-height: 35px; color: #9B9B9B; top: 0; left: 0; padding-bottom: 0; padding-top: 0; }
@@ -168,7 +172,7 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .personal_information_container .fillin_list .information_info .setting_item input[type=radio]:not(old):checked + label{ background-image: url(../images/personal_information/checks_on.png); background-color: #dfeff5;}
 
 .personal_information_container .fillin_list .information_info ul{ width: 100%; }
-.personal_information_container .fillin_list .information_info ul li.setting_item{ float: left; margin-right: 8px;  width:calc(50% - 8px); max-width: 125px;}
+.personal_information_container .fillin_list .information_info ul li.setting_item{ float: left; margin-right: 8px; text-align: left; width:calc(50% - 8px);}
 .personal_information_container .fillin_list .information_info ul li.setting_item:nth-child(2n){ margin-right: 0; margin-left: 8px; }
 .personal_information_container .fillin_list .information_info ul li.w100{ width: 100%; max-width: inherit; margin-right: 0; }
 .personal_information_container .fillin_list .information_info ul li.w100:nth-child(2n){ margin-left: 0px; }
@@ -176,6 +180,8 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .personal_information_container .fillin_list .information_info ul li.no_margin{ margin-left: 0 !important; }
 .personal_information_container .fillin_list .information_info ul.no_margin li{ margin-bottom: 0; }
 .personal_information_container .fillin_list .information_info .pad_top{ padding-top: 5px; }
+.personal_information_container .fillin_list .information_info .still_in{ position: absolute; top: -1px; left: 66px;  z-index: 2; text-align: left; border: none; margin: 0;}
+.personal_information_container .fillin_list .information_info .still_in label{color: #4A4A4A; padding-bottom: 0;}
 
 .personal_information_container .fillin_list input::placeholder, .personal_information_container .fillin_list textarea::placeholder{ color: #D8D8D8; }
 .personal_information_container .fillin_list input.f_input:focus, .personal_information_container .fillin_list textarea.f_input:focus{ border-color: #81B6C8; }
@@ -193,7 +199,7 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .personal_information_container .fillin_list .for_w100 ul{ width: inherit; float: right; width: 150px; }
 .personal_information_container .fillin_list .for_w100 ul li label{ width: 100%; }
 
-.personal_information_container .fillin_list .for_DOB .monthBox{ background-color: #fff; border: 1px solid #979797; border-radius: 5px; position: absolute; width: 266px; top: 65px; left: 0; z-index: 3; overflow: hidden; padding-bottom: 5px; }
+.personal_information_container .fillin_list .for_DOB .monthBox{ background-color: #fff; border: 1px solid #979797; border-radius: 5px; position: absolute; width: 278px; top: 65px; left: 0; z-index: 1; overflow: hidden; padding-bottom: 5px; }
 .personal_information_container .fillin_list .for_DOB .monthBox .top_year_month{padding:10px 15px;}
 .personal_information_container .fillin_list .for_DOB .monthBox .top_year_month fieldset{ min-width: 70px; margin-right: 5px; width: inherit; }
 .personal_information_container .fillin_list .for_DOB .monthBox .top_year_month fieldset::after{ display: none; }
@@ -226,7 +232,7 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .personal_information_container .fillin_w100 .information_info{ width: 100%; padding: 0; margin: 0; padding-bottom: 7px; }
 .personal_information_container .fillin_w100 .information_info:nth-child(2n){ padding: 0; padding-bottom: 7px;}
 .personal_information_container .fillin_w100 .information_info textarea.f_input{ max-width: 100%; min-width: 100%; }
-.personal_information_container .fillin_w100 .for_DOB fieldset::after{ bottom: 15px; }
+.personal_information_container .fillin_w100 .for_DOB fieldset::after{ bottom: 10px; }
 
 .personal_information_container .bottom_line .information_info{margin-bottom: 10px;}
 .personal_information_container .bottom_line .information_info:last-child{ margin-bottom: 0; }
@@ -237,8 +243,8 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .personal_information_container p.top_line{ border-top: 1px dashed #979797; padding-top: 15px;}
 
 .personal_information_container .style_for_k label{ color: #4A4A4A; }
-.personal_information_container .style_for_k input[type=checkbox]:not(old) + label, .personal_information_container .style_for_k input[type=radio]:not(old) + label{background: url(../images/personal_information/checks_off.png) 0 center no-repeat;}
-.personal_information_container .style_for_k input[type=checkbox]:not(old):checked + label, .personal_information_container .style_for_k input[type=radio]:not(old):checked + label{ background-image: url(../images/personal_information/checks_on.png);}
+.personal_information_container .style_for_k input[type=checkbox]:not(old) + label, .personal_information_container .style_for_k input[type=radio]:not(old) + label, .personal_information_container .fillin_list .information_info .still_in input[type=checkbox]:not(old) + label{background: url(../images/personal_information/checks_off.png) 0 center no-repeat;}
+.personal_information_container .style_for_k input[type=checkbox]:not(old):checked + label, .personal_information_container .style_for_k input[type=radio]:not(old):checked + label, .personal_information_container .fillin_list .information_info .still_in input[type=checkbox]:not(old):checked + label{ background-image: url(../images/personal_information/checks_on.png);}
 
 /*upload file & link*/
 /*add link*/
@@ -337,8 +343,15 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .personal_information_container .add_new_file ul.upload_file li.upload_done .icon_excel_arr{ background-image: url(../images/svg/file_icon/icon_excel_arr-green.svg) ;}
 .personal_information_container .add_new_file ul.upload_file li.upload_done .icon_more{ background-image: url(../images/svg/file_icon/icon_more-green.svg) ;}
 
+.personal_information_finished{ padding: 0; min-height: 100vh; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
+.personal_information_finished .fillin_done{ text-align: center; padding: 20px 0;}
+.personal_information_finished .fillin_done h3{ color: #81B6C8; font-size: 24px; padding:300px 0 40px 0; position: relative;}
+.personal_information_finished .fillin_done h3::after { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 272px; display: block; background-image: url(../images/personal_information/img_done.png);} 
+.personal_information_finished .fillin_done p{ font-size: 20px; line-height: 28px; color: #9B9B9B; }
+
 /*popup - style*/
 .white-popup { position: relative; width: auto; max-width: 760px; margin: 20px auto;}
+
 .mfp-fade.mfp-bg { opacity: 0; -webkit-transition: all 0.15s ease-out; -moz-transition: all 0.15s ease-out;  transition: all 0.15s ease-out;}
 .mfp-fade.mfp-bg.mfp-ready { opacity: 0.65;}
 .mfp-fade.mfp-bg.mfp-removing { opacity: 0;}
@@ -377,16 +390,54 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 .messageBox .border_yello{ border-color: #E5AF57;}
 .messageBox .border_red{ border-color: #C87D86;}
 
+@media (max-width:1600px){
+	.personal_information_container a .tooltip{ font-size: 13px; }
+	.personal_information_container p, 
+	.personal_information_login p.sub_title{ font-size: 14px;}
 
+	.personal_information_container .contentsBox, 
+	.personal_information_login .contentsBox{ max-width: 950px;}
+
+	.personal_information_login h1.title{ font-size: 24px;}
+	.personal_information_login .main_info{ padding: 15px 0;}
+
+	.personal_information_container .top_tips{ padding-bottom: 10px;}
+	.personal_information_container .top_tips p{ font-size: 18px; max-width: 900px;}
+
+	.personal_information_container .top_title h3,
+	.personal_information_container .interviewee_data p,
+	.personal_information_login .main_info p{ font-size: 16px;}
+
+	.personal_information_container .interviewee_data,
+	.personal_information_container .fill_project .top_title h3,
+	.personal_information_container .fill_project ul.item{ max-width: 900px;}
+
+	.personal_information_finished .fillin_done h3{ font-size: 20px; }
+	.personal_information_finished .fillin_done p{ font-size: 18px; line-height: 24px;}
+}
+@media (max-width:1440px){
+	.personal_information_container .fillin_content{ max-width: 750px; margin: 0 auto; }
+	.personal_information_container .fillin_list{ width: 100%; max-width: 600px;}
+	.personal_information_container p.btn, 
+	.personal_information_container .setting_item,
+	.personal_information_container .top_title h3,
+	.personal_information_container .sub_title h4{ max-width: 600px;}
+}
 @media (max-width:1040px){
-	.contentsBox{ width:calc(100% - 40px);}
+	.personal_information_container .contentsBox, .personal_information_login .contentsBox{ width:calc(100% - 40px);}
+	.personal_information_container .fill_project ul.item li a{ height: 77px; }
+	.personal_information_container .fill_project ul.item li a p{ padding-top: 46px;}
+	.personal_information_container .fill_project ul.item li a p::after{ height: 32px;}
+	.personal_information_container .fill_project ul.item li a.remind .tooltip{ top: 81px; left: calc(50% - 55px); min-width: 110px; }
 }
 @media (max-width:750px){
-	.personal_information_login .main-logo{ margin-top: 50px; }
+	.personal_information_container .contentsBox, .personal_information_login .contentsBox{ width: 100%; }
+	.personal_information_login .contentsBox, .personal_information_container .interviewee_data, .personal_information_container .fill_project .top_title h3, .personal_information_container .fill_project ul.item{ max-width: calc(100% - 30px); }
+	.personal_information_login .main-logo{ margin-top: 20px; }
 	.personal_information_login .main_info{ border: none;}
-	.personal_information_login .main_info p{ font-size: 12px; }
+	.personal_information_login .main_info p{ font-size: 12px; max-width: 95%; }
 	.personal_information_login .main_info p::before, .personal_information_login .main_info p::after{ display: none; }
-	.personal_information_login p.sub_title{ width: 190px; margin: 0 auto;text-align: left; padding-bottom: 20px; }
+	.personal_information_login p.sub_title{ margin: 0 auto; padding-bottom: 20px; }
 	.personal_information_login .fill{ padding: 20px 0; }
 
 	.personal_information_container .top_tips{ padding-top: 10px; }
@@ -397,14 +448,15 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 	.personal_information_container .setting_item label{ font-size: 16px; }
 }
 @media (max-width:620px){
+	.personal_information_container .fill_project ul.item li{ width: calc(100% / 3); }
 	.personal_information_container .fillin_list .information_info{ width: 100%; padding-right: 0;}
 	.personal_information_container .fillin_list .information_info:nth-child(2n){ padding-left: 0; }
 	.personal_information_container .fillin_list .information_info textarea.f_input{ max-width: 282px; }
 	.personal_information_container .fillin_list .information_info textarea.h_more{ height: 70px; overflow-y: auto; padding:5px 10px; line-height: 22px; }
 	.personal_information_container .fillin_list .information_info ul li.setting_item{ max-width: inherit;}
-
-	.personal_information_container .sub_title h4 a.delete{ border-color: #707475; color: #707475; position: relative; margin-left: 40px;}
-	.personal_information_container .sub_title h4 a.delete:hover{ border-color: #C87D86; }
+	.personal_information_container .top_title h3, .personal_information_container .sub_title h4, .personal_information_container .setting_item, .personal_information_container .fillin_list{ max-width: 90%; }
+	.personal_information_container .sub_title h4 a.delete{ border: none; color: transparent; position: relative; margin-left: 40px;}
+	.personal_information_container .sub_title h4 a.delete:hover{ background-color: transparent; border-color: transparent; }
 	.personal_information_container .sub_title h4 a.delete::before{ position: absolute; content: ""; top: calc(50% - 8.5px); left:-25px; width: 18px; height: 19px; background-image: url(../images/svg/garbage.svg);}
 	.personal_information_container .fillin_list .for_h01{ min-height: inherit; }
 	.personal_information_container .fillin_list .information_info:nth-child(3){ border-bottom: 1px dashed #979797; padding-bottom: 15px; margin-bottom: 5px;}
@@ -415,15 +467,15 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 }
 
 @media (max-width:450px){
-	.personal_information_login .main_info p{ font-size: 9px; }
-	.personal_information_login h1.title{ width: 190px; margin: 0 auto; font-size: 18px; text-align: left; padding-bottom: 5px; }
-	.personal_information_login p.sub_title{ width: 190px; margin: 0 auto;text-align: left; padding-bottom: 20px; }
+	.personal_information_login .main_info p{ font-size: 10px; }
+	.personal_information_login h1.title{  margin: 0 auto; font-size: 18px; padding-bottom: 5px; }
+	.personal_information_login p.sub_title{ padding-bottom: 20px; }
 	
 	.personal_information_container{ padding-bottom: 20px; }
-	.personal_information_container .contentsBox{ width: 100%; }
+	.personal_information_container .contentsBox{ width: 100%; min-width: 300px; }
 	.personal_information_container .top_tips p{ font-size: 14px; text-align: center; }
 
-	.personal_information_container .fill_project ul.item{ max-width: 282px; margin: 0 auto; }
+	.personal_information_container .fill_project ul.item{ margin: 0 auto; }
 	.personal_information_container .top_title h3,
 	.personal_information_container .sub_title h4,
 	.personal_information_container .setting_item, .personal_information_container .fillin_list{ max-width: 282px; }
@@ -442,6 +494,10 @@ input[type=radio]:not(old):checked + label{ background-position : 0 -73px;}
 	.personal_information_container .add_new_file .add_new_content a.choose_file p::after{ left: calc(50% - 14px); width: 28px; height: 37px; }
 	.personal_information_container .add_new_file ul.upload_file li .upload_info .progress_bar{ max-width: calc(100% - 56px);}
 	.personal_information_container .fillin_list .for_DOB .monthBox{ width: 282px; }
+
+	.personal_information_finished .fillin_done h3{ padding: 220px 0 20px 0; font-size: 17px; }
+	.personal_information_finished .fillin_done h3::after { height: 206px; }
+	.personal_information_finished .fillin_done p{ font-size: 16px; }
 }
 
 /*須蓋過上面屬性，這兩個要在最下面*/
