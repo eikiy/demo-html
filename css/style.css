@@ -2712,7 +2712,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box .interviewee_info .c_logictest_org .positive_behavior .answer_questions ul.no_q li p::after{ border: 1px solid #D8D8D8; background-color: #fff; }
 .print_box .interviewee_info .c_logictest_org .positive_behavior .answer_questions ul.no_q li p.ok::before{ background-image: url(../images/user_info/icon_answer_ok_blue.png); }
 .print_box .interviewee_info .c_logictest_org table.analysis tr th{ border-right: none; }
-.print_box .interviewee_info .c_logictest_org .note_positive_trait{ padding-left: 150px; }
+.print_box .interviewee_info .c_logictest_org .note_positive_trait{ max-width: 100%; padding-left: 150px; }
 .print_box .interviewee_info .c_desaturated_blue{ border-color: #4A4A4A; }
 .print_box .interviewee_info .c_desaturated_blue h4.bg_dark_blue{ background-color: #E6F0F4; border-color: #4A4A4A; }
 .print_box .interviewee_info .c_dark_purple table.potential_personality_trait .progress_box h4{ background-color: #fff; color: #000000; border-bottom: 1px solid #979797; }
