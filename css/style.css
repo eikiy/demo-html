@@ -2744,7 +2744,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box table.potential_personality_trait .progress_box .img_progress p span{ color:  #558C9E; }
 .print_box table.potential_personality_trait .progress_box .img_progress p span::after{ border-color: transparent transparent #558C9E transparent;}
 .print_box table.potential_personality_trait .progress_box .img_progress p.bg_blue span{ color: #fff; }
-.print_box table.potential_personality_trait .progress_box .img_progress p.bg_blue span::after{border-color: #81b6c8 transparent transparent transparent;{}
+.print_box table.potential_personality_trait .progress_box .img_progress p.bg_blue span::after{border-color: #81b6c8 transparent transparent transparent;}
 .print_box table.potential_personality_trait .progress_box .img_progress::after{ border-right: 1px dotted #9B9B9B; background-color: transparent;}
 .print_box table.potential_personality_trait .progress_box h4{ background-color: #fff; border-bottom: 1px solid #9B9B9B; font-size: 13px; }
 .print_box table.potential_personality_trait .top_title .img_progress_ex{ background: url(../images/user_info/bg_progressbar_print2.png) center center no-repeat; background-size: cover;}
