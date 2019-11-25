@@ -2297,8 +2297,7 @@ table.analysis tr.top_info td .btn_type p a.btn_in{ background-color: #81B6C8; c
 .interviewee_info .c_logictest_org { border-color: #E5AF57; padding-bottom: 30px; }
 .interviewee_info .c_logictest_org h4.bg_dark_blue{ background-color: #E5AF57; color: #fff; }
 .interviewee_info .c_logictest_org .test_report .positive_behavior table.analysis{ margin-top: -4px;}
-.interviewee_info .c_logictest_org table.analysis tr th, .interviewee_info .c_logictest_org table.analysis tr td,.interviewee_info .c_logictest_org table.analysis .progress_container::after{ border-color: #E5AF57; }
-.interviewee_info .c_logictest_org .positive_behavior {padding-bottom: 0;}
+.interviewee_info .c_logictest_org .positive_behavior {padding-bottom: 0; max-width: inherit; margin: 0;}
 .interviewee_info .c_logictest_org .positive_behavior .answer_questions{ padding: 30px 0 20px 0; }
 .interviewee_info .c_logictest_org .positive_behavior .answer_questions ul.no_q li p::after{ background-color: #F7F0E6; }
 .interviewee_info .c_logictest_org .positive_behavior .answer_questions ul.no_q li p.ok::before{ background-image: url(../images/user_info/icon_answer_ok_skyblue.png); }
@@ -2309,7 +2308,8 @@ table.analysis tr.top_info td .btn_type p a.btn_in{ background-color: #81B6C8; c
 .interviewee_info .c_logictest_org h4.s_icon_05::after{background-image: url(../images/user_info/r_title_icon_05_blue.png); }
 .interviewee_info .c_logictest_org h4.s_icon_07::after{background-image: url(../images/user_info/r_title_icon_07_blue.png); }
 
-.interviewee_info .c_logictest_org .note_positive_trait{ max-width: 100%; padding: 6px 0 0 267px; border-top: 2px solid #E5AF57;}
+.interviewee_info .c_logictest_org .note_positive_trait{ max-width: 100%; padding: 0 0 20px 170px; border-bottom: 2px solid #E5AF57;}
+.interviewee_info .c_logictest_org table.potential_personality_trait .progress_box h4{ background-color: #E5AF57; color: #fff; }
 
 .interviewee_info .c_dark_purple { border-color: #342949; padding-bottom: 30px; }
 .interviewee_info .c_dark_purple h4.bg_dark_blue{ background-color: #342949; color: #fff; }
@@ -2317,8 +2317,7 @@ table.analysis tr.top_info td .btn_type p a.btn_in{ background-color: #81B6C8; c
 .interviewee_info .c_dark_purple table.analysis tr th, .interviewee_info .c_dark_purple table.analysis tr td,.interviewee_info .c_dark_purple .positive_behavior, .interviewee_info .c_dark_purple .note_positive_behavior,.interviewee_info .c_dark_purple table.analysis .progress_container::after{ border-color: #342949; }
 
 
-table.potential_personality_trait{ width: 100%; padding: 15px 10px 0px 10px; }/*
-table.potential_personality_trait tr td{ vertical-align: top; }*/
+table.potential_personality_trait{ width: 100%; padding: 15px 10px 0px 10px; }
 table.potential_personality_trait .progress_container{ width:100%; height:34px; position:relative; background: url(../images/user_info/bg_progressbar.png) center center no-repeat; background-size: cover;}
 table.potential_personality_trait .progress_container::after{z-index: 5; content: ""; position: absolute; left:calc(50% - 0.5px); width: 1px; height: 100%; display: block;}
 table.potential_personality_trait .progressbar{ background-color:#81B6C8; top: 10px; height:14px; position:absolute; line-height:inherit;}
@@ -2329,7 +2328,6 @@ table.potential_personality_trait .top_title ul.ex li:first-child p{ margin-left
 table.potential_personality_trait .top_title ul.ex li:last-child{ text-align: right; }
 table.potential_personality_trait .top_title ul.ex li:last-child p{ margin-right: -10px; }
 table.potential_personality_trait .top_title ul.ex li:nth-child(2){ text-align: center; }
-table.potential_personality_trait .top_title ul.ex li p{ color: #81B6C8;}
 
 table.potential_personality_trait .top_title .img_progress_ex{ width: 100%; height: 11px; position: relative; display: block; background: url(../images/user_info/bg_progressbar.png) center center no-repeat; background-size: cover;}
 table.potential_personality_trait .top_title .img_progress_ex::after{ content: ""; position: absolute; width: 1px; height: 11px; display: block; background-color: #9B9B9B; left:calc(50% - 0.5px); top: 0; }
@@ -2346,6 +2344,12 @@ table.potential_personality_trait .progress_box .img_progress p span::after{ con
 table.potential_personality_trait .progress_box .img_progress p.bg_blue{ top: -28px; background-color: #81B6C8; color: #fff; }
 table.potential_personality_trait .progress_box .img_progress p.bg_blue span{ color: #fff; }
 table.potential_personality_trait .progress_box .img_progress p.bg_blue span::after{ border-width:6px 4px 0 4px; top:inherit; bottom: -7px; border-color: #81b6c8 transparent transparent transparent; line-height: 0px; _border-color: #81b6c8 #000000 #000000 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+
+.c_logictest_org table.potential_personality_trait .progress_box .img_progress:last-child{ margin-top: 0; }
+.c_logictest_org table.potential_personality_trait .progress_box .img_progress:last-child .progressbar{ background-color: #fff; border: 1px solid #558C9E; border-width: 1px 1px 1px 0px; }
+
+.c_logictest_org table.potential_personality_trait .progress_box .img_progress p{ top: 6px; }
+.c_logictest_org table.potential_personality_trait .progress_box .img_progress p span::after{ left: -7px; top: inherit; bottom: 6px; border-width: 4px 6px 4px 0px; border-color: transparent #81b6c8 transparent transparent; _border-color: #000000 #81b6c8 #000000 #000000}
 
 .interviewee_info .c_dark_purple table.potential_personality_trait .top_title ul.ex li p{ color: #342949; }
 .interviewee_info .c_dark_purple table.potential_personality_trait .progress_box h4{ background-color: #342949; color: #fff; }
@@ -2689,7 +2693,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box .test_report table.suggest tr td:first-child p{ color: #000000; font-size: 14px; font-weight: normal;  text-align: left; }
 .print_box .test_report table.suggest tr td{ border-color: #4A4A4A;}
 .print_box .test_report table.suggest .top_title p{ text-align: right; color: #000000; }
-.print_box .test_report .note_positive_trait{ max-width: 360px; }
+.print_box .test_report .note_positive_trait{ max-width: 440px; }
 .print_box .test_report .note_positive_trait p{ font-size: 11px;}
 .print_box .test_report .positive_behavior table.analysis .progress_container::after{  border-right-style: solid;  }
 .print_box .test_report .test_fraction_percentage table.analysis .progress_container::after{ border-right-style: dashed ; }
@@ -2712,7 +2716,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box .interviewee_info .c_logictest_org .positive_behavior .answer_questions ul.no_q li p::after{ border: 1px solid #D8D8D8; background-color: #fff; }
 .print_box .interviewee_info .c_logictest_org .positive_behavior .answer_questions ul.no_q li p.ok::before{ background-image: url(../images/user_info/icon_answer_ok_blue.png); }
 .print_box .interviewee_info .c_logictest_org table.analysis tr th{ border-right: none; }
-.print_box .interviewee_info .c_logictest_org .note_positive_trait{ max-width: 100%; padding-left: 150px; }
+.print_box .interviewee_info .c_logictest_org .note_positive_trait{ max-width: 100%; padding-left: 130px; }
 .print_box .interviewee_info .c_desaturated_blue{ border-color: #4A4A4A; }
 .print_box .interviewee_info .c_desaturated_blue h4.bg_dark_blue{ background-color: #E6F0F4; border-color: #4A4A4A; }
 .print_box .interviewee_info .c_dark_purple table.potential_personality_trait .progress_box h4{ background-color: #fff; color: #000000; border-bottom: 1px solid #979797; }
@@ -2731,6 +2735,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 
 .print_box .social_IQ_info{ max-width: initial; width: calc(100% - 70px);}
 
+
 .print_box table.analysis .progress_container{ background: url(../images/user_info/bg_progressbar_print.png) center center no-repeat; background-size: cover;}
 .print_box table.analysis .progress_container::after{ border-color: #707475;}
 .print_box table.analysis .progressbar{ background-color: #558C9E; }
@@ -2743,12 +2748,16 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box table.potential_personality_trait .progress_box .img_progress{ background: url(../images/user_info/bg_progressbar_print.png) center center no-repeat; background-size: cover;}
 .print_box table.potential_personality_trait .progress_box .img_progress p span{ color:  #558C9E; }
 .print_box table.potential_personality_trait .progress_box .img_progress p span::after{ border-color: transparent transparent #558C9E transparent;}
+.print_box table.potential_personality_trait .progress_box .img_progress p.bg_blue{ background-color: #558C9E; }
 .print_box table.potential_personality_trait .progress_box .img_progress p.bg_blue span{ color: #fff; }
-.print_box table.potential_personality_trait .progress_box .img_progress p.bg_blue span::after{border-color: #81b6c8 transparent transparent transparent;}
+.print_box table.potential_personality_trait .progress_box .img_progress p.bg_blue span::after{border-color: #558C9E transparent transparent transparent;}
 .print_box table.potential_personality_trait .progress_box .img_progress::after{ border-right: 1px dotted #9B9B9B; background-color: transparent;}
 .print_box table.potential_personality_trait .progress_box h4{ background-color: #fff; border-bottom: 1px solid #9B9B9B; font-size: 13px; }
 .print_box table.potential_personality_trait .top_title .img_progress_ex{ background: url(../images/user_info/bg_progressbar_print2.png) center center no-repeat; background-size: cover;}
 .print_box table.potential_personality_trait .original .img_progress{ background: url(../images/user_info/bg_progressbar_print2.png) center center no-repeat; background-size: cover;}
+.print_box table.potential_personality_trait .progressbar, .print_box .test_report .note_positive_trait span.blue{ background-color: #558C9E; }
+.print_box table.potential_personality_trait .progress_box .img_progress p{border-color:#558C9E;}
+.print_box .c_logictest_org table.potential_personality_trait .progress_box .img_progress p span::after{ border-color: transparent #558C9E transparent transparent;}
 
 .print_box .print_survey{ border: none; border-radius: 0;}
 .print_box .print_survey .interviewee_info .interviewMainBox .top_ivBox{ padding-bottom: 0; }
@@ -3091,7 +3100,6 @@ ul.job_management_list p.text_center{ text-align: center; }
 .candidates_management ul.user_list li.the_active{ background-color: #F2F8FA; }
 .candidates_management ul.user_list li a.go_edit{ position: absolute; opacity: 0; width: 25px; height: 25px; left: 418px; top: 25px; z-index: 4; display: block; background: url(../images/btn_icon_edit.png) center center  no-repeat; background-size: contain; }
 .candidates_management ul.user_list li:hover a.go_edit{ opacity: 1; }
-
 .candidates_management ul.user_list li .user_photo{ float: left; width: 100px; height: 100px; border: 1px solid #81B6C8; display: block; overflow: hidden; border-radius: 10px;}
 .candidates_management ul.user_list li .icon_status {float: left; width: 81px; height: 146px; border-radius: 10px 0 0 10px; background-color: #B8D3DC;}
 .candidates_management ul.user_list li .icon_status a{ position: relative; z-index: 1; width: 100%; height:100%; text-align: center; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
@@ -3111,6 +3119,10 @@ ul.job_management_list p.text_center{ text-align: center; }
 .candidates_management ul.user_list .user_data ul.stepBox li{ height: inherit; }
 .candidates_management ul.user_list .user_data ul.stepBox li::before{ display: none; }
 
+.candidates_management ul.user_list .user_data ul.stepBox li:nth-child(1) a .tooltip, 
+.candidates_management ul.user_list .user_data ul.stepBox li:nth-child(3) a .tooltip{ left: calc(50% - 45px); min-width: 90px; }
+.candidates_management ul.user_list .user_data ul.stepBox li:nth-child(2) a .tooltip,
+.candidates_management ul.user_list .user_data ul.stepBox li:nth-child(4) a .tooltip{ left: calc(50% - 35px); min-width: 70px;}
 
 .candidates_management .user_photo{ float: left;}
 .candidates_management .user_photo .avatar{ width: 100px; height: 100px; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); display: block; overflow: hidden; border-radius: 10px;}
@@ -3121,6 +3133,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .candidates_management .userInfo p{ font-size: 13px}
 .candidates_management .userInfo .iBox{ padding: 3px 0;}
 .candidates_management .userInfo .iBox p{float: left; }
+.candidates_management .userInfo .iBox p.p_red{ color: #C87D86;}
 .candidates_management .userInfo .iBox p:nth-child(2){width: 180px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 17px; height: 17px * 1; overflow:hidden;}
 
 .candidates_management .user_data {float: right; width: 430px;}
