@@ -326,6 +326,7 @@ p.add_new_btn a.add_new_job_vacancies:hover span::before{ background-image: url(
 .setBox .fillinBox ul li .r_info a{ color: #81B6C8; }
 .setBox .fillinBox ul li .r_info a:hover{ text-decoration: underline; }
 .setBox .fillinBox ul li .r_info{ font-size: 14px; padding: 5px 12px; line-height: 36px; min-height: 30px; background-color: transparent; border: none;}
+.setBox .fillinBox ul li .p_gray{ color: #9B9B9B;}
 .setBox .fillinBox ul li .p_long{ max-width: 200px; height: 46px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 35px; height: 46px * 1; overflow:hidden; z-index: 2;}
 .setBox .fillinBox ul li.border_line_blue::after{ content: ""; position: absolute; width:calc(100% - 122px); height:calc(100% - 12px); border: 6px solid #81B6C8; top: 0; right: 0;z-index: 1; }
 
@@ -393,7 +394,7 @@ p.add_new_btn a.add_new_job_vacancies:hover span::before{ background-image: url(
 .setBox p.btn a.bg_lightblue:hover{ border-color: #fff; }
 
 .setBox .remind_greenbox{ position: relative; margin-bottom: 80px;}
-.setBox .remind_greenbox .tooltip{ z-index: 100; width: 226px; top: 53px; left: inherit; right: -2px; text-align: justify; padding: 10px 13px;font-size: 14px; letter-spacing: 0; -webkit-transform: scale(1); line-height: initial; border:3px solid #84BE98; border-radius: 10px 0 10px 10px; background-color: #fff; color: #4A4A4A;}
+.setBox .remind_greenbox .tooltip{ z-index: 100; width: 230px; top: 53px; left: inherit; right: -2px; text-align: justify; padding: 10px 13px;font-size: 14px; letter-spacing: 0; -webkit-transform: scale(1); line-height: initial; border:3px solid #84BE98; border-radius: 10px 0 10px 10px; background-color: #fff; color: #4A4A4A;}
 .setBox .remind_greenbox .tooltip::after{ left:initial; top: -15px; right: 39px; border-width: 0 14px 15px 14px;  border-color: transparent transparent #84BE98 transparent;}
 .setBox .remind_greenbox .tooltip span.icon_thumbtack{ position: relative; padding-left: 24px; display: block; line-height: 22px;}
 .setBox .remind_greenbox .tooltip span.icon_thumbtack::after{ content: "";width: 18px; height: 19px; display: block; position: absolute; top:0 ; left: 0; background: url(../images/icon_thumbtack.png) center center no-repeat; background-size: cover; }
@@ -428,6 +429,7 @@ p.add_new_btn a.add_new_job_vacancies:hover span::before{ background-image: url(
 .setBox .time_select ul li, .setBox ul li.new_day{ position: relative;}
 .setBox .time_select ul li input.r_info, .setBox ul li.new_day input.r_info{ width: 100%; max-width: 285px; padding: 0 5px; height: 30px; line-height: 30px; border:1px solid #979797; background-color: #fff; margin-top: 8px; }
 .setBox .time_select ul li input.r_info:hover, .setBox ul li.new_day input.r_info:hover{ box-shadow: inset 0 1px 3px rgba(0,0,0,.3); border-color: #979797;}
+.setBox .time_select ul li input::placeholder{ color: #cccccc; }
 .setBox .time_select ul li::after, .setBox ul li.new_day::after{cursor: pointer; content: ""; top: 12px; right: 26px; position: absolute; width: 26px; height: 22px; display: block; background-repeat:no-repeat; background-position: center center; background-size: contain;  }
 .setBox .time_select ul li:hover::after, .setBox ul li.new_day:hover::after{ opacity: .5 ;}
 .setBox ul li.day::after, .setBox ul li.new_day::after{background-image: url(../images/icon_time_select_01.png);}
@@ -547,16 +549,16 @@ p.add_new_btn a.add_new_job_vacancies:hover span::before{ background-image: url(
 .check_remind .border_blue p.info span.icon_thumbtack::after{ content: "";width: 18px; height: 19px; display: block; position: absolute; top:0 ; left: -10px; background: url(../images/icon_thumbtack.png) center center no-repeat; background-size: cover; }
 .check_remind .border_blue p.info span.icon_thumbtack a{ color: #81B6C8; }
 .check_remind .border_blue p.info span.icon_thumbtack a:hover{ text-decoration: underline; }
-.check_remind .border_yello{ background-color: #fff; padding:15px 18px; margin-top: 10px;}
+.check_remind .border_yello p.mail_lock{ color: #D87E05; position: relative; padding:0 0 6px 20px; }
+.check_remind .border_yello p.mail_lock::after{ content: ""; width: 16px; height: 19px; display: block; position: absolute; top:0 ; left: 0px; background: url(../images/icon_mail_lock.png) center center no-repeat; background-size: cover; }
+
+.check_remind .border_yello{ background-color: #fff; margin-top: 10px;}
 
 .check_remind .bottom_noteBox{ padding: 0; }
 .check_remind .bottom_noteBox p.info{ padding: 15px 32px; }
 .check_remind ul.conditionList{ font-size: 14px; padding: 0; width: 100%;}
 .check_remind ul.conditionList li{ min-width: initial; display: block; border-bottom: 1px solid #979797; padding: 10px 0px; margin: 0; position: relative; }
 .check_remind ul.conditionList li:last-child{ border: none; }
-
-.popup-padding-top{padding-top: 50px;}
-.popup-padding-top .mfp-close{ top:51px !important; }
 
 .management_pop{position: relative;}
 .management_pop p.btn a{ background-color: #81B6C8;}
@@ -3025,7 +3027,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .set_mailbox .mail_filter ul.sub_filter li:hover p{ background-color: #81B6C8; color: #fff;}
 
 /*寄信狀態*/
-.mail_send_status{ position: absolute; top: 15px; left: 0; z-index: 5; padding-left: 40px;}
+/*.mail_send_status{ position: absolute; top: 15px; left: 0; z-index: 5; padding-left: 40px;}
 .mail_send_status p{ position: relative; font-size: 12px; }
 .mail_send_status p::before{ content: ""; position: absolute; top: 1.5px; left: -40px; width: 38px; height: 26px; background-size: contain; background-repeat: no-repeat; background-position: center center; background-image:url(../images/icon_mail_send_status_noyet.png); }
 .mail_send_status p.send::before{ background-image: url(../images/icon_mail_send_status.png); }
@@ -3040,13 +3042,15 @@ ul.job_management_list p.text_center{ text-align: center; }
 
 .mail_send_status a .tooltip{ top: -35px; left: -41px; background-color: #000000; padding: 3px 10px; line-height: 24px; }
 .mail_send_status a .tooltip::after{ left: 10px; top: 29px; border-color: #000000 transparent transparent transparent; border-width: 9px 4.5px 0px 4.5px}
-
+*/
 .mail_send_status .remind_greenbox .tooltip{ top: -67px; left: -40px; border-radius: 10px 10px 10px 0;}
 .mail_send_status .remind_greenbox .tooltip::after{ top: 44.5px; left: 5px; border-color: #84BE98  transparent transparent transparent; border-width: 15px 14px 0px 14px;}
 .check_remind p.icon_mail_send{ position: relative; padding-left: 60px; margin: 6px 0;}
 .check_remind p.icon_mail_send::before{ content: ""; position: absolute; top: 0px; left: 10px; width: 38px; height: 26px; background-size: contain; background-repeat: no-repeat; background-position: center center; background-image:url(../images/icon_mail_send_status_noyet.png); }
 .check_remind p.send_done::before{ background-image: url(../images/icon_mail_send_status_done.png); }
 .check_remind p.send_none::before{ background-image: url(../images/icon_mail_send_status_none.png); }
+.check_remind p.icon_mail {position: relative; padding-top: 30px;}
+.check_remind p.icon_mail::before{ content: ""; position: absolute; top: 0px; left: 0px; width: 38px; height: 26px; background-size: contain; background-repeat: no-repeat; background-position: center center; background-image:url(../images/icon_mail_send_status.png); }
 
 .setBox .mail_send_record ul{ border: 3px solid #E5AF57; background-color: #fff;}
 .setBox .mail_send_record ul li p.p_info{ -webkit-flex: 1; flex: 1; text-align: center; padding: 9px 0; line-height: 26px; border-right: 1px solid rgba(155,155,155,0.5);} 
@@ -3118,9 +3122,8 @@ ul.job_management_list p.text_center{ text-align: center; }
 .candidates_management ul.user_list .user_data ul.stepBox{ padding-bottom: 0; height: inherit;}
 .candidates_management ul.user_list .user_data ul.stepBox li{ height: inherit; }
 .candidates_management ul.user_list .user_data ul.stepBox li::before{ display: none; }
-
-.candidates_management ul.user_list .user_data ul.stepBox li:nth-child(1) a .tooltip, 
-.candidates_management ul.user_list .user_data ul.stepBox li:nth-child(3) a .tooltip{ left: calc(50% - 45px); min-width: 90px; }
+ 
+.candidates_management ul.user_list .user_data ul.stepBox li:nth-child(3) a .tooltip{ left: calc(50% - 45px); min-width: 90px;}
 .candidates_management ul.user_list .user_data ul.stepBox li:nth-child(2) a .tooltip,
 .candidates_management ul.user_list .user_data ul.stepBox li:nth-child(4) a .tooltip{ left: calc(50% - 35px); min-width: 70px;}
 
@@ -3136,12 +3139,16 @@ ul.job_management_list p.text_center{ text-align: center; }
 .candidates_management .userInfo .iBox p.p_red{ color: #C87D86;}
 .candidates_management .userInfo .iBox p:nth-child(2){width: 180px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 17px; height: 17px * 1; overflow:hidden;}
 
-.candidates_management .user_data {float: right; width: 430px;}
+.candidates_management .user_data {float: right; width: 430px; position: relative;}
 .candidates_management .user_data .remarkBox{ border: 1px solid #81B6C8; height: 45px; border-radius: 5px; padding:5px 20px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .candidates_management .user_data .remarkBox p{ font-size: 13px; width: 100%; }
 .candidates_management .user_data .remark_red { border-color: #C87D86;}
 .candidates_management .user_data .remark_red p{ color: #C87D86; }
 
+.candidates_management .user_data p.btn_status_record{ position: absolute; top: 15px; right: 7px; text-align: center; z-index: 4;}
+.candidates_management .user_data p.btn_status_record a{ display: block; width: 23px; height: 16px; background-image: url(../images/svg/list.svg); }
+.candidates_management .user_data p.btn_status_record a .tooltip{ top: 23px; left: -7.5px; }
+.candidates_management .user_data p.btn_status_record a span.tooltip { color: #fff; padding: 3px 5px; }
 
 /*upload file & link*/
 /*add link*/
@@ -3324,3 +3331,11 @@ ul.job_management_list p.text_center{ text-align: center; }
 :root .interviewee_info .interview_officer_Main .top_interviewer_info .rightInfoBox .user_name p.name{ height: 24px;}
 :root .changestatusBox .fillinBox ul li ul.select_item li{ min-height: inherit; }
 @media all and (-ms-high-contrast:none){ .changestatusBox .time_select ul li input.r_info, .changestatusBox ul li.new_day input.r_info{height: 30px; min-height: 30px;}}
+
+.mail_content{ position: relative; }
+.mail_content .text_content{ background-color: #EBEBEB; margin: 10px 0; padding: 10px; border-radius: 10px 0 10px 10px; }
+.mail_content .top_title{ max-width: 100%; }
+.mail_content .text_content .mail_text_box{ border-radius: 10px 0 10px 10px; background-color: #fff; padding: 15px; }
+.mail_content .text_content .mail_text_box p{ line-height: 24px; font-size: 13px; }
+.mail_content .border_green{ position: absolute; left: 0; bottom: 30px; padding: 9px 30px; width: inherit;}
+.mail_content .RedBox p.info span{color: #4A4A4A;}
