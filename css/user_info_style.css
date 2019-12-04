@@ -78,6 +78,8 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 .personal_information_container .interviewee_data ul.other_info li a.upload_file p::after{ content: "";transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; position: absolute; width:45px; height: 32px; top: 6px; left:calc(50% - 22.5px); display: block; background-image: url(../images/personal_information/upload_file.svg); }
 .personal_information_container .interviewee_data ul.other_info li a.upload_file:hover p{color: #81B6C8;}
 .personal_information_container .interviewee_data ul.other_info li a.upload_file:hover p::after{ background-image: url(../images/personal_information/upload_file-blue.svg); }
+.personal_information_container .interviewee_data ul.other_info li.btn_in a.upload_file p{color: #81B6C8;}
+.personal_information_container .interviewee_data ul.other_info li.btn_in a.upload_file p::after{ background-image: url(../images/personal_information/upload_file-blue.svg); }
 
 .personal_information_container .fill_project{ width: 100%; border-bottom: 8px solid #81B6C8; margin-bottom: 25px;}
 .personal_information_container .top_title{ background-color: #81B6C8; padding: 5px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky;  position: -o-sticky;z-index: 2; top: 0;}
