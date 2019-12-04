@@ -3339,3 +3339,10 @@ ul.job_management_list p.text_center{ text-align: center; }
 .mail_content .text_content .mail_text_box p{ line-height: 24px; font-size: 13px; }
 .mail_content .border_green{ position: absolute; left: 0; bottom: 30px; padding: 9px 30px; width: inherit;}
 .mail_content .RedBox p.info span{color: #4A4A4A;}
+
+/*mail reload*/
+.mail_reload{ background: url(../images/user_info/bg_mail_reload.png) center bottom no-repeat; background-size: contain;}
+.mail_reload .contentsBox::after{ display: none; }
+.mail_reload h1{ width: 95px; height: 73px; display: block; text-indent: -9999px; margin:0 auto 40px auto; background: url(../images/logo_kamo.png) center center no-repeat; background-size: contain;}
+.mail_reload p.info{ font-size: 18px; text-align: center; padding: 20px 0; }
+.mail_reload p.btn a{ font-size: 18px; }
