@@ -1035,13 +1035,20 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .managementBox ul.user_list li ul.stepBox li.over a.icon_05{ background-image: url(../images/user_stepBox_05_w.png);}
 .managementBox ul.user_list li ul.stepBox li.over a.icon_06{ background-image: url(../images/user_stepBox_06_w.png);}
 
+.managementBox ul.user_list li ul.stepBox li.check a{ position: relative;}
+.managementBox ul.user_list li ul.stepBox li.check a::after{ content: ""; position: absolute; top: -7px; right: -5px; width: 23px; height: 23px; display: block; background-image:url(../images/svg/stepBox_check.svg); }
+.managementBox ul.user_list li ul.stepBox li.check a .tip_on{ top: -36px; left: inherit !important; }
+.managementBox ul.user_list li ul.stepBox li.check a .tip_on::after{top: 22.5px; border-width: 6px 4px 0 4px; border-color: #4a4a4a transparent transparent transparent;}
+.managementBox ul.user_list li ul.stepBox li.check a.icon_02 .tip_on, .managementBox ul.user_list li ul.stepBox li.check a.icon_03 .tip_on{ min-width: 80px; right: -34px;}
+.managementBox ul.user_list li ul.stepBox li.check a.icon_04 .tip_on{ min-width: 110px; right: -49px;}
+
 .managementBox ul.user_list li ul.stepBox li:nth-child(2) a .tooltip, .managementBox ul.user_list li ul.stepBox li:nth-child(4) a .tooltip{ left: calc(50% - 45px); min-width: 90px; }
 
 .right_contents .managementBox ul.card_list li{ float: left; width: 100%; max-width: 126px; margin-right: 11px;margin-bottom: 8px; border:3px solid #fff; }
 .right_contents .managementBox ul.card_list li:nth-child(4n){ margin-right: 0; }
 .right_contents .managementBox ul.card_list .user_photo{ width:100%; float: none; display: block; padding-top: 15px; min-height: 143px; max-height: 143px; border-radius: 10px 0 10px 10px;}
 .right_contents .managementBox ul.card_list .user_photo .avatar{ width: 65px; height: 65px; margin: 0 auto; }
-.right_contents .managementBox ul.card_list li.the_expired{ border-color: #c87d86; }
+.right_contents .managementBox ul.card_list li.the_expired{ border-color: #c87d86; } 
 .right_contents .managementBox ul.card_list li:hover{ border-color: #81B6C8; border:3px solid #81B6C8; box-shadow: 0 2px 2px rgba(0,0,0,.2);}
 .right_contents .managementBox ul.card_list li.card_active{ border: solid 3px #81B6C8;}
 .right_contents .managementBox ul.card_list li.card_active:hover{ box-shadow: initial; }
@@ -1506,10 +1513,10 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interview_officer_Main .top_ivBox .rBox .top_other_tools p.btn_status_record{ float: right; font-size: 13px; padding-right: 10px; text-align: center;}
 .interview_officer_Main .top_ivBox .rBox .top_other_tools p.btn_status_record a{ display: block; min-width: 90px; line-height: 28px; padding: 0 10px; color: #81B6C8; height: 32px; background-color: #fff; border:2px solid #81B6C8; border-radius: 5px 5px 5px 0px;}
 .interview_officer_Main .top_ivBox .rBox .top_other_tools p.btn_status_record a:hover{ background-color:#B8D3DC;}
-.interview_officer_Main .top_ivBox .rBox .top_other_tools p.btn_status_record a span{ position: relative; padding-left: 30px; color: #81B6C8;}
+.interview_officer_Main .top_ivBox .rBox .top_other_tools p.btn_status_record a span{ position: relative; padding-left: 26px; color: #81B6C8;}
 .interview_officer_Main .top_ivBox .rBox .top_other_tools p.btn_status_record a:hover span{ color: #fff; }
-.interview_officer_Main .top_ivBox .rBox .top_other_tools p.btn_status_record a span::before{position: absolute; content: ""; top: calc(50% - 8px); left: 0; width: 23px; height: 16px; background-image: url(../images/svg/list.svg); }
-.interview_officer_Main .top_ivBox .rBox .top_other_tools p.btn_status_record a:hover span::before{ background-image: url(../images/svg/list_w.svg);}
+.interview_officer_Main .top_ivBox .rBox .top_other_tools p.btn_status_record a span::before{position: absolute; content: ""; top: calc(50% - 9.5px); left: 0; width: 20px; height: 19px; background-image: url(../images/svg/clock_record.svg); }
+.interview_officer_Main .top_ivBox .rBox .top_other_tools p.btn_status_record a:hover span::before{ background-image: url(../images/svg/clock_record_w.svg);}
 
 .interview_officer_Main .top_ivBox .rBox .top_other_tools .btn_delete{ float: right; padding-right: 5px; } 
 .interview_officer_Main .btn_delete a{ position: relative; width: 28px; height: 28px; display: block; background-color: #EBEBEB; border-radius: 50%;}
@@ -3146,8 +3153,9 @@ ul.job_management_list p.text_center{ text-align: center; }
 .candidates_management .user_data .remark_red p{ color: #C87D86; }
 
 .candidates_management .user_data p.btn_status_record{ position: absolute; top: 15px; right: 7px; text-align: center; z-index: 4;}
-.candidates_management .user_data p.btn_status_record a{ display: block; width: 23px; height: 16px; background-image: url(../images/svg/list.svg); }
-.candidates_management .user_data p.btn_status_record a .tooltip{ top: 23px; left: -7.5px; }
+.candidates_management .user_data p.btn_status_record a{ display: block; width: 20px; height: 20px; background-image: url(../images/svg/clock_record.svg); }
+.candidates_management .user_data p.btn_status_record a .tooltip{ top: inherit; bottom: 26px; left: -11.5px; }
+.candidates_management .user_data p.btn_status_record a .tooltip::after{top: inherit; bottom: -5px; border-width: 6px 4px 0 4px; border-color: #4a4a4a transparent transparent transparent;}
 .candidates_management .user_data p.btn_status_record a span.tooltip { color: #fff; padding: 3px 5px; }
 
 /*upload file & link*/
@@ -3295,6 +3303,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .interviewee_info .mail_status_record table.test_history_list td p span.send_ok, .interviewee_info .mail_status_record table.test_history_list td p span.send_no{ padding-right: 30px;}
 .interviewee_info .mail_status_record .send_ok::after{ content: ""; position: absolute; top: 0; right: 0; width: 25px; height: 14px; display: block; background-image: url(../images/icon_mail_send_status_done.png); }
 .interviewee_info .mail_status_record .send_no::after{ content: ""; position: absolute; top: 0; right: 0; width: 25px; height: 14px; display: block; background-image: url(../images/icon_mail_send_status_none.png); }
+.interviewee_info .mail_status_record h4.mail_status_title{ font-size: 20px; padding: 5px 5px 10px 5px; }
 
 /*更改狀態*/
 .changestatusBox ul.select_item li{ position: relative; font-size: 13px; text-align: left;  max-width:calc(100% - 35px); margin: 8px auto 8px auto; display: block; }
