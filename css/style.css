@@ -1035,12 +1035,12 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .managementBox ul.user_list li ul.stepBox li.over a.icon_05{ background-image: url(../images/user_stepBox_05_w.png);}
 .managementBox ul.user_list li ul.stepBox li.over a.icon_06{ background-image: url(../images/user_stepBox_06_w.png);}
 
-.managementBox ul.user_list li ul.stepBox li.check a{ position: relative;}
-.managementBox ul.user_list li ul.stepBox li.check a::after{ content: ""; position: absolute; top: -7px; right: -5px; width: 23px; height: 23px; display: block; background-image:url(../images/svg/stepBox_check.svg); }
-.managementBox ul.user_list li ul.stepBox li.check a .tip_on{ top: -36px; left: inherit !important; }
-.managementBox ul.user_list li ul.stepBox li.check a .tip_on::after{top: 22.5px; border-width: 6px 4px 0 4px; border-color: #4a4a4a transparent transparent transparent;}
-.managementBox ul.user_list li ul.stepBox li.check a.icon_02 .tip_on, .managementBox ul.user_list li ul.stepBox li.check a.icon_03 .tip_on{ min-width: 80px; right: -34px;}
-.managementBox ul.user_list li ul.stepBox li.check a.icon_04 .tip_on{ min-width: 110px; right: -49px;}
+.managementBox ul.user_list li ul.stepBox li a.check{ z-index: 2; position: absolute; top: -7px; right: -5px; width: 23px; height: 23px; display: block; background-image:url(../images/svg/stepBox_check.svg); }
+.managementBox ul.user_list li ul.stepBox li a.check .tip_on{ top: -29px; left: inherit !important; }
+.managementBox ul.user_list li ul.stepBox li a.check .tip_on::after{top: 22.5px; border-width: 6px 4px 0 4px; border-color: #4a4a4a transparent transparent transparent;}
+.managementBox ul.user_list li ul.stepBox li a.check .tip_on,
+.managementBox ul.user_list li ul.stepBox li:nth-child(2) a.check .tip_on{ min-width: 80px; right: -29px;}
+.managementBox ul.user_list li ul.stepBox li:nth-child(3) a.check .tip_on{ min-width: 110px; right: -44px;}
 
 .managementBox ul.user_list li ul.stepBox li:nth-child(2) a .tooltip, .managementBox ul.user_list li ul.stepBox li:nth-child(4) a .tooltip{ left: calc(50% - 45px); min-width: 90px; }
 
