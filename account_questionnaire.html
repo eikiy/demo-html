@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+	<head>
+		<meta charset="UTF-8">
+		<title>帳號設定 - 履歷設定</title>
+		<meta name='description' content=""/>
+		<meta name='keywords' content=""/>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+		<!-- Magnific Popup core JS file -->
+		<script src="magnific-popup/jquery.magnific-popup.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			    $('.popup-link').magnificPopup({
+			      removalDelay: 300,
+			      mainClass: 'mfp-fade'
+			    });
+			});
+			$(function(){
+			  	$(".mail_filter").click(function(){
+			        $(this).find("ul.sub_filter").stop(true, true).fadeToggle(0);
+			    return false;
+			    });
+			 });
+		</script>
+		<!-- ee 看效果用 可移除 -->
+		<script type="text/javascript">
+	        $(function(){
+	            $(".survey_set_contents .top_check a.box_switch").click(function(){
+	                $(this).parent().parent().find(".set_all").stop(true, true).slideToggle();
+	                $(this).toggleClass("arr_bottom arr_up")
+	                return false;
+	            });
+	        });
+    	</script>
+	</head>
+	<body>
+		<header class="headerBox">
+			<div class="contentsBox clearfix">
+				<a class="logo" href="#"></a>
+				<div class="searchBox">
+					<input type="text" name="" placeholder="搜尋面試人員/現有員工">
+					<a href="#"></a>
+				</div>
+				<ul class="tools">
+					<li><a class="message" href="#"><span>3</span></a></li>
+					<li><a class="logout" href="#"></a></li>
+				</ul>
+			</div>
+		</header>
+		<main class="mainBox">
+			<div class="contentsBox clearfix">
+				<section class="side_menu">
+					<h1 class="title">明天<br>
+					企業股份有限公司</h1>
+					<ul class="menu">
+						<li><p><a class="icon_01" href="management.html">招募管理</a></p></li>
+						<li><p><a class="icon_07" href="job_management.html">職缺管理</a></p></li>
+						<li><p><a class="icon_02" href="recruit_record.html">招募紀錄</a></p></li>
+						<li><p><a class="icon_03" href="employee_data.html">現有員工</a></p></li>
+						<li><p><a class="icon_06" href="talent_management.html">人才管理</a></p></li>
+						<li><p class="btn_in"><a class="icon_04" href="account.html">帳號設定</a></p></li>
+						<li><p><a class="icon_05" href="HR_helper.html">HR小幫手</a></p></li>
+					</ul>
+				</section>
+				<section class="right_contents pad_top clearfix">
+					<div class="clearfix">
+						<ul class="top_setting_menu clearfix">
+							<li><p><a href="account.html">基本設定</a></p></li>
+							<li><p><a href="account_organization.html">組織設定</a></p></li>
+							<li><p><a href="account_registration.html">報到條件設定</a></p></li>
+							<li><p><a href="account_email.html">E-MAIL 設定</a></p></li>
+							<li class="btn_in" class="none"><p><a href="account_questionnaire.html">問卷設定</a></p></li>
+							<li class="none"><p><a href="account_interviewer.html">面試官設定</a></p></li>
+						</ul>
+					</div>
+					<div class="setting_contents survey_set_contents clearfix">
+						<p class="top_tip">此份為求職者填寫之履歷，請勾選求職者需填寫之項目。如再次修改，會將舊資料刪除，建議請謹慎更改。</p>
+						<div class="theBox">
+							<div class="set_box">
+								<div class="top_check">
+									<h3>
+										<input id="" type="checkbox" name="" value="基本資料">
+										<label for="option">基本資料</label>
+									</h3>
+									<a class="box_switch arr_up"><span class="img_default"></span></a>
+								</div>
+								<div class="set_all">
+									<div class="main_set_item">
+										<h4>
+											<input id="" type="checkbox" name="" value="個人資料">
+											<label for="option">個人資料</label>
+										</h4>
+										<ul class="sub_set_list clearfix">
+											<!-- 預設無法勾選 + check_preset -->
+											<li class="check_preset">
+												<input id="" type="checkbox" name="" value="中文姓名">
+												<label for="option">中文姓名</label>
+											</li>
+											<li class="check_preset">
+												<input id="" type="checkbox" name="" value="性別">
+												<label for="option">性別</label>
+											</li>
+											<li class="check_preset">
+												<input id="" type="checkbox" name="" value="行動電話">
+												<label for="option">行動電話</label>
+											</li>
+											<li class="check_preset remind_greenbox" style="min-width: 300px;">
+												<input id="" type="checkbox" name="" value="E-MAIL">
+												<label for="option">E-MAIL</label>
+												<span class="tooltip" style="min-width: 220px;">
+							                		<span class="icon_thumbtack">此為系統設定，無法取消</span>
+							                	</span>
+											</li>
+
+											<li>
+												<input id="" type="checkbox" name="" value="英文姓名">
+												<label for="option">英文姓名</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="身分證字號">
+												<label for="option">身分證字號</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="出生年月日">
+												<label for="option">出生年月日</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="血型/身高/體重">
+												<label for="option">血型/身高/體重</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="婚姻狀態/子女幾名">
+												<label for="option">婚姻狀態/子女幾名</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="居住狀況">
+												<label for="option">居住狀況</label>
+											</li>
+
+											<li>
+												<input id="" type="checkbox" name="" value="役別/免役原因">
+												<label for="option">役別/免役原因</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="交通工具">
+												<label for="option">交通工具</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="駕照種類">
+												<label for="option">駕照種類</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="戶籍/通信地址">
+												<label for="option">戶籍/通信地址</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="其他/緊急電話">
+												<label for="option">其他/緊急電話</label>
+											</li>
+										</ul>
+									</div>
+									<div class="main_set_item">
+										<h4>
+											<input id="" type="checkbox" name="" value="教育程度">
+											<label for="option">教育程度</label>
+										</h4>
+									</div>
+									<div class="main_set_item">
+										<h4>
+											<input id="" type="checkbox" name="" value="家庭狀況">
+											<label for="option">家庭狀況</label>
+										</h4>
+									</div>
+									<div class="main_set_item">
+										<h4>
+											<input id="" type="checkbox" name="" value="工作經驗">
+											<label for="option">工作經驗</label>
+										</h4>
+									</div>
+									<!-- 未開啟 +  not_open，且 ul li 內的 input 需 + disabled -->
+									<div class="main_set_item not_open">
+										<h4>
+											<input id="" type="checkbox" name="" value="專業訓練" disabled="">
+											<label for="option">專業訓練</label>
+										</h4>
+										<ul class="sub_set_list clearfix">
+											<li>
+												<input id="" type="checkbox" name="" value="語文能力" disabled="">
+												<label for="option">語文能力</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="技能專長" disabled="">
+												<label for="option">技能專長</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="課程或證照" disabled="">
+												<label for="option">課程或證照</label>
+											</li>
+										</ul>
+									</div>
+									<div class="main_set_item">
+										<h4>
+											<input id="" type="checkbox" name="" value="其他問題" checked="">
+											<label for="option">其他問題</label>
+										</h4>
+										<ul class="sub_set_list clearfix">
+											<li>
+												<input id="" type="checkbox" name="" value="是否更改姓名">
+												<label for="option">是否更改姓名</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="是否特殊身份">
+												<label for="option">是否特殊身份</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="是否有案在身">
+												<label for="option">是否有案在身</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="如何得知職缺">
+												<label for="option">如何得知職缺</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="列舉2位推薦人">
+												<label for="option">列舉2位推薦人</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<p class="btn block">
+									<a class="bg_light_gray remind_greenbox " href="#">預覽
+										<span class="tooltip">
+				                			<span class="icon_thumbtack">尚未開啟基本資料，無法預覽</span>
+				                		</span>
+				                	</a>
+									<a class="bg_blue" href="#">儲存</a>
+								</p>
+							</div>
+							<div class="set_box">
+								<div class="top_check">
+									<h3>
+										<input id="" type="checkbox" name="" value="附件與連結">
+										<label for="option">附件與連結</label>
+									</h3>
+								</div>
+								<p class="btn block">
+									<a class="" href="#">預覽</a>
+								</p>
+							</div>
+							<div class="set_box">
+								<div class="top_check">
+									<h3>
+										<input id="" type="checkbox" name="" value="應徵問卷">
+										<label for="option">應徵問卷</label>
+									</h3>
+									<a class="box_switch arr_up"><span class="img_default"></span></a>
+								</div>
+								<div class="set_all">
+									<div class="main_set_item not_open">
+										<h4>
+											<input id="" type="checkbox" name="" value="離職因素">
+											<label for="option">離職因素</label>
+										</h4>
+										<ul class="sub_set_list field_for3 clearfix">
+											<li>
+												<input id="" type="checkbox" name="" value="您目前仍服務或最後服務的企業名稱">
+												<label for="option">您目前仍服務或最後服務的企業名稱</label>
+											</li>
+											<li style="min-width: 190px;">
+												<input id="" type="checkbox" name="" value="擔任的職務是什麼">
+												<label for="option">擔任的職務是什麼</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="在職期間，最後薪資平均月薪為何 ">
+												<label for="option">在職期間，最後薪資平均月薪為何 </label>
+											</li>
+
+											<li>
+												<input id="" type="checkbox" name="" value="您想要離職的主要原因是什麼">
+												<label for="option">您想要離職的主要原因是什麼</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="列舉影響去留因素並說明">
+												<label for="option">列舉影響去留因素並說明</label>
+											</li>
+										</ul>
+									</div>
+									<div class="main_set_item">
+										<h4>
+											<input id="" type="checkbox" name="" value="工作描述" checked="">
+											<label for="option">工作描述</label>
+										</h4>
+										<ul class="sub_set_list field_for3 clearfix">
+											<li>
+												<input id="" type="checkbox" name="" value="您負責的工作內容及權重分別是什麼">
+												<label for="option">您負責的工作內容及權重分別是什麼</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="您受過的專業訓練有哪些">
+												<label for="option">您受過的專業訓練有哪些</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="有哪一些制度或氣氛是讓您懷念的">
+												<label for="option">有哪一些制度或氣氛是讓您懷念的</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="有哪一些制度、風氣或氣氛是讓您覺得不理想的">
+												<label for="option">有哪一些制度、風氣或氣氛是讓您覺得不理想的</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="您最感興趣的工作是哪一項">
+												<label for="option">您最感興趣的工作是哪一項</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="您最不喜歡的工作是哪一項">
+												<label for="option">您最不喜歡的工作是哪一項</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="您最有成就感的工作說明">
+												<label for="option">您最有成就感的工作說明</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="您遭受挫折感最重的工作說明">
+												<label for="option">您遭受挫折感最重的工作說明</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="您曾經與他人發生過最大的衝突事件是什麼">
+												<label for="option">您曾經與他人發生過最大的衝突事件是什麼</label>
+											</li>
+										</ul>
+									</div>
+									<div class="main_set_item not_open">
+										<h4>
+											<input id="" type="checkbox" name="" value="未來規劃">
+											<label for="option">未來規劃</label>
+										</h4>
+										<ul class="sub_set_list field_for3 clearfix">
+											<li>
+												<input id="" type="checkbox" name="" value="職涯規劃短期/中期/長期">
+												<label for="option">職涯規劃短期/中期/長期</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="您對本公司這份工作，能接受的最低薪資是多少">
+												<label for="option">您對本公司這份工作，能接受的最低薪資是多少</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="您最快能報到的時間">
+												<label for="option">您最快能報到的時間</label>
+											</li>
+										</ul>
+										
+									</div>
+									<div class="main_set_item">
+										<h4>
+											<input id="" type="checkbox" name="" value="其他問題" checked="">
+											<label for="option">其他問題</label><!-- 變動文字 -->
+											<a class="qa_edit img_default popup-link" href="#popup-add-qa"></a>
+										</h4>
+										<h5>請依您對本公司之印象與了解，回答下列問題</h5>
+										<ul class="sub_set_list field_for1 clearfix">
+											<li>
+												<input id="" type="checkbox" name="" value="對於本公司有多少的認識與了解" checked="">
+												<label for="option">對於本公司有多少的認識與了解</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="請簡單描述一下本公司「ＷＷＷ」產品的優缺點" checked="">
+												<label for="option">請簡單描述一下本公司「ＷＷＷ」產品的優缺點</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="對於本公司有多少的認識與了解" checked="">
+												<label for="option">對於本公司有多少的認識與了解</label>
+											</li>
+										</ul>
+										
+									</div>
+								</div>
+								<p class="btn dashed_line">
+									<a class="add popup-link" href="#popup-add-qa">新增問題</a>
+								</p>
+								<p class="btn block dashed_line">
+									<a class="add add_gray bg_light_gray remind_greenbox popup-link" href="#popup-add-qa">新增問題
+										<span class="tooltip" style="min-width: 350px;">
+						                	<span class="icon_thumbtack">目前系統僅開放設定一組問題，無法繼續新增</span>
+						                </span>
+						            </a>
+								</p>
+								<p class="btn block">
+									<a class="" href="#">預覽</a>
+									<a class="bg_blue" href="#">儲存</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<!-- popup 新增問題 -->
+			<div id="popup-add-qa" class="white-popup popup-w-s mfp-hide">
+		        <form class="setBox">
+		            <div class="top_title">
+		                <h3>新增問題</h3>
+		            </div>
+		            <div class="addQA_fillinBox">
+		                <ul class="question_list">
+		                    <li>
+		                    	<h4 class="title">大標題 [限定 1 組]</h4>
+		                    	<input id="" name="" type="text" value="" placeholder="如未填寫，會顯示 「其他問題」，限定6個字內">
+		                    </li>
+		                    <li>
+		                    	<h4 class="title">內容說明</h4>
+		                    	<textarea placeholder="可對問題假設情境或多做描述"></textarea>
+		                    </li>
+		                </ul>
+		                <ul class="question_list">
+		                    <li class="dashed_line">
+		                    	<h4 class="title">問題1</h4>
+		                    	<input id="" name="" type="text" value="" placeholder="限定36個字內">
+		                    </li>
+		                    <li class="dashed_line">
+		                    	<h4 class="title">問題2<a class="delete" href="#">刪除</a></h4>
+		                    	<input id="" name="" type="text" value="" placeholder="限定36個字內">
+		                    </li>
+		                    <li>
+		                    	<p class="add_new_btn"><a class=" popup-link" href="#">+ 新增問題</a></p>
+		                    </li>
+		                </ul>
+		                <p class="btn">
+		                	<a class="bg_gary" href="#">取消</a>
+		                	<a href="#">確認儲存</a>
+		                </p>
+		            </div>
+		        </form>
+		    </div>
+		</main>
+	</body>
+</html>
+
+
+

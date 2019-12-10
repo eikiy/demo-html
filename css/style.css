@@ -393,15 +393,15 @@ p.add_new_btn a.add_new_job_vacancies:hover span::before{ background-image: url(
 .setBox p.btn a.bg_lightblue{ margin-left: 0;color: #81B6C8; background-color: #D1E0E5;}
 .setBox p.btn a.bg_lightblue:hover{ border-color: #fff; }
 
-.setBox .remind_greenbox{ position: relative; margin-bottom: 80px;}
-.setBox .remind_greenbox .tooltip{ z-index: 100; width: 230px; top: 53px; left: inherit; right: -2px; text-align: justify; padding: 10px 13px;font-size: 14px; letter-spacing: 0; -webkit-transform: scale(1); line-height: initial; border:3px solid #84BE98; border-radius: 10px 0 10px 10px; background-color: #fff; color: #4A4A4A;}
-.setBox .remind_greenbox .tooltip::after{ left:initial; top: -15px; right: 39px; border-width: 0 14px 15px 14px;  border-color: transparent transparent #84BE98 transparent;}
-.setBox .remind_greenbox .tooltip span.icon_thumbtack{ position: relative; padding-left: 24px; display: block; line-height: 22px;}
-.setBox .remind_greenbox .tooltip span.icon_thumbtack::after{ content: "";width: 18px; height: 19px; display: block; position: absolute; top:0 ; left: 0; background: url(../images/icon_thumbtack.png) center center no-repeat; background-size: cover; }
-.setBox .remind_greenbox .tip_left{ left: -2px; }
-.setBox .remind_greenbox .tip_left::after{ left: 39px; }
-.setBox .remind_greenbox .s_btn_position{ top: 31px; width: 368px; right: -12px; }
-.setBox .remind_greenbox .s_btn_position::after{ right: 24px; }
+.remind_greenbox{ position: relative; margin-bottom: 80px;}
+.remind_greenbox .tooltip{ z-index: 100; width: 230px; top: 53px; left: inherit; right: -2px; text-align: justify; padding: 10px 13px;font-size: 14px; letter-spacing: 0; -webkit-transform: scale(1); line-height: initial; border:3px solid #84BE98; border-radius: 10px 0 10px 10px; background-color: #fff; color: #4A4A4A;}
+.remind_greenbox .tooltip::after{ left:initial; top: -15px; right: 39px; border-width: 0 14px 15px 14px;  border-color: transparent transparent #84BE98 transparent;}
+.remind_greenbox .tooltip span.icon_thumbtack{ position: relative; padding-left: 24px; display: block; line-height: 22px;}
+.remind_greenbox .tooltip span.icon_thumbtack::after{ content: "";width: 18px; height: 19px; display: block; position: absolute; top:0 ; left: 0; background: url(../images/icon_thumbtack.png) center center no-repeat; background-size: cover; }
+.remind_greenbox .tip_left{ left: -2px; }
+.remind_greenbox .tip_left::after{ left: 39px; }
+.remind_greenbox .s_btn_position{ top: 31px; width: 368px; right: -12px; }
+.remind_greenbox .s_btn_position::after{ right: 24px; }
 
 .setBox .storedValueBox ul li p.p_info{ -webkit-flex: 1; flex: 1; text-align: center; padding: 9px 12px; line-height: 24px; border-right: 1px solid rgba(155,155,155,0.5);} 
 .setBox .storedValueBox ul li p.p_info:last-child{ border: none; }
@@ -2999,15 +2999,22 @@ ul.job_management_list p.text_center{ text-align: center; }
 .set_mailbox .mail_content .text_editbox span{ color: #81B6C8; }
 
 .set_mailbox .mail_content fieldset{ padding-bottom: 10px; }
-.set_mailbox .mail_content p.block { padding: 0; text-align: right; }
-.set_mailbox .mail_content p.block a{ background-color: #81B6C8; color: #fff; border: none;  padding: 0 10px;}
-.set_mailbox .mail_content p.block a:hover{ background-color: #93c3d3; }
-.set_mailbox .mail_content p.block a.bg_gray{ background-color: #9B9B9B; }
-.set_mailbox .mail_content p.block a.bg_gray:hover{ background-color: #d0d0d0; }
-.set_mailbox .mail_content p.block a.bg_red { background-color: #C87D86;}
-.set_mailbox .mail_content p.block a.bg_red:hover{ background-color: #d3949c; }
-.set_mailbox .mail_content p.block a.bg_org{ background-color: #EB8B70; }
-.set_mailbox .mail_content p.block a.bg_org:hover{ background-color: #f5ac97; }
+.set_mailbox .theBox p.block { padding: 0; text-align: right; }
+.set_mailbox .theBox p.block a{ color: #fff; border: none; padding: 0 10px;}
+
+.theBox p.block a{ padding: 0 10px;}
+.theBox p.block a:hover{ background-color: #93c3d3; }
+.theBox p.block a.bg_gray{ color: #fff; background-color: #9B9B9B; border: none;}
+.theBox p.block a.bg_gray:hover{ background-color: #d0d0d0; }
+.theBox p.block a.bg_red { color: #fff; background-color: #C87D86; border: none;}
+.theBox p.block a.bg_red:hover{ background-color: #d3949c; }
+.theBox p.block a.bg_org{ color: #fff; background-color: #EB8B70; border: none;}
+.theBox p.block a.bg_org:hover{ background-color: #f5ac97; }
+.theBox p.block a.bg_blue{ color: #fff; background-color: #81B6C8; border: none;}
+
+.theBox p.block a.bg_light_gray{ color: #9B9B9B; background-color: #EBEBEB; border: none; cursor: not-allowed;}
+.theBox p.block a.bg_light_gray:hover, .right_contents .theBox p.block a.add_gray:hover{ background-color: #EBEBEB;}
+.right_contents .theBox p.block a.add_gray{ background-image: url(../images/btn_icon_add_gray.png);}
 
 .set_mailbox .mail_content fieldset.verification input{ width: 428px; float: left; margin-right: 15px; }
 .set_mailbox .mail_content fieldset.verification p.block { float: left; padding: 2.5px 0 0 0; }
@@ -3356,3 +3363,57 @@ ul.job_management_list p.text_center{ text-align: center; }
 .mail_reload h1{ width: 95px; height: 73px; display: block; text-indent: -9999px; margin:0 auto 40px auto; background: url(../images/logo_kamo.png) center center no-repeat; background-size: contain;}
 .mail_reload p.info{ font-size: 18px; text-align: center; padding: 20px 0; }
 .mail_reload p.btn a{ font-size: 18px; }
+
+/*survey set*/
+.survey_set_contents{ padding: 15px 0px; }
+.survey_set_contents p.top_tip{ border:3px solid #84BE98; border-radius: 10px 10px 10px 0; padding: 10px; margin:0 10px 10px 65px;}
+
+.survey_set_contents .set_box{ width: 828px; border:1px solid  #81B6C8; border-radius: 10px 0px 10px 10px; margin: 10px auto; }
+.survey_set_contents .set_box .top_check{ position: relative;}
+.survey_set_contents .set_box .top_check h3{ border-radius: 10px 0px 0px 0px; cursor: pointer;}
+.survey_set_contents .set_box .top_check a.box_switch{ position: absolute; top: 0; right: 0;}
+.survey_set_contents .set_box .top_check a.box_switch span{ position: relative; width: 500px; height: 34px; display: block;}
+.survey_set_contents .set_box .top_check a.box_switch span::after{ content:""; position: absolute; right: 14px; top: 11px; width: 15px; height: 10px; display: block; cursor: pointer;}
+.survey_set_contents .set_box .top_check a.arr_bottom span::after{ background-image: url(../images/svg/arrow_bottom_w.svg); }
+.survey_set_contents .set_box .top_check a.arr_up span::after{ background-image: url(../images/svg/arrow_up_w.svg);}
+
+.survey_set_contents .set_box .top_check h3, .survey_set_contents .set_box .main_set_item h4{ position: relative; font-size: 15px; letter-spacing: 8px;}
+.survey_set_contents .set_box .top_check h3 input{ width: 300px !important; }
+.survey_set_contents .set_box .top_check h3 input[type=checkbox]:not(old) + label{ background-position : center left; color: #fff; background-image: url(../images/checks_on_w.png); background-size: contain;}
+.survey_set_contents .set_box .top_check h3 input[type=checkbox]:not(old):checked + label{ background-image: url(../images/checks_on_green.png);}
+
+.survey_set_contents .set_box .main_set_item{ padding-bottom: 5px; }
+.survey_set_contents .set_box .main_set_item h4{ background-color: #E6F0F4; padding: 5px 38px; position: relative;}
+.survey_set_contents .set_box .main_set_item h4 a.qa_edit{ position: absolute; top: 0; right: 0; width: 40px; height: 34px; background-image: url(../images/user_img_edit_in.png); background-size: contain;}
+.survey_set_contents .set_box .main_set_item h4 a.qa_edit:hover{ opacity: .7; }
+.survey_set_contents .set_box .main_set_item h5{ background-color: #F8F9F9; padding: 8px 65px; font-size: 13.5px; color: #4A4A4A;}
+
+.survey_set_contents .set_box .main_set_item ul.sub_set_list{ width: 100%; padding: 5px 10px 5px 58px; }
+.survey_set_contents .set_box .main_set_item ul.sub_set_list li{ font-size: 13.5px; min-width: 120px; position: relative; float: left; padding: 2.5px; }
+.survey_set_contents .set_box .main_set_item ul.field_for3 li{ min-width: 280px; }
+.survey_set_contents .set_box .main_set_item ul.field_for1 li{ min-width:100%; }
+
+.survey_set_contents .set_box .main_set_item ul.sub_set_list li input{ cursor: not-allowed; }
+.survey_set_contents .set_box .main_set_item ul.sub_set_list li.check_preset input[type=checkbox]:not(old) + label{ background-image: url(../images/checks_k.png); background-position: 0 -73px;}
+
+.survey_set_contents .set_box .not_open ul.sub_set_list { opacity: .5; }
+
+.survey_set_contents .set_box .remind_greenbox{ margin: 0; z-index: 1;}
+.survey_set_contents .set_box .remind_greenbox .tooltip{ top: 34px; right: -26px; width: inherit; min-width: 240px;}
+.survey_set_contents .set_box ul.sub_set_list li.remind_greenbox .tooltip{ right: initial; top: 32px; left: -146px; }
+
+.survey_set_contents .theBox .set_box p.btn{ border-top: 1px solid #81B6C8; text-align: right; padding:12px 30px; }
+.survey_set_contents .theBox .set_box p.dashed_line{ border-top: 1px dashed #D8D8D8; margin: 0 30px; padding:12px 0;}
+
+/*問卷-新增問題*/
+.addQA_fillinBox ul.question_list{ background-color: #fff; border-radius: 10px 0 10px 10px; padding: 10px 15px; margin-top: 10px; }
+.addQA_fillinBox ul.question_list li{ padding: 5px 0; }
+.addQA_fillinBox ul.question_list li.dashed_line{ padding-bottom: 15px; border-bottom: 1px dashed #979797;}
+.addQA_fillinBox ul.question_list li h4.title{ font-size: 15px; color: #558C9E; padding: 5px 0 10px 0; }
+.addQA_fillinBox ul.question_list li h4.title a.delete{ border-radius: 4px 0 4px 4px; border:1px solid #C87D86; color: #C87D86; font-size: 12px; padding: 2px 6px; display: inline-block; margin-left: 5px; }
+.addQA_fillinBox ul.question_list li h4.title a.delete:hover{ background-color: #C87D86; color: #fff; }
+
+.addQA_fillinBox input, .addQA_fillinBox textarea{ border: #979797 solid 1px; min-height: 24px; line-height: 24px; padding:4px 10px; width: 100%; font-size: 14px; border-radius: 5px}
+.addQA_fillinBox input::placeholder, .addQA_fillinBox textarea::placeholder{ color: #cccccc; }
+.addQA_fillinBox input:focus, .addQA_fillinBox textarea:focus{ border-color:#81B6C8;}
+.addQA_fillinBox p.add_new_btn a{ line-height: 38px; border: none;}
