@@ -3398,7 +3398,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .survey_set_contents .set_box .main_set_item ul.field_for3 li{ min-width: 280px; }
 .survey_set_contents .set_box .main_set_item ul.field_for1 li{ min-width:100%; }
 
-.survey_set_contents .set_box .main_set_item ul.sub_set_list li input{ cursor: not-allowed; }
+.survey_set_contents .set_box .main_set_item ul.sub_set_list li.check_preset input{ cursor: not-allowed; }
 .survey_set_contents .set_box .main_set_item ul.sub_set_list li.check_preset input[type=checkbox]:not(old) + label{ background-image: url(../images/checks_k.png); background-position: 0 -73px;}
 
 .survey_set_contents .set_box .not_open ul.sub_set_list { opacity: .5; }
