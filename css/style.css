@@ -774,6 +774,7 @@ p.add_new_btn a.add_new_job_vacancies:hover span::before{ background-image: url(
 html:root .interviewMainBox .use_fillinBox .fBox input, html:root .interviewMainBox .use_fillinBox .fBox textarea{ height: 30px; /*width: calc(100% - 5px);*/ }
 html:root .styled-select select{ height: 28px;}
 html:root .interviewMainBox .use_fillinBox .fBox input[type=checkbox]{  max-height: 15px; }
+.interviewMainBox .use_fillinBox .fBox textarea.qa_w_04{ max-width: calc(100% - 50px); margin-left: 5px;}
 
 .interviewMainBox .use_fillinBox li.for_ie_w .fBox:nth-child(1), .interviewMainBox .use_fillinBox li.for_ie_w .fBox:nth-child(2){ width:100%; min-width: 285px; }
 .interviewMainBox .use_fillinBox li.for_ie_w2 .fBox-2 { width: 100%; min-width: 565px; }
@@ -788,9 +789,9 @@ html:root .interviewMainBox .use_fillinBox .fBox input[type=checkbox]{  max-heig
 .interviewMainBox .use_fillinBox .fBox input.w82{ max-width: 82px; }
 .interviewMainBox .use_fillinBox .fBox input.w100{ max-width:530px; }
 .interviewMainBox .use_fillinBox .fBox input.w100_full{ max-width:895px; }
-.interviewMainBox .use_fillinBox .fBox input.bg-gray{ background-color: #EBEBEB; }
+.interviewMainBox .use_fillinBox .fBox input.bg-gray, .interviewMainBox .use_fillinBox .fBox textarea.bg-gray{ background-color: #EBEBEB; }
 .interviewMainBox .use_fillinBox .fBox input.the_checkbox{ max-width:20px; }
-.interviewMainBox .use_fillinBox .fBox textarea{ max-width: 100%; min-height: 60px; max-width: 905px; min-width: 905px; }
+.interviewMainBox .use_fillinBox .fBox textarea{ max-width: 100%; /*min-height: 60px; max-width: 905px; min-width: 905px;*/ }
 .interviewMainBox .use_fillinBox .fBox .red_error{ border-color: #C87D86; }
 .interviewMainBox .use_fillinBox .fBox .red_error:focus{ border-color: #C87D86;}
 
@@ -2780,6 +2781,8 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box .print_survey .interview_officer_Main .u_infoBox .use_fillinBox p.title_s{ text-align: left; color: #558C9E; }
 .print_box .print_survey h3.blue_title{ padding: 5px 15px; margin-top: 6px; }
 .print_box .print_survey h4.gray_title{ padding: 5px 15px; background-color: #F8F9F9; font-size: 12px; }
+.print_box .print_survey .fBox p{ color: #333; padding: 3px 0; }
+.print_box .print_survey .fBox p.remind{ color: #C87D86;}
 .print_box .interview_officer_Main .use_fillinBox ul.company_experience li{ flex-direction: column; border-bottom: 1px dashed #979797; padding: 5px 0 10px 0;}
 .print_box .interview_officer_Main .use_fillinBox ul.company_experience li:last-child{ border: none; }
 
@@ -2787,6 +2790,8 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box .print_survey ul.fill_in_result li p{ font-size: 14px; float: left; line-height: 26px; padding-right: 15px;}
 .print_box .print_survey ul.fill_in_result li p.title_s{ min-width: 105px; font-size: 12px; color: #558C9E; padding-left: 10px; }
 .print_box .print_survey ul.fill_in_result li p.padding_left{ padding-left: 10px; }
+.print_box .print_survey ul.fill_in_result li .limit_w_01{ max-width: calc(100% - 135px); }
+.print_box .print_survey ul.fill_in_result li .limit_w_02{ max-width: calc(100% - 120px); float: left;}
 .print_box .print_survey ul.fill_in_result li .both{ width: 50%; float: left; }
 .print_box .print_survey ul.fill_in_result li.top_line{ border-top: 1px dashed #979797; padding-top: 5px; margin-top: 5px; }
 
@@ -3066,11 +3071,13 @@ ul.job_management_list p.text_center{ text-align: center; }
 .mail_send_status .remind_greenbox .tooltip{ top: -67px; left: -40px; border-radius: 10px 10px 10px 0;}
 .mail_send_status .remind_greenbox .tooltip::after{ top: 44.5px; left: 5px; border-color: #84BE98  transparent transparent transparent; border-width: 15px 14px 0px 14px;}
 .check_remind p.icon_mail_send{ position: relative; padding-left: 60px; margin: 6px 0;}
-.check_remind p.icon_mail_send::before{ content: ""; position: absolute; top: 0px; left: 10px; width: 38px; height: 26px; background-size: contain; background-repeat: no-repeat; background-position: center center; background-image:url(../images/icon_mail_send_status_noyet.png); }
+.check_remind p.icon_mail_send::before, .check_remind p.save_done::before{ content: ""; position: absolute; top: 0px; left: 10px; width: 38px; height: 26px; background-size: contain; background-repeat: no-repeat; background-position: center center; background-image:url(../images/icon_mail_send_status_noyet.png); }
 .check_remind p.send_done::before{ background-image: url(../images/icon_mail_send_status_done.png); }
 .check_remind p.send_none::before{ background-image: url(../images/icon_mail_send_status_none.png); }
 .check_remind p.icon_mail {position: relative; padding-top: 30px;}
 .check_remind p.icon_mail::before{ content: ""; position: absolute; top: 0px; left: 0px; width: 38px; height: 26px; background-size: contain; background-repeat: no-repeat; background-position: center center; background-image:url(../images/icon_mail_send_status.png); }
+.check_remind p.save_done{ position: relative; padding-left: 40px; margin: 6px 0;}
+.check_remind p.save_done::before{ width: 34px; height: 28px; left: 0; top: -5px; background-image: url(../images/input_yesNo_yes_in.png); }
 
 .setBox .mail_send_record ul{ border: 3px solid #E5AF57; background-color: #fff;}
 .setBox .mail_send_record ul li p.p_info{ -webkit-flex: 1; flex: 1; text-align: center; padding: 9px 0; line-height: 26px; border-right: 1px solid rgba(155,155,155,0.5);} 
@@ -3370,7 +3377,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .mail_reload p.btn a{ font-size: 18px; }
 
 /*survey set*/
-.survey_set_contents{ padding: 15px 0px; }
+.survey_set_contents{ padding-top: 15px; }
 .survey_set_contents p.top_tip{ border:3px solid #84BE98; border-radius: 10px 10px 10px 0; padding: 10px; margin:0 10px 10px 65px;}
 
 .survey_set_contents .set_box{ width: 828px; border:1px solid  #81B6C8; border-radius: 10px 0px 10px 10px; margin: 10px auto; }
@@ -3406,9 +3413,17 @@ ul.job_management_list p.text_center{ text-align: center; }
 .survey_set_contents .set_box .remind_greenbox{ margin: 0; z-index: 1;}
 .survey_set_contents .set_box .remind_greenbox .tooltip{ top: 34px; right: -26px; width: inherit; min-width: 240px;}
 .survey_set_contents .set_box ul.sub_set_list li.remind_greenbox .tooltip{ right: initial; top: 32px; left: -146px; }
+.survey_set_contents .set_box ul.sub_set_list li.remind_greenbox .tooltip::after{ position: absolute; content: ""; content: ""; width: 0; height: 0; border-style: solid; line-height: 0px; _border-color: #000000 #000000 #84BE98 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#84BE98'); top: -15px; right: 39px; border-width: 0 14px 15px 14px; border-color: transparent transparent #84BE98 transparent; }
 
-.survey_set_contents .theBox .set_box p.btn{ border-top: 1px solid #81B6C8; text-align: right; padding:12px 30px; }
+.survey_set_contents .theBox .set_box p.btn{ border-top: 1px solid #81B6C8; text-align: right; padding:12px 20px; }
 .survey_set_contents .theBox .set_box p.dashed_line{ border-top: 1px dashed #D8D8D8; margin: 0 30px; padding:12px 0;}
+.survey_set_contents .survey_footer{ width: 100%; }
+.survey_set_contents .survey_footer p.btn{ text-align: right; padding:12px 20px; line-height: 30px;}
+.survey_set_contents .survey_footer p.btn:first-child{ padding-top: 3px; }
+.survey_set_contents .survey_footer p.btn:last-child{ border-top: 2px solid #81B6C8; }
+.survey_set_contents .survey_footer p.btn a{ min-width: 115px; }
+.survey_set_contents .survey_footer p.btn a.add{ background-position: 14px center;}
+.survey_set_contents .survey_footer p.btn .remind_greenbox .tooltip{ top: 38px;}
 
 /*問卷-新增問題*/
 .addQA_fillinBox ul.question_list{ background-color: #fff; border-radius: 10px 0 10px 10px; padding: 10px 15px; margin-top: 10px; }

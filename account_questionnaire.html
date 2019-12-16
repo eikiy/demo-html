@@ -237,7 +237,6 @@
 				                			<span class="icon_thumbtack">尚未開啟基本資料，無法預覽</span>
 				                		</span>
 				                	</a>
-									<a class="bg_blue" href="#">儲存</a>
 								</p>
 							</div>
 							<div class="set_box">
@@ -352,14 +351,54 @@
 												<label for="option">您最快能報到的時間</label>
 											</li>
 										</ul>
-										
 									</div>
-									<div class="main_set_item">
+									<div class="main_set_item not_open">
 										<h4>
-											<input id="" type="checkbox" name="" value="其他問題" checked="">
-											<label for="option">其他問題</label><!-- 變動文字 -->
-											<a class="qa_edit img_default popup-link" href="#popup-add-qa"></a>
+											<input id="" type="checkbox" name="" value="工作職能">
+											<label for="option">工作職能</label>
 										</h4>
+										<ul class="sub_set_list clearfix">
+											<li>
+												<input id="" type="checkbox" name="" value="職能問題一">
+												<label for="option">職能問題一</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="職能問題二">
+												<label for="option">職能問題二</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="職能問題三">
+												<label for="option">職能問題三</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="職能問題四">
+												<label for="option">職能問題四</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="職能問題五">
+												<label for="option">職能問題五職能問題五職能問題五職能問題五職能問題五職能問題五</label>
+											</li>
+											<li>
+												<input id="" type="checkbox" name="" value="職能問題六">
+												<label for="option">職能問題六</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<p class="btn block">
+									<a class="bg_light_gray" href="#">預覽
+								</p>
+							</div>
+							<div class="set_box">
+								<div class="top_check">
+									<h3>
+										<input id="" type="checkbox" name="" value="其他問題" checked="">
+										<label for="option">其他問題</label><!-- 變動文字 -->
+									</h3>
+									<a class="box_switch arr_up"><span class="img_default"></span></a>
+								</div>
+								<div class="set_all">
+									<div class="main_set_item">
 										<h5>請依您對本公司之印象與了解，回答下列問題</h5>
 										<ul class="sub_set_list field_for1 clearfix">
 											<li>
@@ -375,22 +414,27 @@
 												<label for="option">對於本公司有多少的認識與了解</label>
 											</li>
 										</ul>
-										
 									</div>
 								</div>
-								<p class="btn dashed_line">
-									<a class="add popup-link" href="#popup-add-qa">新增問題</a>
-								</p>
-								<p class="btn block dashed_line">
+								<p class="btn block">
+									<a class="bg_light_gray" href="#">預覽
+								</a></p>
+							</div>
+							<div class="survey_footer">
+								<!-- 不能點 -->
+								<p class="btn block">
 									<a class="add add_gray bg_light_gray remind_greenbox popup-link" href="#popup-add-qa">新增問題
 										<span class="tooltip" style="min-width: 350px;">
 						                	<span class="icon_thumbtack">目前系統僅開放設定一組問題，無法繼續新增</span>
 						                </span>
 						            </a>
 								</p>
+								<!-- 可以點 -->
+								<p class="btn">
+									<a class="add popup-link" href="#popup-add-qa">新增問題</a>
+								</p>
 								<p class="btn block">
-									<a class="" href="#">預覽</a>
-									<a class="bg_blue" href="#">儲存</a>
+									<a class="bg_blue popup-link" href="#popup-save">儲存設定</a>
 								</p>
 							</div>
 						</div>
@@ -417,11 +461,11 @@
 		                <ul class="question_list">
 		                    <li class="dashed_line">
 		                    	<h4 class="title">問題1</h4>
-		                    	<input id="" name="" type="text" value="" placeholder="限定36個字內">
+		                    	<input id="" name="" type="text" value="如果我有三十六個字以內的文字的話，畫面會長怎樣的？大概就是這麼長吧" placeholder="限定36個字內">
 		                    </li>
 		                    <li class="dashed_line">
 		                    	<h4 class="title">問題2<a class="delete" href="#">刪除</a></h4>
-		                    	<input id="" name="" type="text" value="" placeholder="限定36個字內">
+		                    	<textarea placeholder="限定36個字內"></textarea>
 		                    </li>
 		                    <li>
 		                    	<p class="add_new_btn"><a class=" popup-link" href="#">+ 新增問題</a></p>
@@ -432,6 +476,14 @@
 		                	<a href="#">確認儲存</a>
 		                </p>
 		            </div>
+		        </form>
+		    </div>
+		    <!-- popup 儲存設定-->
+		    <div id="popup-save" class="white-popup popup-w-s mfp-hide popup-padding-top">
+		        <form class="setBox messageBox check_remind">
+		            <div class="RedBox border_blue">
+		            	<p class="info save_done">線上履歷設定已儲存成功。</p>
+			        </div>
 		        </form>
 		    </div>
 		</main>
