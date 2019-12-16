@@ -788,7 +788,7 @@ html:root .interviewMainBox .use_fillinBox .fBox input[type=checkbox]{  max-heig
 .interviewMainBox .use_fillinBox .fBox input.age{ max-width: 42px; text-align: center; margin: 0 7px; }
 .interviewMainBox .use_fillinBox .fBox input.w82{ max-width: 82px; }
 .interviewMainBox .use_fillinBox .fBox input.w100{ max-width:530px; }
-.interviewMainBox .use_fillinBox .fBox input.w100_full{ max-width:895px; }
+.interviewMainBox .use_fillinBox .fBox .w100_full{ max-width:895px; min-height: 30px; }
 .interviewMainBox .use_fillinBox .fBox input.bg-gray, .interviewMainBox .use_fillinBox .fBox textarea.bg-gray{ background-color: #EBEBEB; }
 .interviewMainBox .use_fillinBox .fBox input.the_checkbox{ max-width:20px; }
 .interviewMainBox .use_fillinBox .fBox textarea{ max-width: 100%; /*min-height: 60px; max-width: 905px; min-width: 905px;*/ }
