@@ -417,8 +417,9 @@
 									</div>
 								</div>
 								<p class="btn block">
-									<a class="bg_light_gray" href="#">預覽
-								</a></p>
+									<a class="edit popup-link" href="#popup-edit-qa">編輯</a>
+									<a class="bg_light_gray" href="#">預覽</a>
+								</p>
 							</div>
 							<div class="survey_footer">
 								<!-- 不能點 -->
@@ -466,6 +467,47 @@
 		                    <li class="dashed_line">
 		                    	<h4 class="title">問題2<a class="delete" href="#">刪除</a></h4>
 		                    	<textarea placeholder="限定36個字內"></textarea>
+		                    </li>
+		                    <li>
+		                    	<p class="add_new_btn"><a class=" popup-link" href="#">+ 新增問題</a></p>
+		                    </li>
+		                </ul>
+		                <p class="btn">
+		                	<a class="bg_gary" href="#">取消</a>
+		                	<a href="#">確認儲存</a>
+		                </p>
+		            </div>
+		        </form>
+		    </div>
+		    <!-- popup 編輯問題 -->
+			<div id="popup-edit-qa" class="white-popup popup-w-s mfp-hide">
+		        <form class="setBox">
+		            <div class="top_title">
+		                <h3>編輯問題</h3>
+		            </div>
+		            <div class="addQA_fillinBox">
+		                <ul class="question_list">
+		                    <li>
+		                    	<h4 class="title">大標題 [限定 1 組]</h4>
+		                    	<input id="" name="" type="text" placeholder="如未填寫，會顯示 「其他問題」，限定6個字內" value="其他問題">
+		                    </li>
+		                    <li>
+		                    	<h4 class="title">內容說明</h4>
+		                    	<textarea placeholder="可對問題假設情境或多做描述">請依您對本公司之印象與了解，回答下列問題</textarea>
+		                    </li>
+		                </ul>
+		                <ul class="question_list">
+		                    <li class="dashed_line">
+		                    	<h4 class="title">問題1</h4>
+		                    	<input id="" name="" type="text" value="對於本公司有多少的認識與了解" placeholder="限定36個字內">
+		                    </li>
+		                    <li class="dashed_line">
+		                    	<h4 class="title">問題2<a class="delete" href="#">刪除</a></h4>
+		                    	<textarea placeholder="限定36個字內">請簡單描述一下本公司「ＷＷＷ」產品的優缺點</textarea>
+		                    </li>
+		                    <li class="dashed_line">
+		                    	<h4 class="title">問題3<a class="delete" href="#">刪除</a></h4>
+		                    	<textarea placeholder="限定36個字內">對於本公司有多少的認識與了解</textarea>
 		                    </li>
 		                    <li>
 		                    	<p class="add_new_btn"><a class=" popup-link" href="#">+ 新增問題</a></p>

@@ -3417,6 +3417,8 @@ ul.job_management_list p.text_center{ text-align: center; }
 
 .survey_set_contents .theBox .set_box p.btn{ border-top: 1px solid #81B6C8; text-align: right; padding:12px 20px; }
 .survey_set_contents .theBox .set_box p.dashed_line{ border-top: 1px dashed #D8D8D8; margin: 0 30px; padding:12px 0;}
+.survey_set_contents .theBox .set_box p.btn a.edit{ padding:0 12px 0 33px; background-position: 8px center; }
+
 .survey_set_contents .survey_footer{ width: 100%; }
 .survey_set_contents .survey_footer p.btn{ text-align: right; padding:12px 20px; line-height: 30px;}
 .survey_set_contents .survey_footer p.btn:first-child{ padding-top: 3px; }
