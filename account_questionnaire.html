@@ -6,8 +6,8 @@
 		<meta name='description' content=""/>
 		<meta name='keywords' content=""/>
 		<link rel="stylesheet" href="css/style.css">
-		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 		<!-- Magnific Popup core CSS file -->
 		<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
 		<!-- Magnific Popup core JS file -->
@@ -386,7 +386,7 @@
 									</div>
 								</div>
 								<p class="btn block">
-									<a class="bg_light_gray" href="#">預覽
+									<a class="bg_light_gray" href="#">預覽</a>
 								</p>
 							</div>
 							<div class="set_box">
@@ -418,7 +418,7 @@
 								</div>
 								<p class="btn block">
 									<a class="edit popup-link" href="#popup-edit-qa">編輯</a>
-									<a class="bg_light_gray" href="#">預覽</a>
+									<a class="bg_light_gray popup-link" href="#popup-preview">預覽</a>
 								</p>
 							</div>
 							<div class="survey_footer">
@@ -521,12 +521,32 @@
 		        </form>
 		    </div>
 		    <!-- popup 儲存設定-->
-		    <div id="popup-save" class="white-popup popup-w-s mfp-hide popup-padding-top">
+		    <div id="popup-save" class="white-popup popup-w-s mfp-hide">
 		        <form class="setBox messageBox check_remind">
 		            <div class="RedBox border_blue">
 		            	<p class="info save_done">線上履歷設定已儲存成功。</p>
 			        </div>
 		        </form>
+		    </div>
+		    <!-- popup 預覽-->
+		    <div id="popup-preview" class="white-popup mfp-hide preview-iframe">
+		        <div class="setBox">
+		        	 <div class="top_title">
+		                <h3>基本資料預覽</h3>
+		            </div>
+		            <!-- iframe_wrapper 的高度 = 減掉上面 top_title + 下面 btn 的高度，約150px --> 
+		            <!-- iframe_wrapper 的高度有點尷尬，因為塞 iframe 一定要給 height，-->
+		            <!-- 但 iframe 不吃 min-height 也不吃 max-height，會沒效果！ -->
+		            <!-- 所以...在螢幕高的狀況下，有可能問卷內容過少，並小於螢幕高度，下方內容就會顯示空白背景 -->
+		            <!-- 另外想到的方式就是，幫我判斷 window height > iframe_wrapper + 150px 的話，就直接給內容高度 + 150px);-->
+		            <!-- 若 window height > iframe_wrapper + 150px 的話，直接給 height:calc(90vh - 150px); -->
+		            <div class="iframe_wrapper" style="height:calc(90vh - 150px);">
+		            	<iframe class="screen" width="100%" height="100%" src="user_info_all.html"></iframe>
+		            </div>
+		            <p class="btn">
+		                <a href="#">結束預覽，返回編輯</a>
+		            </p>
+		        </div>
 		    </div>
 		</main>
 	</body>

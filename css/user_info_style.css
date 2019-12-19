@@ -509,6 +509,13 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 	.personal_information_finished .fillin_done p{ font-size: 16px; }
 }
 
-/*須蓋過上面屬性，這兩個要在最下面*/
+/*須蓋過上面屬性，這幾個要在最下面*/
 .personal_information_container p.btn a.cursor_none{cursor: not-allowed;  background-color:#D8D8D8;}
 .personal_information_container p.btn a.cursor_none:hover{ color: #fff; background-color:#D8D8D8;}
+
+.for_account_questionnaire_preview{ padding-bottom: 0;}
+.for_account_questionnaire_preview .contentsBox{ padding-bottom: 25px; }
+.for_account_questionnaire_preview .top_tips{ padding: 60px 20px 15px 20px;}
+.for_account_questionnaire_preview .interviewee_data{ max-width: calc(100% - 40px); padding: 40px 0 30px 0; }
+.for_account_questionnaire_preview .interviewee_data ul.user_info{ padding-bottom: 15px; float: left; }
+.for_account_questionnaire_preview .interviewee_data ul.other_info{ float: right; }

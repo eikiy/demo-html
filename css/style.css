@@ -319,7 +319,10 @@ p.add_new_btn a.add_new_job_vacancies:hover span::before{ background-image: url(
 .setBox .top_title h3.bg_red { text-align: center; font-size: 18px; letter-spacing: 7px; line-height: 36px; background-color: #C87D86; color: #fff; padding: 5px 0; border-radius: 10px 0 10px 10px; }
 .setBox .top_title h3.dark{ background-color: #558C9E; color: #fff;}
 .setBox .top_title h3.yello{ background-color: #E5AF57; color: #4A4A4A;}
-.popup-L .setBox .top_title{ max-width: 100%; }
+.popup-L .setBox .top_title, .preview-iframe .setBox .top_title{ max-width: 100%; }
+.preview-iframe{ max-width: 750px;}
+.preview-iframe .iframe_wrapper{ width: 750px; margin-top: 10px; background-color: #fff; border-radius: 10px 0 10px 10px; }
+.preview-iframe p.btn a{ width: 100%; }
 
 .setBox .fillinBox{ padding: 10px 0; width: 100%; }
 .setBox .fillinBox ul{ width: 100%; background-color:#EBEBEB; border-radius: 10px 0 10px 10px; box-shadow: 0px 0px 5px rgba(155,155,155,0.2); /*overflow: hidden; */}
