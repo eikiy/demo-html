@@ -3438,7 +3438,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .addQA_fillinBox ul.question_list li h4.title a.delete{ border-radius: 4px 0 4px 4px; border:1px solid #C87D86; color: #C87D86; font-size: 12px; padding: 2px 6px; display: inline-block; margin-left: 5px; }
 .addQA_fillinBox ul.question_list li h4.title a.delete:hover{ background-color: #C87D86; color: #fff; }
 
-.addQA_fillinBox input, .addQA_fillinBox textarea{ border: #979797 solid 1px; min-height: 24px; line-height: 24px; padding:4px 10px; width: 100%; font-size: 14px; border-radius: 5px}
+.addQA_fillinBox input, .addQA_fillinBox textarea{ border: #979797 solid 1px; min-height: 24px; line-height: 24px; padding:4px 10px; width: 100%; font-size: 14px; border-radius: 5px; resize: none;}
 .addQA_fillinBox input::placeholder, .addQA_fillinBox textarea::placeholder{ color: #cccccc; }
 .addQA_fillinBox input:focus, .addQA_fillinBox textarea:focus{ border-color:#81B6C8;}
 .addQA_fillinBox p.add_new_btn a{ line-height: 38px; border: none;}
