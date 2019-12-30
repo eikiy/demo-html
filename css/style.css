@@ -310,7 +310,7 @@ p.add_new_btn a.add_new_job_vacancies:hover span::before{ background-image: url(
 .popup-w-s{max-width: 390px;}
 /*.popup-w-s .setBox .top_title::after{ display: none;}*/
 .popup-w-m{max-width: 720px;}
-.popup-w-mm{max-width: 750px;}
+.popup-w-mm, .popup-gray-M{max-width: 750px;}
 .popup-M {max-width: 795px;}
 .popup-M .mfp-close{ left: 345px !important; }
 .popup-L {max-width: 958px; min-width: 958px;}
@@ -319,7 +319,9 @@ p.add_new_btn a.add_new_job_vacancies:hover span::before{ background-image: url(
 .setBox .top_title h3.bg_red { text-align: center; font-size: 18px; letter-spacing: 7px; line-height: 36px; background-color: #C87D86; color: #fff; padding: 5px 0; border-radius: 10px 0 10px 10px; }
 .setBox .top_title h3.dark{ background-color: #558C9E; color: #fff;}
 .setBox .top_title h3.yello{ background-color: #E5AF57; color: #4A4A4A;}
-.popup-L .setBox .top_title, .preview-iframe .setBox .top_title{ max-width: 100%; }
+.popup-L .setBox .top_title, .preview-iframe .setBox .top_title, .popup-gray-M .top_title{ max-width: 100%; }
+.popup-gray-M .top_title h3{ background-color: #D8D8D8; color: #4A4A4A; font-size: 15px; letter-spacing: 3px; border-radius: 5px 0 0 0; line-height: 30px; }
+
 .preview-iframe{ max-width: 750px;}
 .preview-iframe .iframe_wrapper{ width: 750px; margin-top: 10px; background-color: #fff; border-radius: 10px 0 10px 10px; }
 .preview-iframe p.btn a{ width: 100%; }
@@ -636,8 +638,6 @@ p.add_new_btn a.add_new_job_vacancies:hover span::before{ background-image: url(
 .filter_pop .the_chosenBox_list ul li p.type span.btn_in a.the_department{color: #fff;}
 .filter_pop .the_chosenBox_list ul li p.type span.check_in_02 a.the_input{ background-image: url(../images/the_chosenBox_input_active.png);}
 .filter_pop .the_chosenBox_list ul li p.type span.check_in_01 a.the_input{ background-image: url(../images/the_chosenBox_input_in.png);}
-
-
 
 
 
@@ -2960,19 +2960,47 @@ ul.job_management_list p.text_center{ text-align: center; }
 .setting_contents .theBox .bottom_other_btn p.btn{ text-align: center; padding: 10px 0 0 0; }
 .setting_contents .theBox .bottom_other_btn p.btn a{ min-width: 120px; }
 
-
-.setting_contents .l_Box{ border: #81B6C8 1px solid; border-radius: 10px 0 10px 10px; padding: 0; margin-right: 20px;}
+.setting_contents .l_Box{ max-width: inherit; width: 334px; border: #81B6C8 1px solid; border-radius: 10px 0 10px 10px; padding: 0; margin-right: 20px;}
 .setting_contents .l_Box .theBox:first-child .infoBox{ padding: 25px 0; }
 .setting_contents .l_Box .theBox:first-child h3{ border-radius: 10px 0 0 0 ; }
-.setting_contents .l_Box .theBox h3{ width: 240px; margin: -1px 0 0 -1px; }
+.setting_contents .l_Box .theBox h3{ width: 334px; margin: -1px 0 0 -1px; }
 
 .setting_contents .r_Box{ width: 334px; border: #81B6C8 1px solid; border-radius: 0 10px 10px 10px; padding: 0;}
 .setting_contents .r_Box .theBox{ min-height: inherit; padding: inherit; overflow-y: inherit;}
 .setting_contents .r_Box .theBox h3{ width: 334px; margin: -1px 0 0 -1px; }
 .setting_contents .r_Box .theBox:first-child h3{ border-radius: 0 10px 0 0 ; }
 
+.setting_contents .google_calendar_set h3 span{ letter-spacing: 1px; }
+.setting_contents .google_calendar_set .default_google_calendar{ position: relative; padding-top: 95px; }
+.setting_contents .google_calendar_set .default_google_calendar::after{ content: ""; position: absolute; left: 0; top: 23px; width: 100%; height: 70px; display: block; background-image: url(../images/svg/google_calendar.svg); }
+.setting_contents .google_calendar_set .default_google_calendar p.btn{ line-height: 24px;}
+.setting_contents .google_calendar_set .default_google_calendar p.btn a{ min-width: 230px; background-color: #4285F4; color: #fff; border: none;}
+.setting_contents .google_calendar_set .default_google_calendar p.btn a:hover{ background-color: #1a73e8; }
+.setting_contents .google_calendar_set .mail_filter{ width:233px; float: left;}
+
+.open_google_calendar .mail_filter p.sync_mail{ line-height: 30px; text-align: left; padding-left: 10px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 30px; height: 30px * 1; overflow:hidden;}
+.open_google_calendar .mail_filter p.title{ border-color: #EBEBEB;}
+.open_google_calendar .mail_filter p.title a{ text-align: left; }
+.open_google_calendar .sync{ padding:5px 0 7px 15px; }
+.open_google_calendar .sync p.btn{ float: left; padding: 5px 0 0 8px;}
+.open_google_calendar .sync p.btn a{ min-width: 54px; }
+.open_google_calendar .sync p.block a.bg_green{background-color: #84BE98; color: #fff; border-color: #84BE98;}
+.open_google_calendar .sync p.block a.bg_green:hover{ background-color: #95caa7; }
+
+.setBox .google_mail_sync{ background-color: #fff; border-radius: 0 0 10px 10px; }
+.setBox .google_mail_sync ul.set_list{ padding:25px 40px 40px 40px; }
+.setBox .google_mail_sync ul.set_list li{ padding: 15px 0; }
+.setBox .google_mail_sync ul.set_list li:first-child{ border-bottom: 1px dashed #D8D8D8;}
+.setBox .google_mail_sync .open_google_calendar .mail_filter{ float: left; width: 428px; }
+.setBox .google_mail_sync .open_google_calendar .mail_filter input.mail{ border:1px solid #EBEBEB; line-height: 30px; width: 426px; padding: 0 10px}
+.setBox .google_mail_sync .open_google_calendar .mail_filter ul.sub_filter li{ padding: 0;}
+.setBox .google_mail_sync .open_google_calendar .sync{ max-width: 520px; padding:0 10px; margin: 0 auto; }
+.setBox .google_mail_sync .open_google_calendar p.top_title{ max-width: 500px; margin: 0 auto; color: #222; font-size: 13px; letter-spacing: 5px; padding-bottom: 10px; }
+.setBox .google_mail_sync .open_google_calendar p.block{ line-height: 20px; font-size: 12px; letter-spacing: 0;}
+.setBox .google_mail_sync .open_google_calendar p.block a{ padding: 0 5px; border-radius: 3px 0 3px 3px;}
+
 /*set_layout*/
-.set_layout{ padding: 56px 0 180px 124px; background-image: url(../images/setting/bg_owl_01.png); }
+.set_layout{ padding: 56px 0 180px 80px; background-image: url(../images/setting/bg_owl_01.png); }
 .set_layout .l_Box .theBox:last-child{ min-height: 183px; }
 .set_layout .r_Box .theBox .more_height { min-height: 133px; }
 
@@ -3041,18 +3069,20 @@ ul.job_management_list p.text_center{ text-align: center; }
 .set_mailbox .mail_content fieldset.radio .setting_item{ float: left; margin:5px;}
 .set_mailbox .mail_content fieldset.radio .setting_item input[type=radio]:not(old) + label{ padding-right: 5px; }
 
-.set_mailbox .mail_filter{ width:350px; background-color: #fff; position: relative; margin: 20px 0 0 88px;}
-.set_mailbox .mail_filter p{ font-size: 13px; }
-.set_mailbox .mail_filter p.title{ line-height: 30px; color: #9B9B9B; border: 1px solid #979797; }
-.set_mailbox .mail_filter p.title a{ position: relative; display: block; }
-.set_mailbox .mail_filter p.title a::after{ content: ""; position: absolute; top: 11px; right: 10px;width: 0;height: 0;border-style: solid;border-width: 5px 5px 0 5px;border-color: #81b6c8 transparent transparent transparent;line-height: 0px;_border-color: #81b6c8 #000000 #000000 #000000;_filter: progid: DXImageTransform.Microsoft.Chroma(color='#000000');}
-.set_mailbox .mail_filter a{ color: #9B9B9B; display: block; height: 30px; padding: 0 10px; }
-.set_mailbox .mail_filter p.btn_in a{ color: #4A4A4A; }
+.mail_filter{ background-color: #fff; position: relative;}
+.mail_filter p{ font-size: 13px; }
+.mail_filter p.title{ line-height: 30px; color: #9B9B9B; border: 1px solid #979797; }
+.mail_filter p.title a{ position: relative; display: block; }
+.mail_filter p.title a::after{ content: ""; position: absolute; top: 11px; right: 10px;width: 0;height: 0; border-style: solid;border-width: 5px 5px 0 5px;border-color: #81b6c8 transparent transparent transparent;line-height: 0px;_border-color: #81b6c8 #000000 #000000 #000000;_filter: progid: DXImageTransform.Microsoft.Chroma(color='#000000');}
+.mail_filter a{ color: #9B9B9B; display: block; height: 30px; padding: 0 10px; }
+.mail_filter p.btn_in a{ color: #4A4A4A; }
 
-.set_mailbox .mail_filter ul.sub_filter{ position: absolute; display: none; top: 30px; left: 0; z-index: 10; background-color: #fff; width: 100%; border: 1px solid #979797; box-shadow: 0px 3px 2px rgba(0,0,0,.3); }
-.set_mailbox .mail_filter ul.sub_filter li{ width: 100%; }
-.set_mailbox .mail_filter ul.sub_filter li p{ cursor: pointer; text-align: left; padding: 0 9px; line-height: 26px; }
-.set_mailbox .mail_filter ul.sub_filter li:hover p{ background-color: #81B6C8; color: #fff;}
+.mail_filter ul.sub_filter, .open_google_calendar .mail_filter ul.sub_filter{ position: absolute; display: none; top: 30px; left: 0; z-index: 10; background-color: #fff; width: 100%; border: 1px solid #979797; box-shadow: 0px 3px 2px rgba(0,0,0,.3); }
+.mail_filter ul.sub_filter li{ width: 100%; }
+.mail_filter ul.sub_filter li p{ cursor: pointer; text-align: left; padding: 0 9px; line-height: 26px; }
+.mail_filter ul.sub_filter li:hover p{ background-color: #81B6C8; color: #fff;}
+.set_mailbox .mail_filter{ width:350px; margin: 20px 0 0 88px;}
+.open_google_calendar .mail_filter ul.sub_filter li p{display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 25px; height: 25px * 1; overflow:hidden;}
 
 /*寄信狀態*/
 /*.mail_send_status{ position: absolute; top: 15px; left: 0; z-index: 5; padding-left: 40px;}

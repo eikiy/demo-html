@@ -59,7 +59,7 @@ $(document).ready(function() {
 					<li><p><a href="account_organization.html">組織設定</a></p></li>
 					<li><p><a href="account_registration.html">報到條件設定</a></p></li>
 					<li><p><a href="account_email.html">E-MAIL 設定</a></p></li>
-					<li class="none"><p><a href="account_questionnaire.html">問卷設定</a></p></li>
+					<li><p><a href="account_questionnaire.html">問卷設定</a></p></li>
 					<li class="none"><p><a href="account_interviewer.html">面試官設定</a></p></li>
 				</ul>
 			</div>
@@ -74,7 +74,47 @@ $(document).ready(function() {
 							</a>
 						</div>
 					</div>
-					<div class="theBox">
+					<!-- default -->
+					<div class="theBox google_calendar_set">
+						<h3>同步<span>Google</span> 行事曆設定</h3>
+						<div class="infoBox default_google_calendar img_default">
+							<p class="btn"><a class="popup-link" href="#popup-open-google-calendar">使用 Google 登入</a></p>
+						</div>
+					</div>
+					<!-- open Google calendar -->
+					<div class="theBox google_calendar_set">
+						<h3>同步<span>Google</span> 行事曆設定</h3>
+						<div class="infoBox open_google_calendar img_default">
+							<div class="sync clearfix">
+								<div class="mail_filter clearfix">
+									<p class="sync_mail">andy123468489@kamo.com.tw</p>
+								</div>
+								<p class="btn block"><a class="bg_red popup-link" href="#popup-mail-logoute">登出</a></p>
+							</div>
+							<div class="sync clearfix">
+								<div class="mail_filter clearfix">
+									<!-- 選取中 p + "btn_in" -->
+									<p class="title btn_in"><a href="#"><span>joannea_yu@gmail.com</span></a></p>
+									<!-- <p class="title"><a href="#"><span>選擇同步的行事曆</span></a></p> -->
+									<ul class="sub_filter" style=" display: block;">
+										<li><p>joannea_yu@gmail.com</p></li>
+										<li><p>applelin@gmail.com</p></li>
+									</ul>
+								</div>
+								<p class="btn block"><a class="bg_green" href="#">同步</a></p>
+							</div>
+							<div class="sync clearfix">
+								<div class="mail_filter clearfix">
+									<p class="title"><a href="#"><span>選擇平均面試時間</span></a></p>
+									<!-- <ul class="sub_filter" style=" display: block;">
+										<li><p>選擇平均面試時間</p></li>
+										<li><p>選擇平均面試時間</p></li>
+									</ul> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="theBox">
 						<h3>更多設定</h3>
 						<div class="infoBox text_left setting_list">
 							<p class="sub_title">請問是否開啟下列功能？</p>
@@ -87,7 +127,7 @@ $(document).ready(function() {
 								<label for="option">應徵問卷</label>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 				<div class="r_Box">
 					<div class="theBox">
@@ -404,6 +444,65 @@ $(document).ready(function() {
                 </ul>
                 <p class="btn"><a href="#">確認</a></p>
             </div>
+        </form>
+    </div>
+
+    <!-- popup 同步Google行事曆設定-->
+    <div id="popup-open-google-calendar" class="white-popup popup-gray-M mfp-hide">
+        <form class="setBox">
+			<div class="top_title">
+                <h3>同步Google行事曆設定</h3>
+            </div>
+            <div class="google_mail_sync">
+            	<ul class="open_google_calendar set_list">
+            		<li class="">
+                        <p class="top_title">電子郵件：</p>
+                        <div class="sync clearfix">
+							<div class="mail_filter clearfix">
+								<input class="mail" type="text" name="" value="andy@kamo.com.tw">
+							</div>
+							<p class="btn block"><a class="bg_red" href="#">登出</a></p>
+						</div>
+                    </li>
+                    <li class="">
+                        <p class="top_title">需要同步到哪個行事曆：</p>
+                        <div class="sync clearfix">
+							<div class="mail_filter clearfix">
+								<!-- 選取中 p + "btn_in" -->
+								<p class="title"><a href="#"><span>請選擇</span></a></p>
+								<ul class="sub_filter" style=" display: block;">
+									<li><p>joannea_yu@gmail.com</p></li>
+									<li><p>applelin@gmail.com</p></li>
+								</ul>
+							</div>
+							<p class="btn block"><a class="bg_green" href="#">同步</a></p>
+						</div>
+                    </li>
+                    <li class="">
+                        <p class="top_title">平均面試時間：</p>
+                        <div class="sync clearfix">
+							<div class="mail_filter clearfix">
+								<p class="title"><a href="#"><span>請選擇</span></a></p>
+								<ul class="sub_filter" style=" display: block;">
+									<li><p>AAAAA<p></li>
+									<li><p>BB</p></li>
+								</ul>
+							</div>
+						</div>
+                    </li>
+                </ul>
+            </div>
+            <!-- <p class="btn"><a class="" href="#">確認儲存</a></p> -->
+        </form>
+    </div>
+
+    <!-- popup 登出結束Google行事曆同步-->
+    <div id="popup-mail-logoute" class="white-popup popup-w-s mfp-hide popup-padding-top">
+        <form class="setBox messageBox check_remind ">
+			<div class="RedBox">
+                <p class="info">請問是否確認登出結束Google行事曆同步？</p>
+            </div>
+            <p class="btn"><a class="bg_gary" href="#">取消</a><a class="bg_red" href="#">確認登出</a></p>
         </form>
     </div>
 </main>
