@@ -2978,14 +2978,16 @@ ul.job_management_list p.text_center{ text-align: center; }
 .setting_contents .google_calendar_set .default_google_calendar p.btn a:hover{ background-color: #1a73e8; }
 .setting_contents .google_calendar_set .mail_filter{ width:233px; float: left;}
 
-.open_google_calendar .mail_filter p.sync_mail{ line-height: 30px; text-align: left; padding-left: 10px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 30px; height: 30px * 1; overflow:hidden;}
+.right_contents .theBox .open_google_calendar{ padding-top: 5px;}
+.open_google_calendar .mail_filter p.sync_mail{ line-height: 30px; text-align: left; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 30px; height: 30px * 1; overflow:hidden;}
 .open_google_calendar .mail_filter p.title{ border-color: #EBEBEB;}
 .open_google_calendar .mail_filter p.title a{ text-align: left; }
-.open_google_calendar .sync{ padding:5px 0 7px 15px; }
+.open_google_calendar .sync{ padding:2px 0 2px 18px; }
 .open_google_calendar .sync p.btn{ float: left; padding: 5px 0 0 8px;}
 .open_google_calendar .sync p.btn a{ min-width: 54px; }
 .open_google_calendar .sync p.block a.bg_green{background-color: #84BE98; color: #fff; border-color: #84BE98;}
 .open_google_calendar .sync p.block a.bg_green:hover{ background-color: #95caa7; }
+.open_google_calendar p.top_title{ color: #808080; font-size: 13px; padding-bottom: 3px; text-align: left; }
 
 .setBox .google_mail_sync{ background-color: #fff; border-radius: 0 0 10px 10px; }
 .setBox .google_mail_sync ul.set_list{ padding:25px 40px 40px 40px; }
@@ -2995,7 +2997,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .setBox .google_mail_sync .open_google_calendar .mail_filter input.mail{ border:1px solid #EBEBEB; line-height: 30px; width: 426px; padding: 0 10px}
 .setBox .google_mail_sync .open_google_calendar .mail_filter ul.sub_filter li{ padding: 0;}
 .setBox .google_mail_sync .open_google_calendar .sync{ max-width: 520px; padding:0 10px; margin: 0 auto; }
-.setBox .google_mail_sync .open_google_calendar p.top_title{ max-width: 500px; margin: 0 auto; color: #222; font-size: 13px; letter-spacing: 5px; padding-bottom: 10px; }
+.setBox .google_mail_sync .open_google_calendar p.top_title{ max-width: 500px; color: #4A4A4A; margin: 0 auto; letter-spacing: 5px; padding-bottom: 10px; }
 .setBox .google_mail_sync .open_google_calendar p.block{ line-height: 20px; font-size: 12px; letter-spacing: 0;}
 .setBox .google_mail_sync .open_google_calendar p.block a{ padding: 0 5px; border-radius: 3px 0 3px 3px;}
 
