@@ -234,7 +234,7 @@ p.add_new_btn a.add_new_job_vacancies:hover span::before{ background-image: url(
 .item li a{ border:1px solid #9B9B9B; color: #4A4A4A; padding: 5px; display: block; }
 .item li a:hover{  border-color: #81B6C8; }
 .item li a.btn_in{ background-color: #81B6C8; color: #fff; border-color: #81B6C8; }
-.item li a.go_delete{ position: absolute; cursor: pointer;  top: 6px; right: 5px; width: 15px; height: 15px; border:1px solid #C87D86; border-radius: 3px 0 3px 3px; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
+.item li a.go_delete{ position: absolute; cursor: pointer;  top: 0px; right: 0px; width: 26.5px; height: 100%; border:1px solid #9B9B9B; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: 65%;}
 .item li a.go_delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
 .item li a.go_edit{ position: absolute; cursor: pointer;  top: 0px; right: 0px; width: 26.5px; height: 100%; border:1px solid #9B9B9B; background-image: url(../images/btn_icon_edit.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
 .item li a.go_edit:hover{ background-color: #81B6C8; background-image: url(../images/btn_icon_edit_w.png); }
