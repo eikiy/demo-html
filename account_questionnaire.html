@@ -393,14 +393,41 @@
 								<div class="top_check">
 									<h3>
 										<input id="" type="checkbox" name="" value="其他問題" checked="">
-										<label for="option">其他問題</label><!-- 變動文字 -->
+										<label for="option">最多六個文字
+											<a class="edit_title popup-link" href="#popup-edit-qa"><span class="img_default"></span></a>
+										</label>
+									</h3>
+									<a class="box_switch arr_up"><span class="img_default"></span></a>
+								</div>
+								<div class="set_all">
+									<div class="main_set_item">
+										<h5>可點選上方鉛筆圖案編輯鍵，進行整組問題的大標題與說明。</h5>
+										<div class="first_add_qa clearfix">
+											<p class="note">請自行新增所需的問題。</p>
+											<p class="btn">
+												<a class="bg_light_gray popup-link" href="#popup-add-issue">+ 新增</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<p class="btn">
+									<a class="popup-link" href="#popup-preview">預覽</a>
+								</p>
+							</div>
+							<div class="set_box">
+								<div class="top_check">
+									<h3>
+										<input id="" type="checkbox" name="" value="其他問題" checked="">
+										<label for="option">其他問題<!-- 變動文字 -->
+											<a class="edit_title popup-link" href="#popup-edit-qa"><span class="img_default"></span></a>
+										</label>
 									</h3>
 									<a class="box_switch arr_up"><span class="img_default"></span></a>
 								</div>
 								<div class="set_all">
 									<div class="main_set_item">
 										<h5>請依您對本公司之印象與了解，回答下列問題</h5>
-										<ul class="sub_set_list field_for1 clearfix">
+										<!-- <ul class="sub_set_list field_for1 clearfix">
 											<li>
 												<input id="" type="checkbox" name="" value="對於本公司有多少的認識與了解" checked="">
 												<label for="option">對於本公司有多少的認識與了解</label>
@@ -413,31 +440,59 @@
 												<input id="" type="checkbox" name="" value="對於本公司有多少的認識與了解" checked="">
 												<label for="option">對於本公司有多少的認識與了解</label>
 											</li>
+										</ul> -->
+										<ul class="item conditionList">
+											<li>
+												<div class="border">
+													<input id="" type="checkbox" name="" value="option">
+													<label for="option">對於本公司有多少的認識與了解</label>
+												</div>
+												<a class="go_edit popup-link" href="#popup-edit-issue"></a>
+												<a class="go_delete popup-link" href="#popup-delete"></a>
+											</li>
+											<li>
+												<div class="border">
+													<input id="" type="checkbox" name="" value="option">
+													<label for="option">請簡單描述一下本公司「ＷＷＷ」產品的優缺點</label>
+												</div>
+												<a class="go_edit popup-link" href="#popup-edit-issue"></a>
+												<a class="go_delete popup-link" href="#popup-delete"></a>
+											</li>
+											<li>
+												<div class="border">
+													<input id="" type="checkbox" name="" value="option">
+													<label for="option">請簡單描述一下本公司「ＷＷＷ」產品的優缺點</label>
+												</div>
+												<a class="go_edit popup-link" href="#popup-edit-issue"></a>
+												<a class="go_delete popup-link" href="#popup-delete"></a>
+											</li>
 										</ul>
 									</div>
 								</div>
+								<p class="btn no_border">
+									<a class="popup-link" href="#popup-add-issue">+ 新增</a>
+								</p>
 								<p class="btn block">
-									<a class="edit popup-link" href="#popup-edit-qa">編輯</a>
 									<a class="bg_light_gray popup-link" href="#popup-preview">預覽</a>
 								</p>
 							</div>
-							<div class="survey_footer">
+							<!-- <div class="survey_footer"> -->
 								<!-- 不能點 -->
-								<p class="btn block">
+								<!-- <p class="btn block">
 									<a class="add add_gray bg_light_gray remind_greenbox popup-link" href="#popup-add-qa">新增問題
 										<span class="tooltip" style="min-width: 350px;">
 						                	<span class="icon_thumbtack">目前系統僅開放設定一組問題，無法繼續新增</span>
 						                </span>
 						            </a>
-								</p>
+								</p> -->
 								<!-- 可以點 -->
-								<p class="btn">
+								<!-- <p class="btn">
 									<a class="add popup-link" href="#popup-add-qa">新增問題</a>
 								</p>
 								<p class="btn block">
 									<a class="bg_blue popup-link" href="#popup-save">儲存設定</a>
-								</p>
-							</div>
+								</p> -->
+							<!-- </div> -->
 						</div>
 					</div>
 				</section>
@@ -459,19 +514,6 @@
 		                    	<textarea placeholder="可對問題假設情境或多做描述"></textarea>
 		                    </li>
 		                </ul>
-		                <ul class="question_list">
-		                    <li class="dashed_line">
-		                    	<h4 class="title">問題1</h4>
-		                    	<input id="" name="" type="text" value="如果我有三十六個字以內的文字的話，畫面會長怎樣的？大概就是這麼長吧" placeholder="限定36個字內">
-		                    </li>
-		                    <li class="dashed_line">
-		                    	<h4 class="title">問題2<a class="delete" href="#">刪除</a></h4>
-		                    	<textarea placeholder="限定36個字內"></textarea>
-		                    </li>
-		                    <li>
-		                    	<p class="add_new_btn"><a class=" popup-link" href="#">+ 新增問題</a></p>
-		                    </li>
-		                </ul>
 		                <p class="btn">
 		                	<a class="bg_gary" href="#">取消</a>
 		                	<a href="#">確認儲存</a>
@@ -479,42 +521,25 @@
 		            </div>
 		        </form>
 		    </div>
-		    <!-- popup 編輯問題 -->
+		    <!-- popup 編輯標題與說明 -->
 			<div id="popup-edit-qa" class="white-popup popup-w-s mfp-hide">
 		        <form class="setBox">
 		            <div class="top_title">
-		                <h3>編輯問題</h3>
+		                <h3>編輯標題與說明</h3>
 		            </div>
 		            <div class="addQA_fillinBox">
 		                <ul class="question_list">
 		                    <li>
-		                    	<h4 class="title">大標題 [限定 1 組]</h4>
-		                    	<input id="" name="" type="text" placeholder="如未填寫，會顯示 「其他問題」，限定6個字內" value="其他問題">
+		                    	<h4 class="title">大標題</h4>
+		                    	<input id="" name="" type="text" placeholder="如未填寫，會顯示 「其他問題」，限定6個字內" value="">
 		                    </li>
 		                    <li>
 		                    	<h4 class="title">內容說明</h4>
-		                    	<textarea placeholder="可對問題假設情境或多做描述">請依您對本公司之印象與了解，回答下列問題</textarea>
-		                    </li>
-		                </ul>
-		                <ul class="question_list">
-		                    <li class="dashed_line">
-		                    	<h4 class="title">問題1</h4>
-		                    	<input id="" name="" type="text" value="對於本公司有多少的認識與了解" placeholder="限定36個字內">
-		                    </li>
-		                    <li class="dashed_line">
-		                    	<h4 class="title">問題2<a class="delete" href="#">刪除</a></h4>
-		                    	<textarea placeholder="限定36個字內">請簡單描述一下本公司「ＷＷＷ」產品的優缺點</textarea>
-		                    </li>
-		                    <li class="dashed_line">
-		                    	<h4 class="title">問題3<a class="delete" href="#">刪除</a></h4>
-		                    	<textarea placeholder="限定36個字內">對於本公司有多少的認識與了解</textarea>
-		                    </li>
-		                    <li>
-		                    	<p class="add_new_btn"><a class=" popup-link" href="#">+ 新增問題</a></p>
+		                    	<textarea placeholder="可對整組問題假設情境或多做描述"></textarea>
 		                    </li>
 		                </ul>
 		                <p class="btn">
-		                	<a class="bg_gary" href="#">取消</a>
+		                	<a class="btn_org" href="#">復原初始</a>
 		                	<a href="#">確認儲存</a>
 		                </p>
 		            </div>
@@ -546,6 +571,52 @@
 		            <p class="btn">
 		                <a href="#">結束預覽，返回編輯</a>
 		            </p>
+		        </div>
+		    </div>
+		    <!-- popup 新增問題 -->
+		    <div id="popup-add-issue" class="white-popup popup-w-s mfp-hide popup-padding-top">
+		        <form class="setBox messageBox check_remind ">
+		        	<div class="top_title">
+		                <h3>新增問題</h3>
+		            </div>
+		            <div class="fillinBox no_reason">
+		                <ul style="overflow-y: hidden;">
+		                    <li>
+		                    	<textarea class="r_info" id="" name="" type="text" value="" placeholder="字數限定40字以內。">請簡單描述一下本公司「ＷＷＷ」產品的優缺點請簡單描述一下本公司「ＷＷＷ」產品的優缺點</textarea>
+		                    </li>
+		                </ul>
+		            </div>
+		            <p class="btn">
+		            	<a href="#">確認</a>
+		            </p>
+		        </form>
+		    </div>
+		    <!-- popup 編輯問題 -->
+		    <div id="popup-edit-issue" class="white-popup popup-w-s mfp-hide popup-padding-top">
+		        <form class="setBox messageBox check_remind ">
+		        	<div class="top_title">
+		                <h3>編輯問題</h3>
+		            </div>
+		            <div class="fillinBox no_reason">
+		                <ul style="overflow-y: hidden;">
+		                    <li>
+		                    	<textarea class="r_info" id="" name="" type="text" value="" placeholder="字數限定40字以內。">請簡單描述一下本公司「ＷＷＷ」產品的優缺點請簡單描述一下本公司「ＷＷＷ」產品的優缺點</textarea>
+		                    </li>
+		                </ul>
+		            </div>
+		            <p class="btn">
+		            	<a href="#">確認</a>
+		            </p>
+		        </form>
+		    </div>
+		    <!-- popup 刪除 -->
+			<div id="popup-delete" class="white-popup popup-w-s mfp-hide">
+		        <div class="setBox messageBox">
+		            <div class="RedBox">
+		            	<!-- 不知道刪除呈現的內容是啥XD 下面是我亂打的哦 -->
+		                <p class="info">請問確定刪除此問題<span>「請簡單描述一下本公司「ＷＷＷ」產品的優缺點請簡單描述一下本公司「ＷＷＷ」產品的優缺點」</span>嗎？</p>
+		            </div>
+		            <p class="btn"><a class="bg_gary" href="#">取消</a><a class="bg_red" href="#">確認刪除</a></p>
 		        </div>
 		    </div>
 		</main>

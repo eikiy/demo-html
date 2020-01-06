@@ -353,7 +353,8 @@ p.add_new_btn a.add_new_job_vacancies:hover span::before{ background-image: url(
 
  :root .setBox .fillinBox ul li{ min-height: 46px;}
 
-.setBox .fillinBox ul li input.r_info{ border-bottom: 2px solid transparent }
+.setBox .fillinBox ul li input.r_info{ border-bottom: 2px solid transparent; }
+.setBox .fillinBox ul li textarea.r_info{ border-bottom: 2px solid transparent; padding: 10px 12px; line-height: 26px; }
 .setBox .fillinBox ul li input[type=text]:hover, .setBox .fillinBox ul li textarea:hover, .setBox .fillinBox ul li input[type=text]:focus, .setBox .fillinBox ul li textarea:focus { border-color:#81B6C8;}
 .setBox .fillinBox ul li.pw_error{ position: relative; }
 .setBox .fillinBox ul li.pw_error input{ border-color:#C87D86 ; }
@@ -399,6 +400,7 @@ p.add_new_btn a.add_new_job_vacancies:hover span::before{ background-image: url(
 .setBox p.btn a.btn_none{opacity: .5;cursor: not-allowed;-webkit-filter: grayscale(1);}
 .setBox p.btn a.bg_gary_light{ background-color: #EBEBEB; color: #D8D8D8; cursor: no-drop;  }
 .setBox p.btn a.dark_purpleBox{ background-color: #342949; }
+.setBox p.btn a.btn_org{ background-color: #EB8B70;}
 
 .setBox p.btn a.fl{ float: left; }
 .setBox p.btn a.bg_lightblue{ margin-left: 0;color: #81B6C8; background-color: #D1E0E5;}
@@ -3424,17 +3426,19 @@ ul.job_management_list p.text_center{ text-align: center; }
 .survey_set_contents .set_box .top_check a.box_switch span::after{ content:""; position: absolute; right: 14px; top: 11px; width: 15px; height: 10px; display: block; cursor: pointer;}
 .survey_set_contents .set_box .top_check a.arr_bottom span::after{ background-image: url(../images/svg/arrow_bottom_w.svg); }
 .survey_set_contents .set_box .top_check a.arr_up span::after{ background-image: url(../images/svg/arrow_up_w.svg);}
+.survey_set_contents .set_box .top_check a.edit_title{ position: absolute; z-index: 2; width: 34px; height: 34px; display: inline-block;}
+.survey_set_contents .set_box .top_check a.edit_title span{ width: 18px; height: 18px; display: block; margin: 3px 0 0 5px; background-image: url(../images/svg/pen_edit_w.svg); }
+.survey_set_contents .set_box .top_check a.edit_title:hover{ opacity: 0.8; }
 
 .survey_set_contents .set_box .top_check h3, .survey_set_contents .set_box .main_set_item h4{ position: relative; font-size: 15px; letter-spacing: 8px;}
-.survey_set_contents .set_box .top_check h3 input{ width: 300px !important; }
-.survey_set_contents .set_box .top_check h3 input[type=checkbox]:not(old) + label{ background-position : center left; color: #fff; background-image: url(../images/checks_on_w.png); background-size: contain;}
+.survey_set_contents .set_box .top_check h3 input{ width: 300px !important; z-index: 2; }
+.survey_set_contents .set_box .top_check h3 input[type=checkbox]:not(old) + label{  background-position : center left; color: #fff; background-image: url(../images/checks_on_w.png); background-size: contain;}
 .survey_set_contents .set_box .top_check h3 input[type=checkbox]:not(old):checked + label{ background-image: url(../images/checks_on_green.png);}
 
-.survey_set_contents .set_box .main_set_item{ padding-bottom: 5px; }
 .survey_set_contents .set_box .main_set_item h4{ background-color: #E6F0F4; padding: 5px 38px; position: relative;}
 .survey_set_contents .set_box .main_set_item h4 a.qa_edit{ position: absolute; top: 0; right: 0; width: 40px; height: 34px; background-image: url(../images/user_img_edit_in.png); background-size: contain;}
 .survey_set_contents .set_box .main_set_item h4 a.qa_edit:hover{ opacity: .7; }
-.survey_set_contents .set_box .main_set_item h5{ background-color: #F8F9F9; padding: 8px 65px; font-size: 13.5px; color: #4A4A4A;}
+.survey_set_contents .set_box .main_set_item h5{ background-color: #F8F9F9; padding: 8px 44px; font-size: 14px; color: #4A4A4A;}
 
 .survey_set_contents .set_box .main_set_item ul.sub_set_list{ width: 100%; padding: 5px 10px 5px 58px; }
 .survey_set_contents .set_box .main_set_item ul.sub_set_list li{ font-size: 13.5px; min-width: 120px; position: relative; float: left; padding: 2.5px; }
@@ -3443,6 +3447,9 @@ ul.job_management_list p.text_center{ text-align: center; }
 
 .survey_set_contents .set_box .main_set_item ul.sub_set_list li.check_preset input{ cursor: not-allowed; }
 .survey_set_contents .set_box .main_set_item ul.sub_set_list li.check_preset input[type=checkbox]:not(old) + label{ background-image: url(../images/checks_k.png); background-position: 0 -73px;}
+.survey_set_contents .set_box .main_set_item ul.conditionList{ margin:0 0 0 44px; max-width: 760px;  }
+.survey_set_contents .set_box .main_set_item ul.conditionList li{ position: relative;}
+.survey_set_contents .set_box .main_set_item ul.conditionList li .border{ max-width: 760px; font-size: 13px;}
 
 .survey_set_contents .set_box .not_open ul.sub_set_list { opacity: .5; }
 
@@ -3453,7 +3460,11 @@ ul.job_management_list p.text_center{ text-align: center; }
 
 .survey_set_contents .theBox .set_box p.btn{ border-top: 1px solid #81B6C8; text-align: right; padding:12px 20px; }
 .survey_set_contents .theBox .set_box p.dashed_line{ border-top: 1px dashed #D8D8D8; margin: 0 30px; padding:12px 0;}
+.survey_set_contents .theBox .set_box p.no_border{ border: none; }
 .survey_set_contents .theBox .set_box p.btn a.edit{ padding:0 12px 0 33px; background-position: 8px center; }
+.survey_set_contents .theBox .set_box .first_add_qa{ padding-bottom: 15px; }
+.survey_set_contents .theBox .set_box .first_add_qa p.btn{ border: none; float: right; }
+.survey_set_contents .theBox .set_box .first_add_qa p.note{ float: left; padding: 12px 12px 12px 44px; color: #808080; }
 
 .survey_set_contents .survey_footer{ width: 100%; }
 .survey_set_contents .survey_footer p.btn{ text-align: right; padding:12px 20px; line-height: 30px;}
@@ -3466,10 +3477,8 @@ ul.job_management_list p.text_center{ text-align: center; }
 /*問卷-新增問題*/
 .addQA_fillinBox ul.question_list{ background-color: #fff; border-radius: 10px 0 10px 10px; padding: 10px 15px; margin-top: 10px; }
 .addQA_fillinBox ul.question_list li{ padding: 5px 0; }
-.addQA_fillinBox ul.question_list li.dashed_line{ padding-bottom: 15px; border-bottom: 1px dashed #979797;}
+/*.addQA_fillinBox ul.question_list li.dashed_line{ padding-bottom: 15px; border-bottom: 1px dashed #979797;}*/
 .addQA_fillinBox ul.question_list li h4.title{ font-size: 15px; color: #558C9E; padding: 5px 0 10px 0; }
-.addQA_fillinBox ul.question_list li h4.title a.delete{ border-radius: 4px 0 4px 4px; border:1px solid #C87D86; color: #C87D86; font-size: 12px; padding: 2px 6px; display: inline-block; margin-left: 5px; }
-.addQA_fillinBox ul.question_list li h4.title a.delete:hover{ background-color: #C87D86; color: #fff; }
 
 .addQA_fillinBox input, .addQA_fillinBox textarea{ border: #979797 solid 1px; min-height: 24px; line-height: 24px; padding:4px 10px; width: 100%; font-size: 14px; border-radius: 5px; resize: none;}
 .addQA_fillinBox input::placeholder, .addQA_fillinBox textarea::placeholder{ color: #cccccc; }
