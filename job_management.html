@@ -796,7 +796,7 @@
 								<!-- 除了li.top_title 外的 li 新增class name: crosswise_list，因為一直吃到top_title...so...>< -->
 								<ul class="leaderboard_data choose_two">
 									<li class="top_add">
-										<p class="add_new_btn"><a class="add popup-link" href="#popup-nterviewee"><span>新增面試人員</span></a></p>
+										<p class="add_new_btn"><a class="add popup-link" href="#popup-add-interviewee"><span>新增面試人員</span></a></p>
 									</li>
 									<li class="top_title clearfix">
 										<div class="abox select_title">
@@ -1317,7 +1317,7 @@
 							<div class="job_leaderboard_container">
 								<ul class="leaderboard_data choose_two">
 									<li class="top_add">
-										<p class="add_new_btn"><a class="add popup-link" href="#popup-nterviewee"><span>新增面試人員</span></a></p>
+										<p class="add_new_btn"><a class="add popup-link" href="#popup-add-interviewee"><span>新增面試人員</span></a></p>
 									</li>
 									<li class="top_title clearfix">
 										<div class="abox select_title">
@@ -1997,6 +1997,102 @@
 					</div>
 				</div>
             </div>
+        </form>
+    </div>
+
+    <!-- popup 新增求職者 -->
+	<div id="popup-add-interviewee" class="white-popup popup-w-sm mfp-hide">
+        <form class="setBox management_pop">
+            <div class="top_title">
+                <h3 class="dark">新增求職者</h3>
+            </div>
+            <div class="fillin_interviewe_data">
+            	<table class="top_job_vacancies" border="0" cellpadding="0" cellspacing="0">
+            		<tr>
+					    <th class="l_title" colspan="1" width="106"><p>面試職位</p></th>
+					    <td colspan="3"><p>英文業務</p></td>
+            		</tr>
+            		<tr>
+					    <th class="l_title" width="106"><p>面試部門</p></th>
+					    <td width="195"><p>業務部</p></td>
+					    <th class="l_title border_l" width="106"><p>直屬主管</p></th>
+					    <td><p>劉曉明<?</td>
+            		</tr>
+            	</table>
+                <ul class="fill_information_info">
+                    <li class="clearfix">
+                        <fieldset class="the_name clearfix">
+							<label for="">求職者姓名</label>
+							<input class="f_input red_error" type="text" name="" id="" placeholder="必填欄位">
+						</fieldset>
+                        <fieldset class="the_gender enderclearfix">
+							<label for="">性別</label>
+							<div class="styled-select">
+	                            <select class="md-input" name="">
+	                            	<option selected="" value="">請選擇</option>
+		                            <option value="1">男</option>
+		                            <option value="2">女</option>
+		                        </select>
+	                        </div>
+						</fieldset>
+                    </li>
+                    <!-- #輸入數字後按其他空格或按+，剛剛輸入數字會自己成一群組。 -->
+                    <!-- 覺得好像按 enter 也要變成一個 -->
+                    <!-- 第一次狀態 -->
+                    <li>
+                        <fieldset class="the_phont clearfix">
+							<label for="">聯絡電話</label>
+							<div class="f_input clearfix">
+								<input class="fillin_phone" type="text" placeholder="請直接輸入數字，如新增下一筆請按右鍵新增" style="width: 100%;">
+								<div class="add">
+									<a class="img_default"></a>
+								</div>
+							</div>
+						</fieldset>
+                    </li> 
+                    <!-- 點選輸入框後的狀態 -->
+                    <li>
+                        <fieldset class="the_phont clearfix">
+							<label for="">聯絡電話</label>
+							<div class="f_input clearfix">
+								<!-- 最多3組 -->
+								<p class="phone_number clearfix">
+									<span>0912345678</span>
+									<a class="delete" href="#"></a>
+								</p>
+								<p class="phone_number clearfix">
+									<span>03-5478908</span>
+									<a class="delete" href="#"></a>
+								</p>
+								<!-- input 需要計算剩下的寬度 -->
+								<input class="fillin_phone" type="text" placeholder="" style="width: 150px;" value="0877-">
+								<div class="add">
+									<a class="img_default"></a>
+								</div>
+							</div>
+						</fieldset>
+                    </li>
+                    <li>
+                        <fieldset class="clearfix">
+							<label for="">E-MAIL</label>
+							<input class="f_input" type="text" name="" id="" placeholder="如有設定自動寄信，請務必正確輸入此欄">
+						</fieldset>
+                    </li>
+                    <li>
+                        <fieldset class="clearfix">
+							<label for="">招募來源</label>
+							<div class="styled-select">
+	                            <select class="md-input" name="">
+	                            	<option selected="" value="">請選擇</option>
+		                            <option value="1" selected="">AAAAA</option>
+		                            <option value="2">BBBBB</option>
+		                        </select>
+	                        </div>
+						</fieldset>
+                    </li>
+                </ul>
+            </div>
+            <p class="btn"><a class="popup-link" href="#popup-nterviewee-01">確認</a></p>
         </form>
     </div>
 </main>
