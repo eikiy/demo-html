@@ -2998,7 +2998,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .setBox .google_mail_sync ul.set_list li{ padding: 15px 0; }
 .setBox .google_mail_sync ul.set_list li:first-child{ border-bottom: 1px dashed #D8D8D8;}
 .setBox .google_mail_sync .open_google_calendar .mail_filter{ float: left; width: 428px; }
-.setBox .google_mail_sync .open_google_calendar .mail_filter input.mail{ border:1px solid #EBEBEB; line-height: 30px; width: 426px; padding: 0 10px}
+.setBox .google_mail_sync .open_google_calendar .mail_filter input.mail{ border:1px solid #EBEBEB; line-height: 30px; min-height: 30px; width: 426px; padding: 0 10px}
 .setBox .google_mail_sync .open_google_calendar .mail_filter ul.sub_filter li{ padding: 0;}
 .setBox .google_mail_sync .open_google_calendar .sync{ max-width: 520px; padding:0 10px; margin: 0 auto; }
 .setBox .google_mail_sync .open_google_calendar p.top_title{ max-width: 500px; color: #4A4A4A; margin: 0 auto; letter-spacing: 5px; padding-bottom: 10px; }
@@ -3481,11 +3481,11 @@ ul.job_management_list p.text_center{ text-align: center; }
 /*.addQA_fillinBox ul.question_list li.dashed_line{ padding-bottom: 15px; border-bottom: 1px dashed #979797;}*/
 .addQA_fillinBox ul.question_list li h4.title{ font-size: 15px; color: #558C9E; padding: 5px 0 10px 0; }
 
-.addQA_fillinBox input, .addQA_fillinBox textarea{ border: #979797 solid 1px; min-height: 24px; line-height: 24px; padding:4px 10px; width: 100%; font-size: 14px; border-radius: 5px; resize: none;}
+.addQA_fillinBox input, .addQA_fillinBox textarea{ border: #979797 solid 1px; min-height: 24px; line-height: 24px; min-height: 36px; padding:4px 10px; width: 100%; font-size: 14px; border-radius: 5px; resize: none;}
 .addQA_fillinBox input::placeholder, .addQA_fillinBox textarea::placeholder{ color: #cccccc; }
 .addQA_fillinBox input:focus, .addQA_fillinBox textarea:focus{ border-color:#81B6C8;}
 .addQA_fillinBox p.add_new_btn a{ line-height: 38px; border: none;}
-
+html:root  .addQA_fillinBox textarea{ min-height: 58px;}
 /*新增求職者*/
 .fillin_interviewe_data{ background-color: #fff; border-radius: 10px 0 10px 10px; margin-top: 10px; overflow: hidden; }
 .fillin_interviewe_data .top_job_vacancies{ background-color: #F8F9F9; width: 100%;}
