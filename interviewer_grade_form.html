@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+	<head>
+		<meta charset="UTF-8">
+		<title>面試官評分頁</title>
+		<meta name='description' content=""/>
+		<meta name='keywords' content=""/>
+		<meta name="MobileOptimized" content="width">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/interviewer_grade_style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+		<!-- Magnific Popup core JS file -->
+		<script src="magnific-popup/jquery.magnific-popup.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			    $('.popup-link').magnificPopup({
+			      removalDelay: 300,
+			      mainClass: 'mfp-fade'
+			    });
+			});
+		</script>
+		<!-- ee 看效果用 可移除 -->
+		<script type="text/javascript">
+	        $(function(){
+	            $(".the_item .rating_item a.show_more").click(function(){
+	                $(this).parent().parent().find(".show_the_check").stop(true, true).slideToggle();
+	                return false;
+	            });
+	        });
+    	</script>
+	</head>
+	<body>
+		<main class="interviewer_grade_container">
+			<div class="contentsBox">
+				<div class="top_ivBox clearfix">
+					<div class="top_interviewer_info clearfix">
+						<div class="left_photo">
+							<div class="the_photo">
+								<img src="images/user_photo_01.png" align="logo" width="100%">
+							</div>
+						</div>
+						<div class="rightInfoBox">
+							<div class="user_name clearfix">
+								<p class="name">林怡文</p>
+								<p>男</p>
+								<p class="none_line">37歲</p>
+							</div>
+							<div class="iBox clearfix">
+								<p class="title">職缺部門：</p>
+								<p class="right_info">資訊部</p>
+									</div>
+									<div class="iBox clearfix">
+								<p class="title">職缺名稱：</p>
+								<p class="right_info">軟體工程師</p>
+									</div>
+									<div class="iBox clearfix">
+								<p class="title">直屬主管：</p>
+								<p class="right_info">林怡文</p>
+									</div>
+									<div class="iBox clearfix">
+								<p class="title">報到時間：</p>
+								<p class="right_info">2019/07/02</p>
+							</div>
+						</div>
+					</div>
+					<div class="rBox clearfix">
+						<div class="btn_other clearfix">
+							<p><a class="icon_01" href="#">其他資料</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="top_interviewer clearfix">
+					<p class="left_title">面試官姓名</p>
+					<p class="the_interviewer_name">陸宇宙</p>
+				</div>
+				<div class="setting_item_content">
+					<p class="top_note">請勾選此次面試評分項目</p>
+					<ul class="list clearfix">
+						<li class="setting_item clearfix">
+							<input id="" type="checkbox" name="aaaa" value="薪資待遇">
+							<label for="option111">薪資待遇</label>
+						</li>
+						<li class="setting_item clearfix">
+							<input id="" type="checkbox" name="bbbb" value="工作職能">
+							<label for="option111">工作職能  共5項</label>
+						</li>
+						<li class="setting_item clearfix">
+							<input id="" type="checkbox" name="cccc" value="專業技能">
+							<label for="option111">專業技能  共3項</label>
+						</li>
+						<!-- 必填項目，不能取消 -->
+						<li class="setting_item clearfix">
+							<input id="" type="checkbox" name="dddd" value="整體評估" checked="">
+							<label for="option111">整體評估 [必填項目]</label>
+						</li>
+					</ul>
+					<p class="top_note">勾選完請按下一步，開始進行評分</p>
+					<p class="btn">
+						<a class="" href="#">下一步</a>
+					</p>
+				</div>
+				<div class="fill_rating_content">
+					<div class="content_border">
+						<div class="top_check">
+							<h3 class="top_title pc_title">工作職能</h3>
+							<h3 class="mob_title">
+								<input class="go_checkbox" id="" type="checkbox" name="" value="工作職能" checked="">
+								<label for="option">工作職能</label>
+							</h3>
+						</div>
+						<p class="bg_skyblue_note">請依回答狀況評分</p>
+						<div class="rating_list_content bg_color_yel">
+							<div class="the_item clearfix">
+								<div class="rating_item">
+									<p class="list_nb">1/5</p>
+									<h4 class="title">成就導向</h4>
+									<a class="show_more img_default"></a>
+									<div class="the_round">
+										<a class="greed">
+											<div class="tooltip">
+												<span>核心職場正面行為預測： <span class="c_green">工作績效百分比80以上</span></span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="show_the_check">
+									<p class="info">請勾選本次面試時提問之問題</p>
+									<div class="the_check" style="position: relative;">
+										<input id="" type="checkbox" name="" value="" checked="">
+										<label for="option">請舉出一項你最近完成的重大工作或是計畫，並具體說明你是如何設定目標，又是如何監督工作進度？</label>
+									</div>
+									<div class="the_check" style="position: relative;">
+										<input id="" type="checkbox" name="" value="">
+										<label for="option">請描述一個由其他人（主管）為你設定的目標，而你覺得根本無法達成的經驗。</label>
+									</div>
+									<div class="the_check" style="position: relative;">
+										<input id="" type="checkbox" name="" value="" checked="">
+										<label for="option">請描述你目前或是上一間公司的文化，以及該文化的哪些地方，讓你覺得如果要完成你的目標會非常有挑戰性。</label>
+									</div>
+								</div>
+								<div class="score_box">
+									<ul class="score_star_list">
+										<li><span class="selected img_default">1</span></li>
+										<li><span class="img_default">2</span></li>
+										<li><span class="img_default">3</span></li>
+										<li><span class="img_default">4</span></li>
+										<li><span class="img_default">5</span></li>
+									</ul>
+									<p class="comment"><a href="#">+ 評論</a></p>
+									<div class="tools_description">
+										<a class="question">
+											<p class="title">？題庫</p>
+											<div class="tooltip">
+												<p class="info">請勾選本次面試時提問之問題</p>
+												<div class="the_check" style="position: relative;">
+													<input id="" type="checkbox" name="" value="" checked="">
+													<label for="option">請舉出一項你最近完成的重大工作或是計畫，並具體說明你是如何設定目標，又是如何監督工作進度？</label>
+												</div>
+												<div class="the_check" style="position: relative;">
+													<input id="" type="checkbox" name="" value="">
+													<label for="option">請描述一個由其他人（主管）為你設定的目標，而你覺得根本無法達成的經驗。</label>
+												</div>
+												<div class="the_check bottom_line" style="position: relative;">
+													<input id="" type="checkbox" name="" value="" checked="">
+													<label for="option">請描述你目前或是上一間公司的文化，以及該文化的哪些地方，讓你覺得如果要完成你的目標會非常有挑戰性。</label>
+												</div>
+												<p class="info">問卷填寫結果</p>
+												<p class="info">請舉例說明，你曾經為自己設定了目標，並成功達到目標的經驗。</p>
+												<p class="info">求職者回答：<br>
+													<span class="c_org">由於上一份工作是童書業務，為了達到公司業績目標，我設定了更高的業績目標，並擬定拜訪客戶的日程，也主動將潛在客戶整理成清單，由於上一份工作是童書業務，為了達到公司業績目標，我設定了更高的業績目標，並擬定拜訪客戶的日程，也主動將潛在客戶整理成清單。
+													</span>
+												</p>
+											</div>
+										</a>
+										<a class="score">
+											<p class="title img_default">評分標準</p>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="the_item clearfix">
+								<div class="rating_item">
+									<p class="list_nb">2/5</p>
+									<h4 class="title">同理包容</h4>
+									<a class="show_more img_default"></a>
+								</div>
+								<div class="show_the_check">
+									<p class="info">請勾選本次面試時提問之問題</p>
+									<div class="the_check" style="position: relative;">
+										<input id="" type="checkbox" name="" value="" checked="">
+										<label for="option">請舉出一項你最近完成的重大工作或是計畫，並具體說明你是如何設定目標，又是如何監督工作進度？</label>
+									</div>
+									<div class="the_check" style="position: relative;">
+										<input id="" type="checkbox" name="" value="">
+										<label for="option">請描述一個由其他人（主管）為你設定的目標，而你覺得根本無法達成的經驗。</label>
+									</div>
+									<div class="the_check" style="position: relative;">
+										<input id="" type="checkbox" name="" value="" checked="">
+										<label for="option">請描述你目前或是上一間公司的文化，以及該文化的哪些地方，讓你覺得如果要完成你的目標會非常有挑戰性。</label>
+									</div>
+								</div>
+								<div class="score_box">
+									<ul class="score_star_list">
+										<li><span class="selected img_default">1</span></li>
+										<li><span class="img_default">2</span></li>
+										<li><span class="img_default">3</span></li>
+										<li><span class="img_default">4</span></li>
+										<li><span class="img_default">5</span></li>
+									</ul>
+									<p class="comment"><a href="#">+ 評論</a></p>
+									<div class="tools_description">
+										<a class="question">
+											<p class="title">？題庫</p>
+										</a>
+										<a class="score">
+											<p class="title img_default">評分標準</p>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="the_item clearfix">
+								<div class="rating_item">
+									<p class="list_nb">3/5</p>
+									<h4 class="title">關係建立</h4>
+									<a class="show_more img_default"></a>
+								</div>
+								<div class="show_the_check">
+									<p class="info">請勾選本次面試時提問之問題</p>
+									<div class="the_check" style="position: relative;">
+										<input id="" type="checkbox" name="" value="" checked="">
+										<label for="option">請舉出一項你最近完成的重大工作或是計畫，並具體說明你是如何設定目標，又是如何監督工作進度？</label>
+									</div>
+									<div class="the_check" style="position: relative;">
+										<input id="" type="checkbox" name="" value="">
+										<label for="option">請描述一個由其他人（主管）為你設定的目標，而你覺得根本無法達成的經驗。</label>
+									</div>
+									<div class="the_check" style="position: relative;">
+										<input id="" type="checkbox" name="" value="" checked="">
+										<label for="option">請描述你目前或是上一間公司的文化，以及該文化的哪些地方，讓你覺得如果要完成你的目標會非常有挑戰性。</label>
+									</div>
+								</div>
+								<div class="score_box">
+									<ul class="score_star_list">
+										<li><span class="selected img_default">1</span></li>
+										<li><span class="selected img_default">2</span></li>
+										<li><span class="selected img_default">3</span></li>
+										<li><span class="selected img_default">4</span></li>
+										<li><span class="selected img_default">5</span></li>
+									</ul>
+									<p class="comment cursor_none"><a href="#">+ 評論</a></p>
+									<div class="tools_description">
+										<a class="question">
+											<p class="title">？題庫</p>
+										</a>
+										<a class="score">
+											<p class="title img_default">評分標準</p>
+										</a>
+									</div>
+									<textarea class="input_comment" placeholder="請填寫評論">在工作上有諸多良好的表現，也能具體說出相關...</textarea>
+								</div>
+							</div>
+							<div class="the_item clearfix">
+								<div class="rating_item">
+									<p class="list_nb">4/5</p>
+									<h4 class="title">團隊合作</h4>
+									<a class="show_more img_default"></a>
+									<div class="the_round">
+										<a class="red">
+											<div class="tooltip">
+												<span>核心職場正面行為預測： <span class="c_red">團隊精神百分比40以下</span></span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="show_the_check">
+									<p class="info">請勾選本次面試時提問之問題</p>
+									<div class="the_check" style="position: relative;">
+										<input id="" type="checkbox" name="" value="" checked="">
+										<label for="option">請舉出一項你最近完成的重大工作或是計畫，並具體說明你是如何設定目標，又是如何監督工作進度？</label>
+									</div>
+									<div class="the_check" style="position: relative;">
+										<input id="" type="checkbox" name="" value="">
+										<label for="option">請描述一個由其他人（主管）為你設定的目標，而你覺得根本無法達成的經驗。</label>
+									</div>
+									<div class="the_check" style="position: relative;">
+										<input id="" type="checkbox" name="" value="" checked="">
+										<label for="option">請描述你目前或是上一間公司的文化，以及該文化的哪些地方，讓你覺得如果要完成你的目標會非常有挑戰性。</label>
+									</div>
+								</div>
+								<div class="score_box">
+									<ul class="score_star_list">
+										<li><span class="selected img_default">1</span></li>
+										<li><span class="selected img_default">2</span></li>
+										<li><span class="selected img_default">3</span></li>
+										<li><span class="img_default">4</span></li>
+										<li><span class="img_default">5</span></li>
+									</ul>
+									<p class="comment cursor_none"><a href="#">+ 評論</a></p>
+									<div class="tools_description">
+										<a class="question">
+											<p class="title">？題庫</p>
+										</a>
+										<a class="score">
+											<p class="title img_default">評分標準</p>
+										</a>
+									</div>
+									<textarea class="input_comment" placeholder="請填寫評論">願意服從，但缺乏...</textarea>
+								</div>
+							</div>
+							<div class="the_item clearfix">
+								<div class="rating_item">
+									<p class="list_nb">5/5</p>
+									<h4 class="title">組織忠誠</h4>
+									<a class="show_more img_default"></a>
+								</div>
+								<div class="show_the_check">
+									<p class="info">請勾選本次面試時提問之問題</p>
+									<div class="the_check" style="position: relative;">
+										<input id="" type="checkbox" name="" value="" checked="">
+										<label for="option">請舉出一項你最近完成的重大工作或是計畫，並具體說明你是如何設定目標，又是如何監督工作進度？</label>
+									</div>
+									<div class="the_check" style="position: relative;">
+										<input id="" type="checkbox" name="" value="">
+										<label for="option">請描述一個由其他人（主管）為你設定的目標，而你覺得根本無法達成的經驗。</label>
+									</div>
+									<div class="the_check" style="position: relative;">
+										<input id="" type="checkbox" name="" value="" checked="">
+										<label for="option">請描述你目前或是上一間公司的文化，以及該文化的哪些地方，讓你覺得如果要完成你的目標會非常有挑戰性。</label>
+									</div>
+								</div>
+								<div class="score_box">
+									
+									<ul class="score_star_list">
+										<li><span class="selected img_default">1</span></li>
+										<li><span class="img_default">2</span></li>
+										<li><span class="img_default">3</span></li>
+										<li><span class="img_default">4</span></li>
+										<li><span class="img_default">5</span></li>
+									</ul>
+									<p class="comment"><a href="#">+ 評論</a></p>
+									<div class="tools_description">
+										<a class="question">
+											<p class="title">？題庫</p>
+										</a>
+										<a class="score">
+											<p class="title img_default">評分標準</p>
+											<div class="tooltip star_box_one">
+												<p class="info">成就導向定義</p>
+												<p class="info bottom_line">成就導向主要為能夠盡力將工作做到最完美，設定一個積極改善自己表現的標準，挑戰自我，並達成目標，追求卓越，衡量最後的結果。此外，在意他人的表現，希望與他人競爭，展現競爭力；或個人設定具有挑戰性的目標，並嘗試沒有人做過的事物。</p>
+												<p class="info">評分標準</p>
+												<ul class="score_star_list">
+													<li class="clearfix">
+														<span class="selected img_default">1</span>
+														<p class="info">沒有分析思考能力。每件事情在一出現的時候，不會多加分析思考，魯莽行事，滿足現況。沒辦法判斷工作的優先順序，需要由他人安排工作。</p>
+													</li>
+													<li class="clearfix">
+														<span class="img_default">2</span>
+														<p class="info">知道如何將問題分解為幾個簡單的步驟，並執行。</p>
+													</li>
+													<li class="clearfix">
+														<span class="img_default">3</span>
+														<p class="info">能夠分析部分問題之間的關係。簡單分析出因果關係（A導致B），或判斷出問題的利與弊，並按照問題的重要程度，安排優先順序。</p>
+													</li>
+													<li class="clearfix">
+														<span class="img_default">4</span>
+														<p class="info">有系統地將複雜的問題或過程分解為幾個可以處理的部分，再利用幾種技巧來分解複雜問題，並有效地將問題的因果關係串聯起來。</p>
+													</li>
+													<li class="clearfix">
+														<span class="img_default">5</span>
+														<p class="info">將複雜且多面向的問題或情況，有系統地拆解為幾個重點；或用不同的分析技巧來找出多種解決方式，並衡量每種解決方式的價值。</p>
+													</li>
+												</ul>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="top_check">
+							<h3 class="pc_title">專業技能</h3>
+							<h3 class="mob_title">
+								<input id="" type="checkbox" name="" value="工作職能">
+								<label for="option">專業技能</label>
+							</h3>
+						</div>
+						<!-- 增加一塊 div 蓋在上面 add_block -->
+						<!-- the_item 需 + view_blur -->
+						<div class="rating_list_content add_block bg_color_yel">
+							<div class="the_item clearfix view_blur">
+								<div class="rating_item">
+									<p class="list_nb">1/2</p>
+									<h4 class="title">國外業務開發</h4>
+								</div>
+								<div class="score_box">
+									<ul class="score_star_list">
+										<li><span class="img_default">1</span></li>
+										<li><span class="img_default">2</aspan></li>
+										<li><span class="img_default">3</span></li>
+										<li><span class="img_default">4</span></li>
+										<li><span class="img_default">5</span></li>
+									</ul>
+									<p class="comment"><a href="#">+ 評論</a></p>
+									<div class="tools_description">
+										<a class="score">
+											<p class="title img_default">評分標準</p>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="the_item clearfix view_blur">
+								<div class="rating_item">
+									<p class="list_nb">2/2</p>
+									<h4 class="title">規劃與執行教學活動</h4>
+								</div>
+								<div class="score_box">
+									<ul class="score_star_list">
+										<li><span class="img_default">1</span></li>
+										<li><span class="img_default">2</span></li>
+										<li><span class="img_default">3</span></li>
+										<li><span class="img_default">4</span></li>
+										<li><span class="img_default">5</span></li>
+									</ul>
+									<p class="comment"><a href="#">+ 評論</a></p>
+									<div class="tools_description">
+										<a class="score">
+											<p class="title img_default">評分標準</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="top_check">
+							<h3 class="pc_title">專業技能</h3>
+							<h3 class="mob_title">
+								<input id="" type="checkbox" name="" value="工作職能" checked="">
+								<label for="option">專業技能</label>
+							</h3>
+						</div>
+						<!-- 評分標準無說明 -->
+						<div class="rating_list_content bg_color_yel">
+							<div class="the_item clearfix">
+								<div class="rating_item">
+									<p class="list_nb">1/2</p>
+									<h4 class="title">國外業務開發</h4>
+								</div>
+								<div class="score_box">
+									<ul class="score_star_list">
+										<li><span class="img_default">1</span></li>
+										<li><span class="img_default">2</aspan></li>
+										<li><span class="img_default">3</span></li>
+										<li><span class="img_default">4</span></li>
+										<li><span class="img_default">5</span></li>
+									</ul>
+									<p class="comment"><a href="#">+ 評論</a></p>
+									<div class="tools_description">
+										<a class="score">
+											<p class="title img_default">評分標準</p>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="the_item clearfix">
+								<div class="rating_item">
+									<p class="list_nb">2/2</p>
+									<h4 class="title">規劃與執行教學活動</h4>
+								</div>
+								<div class="score_box">
+									<ul class="score_star_list">
+										<li><span class="img_default">1</span></li>
+										<li><span class="img_default">2</span></li>
+										<li><span class="img_default">3</span></li>
+										<li><span class="img_default">4</span></li>
+										<li><span class="img_default">5</span></li>
+									</ul>
+									<p class="comment"><a href="#">+ 評論</a></p>
+									<div class="tools_description">
+										<a class="score">
+											<p class="title img_default">評分標準</p>
+											<div class="tooltip star_box_two">
+												<p class="info">評分標準</p>
+												<ul class="score_star_list">
+													<li class="clearfix">
+														<span class="img_default">1</span>
+														<p class="info">差</p>
+													</li>
+													<li class="clearfix">
+														<span class="img_default">2</span>
+														<p class="info">略差</p>
+													</li>
+													<li class="clearfix">
+														<span class="img_default">3</span>
+														<p class="info">中等</p>
+													</li>
+													<li class="clearfix">
+														<span class="img_default">4</span>
+														<p class="info">好</p>
+													</li>
+													<li class="clearfix">
+														<span class="selected img_default">5</span>
+														<p class="info">優異</p>
+													</li>
+												</ul>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="fill_rating_content">
+					<div class="content_border">
+						<div class="top_check">
+							<h3 class="pc_title">薪資待遇</h3>
+							<h3 class="mob_title">
+								<input id="" type="checkbox" name="" value="薪資待遇" checked="">
+								<label for="option">薪資待遇</label>
+							</h3>
+						</div>
+						<div class="rating_list_content">
+							<div class="sub_title">
+								<h4 class="w_center">前一份工作薪資結構</h4>
+							</div>
+							<form class="fillin_list clearfix">
+								<div class="information_info">
+									<fieldset>
+										<label for="">本薪</label>
+										<div class="salary clearfix">
+											<div class="still_in">
+												<input id="" type="checkbox" name="" value="月薪">
+												<label for="option">月薪</label>
+											</div>
+											<div class="still_in">
+												<input id="" type="checkbox" name="" value="年薪">
+												<label for="option">年薪</label>
+											</div>
+											<input type="text" name="" class="f_input h35" placeholder="">
+										</div>
+									</fieldset>
+									<fieldset>
+										<label for="">年終</label>
+										<input type="text" name="" class="f_input h35" placeholder="">
+									</fieldset>
+								</div>
+								<div class="information_info">
+									<fieldset>
+										<label for="">其他津貼</label>
+										<input type="text" name="" class="f_input h35" placeholder="">
+									</fieldset>
+									<fieldset>
+										<label for="">獎金</label>
+										<input type="text" name="" class="f_input h35" placeholder="">
+									</fieldset>
+								</div>
+								<div class="fillin_w100">
+									<div class="information_info">
+										<fieldset>
+											<label for="">其他/備註</label>
+											<textarea class="f_input h35" placeholder=""></textarea>
+										</fieldset>
+									</div>
+								</div>
+							</form>
+							<div class="sub_title">
+								<h4 class="w_center">可接受薪資範圍</h4>
+							</div>
+							<form class="fillin_list clearfix">
+								<div class="fillin_w100">
+									<div class="information_info">
+										<fieldset class="clearfix">
+											<label for="">本薪</label>
+											<div class="salary clearfix">
+												<div class="still_in clearfix">
+													<input id="" type="checkbox" name="" value="月薪">
+													<label for="option">月薪</label>
+												</div>
+												<div class="still_in clearfix">
+													<input id="" type="checkbox" name="" value="年薪">
+													<label for="option">年薪</label>
+												</div>
+												<input type="text" name="" class="f_input h35" placeholder="">
+											</div>
+										</fieldset>
+									</div>
+									<div class="information_info">
+										<fieldset class="clearfix">
+											<label for="">其他/備註</label>
+											<textarea class="f_input h35" placeholder=""></textarea>
+										</fieldset>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="fill_rating_content">
+					<div class="content_border">
+						<div class="top_check">
+							<h3 class="top_title">整體備註</h3>
+						</div>
+						<textarea class="full_w" placeholder="請直接輸入文字"></textarea>
+					</div>
+				</div>
+				<div class="fill_rating_content">
+					<div class="content_border">
+						<div class="top_check">
+							<h3 class="top_title">整體評估 [*必填項目]</h3>
+						</div>
+						<div class="sub_title">
+							<h4>整體評估，建議必須考量應徵者的學經歷、專業技能、工作職能與各項測驗等狀況，進行全面性考量。</h4>
+						</div>
+						<ul class="finish_result">
+							<li><a class="selected "><p class="green">建議錄取</p></a></li>
+							<li><a><p class="yello">建議複試</p></a></li>
+							<li><a><p class="red">不建議錄取</p></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="add_new_file_content">
+					<p class="choose_file"><a href="#">+附件</a></p>
+					<div class="upload_file">
+						<ul class="clearfix">
+							<li>
+								<p>附件1<a class="delete img_default	"></a></p>
+							</li>
+							<li>
+								<p>附件2<a class="delete img_default"></a></p>
+							</li>
+							<li>
+								<p>附件3<a class="delete img_default"></a></p>
+							</li>
+							<li>
+								<p>附件4<a class="delete img_default"></a></p>
+							</li>
+							<li>
+								<p>附件5<a class="delete img_default"></a></p>
+							</li>
+							<li>
+								<p>附件6<a class="delete img_default"></a></p>
+							</li>
+							<li>
+								<p>附件7<a class="delete img_default"></a></p>
+							</li>
+							<li>
+								<p>附件8<a class="delete img_default"></a></p>
+							</li>
+							<li>
+								<p>附件9<a class="delete img_default"></a></p>
+							</li>
+							<li>
+								<p>附件10<a class="delete img_default"></a></p>
+							</li>
+							<li>
+								<p>附件11<a class="delete img_default"></a></p>
+							</li>
+							<li>
+								<p>附件12<a class="delete img_default"></a></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="pc_btn">
+					<p class="btn">
+						<a class="bg_green cursor_none remind_greenbox" href="user_info_done.html">確認寄出
+							<span class="tooltip">
+								<span class="icon_thumbtack">您尚有項目未完成，請確認完成後寄出。</span>
+								<span class="icon_thumbtack">如有不需評分項目請將左上角打勾取消。</span>
+							</span>
+						</a>
+					</p>
+					<p class="btn">
+						<a class="bg_green popup-link" href="#popup-note">確認寄出</a>
+					</p>
+				</div>
+				<div class="mob_btn bottom_btn">
+					<p class="btn"><a href="#">回主頁</a></p>
+					<p class="btn"><a class="bg_org" href="#">儲 存</a></p>
+					<p class="btn"><a class="cursor_none" href="#">確認寄出</a></p>
+				</div>
+			</div>
+			<a class="gotop img_default" href="#"></a>
+			<!-- popup 提醒-->
+			<div id="popup-note" class="white-popup popup-w-s mfp-hide">
+		        <div class="setBox messageBox">
+		            <div class="RedBox">
+		                <p class="info">請注意：<br>資料送出後，將<span class="red">不能再做修改</span>，請確認資料是否填寫完畢？</p>
+		            </div>
+		            <p class="btn">
+		            	<a class="bg_gary" href="#">繼續編輯</a>
+		                <a class="bg_red" href="user_info_done.html">確認送出</a>
+		            </p>
+		        </div>
+		    </div>
+		</main>
+	</body>
+</html>
+
+
+
