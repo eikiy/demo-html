@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.806" height="16.786" viewBox="0 0 16.806 16.786">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_10" data-name="Clip 10" d="M0,0H5.009V4.978H0Z" transform="translate(0 0.022)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="修改鉛筆_copy" data-name="修改鉛筆 copy" transform="translate(0 0)">
+    <path id="Fill_1" data-name="Fill 1" d="M8.432,0,9.886,1.478c-.137.145-5.311,5.338-7.754,7.777a3.3,3.3,0,0,1-.541.471A.955.955,0,0,1,.331,9.6.959.959,0,0,1,.157,8.348a1.929,1.929,0,0,1,.322-.41C3.057,5.357,8.338.077,8.432,0" transform="translate(3.251 3.626)" fill="#707475"/>
+    <path id="Fill_3" data-name="Fill 3" d="M4.524,5.822S1.5,2.8,0,1.287A10.047,10.047,0,0,1,1.146.3,1.989,1.989,0,0,1,3.613.6c.483.439.938.91,1.392,1.378a2.19,2.19,0,0,1,.073,3.3c-.194.2-.554.552-.554.552" transform="translate(11.016 0)" fill="#707475"/>
+    <path id="Fill_5" data-name="Fill 5" d="M8.255,0s.52.477.773.707c-.2.206-.355.352-.506.5Q4.865,4.868,1.206,8.525c-.138.139-.35.391-.518.438a.554.554,0,0,1-.55-.128.621.621,0,0,1-.129-.506c.02-.128.225-.315.333-.423Q4.183,4.063,8.03.222C8.09.161,8.255,0,8.255,0" transform="translate(1.958 2.127)" fill="#707475"/>
+    <path id="Fill_7" data-name="Fill 7" d="M8.255,0l.773.707c-.2.2-.355.351-.506.5Q4.866,4.868,1.206,8.525c-.138.138-.35.391-.518.437a.55.55,0,0,1-.55-.128.62.62,0,0,1-.129-.506c.02-.128.225-.315.333-.423Q4.183,4.062,8.03.222C8.09.161,8.255,0,8.255,0" transform="translate(5.615 5.785)" fill="#707475"/>
+    <g id="Group_11" data-name="Group 11" transform="translate(0 11.785)">
+      <path id="Clip_10-2" data-name="Clip 10" d="M0,0H5.009V4.978H0Z" transform="translate(0 0.022)" fill="none"/>
+      <g id="Group_11-2" data-name="Group 11" clip-path="url(#clip-path)">
+        <path id="Fill_9" data-name="Fill 9" d="M1.239,0A1.188,1.188,0,0,1,2.287,1.172c.1.87.748,1.364,1.824,1.564a.958.958,0,0,1,.7.544c.063.137.13.283.2.442L0,4.979,1.239,0" transform="translate(0 0.022)" fill="#707475"/>
+      </g>
+    </g>
+  </g>
+</svg>

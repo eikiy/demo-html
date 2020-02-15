@@ -1212,7 +1212,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr td:first-child p, .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr td:nth-child(7n) p { color: #9B9B9B }
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox tr td{ position: relative;  }
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p.ring_color{ position: absolute; bottom: 3px; text-align: center; width: 100%; padding: 0; letter-spacing: 1px; border: none; }
-.right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p.ring_color span{padding: 0 2px; position: initial;}
+.right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p.ring_color span{padding: 0 1px; position: initial;}
 .right_contents .calendar_toolsBox .calendar_month .monthBox .dateBox p.ring_color span::before{ position: initial; top: initial; left: initial; }
 
 .right_contents .calendar_toolsBox .day_list{ width: 100%; border-radius: 0px 20px 20px 20px; background-color: #fff; border: 1px solid #707475; overflow:hidden;}
@@ -3211,11 +3211,32 @@ ul.job_management_list p.text_center{ text-align: center; }
 .candidates_management .user_data .remark_red { border-color: #C87D86;}
 .candidates_management .user_data .remark_red p{ color: #C87D86; }
 
-.candidates_management .user_data p.btn_status_record{ position: absolute; top: 15px; right: 7px; text-align: center; z-index: 4;}
-.candidates_management .user_data p.btn_status_record a{ display: block; width: 20px; height: 20px; background-image: url(../images/svg/clock_record.svg); }
-.candidates_management .user_data p.btn_status_record a .tooltip{ top: inherit; bottom: 26px; left: -11.5px; }
-.candidates_management .user_data p.btn_status_record a .tooltip::after{top: inherit; bottom: -5px; border-width: 6px 4px 0 4px; border-color: #4a4a4a transparent transparent transparent;}
-.candidates_management .user_data p.btn_status_record a span.tooltip { color: #fff; padding: 3px 5px; }
+.candidates_management .user_data .btn_status_record{ position: absolute; top: 15px; right: 7px; text-align: center; z-index: 4;}
+.candidates_management .user_data .btn_status_record p{ display: inline-block; margin-left: 8px; position: relative;}
+.candidates_management .user_data .btn_status_record a{ width: 20px; height: 20px; display: block;}
+.candidates_management .user_data .btn_status_record a.record{ background-image: url(../images/svg/clock_record.svg);}
+.candidates_management .user_data .btn_status_record a.print{ background-image: url(../images/svg/print.svg);}
+.candidates_management .user_data .btn_status_record a .tooltip{ top: inherit; bottom: 26px; left: -11.5px; }
+.candidates_management .user_data .btn_status_record a .tooltip::after{top: inherit; bottom: -5px; border-width: 6px 4px 0 4px; border-color: #4a4a4a transparent transparent transparent;}
+.candidates_management .user_data .btn_status_record a span.tooltip { color: #fff; padding: 3px 5px; }
+
+.print_type_box{ position: absolute; box-shadow: 0 3px 3px rgba(0,0,0,.4); text-align:left; top: 35px; right: 33px; z-index: 1; width: 175px; background-color: #F2F8FA; border-radius: 5px; padding:10px 5px; }
+.print_type_box span{ font-size: 14px; width:145px; margin: 0 auto; display: block; padding: 5px 0; position: relative;}
+.print_type_box span::after{ content: ""; position: absolute; top: -22px; right: 0; width: 0;height: 0;border-style: solid;border-width: 0 8px 14px 8px;border-color: transparent transparent #f2f8fa transparent;line-height: 0px;_border-color: #000000 #000000 #f2f8fa #000000;_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+.print_type_box .print_list{ width:145px; margin: 0 auto;}
+.print_type_box .print_list .p_title{ width: 100%; font-size: 12px; position: relative; border: 1px solid #707475; background-color: #fff; margin: 4px 0;}
+.print_type_box .print_list .p_title input[type=checkbox]:not(old):checked + label{ width: 100%; line-height: 26px; } 
+.print_type_box .print_list .p_title input[type=checkbox]:not(old) + label{ line-height: 26px;}
+.print_type_box .print_list .line_dashed{ position: relative; margin-bottom: 12px; }
+.print_type_box .print_list .line_dashed::after{ content: ""; position: absolute; width: 108%; bottom: -7.5px; left: -4%; height: 1px; display: block;  border-bottom: 1px dashed #707475;}
+.print_type_box .print_list .cursor_none{ background-color: #D8D8D8;}
+.print_type_box .print_list .cursor_none input{ cursor: not-allowed;}
+.print_type_box .print_list .cursor_none input[type=checkbox]:not(old) + label{ background-position: 0 -98px;}
+
+.print_type_box p.btn_s, .candidates_management .user_data .btn_status_record .print_type_box p.btn_s{ width: 100%; text-align: center; margin: 0 auto; letter-spacing: 8px; }
+.print_type_box p.btn_s a, .candidates_management .user_data .btn_status_record .print_type_box p.btn_s a{ width: 100%; max-width: 143px; border-radius: 4px 0 4px 4px; background-color: #81B6C8; padding: 3px; height: initial; display: inline-block; color: #fff; }
+.print_type_box p.btn_s a:hover, .candidates_management .user_data .btn_status_record .print_type_box p.btn_s a:hover{ opacity: .8; }
+.print_type_box p.btn_s a::before{ display: none; }
 
 /*upload file & link*/
 /*add link*/
@@ -3522,3 +3543,105 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .fillin_interviewe_data ul.fill_information_info li .the_phont p.phone_number span{ float: left; padding: 0 8px; }
 .fillin_interviewe_data ul.fill_information_info li .the_phont p.phone_number a.delete{ float: left; width: 25px; height: 23px; display: block; cursor: pointer; height: 100%; border-left:1px solid #979797; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: 65%;}
 .fillin_interviewe_data ul.fill_information_info li .the_phont p.phone_number a.delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
+
+/*面試官評論表*/
+.interviewee_info .review_report{ border-radius: 10px 0 0 0; border-color: #558C9E; position: relative; overflow: hidden;}
+.interviewee_info .review_report::before{ content: ""; position: absolute; top: 0; left: 226px; height:100%; width:3px; background-color: #558C9E; display: block; z-index: 5; }
+.interviewee_info .review_report .left_interviewer{ width: 226px; float: left; padding-top: 30px; }
+.interviewee_info .review_report .left_interviewer .interview_group{ width: 100%; }
+.interviewee_info .review_report .left_interviewer .interview_group p.day{ line-height: 25px; padding: 10px 15px; background-color: #EBEBEB;}
+.interviewee_info .review_report .left_interviewer .interview_group ul{ padding: 10px;}
+.interviewee_info .review_report .left_interviewer .interview_group ul li{ border:1px solid #81B6C8; cursor: pointer; border-radius: 10px 0 10px 10px; padding: 10px 30px 10px 10px; margin-bottom: 10px; position: relative; }
+.interviewee_info .review_report .left_interviewer .interview_group ul li::before{ content: ""; position: absolute; width: 20px; height: 20px; right: 10px; top: calc(50% - 10px); display: block; background-image: url(../images/svg/report_interviewer_type.svg);}
+.interviewee_info .review_report .left_interviewer .interview_group ul li.done::before { background-image: url(../images/svg/report_type_done.svg); }
+.interviewee_info .review_report .left_interviewer .interview_group ul li.error::before { background-image: url(../images/svg/report_type_error.svg); }
+.interviewee_info .review_report .left_interviewer .interview_group ul li.questionmark::before { background-image: url(../images/svg/report_type_questionmark.svg); }
+.interviewee_info .review_report .left_interviewer .interview_group ul li.selected{ background-color: #D1E0E5; border-width: 4px; }
+.interviewee_info .review_report .left_interviewer .interview_group ul li.label::after{ content: ""; position: absolute; width: 20px; height: 20px; right: 36px; top: calc(50% - 10px); display: block; background-image: url(../images/svg/report_type_label.svg); }
+.interviewee_info .review_report .left_interviewer .interview_group ul li.label_org::after{ background-image: url(../images/svg/report_type_label_org.svg); }
+.interviewee_info .review_report .left_interviewer .interview_group ul li p{ line-height: 22px; font-size: 13px;}
+
+.interviewee_info .review_report .right_report_data{ width:calc(100% - 226px); float: right; }
+.interviewee_info .review_report .right_report_data .top_tools{ width: 100%; text-align: right; padding:30px 20px 30px 0; }
+.interviewee_info .review_report .right_report_data .top_tools .btn{ display: inline-block; position: relative; width: 28px; height: 28px; background-color: #E6F0F4; border-radius: 50%; margin-left: 8px;}
+.interviewee_info .review_report .right_report_data .top_tools .btn a::before{ position: absolute; content: ""; top: calc(50% - 8.5px); left:  calc(50% - 9px); width: 18px; height: 19px; background-image: url(../images/svg/garbage.svg); }
+.interviewee_info .review_report .right_report_data .top_tools .btn a:hover::before{ opacity: 0.8;}
+.interviewee_info .review_report .right_report_data .top_tools .btn a .tooltip{ min-width: 45px; font-size: 11px; left: -8px;}
+
+.interviewee_info .review_report .right_report_data .top_tools .label, .interviewee_info .review_report .right_report_data .top_tools .label_in{ background-color: initial; }
+.interviewee_info .review_report .right_report_data .top_tools .label a::before{ background-image: url(../images/svg/report_type_label.svg); }
+.interviewee_info .review_report .right_report_data .top_tools .label_in a::before{ background-image: url(../images/svg/report_type_label_org.svg); }
+.interviewee_info .review_report .right_report_data .top_tools .edit a::before{ width: 17px; height: 17px; top: calc(50% - 8.5px); left: calc(50% - 8.5px); background-image: url(../images/svg/pen_edit_gray.svg); }
+.interviewee_info .review_report .right_report_data .top_tools .download a::before{ width: 13px; height: 14px; top: calc(50% - 6.5px); left: calc(50% - 6.5px); background-image: url(../images/svg/download_arr.svg); }
+.interviewee_info .review_report .right_report_data .top_tools .annex a::before{ background-image: url(../images/interviewer_grade/img_camera.svg); }
+.interviewee_info .review_report .right_report_data .top_tools .print a::before{ width: 16px; height: 15px; top: calc(50% - 7.5px); left: calc(50% - 8px); background-image: url(../images/svg/print_gray.svg); }
+.interviewee_info .review_report .right_report_data .top_tools .print .print_type_box{ top: 41px; right: -8px;}
+.interviewee_info .review_report .right_report_data .top_tools .delete{ background-color: #EBEBEB;}
+.interviewee_info .review_report .right_report_data .top_tools .delete a::before{ background-image: url(../images/svg/garbage.svg);}
+.interviewee_info .review_report .right_report_data .top_tools .delete a:hover::before{ opacity: 1; background-image: url(../images/svg/garbage_red.svg);}
+
+.interviewee_info .review_report .fill_rating_content{ background-color:#F2F8FA;}
+.interviewee_info .review_report .fill_rating_content:last-child{ padding-bottom: 30px}
+.interviewee_info .review_report .fill_rating_content h3.top_title{ background-color: #81B6C8; font-size: 16px; padding:8px 15px; color: #fff; }
+.interviewee_info .review_report .fill_rating_content .sub_title { background-color: #F7F0E6; padding:5px 15px;}
+.interviewee_info .review_report .fill_rating_content .sub_title h4{ font-size: 14.5px; margin: 0 auto; line-height: 26px;}
+.interviewee_info .review_report .fill_rating_content .sub_title h4.w_center{ max-width: 600px; }
+
+.interviewee_info .review_report .fill_rating_content .the_item{ width: 100%; border-bottom: 1px dashed #979797; }
+.interviewee_info .review_report .fill_rating_content .the_item:last-child{ border: none; }
+.interviewee_info .review_report .fill_rating_content .the_item .rating_item{ width: 140px; float: left; padding: 13.5px 12px; text-align: center; position: relative; background-color: #F7F0E6; }
+
+.interviewee_info .review_report .fill_rating_content .score_box{ float: left; position: relative; width: calc(100% - 140px);}
+.interviewee_info .review_report .fill_rating_content .score_box ul.score_star_list{ text-align: left; padding: 10px 0 0 10px; }
+.interviewee_info .review_report .fill_rating_content .score_box ul.score_star_list li{ display: inline-block; padding: 0 3px;}
+.interviewee_info .review_report .fill_rating_content .score_box ul.score_star_list li span{ width: 25px; height: 24px; text-align: center; display: block; background-image: url(../images/svg/score_star.svg);}
+.interviewee_info .review_report .fill_rating_content .score_box ul.score_star_list li .selected{ background-image: url(../images/svg/score_star_yello.svg);}
+
+.interviewee_info .review_report .fill_rating_content .score_box .complete_description{ cursor: pointer; position: absolute; top: 8px; right: 30px; width: 320px; border: 1px solid #E5AF57; background-color: #fff; z-index: 0; border-radius: 5px; padding:4px 8px 4px 8px; }
+.interviewee_info .review_report .fill_rating_content .score_box .complete_description p{ position: relative; width: 100%; padding-right: 25px;}
+.interviewee_info .review_report .fill_rating_content .score_box .complete_description p::before{ content: ""; top: 9px; right: 5px; position: absolute; width: 0;height: 0;border-style: solid;border-width: 0 6px 6px 6px; border-color: transparent transparent #e5af57 transparent; line-height: 0px;_border-color: #e5af57 #000000 #000000 #000000;_filter: progid: DXImageTransform.Microsoft.Chroma(color='#000000');}
+.interviewee_info .review_report .fill_rating_content .score_box .complete_description p.hide{ display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 24px; height: 24px * 1; overflow:hidden;}
+.interviewee_info .review_report .fill_rating_content .score_box .complete_description p.hide::before{ border-width: 6px 6px 0 6px; border-color: #e5af57 transparent transparent transparent;}
+
+.interviewee_info .review_report .fill_rating_content p.p_info{ padding: 10px 15px;}
+.interviewee_info .review_report .fill_rating_content p.report_status{ padding: 15px; padding-left: 45px; position: relative;}
+.interviewee_info .review_report .fill_rating_content p.report_status::after{ position: absolute; content: ""; width: 20px; height: 20px; left: 18px; top: 14px; display: block; background-image: url(../images/svg/report_interviewer_type.svg);}
+.interviewee_info .review_report .fill_rating_content p.status_done::after{ background-image: url(../images/svg/report_type_done.svg);}
+.interviewee_info .review_report .fill_rating_content p.status_error::after{ background-image:url(../images/svg/report_type_error.svg);}
+.interviewee_info .review_report .fill_rating_content p.status_questionmark::after{ background-image:url(../images/svg/report_type_questionmark.svg);}
+
+.interviewee_info .review_report .fill_rating_content ul.other_item{ width: 100%; }
+.interviewee_info .review_report .fill_rating_content ul.other_item li{ width: 100%; }
+.interviewee_info .review_report .fill_rating_content ul.other_item li h4.title{ width: 140px; float: left; color: #558C9E;  padding: 8px 15px;}
+.interviewee_info .review_report .fill_rating_content ul.other_item li p.p_info{ width:calc(100% - 140px); float: left; }
+
+.interviewee_info .review_report .view_blur{ overflow: hidden; position: relative; }
+.interviewee_info .review_report .view_blur p.report_notyet{ width: 100%; position: absolute; top:calc(50% - 7px); text-align: center; color: #C87D86; z-index: 2; }
+.interviewee_info .review_report .view_blur .sub_title, .interviewee_info .review_report .view_blur ul.other_item {-webkit-filter: blur(0.4rem);-moz-filter: blur(0.4rem); -o-filter: blur(0.4rem);-ms-filter: blur(0.4rem);filter: blur(0.4rem);}
+
+.setBox ul.annex_download{ width: 100%; padding-left: 38px; }
+.setBox ul.annex_download li{ float: left; padding: 10px 15px;}
+.setBox ul.annex_download li .a_annex{ width: 182px; height: 252px; padding-top: 28px; border-radius: 10px 0 10px 10px; border:2px solid #81B6C8; display: block; position: relative; overflow: hidden; }
+.setBox ul.annex_download li .a_annex p.annex_name{ position: absolute; bottom: 0; left: 0; width: 100%; font-size: 12px; background-color: #81B6C8; color: #fff; padding:5px 10px;}
+
+.setBox ul.annex_download li .a_annex .img_annex{ width: 100%; height: 140px; text-align: center; }
+.setBox ul.annex_download li .a_annex .img_annex img{ max-height: 140px; max-width: 178px; }
+.setBox ul.annex_download li .a_annex:hover .img_annex img{opacity: .8;}
+
+.setBox ul.annex_download li .a_annex .tools{ width: 100%; text-align: center; padding-top:20px; }
+.setBox ul.annex_download li .a_annex .tools .btn{ display: inline-block; position: relative; width: 28px; height: 28px; background-color: #E6F0F4; border-radius: 50%; margin:0 4px;}
+.setBox ul.annex_download li .a_annex .tools .btn a::before{ position: absolute; content: ""; top: calc(50% - 8.5px); left:  calc(50% - 9px); width: 18px; height: 19px; }
+.setBox ul.annex_download li .a_annex .tools .btn a:hover::before{ opacity: 0.8;}
+.setBox ul.annex_download li .a_annex .tools .crop a::before{ width: 17px; height: 17px; top: calc(50% - 8.5px); left: calc(50% - 8.5px); background-image: url(../images/svg/crop.svg); }
+.setBox ul.annex_download li .a_annex .tools .download a::before{ width: 13px; height: 14px; top: calc(50% - 6.5px); left: calc(50% - 6.5px); background-image: url(../images/svg/download_arr.svg); }
+.setBox ul.annex_download li .a_annex .tools .delete{ background-color: #EBEBEB;}
+.setBox ul.annex_download li .a_annex .tools .delete a::before{ background-image: url(../images/svg/garbage.svg);}
+.setBox ul.annex_download li .a_annex .tools .delete a:hover::before{ opacity: 1; background-image: url(../images/svg/garbage_red.svg);}
+
+.setBox ul.annex_download li .choose_file{ border: 1px dashed #81B6C8; background-color: #E6F0F4; text-align: center; padding-top: 60px; }
+.setBox ul.annex_download li .choose_file p{ color: #81B6C8; font-size: 15px;}
+.setBox ul.annex_download li .choose_file p.text{ position: relative; padding: 65px 0 40px 0; font-size: 14px; }
+.setBox ul.annex_download li .choose_file p.text::after{ content: ""; position: absolute; width: 100%; top: 0; left: 0; height: 54px; display: block; background-image: url(../images/svg/file_icon/upload_file.svg); }
+.setBox ul.annex_download li .choose_file:hover{ background-color: #81B6C8; }
+.setBox ul.annex_download li .choose_file:hover p{  color: #fff;}
+.setBox ul.annex_download li .choose_file:hover p.text::after {background-image: url(../images/svg/file_icon/upload_file_w.svg);}

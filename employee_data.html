@@ -5537,7 +5537,7 @@
 									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
 									<p class="btn_none"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
-									<p class="btn_none"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
+									<p><a class="icon_04 popup-link" href="#popup-review-report">評論報告</a></p>
 								</div>
 							</div>
 						</div>
@@ -8235,6 +8235,530 @@
                 	<a class="bg_gary" href="#">取消</a>
                 	<a class="" href="#">確認儲存</a>
                 </p>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- popup 人員資料：評論報告 2020/02/08 -->
+    <div id="popup-review-report" class="white-popup popup-L mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>人員資料</h3>
+            </div>
+            <div class="chosenBox interviewee_info">
+            	<div class="interviewMainBox interview_officer_Main">
+					<div class="contentsBox">
+						<div class="top_ivBox clearfix">
+							<div class="top_interviewer_info clearfix">
+								<div class="left_photo">
+									<div class="the_photo">
+										<img src="images/user_photo_01.png" align="logo" width="100%">
+									</div>
+								</div>
+								<div class="rightInfoBox">
+									<div class="user_name clearfix">
+										<p class="name">林怡文林怡文林怡文林怡文林怡文</p>
+										<p>男</p>
+										<p>37歲</p>
+										<p class="c_org">4個月年資</p>
+										<a class="edit popup-link img_default" href="#popup-user-info-editing"></a>
+									</div>
+									<div class="iBox clearfix">
+										<p class="title">職缺部門：</p>
+										<p class="right_info">資訊部</p>
+									</div>
+									<div class="iBox clearfix">
+										<p class="title">職缺名稱：</p>
+										<p class="right_info">軟體工程師</p>
+									</div>
+									<div class="iBox clearfix">
+										<p class="title">直屬主管：</p>
+										<p class="right_info">林怡文</p>
+									</div>
+									<div class="iBox clearfix">
+										<p class="title">報到時間：</p>
+										<p class="right_info">2019/07/02</p>
+									</div>
+								</div>
+							</div>
+							<div class="rBox clearfix">
+								<div class="top_other_tools clearfix">
+									<p class="the_interviewer_status clearfix">
+										<span class="user img_default c_org">在職中</span>
+										<a class="edit img_default popup-link" href="#popup-change-status">
+											<span class="tooltip">更改狀態</span>
+										</a>
+									</p>
+									<div class="btn_delete">
+										<a href="#"><span class="tooltip">刪除</span></a>
+									</div>
+									<p class="btn_status_record">
+										<a class="popup-link" href="#popup-status-record">
+											<span class="img_default">狀態紀錄</span>
+										</a>
+									</p>
+								</div>
+								<div class="embarrassment clearfix">
+									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
+									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
+									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
+									<p><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
+									<p class="btn_in"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="top_test_menu open_content clearfix"> <!-- 點開了需+open_content -->
+							<ul>
+								<li class="btn_in"><p><a class="popup-link" href="#popup-review-report">面試官評論表</a></p></li> <!-- 選中 + btn_in -->
+								<li><p><a class="popup-link" href="#popup-review-report2">空白評論表/面試備註</a></p></li>
+							</ul>
+						</div>
+						<div class="test_report review_report clearfix">
+							<!-- left interviewer -->
+							<div class="left_interviewer">
+								<div class="interview_group">
+									<p class="day">複試/2019/07/02/14:30</p>
+									<ul>
+										<li class="selected img_default done"><p>面試官：黃宇宙</p></li>
+										<li class="img_default"><p>面試官：代理人-林以雯</p></li>
+										<li class="img_default error"><p>面試官：林露露</p></li>
+									</ul>
+								</div>
+								<div class="interview_group">
+									<p class="day">初試/2019/06/22/14:30</p>
+									<ul>
+										<li class="img_default questionmark"><p>面試官：廖</p></li>
+										<li class="img_default label label_org done"><p>面試官：黃副理</p></li>
+									</ul>
+								</div>
+							</div>
+							<!-- right report data -->
+							<div class="right_report_data">
+								<div class="top_tools">
+									<div class="btn label_in">
+										<a class="img_default" href="#"><span class="tooltip">標籤</span></a>
+									</div>
+									<div class="btn label">
+										<a class="img_default" href="#"><span class="tooltip">標籤</span></a>
+									</div>
+									<div class="btn edit">
+										<a class="img_default" href="#"><span class="tooltip">編輯</span></a>
+									</div>
+									<div class="btn download">
+										<a class="img_default" href="#"><span class="tooltip">下載</span></a>
+									</div>
+									<div class="btn annex">
+										<a class="img_default popup-link" href="#popup-review-report-annex"><span class="tooltip">附件</span></a>
+									</div>
+									<div class="btn print">
+										<a class="img_default" href="#"><span class="tooltip">列印</span></a>
+										<div class="print_type_box">
+											<span>請選擇要列印項目</span>
+											<div class="print_list">
+												<div class="p_title">
+													<input id="option" type="checkbox" name="field" value="個人履歷">
+													<label for="option">個人履歷</label>
+												</div>
+												<div class="p_title line_dashed">
+													<input id="option" type="checkbox" name="field" value="個人應徵問卷">
+													<label for="option">個人應徵問卷</label>
+												</div>
+												<div class="p_title">
+													<input id="option" type="checkbox" name="field" value="核心測驗報告">
+													<label for="option">核心測驗報告</label>
+												</div>
+												<div class="p_title">
+													<input id="option" type="checkbox" name="field" value="邏輯能力測驗報告">
+													<label for="option">邏輯能力測驗報告</label>
+												</div>
+												<div class="p_title">
+													<input id="option" type="checkbox" name="field" value="社交智商測驗報告">
+													<label for="option">社交智商測驗報告</label>
+												</div>
+												<div class="p_title line_dashed">
+													<input id="option" type="checkbox" name="field" value="人格特質測驗報告">
+													<label for="option">人格特質測驗報告</label>
+												</div>
+												<div class="p_title">
+													<input id="option" type="checkbox" name="field" value="空白面試評論表">
+													<label for="option">空白面試評論表</label>
+												</div>
+												<div class="p_title">
+													<input id="option" type="checkbox" name="field" value="黃宇宙評論">
+													<label for="option">黃宇宙評論</label>
+												</div>
+												<div class="p_title cursor_none">
+													<input id="option" type="checkbox" name="field" value="黃夏琳琳評論">
+													<label for="option">黃夏琳琳評論</label>
+												</div>
+												<div class="p_title line_dashed cursor_none">
+													<input id="option" type="checkbox" name="field" value="劉經理評論">
+													<label for="option">劉經理評論</label>
+												</div>
+											</div>
+											<p class="btn_s">
+												<a class="" href="#">列印</a>
+											</p>
+										</div>
+									</div>
+									<div class="btn delete">
+										<a class="img_default popup-link" href="#popup-review-report-delete"><span class="tooltip">刪除</span></a>
+									</div>
+								</div>
+								<div class="fill_rating_content">
+									<h3 class="top_title">工作職能評分</h3>
+									<div class="the_item clearfix">
+										<div class="rating_item">
+											<h4 class="title">成就導向</h4>
+										</div>
+										<div class="score_box clearfix">
+											<ul class="score_star_list">
+												<li><span class="selected img_default"></span></li>
+												<li><span class="img_default"></span></li>
+												<li><span class="img_default"></span></li>
+												<li><span class="img_default"></span></li>
+												<li><span class="img_default"></span></li>
+											</ul>
+											<div class="complete_description">
+												<!-- #評論點開可以看到完整，點別處就會縮回一行 + hide -->
+												<p class="hide">在工作上有諸多良好的表現，也能具體說出相關的運作過程。<br>
+													大約有三～四年的線下活動經驗。<br>
+												也曾經在日本辦過活動。
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="the_item clearfix">
+										<div class="rating_item">
+											<h4 class="title">關係建立</h4>
+										</div>
+										<div class="score_box">
+											<ul class="score_star_list">
+												<li><span class="selected img_default"></span></li>
+												<li><span class="img_default"></span></li>
+												<li><span class="img_default"></span></li>
+												<li><span class="img_default"></span></li>
+												<li><span class="img_default"></span></li>
+											</ul>
+										</div>
+									</div>
+									<div class="the_item clearfix">
+										<div class="rating_item">
+											<h4 class="title">團隊合作</h4>
+										</div>
+										<div class="score_box">
+											<ul class="score_star_list">
+												<li><span class="selected img_default"></span></li>
+												<li><span class="img_default"></span></li>
+												<li><span class="img_default"></span></li>
+												<li><span class="img_default"></span></li>
+												<li><span class="img_default"></span></li>
+											</ul>
+										</div>
+									</div>
+									<div class="the_item clearfix">
+										<div class="rating_item">
+											<h4 class="title">組織忠誠</h4>
+										</div>
+										<div class="score_box clearfix">
+											<ul class="score_star_list">
+												<li><span class="selected img_default"></span></li>
+												<li><span class="selected img_default"></span></li>
+												<li><span class="selected img_default"></span></li>
+												<li><span class="img_default"></span></li>
+												<li><span class="img_default"></span></li>
+											</ul>
+											<div class="complete_description">
+												<!-- hide 移除 = 展開-->
+												<p class="">在工作上有諸多良好的表現，也能具體說出相關的運作過程。<br>
+													大約有三～四年的線下活動經驗。<br>
+												也曾經在日本辦過活動。
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="the_item clearfix">
+										<div class="rating_item">
+											<h4 class="title">同理包容</h4>
+										</div>
+										<div class="score_box">
+											<ul class="score_star_list">
+												<li><span class="selected img_default"></span></li>
+												<li><span class="img_default"></span></li>
+												<li><span class="img_default"></span></li>
+												<li><span class="img_default"></span></li>
+												<li><span class="img_default"></span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="fill_rating_content">
+									<h3 class="top_title">專業技能</h3>
+									<div class="the_item clearfix">
+										<div class="rating_item">
+											<h4 class="title">國外業務開發</h4>
+										</div>
+										<div class="score_box">
+											<ul class="score_star_list">
+												<li><span class="selected img_default"></span></li>
+												<li><span class="selected img_default"></span></li>
+												<li><span class="selected img_default"></span></li>
+												<li><span class="selected img_default"></span></li>
+												<li><span class="selected img_default"></span></li>
+											</ul>
+										</div>
+									</div>
+									<div class="the_item clearfix">
+										<div class="rating_item">
+											<h4 class="title">規劃與執行教學<br>活動</h4>
+										</div>
+										<div class="score_box">
+											<ul class="score_star_list" style="padding-top: 20px;">
+												<li><span class="selected img_default"></span></li>
+												<li><span class="img_default"></span></li>
+												<li><span class="img_default"></span></li>
+												<li><span class="img_default"></span></li>
+												<li><span class="img_default"></span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="fill_rating_content">
+									<h3 class="top_title">薪資待遇</h3>
+									<div class="view_blur">
+										<p class="report_notyet">尚未開始評論</p>
+										<div class="sub_title">
+											<h4>前一份工作薪資結構</h4>
+										</div>
+										<ul class="other_item">
+											<li class="clearfix">
+												<h4 class="title">本薪</h4>
+												<p class="p_info">月薪/35000</p>
+											</li>
+											<li class="clearfix">
+												<h4 class="title">其他津貼</h4>
+												<p class="p_info"></p>
+											</li>
+											<li class="clearfix">
+												<h4 class="title">年終</h4>
+												<p class="p_info">一個月</p>
+											</li>
+											<li class="clearfix">
+												<h4 class="title">獎金</h4>
+												<p class="p_info"></p>
+											</li>
+											<li class="clearfix">
+												<h4 class="title">其他/備註</h4>
+												<p class="p_info"></p>
+											</li>
+										</ul>
+										<div class="sub_title">
+											<h4>可接受薪資範圍</h4>
+										</div>
+										<ul class="other_item">
+											<li class="clearfix">
+												<h4 class="title">本薪</h4>
+												<p class="p_info"></p>
+											</li>
+											<li class="clearfix">
+												<h4 class="title">其他/備註</h4>
+												<p class="p_info"></p>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="fill_rating_content">
+									<h3 class="top_title">整體備註</h3>
+									<p class="p_info">整體表現很好。</p>
+								</div>
+								<div class="fill_rating_content">
+									<h3 class="top_title">整體評估</h3>
+									<p class="p_info report_status img_default">尚未評論</p>
+									<p class="p_info report_status status_done img_default">建議錄取</p>
+									<p class="p_info report_status status_error img_default">建議錄取</p>
+									<p class="p_info report_status status_questionmark img_default">建議錄取</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </form>
+    </div>
+    <!-- popup 人員資料：評論報告 - 刪除鍵-->
+    <div id="popup-review-report-delete" class="white-popup popup-w-s enforcementBox">
+        <form class="setBox  messageBox check_remind">
+            <div class="fillinBox">
+            	<div class="RedBox" style="padding: 20px 15px;">
+	                <p class="info">請問確定要刪除 面試官黃宇宙的評分嗎？<br>
+                如確定刪除，此資料紀錄將不做保留。</p>
+	            </div>
+                <ul class="jobBox" style="overflow: hidden;">
+                	<li class="sub_title">
+                		<p>如確定刪除，請輸入密碼</p>
+                	</li>
+                    <li>
+                        <input type="text" name="" class="r_info" placeholder="請輸入密碼">
+                    </li>
+                </ul>
+                <p class="btn">
+                	<a class="bg_gary popup-link" href="#popup-job_vacancies_ranking2">取消</a>
+                	<a class="bg_red popup-link" href="#popup-job_vacancies_ranking2">確認刪除</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <!-- popup 人員資料：評論報告 - 紙本附件 -->
+    <div id="popup-review-report-annex" class="white-popup popup-L mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>紙本附件</h3>
+            </div>
+            <div class="chosenBox">
+            	<div class="contentsBox">
+					<ul class="annex_download clearfix">
+						<li>
+							<a class="a_annex choose_file" href="#">
+								<p class="text img_default">請選擇檔案</p>
+								<p>不可上傳執行檔<br>檔案大小請勿超過 10MB</p>
+							</a>
+						</li>
+						<li>
+							<div class="a_annex">
+								<div class="img_annex">
+									<img src="images/img_annex.jpg" alt="">
+								</div>
+								<div class="tools">
+									<div class="btn crop">
+										<a class="img_default" href="#"></a>
+									</div>
+									<div class="btn download">
+										<a class="img_default" href="#"></a>
+									</div>
+									<div class="btn delete">
+										<a class="img_default" href="#"></a>
+									</div>
+								</div>
+								<p class="annex_name">附件1</p>
+							</div>
+						</li>
+						<li>
+							<div class="a_annex">
+								<div class="img_annex">
+									<img src="images/img_annex.jpg" alt="">
+								</div>
+								<div class="tools">
+									<div class="btn crop">
+										<a class="img_default" href="#"></a>
+									</div>
+									<div class="btn download">
+										<a class="img_default" href="#"></a>
+									</div>
+									<div class="btn delete">
+										<a class="img_default" href="#"></a>
+									</div>
+								</div>
+								<p class="annex_name">附件2</p>
+							</div>
+						</li>
+						<li>
+							<div class="a_annex">
+								<div class="img_annex">
+									<img src="images/img_annex.jpg" alt="">
+								</div>
+								<div class="tools">
+									<div class="btn crop">
+										<a class="img_default" href="#"></a>
+									</div>
+									<div class="btn download">
+										<a class="img_default" href="#"></a>
+									</div>
+									<div class="btn delete">
+										<a class="img_default" href="#"></a>
+									</div>
+								</div>
+								<p class="annex_name">附件3</p>
+							</div>
+						</li>
+						<li>
+							<div class="a_annex">
+								<div class="img_annex">
+									<img src="images/img_annex.jpg" alt="">
+								</div>
+								<div class="tools">
+									<div class="btn crop">
+										<a class="img_default" href="#"></a>
+									</div>
+									<div class="btn download">
+										<a class="img_default" href="#"></a>
+									</div>
+									<div class="btn delete">
+										<a class="img_default" href="#"></a>
+									</div>
+								</div>
+								<p class="annex_name">附件4</p>
+							</div>
+						</li>
+						<li>
+							<div class="a_annex">
+								<div class="img_annex">
+									<img src="images/img_annex.jpg" alt="">
+								</div>
+								<div class="tools">
+									<div class="btn crop">
+										<a class="img_default" href="#"></a>
+									</div>
+									<div class="btn download">
+										<a class="img_default" href="#"></a>
+									</div>
+									<div class="btn delete">
+										<a class="img_default" href="#"></a>
+									</div>
+								</div>
+								<p class="annex_name">附件5</p>
+							</div>
+						</li>
+						<li>
+							<div class="a_annex">
+								<div class="img_annex">
+									<img src="images/img_annex.jpg" alt="">
+								</div>
+								<div class="tools">
+									<div class="btn crop">
+										<a class="img_default" href="#"></a>
+									</div>
+									<div class="btn download">
+										<a class="img_default" href="#"></a>
+									</div>
+									<div class="btn delete">
+										<a class="img_default" href="#"></a>
+									</div>
+								</div>
+								<p class="annex_name">附件6</p>
+							</div>
+						</li>
+						<li>
+							<div class="a_annex">
+								<div class="img_annex">
+									<img src="images/img_annex.jpg" alt="">
+								</div>
+								<div class="tools">
+									<div class="btn crop">
+										<a class="img_default" href="#"></a>
+									</div>
+									<div class="btn download">
+										<a class="img_default" href="#"></a>
+									</div>
+									<div class="btn delete">
+										<a class="img_default" href="#"></a>
+									</div>
+								</div>
+								<p class="annex_name">附件7</p>
+							</div>
+						</li>
+					</ul>
+				</div>
             </div>
         </form>
     </div>
