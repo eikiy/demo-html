@@ -407,6 +407,9 @@ p.add_new_btn a.add_new_job_vacancies:hover span::before{ background-image: url(
 .setBox p.btn a.bg_lightblue{ margin-left: 0;color: #81B6C8; background-color: #D1E0E5;}
 .setBox p.btn a.bg_lightblue:hover{ border-color: #fff; }
 
+.setBox p.btn_add{ font-size: 14px; padding: 10px 0; line-height: 35px; text-align: right;}
+.setBox p.btn_add a{ letter-spacing: 1px; min-width: 85px; padding: 0; border-radius: 5px; text-align: center; display: inline-block; color: #fff; background-color: #81B6C8;}
+
 .remind_greenbox{ position: relative; margin-bottom: 80px;}
 .remind_greenbox .tooltip{ z-index: 100; width: 230px; top: 53px; left: inherit; right: -2px; text-align: justify; padding: 10px 13px;font-size: 14px; letter-spacing: 0; -webkit-transform: scale(1); line-height: initial; border:3px solid #84BE98; border-radius: 10px 0 10px 10px; background-color: #fff; color: #4A4A4A;}
 .remind_greenbox .tooltip::after{ left:initial; top: -15px; right: 39px; border-width: 0 14px 15px 14px;  border-color: transparent transparent #84BE98 transparent;}
@@ -2466,12 +2469,13 @@ ul.job_management_list p.text_center{ text-align: center; }
 /*工作職能 選擇*/
 .setBox .top_title_gray{max-width: initial;}
 .setBox .top_title_gray h3{ background-color: #D8D8D8; font-size: 14px; line-height: 30px; border-radius: 10px 0 0 0; }
-.job_duty_chosenBox{ background-color: #fff; padding: 20px 30px 10px 30px; }
-.job_duty_chosenBox .top_box{ width: 100%; border-bottom: 1px dashed #D8D8D8; padding-bottom: 25px;}
-.job_duty_chosenBox .top_box .border_green{ float: left; width: 523px; border:#84BE98 3px solid; border-radius: 10px 0 10px 10px; padding:15px 20px;}
+
+.job_duty_chosenBox{ background-color: #fff; padding: 20px 30px 10px 30px; border-radius: 0 0 10px 10px;}
+.job_duty_chosenBox .top_box{ width: 100%; border-bottom: 1px dashed #D8D8D8; padding-bottom: 10px;}
+.job_duty_chosenBox .top_box .border_green{ float: left; width: 100%; border:#84BE98 3px solid; border-radius: 10px 0 10px 10px; padding:10px 20px;}
 .job_duty_chosenBox .top_box .border_green span.red{ color: #C87D86; }
 
-.job_duty_chosenBox .top_box .job_filter{ width:157px; float: right; background-color: #fff; position: relative;}
+.job_duty_chosenBox .top_box .job_filter{ width:157px; float: left; margin-top: 10px; background-color: #fff; position: relative;}
 .job_duty_chosenBox .top_box .job_filter p.title{ line-height: 30px; color: #9B9B9B; border: 1px solid #979797; }
 .job_duty_chosenBox .top_box .job_filter p.title a{ position: relative; display: block; }
 .job_duty_chosenBox .top_box .job_filter p.title a::after{ content: ""; position: absolute; top: 11px; right: 10px;width: 0;height: 0;border-style: solid;border-width: 5px 5px 0 5px;border-color: #81b6c8 transparent transparent transparent;line-height: 0px;_border-color: #81b6c8 #000000 #000000 #000000;_filter: progid: DXImageTransform.Microsoft.Chroma(color='#000000');}
@@ -2481,18 +2485,18 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_duty_chosenBox .top_box .job_filter ul.sub_filter li p{ cursor: pointer; text-align: left; padding: 0 9px; line-height: 26px; }
 .job_duty_chosenBox .top_box .job_filter ul.sub_filter li:hover p{ background-color: #81B6C8; color: #fff;}
 
-.job_duty_chosenBox .job_duty{ width: 100%; border-bottom: 1px dashed #D8D8D8; padding:15px 0 25px 0}
+.job_duty_chosenBox .job_duty{ width: 100%; border-bottom: 1px dashed #D8D8D8; padding:10px 0;}
 .job_duty_chosenBox .job_duty ul.duty_list{width: initial; float: left;}
-.job_duty_chosenBox .job_duty ul.duty_list li{ float: left; width:160px; margin-right: 20px; }
+.job_duty_chosenBox .job_duty ul.duty_list li{ float: left; width:112px; margin-right: 5px; }
 .job_duty_chosenBox .job_duty ul.duty_list li:last-child{ margin-right: 0; }
-.job_duty_chosenBox .job_duty ul.duty_list li h3{ color: #81B6C8; font-size: 12px; padding: 5px 10px; margin-bottom: 5px;}
-.job_duty_chosenBox .job_duty ul.duty_list li p{ cursor: pointer; font-size: 12px; position: relative; border: #9B9B9B 1px solid; display: block; padding: 0px 10px; line-height: 26px; margin-bottom: 5px;}
-.job_duty_chosenBox .job_duty ul.duty_list li p span.nb{ font-size: 24px; position: absolute; right: 0; top: 0; width: 32px; text-align: center; }
+.job_duty_chosenBox .job_duty ul.duty_list li h3{ padding: 5px 10px; margin-bottom: 5px;}
+.job_duty_chosenBox .job_duty ul.duty_list li p{ cursor: pointer; font-size: 13.5px; text-align: right; position: relative; border: #9B9B9B 1px solid; display: block; padding: 0px 10px; line-height: 26px; margin-bottom: 5px;}
+.job_duty_chosenBox .job_duty ul.duty_list li p span.nb{ font-size: 24px; position: absolute; left: 0; top: 0; width: 32px; text-align: center; }
 .job_duty_chosenBox .job_duty ul.duty_list li p.btn_in{ background-color: #81B6C8; color: #fff; }
 
-.job_duty_chosenBox .job_duty .note{ float: right; background-color: #9B9B9B; border-radius: 0 10px 10px 10px; width: 340px; margin-top: 30px; min-height: 126.5px; padding: 15px; }
-.job_duty_chosenBox .job_duty .note h4{ color: #fff; font-size: 12px; border-bottom: 1px dashed #D8D8D8; padding-bottom: 10px; }
-.job_duty_chosenBox .job_duty .note p{ color: #fff; font-size: 12px; padding: 5px 0; }
+.job_duty_chosenBox .job_duty_note{ background-color: #EBEBEB; border-radius: 0 5px 5px 5px; width: 100%; margin: 10px 0 20px 0; padding:10px 15px; }
+.job_duty_chosenBox .job_duty_note h4{ font-size: 14px; padding-bottom: 10px; }
+.job_duty_chosenBox .job_duty_note p{ font-size: 13px; padding: 5px 0; }
 
 .popup-L .filter_pop .j_v_ranking{ padding-top: 42px; }
 .popup-L .filter_pop .j_v_ranking h3.test_report_title{ padding-left: 45px; }
@@ -3632,6 +3636,7 @@ html:root  .addQA_fillinBox textarea{ min-height: 58px;}
 .fillin_interviewe_data .fill_information_info .red_error::placeholder{ color: #C87D86; }
 .fillin_interviewe_data .fill_information_info .styled-select{ max-width: calc(100% - 84px);}
 .fillin_interviewe_data .fill_information_info .fillin_phone{ float: left; font-size: 14px; height: 32px; line-height: 32px; }
+
 html:root .fillin_interviewe_data .fill_information_info .styled-select select{ height:33px; padding:2px 10px; }
 
 .fillin_interviewe_data ul.fill_information_info li{ padding: 5px 0; }
@@ -3648,6 +3653,32 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .fillin_interviewe_data ul.fill_information_info li .the_phont p.phone_number span{ float: left; padding: 0 8px; }
 .fillin_interviewe_data ul.fill_information_info li .the_phont p.phone_number a.delete{ float: left; width: 25px; height: 23px; display: block; cursor: pointer; height: 100%; border-left:1px solid #979797; background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: 65%;}
 .fillin_interviewe_data ul.fill_information_info li .the_phont p.phone_number a.delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
+
+.fillin_interviewe_data ul.fill_information_info li.top_both fieldset{ width: 260px; float: left; }
+.fillin_interviewe_data ul.fill_information_info li.top_both fieldset:first-child{ width: 300px; padding-right: 10px;}
+.fillin_interviewe_data ul.fill_information_info li.top_both label{ width: 75px;}
+
+.fillin_interviewe_data h4.bg_darkblue{ background-color: #558C9E; font-size: 18px; color: #fff; padding: 5px 20px; }
+.fillin_interviewe_data h5.bg_g_sub_title{background-color: #EBEBEB; font-size: 15px; padding: 0px 20px; position: relative; line-height: 45px;}
+.fillin_interviewe_data h5.bg_g_sub_title a{ position: absolute; top: 4px; right: 20px; width: 50px; height: 35px; line-height: 35px; display: block; border-radius: 5px; text-align: center; color: #fff; background-color: #81B6C8; }
+.fillin_interviewe_data h5.bg_g_sub_title a.add{ background-image: url(../images/svg/plus_w.svg); background-size: 30%;}
+.fillin_interviewe_data ul.add_nterviewee_round li{ padding:0 0 10px 0;}
+.fillin_interviewe_data ul.add_nterviewee_round li:last-child{ border-bottom: 1px dashed #979797;}
+.fillin_interviewe_data p.btn_add{ padding: 0px 20px 10px 20px;}
+.fillin_interviewe_data .remind_greenbox { margin-bottom: 0; }
+.fillin_interviewe_data .remind_greenbox .tooltip{ width: 330px; right: 120px; top:0; padding: 5px 13px; border-radius: 5px 0 5px 5px; }
+
+.fillin_interviewe_data ul.job_duty_list{ width: 100%; text-align:left; padding:10px 20px 5px 20px; }
+.fillin_interviewe_data ul.job_duty_list li{ display: inline-block; border: 1px solid #9B9B9B; border-radius: 5px; padding: 0px 10px 0 5px; margin: 0 5px 5px 0; }
+.fillin_interviewe_data ul.job_duty_list li p span{ font-size: 22px; color: #81B6C8; padding: 0 5px; }
+.fillin_interviewe_data ul.professional_skill_list{ width: 100%; text-align:left; padding:15px 20px;}
+.fillin_interviewe_data ul.professional_skill_list li{ display: inline-block; border: 1px solid #808080; min-width: 272px; overflow: hidden; height: 28px; border-radius: 5px; margin: 0 5px 5px 0; position: relative; padding-right: 59px; }
+.fillin_interviewe_data ul.professional_skill_list li p{ padding: 0 5px; line-height: 28px; }
+.fillin_interviewe_data ul.professional_skill_list li a{ position: absolute;cursor: pointer;width: 26.5px;border-left:1px solid #9B9B9B; height: 100%; top: 0px; right: 0px;}
+.fillin_interviewe_data ul.professional_skill_list li a.go_delete{ background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: 65%;}
+.fillin_interviewe_data ul.professional_skill_list li a.go_delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
+.fillin_interviewe_data ul.professional_skill_list li a.go_edit{ right: 27px; background-image: url(../images/btn_icon_edit.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
+.fillin_interviewe_data ul.professional_skill_list li a.go_edit:hover{ background-color: #81B6C8; background-image: url(../images/btn_icon_edit_w.png); }
 
 /*面試官評論表*/
 .interviewee_info .review_report{ border-radius: 10px 0 0 0; border-color: #558C9E; position: relative; overflow: hidden;}
@@ -3761,6 +3792,7 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .interviewee_info .report_notes_content .top_box p.link{ float: left; line-height: 28px; }
 .interviewee_info .report_notes_content .top_box p.link span{ float: left; color: #444; padding: 0; }
 .interviewee_info .report_notes_content .top_box p.link a{ float: left; display: inline-block; width: 200px; margin:0 10px; color: #81B6C8; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 27px; height: 27px * 1; overflow:hidden; }
+.interviewee_info .report_notes_content .top_box p.link a:hover{ text-decoration: underline; }
 .interviewee_info .report_notes_content .top_box .top_tools{ float: left; text-align: left; padding: 0 10px; }
 
 .interviewee_info .report_notes_content .fillin_notes{ background-color: #F8F9F9; padding-bottom: 35px; border-radius: 0 0 10px 10px;}
@@ -3773,3 +3805,41 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .interviewee_info .report_notes_content table.report_notes_list tr td textarea.the_report_notes{ padding:5px 10px; width: 100%; min-width: 100%; min-height: 50px; }
 .interviewee_info .report_notes_content table.report_notes_list tr td input::placeholder, .interviewee_info .report_notes_content table.report_notes_list tr td textarea.the_report_notes::placeholder{ color: #D8D8D8;}
 .interviewee_info .report_notes_content table.report_notes_list p{ padding: 12px; text-align: center;}
+
+.setBox .interview_report_round{ background-color: #fff; border-radius: 10px 0 10px 10px; border:3px solid #81B6C8; margin-top: 10px; }
+.setBox .interview_report_round .top_box { width: 100%; border-bottom: 3px solid #81B6C8; }
+.setBox .interview_report_round .top_box p.link{ float: left; line-height: 44px; }
+.setBox .interview_report_round .top_box p.link span{ float: left; color: #444; padding:0 10px; border-right: 1px solid #81B6C8;}
+.setBox .interview_report_round .top_box p.link a{ float: left; display: inline-block; width: 220px; margin:0 10px; color: #81B6C8; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 44px; height: 44px * 1; overflow:hidden; }
+.setBox .interview_report_round .top_box p.link a:hover{ text-decoration: underline; }
+
+.setBox .interview_report_round .top_box .top_tools{ float: right; padding-right:10px; }
+.setBox .interview_report_round .top_box .top_tools .blank_comment{ display: inline-block; position: relative; width: 28px; height: 28px; background-color: #E6F0F4; border-radius: 50%; margin: 8px 8px 0 8px;}
+.setBox .interview_report_round .top_box .top_tools .blank_comment a:hover::before{ opacity: 0.8;}
+.setBox .interview_report_round .top_box .top_tools .blank_comment a .tooltip{ min-width: 94px; font-size: 11px; left: -33px;}
+.setBox .interview_report_round .top_box .top_tools .blank_comment a::before{ position: absolute; content: ""; width: 13px; height: 15px; top: calc(50% - 7.5px); left: calc(50% - 6.5px); background-image: url(../images/svg/blank_comment.svg);}
+
+.setBox .interview_report_round .a_round{ background-color:#F2F8FA; width: 365px; border: 1.5px solid #81B6C8; margin: 8px auto; }
+.setBox .interview_report_round .a_round .left_nb{ float: left; border-right: 1px solid #81B6C8; line-height: 62px; min-width: 68px; text-align: center;}
+.setBox .interview_report_round .a_round .right_info{ float: left; width: calc(100% - 68px); }
+.setBox .interview_report_round .a_round .right_info .day{ width: 100%; border-bottom: 1px solid #81B6C8; position: relative; }
+.setBox .interview_report_round .a_round .right_info .day input{ padding: 0 5px; line-height: 30px; height: 30px; width: 100%; background-color: transparent; }
+.setBox .interview_report_round .a_round .right_info .day::after{ background-image: url(../images/icon_time_select_01.png); cursor: pointer; z-index: 4; content: ""; top: 6px; right: 6px; position: absolute; width: 25px; height: 19px; display: block;}
+
+.setBox .interview_report_round .a_round .right_info p{ width: 100%; height: 30px; line-height: 30px; padding: 0 10px;}
+.setBox .interview_report_round .a_round .right_info p.day::after{ display: none; }
+.setBox .interview_report_round .a_round .right_info p.report_status{ position: relative; }
+.setBox .interview_report_round .a_round .right_info p.report_status span{ position: relative; padding-right: 20px;}
+.setBox .interview_report_round .a_round .right_info p.report_status span::after{ content:""; position: absolute; top: 0; right: 0; width: 15px; height: 15px; display: block; border-radius: 50%; background-image: url(../images/svg/report_interviewer_type.svg); }
+.setBox .interview_report_round .a_round .right_info p.report_status span.status_done::after{ background-image: url(../images/svg/report_type_done.svg);}
+.setBox .interview_report_round .a_round .right_info p.report_status span.status_error::after{ background-image:url(../images/svg/report_type_error.svg);}
+.setBox .interview_report_round .a_round .right_info p.report_status span.status_questionmark::after{ background-image:url(../images/svg/report_type_questionmark.svg);}
+.setBox .interview_report_round .a_round .right_info a.edit{ position: absolute; right: 10px; top: 7px; width: 17px; height: 17px; display: block; background-image: url(../images/svg/pen_edit.svg); }
+.setBox .interview_report_round .a_round .right_info a.edit:hover{ opacity: .8; }
+
+.setBox .interview_report_round p.btn_add{ padding: 2px 8px 14px 0;}
+.setBox .interview_report_round p.btn_view{ width: 100%; text-align: center; font-size: 18px;}
+.setBox .interview_report_round p.btn_view a{ background-color: #81B6C8; color: #fff; display: block; line-height: 46px;}
+.setBox .interview_report_round p.btn_view a:hover, .setBox .interview_report_round p.btn_add a:hover{ opacity: .9; }
+.setBox .interview_report_round p.btn_view a span{ padding-left: 40px; position: relative; }
+.setBox .interview_report_round p.btn_view a span::after{ content:""; position: absolute; top: 0; left: 0; width: 29px; height: 16.5px; display: block;background-image:url(../images/svg/eye.svg); }
