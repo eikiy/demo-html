@@ -198,9 +198,10 @@ a .tooltip span.c_red{ color: #C87D86; }
 .interviewer_grade_container ul.finish_result li p::after{ content: ""; position: absolute; left: 0; top: 0; width: 18px; height: 18px; display: inline-block; border-radius: 50%; border: 2px solid #84BE98; }
 .interviewer_grade_container ul.finish_result li p.yello::after{ border-color: #E5AF57; }
 .interviewer_grade_container ul.finish_result li p.red::after{ border-color: #C87D86; }
-.interviewer_grade_container ul.finish_result li a.selected p.green::after{ background-color: #84BE98; }
-.interviewer_grade_container ul.finish_result li a.selected p.yello::after{ background-color: #E5AF57; }
-.interviewer_grade_container ul.finish_result li a.selected p.red::after{ background-color: #C87D86; }
+.interviewer_grade_container ul.finish_result li a.selected p::after{ border: none; width: 22px; height: 22px; }
+.interviewer_grade_container ul.finish_result li a.selected p.green::after{ background-image: url(../images/svg/report_type_done.svg); }
+.interviewer_grade_container ul.finish_result li a.selected p.yello::after{ background-image: url(../images/svg/report_type_questionmark.svg); }
+.interviewer_grade_container ul.finish_result li a.selected p.red::after{ background-image: url(../images/svg/report_type_error.svg); }
 
 .interviewer_grade_container p.btn{ max-width: 900px; margin: 0 auto; font-size: 18px; padding-top: 10px; }
 .interviewer_grade_container p.btn a{ background-color: #81B6C8; color: #fff; height: 46px; line-height: 46px; display: block; width: 100%; border-radius: 8px 0 8px 8px; margin: 0 auto; }

@@ -1484,7 +1484,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .popup-L .filter_pop .chosenBox{ padding: 15px 12px; min-height: 395px; /*overflow-y: auto; max-height: 90vh;*/}
 .interviewee_info{ width: 100%;  }
 .interviewee_info .interviewMainBox{ width: 100%; }
-.interviewee_info .interviewMainBox .top_ivBox{padding: 40px 0 15px 0;}
+.interviewee_info .interviewMainBox .top_ivBox{padding: 20px 0 15px 0;}
 .interviewee_info .interviewMainBox .top_ivBox .img-user{ width: 125px; height: 125px; margin: 0 10px 20px 0; }
 .interviewee_info .interview_officer_Main .top_ivBox .rBox table.interviewer_info{ margin: 0; max-width: 340px; }
 .interviewee_info .interview_officer_Main .top_ivBox .rBox table.interviewer_info tr td{ line-height: 20px; height: 25px; }
@@ -2784,6 +2784,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 
 .print_box .print_survey{ border: none; border-radius: 0;}
 .print_box .print_survey .interviewee_info .interviewMainBox .top_ivBox{ padding-bottom: 0; }
+
 .print_box .print_survey .interview_officer_Main .u_infoBox .use_fillinBox{ padding: 0 10px; }
 .print_box .print_survey .interview_officer_Main .u_infoBox .use_fillinBox p.title_s{ text-align: left; color: #558C9E; }
 .print_box .print_survey h3.blue_title{ padding: 5px 15px; margin-top: 6px; }
@@ -2801,6 +2802,110 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box .print_survey ul.fill_in_result li .limit_w_02{ max-width: calc(100% - 120px); float: left;}
 .print_box .print_survey ul.fill_in_result li .both{ width: 50%; float: left; }
 .print_box .print_survey ul.fill_in_result li.top_line{ border-top: 1px dashed #979797; padding-top: 5px; margin-top: 5px; }
+
+.print_box .print_survey .interviewee_info .add_top_status .top_interviewer_info{ border: none; }
+.print_box .print_survey .interviewee_info .add_top_status .top_ivBox{ border: 3px solid #81B6C8; border-radius: 5px 0 5px 5px;}
+.print_box .print_survey .interviewee_info .add_top_status .top_ivBox .right_status{ float: left; border-left: 3px solid #81B6C8; width: 175px; height: 157px; position: relative;}
+.print_box .print_survey .interviewee_info .add_top_status .top_ivBox .right_status p{ font-size: 16px; color: #558C9E; text-align: center; padding-top: 120px; position: relative;}
+.print_box .print_survey .interviewee_info .add_top_status .top_ivBox .right_status p.report_status_accept::after{ content: ""; position: absolute; top: 32px; left:calc(50% - 32.5px); width: 65px; height: 65px; display: block; background-image: url(../images/svg/report_type_done.svg); }
+.print_box .print_survey .interviewee_info .add_top_status .top_ivBox .right_status .img_qrcode{ position: absolute; width: 110px; height: 110px; top: 12px; left: calc(50% - 55px);}
+.print_box .print_survey .interviewee_info .add_top_status .top_interviewer_info .rightInfoBox .user_name p:last-child{ border: none; }
+
+.print_box .print_survey .interviewee_info .add_top_status h2.top_interviewer{ border: 2px solid #558C9E; font-size: 16px; padding: 10px 20px; margin: 18px 0 10px 0; }
+.print_box .print_survey .interviewee_info .add_top_status h3.top_title{ background-color: #558C9E; font-size: 16px; color: #fff; padding: 10px 20px;}
+.print_box .print_survey .interviewee_info .add_top_status p.bg_gray_note{ background-color: #F8F9F9; padding: 10px 5px; }
+
+.print_box .print_survey .interviewee_info .add_top_status .review_report_data{ padding:10px 20px 20px 20px; }
+.print_box .print_survey .interviewee_info .add_top_status .review_report_data h4.sub_title{ padding: 10px 0; }
+.print_box .print_survey .interviewee_info .add_top_status .review_report_data h4.sub_title span.c_green{ color: #69A07C; }
+.print_box .print_survey .interviewee_info .add_top_status .review_report_data h4.sub_title span.c_red{ color: #C87D86; }
+.print_box .print_survey .interviewee_info .add_top_status .review_report_data p{ padding-bottom: 10px; }
+.print_box .print_survey .interviewee_info .add_top_status .review_report_data p.comment_box{ border: 1px solid #979797; min-height: 90px; border-radius: 5px; padding: 10px; font-size: 14px; }
+
+.print_box .print_survey .interviewee_info .add_top_status .dashed_line {border-bottom: 1px dashed #979797;}
+.print_box .print_survey .interviewee_info .add_top_status .blue_line { border-bottom: 6px solid #558C9E;}
+
+.print_box .print_survey .interviewee_info .add_top_status ul.score_star_list{ text-align: left;}
+.print_box .print_survey .interviewee_info .add_top_status ul.score_star_list li{ display: inline-block; }
+.print_box .print_survey .interviewee_info .add_top_status ul.score_star_list li span{float: left; width: 33px; height: 35px; text-align: center; cursor: pointer; color: #D1E0E5; padding-top: 12px; font-size: 12px; display: block; background-image: url(../images/interviewer_grade/score_star.svg);}
+.print_box .print_survey .interviewee_info .add_top_status ul.score_star_list li p.info{ float: left; width: calc(100% - 50px);  padding-left: 6px; }
+
+.print_box .print_survey .interviewee_info .add_top_status .star_box_two{ width: 100%; padding-bottom: 10px; margin-bottom: 10px; }
+.print_box .print_survey .interviewee_info .add_top_status .star_box_two:last-child{ padding-bottom: 0; margin-bottom: 0; }
+.print_box .print_survey .interviewee_info .add_top_status .star_box_two p.info{ padding-left: 10px;}
+.print_box .print_survey .interviewee_info .add_top_status .star_box_two ul.score_star_list { padding-bottom: 0; float: left; }
+.print_box .print_survey .interviewee_info .add_top_status .star_box_two ul.score_star_list li{ padding: 5px; }
+.print_box .print_survey .interviewee_info .add_top_status .star_box_two ul.score_star_list li p.info{ text-align: center; padding:40px 0 0 0; font-size: 14px; float: none; width: initial;}
+.print_box .print_survey .interviewee_info .add_top_status .star_box_two ul.score_star_list li span{ background-image: url(../images/interviewer_grade/score_star.svg); color: #81B6C8;}
+.print_box .print_survey .interviewee_info .add_top_status .star_box_two ul.score_star_list li .selected{ background-image: url(../images/interviewer_grade/score_star_yello.svg); color: #E5AF57; }
+.print_box .print_survey .interviewee_info .add_top_status .grayscale{-webkit-filter: grayscale(1);}
+
+.print_box .print_survey .interviewee_info .add_top_status .review_report_data .star_box_two  h4.sub_title{ float: left; width: 155px; }
+.print_box .print_survey .interviewee_info .add_top_status .review_report_data .star_box_two  p.comment_box{ float: right; width: 268px; height: 60px; }
+
+.print_box .print_survey .interviewee_info .add_top_status ul.check_list{ width: 100%; padding-bottom: 5px; }
+.print_box .print_survey .interviewee_info .add_top_status ul.check_list li{ padding-left:30px; position: relative; }
+.print_box .print_survey .interviewee_info .add_top_status ul.check_list li p{line-height: 20px;}
+.print_box .print_survey .interviewee_info .add_top_status ul.check_list li::before{ content: ""; position: absolute; left: 0; top: 0; width: 14px; height: 14px; display: block; border: 3px solid #D8D8D8; }
+
+.print_box .rating_list_content{ width: 100%; }
+.print_box .rating_list_content h4.sub_title { background-color: #F8F9F9; padding:5px 20px; font-size: 14.5px; margin: 0 auto; line-height: 26px;}
+
+/*print 填寫部分*/
+.print_box .rating_list_content .fillin_list{ width:calc(100% - 20px); max-width:900px; margin: 0 auto; padding: 15px 0; justify-content: flex-start; display: flex; flex-wrap: wrap; align-content:flex-start;}
+.print_box .rating_list_content .information_info{ width: 50%; display:flow-root; justify-content:flex-start; align-items: flex-start; }
+.print_box .rating_list_content .information_info:nth-child(2n){ padding-right: 0; padding-left: 22px; }
+.print_box .rating_list_content .information_info fieldset{ padding-bottom: 5px; }
+.print_box .rating_list_content .information_info input.f_input,
+.print_box .rating_list_content .information_info textarea.f_input{ float: right; width:calc( 100% - 80px); border: 1px solid #979797; border-radius: 5px; height: 35px; line-height: 35px; padding: 0 10px; -webkit-appearance: none;  -moz-appearance: none;  appearance: none;}
+.print_box .rating_list_content .information_info textarea.f_input{ min-width: 278px; min-height: 35px; overflow-y: hidden; resize: vertical;}
+.print_box .rating_list_content .information_info textarea.h35{ max-height: 70px; min-height: 35px;}
+
+.print_box .rating_list_content .information_info label{ font-size: 13.5px; min-width: 78px; text-align: right; padding-right: 10px; color: #558C9E; padding-top: 6px; padding-bottom: 6px; display: block; float: left; position: relative;}
+.print_box .rating_list_content .information_info label span.note{ background-color: #81B6C8; color: #fff; font-size: 11.5px; margin-left: 5px; border-radius: 3px; padding: 2px 5px; }
+.print_box .rating_list_content .information_info label span.text_tips{ color: #4A4A4A; font-size: 14px; position: absolute; right: 0; top: 1px; }
+.print_box .rating_list_content .information_info label .salary{ float: left; }
+.print_box .rating_list_content .information_info .salary input.f_input{ float: left; max-width: calc(100% - 156px);}
+
+.print_box .rating_list_content .information_info .setting_item{ background-color: #fff; margin-bottom: 5px; border: 1px solid #979797; border-radius: 5px; min-height: 35px; line-height: 35px; padding: 0; overflow: hidden; text-align: left;}
+.print_box .rating_list_content .information_info .setting_item label{ position: absolute; line-height: 35px; color: #9B9B9B; top: 0; left: 0; padding-bottom: 0; padding-top: 0; }
+.print_box .rating_list_content .information_info .setting_item input[type=checkbox]:not(old) +label{ background: url(../images/personal_information/checks_off.png) 5px center no-repeat;}
+.print_box .rating_list_content .information_info .setting_item input[type=checkbox]:not(old):checked + label{ background-image: url(../images/personal_information/checks_on.png); background-color: #dfeff5;}
+.print_box .rating_list_content .information_info .setting_item input[type=radio]:not(old) +label{ background: url(../images/personal_information/checks_off.png) 5px center no-repeat;}
+.print_box .rating_list_content .information_info .setting_item input[type=radio]:not(old):checked + label{ background-image: url(../images/personal_information/checks_on.png);}
+.print_box .rating_list_content .information_info .setting_item input[type=radio]:not(old):checked + label{ background-image: url(../images/personal_information/checks_on.png); background-color: #dfeff5;}
+
+.print_box .rating_list_content .information_info ul{ width: 100%; }
+.print_box .rating_list_content .information_info ul li.w100{ width: 100%; max-width: inherit; margin-right: 0; }
+.print_box .rating_list_content .information_info ul li.w100:nth-child(2n){ margin-left: 0px; }
+.print_box .rating_list_content .information_info ul li.setting_item{ float: left; margin-right: 8px; text-align: left; width:calc(50% - 8px);}
+.print_box .rating_list_content .information_info ul li.setting_item:nth-child(2n){ margin-right: 0; margin-left: 8px; }
+.print_box .rating_list_content .information_info ul li.setting_item input.pos_fill{ position: absolute; right: 0; top: 0; width: calc(100% - 100px); z-index: 3; height: 35px; line-height: 35px; background-color:transparent;}
+.print_box .rating_list_content .information_info .still_in{ float: left; text-align: left; border: none; margin: 0; position: relative; padding: 3px 0px 0 0;}
+.print_box .rating_list_content .information_info .still_in label{color: #4A4A4A; padding-bottom: 0; text-align: left; padding-top: 1px;}
+
+.print_box .rating_list_content .fillin_w100 { width: 100%;}
+.print_box .rating_list_content .fillin_w100 .information_info{ width: 100%; }
+.print_box .rating_list_content .full_w{ width: 100%; padding: 10px 20px; }
+.print_box .rating_list_content .content_border{ width: 100%; border:2px solid #558C9E; border-radius: 5px 0 5px 5px; margin-bottom: 10px;}
+.print_box .rating_list_content .content_border h4.sub_title { background-color: #F7F0E6; padding:5px 15px; font-size: 14px;}
+/*print 填寫部分 END*/
+
+.print_box .print_survey_done .interviewee_info .add_top_status .c_blue { color: #558C9E;}
+.print_box .print_survey_done .interviewee_info .add_top_status ul.score_star_list li span{ width: 24px; height: 24px; background-image: url(../images/svg/score_star.svg);}
+.print_box .print_survey_done .interviewee_info .add_top_status ul.score_star_list li .selected { background-image: url(../images/svg/score_star_yello.svg);}
+.print_box .print_survey_done .interviewee_info .add_top_status .both_title_star{ width: 100%; }
+.print_box .print_survey_done .interviewee_info .add_top_status .both_title_star h4.sub_title{ float: left; min-width: 40px; }
+.print_box .print_survey_done .interviewee_info .add_top_status .both_title_star ul.score_star_list{ float: left; padding: 7px 0 0 10px;}
+.print_box .print_survey_done .interviewee_info .add_top_status ul.check_list li::after{ content: ""; position: absolute; top: -4px; left: 5px; background-image: url(../images/svg/print_check_tick.svg); width: 20px; height: 20px; display: block; }
+.print_box .print_survey_done ul.fill_in_result li p.title_s{ font-size: 15px; }
+
+.rating_list_content ul.finish_result{ text-align: center; padding:20px 15px; }
+.rating_list_content ul.finish_result li{ display: inline-block; padding: 0 30px; }
+.rating_list_content ul.finish_result li p{ position: relative; padding-left: 50px; line-height: 24px; font-size: 15px; }
+.rating_list_content ul.finish_result li p::after{ content: ""; position: absolute; left: -10px; top: -8px; width: 35px; height: 35px; display: inline-block; border-radius: 50%; border: 2px solid #84BE98; }
+.rating_list_content ul.finish_result li p.yello::after{ border-color: #E5AF57; }
+.rating_list_content ul.finish_result li p.red::after{ border-color: #C87D86; }
 
 /*手機板測驗*/
 .for_mob_Test{ width: 100%; min-height: initial; height: 100vh; padding: 0; }
@@ -3562,23 +3667,26 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .interviewee_info .review_report .left_interviewer .interview_group ul li p{ line-height: 22px; font-size: 13px;}
 
 .interviewee_info .review_report .right_report_data{ width:calc(100% - 226px); float: right; }
-.interviewee_info .review_report .right_report_data .top_tools{ width: 100%; text-align: right; padding:30px 20px 30px 0; }
-.interviewee_info .review_report .right_report_data .top_tools .btn{ display: inline-block; position: relative; width: 28px; height: 28px; background-color: #E6F0F4; border-radius: 50%; margin-left: 8px;}
-.interviewee_info .review_report .right_report_data .top_tools .btn a::before{ position: absolute; content: ""; top: calc(50% - 8.5px); left:  calc(50% - 9px); width: 18px; height: 19px; background-image: url(../images/svg/garbage.svg); }
-.interviewee_info .review_report .right_report_data .top_tools .btn a:hover::before{ opacity: 0.8;}
-.interviewee_info .review_report .right_report_data .top_tools .btn a .tooltip{ min-width: 45px; font-size: 11px; left: -8px;}
 
-.interviewee_info .review_report .right_report_data .top_tools .label, .interviewee_info .review_report .right_report_data .top_tools .label_in{ background-color: initial; }
-.interviewee_info .review_report .right_report_data .top_tools .label a::before{ background-image: url(../images/svg/report_type_label.svg); }
-.interviewee_info .review_report .right_report_data .top_tools .label_in a::before{ background-image: url(../images/svg/report_type_label_org.svg); }
-.interviewee_info .review_report .right_report_data .top_tools .edit a::before{ width: 17px; height: 17px; top: calc(50% - 8.5px); left: calc(50% - 8.5px); background-image: url(../images/svg/pen_edit_gray.svg); }
-.interviewee_info .review_report .right_report_data .top_tools .download a::before{ width: 13px; height: 14px; top: calc(50% - 6.5px); left: calc(50% - 6.5px); background-image: url(../images/svg/download_arr.svg); }
-.interviewee_info .review_report .right_report_data .top_tools .annex a::before{ background-image: url(../images/interviewer_grade/img_camera.svg); }
-.interviewee_info .review_report .right_report_data .top_tools .print a::before{ width: 16px; height: 15px; top: calc(50% - 7.5px); left: calc(50% - 8px); background-image: url(../images/svg/print_gray.svg); }
-.interviewee_info .review_report .right_report_data .top_tools .print .print_type_box{ top: 41px; right: -8px;}
-.interviewee_info .review_report .right_report_data .top_tools .delete{ background-color: #EBEBEB;}
-.interviewee_info .review_report .right_report_data .top_tools .delete a::before{ background-image: url(../images/svg/garbage.svg);}
-.interviewee_info .review_report .right_report_data .top_tools .delete a:hover::before{ opacity: 1; background-image: url(../images/svg/garbage_red.svg);}
+.interviewee_info .top_tools{ text-align: right; padding:30px 20px 30px 0; }
+.interviewee_info .top_tools .btn{ display: inline-block; position: relative; width: 28px; height: 28px; background-color: #E6F0F4; border-radius: 50%; margin-left: 8px;}
+.interviewee_info .top_tools .btn a::before{ position: absolute; content: ""; top: calc(50% - 8.5px); left:  calc(50% - 9px); width: 18px; height: 19px; background-image: url(../images/svg/garbage.svg); }
+.interviewee_info .top_tools .btn a:hover::before{ opacity: 0.8;}
+.interviewee_info .top_tools .btn a .tooltip{ min-width: 45px; font-size: 11px; left: -8px;}
+
+.interviewee_info .top_tools .label, .interviewee_info .review_report .right_report_data .top_tools .label_in{ background-color: initial; }
+.interviewee_info .top_tools .label a::before{ background-image: url(../images/svg/report_type_label.svg); }
+.interviewee_info .top_tools .label_in a::before{ background-image: url(../images/svg/report_type_label_org.svg); }
+.interviewee_info .top_tools .edit a::before{ width: 17px; height: 17px; top: calc(50% - 8.5px); left: calc(50% - 8.5px); background-image: url(../images/svg/pen_edit_gray.svg); }
+.interviewee_info .top_tools .download a::before{ width: 13px; height: 14px; top: calc(50% - 6.5px); left: calc(50% - 6.5px); background-image: url(../images/svg/download_arr.svg); }
+.interviewee_info .top_tools .annex a::before{ background-image: url(../images/interviewer_grade/img_camera.svg); }
+.interviewee_info .top_tools .print a::before{ width: 16px; height: 15px; top: calc(50% - 7.5px); left: calc(50% - 8px); background-image: url(../images/svg/print_gray.svg); }
+.interviewee_info .top_tools .print .print_type_box{ top: 41px; right: -8px;}
+.interviewee_info .top_tools .delete{ background-color: #EBEBEB;}
+.interviewee_info .top_tools .delete a::before{ background-image: url(../images/svg/garbage.svg);}
+.interviewee_info .top_tools .delete a:hover::before{ opacity: 1; background-image: url(../images/svg/garbage_red.svg);}
+.interviewee_info .top_tools .blank_comment a::before{ width: 13px; height: 15px; top: calc(50% - 6.5px); left: calc(50% - 7.5px); background-image: url(../images/svg/blank_comment.svg);}
+.interviewee_info .top_tools .blank_comment a .tooltip{ min-width: 94px; left: -33px;}
 
 .interviewee_info .review_report .fill_rating_content{ background-color:#F2F8FA;}
 .interviewee_info .review_report .fill_rating_content:last-child{ padding-bottom: 30px}
@@ -3619,6 +3727,7 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .interviewee_info .review_report .view_blur p.report_notyet{ width: 100%; position: absolute; top:calc(50% - 7px); text-align: center; color: #C87D86; z-index: 2; }
 .interviewee_info .review_report .view_blur .sub_title, .interviewee_info .review_report .view_blur ul.other_item {-webkit-filter: blur(0.4rem);-moz-filter: blur(0.4rem); -o-filter: blur(0.4rem);-ms-filter: blur(0.4rem);filter: blur(0.4rem);}
 
+/*lightbox 紙本附件*/
 .setBox ul.annex_download{ width: 100%; padding-left: 38px; }
 .setBox ul.annex_download li{ float: left; padding: 10px 15px;}
 .setBox ul.annex_download li .a_annex{ width: 182px; height: 252px; padding-top: 28px; border-radius: 10px 0 10px 10px; border:2px solid #81B6C8; display: block; position: relative; overflow: hidden; }
@@ -3645,3 +3754,22 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .setBox ul.annex_download li .choose_file:hover{ background-color: #81B6C8; }
 .setBox ul.annex_download li .choose_file:hover p{  color: #fff;}
 .setBox ul.annex_download li .choose_file:hover p.text::after {background-image: url(../images/svg/file_icon/upload_file_w.svg);}
+
+/*面試備註*/
+.interviewee_info .report_notes_content{ width: 100%; }
+.interviewee_info .report_notes_content .top_box{ width: 100%; padding: 30px 20px 0px 20px;}
+.interviewee_info .report_notes_content .top_box p.link{ float: left; line-height: 28px; }
+.interviewee_info .report_notes_content .top_box p.link span{ float: left; color: #444; padding: 0; }
+.interviewee_info .report_notes_content .top_box p.link a{ float: left; display: inline-block; width: 200px; margin:0 10px; color: #81B6C8; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 27px; height: 27px * 1; overflow:hidden; }
+.interviewee_info .report_notes_content .top_box .top_tools{ float: left; text-align: left; padding: 0 10px; }
+
+.interviewee_info .report_notes_content .fillin_notes{ background-color: #F8F9F9; padding-bottom: 35px; border-radius: 0 0 10px 10px;}
+.interviewee_info .report_notes_content .fillin_notes p.day{ line-height: 25px; padding: 6px 15px; color: #fff; background-color: #9B9B9B; margin:25px 0 30px 0;}
+
+.interviewee_info .report_notes_content table.report_notes_list{ width: 872px; margin: 10px auto; overflow: hidden; border: 3px solid #81B6C8; border-radius: 10px 0 10px 10px; background-color: #fff; }
+.interviewee_info .report_notes_content table.report_notes_list tr th{ background-color: #D1E0E5; border-right: 1px solid #81B6C8; }
+.interviewee_info .report_notes_content table.report_notes_list tr td{ border-right: 1px solid #81B6C8; border-top: 1px solid #81b6c885; vertical-align: middle;}
+.interviewee_info .report_notes_content table.report_notes_list tr td input{ padding: 10px; width: 100%; }
+.interviewee_info .report_notes_content table.report_notes_list tr td textarea.the_report_notes{ padding:5px 10px; width: 100%; min-width: 100%; min-height: 50px; }
+.interviewee_info .report_notes_content table.report_notes_list tr td input::placeholder, .interviewee_info .report_notes_content table.report_notes_list tr td textarea.the_report_notes::placeholder{ color: #D8D8D8;}
+.interviewee_info .report_notes_content table.report_notes_list p{ padding: 12px; text-align: center;}
