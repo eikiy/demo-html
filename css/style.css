@@ -3668,6 +3668,14 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .fillin_interviewe_data .remind_greenbox { margin-bottom: 0; }
 .fillin_interviewe_data .remind_greenbox .tooltip{ width: 330px; right: 120px; top:0; padding: 5px 13px; border-radius: 5px 0 5px 5px; }
 
+.fillin_interviewe_data .work_complexity { background-color: #EBEBEB; font-size: 15px; text-align: left; padding: 8px 20px; border-bottom: 2px solid #fff;}
+.fillin_interviewe_data .work_complexity h5{ float: left; line-height: 29px; }
+.fillin_interviewe_data .work_complexity p.ss{ float: left; color: #9B9B9B; padding-left: 15px; line-height: 29px; font-size: 11px;}
+.fillin_interviewe_data .work_complexity .grade{ float: right;}
+.fillin_interviewe_data .work_complexity .grade p{ font-size: 18px; text-align: right; padding:}
+.fillin_interviewe_data .work_complexity .grade p a{ display: inline-block; text-align: center; font-weight: bold; color: #B9BABA; line-height: 25px; width:27px; height: 27px;border:2px solid #B9BABA; border-radius: 4px;}
+.fillin_interviewe_data .work_complexity .grade p a.btn_in{ color: #81B6C8; border-color: #81B6C8; }
+
 .fillin_interviewe_data ul.job_duty_list{ width: 100%; text-align:left; padding:10px 20px 5px 20px; }
 .fillin_interviewe_data ul.job_duty_list li{ display: inline-block; border: 1px solid #9B9B9B; border-radius: 5px; padding: 0px 10px 0 5px; margin: 0 5px 5px 0; }
 .fillin_interviewe_data ul.job_duty_list li p span{ font-size: 22px; color: #81B6C8; padding: 0 5px; }
