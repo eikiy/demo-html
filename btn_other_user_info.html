@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+	<head>
+		<meta charset="UTF-8">
+		<title>人員資料：個人資料 1</title>
+		<meta name='description' content=""/>
+		<meta name='keywords' content=""/>
+		<meta name="MobileOptimized" content="width">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+		<div id="popup-user-info" class="popup-L">
+	        <form class="setBox filter_pop">
+	            <div class="top_title">
+	                <h3>人員資料</h3>
+	            </div>
+	            <div class="chosenBox interviewee_info">
+	            	<div class="interviewMainBox interview_officer_Main">
+						<div class="contentsBox">
+							<!-- 新版 2019/10月更新 -->
+							<div class="top_ivBox clearfix">
+								<div class="top_interviewer_info clearfix">
+									<div class="left_photo">
+										<div class="the_photo">
+											<img src="images/user_photo_01.png" align="logo" width="100%">
+										</div>
+									</div>
+									<div class="rightInfoBox">
+										<div class="user_name clearfix">
+											<p class="name">林怡文林怡文林怡文林怡文林怡文</p>
+											<p>男</p>
+											<p>37歲</p>
+											<p class="c_org">4個月年資</p>
+											<a class="edit popup-link img_default" href="#popup-user-info-editing"></a>
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">職缺部門：</p>
+											<p class="right_info">資訊部</p>
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">職缺名稱：</p>
+											<p class="right_info">軟體工程師</p>
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">直屬主管：</p>
+											<p class="right_info">林怡文</p>
+										</div>
+										<div class="iBox clearfix">
+											<p class="title">報到時間：</p>
+											<p class="right_info">2019/07/02</p>
+										</div>
+									</div>
+								</div>
+								<div class="rBox clearfix">
+									<div class="top_other_tools clearfix">
+										<p class="the_interviewer_status clearfix">
+											<span class="user img_default c_org">在職中</span>
+											<a class="edit img_default popup-link" href="#popup-change-status">
+												<span class="tooltip">更改狀態</span>
+											</a>
+										</p>
+										<div class="btn_delete">
+											<a href="#"><span class="tooltip">刪除</span></a>
+										</div>
+										<p class="btn_status_record">
+											<a class="popup-link" href="#popup-status-record">
+												<span class="img_default">狀態紀錄</span>
+											</a>
+										</p>
+									</div>
+									<div class="embarrassment clearfix">
+										<p class="btn_in"><a class="icon_01" href="#">個人資料</a></p>
+										<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
+										<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
+										<p class="btn_none"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
+										<p class="btn_none"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
+									</div>
+								</div>
+							</div>
+
+							<!-- 舊的修改資料 -->
+							<!-- <div class="top_ivBox clearfix">
+								<div class="top_interviewer_info clearfix">
+										<div class="left_photo">
+											<p class="title">招募中</p>
+											<div class="the_photo">
+												<a class="select_file" href="#">
+													<p class="icon">更換照片</p>
+												</a>
+												<img src="images/user_photo_01.png" align="logo" width="100%">
+											</div>
+										</div>
+										<div class="rightInfoBox">
+											<div class="iBox clearfix">
+												<p class="title">姓名</p>
+												<input class="right_info" type="text" name="" value="王明天">
+											</div>
+											<div class="iBox clearfix">
+												<p class="title">職位</p>
+												<input class="right_info" type="text" name="" value="軟體工程師">
+											</div>
+											<div class="iBox clearfix">
+												<p class="title">部門</p>
+												<input class="right_info" type="text" name="" value="軟體開發部">
+												<p class="btn"><a class="select" href="#">選擇</a></p>
+												<div class="the_department_list">
+										        	<h4>部門選擇<button title="Close (Esc)" type="button" class="subBox-close">×</button></h4>
+										        	<ul>
+										        		<li>
+										        			<p class="b_title">第1階</p>
+										        			<p class="type"><a class="btn_in" href="#">明天股份有限公司</a></p>
+										        		</li>
+										        		<li>
+										        			<p class="b_title">第2階</p>
+										        			<p class="type"><a class="btn_in" href="#">行政管理處</a>
+										        				<a href="#">製造處</a>
+										        				<a href="#">銷售處</a>
+										        				<a href="#">研發一處</a>
+										        				<a href="#">研發二處</a>
+										        			</p>
+										        		</li>
+										        		<li>
+										        			<p class="b_title">第3階</p>
+										        			<p class="type"><a class="btn_in" href="#">人資部</a>
+										        				<a href="#">總務部</a>
+										        				<a href="#">資訊部</a>
+										        				<a href="#">廠務部</a>
+										        			</p>
+										        		</li>
+										        		<li>
+										        			<p class="b_title">第4階</p>
+										        			<p class="type"><a href="#">訓練課</a>
+										        				<a class="btn_in" href="#">招募課</a>
+										        				<a href="#">薪酬課</a>
+										        			</p>
+										        		</li>
+										        		<li>
+										        			<p class="b_title">第5階</p>
+										        			<p class="type"><a href="#">招募一組</a>
+										        				<a href="#">招募二組</a>
+										        			</p>
+										        		</li>
+										        	</ul>
+										        </div>
+											</div>
+											<div class="iBox clearfix">
+												<p class="title">直屬主管</p>
+												<input class="right_info" type="text" name="" value="留有計">
+											</div>
+											<div class="iBox clearfix">
+												<p class="title">報到時間</p>
+												<input class="right_info time" type="text" name="" value="2018/11/01/13:30">
+												<div class="day_selectBpx">
+								                	<div class="monthBox">
+														<div class="top_year_month">
+															<p><span>2018年11月
+															<a class="left_arr" href="#"></a>
+																<a class="right_arr" href="#"></a></span>
+															</p>
+														</div>
+														<div class="dateBox">
+															<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																<tr>
+																	<th><p>日</p></th>
+																	<th><p>一</p></th>
+																	<th><p>二</p></th>
+																	<th><p>三</p></th>	
+																	<th><p>四</p></th>
+																	<th><p>五</p></th>
+																	<th><p>六</p></th>
+																</tr>
+																<tr>
+																	<td></td>
+																	<td></td>
+																	<td></td>
+																	<td></td>
+																	<td><p class="btn_in">1</p>
+																	</td>
+																	<td><p>2</p></td>
+																	<td><p>3</p></td>
+																</tr>
+																<tr>
+																	<td><p>4</p></td>
+																	<td><p>5</p></td>
+																	<td><p>6</p>
+																	</td>
+																	<td><p>7</p></td>
+																	<td><p>8</p></td>
+																	<td><p>9</p></td>
+																	<td><p>10</p></td>
+																</tr>
+																<tr>
+																	<td><p>11</p></td>
+																	<td><p>12</p></td>
+																	<td><p>13</p></td>
+																	<td><p>14</p></td>
+																	<td><p>15</p></td>
+																	<td><p>16</p></td>
+																	<td><p>17</p></td>
+																</tr>
+																<tr>
+																	<td><p>18</p></td>
+																	<td><p>19</p></td>
+																	<td><p>20</p></td>
+																	<td><p>21</p></td>
+																	<td><p>22</p></td>
+																	<td><p>23</p></td>
+																	<td><p>24</p></td>
+																</tr>
+																<tr>
+																	<td><p>25</p></td>
+																	<td><p>26</p></td>
+																	<td><p>27</p></td>
+																	<td><p>28</p></td>
+																	<td><p>29</p></td>
+																	<td><p>30</p></td>
+																	<td><p>31</p></td>
+																</tr>
+																<tr>
+																	<td><p class="btn_in">31</p></td>
+																	<td></td>
+																	<td></td>
+																	<td></td>
+																	<td></td>
+																	<td></td>
+																	<td></td>
+																</tr>
+															</table>
+														</div>
+													</div>
+								                </div>
+											</div>
+											<div class="iBox none_line clearfix">
+												<p class="title">年資</p>
+												<input class="right_info" type="text" name="" value="">
+											</div>
+											<p class="btn_back"><a class="popup-link" href="#popup-user-back">返回<br>招募</a></p>
+											<p class="btn_back leave"><a href="#">離職</a></p>
+											<p class="btn_back leave_reason"><a href="#">離職原因</a></p>
+										</div>
+								</div>
+								<div class="rBox clearfix">
+									<div class="top_other_tools clearfix">
+										<p class="the_interviewer_status clearfix">
+											<span class="user img_default">結束招募</span>
+											<a class="edit img_default popup-link" href="#popup-change-status">
+												<span class="tooltip">更改狀態</span>
+											</a>
+										</p>
+										<div class="btn_delete">
+											<a href="#"><span class="tooltip">刪除</span></a>
+										</div>
+										<p class="btn_status_record"><a class="popup-link" href="#"><span class="img_default">狀態紀錄</span></a></p>
+									</div>
+									<div class="embarrassment clearfix">
+										<p class="btn_in"><a class="icon_01" href="#">個人資料</a></p>
+										<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
+										<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p>
+										<p class="btn_none"><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
+										<p><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
+									</div>
+								</div>
+							</div> -->
+
+							<div class="u_infoBox gray_disabled">
+								<div class="top_file_tools">
+									<h5 class="top_title img_default">修改/匯出</h5>
+								</div>
+								<!-- 點了展開+top_open_tools -->
+								<!-- <div class="top_file_tools top_open_tools">
+									<h5 class="top_title img_default">修改/匯出</h5>
+									<div class="download_file clearfix">
+										<a class="pdf" href="#"><p>下載PDF</p></a>
+										<a class="excel" href="#"><p>匯出EXCEL</p></a>
+										<a class="edit" href="#"><p>修改檔案</p></a>
+									</div>
+								</div> -->
+								<h3 class="blue_title">基本資料</h3>
+								<div class="use_fillinBox">
+									<ul class="fill_in">
+										<li class="for_ie_w">
+											<div class="fBox">
+												<div class="both">
+													<p class="title_s">中文姓名</p>
+													<input class="name" type="text" name="" value="王天明" disabled="">
+												</div>
+												<div class="both">
+													<p class="title_s">英文姓名</p>
+													<input type="text" name="" value="Tomorrow" disabled="">
+												</div>
+											</div>
+											<div class="fBox">
+												<div class="both">
+													<p class="title_s">性別</p>
+													<input type="text" name="" value="男" disabled="">
+												</div>
+												<div class="both">
+													<p class="title_s">身分證字號</p>
+													<input type="text" name="" value="A123456789" disabled="">
+												</div>
+											</div>
+											<div class="fBox fBox-3">
+												<div class="both clearfix">
+													<p class="title_s">出生日期</p>
+													<input type="text" name="" value="67/03/03" disabled="">
+													<p class="c_k">24歲</p>
+													<p class="c_k">水瓶座</p>
+												</div>
+												<div class="both">
+													<p class="title_s">血型</p>
+													<input class="" type="text" name="" value="B型" disabled="">
+						                    	</div>
+											</div>
+										</li>
+										<li class="for_ie_w">
+											<div class="fBox">
+												<div class="both">
+													<p class="title_s">身高</p>
+													<input class="w82" type="text" name="" value="175">
+												</div>
+												<div class="both">
+													<p class="title_s">體重</p>
+													<input class="w82" type="text" name="" disabled="">
+												</div>
+												<div class="both">
+													<p class="title_s">國籍籍貫</p>
+													<textarea class="w82"></textarea>
+												</div>
+											</div>
+											<div class="fBox">
+												<div class="both">
+													<p class="title_s">婚姻狀況</p>
+													<input type="" name="" value="已婚" disabled="">
+												</div>
+												<div class="both">
+													<p class="title_s">育有幾名子女</p>
+													<input type="text" name="" disabled="">
+												</div>
+											</div>
+											<div class="fBox fBox-3">
+												<div class="add clearfix">
+													<p class="title_s">目前居住狀況</p>
+													<input class="l_w128" type="" name="" value="與家人同住" disabled="">
+													<input class="bg-gray" type="text" name="" placeholder="" disabled>
+												</div>
+											</div>
+										</li>
+										<li class="for_ie_w2">
+											<div class="fBox fBox-2">
+												<div class="both">
+													<p class="title_s">興趣與嗜好</p>
+													<input class="w100" type="text" name="" placeholder=""  disabled="">
+												</div>
+											</div>
+											<div class="fBox fBox-3">
+												<div class="b01 clearfix">
+													<p class="title_s">役別</p>
+													<input class="l_w128" type="" name="" value="役畢" disabled="">
+						                        </div>
+						                        <div class="b02 clearfix">
+						                        	<p class="title_s">役畢時間/免役理由</p>
+													<textarea class="bg-gray"  disabled=""></textarea>
+												</div>
+											</div>
+										</li>
+										<li class="for_ie_w2">
+											<div class="fBox fBox-3">
+												<div class="b01 clearfix">
+													<p class="title_s">役別</p>
+													<input class="l_w128" type="" name="" value="役畢" disabled="">
+						                        </div>
+						                        <div class="flex6 clearfix">
+						                        	<p class="title_s">役畢時間/免役理由</p>
+													<textarea disabled=""></textarea>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="fBox fBox-w1">
+												<div class="both">
+													<p class="title_s">交通工具（可複選）</p>
+													<ul class="select_item clearfix">
+														<li><input id="option" type="checkbox" name="field" value="option" disabled="" checked="">
+														<label for="option">汽車</label></li>
+
+														<li><input id="option" type="checkbox" name="field" value="option" disabled="">
+														<label for="option">機車</label></li>
+
+														<li><input id="option" type="checkbox" name="field" value="option" disabled="">
+														<label for="option">步行</label></li>
+
+														<li><input id="option" type="checkbox" name="field" value="option" disabled="" checked="">
+														<label for="option">捷運</label></li>
+
+														<li><input id="option" type="checkbox" name="field" value="option" disabled="">
+														<label for="option">公車</label></li>
+
+														<li><input id="option" type="checkbox" name="field" value="option" disabled="">
+														<label for="option">其它</label></li>
+													</ul>
+												</div>
+											</div>
+											<div class="fBox">
+												<div class="both">
+													<p class="title_s">駕駛種類/有效駕照（可複選）</p>
+													<ul class="select_item clearfix">
+														<li>
+															<input id="" type="checkbox" name="field" value="option" disabled="">
+															<label for="option">汽車</label>
+														</li>
+														<li>
+															<input id="option" type="checkbox" name="field" value="option" disabled="">
+															<label for="option">機車</label>
+														</li>
+														<li>
+															<input id="option" type="checkbox" name="field" value="option" disabled="">
+															<label for="option">大客(卡)車</label>
+														</li>
+														<li>
+															<input id="option" type="checkbox" name="field" value="option" disabled="">
+															<label for="option">堆高機</label>
+														</li>
+														<li class="clearfix">
+															<input id="option" type="checkbox" name="field" value="option" disabled="">
+															<label for="option">其它</label><input class="bottom_line" type="text" name="">
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="fBox fBox-w1">
+												<div class="both">
+													<p class="title_s">戶籍地址</p>
+													<textarea class="w100" disabled="" value="台北市瑞光路76巷65號6樓"></textarea>
+												</div>
+											</div>
+											<div class="fBox">
+												<div class="both">
+														<p class="title_s">通訊地址 
+														<input id="option" type="checkbox" name="field" value="option" disabled="" checked="">
+														<label class="c_k" for="option">同戶籍地址</label>
+													</p>
+													<textarea class="w100" disabled="" value="台北市瑞光路76巷65號6樓"></textarea>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="fBox">
+												<div class="both">
+													<p class="title_s">行動電話</p>
+													<input class="w100" type="text" name="" disabled="">
+												</div>
+											</div>
+											<div class="fBox">
+												<div class="both">
+													<p class="title_s">聯絡電話</p>
+													<input class="w100" type="text" name="" disabled="">
+												</div>
+											</div>
+											<div class="fBox fBox-3">
+												<div class="both">
+													<p class="title_s">E-mail</p>
+													<input class="w100" type="text" name="" disabled="">
+						                    	</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<h3 class="blue_title">教育程度</h3>
+								<div class="use_fillinBox">
+									<ul class="fill_in schoolBox">
+										<li>
+											<div class="fBox">
+												<div class="both">
+													<p class="title_s">學位</p>
+													<input type="" name="" value="高中職" disabled="">
+						                    	</div>
+											</div>
+
+											<div class="fBox flex3">
+												<div class="both">
+													<p class="title_s">學校名稱</p>
+													<textarea disabled=""></textarea>
+												</div>
+											</div>
+
+											<div class="fBox flex2">
+												<div class="both">
+													<p class="title_s">科系組別</p>
+													<textarea disabled=""></textarea>
+												</div>
+											</div>
+
+											<div class="fBox flex2 day_dash">
+												<div class="both">
+													<p class="title_s">修業期間</p>
+													<input type="text" name="" disabled="" value="2004/09/01">
+												</div>
+											</div>
+
+											<div class="fBox flex2">
+												<div class="both">
+													<p class="title_s">&nbsp; </p>
+													<input type="text" name="" disabled="" value="2008/06/05">
+												</div>
+											</div>
+
+											<div class="fBox">
+												<div class="both">
+													<p class="title_s">修業狀況</p>
+													<input type="" name="" value="畢業" disabled="">
+						                    	</div>
+											</div>
+										</li>
+										<li>
+											<div class="fBox">
+												<div class="both">
+													<input type="" name="" value="專科" disabled="">
+						                    	</div>
+											</div>
+
+											<div class="fBox flex3">
+												<div class="both">
+													<textarea disabled=""></textarea>
+												</div>
+											</div>
+
+											<div class="fBox flex2">
+												<div class="both">
+													<textarea disabled=""></textarea>
+												</div>
+											</div>
+
+											<div class="fBox flex2 day_dash">
+												<div class="both">
+													<input type="text" name="" disabled="" value="2004/09/01 ">
+												</div>
+											</div>
+
+											<div class="fBox flex2">
+												<div class="both">
+													<input type="text" name="" disabled="" value="2008/06/05">
+												</div>
+											</div>
+
+											<div class="fBox">
+												<div class="both">
+													<input type="" name="" value="畢業" disabled="">
+						                    	</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<h3 class="blue_title">家庭狀況</h3>
+								<div class="use_fillinBox">
+									<ul class="fill_in schoolBox">
+										<li>
+											<div class="fBox">
+												<div class="both">
+													<p class="title_s">稱謂</p>
+													<input type="text" name="" disabled="">
+						                    	</div>
+											</div>
+
+											<div class="fBox">
+												<div class="both">
+													<p class="title_s">年齡</p>
+													<input type="text" name="" disabled="">
+												</div>
+											</div>
+
+											<div class="fBox flex2">
+												<div class="both">
+													<p class="title_s">姓名</p>
+													<input type="text" name="" disabled="">
+												</div>
+											</div>
+
+											<div class="fBox flex3">
+												<div class="both">
+													<p class="title_s">服務機構</p>
+													<textarea disabled=""></textarea>
+												</div>
+											</div>
+
+											<div class="fBox flex3">
+												<div class="both">
+													<p class="title_s">職稱</p>
+													<textarea disabled=""></textarea>
+						                    	</div>
+											</div>
+										</li>
+										<li>
+											<div class="fBox">
+												<div class="both">
+													<input type="text" name="">
+						                    	</div>
+											</div>
+
+											<div class="fBox">
+												<div class="both">
+													<input type="text" name="">
+												</div>
+											</div>
+
+											<div class="fBox flex2">
+												<div class="both">
+													<input type="text" name="">
+												</div>
+											</div>
+
+											<div class="fBox flex3">
+												<div class="both">
+													<textarea disabled=""></textarea>
+												</div>
+											</div>
+
+											<div class="fBox flex3">
+												<div class="both">
+													<textarea disabled=""></textarea>
+						                    	</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<h3 class="blue_title">工作經驗</h3>
+								<div class="use_fillinBox">
+									<ul class="fill_in schoolBox company_experience">
+										<li>
+											<div class="abox">
+												<div class="fBox flex">
+													<div class="both">
+														<p class="title_s c_k">工作 1</p>
+							                    	</div>
+												</div>
+												<div class="fBox flex4">
+													<div class="both">
+														<p class="title_s">公司/機構名稱</p>
+														<textarea disabled="">經濟部工業局全球資訊網--工商登記查詢</textarea>
+							                    	</div>
+												</div>
+
+												<div class="fBox flex2">
+													<div class="both">
+														<p class="title_s">職稱</p>
+														<textarea disabled="">後端工程師</textarea>
+													</div>
+												</div>
+
+												<div class="fBox flex2 day_dash">
+													<div class="both">
+														<p class="title_s">工作期間</p>
+														<input class="icon_calendar" type="text" name="" value="2015/10" disabled="">
+													</div>
+												</div>
+
+												<div class="fBox flex2">
+													<div class="both">
+														<p class="title_s">&nbsp; </p>
+														<input class="icon_calendar" type="text" name="" value="201６/10" disabled="">
+													</div>
+												</div>
+
+												<div class="fBox flex2">
+													<div class="both">
+														<p class="title_s">年資</p>
+														<input type="text" name="" value="1年0月" disabled="">
+							                    	</div>
+												</div>
+												<div class="fBox flex2">
+													<div class="both">
+														<p class="title_s">月薪</p>
+														<input type="text" name="" disabled="">
+							                    	</div>
+												</div>
+												<div class="fBox flex3">
+													<div class="both">
+														<p class="title_s">主管姓名與職稱</p>
+														<input type="text" name="" disabled="">
+							                    	</div>
+												</div>
+											</div>
+											<div class="abox">
+												<div class="fBox flex3">
+													<div class="both">
+														<p class="title_s">離職原因</p>
+														<textarea disabled=""></textarea>
+							                    	</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="abox">
+												<div class="fBox flex">
+													<div class="both">
+														<p class="title_s c_k">工作 2</p>
+							                    	</div>
+												</div>
+												<div class="fBox flex4">
+													<div class="both">
+														<p class="title_s">公司/機構名稱</p>
+														<textarea disabled=""></textarea>
+							                    	</div>
+												</div>
+
+												<div class="fBox flex2">
+													<div class="both">
+														<p class="title_s">職稱</p>
+														<textarea disabled=""></textarea>
+													</div>
+												</div>
+
+												<div class="fBox flex2 day_dash">
+													<div class="both">
+														<p class="title_s">工作期間</p>
+														<input class="icon_calendar" type="text" name="" value="2015/10" disabled="">
+													</div>
+												</div>
+
+												<div class="fBox flex2">
+													<div class="both">
+														<p class="title_s">&nbsp; </p>
+														<input class="icon_calendar" type="text" name="" value="201６/10" disabled="">
+													</div>
+												</div>
+
+												<div class="fBox flex2">
+													<div class="both">
+														<p class="title_s">年資</p>
+														<input type="text" name="" value="1年0月" disabled="">
+							                    	</div>
+												</div>
+												<div class="fBox flex2">
+													<div class="both">
+														<p class="title_s">月薪</p>
+														<input type="text" name="" disabled="">
+							                    	</div>
+												</div>
+												<div class="fBox flex3">
+													<div class="both">
+														<p class="title_s">主管姓名與職稱</p>
+														<input type="text" name="" disabled="">
+							                    	</div>
+												</div>
+											</div>
+											<div class="abox">
+												<div class="fBox flex3">
+													<div class="both">
+														<p class="title_s">離職原因</p>
+														<textarea disabled=""></textarea>
+							                    	</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<div class="referrerTopBox">
+										<div class="top_titleBox">
+											<div class="fBox">
+												<p class="top_title">本公司可否與現在雇主聯絡？</p>
+												<input type="text" name="" value="可以" disabled="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<h3 class="blue_title">專業訓練</h3>
+								<h4 class="tBox_title">外語程度</h4>
+								<div class="use_fillinBox">
+									<div class="infoContent_two clearfix">
+										<ul class="fill_in schoolBox companyBox clearfix">
+												<li>
+													<div class="fBox flex">
+														<div class="both">
+															<p class="title_s">&nbsp; </p>
+															<p class="title_s c_k">語言 1</p>
+								                    	</div>
+													</div>
+													<div class="fBox flex2">
+														<div class="both">
+															<p class="title_s">&nbsp; </p>
+															<input type="text" name="" value="英文" disabled="">
+								                    	</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">聽</p>
+															<input type="text" name="" value="精通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">說</p>
+															<input type="text" name="" value="精通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">讀</p>
+															<input type="text" name="" value="普通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">寫</p>
+															<input type="text" name="" value="精通" disabled="">
+								                    	</div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox flex">
+														<div class="both">
+															<p class="title_s">&nbsp; </p>
+															<p class="title_s c_k">語言 2</p>
+								                    	</div>
+													</div>
+													<div class="fBox flex2">
+														<div class="both">
+															<p class="title_s">&nbsp; </p>	
+															<input type="text" name="" value="日文" disabled="">
+								                    	</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">聽</p>
+															<input type="text" name="" value="精通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">說</p>
+															<input type="text" name="" value="精通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">讀</p>
+															<input type="text" name="" value="普通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<p class="title_s">寫</p>
+															<input type="text" name="" value="精通" disabled="">
+								                    	</div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox flex">
+														<div class="both">
+															<p class="title_s c_k">語言 3</p>
+								                    	</div>
+													</div>
+													<div class="fBox flex2">
+														<div class="both">
+															<input type="text" name="" value="日文" disabled="">
+								                    	</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="精通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="精通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="普通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="精通" disabled="">
+								                    	</div>
+													</div>
+												</li>
+												<li>
+													<div class="fBox flex">
+														<div class="both">
+															<p class="title_s c_k">語言 4</p>
+								                    	</div>
+													</div>
+													<div class="fBox flex2">
+														<div class="both">
+															<input type="text" name="" value="日文" disabled="">
+								                    	</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="精通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="精通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="普通" disabled="">
+														</div>
+													</div>
+													<div class="fBox">
+														<div class="both">
+															<input type="text" name="" value="精通" disabled="">
+								                    	</div>
+													</div>
+												</li>
+										</ul>
+									</div>
+								</div>
+								<h4 class="tBox_title">工作技能</h4>
+								<div class="use_fillinBox">
+									<ul class="fill_in">
+										<li>
+											<div class="fBox">
+												<div class="both">
+													<p class="title_s">工作技能</p>
+													<textarea class="w100_full" value="html5/css3/scss/jquery"></textarea>
+						                    	</div>
+											</div>
+										</li>
+										<li>
+											<div class="fBox">
+												<div class="both">
+													<p class="title_s">擅長電腦工具</p>
+													<textarea class="w100_full" value="PowerPoint、Word"></textarea>
+						                    	</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<h4 class="tBox_title">課程或證照</h4>
+								<div class="use_fillinBox">
+									<ul class="fill_in licenseBox">
+										<li>
+											<div class="fBox">
+												<div class="both">
+													<p class="title_s">&nbsp; </p>
+													<p class="title_s c_k">證照 1</p>
+												</div>
+											</div>
+											<div class="fBox flex4">
+												<div class="both">
+													<p class="title_s">課程或證照名稱</p>
+													<textarea disabled=""></textarea>
+						                    	</div>
+											</div>
+
+											<div class="fBox flex3">
+												<div class="both">
+													<p class="title_s">主辦單位</p>
+													<textarea disabled=""></textarea>
+												</div>
+											</div>
+
+											<div class="fBox flex2">
+												<div class="both">
+													<p class="title_s">時數</p>
+													<input type="text" name="" value="" disabled="">
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="fBox">
+												<div class="both">
+													<p class="title_s c_k">證照 2</p>
+												</div>
+											</div>
+											<div class="fBox flex4">
+												<div class="both">
+													<textarea disabled=""></textarea>
+						                    	</div>
+											</div>
+
+											<div class="fBox flex3">
+												<div class="both">
+													<textarea disabled=""></textarea>
+												</div>
+											</div>
+
+											<div class="fBox flex2">
+												<div class="both">
+													<input type="text" name="" value="" disabled="">
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="fBox">
+												<div class="both">
+													<p class="title_s c_k">證照 3</p>
+												</div>
+											</div>
+											<div class="fBox flex4">
+												<div class="both">
+													<textarea disabled=""></textarea>
+						                    	</div>
+											</div>
+
+											<div class="fBox flex3">
+												<div class="both">
+													<textarea disabled=""></textarea>
+												</div>
+											</div>
+
+											<div class="fBox flex2">
+												<div class="both">
+													<input type="text" name="" value="" disabled="">
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<h3 class="blue_title">其他問題</h3>
+								<div class="use_fillinBox">
+									<ul class="qaBox">
+										<li class="top_titleBox fBox">
+											<p class="top_title"><span>1.有無更改過名字？</span></p>
+											<input class="qa_w qa_w_01" type="text" name="" value="無" disabled="">
+										</li>
+										<li class="top_titleBox fBox">
+											<p class="top_title"><span>2.是否具備原住民身份？</span></p>
+											<input class="qa_w qa_w_02" type="text" name="" value="身心障礙" disabled="">
+										</li>
+										<li class="top_titleBox fBox">
+											<p class="top_title"><span>3.是否曾因任何糾紛經警察機關製作筆錄、民刑事或行政訴訟案仍繫於法院或已受法院判決確定在案者？</span></p>
+											<input class="qa_w qa_w_03" type="text" name="" value="有" disabled="">
+										</li>
+										<li class="top_titleBox fBox">
+											<p class="top_title"><span>　原因</span></p>
+											<textarea class="qa_w qa_w_04" disabled="">車禍</textarea>
+										</li>
+										<li class="top_titleBox fBox many_option">
+											<p class="top_title"><span>4.如何得知本職缺？</span>
+												<span>
+													<input id="option" type="checkbox" name="field" value="option" disabled="">
+													<label for="option">公司網站</label>
+												</span>
+												<span>
+													<input id="option" type="checkbox" name="field" value="option" disabled="">
+													<label for="option">104</label>
+												</span>
+												<span>
+													<input id="option" type="checkbox" name="field" value="option" disabled="">
+													<label for="option">1111</label>
+												</span>
+												<span>
+													<input id="option" type="checkbox" name="field" value="option" checked="" disabled="">
+													<label for="option">徵才活動</label>
+												</span>
+												<span>
+													<input id="option" type="checkbox" name="field" value="option" disabled="">
+													<label for="option">就業服務站</label>
+												</span>
+												<span>
+													<input id="option" type="checkbox" name="field" value="option" checked="" disabled="">
+													<label for="option">員工推薦 林子儀</label>
+												</span>
+												<span>
+													<input id="option" type="checkbox" name="field" value="option" disabled="">
+													<label for="option">其他管道</label>
+												</span>
+											</p>
+										</li>
+									</ul>
+								</div>
+								<h4 class="tBox_title">推薦人</h4>
+								<div class="use_fillinBox">
+									<ul class="fill_in referrerBox">
+										<li>
+											<div class="fBox flex2">
+												<div class="both">
+													<p class="title_s">姓名</p>
+													<input type="text" name="" value="羅文才" disabled="">
+						                    	</div>
+											</div>
+
+											<div class="fBox flex2">
+												<div class="both">
+													<p class="title_s">關係</p>
+													<input type="text" name="" value="直屬長官" disabled="">
+												</div>
+											</div>
+
+											<div class="fBox flex3">
+												<div class="both">
+													<p class="title_s">服務公司/機構</p>
+													<textarea value="創意科技" disabled=""></textarea>
+												</div>
+											</div>
+
+											<div class="fBox flex2">
+												<div class="both">
+													<p class="title_s">職稱</p>
+													<textarea value="資訊部課長" disabled=""></textarea>
+												</div>
+											</div>
+
+											<div class="fBox flex4">
+												<div class="both">
+													<p class="title_s">電話或E-mail</p>
+													<input type="text" name="" value="Koko@gmail.com" disabled="">
+						                    	</div>
+											</div>
+										</li>
+										<li>
+											<div class="fBox flex2">
+												<div class="both">
+													<input type="text" name="" value="羅文才" disabled="">
+						                    	</div>
+											</div>
+
+											<div class="fBox flex2">
+												<div class="both">
+													<input type="text" name="" value="直屬長官" disabled="">
+												</div>
+											</div>
+
+											<div class="fBox flex3">
+												<div class="both">
+													<textarea value="創意科技" disabled=""></textarea>
+												</div>
+											</div>
+
+											<div class="fBox flex2">
+												<div class="both">
+													<textarea value="資訊部課長" disabled=""></textarea>
+												</div>
+											</div>
+
+											<div class="fBox flex4">
+												<div class="both">
+													<input type="text" name="" value="Koko@gmail.com" disabled="">
+						                    	</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+	            </div>
+	        </form>
+	    </div>
+	</body>
+</html>
+
+
+

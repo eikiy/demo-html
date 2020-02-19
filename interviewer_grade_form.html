@@ -68,7 +68,7 @@
 					</div>
 					<div class="rBox clearfix">
 						<div class="btn_other clearfix">
-							<p><a class="icon_01" href="#">其他資料</a></p>
+							<p><a class="icon_01 popup-link" href="#popup-other-info">其他資料</a></p>
 						</div>
 					</div>
 				</div>
@@ -692,6 +692,20 @@
 		            	<a class="bg_gary" href="#">繼續編輯</a>
 		                <a class="bg_red" href="user_info_done.html">確認送出</a>
 		            </p>
+		        </div>
+		    </div>
+		    <!-- popup 其他資料-->
+		    <div id="popup-other-info" class="white-popup mfp-hide preview-iframe" style="max-width: 958px;">
+		        <div class="setBox">
+		            <!-- iframe_wrapper 的高度 = 減掉上面 top_title + 下面 btn 的高度，約150px --> 
+		            <!-- iframe_wrapper 的高度有點尷尬，因為塞 iframe 一定要給 height，-->
+		            <!-- 但 iframe 不吃 min-height 也不吃 max-height，會沒效果！ -->
+		            <!-- 所以...在螢幕高的狀況下，有可能問卷內容過少，並小於螢幕高度，下方內容就會顯示空白背景 -->
+		            <!-- 另外想到的方式就是，幫我判斷 window height > iframe_wrapper + 150px 的話，就直接給內容高度 + 150px);-->
+		            <!-- 若 window height > iframe_wrapper + 150px 的話，直接給 height:calc(90vh - 150px); -->
+		            <div class="iframe_wrapper" style="height:calc(90vh - 150px);">
+		            	<iframe class="screen" width="100%" height="100%" src="btn_other_user_info.html"></iframe>
+		            </div>
 		        </div>
 		    </div>
 		</main>
