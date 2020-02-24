@@ -3331,7 +3331,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .candidates_management .user_data .btn_status_record a .tooltip::after{top: inherit; bottom: -5px; border-width: 6px 4px 0 4px; border-color: #4a4a4a transparent transparent transparent;}
 .candidates_management .user_data .btn_status_record a span.tooltip { color: #fff; padding: 3px 5px; }
 
-.print_type_box{ position: absolute; box-shadow: 0 3px 3px rgba(0,0,0,.4); text-align:left; top: 35px; right: 33px; z-index: 1; width: 175px; background-color: #F2F8FA; border-radius: 5px; padding:10px 5px; }
+.print_type_box{ position: absolute; box-shadow: 0 3px 3px rgba(0,0,0,.4); text-align:left; top: 35px; right: 33px; z-index: 2; width: 175px; background-color: #F2F8FA; border-radius: 5px; padding:10px 5px; }
 .print_type_box span{ font-size: 14px; width:145px; margin: 0 auto; display: block; padding: 5px 0; position: relative;}
 .print_type_box span::after{ content: ""; position: absolute; top: -22px; right: 0; width: 0;height: 0;border-style: solid;border-width: 0 8px 14px 8px;border-color: transparent transparent #f2f8fa transparent;line-height: 0px;_border-color: #000000 #000000 #f2f8fa #000000;_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
 .print_type_box .print_list{ width:145px; margin: 0 auto;}
@@ -3746,7 +3746,7 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .interviewee_info .review_report .fill_rating_content .score_box ul.score_star_list li span{ width: 25px; height: 24px; text-align: center; display: block; background-image: url(../images/svg/score_star.svg);}
 .interviewee_info .review_report .fill_rating_content .score_box ul.score_star_list li .selected{ background-image: url(../images/svg/score_star_yello.svg);}
 
-.interviewee_info .review_report .fill_rating_content .score_box .complete_description{ cursor: pointer; position: absolute; top: 8px; right: 30px; width: 320px; border: 1px solid #E5AF57; background-color: #fff; z-index: 0; border-radius: 5px; padding:4px 8px 4px 8px; }
+.interviewee_info .review_report .fill_rating_content .score_box .complete_description{ cursor: pointer; position: absolute; top: 8px; right: 30px; z-index: 1; width: 320px; border: 1px solid #E5AF57; background-color: #fff; z-index: 0; border-radius: 5px; padding:4px 8px 4px 8px; }
 .interviewee_info .review_report .fill_rating_content .score_box .complete_description p{ position: relative; width: 100%; padding-right: 25px;}
 .interviewee_info .review_report .fill_rating_content .score_box .complete_description p::before{ content: ""; top: 9px; right: 5px; position: absolute; width: 0;height: 0;border-style: solid;border-width: 0 6px 6px 6px; border-color: transparent transparent #e5af57 transparent; line-height: 0px;_border-color: #e5af57 #000000 #000000 #000000;_filter: progid: DXImageTransform.Microsoft.Chroma(color='#000000');}
 .interviewee_info .review_report .fill_rating_content .score_box .complete_description p.hide{ display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 24px; height: 24px * 1; overflow:hidden;}
@@ -3766,7 +3766,7 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 
 .interviewee_info .review_report .view_blur{ overflow: hidden; position: relative; }
 .interviewee_info .review_report .view_blur p.report_notyet{ width: 100%; position: absolute; top:calc(50% - 7px); text-align: center; color: #C87D86; z-index: 2; }
-.interviewee_info .review_report .view_blur .sub_title, .interviewee_info .review_report .view_blur ul.other_item {-webkit-filter: blur(0.4rem);-moz-filter: blur(0.4rem); -o-filter: blur(0.4rem);-ms-filter: blur(0.4rem);filter: blur(0.4rem);}
+.interviewee_info .review_report .view_blur .sub_title, .interviewee_info .review_report .view_blur ul.other_item, .interviewee_info .review_report .fill_rating_content .view_blur .the_item {-webkit-filter: blur(0.4rem);-moz-filter: blur(0.4rem); -o-filter: blur(0.4rem);-ms-filter: blur(0.4rem);filter: blur(0.4rem);}
 
 /*lightbox 紙本附件*/
 .setBox ul.annex_download{ width: 100%; padding-left: 38px; }
@@ -3830,17 +3830,18 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .setBox .interview_report_round .top_box .top_tools .blank_comment a::before{ position: absolute; content: ""; width: 13px; height: 15px; top: calc(50% - 7.5px); left: calc(50% - 6.5px); background-image: url(../images/svg/blank_comment.svg);}
 
 .setBox .interview_report_round .a_round{ background-color:#F2F8FA; width: 365px; border: 1.5px solid #81B6C8; margin: 8px auto; }
-.setBox .interview_report_round .a_round .left_nb{ float: left; border-right: 1px solid #81B6C8; line-height: 62px; min-width: 68px; text-align: center;}
-.setBox .interview_report_round .a_round .right_info{ float: left; width: calc(100% - 68px); }
+.setBox .interview_report_round .a_round .left_nb{ float: left;line-height: 62px; min-width: 68px; text-align: center;}
+.setBox .interview_report_round .a_round .right_info{ float: left; width: calc(100% - 68px); position: relative; }
+.setBox .interview_report_round .a_round .right_info::after{ content: ""; position: absolute; width: 1px; height: 100%; display: block; left: 0; top: 0; border-left: 1px solid #81B6C8; }
 .setBox .interview_report_round .a_round .right_info .day{ width: 100%; border-bottom: 1px solid #81B6C8; position: relative; }
 .setBox .interview_report_round .a_round .right_info .day input{ padding: 0 5px; line-height: 30px; height: 30px; width: 100%; background-color: transparent; }
 .setBox .interview_report_round .a_round .right_info .day::after{ background-image: url(../images/icon_time_select_01.png); cursor: pointer; z-index: 4; content: ""; top: 6px; right: 6px; position: absolute; width: 25px; height: 19px; display: block;}
 
-.setBox .interview_report_round .a_round .right_info p{ width: 100%; height: 30px; line-height: 30px; padding: 0 10px;}
+.setBox .interview_report_round .a_round .right_info p{ width: 100%; min-height: 30px; line-height: 30px; padding: 0 10px;}
 .setBox .interview_report_round .a_round .right_info p.day::after{ display: none; }
 .setBox .interview_report_round .a_round .right_info p.report_status{ position: relative; }
-.setBox .interview_report_round .a_round .right_info p.report_status span{ position: relative; padding-right: 20px;}
-.setBox .interview_report_round .a_round .right_info p.report_status span::after{ content:""; position: absolute; top: 0; right: 0; width: 15px; height: 15px; display: block; border-radius: 50%; background-image: url(../images/svg/report_interviewer_type.svg); }
+.setBox .interview_report_round .a_round .right_info p.report_status span{ position: relative; padding-right: 20px; display: inline-grid;}
+.setBox .interview_report_round .a_round .right_info p.report_status span::after{ content:""; position: absolute; top: calc(50% - 8.5px); right: 0; width: 15px; height: 15px; display: block; border-radius: 50%; background-image: url(../images/svg/report_interviewer_type.svg); }
 .setBox .interview_report_round .a_round .right_info p.report_status span.status_done::after{ background-image: url(../images/svg/report_type_done.svg);}
 .setBox .interview_report_round .a_round .right_info p.report_status span.status_error::after{ background-image:url(../images/svg/report_type_error.svg);}
 .setBox .interview_report_round .a_round .right_info p.report_status span.status_questionmark::after{ background-image:url(../images/svg/report_type_questionmark.svg);}
