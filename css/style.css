@@ -3749,7 +3749,7 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .interviewee_info .review_report .fill_rating_content .score_box .complete_description{ cursor: pointer; position: absolute; top: 8px; right: 30px; z-index: 1; width: 320px; border: 1px solid #E5AF57; background-color: #fff; z-index: 0; border-radius: 5px; padding:4px 8px 4px 8px; }
 .interviewee_info .review_report .fill_rating_content .score_box .complete_description p{ position: relative; width: 100%; padding-right: 25px;}
 .interviewee_info .review_report .fill_rating_content .score_box .complete_description p::before{ content: ""; top: 9px; right: 5px; position: absolute; width: 0;height: 0;border-style: solid;border-width: 0 6px 6px 6px; border-color: transparent transparent #e5af57 transparent; line-height: 0px;_border-color: #e5af57 #000000 #000000 #000000;_filter: progid: DXImageTransform.Microsoft.Chroma(color='#000000');}
-.interviewee_info .review_report .fill_rating_content .score_box .complete_description p.hide{ display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 24px; height: 24px * 1; overflow:hidden;}
+.interviewee_info .review_report .fill_rating_content .score_box .complete_description p.hide{ display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 24px; height: 24px; overflow:hidden;}
 .interviewee_info .review_report .fill_rating_content .score_box .complete_description p.hide::before{ border-width: 6px 6px 0 6px; border-color: #e5af57 transparent transparent transparent;}
 
 .interviewee_info .review_report .fill_rating_content p.p_info{ padding: 10px 15px;}
