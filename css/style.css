@@ -2813,7 +2813,15 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box .print_survey .interviewee_info .add_top_status .top_ivBox{ border: 3px solid #81B6C8; border-radius: 5px 0 5px 5px;}
 .print_box .print_survey .interviewee_info .add_top_status .top_ivBox .right_status{ float: left; border-left: 3px solid #81B6C8; width: 175px; height: 157px; position: relative;}
 .print_box .print_survey .interviewee_info .add_top_status .top_ivBox .right_status p{ font-size: 16px; color: #558C9E; text-align: center; padding-top: 120px; position: relative;}
-.print_box .print_survey .interviewee_info .add_top_status .top_ivBox .right_status p.report_status_accept::after{ content: ""; position: absolute; top: 32px; left:calc(50% - 32.5px); width: 65px; height: 65px; display: block; background-image: url(../images/svg/report_type_done.svg); }
+.print_box .print_survey .interviewee_info .add_top_status .top_ivBox .right_status p.status_icon{ padding-top: 112px; font-size: 18px;}
+.print_box .print_survey .interviewee_info .add_top_status .top_ivBox .right_status p.status_icon::after{ content: ""; position: absolute; top: 32px; left:calc(50% - 32.5px); width: 65px; height: 65px; display: block;}
+.print_box .print_survey .interviewee_info .add_top_status .top_ivBox .right_status p.report_status_accept{ color: #84BE98; }
+.print_box .print_survey .interviewee_info .add_top_status .top_ivBox .right_status p.report_status_accept::after{ background-image: url(../images/svg/report_type_done.svg); }
+.print_box .print_survey .interviewee_info .add_top_status .top_ivBox .right_status p.report_status_retest{ color: #E79F2B; }
+.print_box .print_survey .interviewee_info .add_top_status .top_ivBox .right_status p.report_status_retest::after{ background-image: url(../images/svg/report_type_questionmark.svg); }
+.print_box .print_survey .interviewee_info .add_top_status .top_ivBox .right_status p.report_status_not_retest{ color: #C87D86; }
+.print_box .print_survey .interviewee_info .add_top_status .top_ivBox .right_status p.report_status_not_retest::after{ background-image: url(../images/svg/report_type_error.svg); }
+
 .print_box .print_survey .interviewee_info .add_top_status .top_ivBox .right_status .img_qrcode{ position: absolute; width: 110px; height: 110px; top: 12px; left: calc(50% - 55px);}
 .print_box .print_survey .interviewee_info .add_top_status .top_interviewer_info .rightInfoBox .user_name p:last-child{ border: none; }
 
