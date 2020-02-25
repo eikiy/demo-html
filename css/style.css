@@ -2911,7 +2911,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box .print_survey_done .interviewee_info .add_top_status .both_title_star{ width: 100%; }
 .print_box .print_survey_done .interviewee_info .add_top_status .both_title_star h4.sub_title{ float: left; min-width: 40px; }
 .print_box .print_survey_done .interviewee_info .add_top_status .both_title_star ul.score_star_list{ float: left; padding: 7px 0 0 10px;}
-.print_box .print_survey_done .interviewee_info .add_top_status ul.check_list li::after{ content: ""; position: absolute; top: -4px; left: 5px; background-image: url(../images/svg/print_check_tick.svg); width: 20px; height: 20px; display: block; }
+.print_box .print_survey_done .interviewee_info .add_top_status ul.check_list li.choosed::after{ content: ""; position: absolute; top: -4px; left: 5px; background-image: url(../images/svg/print_check_tick.svg); width: 20px; height: 19px; display: block; }
 .print_box .print_survey_done ul.fill_in_result li p.title_s{ font-size: 15px; }
 
 .rating_list_content ul.finish_result{ text-align: center; padding:20px 15px; }
