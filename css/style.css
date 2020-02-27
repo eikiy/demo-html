@@ -3688,7 +3688,7 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .fillin_interviewe_data .work_complexity h5{ float: left; line-height: 29px; }
 .fillin_interviewe_data .work_complexity p.ss{ float: left; color: #9B9B9B; padding-left: 15px; line-height: 29px; font-size: 11px;}
 .fillin_interviewe_data .work_complexity .grade{ float: right;}
-.fillin_interviewe_data .work_complexity .grade p{ font-size: 18px; text-align: right; padding:}
+.fillin_interviewe_data .work_complexity .grade p{ font-size: 18px; text-align: right; }
 .fillin_interviewe_data .work_complexity .grade p a{ display: inline-block; text-align: center; font-weight: bold; color: #B9BABA; line-height: 25px; width:27px; height: 27px;border:2px solid #B9BABA; border-radius: 4px;}
 .fillin_interviewe_data .work_complexity .grade p a.btn_in{ color: #81B6C8; border-color: #81B6C8; }
 
