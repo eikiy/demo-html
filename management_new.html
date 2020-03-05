@@ -500,6 +500,14 @@
 									<span>奧蘭多布魯</span>
 									<a class="delete" href="#"></a>
 								</p>
+								<p class="phone_number clearfix">
+									<span>陳怡文</span>
+									<a class="delete" href="#"></a>
+								</p>
+								<p class="phone_number clearfix">
+									<span>潔西卡艾芭</span>
+									<a class="delete" href="#"></a>
+								</p>
 								<!-- input 需要計算剩下的寬度 -->
 								<input class="fillin_phone" type="text" placeholder="" style="width: 180px;" value="">
 								<div class="add">
@@ -513,15 +521,19 @@
 							<label for="">第二輪</label>
 							<div class="f_input clearfix">
 								<p class="phone_number clearfix">
-									<span>馬克祖克伯</span>
+									<span>馬克。祖克伯</span>
 									<a class="delete" href="#"></a>
 								</p>
 								<p class="phone_number clearfix">
 									<span>劉豪</span>
 									<a class="delete" href="#"></a>
 								</p>
+								<p class="phone_number clearfix">
+									<span>克里斯</span>
+									<a class="delete" href="#"></a>
+								</p>
 								<!-- input 需要計算剩下的寬度 -->
-								<input class="fillin_phone" type="text" placeholder="" style="width: 180px;" value="">
+								<input class="fillin_phone" type="text" placeholder="" style="width: 80px;" value="">
 								<div class="add">
 									<a class="img_default"></a>
 								</div>
@@ -790,23 +802,71 @@
 						</div>
 						<div class="test_report new_report">
 							<h3 class="test_report_title">職缺資訊</h3>
+							<ul class="test_report_sub_department clearfix">
+								<li>
+									<p>職缺名稱：<span>軟體工程師</span></p>
+								</li>
+								<li>
+									<p>職缺部門：<span>資訊部</span></p>
+								</li>
+								<li class="supervisor">
+									<p>直屬主管：<span>林怡文</span></p>
+								</li>
+								<li class="day">
+									<p>建立時間：<span>2019/07/02</span></p>
+								</li>
+							</ul>
 							<div class="top_job_information clearfix">
+								<div class="top_tools">
+									<div class="btn upload">
+										<a class="img_default" href="#"></a>
+									</div>
+								</div>
 								<div class="jobInfo">
 									<div class="iBox clearfix">
-										<p class="title">職缺名稱：</p>
-										<p class="right_info">有可能title也會很長長長的軟體工程師</p>
+										<p class="title">面試官設定：</p>
+										<p class="right_info">
+											第一輪 | 王小華、劉開心、柯政華<br>
+											第二輪 | 戴曉微
+										</p>
 									</div>
 									<div class="iBox clearfix">
-										<p class="title">職缺部門：</p>
-										<p class="right_info">資訊部</p>
+										<p class="title">工作職能：</p>
+										<div class="right_info">
+											<ul class="job_duty_list clearfix">
+							                	<li>
+							                		<p><span>1</span>有條不紊</p>
+							                	</li>
+							                	<li>
+							                		<p><span>2</span>關係建立</p>
+							                	</li>
+							                	<li>
+							                		<p><span>3</span>指揮命令</p>
+							                	</li>
+							                	<li>
+							                		<p><span>4</span>組織忠誠</p>
+							                	</li>
+							                	<li>
+							                		<p><span>5</span>團隊合作</p>
+							                	</li>
+							                </ul>
+										</div>
 									</div>
 									<div class="iBox clearfix">
-										<p class="title">直屬主管：</p>
-										<p class="right_info">Thomas Stanley Holland</p>
-									</div>
-									<div class="iBox clearfix">
-										<p class="title">建立時間：</p>
-										<p class="right_info">2019/07/02</p>
+										<p class="title">專業技能：</p>
+										<div class="right_info">
+											<ul class="job_duty_list clearfix">
+							                	<li>
+							                		<p>AutoCAD</p>
+							                	</li>
+							                	<li>
+							                		<p>CSS</p>
+							                	</li>
+							                	<li>
+							                		<p>HTML</p>
+							                	</li>
+							                </ul>
+										</div>
 									</div>
 								</div>
 								<div class="job_typebox clearfix">
@@ -818,9 +878,9 @@
 										<p>應徵人數</p>
 										<p>9</p>
 									</div>
-									<div class="checkin">
+									<div class="checkin_green">
 										<p class="top">已報到</p>
-										<p>1</p>
+										<p>3</p>
 									</div>
 									<div>
 										<p>進行天數</p>
@@ -831,10 +891,6 @@
 										<p class="the_result">缺1位</p>
 									</div>
 								</div>
-								<div class="download_file clearfix">
-									<a class="excel" href="#"><p>匯出EXCEL</p></a>
-									<a class="pdf" href="#"><p>下載PDF</p></a>
-								</div>
 							</div>
 
 							<div class="job_leaderboard_container">
@@ -842,16 +898,16 @@
 								<!-- choose_one, choose_two, choose_three, choose_four, choose_five, choose_six, choose_seven -->
 								<!-- 除了li.top_title 外的 li 新增class name: crosswise_list，因為一直吃到top_title...so...>< -->
 								<ul class="leaderboard_data choose_two">
-									<li class="top_add">
+									<!-- <li class="top_add">
 										<p class="add_new_btn"><a class="add popup-link" href="#popup-nterviewee"><span>新增面試人員</span></a></p>
-									</li>
+									</li> -->
 									<li class="top_title clearfix">
 										<div class="abox select_title">
 											<p>請選擇需排序項目</p>
 										</div>
 										<div class="border_line clearfix border_c_dblue">
 											<div class="abox w_a">
-												<p>整體符合度</p>
+												<p>面試官結果</p>
 											</div>
 										</div>
 										<div class="border_line clearfix">
@@ -899,7 +955,7 @@
 										</div>
 										<a class="icon_status icon_processing" href="#">
 											<p class="show_text"><span class="edit">招募<br>狀態</span></p>
-											<div class="tooltip">等待錄取結果</div>
+											<div class="tooltip">流程<br>進行中</div>
 										</a>
 										<a class="the_border" href="#">
 											<div class="abox the_user clearfix">
@@ -915,8 +971,14 @@
 													</div>
 												</div>
 											</div>
-											<div class="abox w_a round round_green">
-												<p class="digital">79.5</p>
+											<div class="abox w_a report_status_list clearfix">
+												<p class="report_status status_done img_default">3
+													<span class="tooltip tip_on" style="width: 160px;">劉明明、柯經理、蕭曉明</span>
+													<!-- 內容是可多可少的名字...這裡要偵測寬度去寫 width，不然會被外圍 p 的寬度限制住 -->
+												</p>
+												<p class="report_status status_error img_default">2</p>
+												<p class="report_status status_questionmark img_default">1</p>
+												<p class="report_status img_default">0</p>
 											</div>
 											<div class="abox round round_green">
 												<p class="digital">78.6</p>
@@ -967,8 +1029,17 @@
 													</div>
 												</div>
 											</div>
-											<div class="abox w_a">
-												<p class="digital">77.6</p>
+											<div class="abox w_a report_status_list clearfix">
+												<p class="report_status status_done img_default">3</p>
+												<p class="report_status status_error img_default">2
+													<span class="tooltip tip_on" style="width: 105px;">劉明明、柯經理</span>
+													<!-- tip_on -->
+													<!-- 內容是可多可少的名字...這裡要偵測寬度去寫 width，不然會被外圍 p 的寬度限制住 -->
+												</p>
+												<p class="report_status status_questionmark img_default">6
+													<span class="tooltip" style="width: 370px;">劉明明、柯經理、潔西卡艾芭、奧蘭多布魯、陳怡文、克里斯</span>
+												</p>
+												<p class="report_status img_default">5</p>
 											</div>
 											<div class="abox">
 												<p class="digital">62</p>
@@ -1000,9 +1071,9 @@
 										<div class="abox first_nb">
 											<p>3</p>
 										</div>
-										<a class="icon_status icon_waiting_registration" href="#">
+										<a class="icon_status icon_confirm_registration" href="#">
 											<p class="show_text"><span>招募<br>狀態</span></p>
-											<div class="tooltip">等待報到</div>
+											<div class="tooltip">已錄取<br>確認意願</div>
 										</a>
 										<a class="the_border" href="#">
 											<div class="abox the_user clearfix">
@@ -1019,8 +1090,13 @@
 													</div>
 												</div>
 											</div>
-											<div class="abox w_a">
-												<p class="digital">64.6</p>
+											<div class="abox w_a report_status_list clearfix">
+												<p class="report_status status_done img_default">3</p>
+												<p class="report_status status_error img_default">2</p>
+												<p class="report_status status_questionmark img_default">1</p>
+												<p class="report_status img_default">0
+													<span class="tooltip" style="width: 50px;">劉明...</span>
+												</p>
 											</div>
 											<div class="abox">
 												<p class="digital">54.8</p>
@@ -1049,12 +1125,13 @@
 										</a>
 									</li>
 									
-									<li class="crosswise_list clearfix">
+									<li class="crosswise_list status_waiting clearfix">
 										<div class="abox first_nb">
 											<p>4</p>
 										</div>
-										<a class="icon_status icon_processing" href="#">
+										<a class="icon_status icon_waiting_registration" href="#">
 											<p class="show_text"><span>招募<br>狀態</span></p>
+											<div class="tooltip">已錄取<br>等待報到</div>
 										</a>
 										<a class="the_border" href="#">
 											<div class="abox the_user clearfix">
@@ -1070,8 +1147,11 @@
 												</div>
 											</div>
 											</div>
-											<div class="abox w_a">
-												<p class="digital">79.5</p>
+											<div class="abox w_a report_status_list clearfix">
+												<p class="report_status status_done img_default">3</p>
+												<p class="report_status status_error img_default">2</p>
+												<p class="report_status status_questionmark img_default">1</p>
+												<p class="report_status img_default">0</p>
 											</div>
 											<div class="abox">
 												<p class="digital">78.6</p>
@@ -1103,10 +1183,10 @@
 										<div class="abox first_nb">
 											<p>5</p>
 										</div>
-										<div class="icon_status icon_reported">
+										<a class="icon_status icon_reported">
 											<p class="show_text"><span>招募<br>狀態</span></p>
-											<div class="tooltip">已錄取，報到成功</div>
-										</div>
+											<div class="tooltip">確認報到</div>
+										</a>
 										<a class="the_border" href="#">
 											<div class="abox the_user clearfix">
 												<div class="user_box clearfix">
@@ -1121,8 +1201,11 @@
 													</div>
 												</div>
 											</div>
-											<div class="abox w_a">
-												<p class="digital">–</p>
+											<div class="abox w_a report_status_list clearfix">
+												<p class="report_status status_done img_default">3</p>
+												<p class="report_status status_error img_default">2</p>
+												<p class="report_status status_questionmark img_default">1</p>
+												<p class="report_status img_default">0</p>
 											</div>
 											<div class="abox">
 												<p class="digital">50.4</p>
@@ -1171,15 +1254,18 @@
 													</div>
 												</div>
 											</div>
-											<div class="abox w_a">
-												<p class="digital">–</p>
+											<div class="abox w_a report_status_list clearfix">
+												<p class="report_status status_done img_default">3</p>
+												<p class="report_status status_error img_default">2</p>
+												<p class="report_status status_questionmark img_default">1</p>
+												<p class="report_status img_default">0</p>
 											</div>
 											<div class="abox icon_warning">
 												<!-- 因為 hover 整塊的 線框層級，所以有要顯示icon_warning icon時，p.digital 裡面需塞 span 來讓他被hover顯示時tooltip? -->
 												<p class="digital"><span></span></p>
 												<div class="tooltip">尚有面試官未完成評論</div>
 											</div>
-											<div class="abox icon_warning">
+											<div class="abox icon_lock">
 												<p class="digital"></p>
 											</div>
 											<div class="abox">
@@ -1211,21 +1297,23 @@
 										</a>
 										<a class="the_border" href="#">
 											<div class="abox the_user clearfix">
-											
-											<div class="user_box clearfix">
-												<div class="user_photo">
-												</div>
-												<div class="user_info">
-													<p>劉小銘</p>
-													<p class="sub_info">
-														<span class="gender">男</span>
-														<span class="age">28</span>
-													</p>
+												<div class="user_box clearfix">
+													<div class="user_photo">
+													</div>
+													<div class="user_info">
+														<p>劉小銘</p>
+														<p class="sub_info">
+															<span class="gender">男</span>
+															<span class="age">28</span>
+														</p>
+													</div>
 												</div>
 											</div>
-											</div>
-											<div class="abox w_a">
-												<p class="digital">–</p>
+											<div class="abox w_a report_status_list clearfix">
+												<p class="report_status status_done img_default">3</p>
+												<p class="report_status status_error img_default">2</p>
+												<p class="report_status status_questionmark img_default">1</p>
+												<p class="report_status img_default">0</p>
 											</div>
 											<div class="abox">
 												<p class="digital">–</p>
@@ -1258,7 +1346,7 @@
 										</div>
 										<a class="icon_status icon_reject" href="#">
 											<p class="show_text"><span>招募<br>狀態</span></p>
-											<div class="tooltip">未錄取</div>
+											<div class="tooltip">取消</div>
 										</a>
 										<a class="the_border" href="#">
 											<div class="abox the_user clearfix">
@@ -1274,8 +1362,11 @@
 													</div>
 												</div>
 											</div>
-											<div class="abox w_a">
-												<p class="digital">–</p>
+											<div class="abox w_a report_status_list clearfix">
+												<p class="report_status status_done img_default">3</p>
+												<p class="report_status status_error img_default">2</p>
+												<p class="report_status status_questionmark img_default">1</p>
+												<p class="report_status img_default">0</p>
 											</div>
 											<div class="abox">
 												<p class="digital">78.6</p>
@@ -1308,7 +1399,7 @@
 										</div>
 										<a class="icon_status icon_closed" href="#">
 											<p class="show_text"><span>招募<br>狀態</span></p>
-											<div class="tooltip">結案</div>
+											<div class="tooltip">未錄取</div>
 										</a>
 										<a class="the_border" href="#">
 											<div class="abox the_user clearfix">
@@ -1324,8 +1415,11 @@
 													</div>
 												</div>
 											</div>
-											<div class="abox w_a">
-												<p class="digital">79.5</p>
+											<div class="abox w_a report_status_list clearfix">
+												<p class="report_status status_done img_default">3</p>
+												<p class="report_status status_error img_default">2</p>
+												<p class="report_status status_questionmark img_default">1</p>
+												<p class="report_status img_default">0</p>
 											</div>
 											<div class="abox">
 												<p class="digital">–</p>
@@ -1358,6 +1452,7 @@
 									<li><p class="round round_green">百分比78以上</p></li>
 									<li><p class="round round_red">百分比40以下</p></li>
 									<li><p class="icon_warning">尚有面試官未完成評論</p></li>
+									<li><p class="icon_lock">報告尚未解鎖</p></li>
 								</ul>
 							</div>
 
@@ -1373,7 +1468,7 @@
 										</div>
 										<div class="border_line clearfix border_c_dblue">
 											<div class="abox w_a">
-												<p>整體符合度</p>
+												<p>面試官結果</p>
 											</div>
 										</div>
 										<div class="border_line clearfix">
@@ -1784,7 +1879,7 @@
 										</div>
 										<div class="icon_status icon_reported">
 											<p class="show_text"><span>招募<br>狀態</span></p>
-											<div class="tooltip">已錄取，報到成功</div>
+											<div class="tooltip">已錄取，確認報到</div>
 										</div>
 										<a class="the_border" href="#">
 											<div class="abox the_user clearfix">
@@ -1857,7 +1952,7 @@
 												<p class="digital"></p>
 												<div class="tooltip">尚有面試官未完成評論</div>
 											</div>
-											<div class="abox icon_warning">
+											<div class="abox icon_lock">
 												<p class="digital"></p>
 											</div>
 											<div class="abox">
@@ -2077,24 +2172,82 @@
 							</p>
 						</div>
 						<div class="test_report new_report managementBox">
-							<h3 class="test_report_title">職缺資訊</h3>
+							<h3 class="test_report_title">職缺資訊<a class="go_edit" href="#"></a></h3>
+							<ul class="test_report_sub_department clearfix">
+								<li>
+									<p>職缺名稱：<span>軟體工程師</span></p>
+								</li>
+								<li>
+									<p>職缺部門：<span>資訊部</span></p>
+								</li>
+								<li class="supervisor">
+									<p>直屬主管：<span>林怡文</span></p>
+								</li>
+								<li class="day">
+									<p>建立時間：<span>2019/07/02</span></p>
+								</li>
+							</ul>
 							<div class="top_job_information clearfix">
 								<div class="jobInfo">
 									<div class="iBox clearfix">
-										<p class="title">職缺名稱：</p>
-										<p class="right_info">有可能title也會很長長長的軟體工程師</p>
+										<p class="title">面試官設定：</p>
+										<p class="right_info">
+											第一輪 | 王小華、劉開心、柯政華<br>
+											第二輪 | 戴曉微
+										</p>
 									</div>
 									<div class="iBox clearfix">
-										<p class="title">職缺部門：</p>
-										<p class="right_info">資訊部</p>
+										<p class="title">工作職能：</p>
+										<div class="right_info">
+											<ul class="job_duty_list clearfix">
+							                	<li>
+							                		<p><span>1</span>有條不紊</p>
+							                	</li>
+							                	<li>
+							                		<p><span>2</span>關係建立</p>
+							                	</li>
+							                	<li>
+							                		<p><span>3</span>指揮命令</p>
+							                	</li>
+							                	<li>
+							                		<p><span>4</span>組織忠誠</p>
+							                	</li>
+							                	<li>
+							                		<p><span>5</span>團隊合作</p>
+							                	</li>
+							                </ul>
+										</div>
 									</div>
 									<div class="iBox clearfix">
-										<p class="title">直屬主管：</p>
-										<p class="right_info">Thomas Stanley Holland</p>
-									</div>
-									<div class="iBox clearfix">
-										<p class="title">建立時間：</p>
-										<p class="right_info font_s">2019/02/03 建立 - 2019/05/30截止</p>
+										<p class="title">專業技能：</p>
+										<div class="right_info">
+											<ul class="job_duty_list clearfix">
+							                	<li>
+							                		<p>AutoCAD</p>
+							                	</li>
+							                	<li>
+							                		<p>CSS</p>
+							                	</li>
+							                	<li>
+							                		<p>HTML</p>
+							                	</li>
+							                	<li>
+							                		<p>javascript</p>
+							                	</li>
+							                	<li>
+							                		<p>adobe premiere</p>
+							                	</li><!-- 
+							                	<li>
+							                		<p>adobe animate</p>
+							                	</li>
+							                	<li>
+							                		<p>adobe illustrator</p>
+							                	</li>
+							                	<li>
+							                		<p>視覺設計相關知識</p>
+							                	</li> -->
+							                </ul>
+										</div>
 									</div>
 								</div>
 								<div class="job_typebox clearfix">
@@ -2118,10 +2271,6 @@
 										<p>招募狀態</p>
 										<p class="the_result">缺1位</p>
 									</div>
-								</div>
-								<div class="download_file clearfix">
-									<a class="excel" href="#"><p>匯出EXCEL</p></a>
-									<a class="pdf" href="#"><p>下載PDF</p></a>
 								</div>
 							</div>
 							<div class="job_leaderboard_container candidates_management">
@@ -2213,69 +2362,72 @@
 														</a>
 													</li>
 												</ul>
+												<div class="btn_status_record">
+													<div class="for_position">
+														<p>
+															<a class="print popup-link img_default" href="#">
+																<span class="tooltip">列印</span>
+															</a>
+															<div class="print_type_box">
+																<span>請選擇要列印項目</span>
+																<div class="print_list">
+																	<div class="p_title">
+																		<input id="option" type="checkbox" name="field" value="個人履歷">
+																		<label for="option">個人履歷</label>
+																	</div>
+																	<div class="p_title line_dashed">
+																		<input id="option" type="checkbox" name="field" value="個人應徵問卷">
+																		<label for="option">個人應徵問卷</label>
+																	</div>
+																	<div class="p_title">
+																		<input id="option" type="checkbox" name="field" value="核心測驗報告">
+																		<label for="option">核心測驗報告</label>
+																	</div>
+																	<div class="p_title">
+																		<input id="option" type="checkbox" name="field" value="邏輯能力測驗報告">
+																		<label for="option">邏輯能力測驗報告</label>
+																	</div>
+																	<div class="p_title">
+																		<input id="option" type="checkbox" name="field" value="社交智商測驗報告">
+																		<label for="option">社交智商測驗報告</label>
+																	</div>
+																	<div class="p_title line_dashed">
+																		<input id="option" type="checkbox" name="field" value="人格特質測驗報告">
+																		<label for="option">人格特質測驗報告</label>
+																	</div>
+																	<div class="p_title">
+																		<input id="option" type="checkbox" name="field" value="空白面試評論表">
+																		<label for="option">空白面試評論表</label>
+																	</div>
+																	<div class="p_title">
+																		<input id="option" type="checkbox" name="field" value="黃宇宙評論">
+																		<label for="option">黃宇宙評論</label>
+																	</div>
+																	<div class="p_title cursor_none">
+																		<input id="option" type="checkbox" name="field" value="黃夏琳琳評論">
+																		<label for="option">黃夏琳琳評論</label>
+																	</div>
+																	<div class="p_title line_dashed cursor_none">
+																		<input id="option" type="checkbox" name="field" value="劉經理評論">
+																		<label for="option">劉經理評論</label>
+																	</div>
+																</div>
+																<p class="btn_s">
+																	<a class="" href="#">列印</a>
+																</p>
+															</div>
+														</p>
+														<p>
+															<a class="record popup-link img_default" href="#popup-status-record">
+																<span class="tooltip">紀錄</span>
+															</a>
+														</p>
+													</div>
+												</div>
 												<div class="remarkBox">
 													<p>2019/11/18/09:00，完成報到，資料已新增至現有員工</p>
 												</div>
-												<div class="btn_status_record">
-													<p>
-														<a class="print popup-link img_default" href="#">
-															<span class="tooltip">列印</span>
-														</a>
-														<div class="print_type_box">
-															<span>請選擇要列印項目</span>
-															<div class="print_list">
-																<div class="p_title">
-																	<input id="option" type="checkbox" name="field" value="個人履歷">
-																	<label for="option">個人履歷</label>
-																</div>
-																<div class="p_title line_dashed">
-																	<input id="option" type="checkbox" name="field" value="個人應徵問卷">
-																	<label for="option">個人應徵問卷</label>
-																</div>
-																<div class="p_title">
-																	<input id="option" type="checkbox" name="field" value="核心測驗報告">
-																	<label for="option">核心測驗報告</label>
-																</div>
-																<div class="p_title">
-																	<input id="option" type="checkbox" name="field" value="邏輯能力測驗報告">
-																	<label for="option">邏輯能力測驗報告</label>
-																</div>
-																<div class="p_title">
-																	<input id="option" type="checkbox" name="field" value="社交智商測驗報告">
-																	<label for="option">社交智商測驗報告</label>
-																</div>
-																<div class="p_title line_dashed">
-																	<input id="option" type="checkbox" name="field" value="人格特質測驗報告">
-																	<label for="option">人格特質測驗報告</label>
-																</div>
-																<div class="p_title">
-																	<input id="option" type="checkbox" name="field" value="空白面試評論表">
-																	<label for="option">空白面試評論表</label>
-																</div>
-																<div class="p_title">
-																	<input id="option" type="checkbox" name="field" value="黃宇宙評論">
-																	<label for="option">黃宇宙評論</label>
-																</div>
-																<div class="p_title cursor_none">
-																	<input id="option" type="checkbox" name="field" value="黃夏琳琳評論">
-																	<label for="option">黃夏琳琳評論</label>
-																</div>
-																<div class="p_title line_dashed cursor_none">
-																	<input id="option" type="checkbox" name="field" value="劉經理評論">
-																	<label for="option">劉經理評論</label>
-																</div>
-															</div>
-															<p class="btn_s">
-																<a class="" href="#">列印</a>
-															</p>
-														</div>
-													</p>
-													<p>
-														<a class="record popup-link img_default" href="#popup-status-record">
-															<span class="tooltip">紀錄</span>
-														</a>
-													</p>
-												</div>
+												
 											</div>
 										</div>
 									</li>
@@ -2317,6 +2469,20 @@
 													<li><a class="icon_05 cursor_none"></a></li>
 													<li><a class="icon_06 cursor_none"></a></li>
 												</ul>
+												<div class="btn_status_record">
+													<div class="for_position">
+														<p>
+															<a class="print popup-link img_default" href="#">
+																<span class="tooltip">列印</span>
+															</a>
+														</p>
+														<p>
+															<a class="record popup-link img_default" href="#popup-status-record">
+																<span class="tooltip">紀錄</span>
+															</a>
+														</p>
+													</div>
+												</div>
 												<div class="remarkBox">
 													<p>已安排 2019/10/12/15:00 初試，等待求職者完成線上履歷與問卷</p>
 												</div>
