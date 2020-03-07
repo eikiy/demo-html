@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.77" height="16.77" viewBox="0 0 16.77 16.77">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_2" data-name="Clip 2" d="M0,0H16.77V16.77H0Z" transform="translate(0 0.23)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Clip_5" data-name="Clip 5" d="M0,0H16.769V16.77H0Z" transform="translate(0.001 0.23)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="叉叉鍵_copy" data-name="叉叉鍵 copy" transform="translate(0 -0.23)">
+    <g id="Group_3" data-name="Group 3">
+      <path id="Clip_2-2" data-name="Clip 2" d="M0,0H16.77V16.77H0Z" transform="translate(0 0.23)" fill="none"/>
+      <g id="Group_3-2" data-name="Group 3" clip-path="url(#clip-path)">
+        <path id="Fill_1" data-name="Fill 1" d="M1.524,16.77a1.525,1.525,0,0,1-1.078-2.6L14.167.447A1.525,1.525,0,1,1,16.324,2.6L2.6,16.324a1.517,1.517,0,0,1-1.078.447" transform="translate(0 0.23)" fill="#636262"/>
+      </g>
+    </g>
+    <g id="Group_6" data-name="Group 6">
+      <path id="Clip_5-2" data-name="Clip 5" d="M0,0H16.769V16.77H0Z" transform="translate(0.001 0.23)" fill="none"/>
+      <g id="Group_6-2" data-name="Group 6" clip-path="url(#clip-path-2)">
+        <path id="Fill_4" data-name="Fill 4" d="M15.245,16.77a1.514,1.514,0,0,1-1.078-.447L.446,2.6A1.525,1.525,0,0,1,2.6.447L16.323,14.168a1.525,1.525,0,0,1-1.078,2.6" transform="translate(0.001 0.23)" fill="#636262"/>
+      </g>
+    </g>
+  </g>
+</svg>

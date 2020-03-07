@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<title>帳號設定 - 基本設定</title>
+<title>帳號設定 - 帳戶管理</title>
 <meta name='description' content=""/>
 <meta name='keywords' content=""/>
 <link rel="stylesheet" href="css/style.css">
@@ -55,7 +55,7 @@ $(document).ready(function() {
 		<section class="right_contents pad_top clearfix">
 			<div class="clearfix">
 				<ul class="top_setting_menu clearfix">
-					<li class="btn_in"><p><a href="account.html">基本設定</a></p></li>
+					<li class="btn_in"><p><a href="account.html">帳戶管理</a></p></li>
 					<li><p><a href="account_organization.html">組織設定</a></p></li>
 					<li><p><a href="account_registration.html">報到條件設定</a></p></li>
 					<li><p><a href="account_email.html">E-MAIL 設定</a></p></li>
@@ -64,16 +64,84 @@ $(document).ready(function() {
 				</ul>
 			</div>
 			<div class="setting_contents set_layout clearfix">
-				<div class="l_Box">
+				<div class="aBox">
 					<div class="theBox">
-						<h3>公司LOGO</h3>
-						<div class="infoBox">
+						<h3>基本資料</h3>
+						<div class="infoBox clearfix">
 							<a class="select_file" href="#">
 								<p class="icon">選擇檔案</p>
 								<p class="note">建議選擇png檔</p>
 							</a>
+							<div class="company_account text_left">
+								<ul class="member_status">
+									<li class="clearfix">
+										<p class="l_title">公司名稱：</p>
+										<p class="r_info">凱茂股份有限公司</p>
+									</li>
+									<li class="clearfix">
+										<p class="l_title">系統顯示名稱：</p>
+										<input class="r_info" type="" name="">
+									</li>
+									<li class="bothBox clearfix">
+										<div class="clearfix">
+											<p class="l_title">主要聯絡人：</p>
+											<input class="r_info" type="" name="">
+										</div>
+										<div class="clearfix">
+											<p class="l_title_2">聯絡電話：</p>
+											<input class="w1 r_info" type="" name="">
+										</div>
+									</li>
+								</ul>
+								<ul class="member_status none_line">
+									<li>
+										<p class="l_title">帳號名稱：</p>
+										<p class="r_info">abcde
+											<a class="link popup-link" href="#popup-pw">密碼變更</a>
+										</p>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
+				</div>
+				<div class="aBox">
+					<div class="theBox">
+						<h3>帳戶管理 </h3>
+						<div class="member_status_box">
+							<ul class="plans clearfix">
+								<li>
+									<p class="top_title">目前方案</p>
+									<p class="info">基礎版</p>
+								</li>
+								<li>
+									<p class="top_title">會員到期日</p>
+									<p class="info">2021/02/02</p>
+								</li>
+								<li>
+									<p class="top_title">剩餘點數</p>
+									<p class="info">96點</p >
+								</li>
+								<li>
+									<p class="top_title">每月免費解鎖次數</p>
+									<p class="info">1/5</p>
+								</li>
+								<li>
+									<p class="btn"><a class="popup-link" href="#popup-usepay">系統紀錄</a></p>
+									<p>付費、加值、點數、刪除紀錄</p>
+								</li>
+							</ul>
+							<div class="customer_service">
+								<p>
+									1.會員到期日前如需更改方案，請直接聯繫凱茂團隊。<a class="target img_default" href="#">參考其他方案</a><br>
+									2.每月免費解鎖次數於每月1號更新重置，無法累計（已使用次數/尚餘次數）。<br>
+									3.購買點數/服務電話與E-MAIL：02-8792.5569   hello@kamo.com.tw
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="aBox">
 					<!-- default -->
 					<div class="theBox google_calendar_set">
 						<h3>同步<span>Google</span> 行事曆設定</h3>
@@ -81,13 +149,15 @@ $(document).ready(function() {
 							<p class="btn"><a class="popup-link" href="#popup-open-google-calendar">使用 Google 登入</a></p>
 						</div>
 					</div>
+				</div>
+				<div class="aBox">
 					<!-- open Google calendar -->
 					<div class="theBox google_calendar_set">
 						<h3>同步<span>Google</span> 行事曆設定</h3>
 						<div class="infoBox open_google_calendar img_default">
 							<div class="sync clearfix">
 								<div class="mail_filter clearfix">
-									<p class="sync_mail">andy123468489@kamo.com.tw</p>
+									<p class="sync_mail">andy@kamo.com.tw</p>
 								</div>
 								<p class="btn block"><a class="bg_red popup-link" href="#popup-mail-logoute">登出</a></p>
 							</div>
@@ -116,268 +186,356 @@ $(document).ready(function() {
 							</div>
 						</div>
 					</div>
-					<!-- <div class="theBox">
-						<h3>更多設定</h3>
-						<div class="infoBox text_left setting_list">
-							<p class="sub_title">請問是否開啟下列功能？</p>
-							<div class="setting_item">
-								<input id="" type="checkbox" name="" value="線上履歷表">
-								<label for="option">線上履歷表</label>
-							</div>
-							<div class="setting_item">
-								<input id="" type="checkbox" name="" value="應徵問卷">
-								<label for="option">應徵問卷</label>
-							</div>
-						</div>
-					</div> -->
 				</div>
-				<div class="r_Box">
-					<div class="theBox">
-						<h3>帳號設定</h3>
-						<div class="infoBox text_left">
-							<ul class="member_status">
-								<li><p>公司名稱：明天股份有限公司</p></li>
-								<li><p>會員狀態：VIP會員</p></li>
-							</ul>
-							<ul class="member_status none_line">
-								<li><p><span class="l_t_w">帳號名稱：</span><span class="c_k">abcde</span><a class="link popup-link" href="#popup-pw">密碼變更</a></p></li>
-							</ul>
-						</div>
-					</div>
-					<div class="theBox">
-						<h3>使用狀態 </h3>
-						<div class="infoBox text_left">
-							<div class="more_height">
-								<ul class="member_status">
-									<li><p class="none_gray"><span class="l_t_w">使用狀態：</span><span class="c_red">已申請暫停</span><a class="link open" href="#">開啟使用<span class="tooltip">到期日到期後<br>才可重新開啟使用</span></a></p></li>
-									<li><p class="none_gray"><span class="l_t_w">使用狀態：</span><span class="c_green">使用中</span><a class="link pause" href="#">暫停使用<span class="tooltip">剩餘不到一個月份<br>請重新購買月租</span></a></p></li>
-									<li><p><span class="l_t_w">使用狀態：</span><span class="c_red">暫停中</span><a class="link open" href="#">開啟使用</a></p></li>
-									<li><p><span class="l_t_w">使用狀態：</span><span class="c_green">使用中</span><a class="link pause" href="#">暫停使用</a></p></li>
-									<li><p><span class="l_t_w">到期日：</span><span class="c_gray">開啟使用後顯示</span></p></li>
-									<li><p><span class="l_t_w">剩餘月份：</span>3個月</p></li>
-								</ul>
-								<ul class="member_status none_line ">
-									<li><p><span class="l_t_w">剩餘點數：</span><span class="c_k">13點</span></p></li>
-								</ul>
-							</div>
-							<div class="bottom_other_btn">
-								<p class="btn">
-									<a class="popup-link" href="#popup-use">使用紀錄</a>
-									<a class="popup-link" href="#popup-storedValue">購買紀錄</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<p class="customer_service">購買點數/服務電話與E-MAIL<br>
-					02-8792.5569   <a href="mailto:hello@kamo.com.tw">hello@kamo.com.tw</a></p>
 			</div>
 		</section>
 	</div>
 
-    <!-- popup 使用紀錄 -->
-	<div id="popup-use" class="white-popup popup-M mfp-hide">
+    <!-- popup 付費/加值紀錄 -->
+	<div id="popup-usepay" class="white-popup popup-L mfp-hide for_system_record">
         <form class="setBox">
             <div class="top_title">
-                <h3>使用紀錄</h3>
+                <ul class="top_menu clearfix">
+                	<li class="btn_in">
+                		<p><a class="popup-link" href="#popup-usepay">付費/加值紀錄</a></p>
+                	</li>
+                	<li>
+                		<p><a class="popup-link" href="#popup-storedValue">點數使用紀錄</a></p>
+                	</li>
+                	<li>
+                		<p><a class="popup-link" href="#popup-record-delete">刪除紀錄</a></p>
+                	</li>
+                <ul>
             </div>
-            <div class="fillinBox storedValueBox">
-                <div class="bothBox">
-                	<ul>
-	                    <li>
-	                        <p class="p_info">使用日期</p>
-	                        <p class="p_info">使用時間</p>
-	                        <p class="p_info">使用帳號</p>
-	                        <p class="p_info">報告名稱</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/11/01</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/08/02</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/07/14</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/06/09</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/05/21</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/03/01</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/06/09</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/05/21</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/03/01</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                </ul>
-	                <ul>
-	                    <li>
-	                        <p class="p_info">使用日期</p>
-	                        <p class="p_info">使用時間</p>
-	                        <p class="p_info">使用帳號</p>
-	                        <p class="p_info">報告名稱</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/11/01</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/08/02</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/07/14</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/06/09</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/05/21</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/03/01</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/06/09</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/05/21</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                    <li>
-	                        <p class="p_info">2018/03/01</p>
-	                        <p class="p_info">13:30</p>
-	                        <p class="p_info">abcde</p>
-	                        <p class="p_info">劉雨天</p>
-	                    </li>
-	                </ul>
-	            </div>
-                <p class="btn page_nb">
-                	<a href="#">1</a>
-                	<a class="btn_in" href="#">2</a>
+            <div class="storedValueBox">
+                <table class="report_value_list" cellpadding="0" cellspacing="0" border="0" width="100%">
+				    <tr>
+				    	<th width="120"><p>日期</p></th>
+				    	<th width="80"><p>時間</p></th>
+				    	<th width="158"><p>付費項目</p></th>
+				    	<th width="96"><p>數量</p></th>
+				    	<th width="98"><p>金額（含稅）</p></th>
+				    	<th width="96"><p>加值點數</p></th>
+				    	<th><p>備註</p></th>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>基礎版</p></td>
+				    	<td><p>一年</p></td>
+				    	<td class="bg_blue"><p>500</p></td>
+				    	<td class="bg_blue"><p>50點</p></td>
+				    	<td></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/15</p></td>
+				    	<td><p>16:30</p></td>
+				    	<td><p>基礎版-點數</p></td>
+				    	<td><p>5點</p></td>
+				    	<td class="bg_blue"><p>500</p></td>
+				    	<td class="bg_blue"><p>5點</p></td>
+				    	<td></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/14</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>基礎版</p></td>
+				    	<td><p>100點</p></td>
+				    	<td class="bg_blue"><p>500</p></td>
+				    	<td class="bg_blue"><p>50點</p></td>
+				    	<td><p>凱茂優惠多贈30點</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/10</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>免費版-點數</p></td>
+				    	<td><p>20點</p></td>
+				    	<td class="bg_blue"><p>2000</p></td>
+				    	<td class="bg_blue"><p>20點</p></td>
+				    	<td></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/02</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>免費版-點數</p></td>
+				    	<td><p>20點</p></td>
+				    	<td class="bg_blue"><p>10000</p></td>
+				    	<td class="bg_blue"><p>2點</p></td>
+				    	<td></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>基礎版-點數</p></td>
+				    	<td><p>一年</p></td>
+				    	<td class="bg_blue"><p>10000</p></td>
+				    	<td class="bg_blue"><p>2點</p></td>
+				    	<td></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/15</p></td>
+				    	<td><p>16:30</p></td>
+				    	<td><p>基礎版-點數</p></td>
+				    	<td><p>5點</p></td>
+				    	<td class="bg_blue"><p>500</p></td>
+				    	<td class="bg_blue"><p>5點</p></td>
+				    	<td></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/14</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>基礎版</p></td>
+				    	<td><p>100點</p></td>
+				    	<td class="bg_blue"><p>500</p></td>
+				    	<td class="bg_blue"><p>50點</p></td>
+				    	<td></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/10</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>免費版-點數</p></td>
+				    	<td><p>20點</p></td>
+				    	<td class="bg_blue"><p>2000</p></td>
+				    	<td class="bg_blue"><p>0點</p></td>
+				    	<td></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/02</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>免費版-點數</p></td>
+				    	<td><p>20點</p></td>
+				    	<td class="bg_blue"><p>2000</p></td>
+				    	<td class="bg_blue"><p>10點</p></td>
+				    	<td></td>
+				    </tr>
+				</table>
+                <p class="page_nb">
+                	<a class="btn_in" href="#">1</a>
+                	<a href="#">2</a>
                 	<a href="#">3</a>
                 	<a href="#">4</a>
-                	<a href="#">5</a>
-                	<a href="#">6</a>
                 </p>
             </div>
         </form>
     </div>
 
-    <!-- popup 儲值紀錄 -->
-	<div id="popup-storedValue" class="white-popup popup-w-s mfp-hide">
+    <!-- popup 點數使用紀錄 -->
+	<div id="popup-storedValue" class="white-popup popup-L mfp-hide for_system_record">
         <form class="setBox">
             <div class="top_title">
-                <h3>儲值紀錄</h3>
-            </div>
-            <div class="fillinBox storedValueBox">
-            	<ul class="top_points">
-                    <li>
-                        <p class="p_info">尚可使用點數</p>
-                        <p class="p_info nb">50</p>
-                    </li>
-                </ul>
+                <ul class="top_menu clearfix">
+                	<li>
+                		<p><a class="popup-link" href="#popup-usepay">付費/加值紀錄</a></p>
+                	</li>
+                	<li class="btn_in">
+                		<p><a class="popup-link" href="#popup-storedValue">點數使用紀錄</a></p>
+                	</li>
+                	<li>
+                		<p><a class="popup-link" href="#popup-record-delete">刪除紀錄</a></p>
+                	</li>
                 <ul>
-                    <li>
-                        <p class="p_info">購買日期</p>
-                        <p class="p_info">購買金額</p>
-                        <p class="p_info">使用次數變更</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/11/01</p>
-                        <p class="p_info">$2000</p>
-                        <p class="p_info">+12</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/08/02</p>
-                        <p class="p_info">$8000</p>
-                        <p class="p_info">+10</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/07/14</p>
-                        <p class="p_info">$10000</p>
-                        <p class="p_info">+12</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/06/09</p>
-                        <p class="p_info">$12000</p>
-                        <p class="p_info">+12</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/05/21</p>
-                        <p class="p_info">$120000</p>
-                        <p class="p_info">+200</p>
-                    </li>
-                    <li>
-                        <p class="p_info">2018/03/01</p>
-                        <p class="p_info">$12000</p>
-                        <p class="p_info">+12</p>
-                    </li>
-                </ul>
-                <p class="btn page_nb">
+            </div>
+            <div class="storedValueBox">
+                <table class="report_value_list" cellpadding="0" cellspacing="0" border="0" width="100%">
+				    <tr>
+				    	<th width="144"><p>日期</p></th>
+				    	<th width="100"><p>時間</p></th>
+				    	<th width="165"><p>使用帳號</p></th>
+				    	<th width="300"><p>使用項目</p></th>
+				    	<th><p>使用點數</p></th>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>ANDY</p></td>
+				    	<td><p>劉明明-核心測驗</p></td>
+				    	<td><p>2點</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>14:33</p></td>
+				    	<td><p>ANDY</p></td>
+				    	<td><p>王小明-特質測驗</p></td>
+				    	<td><p>2點</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>RUBY</p></td>
+				    	<td><p>王小明-特質測驗</p></td>
+				    	<td><p>2點</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>09:30</p></td>
+				    	<td><p>NickyWu</p></td>
+				    	<td><p>劉明明-核心測驗</p></td>
+				    	<td><p>2點</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>NickyWu</p></td>
+				    	<td><p>戴秀秀-特質測驗、邏輯測驗</p></td>
+				    	<td><p>2點</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>ANDY</p></td>
+				    	<td><p>劉明明-核心測驗</p></td>
+				    	<td><p>1點</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>ANDY</p></td>
+				    	<td><p>劉明明-核心測驗</p></td>
+				    	<td><p>2點</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>ANDY</p></td>
+				    	<td><p>劉明明-核心測驗</p></td>
+				    	<td><p>0點/免費解鎖</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>ANDY</p></td>
+				    	<td><p>劉明明-核心測驗</p></td>
+				    	<td><p>0點/免費解鎖</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>ANDY</p></td>
+				    	<td><p>劉明明-核心測驗</p></td>
+				    	<td><p>0點/免費解鎖</p></td>
+				    </tr>
+				</table>
+                <p class="page_nb">
+                	<a class="prev img_default"></a>
                 	<a class="btn_in" href="#">1</a>
                 	<a href="#">2</a>
                 	<a href="#">3</a>
+                	<a href="#">4</a>
+                	<a href="#">5</a>
+                	<a href="#">6</a>
+                	<a href="#">7</a>
+                	<a href="#">8</a>
+                	<a href="#">9</a>
+                	<a href="#">10</a>
+                	<a class="next img_default"></a>
                 </p>
             </div>
         </form>
     </div>
+
+    <!-- popup 刪除紀錄 -->
+	<div id="popup-record-delete" class="white-popup popup-L mfp-hide for_system_record">
+        <form class="setBox">
+            <div class="top_title">
+                <ul class="top_menu clearfix">
+                	<li>
+                		<p><a class="popup-link" href="#popup-usepay">付費/加值紀錄</a></p>
+                	</li>
+                	<li>
+                		<p><a class="popup-link" href="#popup-storedValue">點數使用紀錄</a></p>
+                	</li>
+                	<li class="btn_in">
+                		<p><a class="popup-link" href="#popup-record-delete">刪除紀錄</a></p>
+                	</li>
+                <ul>
+            </div>
+            <div class="storedValueBox">
+                <table class="report_value_list" cellpadding="0" cellspacing="0" border="0" width="100%">
+				    <tr>
+				    	<th width="150"><p>日期</p></th>
+				    	<th width="150"><p>時間</p></th>
+				    	<th width="200"><p>刪除帳號</p></th>
+				    	<th><p>刪除項目</p></th>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>ANDY</p></td>
+				    	<td><p>王小明-個人資料</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>14:33</p></td>
+				    	<td><p>ANDY</p></td>
+				    	<td><p>2019/12/04建立的業務職缺</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>RUBY</p></td>
+				    	<td><p>組織設定的業務部</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>09:30</p></td>
+				    	<td><p>NickyWu</p></td>
+				    	<td><p>戴秀穎-面試官ANDY評論</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>NickyWu</p></td>
+				    	<td><p>組織設定的業務部</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>ANDY</p></td>
+				    	<td><p>劉大華-個人資料</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>ANDY</p></td>
+				    	<td><p>李小風-面試官劉天天評論</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>ANDY</p></td>
+				    	<td><p>游明明-個人資料</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>ANDY</p></td>
+				    	<td><p>2019/09/04建立的軟體工程師職缺</p></td>
+				    </tr>
+				    <tr>
+				    	<td><p>2020/01/16</p></td>
+				    	<td><p>16:00</p></td>
+				    	<td><p>ANDY</p></td>
+				    	<td><p>2019/01/12建立的櫃檯人員職缺</p></td>
+				    </tr>
+				</table>
+                <p class="page_nb">
+                	<a class="prev img_default"></a>
+                	<a class="btn_in" href="#">1</a>
+                	<a href="#">2</a>
+                	<a href="#">3</a>
+                	<a href="#">4</a>
+                	<a href="#">5</a>
+                	<a href="#">6</a>
+                	<a href="#">7</a>
+                	<a href="#">8</a>
+                	<a href="#">9</a>
+                	<a href="#">10</a>
+                	<a class="next img_default"></a>
+                </p>
+            </div>
+        </form>
+    </div>
+
     <!-- popup 密碼變更 -->
 	<div id="popup-pw" class="white-popup popup-w-s mfp-hide">
         <form class="setBox">

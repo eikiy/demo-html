@@ -357,6 +357,23 @@ a .tooltip span.c_red{ color: #C87D86; }
 .messageBox .border_yello{ border-color: #E5AF57;}
 .messageBox .border_red{ border-color: #C87D86;}
 
+
+/*lock features*/
+.lock_features_wrapper{position: fixed; top: 0; left: 0; z-index: 100; width: 100%; height: 100vh; background-color: rgba(256,256,256,0.5); display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.lock_features_wrapper .lock_features_content{ position: relative; width: 398px; min-height: 175px; text-align: center; background-color:#F7F0E6; border:3px solid #EB8B70; border-radius: 10px 0 10px 10px; padding: 20px;}
+.lock_features_wrapper .lock_features_content a.btn_closed{ position: absolute; top: 5px; right: 5px; background-color: #F8F9F9; width: 30px; height: 30px; border-radius: 50%; }
+.lock_features_wrapper .lock_features_content a.btn_closed span{ width: 100%; height: 100%; display: block; position: relative; }
+.lock_features_wrapper .lock_features_content a.btn_closed span::after{ content: ""; position: absolute; top:calc(50% - 7.5px); left: calc(50% - 7.5px); width: 15px; height: 15px; display: block; background-image: url(../images/svg/close_gray.svg); }
+.lock_features_wrapper .lock_features_content a.btn_closed:hover{ background-color: #e2e8e8; }
+.lock_features_wrapper .lock_features_content h4.title{ color: #EB8B70; font-size: 20px; padding: 10px 0;}
+.lock_features_wrapper .lock_features_content h4.title span{ position: relative;}
+.lock_features_wrapper .lock_features_content h4.title span::after{ content: ""; position: absolute; top:calc(50% - 6.5px); right: -15px; opacity: .8; width: 9px; height: 13px; display: block; background-image: url(../images/svg/lock_gray.svg); }
+.lock_features_wrapper .lock_features_content p{ font-size: 14px; }
+.lock_features_wrapper .lock_features_content p.info{ padding-bottom: 10px; }
+.lock_features_wrapper .lock_features_content p.btn{ padding: 10px 0; }
+.lock_features_wrapper .lock_features_content p.btn a{ min-width: 133px; padding: 5px 10px; min-height: 32px; display: inline-block; color: #fff; background-color: #E5AF57;}
+.lock_features_wrapper .lock_features_content p.btn a:hover{ opacity: .9; }
+
 @media (max-width:1600px){
 	.interviewer_grade_login p.sub_title{ font-size: 14px;}
 
@@ -472,7 +489,12 @@ a .tooltip span.c_red{ color: #C87D86; }
 	.interviewer_grade_container .top_ivBox .top_interviewer_info .rightInfoBox{ float: none; width: 100%; }
 	.interviewer_grade_container .top_ivBox .top_interviewer_info .rightInfoBox .user_name{ padding: 20px 0 15px 0; margin:0 0 18px 85px; }
 }
-
+@media (max-width:500px){
+	.lock_features_wrapper .lock_features_content{ width: 277px; }
+	.lock_features_wrapper .lock_features_content p.info{ font-size: 13px; }
+	.lock_features_wrapper .lock_features_content a.btn_closed{ width: 22px; height: 22px; }
+	.lock_features_wrapper .lock_features_content a.btn_closed span::after{ width: 12px; height: 12px; top: calc(50% - 6px); left: calc(50% - 6px); }
+}
 @media (max-width:450px){
 	.interviewer_grade_login .main_info p{ font-size: 10px; }
 	.interviewer_grade_login h1.title{  margin: 0 auto; font-size: 18px; padding-bottom: 5px; }
@@ -492,3 +514,4 @@ a .tooltip span.c_red{ color: #C87D86; }
 /*須蓋過上面屬性，這幾個要在最下面*/
 .interviewer_grade_container p.btn a.cursor_none{cursor: not-allowed;  background-color:#D8D8D8;}
 .interviewer_grade_container p.btn a.cursor_none:hover{ color: #fff; background-color:#D8D8D8;}
+
