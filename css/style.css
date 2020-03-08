@@ -3913,6 +3913,17 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .setBox .interview_report_round .a_round .right_info .day{ width: 100%; border-bottom: 1px solid #81B6C8; position: relative; }
 .setBox .interview_report_round .a_round .right_info .day input{ padding: 0 5px; line-height: 30px; height: 30px; width: 100%; background-color: transparent; }
 .setBox .interview_report_round .a_round .right_info .day::after{ background-image: url(../images/icon_time_select_01.png); cursor: pointer; z-index: 4; content: ""; top: 6px; right: 6px; position: absolute; width: 25px; height: 19px; display: block;}
+.setBox .interview_report_round .a_round .right_info .day .day_selectBpx{right: inherit; top: 33px; left: 3px;}
+.setBox .interview_report_round .a_round .right_info .day .day_selectBpx p{ line-height: 27px; min-height: 27px; }
+.setBox .interview_report_round .a_round .right_info .day .monthBox{ border-radius: 0 0 0 20px; border: 1px solid #9B9B9B; }
+.setBox .interview_report_round .a_round .right_info .day .monthBox .top_year_month{ background-color: #9B9B9B; border-radius: 0; padding: 5.5px 0; }
+.setBox .interview_report_round .a_round .right_info .time_select .time_selectBpx{ top: 33px; height: 270px; right: -117px; border-radius: 0 10px 10px 0;}
+.setBox .interview_report_round .a_round .right_info .time_select .time_selectBpx .the_time ul{ height: 228px; border-left: 1px solid #9B9B9B;}
+.setBox .interview_report_round .a_round .right_info .time_select .time_selectBpx .the_time p.top_title{ background-color: #9B9B9B; border-left: 1px solid #fff; color: #fff; line-height: 39.5px;}
+.setBox .interview_report_round .a_round .right_info .time_select .time_selectBpx .the_time ul:first-child,
+.setBox .interview_report_round .a_round .right_info .time_select .time_selectBpx .the_time:first-child p.top_title{border-left: none;}
+.setBox .interview_report_round .a_round .right_info .time_select .more_h{ height: 306px;}
+.setBox .interview_report_round .a_round .right_info .time_select .more_h .the_time ul{ height: 266px;}
 
 .setBox .interview_report_round .a_round .right_info p{ width: 100%; min-height: 30px; line-height: 30px; padding: 0 10px;}
 .setBox .interview_report_round .a_round .right_info p.day::after{ display: none; }
