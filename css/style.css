@@ -3922,8 +3922,11 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .setBox .interview_report_round .a_round .right_info .time_select .time_selectBpx .the_time p.top_title{ background-color: #9B9B9B; border-left: 1px solid #fff; color: #fff; line-height: 39.5px;}
 .setBox .interview_report_round .a_round .right_info .time_select .time_selectBpx .the_time ul:first-child,
 .setBox .interview_report_round .a_round .right_info .time_select .time_selectBpx .the_time:first-child p.top_title{border-left: none;}
-.setBox .interview_report_round .a_round .right_info .time_select .more_h{ height: 306px;}
-.setBox .interview_report_round .a_round .right_info .time_select .more_h .the_time ul{ height: 266px;}
+.setBox .interview_report_round .a_round .right_info .day p.btn { font-size: 14px; width: 100%; bottom: -326px; position: absolute; left: 126px; padding-bottom: 10px;}
+.setBox .interview_report_round .a_round .right_info .day p.btn a{ padding: 1.5px 10px; border-radius: 0 3px 3px 3px;}
+.setBox .interview_report_round .a_round .right_info .more_h .time_selectBpx{ height: 307px;}
+.setBox .interview_report_round .a_round .right_info .more_h .time_selectBpx .the_time ul{ height: 266px;}
+.setBox .interview_report_round .a_round .right_info .more_h p.btn{ bottom: -365px; }
 
 .setBox .interview_report_round .a_round .right_info p{ width: 100%; min-height: 30px; line-height: 30px; padding: 0 10px;}
 .setBox .interview_report_round .a_round .right_info p.day::after{ display: none; }
