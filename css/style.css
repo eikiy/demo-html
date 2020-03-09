@@ -2668,7 +2668,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_leaderboard_container ul.leaderboard_data li .icon_status:hover { border-color:#558C9E;}
 .job_leaderboard_container ul.leaderboard_data li .icon_status:hover p.show_text{ opacity: 1; }
 
-.job_leaderboard_container ul.leaderboard_data li.footprint a.the_border { background-color: #F2F8FA;}
+.job_leaderboard_container ul.leaderboard_data li.footprint .the_border { background-color: #F2F8FA;}
 
 .job_leaderboard_container ul.leaderboard_data li .the_user .user_box{ float: left; width: 129px; padding-top: 7px;}
 .job_leaderboard_container ul.leaderboard_data li .the_user .user_box .user_photo{ float: left; width: 48px; height: 48px; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); display: block; overflow: hidden; border-radius: 10px; border:1px solid #979797; background-color: #fff; background-image: url(../images/user_img_default.png); background-position: center center; background-repeat: no-repeat; background-size: cover; }
@@ -2701,6 +2701,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_leaderboard_container ul.leaderboard_data li.status_reported .icon_status p.show_text{ background-color: #69A07C;}
 
 /*.job_leaderboard_container ul.leaderboard_data li.status_none a.the_border{ background-color: #F8F9F9; }*/
+.job_leaderboard_container ul.leaderboard_data li .z_up{ position: relative; z-index: 2; }
 .job_leaderboard_container ul.leaderboard_data li .report_status_list{ padding: 8px 3px 0 9px; }
 .job_leaderboard_container ul.leaderboard_data li .report_status_list p.report_status{ width: 50%; font-size: 13px; float: left; padding: 2px; padding-left: 13px; position: relative;}
 .job_leaderboard_container ul.leaderboard_data li .report_status_list p.report_status::after{ position: absolute; content: ""; width: 12.5px; height: 13px; left: 0px; top: 3px; display: block; background-image: url(../images/svg/report_interviewer_type.svg);}
