@@ -2645,9 +2645,9 @@ ul.job_management_list p.text_center{ text-align: center; }
 
 .job_leaderboard_container ul.leaderboard_data li .the_user{ width: 140px; }
 .job_leaderboard_container ul.leaderboard_data li a.the_border{float: left; /*border:3px solid #fff;*/ /*background-color:#F2F8FA;*/ padding-right: 6px; position: relative;}
-.job_leaderboard_container ul.leaderboard_data li a.the_border::after{ position: absolute; content: ""; width: 100%; z-index: 5; height: 56px; display: block; border:3px solid #81B6C8; top: 0; left: 0; opacity: 0;}
+.job_leaderboard_container ul.leaderboard_data li a.the_border::before{ position: absolute; content: ""; width: 100%; z-index: 1; height: 56px; display: block; border:3px solid #81B6C8; top: 0; left: 0; opacity: 0;}
 .job_leaderboard_container ul.leaderboard_data li a.the_border:hover{ border-color:#81B6C8;}
-.job_leaderboard_container ul.leaderboard_data li:hover a.the_border::after{ opacity: 1;}
+.job_leaderboard_container ul.leaderboard_data li:hover a.the_border::before{ opacity: 1;}
 
 .job_leaderboard_container ul.leaderboard_data li .icon_status{ float: left; width: 38px; margin-right: 5px; position: relative; border:3px solid #fff; background-color: #B8D3DC;}
 .job_leaderboard_container ul.leaderboard_data li .icon_status::before{ content: ""; margin: 0 auto; width: 22px; height: 60px;  left: 9px; top: 0;display: block; background-repeat: no-repeat; background-position: center center; background-size: contain; }
