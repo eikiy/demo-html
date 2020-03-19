@@ -359,20 +359,22 @@ a .tooltip span.c_red{ color: #C87D86; }
 
 
 /*lock features*/
-.lock_features_wrapper{position: fixed; top: 0; left: 0; z-index: 100; width: 100%; height: 100vh; background-color: rgba(256,256,256,0.5); display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
-.lock_features_wrapper .lock_features_content{ position: relative; width: 398px; min-height: 175px; text-align: center; background-color:#F7F0E6; border:3px solid #EB8B70; border-radius: 10px 0 10px 10px; padding: 20px;}
-.lock_features_wrapper .lock_features_content a.btn_closed{ position: absolute; top: 5px; right: 5px; background-color: #F8F9F9; width: 30px; height: 30px; border-radius: 50%; }
+.lock_features_wrapper{ position: fixed; top: 0; left: 0; z-index: 100; width: 100%; height: 100vh; background-color: rgba(0,0,0,0.75); display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.lock_features_wrapper .lock_features_content{ position: relative; width: 950px; text-align: center; background-color:#D8D8D8; padding: 20px;display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.lock_features_wrapper .lock_features_content a.btn_closed{ position: absolute; top: 15px; right: 15px; background-color: #F8F9F9; width: 30px; height: 30px; border-radius: 50%; }
 .lock_features_wrapper .lock_features_content a.btn_closed span{ width: 100%; height: 100%; display: block; position: relative; }
 .lock_features_wrapper .lock_features_content a.btn_closed span::after{ content: ""; position: absolute; top:calc(50% - 7.5px); left: calc(50% - 7.5px); width: 15px; height: 15px; display: block; background-image: url(../images/svg/close_gray.svg); }
 .lock_features_wrapper .lock_features_content a.btn_closed:hover{ background-color: #e2e8e8; }
-.lock_features_wrapper .lock_features_content h4.title{ color: #EB8B70; font-size: 20px; padding: 10px 0;}
+.lock_features_wrapper .lock_features_content .photo{ width: 50%; max-width: 450px;}
+.lock_features_wrapper .lock_features_content .infobox{ width: 45%; padding: 0 10px;}
+.lock_features_wrapper .lock_features_content h4.title{ color: #222; font-size: 20px; padding: 10px 0;}
 .lock_features_wrapper .lock_features_content h4.title span{ position: relative;}
 .lock_features_wrapper .lock_features_content h4.title span::after{ content: ""; position: absolute; top:calc(50% - 6.5px); right: -15px; opacity: .8; width: 9px; height: 13px; display: block; background-image: url(../images/svg/lock_gray.svg); }
-.lock_features_wrapper .lock_features_content p{ font-size: 14px; }
-.lock_features_wrapper .lock_features_content p.info{ padding-bottom: 10px; }
+.lock_features_wrapper .lock_features_content p.info{ padding-bottom: 10px; text-align: center; }
 .lock_features_wrapper .lock_features_content p.btn{ padding: 10px 0; }
 .lock_features_wrapper .lock_features_content p.btn a{ min-width: 133px; padding: 5px 10px; min-height: 32px; display: inline-block; color: #fff; background-color: #E5AF57;}
 .lock_features_wrapper .lock_features_content p.btn a:hover{ opacity: .9; }
+
 
 @media (max-width:1600px){
 	.interviewer_grade_login p.sub_title{ font-size: 14px;}
@@ -397,6 +399,7 @@ a .tooltip span.c_red{ color: #C87D86; }
 }
 @media (max-width:1040px){
 	.interviewer_grade_container .contentsBox, .interviewer_grade_login .contentsBox{ width:calc(100% - 40px);}
+	.lock_features_wrapper .lock_features_content{ width: 90%;}
 }
 @media (max-width:750px){
 	.interviewer_grade_login .contentsBox{ max-width: calc(100% - 30px); }
@@ -419,6 +422,12 @@ a .tooltip span.c_red{ color: #C87D86; }
 	.interviewer_grade_container .fill_rating_content{ padding-bottom:0;}
 	.interviewer_grade_container .fill_rating_content .content_border{ border-width: 0; }
 	.interviewer_grade_container .fill_rating_content .the_item .score_box p.comment{ right: 8px; }
+
+	.lock_features_wrapper .lock_features_content{ width: 398px; min-height: 175px; border:3px solid #EB8B70; background-color: #F7F0E6; border-radius: 10px 0 10px 10px; }
+	.lock_features_wrapper .lock_features_content .photo{ width: 100%; display: none; }
+	.lock_features_wrapper .lock_features_content .infobox{ width: 100%;}
+	.lock_features_wrapper .lock_features_content h4.title{ color: #EB8B70;}
+	.lock_features_wrapper .lock_features_content a.btn_closed{ top: 5px; right: 5px; }
 }
 @media (max-width:650px){
 	.interviewer_grade_container{ padding-bottom: 70px; }
@@ -490,7 +499,7 @@ a .tooltip span.c_red{ color: #C87D86; }
 	.interviewer_grade_container .top_ivBox .top_interviewer_info .rightInfoBox .user_name{ padding: 20px 0 15px 0; margin:0 0 18px 85px; }
 }
 @media (max-width:500px){
-	.lock_features_wrapper .lock_features_content{ width: 277px; }
+	.lock_features_wrapper .lock_features_content{ width: 277px; padding: 10px; }
 	.lock_features_wrapper .lock_features_content p.info{ font-size: 13px; }
 	.lock_features_wrapper .lock_features_content a.btn_closed{ width: 22px; height: 22px; }
 	.lock_features_wrapper .lock_features_content a.btn_closed span::after{ width: 12px; height: 12px; top: calc(50% - 6px); left: calc(50% - 6px); }
