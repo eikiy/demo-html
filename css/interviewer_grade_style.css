@@ -28,6 +28,9 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 .interviewer_grade_container .contentsBox{ vertical-align: top; width: 100%; max-width: 710px; margin: 0 auto; }
 .img_default, .img_default::before, .img_default::after{ background-position: center center; background-repeat: no-repeat; background-size: contain;}
 
+span.title_icon_lock{ position: relative; padding-left: 0; }
+span.title_icon_lock::after{ content: ""; right: -15px; top:calc(50% - 6.5px); position: absolute; width: 9px; height: 13px; display: block; background-image: url(../images/svg/lock_skyblue.svg); }
+
 .interviewer_grade_login .main-logo{ width: 190px; height:190px; display: block; margin:50px auto 0px auto; background-color: #fff; border:solid 3px #81B6C8; border-radius: 3px; }
 .interviewer_grade_login h1.title{ font-size: 30px; text-align: center; color: #4A4A4A; padding: 25px 0 10px 0; }
 .interviewer_grade_login p.sub_title{ font-size: 18px; text-align: center; color: #707475; }

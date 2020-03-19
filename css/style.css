@@ -91,6 +91,8 @@ a .blue_tip::after{ border-color: transparent transparent #81B6C8 transparent;}
 a .white_tip{ top: 36px; left:calc(50% - 35px); background-color: #f8f9f9; min-width: 70px; color:#333; box-shadow: 0 3px 3px rgba(0,0,0,.4);}
 a .white_tip::after{ border-color: transparent transparent #f8f9f9 transparent;}
 
+span.title_icon_lock{ position: relative; padding-left: 0 !important;}
+span.title_icon_lock::after{ content: ""; right: -13px; top:calc(50% - 6.5px); position: absolute; width: 9px; height: 13px; display: block; background-image: url(../images/svg/lock_skyblue.svg); }
 
 .headerBox ul.tools li .message_listBox{ position: absolute; width: 230px; z-index: 10; background-color: #fff; top: 30px; right: 0; border-radius: 10px 0 10px 10px; border:1px solid #707475;  box-shadow: 2px 3px 5px rgba(0,0,0,.2); overflow: hidden;}
 .headerBox ul.tools li .message_listBox .top_tips{ padding: 0px 10px; border-bottom:1px solid #bdbdbd; position: relative;}
@@ -1929,6 +1931,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interviewee_info .top_test_menu ul li p{ text-align: center; }
 .interviewee_info .top_test_menu ul li a{ border: 3px solid #558C9E; width: 150px; height: 50px; line-height: 50px; color: #558C9E; display: block; border-radius: 10px 10px 0 0; }
 .interviewee_info .top_test_menu ul li a:hover{background-color: #558C9E; color: #fff;}
+.interviewee_info .top_test_menu ul li span.title_icon_lock::after{right: -17px;}
 
 .interviewee_info .top_test_menu ul li:nth-child(2) a{ border-color: #81B6C8; color: #81B6C8; }
 .interviewee_info .top_test_menu ul li:nth-child(2) a:hover{ background-color: #81B6C8; color: #fff;}
@@ -3739,6 +3742,8 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .fillin_interviewe_data h5.bg_g_sub_title{background-color: #EBEBEB; font-size: 15px; padding: 0px 20px; position: relative; line-height: 45px;}
 .fillin_interviewe_data h5.bg_g_sub_title a{ position: absolute; top: 4px; right: 20px; width: 50px; height: 35px; line-height: 35px; display: block; border-radius: 5px; text-align: center; color: #fff; background-color: #81B6C8; }
 .fillin_interviewe_data h5.bg_g_sub_title a.add{ background-image: url(../images/svg/plus_w.svg); background-size: 30%;}
+.fillin_interviewe_data h5.bg_g_sub_title span.title_icon_lock::after{ background-image: url(../images/svg/lock_gray.svg); }
+
 .fillin_interviewe_data ul.add_nterviewee_round li{ padding:0 0 10px 0;}
 .fillin_interviewe_data ul.add_nterviewee_round li:last-child{ border-bottom: 1px dashed #979797;}
 .fillin_interviewe_data p.btn_add{ padding: 0px 20px 10px 20px;}
