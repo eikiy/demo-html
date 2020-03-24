@@ -373,7 +373,7 @@ a .tooltip span.c_red{ color: #C87D86; }
 .lock_features_wrapper .lock_features_content h4.title{ color: #222; font-size: 20px; padding: 10px 0;}
 .lock_features_wrapper .lock_features_content h4.title span{ position: relative;}
 .lock_features_wrapper .lock_features_content h4.title span::after{ content: ""; position: absolute; top:calc(50% - 6.5px); right: -15px; opacity: .8; width: 9px; height: 13px; display: block; background-image: url(../images/svg/lock_gray.svg); }
-.lock_features_wrapper .lock_features_content p.info{ padding-bottom: 10px; text-align: center; }
+.lock_features_wrapper .lock_features_content p.info{ padding:0 20px 10px 20px; text-align: center; }
 .lock_features_wrapper .lock_features_content p.btn{ padding: 10px 0; }
 .lock_features_wrapper .lock_features_content p.btn a{ min-width: 133px; padding: 5px 10px; min-height: 32px; display: inline-block; color: #fff; background-color: #E5AF57;}
 .lock_features_wrapper .lock_features_content p.btn a:hover{ opacity: .9; }
