@@ -3909,7 +3909,7 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .setBox .interview_report_round .top_box { width: 100%; border-bottom: 3px solid #81B6C8; }
 .setBox .interview_report_round .top_box p.link{ float: left; line-height: 44px; }
 .setBox .interview_report_round .top_box p.link span{ float: left; color: #444; padding:0 10px; border-right: 1px solid #81B6C8;}
-.setBox .interview_report_round .top_box p.link a{ float: left; display: inline-block; width: 220px; margin:0 10px; color: #81B6C8; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 44px; height: 44px * 1; overflow:hidden; }
+.setBox .interview_report_round .top_box p.link a{ float: left; display: inline-block; width: 220px; margin:0 10px; color: #81B6C8; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 44px; height: 44px; overflow:hidden; }
 .setBox .interview_report_round .top_box p.link a:hover{ text-decoration: underline; }
 
 .setBox .interview_report_round .top_box .top_tools{ float: right; padding-right:10px; }
