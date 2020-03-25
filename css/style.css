@@ -2524,7 +2524,8 @@ ul.job_management_list p.text_center{ text-align: center; }
 
 .popup-L .filter_pop .j_v_ranking{ padding-top: 42px; }
 .popup-L .filter_pop .j_v_ranking h3.test_report_title{ padding:5px 15px; position: relative; font-size: 14px; }
-.popup-L .filter_pop .j_v_ranking h3.test_report_title a.go_edit{ position: absolute; width: 25px; height: 25px; right: 10px; top: 5px; z-index: 1; display: block; background: url(../images/btn_icon_edit.png) center center  no-repeat; background-size: contain; }
+.popup-L .filter_pop .j_v_ranking h3.test_report_title a.go_edit{ position: absolute; width: 25px; height: 25px; right: 10px; top: 5px; z-index: 1; display: block; background-image: url(../images/btn_icon_edit.png);}
+.popup-L .filter_pop .j_v_ranking h3.test_report_title a.go_edit:hover{ background-image: url(../images/btn_icon_edit_w.png); }
 
 .filter_pop .j_v_ranking p.btn{ font-size: 18px; line-height: 32px; top: 2px; right: 2px; }
 .filter_pop .j_v_ranking p.btn a.bg_red{ letter-spacing: 4px; }
