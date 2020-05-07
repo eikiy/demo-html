@@ -1739,6 +1739,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interview_officer_Main .u_infoBox .use_fillinBox .pa_h{ padding: 30px 5px 10px 5px; max-width: 902px; margin: 0 auto; }
 .interview_officer_Main .u_infoBox .use_fillinBox .pa_h .infoContent_two .tBox:first-child{ padding-right: 30px; }
 .interview_officer_Main .u_infoBox .use_fillinBox .pa_h .infoContent_two .tBox:last-child{ padding-left: 30px; }
+.interview_officer_Main .u_infoBox .use_fillinBox .autobiography { padding:5px; }
 
 .popup-L .interview_officer_Main .u_infoBox .use_fillinBox{ padding: 5px 10px 10px 10px; }
 .popup-L .interview_officer_Main .u_infoBox .use_fillinBox .pa_h .fBox p.title_s{ text-align: center; }
@@ -2850,6 +2851,8 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box .print_survey .interview_officer_Main .u_infoBox .use_fillinBox p.title_s{ text-align: left; color: #558C9E; }
 .print_box .print_survey h3.blue_title{ padding: 5px 15px; margin-top: 6px; }
 .print_box .print_survey h4.gray_title{ padding: 5px 15px; background-color: #F8F9F9; font-size: 12px; }
+.print_box .print_survey .autobiography{ padding: 10px; }
+.print_box .print_survey .autobiography p{ font-size: 14px; }
 .print_box .print_survey .fBox p{ color: #333; padding: 3px 0; }
 .print_box .print_survey .fBox p.remind{ color: #C87D86;}
 .print_box .interview_officer_Main .use_fillinBox ul.company_experience li{ flex-direction: column; border-bottom: 1px dashed #979797; padding: 5px 0 10px 0;}

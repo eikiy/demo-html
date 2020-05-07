@@ -191,6 +191,30 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 .personal_information_container .fillin_list .information_info .still_in{ position: absolute; top: -1px; left: 66px;  z-index: 2; text-align: left; border: none; margin: 0;}
 .personal_information_container .fillin_list .information_info .still_in label{color: #4A4A4A; padding-bottom: 0;}
 
+.personal_information_container .fillin_list .information_info .f_input{ position: relative; padding-right: 50px; padding-left: 5px; height: inherit; min-height: 35px; border-radius: 5px; border: 1px solid #979797;}
+.personal_information_container .fillin_list .information_info .f_input .add{ position: absolute; right: 0; top: 0; height: 100%; }
+.personal_information_container .fillin_list .information_info .f_input .add a{ position: relative; height: 100%; min-height: 33px; width: 50px; display: block; color: #fff; background-color: #81B6C8;}
+.personal_information_container .fillin_list .information_info .f_input .add a::after{ content: ""; position: absolute; width:100%; height: 16px; top: calc(50% - 8px); left: 0; background-image: url(../images/svg/plus_w.svg); }
+.personal_information_container .fillin_list .information_info .f_input .add a:hover{ background-color: #558C9E;}
+.personal_information_container .fillin_list .information_info .f_input p.f_text{ margin: 4px 5px 0 0; float: left; overflow: hidden; background-color: #E6F0F4; line-height: 25px; height: 25px; font-size: 13px; border-radius: 5px; }
+.personal_information_container .fillin_list .information_info .f_input p.f_text span{ float: left; padding: 0 8px; }
+.personal_information_container .fillin_list .information_info .f_input p.f_text a.delete{ float: left; width: 25px; height: 23px; display: block; cursor: pointer; height: 100%; background-image: url(../images/svg/close_skyblue.svg); background-position: center center; background-repeat: no-repeat; background-size: 44%;}
+.personal_information_container .fillin_list .information_info .f_input p.f_text a.delete:hover{ opacity: .5;}
+.personal_information_container .fillin_list .information_info .f_input .fillin_text{padding: 0 5px; float: left; font-size: 13px; height: 32px; line-height: 32px; }
+
+.personal_information_container .fillin_list .information_info .keywords_search{ position: absolute; left: 0; z-index: 2; width:calc(100% - 50px); background-color: #fff; border:1px solid #D8D8D8; border-radius: 5px; box-shadow: 0px 2px 4px rgba(0,0,0,.5); }
+.personal_information_container .fillin_list .information_info .keywords_search ul{ width: 100%; padding: 2px 0;  }
+.personal_information_container .fillin_list .information_info .keywords_search ul li{ width: 100%; cursor: pointer; padding: 2px; }
+.personal_information_container .fillin_list .information_info .keywords_search ul li:hover{ background-color: #F2F8FA; }
+.personal_information_container .fillin_list .information_info .keywords_search ul li p{ line-height: 20px; padding: 0 10px; }
+
+.personal_information_container .fillin_list .related_searches{ width: 100%; padding: 5px 0; }
+.personal_information_container .fillin_list .related_searches p.left_title{ float: left; line-height: 24px; color: #9B9B9B; }
+.personal_information_container .fillin_list .related_searches ul.keywords{ float: left; max-width: calc(100% - 120px); text-align: left; }
+.personal_information_container .fillin_list .related_searches ul.keywords li{ display: inline-block; padding:0 2.5px; }
+.personal_information_container .fillin_list .related_searches ul.keywords li p{ cursor: pointer; font-size: 13px; color: #81B6C8; border: 1px solid #B8D3DC; border-radius: 5px; padding:2px 5px; }
+.personal_information_container .fillin_list .related_searches ul.keywords li p:hover{ background-color: #E6F0F4; }
+
 .personal_information_container .fillin_list input::placeholder, .personal_information_container .fillin_list textarea::placeholder{ color: #D8D8D8; }
 .personal_information_container .fillin_list input.f_input:focus, .personal_information_container .fillin_list textarea.f_input:focus{ border-color: #81B6C8; }
 .personal_information_container .fillin_list .for_DOB{ position: relative; }
@@ -509,6 +533,8 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 	.personal_information_finished .fillin_done h3{ padding: 220px 0 20px 0; font-size: 17px; }
 	.personal_information_finished .fillin_done h3::after { height: 206px; }
 	.personal_information_finished .fillin_done p{ font-size: 16px; }
+	.personal_information_container .fillin_list .information_info .f_input{ padding-right: 45px; }
+	.personal_information_container .fillin_list .information_info .f_input .add a{ width: 45px; }
 }
 
 /*須蓋過上面屬性，這幾個要在最下面*/
