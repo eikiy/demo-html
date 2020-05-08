@@ -2848,7 +2848,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .print_box .print_survey .interviewee_info .interviewMainBox .top_ivBox{ padding-bottom: 0; }
 
 .print_box .print_survey .interview_officer_Main .u_infoBox .use_fillinBox{ padding: 0 10px; }
-.print_box .print_survey .interview_officer_Main .u_infoBox .use_fillinBox p.title_s{ text-align: left; color: #558C9E; }
+.print_box .print_survey .interview_officer_Main .u_infoBox .use_fillinBox p.title_s{ text-align: left; color: #558C9E; font-size: 16px; font-weight: bold; }
 .print_box .print_survey h3.blue_title{ padding: 5px 15px; margin-top: 6px; }
 .print_box .print_survey h4.gray_title{ padding: 5px 15px; background-color: #F8F9F9; font-size: 12px; }
 .print_box .print_survey .autobiography{ padding: 10px; }
