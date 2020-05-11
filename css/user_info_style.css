@@ -56,34 +56,28 @@ a .tooltip{ opacity: 1; position: absolute; top: 33px; z-index: 10; min-width: 4
 a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 4px); width: 0; height: 0; border-style: solid; border-width: 0 4px 6px 4px; border-color: transparent transparent #4a4a4a transparent; line-height: 0px; _border-color: #000000 #000000 #4a4a4a #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
 
 .personal_information_container{ padding-bottom: 40px; }
-.personal_information_container .top_tips{ width: 100%; background-color: #F8F9F9; padding: 80px 10px 15px 10px;}
-.personal_information_container .top_tips p{ max-width: 900px; margin: 0 auto; color: #C87D86; font-size: 22px;}
-.personal_information_container .interviewee_data{ max-width: 900px; margin: 0 auto; padding: 40px 0 30px 0;}
-.personal_information_container .interviewee_data ul.user_info{ float: left; }
-.personal_information_container .interviewee_data ul.user_info li{ padding: 5px 0;}
+.personal_information_container .top_tips{ width: 100%; background-color: #F2F8FA; padding: 30px 10px 10px 10px; min-height: 110px;}
+.personal_information_container .top_tips div{ max-width: 800px; margin: 0 auto; }
+.personal_information_container .top_tips p.preview{ float: left;}
+.personal_information_container .top_tips p.user_id{ float: right; font-size: 16px;}
+.personal_information_container .top_tips p.user_id a{ margin-left: 10px; }
+.personal_information_container .top_tips p a{ color: #558C9E;}
+.personal_information_container .top_tips p a:hover{ text-decoration-line:underline; }
+
+.personal_information_container .interviewee_data{ max-width: 900px; margin: 0 auto; padding: 20px 0;}
+.personal_information_container .interviewee_data p.deadline{color: #C87D86; font-size: 18px; padding: 5px 0; max-width: 800px; margin: 0 auto;}
+.personal_information_container .interviewee_data ul.user_info{ text-align: left; max-width: 800px; margin: 0 auto; }
+.personal_information_container .interviewee_data ul.user_info li{ display: inline-block; min-width: 178px; padding: 5px 15px 5px 0;}
+
 .personal_information_container .interviewee_data p{ font-size: 20px; }
 .personal_information_container .interviewee_data p span{ color: #9B9B9B; }
-.personal_information_container .interviewee_data ul.other_info{ float: right; }
-.personal_information_container .interviewee_data ul.other_info li{ float: left; padding-left: 15px; }
-.personal_information_container .interviewee_data ul.other_info li a{ width: 85px; height: 85px; text-align: center; display:block; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
-.personal_information_container .interviewee_data ul.other_info li a p{ color: #9B9B9B; font-size: 12px;position: relative;}
-.personal_information_container .interviewee_data ul.other_info li a.upload_photo{ background-color: #E6F0F4; border: 1px dashed #81B6C8; border-radius: 10px; position: relative; overflow: hidden;}
-.personal_information_container .interviewee_data ul.other_info li a.upload_photo .user_photo{ width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1; }
-.personal_information_container .interviewee_data ul.other_info li a.upload_photo p{ color: #81B6C8; padding-top: 48px; width: 100%; }
-.personal_information_container .interviewee_data ul.other_info li a.upload_photo p::after{ content: ""; position: absolute; width:42px; height: 32px; top: 8px; left:calc(50% - 18px); display: block; background-image: url(../images/personal_information/upload_photo.svg); }
-.personal_information_container .interviewee_data ul.other_info li a.upload_photo:hover{ background-color: #fff; }
-.personal_information_container .interviewee_data ul.other_info li a.upload_photo:hover .user_photo{ opacity: .25; z-index: 0; }
 
-.personal_information_container .interviewee_data ul.other_info li a.upload_file p{ padding-top: 42px; width: 100%;}
-.personal_information_container .interviewee_data ul.other_info li a.upload_file p::after{ content: "";transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; position: absolute; width:45px; height: 32px; top: 6px; left:calc(50% - 22.5px); display: block; background-image: url(../images/personal_information/upload_file.svg); }
-.personal_information_container .interviewee_data ul.other_info li a.upload_file:hover p{color: #81B6C8;}
-.personal_information_container .interviewee_data ul.other_info li a.upload_file:hover p::after{ background-image: url(../images/personal_information/upload_file-blue.svg); }
-.personal_information_container .interviewee_data ul.other_info li.btn_in a.upload_file p{color: #81B6C8;}
-.personal_information_container .interviewee_data ul.other_info li.btn_in a.upload_file p::after{ background-image: url(../images/personal_information/upload_file-blue.svg); }
-
-.personal_information_container .fill_project{ width: 100%; border-bottom: 8px solid #81B6C8; margin-bottom: 25px;}
 .personal_information_container .top_title{ background-color: #81B6C8; padding: 5px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky;  position: -o-sticky;z-index: 2	; top: 0;}
 .personal_information_container .top_title h3{ color: #fff; font-size: 18px; max-width: 900px; margin: 0 auto;}
+.personal_information_container .fill_project{ width: 100%;}
+.personal_information_container .fill_project .top_title{ background-color: #F8F9F9;}
+.personal_information_container .fill_project .top_title h3{ color: #707475; }
+.personal_information_container .fill_project .top_title h3 span{ font-size: 14px; padding-left: 30px; display: inline-block; }
 
 .personal_information_container .sub_title { background-color: #F8F9F9; padding:10px 5px; border-bottom: 1.5px solid #fff;}
 .personal_information_container .sub_title h4{ color: #707475; font-size: 15px; max-width: 900px; margin: 0 auto; position: relative; cursor: pointer;}
@@ -99,12 +93,15 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 .personal_information_container .sub_title_option .setting_item{ border-bottom: 1px dashed #979797; padding: 10px 0; text-align: left; margin-top: 0;}
 .personal_information_container .sub_title_option .setting_item label{ font-size: 14px; }
 
-.personal_information_container .fill_project ul.item{ max-width: 900px; /*max-width: 625px;*/ margin: 0 auto; padding: 20px 0; }
-.personal_information_container .fill_project ul.item li{ float: left; width: calc(100% / 6);}
-.personal_information_container .fill_project ul.item li a{ width:100%; height: 95px; display: block; text-align: center; position: relative; border-radius: 5px; border: 2px solid transparent; }
+.personal_information_container .fill_project ul.item{ max-width: 750px; margin: 0 auto; padding: 20px 0; }
+.personal_information_container .fill_project ul.item li{ float: left; padding: 10px 15px; /* width: calc(100% / 6);*/}
+.personal_information_container .fill_project ul.item li a{ width:95px; height: 95px; display: block; text-align: center; position: relative; border-radius: 5px; border: 1px solid #D8D8D8; }
 .personal_information_container .fill_project ul.item li a p{ color: #9B9B9B; position: relative; width: 100%; padding-top: 62px;}
 .personal_information_container .fill_project ul.item li a p::after{ content: ""; position: absolute; width:100%; height: 48px; top: 8px; left:0; display: block; }
 .personal_information_container .fill_project ul.item li a:hover p, .personal_information_container .fill_project ul.item li.btn_in a p {color: #81B6C8;}
+.personal_information_container .fill_project ul.item li.btn_in a, 
+.personal_information_container .fill_project ul.item li a:hover{ border-color: #81B6C8; }
+
 .personal_information_container .fill_project ul.item li a.icon_01 p::after{ background-image: url(../images/personal_information/fill_project_icon_01.svg);}
 .personal_information_container .fill_project ul.item li a.icon_02 p::after{ background-image: url(../images/personal_information/fill_project_icon_02.svg);}
 .personal_information_container .fill_project ul.item li a.icon_03 p::after{ background-image: url(../images/personal_information/fill_project_icon_03.svg);}
@@ -116,6 +113,17 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 .personal_information_container .fill_project ul.item li a.icon_09 p::after{ background-image: url(../images/personal_information/fill_project_icon_09.svg);}
 .personal_information_container .fill_project ul.item li a.icon_10 p::after{ background-image: url(../images/personal_information/fill_project_icon_10.svg);}
 .personal_information_container .fill_project ul.item li a.icon_11 p::after{ background-image: url(../images/personal_information/fill_project_icon_11.svg);}
+.personal_information_container .fill_project ul.item li a.icon_12 p::after{ background-image: url(../images/personal_information/fill_project_icon_12.svg);}
+.personal_information_container .fill_project ul.item li a.icon_13 p::after{ background-image: url(../images/personal_information/fill_project_icon_13.svg);}
+.personal_information_container .fill_project ul.item li a.icon_14 p::after{ background-image: url(../images/personal_information/fill_project_icon_14.svg);}
+.personal_information_container .fill_project ul.item li a.icon_15 p::after{ background-image: url(../images/personal_information/fill_project_icon_15.svg);}
+.personal_information_container .fill_project ul.item li a.icon_16 p::after{ background-image: url(../images/personal_information/upload_photo.svg);}
+.personal_information_container .fill_project ul.item li a.icon_17 p::after{ background-image: url(../images/personal_information/upload_file.svg);}
+
+.personal_information_container .fill_project ul.item li.upload_photo .user_photo{ width: 100%; height: 100%; border-radius: 5px; position: absolute; top: 0; left: 0; z-index: 1; background-color: #fff; }
+.personal_information_container .fill_project ul.item li.upload_photo:hover .user_photo{ opacity: .25; z-index: 0; }
+
+
 .personal_information_container .fill_project ul.item li a.icon_01:hover p::after, .personal_information_container .fill_project ul.item li.btn_in a.icon_01 p::after{ background-image: url(../images/personal_information/fill_project_icon_01-blue.svg);}
 .personal_information_container .fill_project ul.item li a.icon_02:hover p::after, .personal_information_container .fill_project ul.item li.btn_in a.icon_02 p::after{ background-image: url(../images/personal_information/fill_project_icon_02-blue.svg);}
 .personal_information_container .fill_project ul.item li a.icon_03:hover p::after, .personal_information_container .fill_project ul.item li.btn_in a.icon_03 p::after{ background-image: url(../images/personal_information/fill_project_icon_03-blue.svg);}
@@ -127,6 +135,12 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 .personal_information_container .fill_project ul.item li a.icon_09:hover p::after, .personal_information_container .fill_project ul.item li.btn_in a.icon_09 p::after{ background-image: url(../images/personal_information/fill_project_icon_09-blue.svg);}
 .personal_information_container .fill_project ul.item li a.icon_10:hover p::after, .personal_information_container .fill_project ul.item li.btn_in a.icon_10 p::after{ background-image: url(../images/personal_information/fill_project_icon_10-blue.svg);}
 .personal_information_container .fill_project ul.item li a.icon_11:hover p::after, .personal_information_container .fill_project ul.item li.btn_in a.icon_11 p::after{ background-image: url(../images/personal_information/fill_project_icon_11-blue.svg);}
+.personal_information_container .fill_project ul.item li a.icon_12:hover p::after, .personal_information_container .fill_project ul.item li.btn_in a.icon_12 p::after{ background-image: url(../images/personal_information/fill_project_icon_12-blue.svg);}
+.personal_information_container .fill_project ul.item li a.icon_13:hover p::after, .personal_information_container .fill_project ul.item li.btn_in a.icon_13 p::after{ background-image: url(../images/personal_information/fill_project_icon_13-blue.svg);}
+.personal_information_container .fill_project ul.item li a.icon_14:hover p::after, .personal_information_container .fill_project ul.item li.btn_in a.icon_14 p::after{ background-image: url(../images/personal_information/fill_project_icon_14-blue.svg);}
+.personal_information_container .fill_project ul.item li a.icon_15:hover p::after, .personal_information_container .fill_project ul.item li.btn_in a.icon_15 p::after{ background-image: url(../images/personal_information/fill_project_icon_15-blue.svg);}
+.personal_information_container .fill_project ul.item li a.icon_16:hover p::after, .personal_information_container .fill_project ul.item li.btn_in a.icon_16 p::after{ background-image: url(../images/personal_information/upload_photo-blue.svg);}
+.personal_information_container .fill_project ul.item li a.icon_17:hover p::after, .personal_information_container .fill_project ul.item li.btn_in a.icon_17 p::after{ background-image: url(../images/personal_information/upload_file-blue.svg);}
 
 .personal_information_container .fill_project ul.item li a.remind{ border-color: #4A4A4A; }
 .personal_information_container .fill_project ul.item li a.remind .tooltip{ top: 100px; left: calc(50% - 65px); min-width: 130px; }
@@ -272,6 +286,12 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 .personal_information_container .bottom_line .information_info:nth-child(2){ border-bottom: 1px dashed #979797;  padding-bottom: 15px;}
 .personal_information_container .data_content { border-bottom: 1.5px solid #fff;}
 .personal_information_container .data_content .fillin_list{ padding-bottom: 10px; }
+.personal_information_container .data_content .bg_gray{ background-color: #F8F9F9; }
+.personal_information_container .data_content .bg_gray .fillin_list{ padding-bottom: 0; }
+.personal_information_container .data_content .bg_gray .fillin_list .information_info label{ color: #4A4A4A;}
+
+.personal_information_container .bg_gray .bottom_line .information_info:last-child{ margin-bottom: 10px; }
+
 .personal_information_container p.top_line{ border-top: 1px dashed #979797; padding-top: 15px;}
 
 .personal_information_container .style_for_k{ margin-top: 10px; }
@@ -435,16 +455,12 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 	.personal_information_login h1.title{ font-size: 24px;}
 	.personal_information_login .main_info{ padding: 15px 0;}
 
-	.personal_information_container .top_tips{ padding-bottom: 10px;}
-	.personal_information_container .top_tips p{ font-size: 18px; max-width: 900px;}
-
 	.personal_information_container .top_title h3,
 	.personal_information_container .interviewee_data p,
 	.personal_information_login .main_info p{ font-size: 16px;}
 
 	.personal_information_container .interviewee_data,
-	.personal_information_container .fill_project .top_title h3,
-	.personal_information_container .fill_project ul.item{ max-width: 900px;}
+	.personal_information_container .fill_project .top_title h3{ max-width: 900px;}
 
 	.personal_information_finished .fillin_done h3{ font-size: 20px; }
 	.personal_information_finished .fillin_done p{ font-size: 18px; line-height: 24px;}
@@ -457,16 +473,17 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 	.personal_information_container .top_title h3,
 	.personal_information_container .sub_title h4{ max-width: 600px;}
 }
-@media (max-width:1040px){
+@media (max-width:850px){
 	.personal_information_container .contentsBox, .personal_information_login .contentsBox{ width:calc(100% - 40px);}
-	.personal_information_container .fill_project ul.item li a{ height: 77px; }
+	.personal_information_container .fill_project ul.item{ max-width: 540px;}
+	.personal_information_container .fill_project ul.item li a{ width: 77px; height: 77px; }
 	.personal_information_container .fill_project ul.item li a p{ padding-top: 46px;}
 	.personal_information_container .fill_project ul.item li a p::after{ height: 32px;}
 	.personal_information_container .fill_project ul.item li a.remind .tooltip{ top: 81px; left: calc(50% - 55px); min-width: 110px; }
 }
 @media (max-width:750px){
 	.personal_information_container .contentsBox, .personal_information_login .contentsBox{ width: 100%; }
-	.personal_information_login .contentsBox, .personal_information_container .interviewee_data, .personal_information_container .fill_project .top_title h3, .personal_information_container .fill_project ul.item{ max-width: calc(100% - 30px); }
+	.personal_information_login .contentsBox, .personal_information_container .interviewee_data, .personal_information_container .fill_project .top_title h3{ max-width: calc(100% - 30px); }
 	.personal_information_login .main-logo{ margin-top: 20px; }
 	.personal_information_login .main_info{ border: none;}
 	.personal_information_login .main_info p{ font-size: 12px; max-width: 95%; }
@@ -474,15 +491,14 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 	.personal_information_login p.sub_title{ margin: 0 auto; padding-bottom: 20px; }
 	.personal_information_login .fill{ padding: 20px 0; }
 
-	.personal_information_container .top_tips{ padding-top: 10px; }
-	.personal_information_container .interviewee_data{ max-width: 240px;  padding: 20px 0; }
-	.personal_information_container .interviewee_data ul.user_info{ padding-bottom: 15px; float: none; }
-	.personal_information_container .interviewee_data ul.other_info{ float: none; }
-
+	.personal_information_container .top_tips{ min-height: initial; padding-top: 10px; }
+	.personal_information_container .interviewee_data{ max-width: 540px; padding:10px 30px; }
 	.personal_information_container .setting_item label{ font-size: 16px; }
 }
 @media (max-width:620px){
-	.personal_information_container .fill_project ul.item li{ width: calc(100% / 3); }
+	.personal_information_container .fill_project ul.item{ max-width: 265px;}
+	.personal_information_container .fill_project ul.item li{ width: calc(100% / 3); padding: 5px; }
+	.personal_information_container .fill_project .top_title h3 span{ display: block; padding: 5px 0; font-size: 13px; }
 	.personal_information_container .fillin_list .information_info{ width: 100%; padding-right: 0;}
 	.personal_information_container .fillin_list .information_info:nth-child(2n){ padding-left: 0; }
 	.personal_information_container .fillin_list .information_info textarea.f_input{ /*max-width: 282px;*/ max-width: 558px; width: 100%; }
@@ -499,6 +515,8 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 	.personal_information_container .fillin_list .no_line:nth-child(3){ border: none; padding: 0; }
 	.personal_information_container .fillin_list .for_w100 ul{ width: 100%; }
 	.personal_information_container .fillin_list .for_w100 label{ line-height: inherit; }
+	.personal_information_container .bg_gray .bottom_line .information_info:first-child{ border: none; padding-bottom: 0; }
+	.personal_information_container .bg_gray .bottom_line .information_info:last-child{ border-bottom: 1px dashed #979797; padding-bottom: 10px; }
 }
 
 @media (max-width:450px){
@@ -508,7 +526,6 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 	
 	.personal_information_container{ padding-bottom: 20px; }
 	.personal_information_container .contentsBox{ width: 100%; min-width: 300px; }
-	.personal_information_container .top_tips p{ font-size: 14px; text-align: center; }
 
 	.personal_information_container .fill_project ul.item{ margin: 0 auto; }
 	.personal_information_container .top_title h3,
@@ -517,8 +534,6 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 	.personal_information_container .setting_item label{ font-size: 14px; }
 	.personal_information_container .setting_item input[type=checkbox]:not(old) + label{ background-position: 0 -2px ; }
 	.personal_information_container p.btn{ max-width: 282px;  font-size: 15px;}
-	.personal_information_container .interviewee_data ul.other_info{ text-align: center; }
-	.personal_information_container .interviewee_data ul.other_info li{ float: none; display: inline-block; }
 
 	.personal_information_container .add_new_file .add_new_content{ max-width: 282px; }
 	.personal_information_container .add_new_file .add_new_content .upload_limit_note p.left_title{ width: 53px; height: 53px; }
@@ -545,5 +560,4 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 .for_account_questionnaire_preview .contentsBox{ padding-bottom: 25px; }
 .for_account_questionnaire_preview .top_tips{ padding: 60px 20px 15px 20px;}
 .for_account_questionnaire_preview .interviewee_data{ max-width: calc(100% - 40px); padding: 40px 0 30px 0; }
-.for_account_questionnaire_preview .interviewee_data ul.user_info{ padding-bottom: 15px; float: left; }
-.for_account_questionnaire_preview .interviewee_data ul.other_info{ float: right; }
+.for_account_questionnaire_preview .interviewee_data ul.user_info{ padding-bottom: 15px;}

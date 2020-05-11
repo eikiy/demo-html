@@ -5,17 +5,17 @@
     </clipPath>
   </defs>
   <g id="Group_11" data-name="Group 11" transform="translate(0 -1)">
-    <path id="Fill_1" data-name="Fill 1" d="M0,10.821H6.348V0H0Z" transform="translate(29.118 8.915)" fill="#81b6c8"/>
+    <path id="Fill_1" data-name="Fill 1" d="M0,10.821H6.348V0H0Z" transform="translate(29.118 8.915)" fill="#D8D8D8"/>
     <g id="Group_10" data-name="Group 10" transform="translate(0 0.365)">
       <path id="Clip_3-2" data-name="Clip 3" d="M0,0H41.575V32.365H0Z" transform="translate(0 0.635)" fill="none"/>
       <g id="Group_10-2" data-name="Group 10" clip-path="url(#clip-path)">
-        <path id="Fill_2" data-name="Fill 2" d="M6.739,11.6H.391A.391.391,0,0,1,0,11.212V.391A.391.391,0,0,1,.391,0H6.739a.391.391,0,0,1,.39.391V11.212A.391.391,0,0,1,6.739,11.6ZM.782.781v10.04H6.347V.781Z" transform="translate(28.727 8.159)" fill="#81b6c8"/>
-        <path id="Fill_4" data-name="Fill 4" d="M31.255,16.794v7.44H4.618V4.43H21.874V0H2.216A2.216,2.216,0,0,0,0,2.215V26.449a2.216,2.216,0,0,0,2.216,2.216H33.657a2.216,2.216,0,0,0,2.216-2.216V16.794Z" transform="translate(0 4.335)" fill="#81b6c8"/>
-        <path id="Fill_5" data-name="Fill 5" d="M0,8.893,8.893,0l8.892,8.893Z" transform="translate(23.399 1.025)" fill="#81b6c8"/>
-        <path id="Fill_6" data-name="Fill 6" d="M18.176,9.675H.391a.39.39,0,0,1-.276-.667L9.007.114a.392.392,0,0,1,.553,0l8.892,8.894a.4.4,0,0,1,.086.426A.39.39,0,0,1,18.176,9.675ZM9.283.944,1.334,8.893h15.9Z" transform="translate(23.009 0.634)" fill="#81b6c8"/>
-        <path id="Fill_7" data-name="Fill 7" d="M0,5.532A5.531,5.531,0,1,0,5.531,0,5.531,5.531,0,0,0,0,5.532" transform="translate(10.642 9.971)" fill="#81b6c8"/>
-        <path id="Fill_8" data-name="Fill 8" d="M16.8,7.724H0V5.2A5.206,5.206,0,0,1,5.2,0h6.4a5.206,5.206,0,0,1,5.2,5.2V7.723ZM5.5.549c-.121,0-.239.009-.353.018L6.341,6.83h4.12L11.654.567C11.549.559,11.425.549,11.3.549Z" transform="translate(7.772 21.556)" fill="#81b6c8"/>
-        <path id="Fill_9" data-name="Fill 9" d="M0,5.367H2.585l-.64-4.21H1.922L2.552,0H.035L.664,1.157H.642Z" transform="translate(14.881 23.02)" fill="#81b6c8"/>
+        <path id="Fill_2" data-name="Fill 2" d="M6.739,11.6H.391A.391.391,0,0,1,0,11.212V.391A.391.391,0,0,1,.391,0H6.739a.391.391,0,0,1,.39.391V11.212A.391.391,0,0,1,6.739,11.6ZM.782.781v10.04H6.347V.781Z" transform="translate(28.727 8.159)" fill="#D8D8D8"/>
+        <path id="Fill_4" data-name="Fill 4" d="M31.255,16.794v7.44H4.618V4.43H21.874V0H2.216A2.216,2.216,0,0,0,0,2.215V26.449a2.216,2.216,0,0,0,2.216,2.216H33.657a2.216,2.216,0,0,0,2.216-2.216V16.794Z" transform="translate(0 4.335)" fill="#D8D8D8"/>
+        <path id="Fill_5" data-name="Fill 5" d="M0,8.893,8.893,0l8.892,8.893Z" transform="translate(23.399 1.025)" fill="#D8D8D8"/>
+        <path id="Fill_6" data-name="Fill 6" d="M18.176,9.675H.391a.39.39,0,0,1-.276-.667L9.007.114a.392.392,0,0,1,.553,0l8.892,8.894a.4.4,0,0,1,.086.426A.39.39,0,0,1,18.176,9.675ZM9.283.944,1.334,8.893h15.9Z" transform="translate(23.009 0.634)" fill="#D8D8D8"/>
+        <path id="Fill_7" data-name="Fill 7" d="M0,5.532A5.531,5.531,0,1,0,5.531,0,5.531,5.531,0,0,0,0,5.532" transform="translate(10.642 9.971)" fill="#D8D8D8"/>
+        <path id="Fill_8" data-name="Fill 8" d="M16.8,7.724H0V5.2A5.206,5.206,0,0,1,5.2,0h6.4a5.206,5.206,0,0,1,5.2,5.2V7.723ZM5.5.549c-.121,0-.239.009-.353.018L6.341,6.83h4.12L11.654.567C11.549.559,11.425.549,11.3.549Z" transform="translate(7.772 21.556)" fill="#D8D8D8"/>
+        <path id="Fill_9" data-name="Fill 9" d="M0,5.367H2.585l-.64-4.21H1.922L2.552,0H.035L.664,1.157H.642Z" transform="translate(14.881 23.02)" fill="#D8D8D8"/>
       </g>
     </g>
   </g>

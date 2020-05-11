@@ -17,10 +17,14 @@
 			<!-- 主頁 -->
 			<div class="contentsBox">
 				<div class="top_tips">
-					<p>請於：2019/10/28前填寫完畢</p>
+					<div class="clearfix">
+						<p class="preview"><a href="#">預覽履歷</a></p>
+						<p class="user_id">Hello,陳明明 <a href="#">登出</a></p>
+					</div>
 				</div>
 				<div class="interviewee_data clearfix">
-					<ul class="user_info">
+					<p class="deadline">請於：2018/10/28前填寫完畢</p>
+					<ul class="user_info clearfix">
 						<li>
 							<p><span>職位：</span>軟體工程師</p>
 						</li>
@@ -28,31 +32,66 @@
 							<p><span>面試的日期：</span>2018/11/1/13:30</p>
 						</li>
 					</ul>
-					<ul class="other_info clearfix">
-						<li>
-							<a class="upload_photo" href="#">
-								<div class="user_photo img_default" style="background-image: url(images/user_photo_01.png);"></div>
-								<p class="icon img_default">上傳個人照片</p>
-							</a>
-						</li>
-						<li>
-							<a class="upload_file" href="user_info_add.html">
-								<p class="img_default">上傳附件/連結</p>
-							</a>
-						</li>
-					</ul>
 				</div>
 				<div class="fill_project">
 					<div class="top_title">
-						<h3>基本資料</h3>
+						<h3>履歷</h3>
 					</div>
 					<ul class="item clearfix">
-						<li class="btn_in"><a class="icon_01" href="user_info_01.html"><p class="img_default">基本資料</p></a></li>
-						<li><a class="icon_02" href="user_info_02.html"><p class="img_default">教育程度</p></a></li>
-						<li><a class="icon_03 remind" href="user_info_03.html"><p class="img_default">家庭狀況</p><span class="tooltip">請點入開始點寫</span></a></li>
-						<li><a class="icon_04" href="user_info_04.html"><p class="img_default">工作經驗</p></a></li>
-						<li><a class="icon_05" href="user_info_05.html"><p class="img_default">專業訓練</p></a></li>
-						<li><a class="icon_06" href="user_info_06.html"><p class="img_default">其他問題</p></a></li>
+						<!-- 上傳照片 -->
+						<li class="upload_photo">
+							<a class="icon_16" href="#">
+								<div class="user_photo img_default" style="background-image: url(images/user_photo_01.png);"></div>
+								<p class="img_default">上傳照片</p>
+							</a>
+						</li>
+						<!-- 尚未上傳照片 -->
+						<li>
+							<a class="icon_16" href="#">
+								<p class="img_default">上傳照片</p>
+							</a>
+						</li>
+						<li>
+							<a class="icon_17" href="user_info_add.html">
+								<p class="img_default">附件/連結</p>
+							</a>
+						</li>
+						<li>
+							<a class="icon_15" href="user_info_12.html">
+								<p class="img_default">自傳</p>
+							</a>
+						</li>
+						<li class="btn_in">
+							<a class="icon_01" href="user_info_01.html">
+								<p class="img_default">基本資料</p>
+							</a>
+						</li>
+						<li>
+							<a class="icon_02" href="user_info_02.html">
+								<p class="img_default">教育程度</p>
+							</a>
+						</li>
+						<li>
+							<a class="icon_03 remind" href="user_info_03.html">
+								<p class="img_default">家庭狀況</p>
+								<span class="tooltip">請點入開始點寫</span>
+							</a>
+						</li>
+						<li>
+							<a class="icon_04" href="user_info_04.html">
+								<p class="img_default">工作經驗</p>
+							</a>
+						</li>
+						<li>
+							<a class="icon_05" href="user_info_05.html">
+								<p class="img_default">專業訓練</p>
+							</a>
+						</li>
+						<li>
+							<a class="icon_06" href="user_info_06.html">
+								<p class="img_default">其他問題</p>
+							</a>
+						</li>
 					</ul>
 					<div class="top_title">
 						<h3>個人問卷</h3>
@@ -64,6 +103,14 @@
 						<li><a class="icon_10" href="user_info_10.html"><p class="img_default">工作職能</p></a></li>
 						<li><a class="icon_11" href="user_info_11.html"><p class="img_default">其他問題</p></a></li>
 					</ul>
+					<div class="top_title">
+						<h3>測驗<span>預計所需時間：特質5分鐘、邏輯15分鐘、情境15分鐘</span></h3>
+					</div>
+					<ul class="item clearfix">
+						<li class="btn_in"><a class="icon_12" href="#"><p class="img_default">特質測驗</p></a></li>
+						<li class="btn_in"><a class="icon_13" href="#"><p class="img_default">邏輯測驗</p></a></li>
+						<li class="btn_in"><a class="icon_14" href="#"><p class="img_default">情境測驗</p></a></li>
+					</ul>
 				</div>
 				<div class="setting_item">
 					<input id="" type="checkbox" name="" value="本人申明以上所填各項資料屬實，如有虛偽願受免職處分。">
@@ -72,6 +119,128 @@
 			</div>
 			<!-- 問卷內容 -->
 			<div class="contentsBox">
+				<!-- 附件/連結 -->
+				<div class="fillin_content">
+					<div class="top_title">
+						<h3>上傳附件/新增連結</h3>
+					</div>
+					<div class="sub_title">
+						<h4 class="no_arr">+ 增加作品集或個人化履歷 [ 最多3筆 ]</h4>
+					</div>
+					<!-- 新增檔案 -->
+								<div class="add_new_file clearfix">
+									<div class="add_new_content">
+										<ul class="upload_file">
+											<!-- 上傳中 -->
+											<li class="clearfix">
+												<div class="upload_info clearfix">
+													<div class="icon_file icon_pdf img_default"></div>
+													<div class="progress_bar">
+														<p>舞龍舞獅配樂</p>
+														<div class="progress_container">
+								                			<div id="myBar" class="progressbar color_org" style="width:70%"></div>
+								                		</div>
+													</div>
+												</div>
+											</li>
+											<!-- 上傳失敗 li + upload_error -->
+											<li class="upload_error clearfix">
+												<div class="upload_info clearfix">
+													<div class="icon_file icon_pdf img_default"></div>
+													<div class="progress_bar">
+														<p>林怡文身分證影本</p>
+														<div class="progress_container">
+								                			<div id="myBar" class="progressbar color_org" style="width:70%"></div>
+								                		</div>
+													</div>
+												</div>
+												<div class="btn_delete">
+													<a class="popup-link" href="#popup-note"></a>
+												</div>
+											</li>
+											<!-- 上傳成功 li + upload_error -->
+											<li class="upload_done clearfix">
+												<div class="upload_info clearfix">
+													<div class="icon_file icon_video img_default"></div>
+													<div class="progress_bar">
+														<p>舞龍舞獅形象影片(10Mb)</p>
+													</div>
+												</div>
+												<div class="btn_delete">
+													<a href="#"></a>
+												</div>
+											</li>
+										</ul>
+										<a class="choose_file" href="#">
+											<p class="img_default">請選擇檔案</p>
+										</a>
+										<div class="upload_limit_note clearfix">
+											<p class="left_title">檔案<br>限制</p>
+											<ul>
+												<li><p>最多可上傳3個附件檔案</p></li>
+												<li><p>不可上傳執行檔 .exe 格式</p></li>
+												<li><p>每個檔案大小請勿超過 10MB</p></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- 新增檔案 - 已達上限需增加 full_file 改變 style -->
+								<div class="add_new_file full_file clearfix">
+									<div class="add_new_content">
+										<a class="choose_file" href="#">
+											<p class="img_default">目前檔案數量已達上限，請刪除下方不需要的檔案後，可再重新上傳</p>
+										</a>
+										<div class="upload_limit_note clearfix">
+											<p class="left_title">檔案<br>限制</p>
+											<ul>
+												<li><p>最多可上傳3個附件檔案</p></li>
+												<li><p>不可上傳執行檔 .exe 格式</p></li>
+												<li><p>每個檔案大小請勿超過 10MB</p></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+					<div class="sub_title">
+						<h4 class="no_arr">+ 增加相關連結 [ 最多2筆 ]</h4>
+					</div>
+					<div class="data_content">
+						<form class="fillin_list clearfix fillin_w100 bottom_line">
+							<div class="information_info clearfix">
+								<fieldset>
+									<label for="">連結 1</label>
+									<textarea class="f_input h_more" placeholder="連結名稱或敘述，字數限制30字以內">個人網站設計｜於2018年自己架設，自己設計到切版</textarea>
+								</fieldset>
+								<fieldset>
+									<input class="f_input" type="text" name="" id="" placeholder="https://" />
+								</fieldset>
+							</div>
+							<div class="information_info clearfix">
+								<fieldset>
+									<label for="">連結 2</label>
+									<textarea class="f_input h_more" placeholder="連結名稱或敘述，字數限制30字以內"></textarea>
+								</fieldset>
+								<fieldset>
+									<input class="f_input" type="text" name="" id="" placeholder="https://" />
+								</fieldset>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- 自傳 -->
+				<div class="fillin_content">
+					<div class="top_title">
+						<h3>自傳</h3>
+					</div>
+					<div class="data_content">
+						<form class="fillin_list clearfix fillin_w100">
+							<div class="information_info clearfix">
+								<fieldset>
+									<textarea class="f_input h70" placeholder=""></textarea>
+								</fieldset>
+							</div>
+						</form>
+					</div>
+				</div>
 				<!-- 基本資料 -->
 				<div class="fillin_content">
 					<div class="top_title">
@@ -566,11 +735,45 @@
 						<h3>工作經歷 [最多8筆]  </h3>
 					</div>
 					<div class="data_content">
-						<div class="sub_title_option style_for_k">
-							<div class="setting_item">
-								<input id="" type="radio" name="" value="沒有工作經驗">
-								<label for="option">沒有工作經驗</label>
-							</div>
+						<div class="bg_gray">
+							<form class="fillin_list clearfix bottom_line bg_gray">
+								<div class="information_info">
+									<fieldset>
+										<label for="">您的工作年資</label>
+										<div class="styled-select">
+			                            	<select class="md-input" name="">
+			                            		<option disabled="" style="display: none;" selected="" value="">請選擇</option>
+				                            	<option value="1">0</option>
+				                            	<option value="2"><1</option>
+				                            	<option value="3">1-2</option>
+				                            	<option value="4">2-4</option>
+				                            	<option value="5">4-6</option>
+				                            	<option value="5">6-10</option>
+				                            	<option value="5">10-15</option>
+				                            	<option value="5">15+</option>
+				                            </select>
+			                        	</div>
+									</fieldset>
+								</div>
+								<div class="information_info">
+									<fieldset>
+										<label for="">與這份職缺相關的工作年資</label>
+										<div class="styled-select">
+			                            	<select class="md-input" name="">
+			                            		<option disabled="" style="display: none;" selected="" value="">請選擇</option>
+				                            	<option value="1">0</option>
+				                            	<option value="2"><1</option>
+				                            	<option value="3">1-2</option>
+				                            	<option value="4">2-4</option>
+				                            	<option value="5">4-6</option>
+				                            	<option value="5">6-10</option>
+				                            	<option value="5">10-15</option>
+				                            	<option value="5">15+</option>
+				                            </select>
+			                        	</div>
+									</fieldset>
+								</div>
+							</form>
 						</div>
 						<!-- 箭頭更改 + open_data -->
 						<div class="sub_title">
