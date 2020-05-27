@@ -577,9 +577,44 @@
                 </ul>
                 <h5 class="bg_g_sub_title">
                 	<span class="title_icon_lock img_default">專業技能</span>
-                	<a class="popup-link add img_default" href="#popup-job_duty"></a>
+                	<!-- <a class="popup-link add img_default" href="#popup-job_duty"></a> -->
                 </h5>
-                <ul class="professional_skill_list clearfix">
+                <div class="skill_list_select">
+	                <div class="f_input clearfix">
+						<div class="field">
+							<p class="f_text clearfix">
+								<span>Objective-C/Swift</span>
+								<a class="delete" href="#"></a>
+							</p>
+							<p class="f_text clearfix">
+								<span>IOS Development</span>
+								<a class="delete" href="#"></a>
+							</p>
+							<!-- input 需要計算剩下的寬度 -->
+							<input class="fillin_text" type="text" placeholder="" style="width: 120px;" value="il">
+						</div>
+						<div class="add">
+							<a class="img_default"></a>
+						</div>
+						<!-- 要幫他算高度，上面有可能因為內容過多高度拉長 -->
+						<div class="keywords_search" style="top: 35px;">
+							<ul>
+								<li><p>illustrator</p></li>
+								<li><p>InDesign</p></li>
+								<li><p>InVision</p></li>
+							</ul>
+						</div>
+					</div>
+					<div class="related_searches clearfix">
+						<p class="left_title">相關搜尋：</p>
+						<ul class="keywords">
+							<li><p>Photoshop</p></li>
+							<li><p>Event Planning</p></li>
+							<li><p>Final Cut Pro</p></li>
+						</ul>
+					</div>
+				</div>
+                <!-- <ul class="professional_skill_list clearfix">
                 	<li>
                 		<p>AutoCAD</p>
                 		<a class="go_edit img_default" href="#"></a>
@@ -590,7 +625,47 @@
                 		<a class="go_edit img_default" href="#"></a>
                 		<a class="go_delete img_default" href="#"></a>
                 	</li>
+                </ul> -->
+                <h5 class="bg_g_sub_title">
+                	<span class="title_icon_lock img_default">測驗</span>
+                	<a class="popup-link" href="#popup-job_duty">選擇</a>
+                </h5>
+                <div class="options_select">
+                	<h4>測驗選項
+                		<a class="btn_close" href="#">
+                			<span class="img_default"></span>
+                		</a>
+                	</h4>
+                	<div class="border_green">
+                		<p>請選擇此職位需要完成之測驗。<br>如需取消請同一個項目再按一次。</p>
+                	</div>
+                	<div class="options_list">
+	                	<div class="title">
+	                		<p>核心測驗（建議選取）</p>
+	                	</div>
+	                	<ul>
+	                		<li>
+	                			<p class="btn_in img_default">潛在人格特質測驗（5分鐘）</p>
+	                		</li>
+	                		<li>
+	                			<p>邏輯分析測驗（20分鐘）</p>
+	                		</li>
+	                		<li>
+	                			<p>社交智商測驗（15分鐘）</p>
+	                		</li>
+	                	</ul>
+	                </div>
+                	<p class="btn"><a class="" href="#">確認</a></p>
+                </div>
+                <ul class="job_duty_list clearfix">
+                	<li>
+                		<p>邏輯測驗</p>
+                	</li>
+                	<li>
+                		<p>情境測驗</p>
+                	</li>
                 </ul>
+                <br>
             </div>
             <p class="btn"><a class="popup-link" href="#popup-add_job_vacancies-2">確認</a></p>
         </form>
@@ -792,7 +867,9 @@
 							<ul>
 								<li><p><a class="popup-link" href="#popup-job_management_status">應徵者狀態管理</a></p></li>
 								<li class="btn_in"><p><a class="popup-link" href="#popup-job_vacancies_ranking">排名表</a></p></li>
-								<li class="none"><p><a>工作職能與專業技能</a></p></li>
+								<li><p><a class="popup-link" href="#popup-job_seeker_list">求職者名單</a></p></li>
+								<li><p><a class="popup-link" href="#popup-CV_link">履歷連結</a></p></li>
+								<!-- <li class="none"><p><a>工作職能與專業技能</a></p></li> -->
 							</ul>
 							<p class="btn">
 								<a class="bg_gary remind_greenbox popup-link" href="#popup-job_over">結束職缺
@@ -1577,7 +1654,9 @@
 							<ul>
 								<li><p><a class="popup-link" href="#popup-job_management_status">應徵者狀態管理</a></p></li>
 								<li class="btn_in"><p><a class="popup-link" href="#popup-job_vacancies_ranking">排名表</a></p></li>
-								<li class="none"><p><a href="#">工作職能與專業技能</a></p></li>
+								<li><p><a class="popup-link" href="#popup-job_seeker_list">求職者名單</a></p></li>
+								<li><p><a class="popup-link" href="#popup-CV_link">履歷連結</a></p></li>
+								<!-- <li class="none"><p><a href="#">工作職能與專業技能</a></p></li> -->
 							</ul>
 							<p class="btn">
 								<a class="bg_red popup-link" href="#popup-job_over2">刪除資料</a>
@@ -2167,7 +2246,7 @@
         </form>
     </div>
 
-     <!-- popup 應徵者狀態管理 -->
+    <!-- popup 應徵者狀態管理 -->
     <div id="popup-job_management_status" class="white-popup popup-L mfp-hide">
         <form class="setBox filter_pop">
             <div class="top_title">
@@ -2181,7 +2260,9 @@
 							<ul>
 								<li class="btn_in"><p><a class="popup-link" href="#popup-job_management_status">應徵者狀態管理</a></p></li>
 								<li><p><a class="popup-link" href="#popup-job_vacancies_ranking"><span class="title_icon_lock img_default">排名表</span></a></p></li>
-								<li class="none"><p><a href="#">工作職能與專業技能</a></p></li>
+								<li><p><a class="popup-link" href="#popup-job_seeker_list">求職者名單</a></p></li>
+								<li><p><a class="popup-link" href="#popup-CV_link">履歷連結</a></p></li>
+								<!-- <li class="none"><p><a href="#">工作職能與專業技能</a></p></li> -->
 							</ul>
 							<p class="btn">
 								<a class="bg_gary remind_greenbox popup-link" href="#popup-job_over">結束職缺
@@ -2477,7 +2558,7 @@
 												</div>
 												<div class="iBox clearfix">
 													<p>信箱：</p>
-													<p>frogfrog@gmail.com.tw</p>
+													<p class="copy_link">frogfrog@gmail.com.tw</p>
 												</div>
 											</div>
 											<div class="user_data clearfix">
@@ -2725,6 +2806,155 @@
 								<p class="info_logo">凱茂股份有限公司<br>
 								www.kamo.com.tw　TEL. 02 8792 5569　FAX. 02 8792 5693</p>
 							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 求職者名單 -->
+    <div id="popup-job_seeker_list" class="white-popup popup-L mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>職缺求職者排名</h3>
+            </div>
+            <div class="chosenBox interviewee_info j_v_ranking">
+            	<div class="interviewMainBox interview_officer_Main">
+					<div class="contentsBox">
+						<div class="top_test_menu open_content clearfix">
+							<ul>
+								<li><p><a href="#popup-job_management_status">應徵者狀態管理</a></p></li>
+								<li><p><a class="popup-link" href="#popup-job_vacancies_ranking"><span class="title_icon_lock img_default">排名表</span></a></p></li>
+								<li class="btn_in"><p><a class="popup-link" href="#popup-job_seeker_list">求職者名單</a></p></li>
+								<li class="none"><p><a class="popup-link" href="#popup-CV_link">履歷連結</a></p></li>
+								<!-- <li class="none"><p><a href="#">工作職能與專業技能</a></p></li> -->
+							</ul>
+							<p class="btn">
+								<a class="bg_gary remind_greenbox popup-link" href="#popup-job_over">結束職缺
+									<span class="tooltip">
+			                			<span class="icon_thumbtack">目前尚有求職者狀態為 <span class="c_green">報到排程</span>，請確認其狀態。</span>
+			                		</span>
+		                		</a>
+							</p>
+						</div>
+						<div class="test_report new_report managementBox">
+							<div class="job_seeker_list_content">
+								<div class="top_box clearfix">
+									<div class="searchBox search_all">
+										<input type="text" name="" placeholder="輸入關鍵字">
+										<a href="#"></a>
+									</div>
+									<p>目前應徵人數共 0 位</p>
+								</div>
+								<div class="top_toolsBox clearfix">
+									<ul class="type clearfix">
+										<li><p><a href="#"><span>最後更新</span></a></p></li>
+										<li class="btn_in"><p><a href="#"><span>未讀</span></a></p></li>
+										<li><p><a href="#"><span>年資</span></a></p></li>
+										<li><p><a href="#"><span>未聯絡</span></a></p></li>
+										<li><p><a href="#"><span>喜愛名單</span></a></p></li>
+										<li style="width: 150px;"><p><a href="#"><span>測驗結果排序</span></a></p></li>
+									</ul>
+								</div>
+								<div class="list_not_yet">
+									<p>尚未有求職者<br>請先至 <a class="popup-link" href="#popup-CV_link">履歷連結</a> 中完成設定，並將連結複製至各大人力平台
+								</div>
+							</div>
+							<div class="company_info clearfix">
+								<p class="info_logo">凱茂股份有限公司<br>
+								www.kamo.com.tw　TEL. 02 8792 5569　FAX. 02 8792 5693</p>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </form>
+    </div>
+
+    <!-- popup 履歷連結 -->
+    <div id="popup-CV_link" class="white-popup popup-L mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>職缺求職者排名</h3>
+            </div>
+            <div class="chosenBox interviewee_info j_v_ranking">
+            	<div class="interviewMainBox interview_officer_Main">
+					<div class="contentsBox">
+						<div class="top_test_menu open_content clearfix">
+							<ul>
+								<li><p><a href="#popup-job_management_status">應徵者狀態管理</a></p></li>
+								<li><p><a class="popup-link" href="#popup-job_vacancies_ranking"><span class="title_icon_lock img_default">排名表</span></a></p></li>
+								<li><p><a class="popup-link" href="#popup-job_seeker_list">求職者名單</a></p></li>
+								<li class="btn_in"><p><a class="popup-link" href="#popup-CV_link">履歷連結</a></p></li>
+							</ul>
+							<p class="btn">
+								<a class="bg_gary remind_greenbox popup-link" href="#popup-job_over">結束職缺
+									<span class="tooltip">
+			                			<span class="icon_thumbtack">目前尚有求職者狀態為 <span class="c_green">報到排程</span>，請確認其狀態。</span>
+			                		</span>
+		                		</a>
+							</p>
+						</div>
+						<div class="test_report new_report r_content_01 messageBox check_remind CV_link_conrent">
+							<div class="all_test_list">
+			                	<p class="t_title">請先設定此職缺履歷連結所需顯示之項目</p>
+			                	<ul class="item conditionList">
+									<!-- 子項目填入 sub_item(文字變小) -->
+									<!--  藍色字 + check_in -->
+									<li class="sub_item check_in">
+										<input id="" type="checkbox" name="" value="基本資料/附件">
+										<label for="option">基本資料/附件</label>
+									</li>
+									<!--  藍色字 + check_in -->
+									<li class="sub_item check_in">
+										<input id="" type="checkbox" name="" value="適職問卷">
+										<label for="option">適職問卷</label>
+									</li>
+									<!-- 不可以點的狀態 + class:check_notyet -->
+									<li class="sub_item check_notyet">
+										<input id="" type="checkbox" name="" value="其他問題" disabled="">
+										<label for="option">其他問題</label>
+									</li>
+									<li class="sub_item check_in">
+										<input id="" type="checkbox" name="" value="測驗（邏輯測驗、社交智商測驗）" checked="">
+										<label for="option">測驗（邏輯測驗、社交智商測驗</label>
+									</li>
+								</ul>
+			                </div>
+			            	<div class="recruit_platform">
+				                <div class="all_test_list">
+				                	<p class="t_title">先選擇需要招募的招募平台，請將網址複製後貼上該平台頁面即可。<br>
+				                	請確定對應的平台與連結，才能正確統計履歷來源。</p>
+				                	<ul class="item conditionList">
+										<li class="sub_item">
+											<div class="job_type clearfix">
+												<p><a href="#"><span>請選擇招募平台</span></a></p>
+												<ul class="sub_filter" style="  width: 100%;"><!-- 不知道"職業"最長的名稱多寬 -->
+													<li><p>104</p></li>
+													<li><p>1111</p></li>
+													<li><p>518</p></li>
+													<li><p>Yes123</p></li>
+													<li><p>cakeresume</p></li>
+													<li><p>Wanted</p></li>
+													<li><p>Meet.jobs</p></li>
+													<li><p>企業招募網站</p></li>
+													<li><p>企業招募廣告</p></li>
+													<li><p>就業博覽會</p></li>
+													<li><p>校園徵才活動</p></li>
+													<li><p>就業服務站</p></li>
+													<li><p>求職論壇</p></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+									<div class="link clearfix">
+				                        <label class="l_title" for=""><p>校園徵才活動</p></label>
+				                        <p class="r_info p_long"><a href="kamo.com.tw/abcde/can…" target="_blank">kamo.com.tw/abcde/can…</a></p>
+				                        <p class="btn"><a class="select" href="#">複製<span class="tooltip blue_tip">複製成功</span></a></p>
+				                    </div>
+				                </div>
+				            </div>
 						</div>
 					</div>
 				</div>
@@ -4256,10 +4486,10 @@
 				    <h4>協助和服務</h4>
 				    <p>跳出傳統的思維框架，以新的眼光看問題，願意承擔風險並嘗試不同的解決方案。通常擁有「創新思維」的人會質疑現狀、思考和實行創新的解決方案，以及實現商業目標的新方法。創新思維的人會洞察利益相關者和公司組織的業務需求，並將它們結合起來，以創新的方式來看待業務、商業問題，或研究機會。</p>
 				</div>
+				<p class="btn">
+		            <a class="popup-link" href="#popup-add_job_vacancies-2">確認</a>
+		        </p>
             </div>
-            <p class="btn">
-	            <a class="popup-link" href="#popup-add_job_vacancies-2">確認</a>
-	        </p>
         </form>
     </div>
 
