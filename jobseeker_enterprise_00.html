@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+	<head>
+		<meta charset="UTF-8">
+		<title>個人資料</title>
+		<meta name='description' content=""/>
+		<meta name='keywords' content=""/>
+		<meta name="MobileOptimized" content="width">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/user_info_style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+		<!-- Magnific Popup core JS file -->
+		<script src="magnific-popup/jquery.magnific-popup.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			    $('.popup-link').magnificPopup({
+			      removalDelay: 300,
+			      mainClass: 'mfp-fade'
+			    });
+			});
+		</script>
+	</head>
+	<body>
+		<main class="personal_information_container">
+			<div class="contentsBox">
+				<div class="top_tips top_jobseeker_enterprise">
+					<div class="clearfix">
+						<p class="preview"><a href="#">預覽履歷</a></p>
+						<p class="user_id">Hello,陳明明 
+							<img src="images/svg/icon_fb.svg">
+							<a href="#">登出</a>
+						</p>
+					</div>
+				</div>
+				<div class="fill_project">
+					<div class="top_title">
+						<h3>履歷</h3>
+					</div>
+					<ul class="item clearfix">
+						<!-- 上傳照片 -->
+						<li class="upload_photo">
+							<a class="icon_16" href="#">
+								<div class="user_photo img_default" style="background-image: url(images/user_photo_01.png);"></div>
+								<p class="img_default">上傳照片</p>
+							</a>
+						</li>
+						<!-- 尚未上傳照片 -->
+						<li>
+							<a class="icon_16" href="#">
+								<p class="img_default">上傳照片</p>
+							</a>
+						</li>
+						<li>
+							<a class="icon_17" href="user_info_add.html">
+								<p class="img_default">附件/連結</p>
+							</a>
+						</li>
+						<li>
+							<a class="icon_15" href="user_info_12.html">
+								<p class="img_default">自傳</p>
+							</a>
+						</li>
+						<li class="btn_in">
+							<a class="icon_01" href="user_info_01.html">
+								<p class="img_default">基本資料</p>
+							</a>
+						</li>
+						<li>
+							<a class="icon_02" href="user_info_02.html">
+								<p class="img_default">教育程度</p>
+							</a>
+						</li>
+						<li>
+							<a class="icon_03 remind" href="user_info_03.html">
+								<p class="img_default">家庭狀況</p>
+								<span class="tooltip">請點入開始點寫</span>
+							</a>
+						</li>
+						<li>
+							<a class="icon_04" href="user_info_04.html">
+								<p class="img_default">工作經驗</p>
+							</a>
+						</li>
+						<li>
+							<a class="icon_05" href="user_info_05.html">
+								<p class="img_default">專業訓練</p>
+							</a>
+						</li>
+						<li>
+							<a class="icon_06" href="user_info_06.html">
+								<p class="img_default">其他問題</p>
+							</a>
+						</li>
+					</ul>
+					<div class="top_title">
+						<h3>個人問卷</h3>
+					</div>
+					<ul class="item clearfix">
+						<li class="btn_in"><a class="icon_07" href="user_info_07.html"><p class="img_default">離職因素</p></a></li>
+						<li class="btn_in"><a class="icon_08" href="user_info_08.html"><p class="img_default">工作描述</p></a></li>
+						<li><a class="icon_09" href="user_info_09.html"><p class="img_default">未來規劃</p></a></li>
+						<li><a class="icon_10" href="user_info_10.html"><p class="img_default">工作職能</p></a></li>
+						<li><a class="icon_11" href="user_info_11.html"><p class="img_default">其他問題</p></a></li>
+					</ul>
+					<div class="top_title">
+						<h3>測驗<span>預計所需時間：特質5分鐘、邏輯15分鐘、情境15分鐘</span></h3>
+					</div>
+					<ul class="item clearfix">
+						<li class="btn_in"><a class="icon_12" href="#"><p class="img_default">特質測驗</p></a></li>
+						<li class="btn_in"><a class="icon_13" href="#"><p class="img_default">邏輯測驗</p></a></li>
+						<li class="btn_in"><a class="icon_14" href="#"><p class="img_default">情境測驗</p></a></li>
+					</ul>
+				</div>
+				<!-- <div class="setting_item">
+					<input id="" type="checkbox" name="" value="本人申明以上所填各項資料屬實，如有虛偽願受免職處分。">
+					<label for="option">本人申明以上所填各項資料屬實，如有虛偽願受免職處分。</label>
+				</div> -->
+				<p class="btn"><a class="bg_green cursor_none" href="user_info_done.html">確認寄出</a></p>
+				<p class="btn"><a class="bg_green popup-link" href="#popup-note">確認寄出</a></p>
+			</div>
+			<!-- popup 提醒-->
+			<div id="popup-note" class="white-popup popup-w-s mfp-hide">
+		        <div class="setBox messageBox">
+		            <div class="RedBox">
+		                <p class="info">請注意：<br>資料送出後，將<span class="red">不能再做修改</span>，請確認資料是否填寫完畢？</p>
+		            </div>
+		            <p class="btn">
+		            	<a class="bg_gary" href="#">繼續編輯</a>
+		                <a class="bg_red" href="user_info_done.html">確認送出</a>
+		            </p>
+		        </div>
+		    </div>
+		</main>
+	</body>
+</html>
+
+
+

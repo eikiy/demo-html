@@ -63,6 +63,8 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 .personal_information_container .top_tips p.user_id a{ margin-left: 10px; }
 .personal_information_container .top_tips p a{ color: #558C9E;}
 .personal_information_container .top_tips p a:hover{ text-decoration-line:underline; }
+.personal_information_container .top_jobseeker_enterprise{ border-bottom: 1px solid #B8D3DC; }
+.personal_information_container .top_jobseeker_enterprise p.user_id img{ width: 20px; border-radius: 5px 0 5px 5px;  }
 
 .personal_information_container .interviewee_data{ max-width: 900px; margin: 0 auto; padding: 20px 0;}
 .personal_information_container .interviewee_data p.deadline{color: #C87D86; font-size: 18px; padding: 5px 0; max-width: 800px; margin: 0 auto;}
