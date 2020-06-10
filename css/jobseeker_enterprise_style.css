@@ -98,6 +98,8 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left:11px; width:
 .jobseeker_enterprise_login .card_box a.btn_close span{ width: 40px; height: 40px; position: relative; display: block; }
 .jobseeker_enterprise_login .card_box a.btn_close span::after{ content: ""; position:absolute; top: calc(50% - 6px); left: calc(50% - 6px); width: 12px; height: 12px; display: block; background-image: url(../images/svg/close_gray.svg); }
 .jobseeker_enterprise_login .card_box a.btn_close:hover{ opacity: .8; }
+.jobseeker_enterprise_login .card_box .the_input{ margin: 5px 0; }
+
 .jobseeker_enterprise_login .imgbox{ margin: 0 auto; }
 .jobseeker_enterprise_login .imgbox img{ width: 100%; }
 
@@ -105,6 +107,7 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left:11px; width:
 .jobseeker_enterprise_login .forget_pw .the_input, 
 .jobseeker_enterprise_login .forget_pw p.btn{ max-width: 404px; margin: 0 auto;}
 .jobseeker_enterprise_login .forget_pw p.btn a { color: #fff; }
+.jobseeker_enterprise_login .card_box .the_input{ margin: 10px auto 0 auto; }
 
 .jobseeker_enterprise_login .end_message{ border-top: 1px solid #B8D3DC; width: 100%; max-width: 666px; margin: 0 auto; padding: 30px 15px;}
 .jobseeker_enterprise_login .end_message p.note{ font-size: 17px; text-align: center; line-height: 32px; }
@@ -116,6 +119,9 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left:11px; width:
 .jobseeker_enterprise_login .uploaded_done{ border: none; }
 .jobseeker_enterprise_login .uploaded_done h3{ text-align: center; color: #81B6C8; font-size: 20px; padding-bottom: 20px; }
 .jobseeker_enterprise_login .uploaded_done .imgbox{ max-width:383px; padding: 40px 0 20px;}
+
+.popup_show{ position: absolute; width: 100%; z-index: 11;}
+.popup_show .card_box{ margin-top: 70px; }
 
 @media (max-width:1600px){
 	.jobseeker_enterprise_login .main-logo{ width: 95px; height: 95px; }
