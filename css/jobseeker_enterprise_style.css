@@ -120,18 +120,83 @@ a .login_tooltip::after{ position: absolute; content: ""; top: -5px; left:11px; 
 .jobseeker_enterprise_login .uploaded_done h3{ text-align: center; color: #81B6C8; font-size: 20px; padding-bottom: 20px; }
 .jobseeker_enterprise_login .uploaded_done .imgbox{ max-width:383px; padding: 40px 0 20px;}
 
+.jobseeker_enterprise_login .true_field{ border: 1px solid #C87D86 ; border-radius: 10px 0 10px 10px; background-color: #fff; max-width: 390px; margin: 0 auto; text-align: left;}
+.jobseeker_enterprise_login .true_field label{ font-size: 16px; padding-left: 30px; display: inline-block;}
+.jobseeker_enterprise_login .true_field .note{ border-top: 1px solid #C87D86; padding:10px 20px; }
+.jobseeker_enterprise_login .true_field .note p{ font-size: 16px; max-width: 328px; text-align: left; margin: 0 auto;}
+.jobseeker_enterprise_login .true_field .note p span{  color: #C87D86; }
+.jobseeker_enterprise_login .true_field .setting_item{ padding: 15px 20px; position: relative; }
+
+.jobseeker_enterprise_login .true_field .setting_item input[type=checkbox]:not(old), input[type=radio ]:not(old){ position: absolute; top: 0; left: 0; height: 100%; width : 100%; margin: 0;  padding : 0; opacity : 0; cursor: pointer; z-index: 2;}
+.jobseeker_enterprise_login .true_field .setting_item input[type=checkbox]:not(old) + label{  display : inline-block; padding-left : 30px; background: url(../images/personal_information/checks_off-red.png) 0 -2px no-repeat;}
+.jobseeker_enterprise_login .true_field .setting_item input[type=checkbox]:not(old):checked + label{ background-image: url(../images/personal_information/checks_on-red.png);}
+
+.jobseeker_enterprise_login .bottom_btn{ max-width: 390px; margin: 0 auto; }
+.jobseeker_enterprise_login .bottom_btn p.btn{ max-width: 110px; }
+.jobseeker_enterprise_login .bottom_btn p.btn a{ height: 40px; line-height: 40px; }
+.jobseeker_enterprise_login .bottom_btn p.btn a:hover{ text-decoration: none; }
+.jobseeker_enterprise_login .bottom_btn p.btn:first-child{ float: left; }
+.jobseeker_enterprise_login .bottom_btn p.btn:first-child a{ background-color: #B8D3DC;}
+.jobseeker_enterprise_login .bottom_btn p.btn:last-child{ float: right; }
+
+.jobseeker_enterprise_login p.btn a.bg_green{ background-color: #84BE98;}
+.jobseeker_enterprise_login p.btn a.cursor_none{ cursor: not-allowed; background-color: #D8D8D8; text-decoration: none;}
+
+.jobseeker_preview{padding-bottom: 80px;}
+.jobseeker_preview .the_photo{ width: 126px; height: 126px; border: 1px solid #81B6C8; border-radius: 10px; margin: 10px auto; display: block; overflow: hidden; position: relative; }
+.jobseeker_preview ul.fill_in_result{ padding: 10px 15px; }
+.jobseeker_preview ul.fill_in_result li p{ font-size: 14px; float: left; line-height: 26px; padding-right: 15px;}
+.jobseeker_preview ul.fill_in_result li p.title{ width: 100%; color: #558C9E;}
+.jobseeker_preview ul.fill_in_result li p.title_s{ min-width: 105px; font-size: 12px; color: #558C9E;}
+.jobseeker_preview ul.fill_in_result li p.padding_left{ padding-left: 10px; }
+.jobseeker_preview ul.fill_in_result li .limit_w_01{ max-width: calc(100% - 135px); }
+.jobseeker_preview ul.fill_in_result li .limit_w_02{ max-width: calc(100% - 120px); float: left;}
+.jobseeker_preview ul.fill_in_result li .limit_w_02 p a{color: #4A4A4A;}
+.jobseeker_preview ul.fill_in_result li .limit_w_02 p a:hover{ text-decoration: underline; }
+
+.jobseeker_preview ul.fill_in_result li .both{ width: 50%; float: left; }
+.jobseeker_preview ul.fill_in_result li.top_line{ border-top: 1px dashed #979797; padding-top: 5px; margin-top: 5px; }
+
+.jobseeker_preview .u_infoBox h3.blue_title{ background-color: #D1E0E5; font-size: 14px; padding: 5px 15px; letter-spacing: 1px; min-height: 24px; line-height: 24px; color: #4A4A4A; position: relative;}
+.jobseeker_preview .u_infoBox h3.blue_title span{ position: absolute; top: 0px; right: 18px; }
+.jobseeker_preview .u_infoBox h3.blue_title a.edit{ position: absolute; top: 0px; right: 8px; font-size: 14px; letter-spacing: 5px; text-decoration: underline; padding-right: 30px; height: 25px; color: #81B6C8; display: inline-block; background: url(../images/btn_icon_edit.png) center right no-repeat; background-size: contain;}
+.jobseeker_preview .u_infoBox h3.blue_title a.edit:hover{ text-decoration: none; }
+.jobseeker_preview h4.gray_title { padding: 5px 15px; background-color: #F8F9F9; font-size: 12px;}
+
+.jobseeker_preview .top_tips{ min-height: initial; padding: 20px 10px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; z-index: 2; top: 0; }
+.jobseeker_preview .top_tips div{ max-width: 950px; padding: 0 10px; }
+.jobseeker_preview .blue_green_title{background-color: #81B6C8; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; z-index: 2; top: 62.5px;}
+.jobseeker_preview .blue_green_title h2{ max-width: 950px; margin: 0 auto; color: #fff; padding: 10px;  }
+.jobseeker_preview a.link{ color: #81B6C8; font-size: 15px; }
+.jobseeker_preview a.link:hover{ text-decoration: underline; }
+.jobseeker_preview .autobiography{ padding: 10px 15px; }
+
 .popup_show{ position: absolute; width: 100%; z-index: 11;}
 .popup_show .card_box{ margin-top: 70px; }
+
+.jobseeker_preview .bottom_btn{ width: 100%; padding: 10px 0; background-color: #E6F0F4; text-align: right; position: fixed; left: 0; bottom: 0; z-index: 10; }
+.jobseeker_preview .bottom_btn p.btn{ display: inline-block; width:calc(100% / 4); max-width: 90px; padding-bottom: 10px; font-size: 14px; }
+.jobseeker_preview .bottom_btn p.btn a{ line-height: 40px; height: 40px; }
+.jobseeker_preview .bottom_btn p.btn:first-child a{ border-radius: 8px 0 0 8px; background-color: #81B6C8; }
+.jobseeker_preview .bottom_btn p.btn:last-child a{ border-radius: 0 8px 8px 0; background-color: #84BE98; }
+.jobseeker_preview .bottom_btn p.btn a.bg_org{ border-radius: 0; background-color: #E5AF57; }
+.jobseeker_preview .bottom_btn p.btn a.cursor_none{ cursor: not-allowed; background-color: #D8D8D8; text-decoration: none;}
 
 @media (max-width:1600px){
 	.jobseeker_enterprise_login .main-logo{ width: 95px; height: 95px; }
 	.jobseeker_enterprise_login h1.title{ font-size: 24px;}
+}
+@media (max-width:950px){
+	.jobseeker_preview .bottom_btn{ text-align: center; }
 }
 @media (max-width:750px){
 	.jobseeker_enterprise_login .contentsBox{ width: 100%; }
 	.jobseeker_enterprise_login .main-logo{ margin-top: 20px; }	
 	.jobseeker_enterprise_login p.sub_title{ margin: 0 auto; padding-bottom: 20px; }
 	.jobseeker_enterprise_login .fill{ padding: 20px 0; }
+	.jobseeker_preview ul.fill_in_result li .both{ width: 100%; }
+	.jobseeker_preview ul.fill_in_result li p.title_s{ min-width: 115px; }
+	.jobseeker_preview .bottom_btn{ padding:0;}
 }
 @media (max-width:620px){
 	.jobseeker_enterprise_login .contentsBox{ padding-top: 15px; }
@@ -168,4 +233,5 @@ a .login_tooltip::after{ position: absolute; content: ""; top: -5px; left:11px; 
 	.jobseeker_enterprise_login .card_box p.note{ padding: 20px 0;}
 	.jobseeker_enterprise_login .forget_pw p.note{padding: 0;}
 	.jobseeker_enterprise_login input{ font-size: 15px; }
+	.jobseeker_enterprise_login .true_field label, .jobseeker_enterprise_login .true_field .note p{ line-height: 20px; font-size: 14px; }
 }
