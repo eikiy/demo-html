@@ -2764,14 +2764,70 @@ ul.job_management_list p.text_center{ text-align: center; }
 .talent_contents .job_leaderboard_container ul.leaderboard_data li.status_reported a.the_border{ background-color: #F7F0E6; }
 .talent_contents .job_leaderboard_container ul.leaderboard_data li.status_waiting a.the_border{ background-color: #E7F1EB; }
 
-.job_seeker_list_content .top_box{ padding: 15px 35px; }
-.job_seeker_list_content .top_box .searchBox{ float: left; }
-.job_seeker_list_content .top_box .searchBox input{ border: 1px solid #D8D8D8; height: 30px; line-height: 30px; }
-.job_seeker_list_content .top_box .searchBox a{ height: 30px; background-size: 33%;}
-.job_seeker_list_content .top_box p{ float: right; color: #9B9B9B; }
-.job_seeker_list_content .top_toolsBox{ background-color: #F2F8FA; padding: 20px 35px; }
-.job_seeker_list_content .top_toolsBox ul.type{ max-width: initial; }
-.job_seeker_list_content .top_toolsBox ul.type li p span{ color: #4A4A4A; }
+.job_seeker_list_content .swicht_box{ padding: 15px 0px; }
+.job_seeker_list_content .swicht_box .btn_swtich{display: inline-block; float: left;}
+.job_seeker_list_content .swicht_box .btn_swtich p{float: left; line-height: 24px; margin-left: 10px}
+.job_seeker_list_content .swicht_box .swtich_type{float: left; position: relative;}
+.job_seeker_list_content .swicht_box p.result{ float: right; color: #707475; }
+
+.job_seeker_list_content .swicht_box .btn_swtich .button {display: inline-block;position: relative; padding-left: 0; height: 22px;-webkit-user-select: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);cursor: pointer;background-color: #eee; border-radius: 22px;}
+.job_seeker_list_content .swicht_box .btn_swtich .button:before {content: "";display: inline-block; width: 42px; height: 22px; background-color: #fff; border-radius: 22px; box-sizing: border-box; border: 2px solid #eee; transition: all 0.2s linear; }
+.job_seeker_list_content .swicht_box .btn_swtich .button:after {position: absolute; left: 2px; top: 2px; content: ""; display: inline-block; width: 18px; height: 18px; background-color: #fff; border-radius: 18px; transition: all 0.2s linear; box-shadow: 0px 1px 3px #bbb;}
+.job_seeker_list_content .swicht_box .btn_swtich input {opacity: 0;position: absolute;top: 0;left: 0;}
+.job_seeker_list_content .swicht_box .btn_swtich input:checked ~ .button:before {background-color:#81B6C8;border: 1px solid #558C9E;}
+.job_seeker_list_content .swicht_box .btn_swtich input:checked ~ .button:after {left: 22px;}
+
+.job_seeker_list_content .sort ul.conditionList{ width: 150px; float: left; }
+.job_seeker_list_content .sort ul.conditionList li{ width: 100%; padding: 0; }
+
+.job_seeker_list_content .searchBox{ max-width: initial;}
+.job_seeker_list_content .searchBox input{ border: 1px solid #D8D8D8; height: 30px; line-height: 30px; }
+.job_seeker_list_content .searchBox a{ height: 30px; background-size: 33%; z-index: 1;}
+
+.job_seeker_list_content .top_toolsBox{ padding: 20px 35px; background-color: initial; z-index: initial; position: initial; border-bottom:dashed 1px #558C9E;}
+.job_seeker_list_content ul.conditionList{ width: 100%; }
+.job_seeker_list_content ul.conditionList li{ width: 25%; float: left; padding: 5px 3.5px; }
+.job_seeker_list_content ul.conditionList li .job_type{background-color: #fff; border-radius: 5px 0 5px 5px;  box-shadow: 0 0 1px rgba(0,0,0,.5); position: relative;}
+.job_seeker_list_content ul.conditionList li .job_type p{ font-size: 14px; text-align: left;}
+.job_seeker_list_content ul.conditionList li .job_type a{ border: none; display: block; min-width: 85px; padding:5px 30px 5px 15px;  position: relative;}
+.job_seeker_list_content ul.conditionList li .job_type a::before{ position: absolute; content: ""; width: 0; height: 0; border-style: solid; border-width: 7px 5.5px 0 5.5px; top: 11px; right: 10px; border-color: #558C9E transparent transparent transparent;/* background-color: #81B6C8;*/ }
+.job_seeker_list_content ul.conditionList li .job_type .filter_list{ position: absolute; width: 100%; z-index: 10; top: 34px; border-radius:5px; border: rgba(191, 191, 191, 0.5) 1px solid; padding: 8px 0; background-color: #fff; display: none;box-shadow: 0px 2px 4px rgba(0,0,0,.2);}
+.job_seeker_list_content ul.conditionList li .job_type .filter_list .keywords{ padding: 5px 10px; width: 100%;}
+.job_seeker_list_content ul.conditionList li .job_type .filter_list .keywords input{ width: 100%; border-radius:5px; border:1px solid #9B9B9B; line-height: 24px; padding: 0px 5px; font-size: 13px;}
+.job_seeker_list_content ul.conditionList li .job_type .filter_list .keywords input::placeholder{ color: #9B9B9B; }
+.job_seeker_list_content ul.conditionList li .job_type .filter_list .top_dashed{ position: relative; padding-top: 10px; margin-top: 5px;}
+.job_seeker_list_content ul.conditionList li .job_type .filter_list .top_dashed::after{ position: absolute; content: ""; top: 0; left: 10px; width:calc(100% - 20px); height: 1px; border-top: dashed 1px #558C9E; }
+
+.job_seeker_list_content ul.conditionList li .age_filter{ padding: 10px 20px;}
+.job_seeker_list_content ul.conditionList li .age_filter p{ float: left; color: #9B9B9B; line-height: 30px;}
+.job_seeker_list_content ul.conditionList li .age_filter .digital{ float: right; position: relative; }
+.job_seeker_list_content ul.conditionList li .age_filter .digital::after{ content: ""; position: absolute; right: 40px; top: 15px; width: 14px; height: 2px; display: block; background-color: #979797;}
+
+.job_seeker_list_content ul.conditionList li .age_filter .digital input{ width: 35px; height: 30px; text-align: center; border-radius: 4px; border:1px solid #D8D8D8;}
+.job_seeker_list_content ul.conditionList li .age_filter .digital input:first-child{ margin-right: 20px; }
+
+.job_seeker_list_content ul.conditionList li .age_interval{ position: relative; padding: 10px 20px 25px 20px; }
+.job_seeker_list_content ul.conditionList li .age_interval p{ position: absolute;}
+.job_seeker_list_content ul.conditionList li .age_interval p.lowest{ top: 35px; left: 20px; }
+.job_seeker_list_content ul.conditionList li .age_interval p.highest{ top: 35px; right: 20px; }
+.job_seeker_list_content ul.conditionList li .age_interval .range_style{position: relative;}
+.job_seeker_list_content ul.conditionList li .age_interval .range_style:after{ content: ""; position: absolute; z-index: -1; background-color: #D8D8D8;width: 100%; height: 8px; display: block; top: 6px; left: 0; }
+.job_seeker_list_content ul.conditionList li .age_interval .range_style input[type="range"]{ -webkit-appearance: none; overflow:hidden; width:100%; height:20px; outline : none; background:none;} 
+.job_seeker_list_content ul.conditionList li .age_interval .range_style input[type="range"]::-webkit-slider-thumb { width: 20px; height: 20px; background:#fff; border-radius: 4px; border:2px solid #81B6C8; appearance: none; -webkit-appearance: none;}
+
+
+.job_seeker_list_content ul.conditionList li .job_type ul.sub_filter{ width: 100%; }
+.job_seeker_list_content ul.conditionList li .job_type ul.sub_filter li{ float: initial; width: 100%;min-height: initial; padding: 2.5px 10px; position: relative;}
+.job_seeker_list_content ul.conditionList li .job_type ul.sub_filter li p{ padding: 0 5px; line-height: 26px; cursor: pointer; }
+.job_seeker_list_content ul.conditionList li .job_type ul.sub_filter li:hover{ background-color: #F2F8FA; }
+.job_seeker_list_content ul.conditionList li .job_type ul.sub_filter label{ font-size: 14px; }
+.job_seeker_list_content ul.conditionList li .job_type p a span{ color: #4A4A4A; padding-left: 0;}
+
+.job_seeker_list_content ul.conditionList li.w50{ width: 50%; }
+
+.job_seeker_list_content .top_toolsBox ul.type li p span{ color: #4A4A4A;  }
+.job_seeker_list_content .top_toolsBox ul.type:first-child{ margin-right: 10px; }
+
 .job_seeker_list_content .list_not_yet{ border:3px solid #84BE98; border-radius: 10px 0 10px 10px; max-width: 855px; margin: 15px auto 25px auto; padding:20px 15px; }
 .job_seeker_list_content .list_not_yet p{ text-align: center; color: #9B9B9B; line-height: 20px; }
 .job_seeker_list_content .list_not_yet p a{ color: #81B6C8; text-decoration: underline; }

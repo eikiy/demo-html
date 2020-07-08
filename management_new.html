@@ -16,6 +16,10 @@
 <link rel="stylesheet" type="text/css" href="css/loading-bar.css"/>
 <script type ="text/javascript" src="js/loading-bar.js"></script>
 
+<!-- multirange -->
+<link rel="stylesheet" href="css/multirange.css">
+<script src="js/multirange.js"></script>
+
 <!-- Magnific Popup core CSS file -->
 <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
 <!-- Magnific Popup core JS file -->
@@ -28,8 +32,14 @@
 	    });
 	});
 	$(function(){
-	  	$(".job_type").click(function(){
-	        $(this).find("ul.sub_filter").stop(true, true).fadeToggle(0);
+	  	$(".job_type P").click(function(){
+	        $(this).next("ul.sub_filter").stop(true, true).fadeToggle(0);
+	    return false;
+	    });
+	 });
+	$(function(){
+	  	$(".job_type P").click(function(){
+	        $(this).next(".filter_list").stop(true, true).fadeToggle(0);
 	    return false;
 	    });
 	 });
@@ -149,7 +159,7 @@
 						<a class="icon_edit_job popup-link" href="#popup-add_job_vacancies">
 							<p class="job_title">介面設計師</p>
 						</a>
-						<a class="recruit_status_form popup-link" href="#popup-job_vacancies_ranking">
+						<a class="recruit_status_form popup-link" href="#popup-job_seeker_list2">
 							<div class="top_job_information clearfix">
 								<div class="jobInfo">
 									<div class="iBox clearfix">
@@ -2813,7 +2823,7 @@
         </form>
     </div>
 
-    <!-- popup 求職者名單 -->
+    <!-- popup 求職者名單 尚未有求職者-->
     <div id="popup-job_seeker_list" class="white-popup popup-L mfp-hide">
         <form class="setBox filter_pop">
             <div class="top_title">
@@ -2840,22 +2850,240 @@
 						</div>
 						<div class="test_report new_report managementBox">
 							<div class="job_seeker_list_content">
-								<div class="top_box clearfix">
-									<div class="searchBox search_all">
-										<input type="text" name="" placeholder="輸入關鍵字">
-										<a href="#"></a>
-									</div>
-									<p>目前應徵人數共 0 位</p>
-								</div>
 								<div class="top_toolsBox clearfix">
-									<ul class="type clearfix">
-										<li><p><a href="#"><span>最後更新</span></a></p></li>
-										<li class="btn_in"><p><a href="#"><span>未讀</span></a></p></li>
-										<li><p><a href="#"><span>年資</span></a></p></li>
-										<li><p><a href="#"><span>未聯絡</span></a></p></li>
-										<li><p><a href="#"><span>喜愛名單</span></a></p></li>
-										<li style="width: 150px;"><p><a href="#"><span>測驗結果排序</span></a></p></li>
+									<ul class="conditionList clearfix">
+										<li class="sub_item">
+											<div class="job_type clearfix">
+												<p><a href="#"><span>已聯絡/未聯絡</span></a></p>
+												<div class="filter_list">
+													<ul class="sub_filter">
+														<li><p>全選</p></li>
+														<li><p>已聯絡</p></li>
+														<li><p>未聯絡</p></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="job_type clearfix">
+												<p><a href="#"><span>喜愛/沒興趣名單</span></a></p>
+												<div class="filter_list">
+													<ul class="sub_filter">
+														<li><p>全選</p></li>
+														<li><p>喜愛名單</p></li>
+														<li><p>沒興趣名單</p></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class="sub_item">
+											<div class="job_type clearfix">
+												<p><a href="#"><span>相關工作經驗年資</span></a></p>
+												<div class="filter_list">
+													<ul class="sub_filter">
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="全選">
+															<label for="option">全選</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="0">
+															<label for="option">0</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="1">
+															<label for="option">1</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="1-2">
+															<label for="option">1-2</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="2-4">
+															<label for="option">2-4</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="4-6">
+															<label for="option">4-6</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="6-10">
+															<label for="option">6-10</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="10-15">
+															<label for="option">10-15</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="15+">
+															<label for="option">15+</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="job_type clearfix">
+												<p><a href="#"><span>工作技能</span></a></p>
+												<div class="filter_list">
+													<div class="keywords">
+														<input type="text" name="" placeholder="輸入想要搜尋的關鍵字">
+													</div>
+													<ul class="sub_filter">
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="illustrator">
+															<label for="option">illustrator</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="InDesign">
+															<label for="option">InDesign</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="InVision">
+															<label for="option">InVision</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="job_type clearfix">
+												<p><a href="#"><span>年紀</span></a></p>
+												<div class="filter_list" style="width: 340px;">
+													<div class="age_filter clearfix">
+														<p>請選擇年齡區間</p>
+														<div class="digital">
+															<input type="text" name="" value="27">
+															<input type="text" name="" value="55">
+														</div>
+													</div>
+													<div class="age_interval">
+														<div class="range_style">
+															<input type="range" multiple min="18" max="99" step="1" value="27,55">
+														</div>
+														<p class="lowest">18</p>
+														<p class="highest">99+</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="job_type clearfix">
+												<p><a href="#"><span>學歷</span></a></p>
+												<div class="filter_list">
+													<ul class="sub_filter">
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="博士">
+															<label for="option">博士</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="碩士">
+															<label for="option">碩士</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="學士">
+															<label for="option">學士</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="技術學院">
+															<label for="option">技術學院</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="專科">
+															<label for="option">專科</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="高中職">
+															<label for="option">高中職</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國中(含)以下">
+															<label for="option">國中(含)以下</label>
+														</li>
+													</ul>
+													<!-- #輸入關鍵字，會自動跳出選項 -->
+													<div class="keywords top_dashed">
+														<input type="text" name="" placeholder="輸入想要搜尋的學校名稱">
+													</div>
+													<ul class="sub_filter">
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國立台灣大學">
+															<label for="option">國立台灣大學</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國立台灣科技大學">
+															<label for="option">國立台灣科技大學</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國立台灣師範大學">
+															<label for="option">國立台灣師範大學</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國立台北科技大學">
+															<label for="option">國立台北科技大學</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國立台灣科技大學">
+															<label for="option">國立台灣科技大學</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國立台北醫學大學">
+															<label for="option">國立台北醫學大學</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國立清華大學">
+															<label for="option">國立清華大學</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國立成功大學">
+															<label for="option">國立成功大學</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class="w50">
+											<div class="searchBox search_all">
+												<input type="text" name="" placeholder="搜尋姓名、關鍵字">
+												<a href="#"></a>
+											</div>
+										</li>
 									</ul>
+									<div class="swicht_box clearfix">
+										<div class="btn_swtich clearfix">
+				                            <div class="swtich_type">
+				                            	<input type="checkbox" id="swtich">
+				                            	<label class="button" for="swtich"></label>
+				                            </div>
+				                            <p>隱藏已加入招募清單者</p>
+				                        </div>
+				                        <p class="result">此條件共搜尋 11 位 / 共50位求職者</p>
+									</div>
+									<div class="sort clearfix">
+										<ul class="type clearfix">
+											<li><p><a href="#"><span>最後更新</span></a></p></li>
+											<li class=""><p><a href="#"><span>未讀</span></a></p></li>
+										</ul>
+										<ul class="conditionList clearfix">
+											<li class="sub_item">
+												<div class="job_type clearfix">
+													<p><a href="#"><span>測驗結果排序</span></a></p>
+													<div class="filter_list">
+														<ul class="sub_filter">
+															<li><p>績效預測</p></li>
+															<li><p>團隊精神</p></li>
+															<li><p>創新能力</p></li>
+															<li><p>邏輯分析</p></li>
+															<li><p>社交智商</p></li>
+															<li><p>責任性</p></li>
+															<li><p>外向性</p></li>
+															<li><p>情緒穩定</p></li>
+															<li><p>經驗開放</p></li>
+														</ul>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
 								</div>
 								<div class="list_not_yet">
 									<p>尚未有求職者<br>請先至 <a class="popup-link" href="#popup-CV_link">履歷連結</a> 中完成設定，並將連結複製至各大人力平台
@@ -2871,6 +3099,7 @@
             </div>
         </form>
     </div>
+
 
     <!-- popup 履歷連結 -->
     <div id="popup-CV_link" class="white-popup popup-L mfp-hide">
