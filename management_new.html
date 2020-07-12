@@ -43,6 +43,24 @@
 	    return false;
 	    });
 	 });
+	$(function(){
+	  	$("a.paper_plane").click(function(){
+	        $(this).next(".paper_plane_info").stop(true, true).fadeToggle(0);
+	    return false;
+	    });
+	 });
+	$(function(){
+	  	$(".resume_profession a.more ").click(function(){
+	        $(this).next(".r_p_more_info").stop(true, true).fadeToggle(0);
+	    return false;
+	    });
+	 });
+	$(function(){
+	  	$(".sub_popup_info p a.btn_close").click(function(){
+	        $(this).parent().parent().stop(true, true).fadeOut();
+	    return false;
+	    });
+	 });
 </script>
 
 </head>
@@ -3044,7 +3062,7 @@
 										<li class="w50">
 											<div class="searchBox search_all">
 												<input type="text" name="" placeholder="搜尋姓名、關鍵字">
-												<a href="#"></a>
+												<a class="img_default" href="#"></a>
 											</div>
 										</li>
 									</ul>
@@ -3058,6 +3076,8 @@
 				                        </div>
 				                        <p class="result">此條件共搜尋 11 位 / 共50位求職者</p>
 									</div>
+								</div>
+								<div class="top_toolsBox bottom_dashed clearfix">
 									<div class="sort clearfix">
 										<ul class="type clearfix">
 											<li><p><a href="#"><span>最後更新</span></a></p></li>
@@ -3076,6 +3096,7 @@
 															<li><p>社交智商</p></li>
 															<li><p>責任性</p></li>
 															<li><p>外向性</p></li>
+															<li><p>親和性</p></li>
 															<li><p>情緒穩定</p></li>
 															<li><p>經驗開放</p></li>
 														</ul>
@@ -3100,6 +3121,1067 @@
         </form>
     </div>
 
+    <!-- popup 求職者名單 -->
+    <div id="popup-job_seeker_list2" class="white-popup popup-L mfp-hide">
+        <form class="setBox filter_pop">
+            <div class="top_title">
+                <h3>職缺求職者排名</h3>
+            </div>
+            <div class="chosenBox interviewee_info j_v_ranking">
+            	<div class="interviewMainBox interview_officer_Main">
+					<div class="contentsBox">
+						<div class="top_test_menu open_content clearfix">
+							<ul>
+								<li><p><a href="#popup-job_management_status">應徵者狀態管理</a></p></li>
+								<li><p><a class="popup-link" href="#popup-job_vacancies_ranking"><span class="title_icon_lock img_default">排名表</span></a></p></li>
+								<li class="btn_in"><p><a class="popup-link" href="#popup-job_seeker_list">求職者名單</a></p></li>
+								<li class="none"><p><a class="popup-link" href="#popup-CV_link">履歷連結</a></p></li>
+								<!-- <li class="none"><p><a href="#">工作職能與專業技能</a></p></li> -->
+							</ul>
+							<p class="btn">
+								<a class="bg_gary remind_greenbox popup-link" href="#popup-job_over">結束職缺
+									<span class="tooltip">
+			                			<span class="icon_thumbtack">目前尚有求職者狀態為 <span class="c_green">報到排程</span>，請確認其狀態。</span>
+			                		</span>
+		                		</a>
+							</p>
+						</div>
+						<div class="test_report new_report managementBox">
+							<div class="job_seeker_list_content">
+								<div class="top_toolsBox clearfix">
+									<ul class="conditionList clearfix">
+										<li class="sub_item">
+											<div class="job_type clearfix">
+												<p><a href="#"><span>已聯絡/未聯絡</span></a></p>
+												<div class="filter_list">
+													<ul class="sub_filter">
+														<li><p>全選</p></li>
+														<li><p>已聯絡</p></li>
+														<li><p>未聯絡</p></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="job_type clearfix">
+												<p><a href="#"><span>喜愛/沒興趣名單</span></a></p>
+												<div class="filter_list">
+													<ul class="sub_filter">
+														<li><p>全選</p></li>
+														<li><p>喜愛名單</p></li>
+														<li><p>沒興趣名單</p></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class="sub_item">
+											<div class="job_type clearfix">
+												<p><a href="#"><span>相關工作經驗年資</span></a></p>
+												<div class="filter_list">
+													<ul class="sub_filter">
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="全選">
+															<label for="option">全選</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="0">
+															<label for="option">0</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="1">
+															<label for="option">1</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="1-2">
+															<label for="option">1-2</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="2-4">
+															<label for="option">2-4</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="4-6">
+															<label for="option">4-6</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="6-10">
+															<label for="option">6-10</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="10-15">
+															<label for="option">10-15</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="15+">
+															<label for="option">15+</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="job_type clearfix">
+												<p><a href="#"><span>工作技能</span></a></p>
+												<div class="filter_list">
+													<div class="keywords">
+														<input type="text" name="" placeholder="輸入想要搜尋的關鍵字">
+													</div>
+													<ul class="sub_filter">
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="illustrator">
+															<label for="option">illustrator</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="InDesign">
+															<label for="option">InDesign</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="InVision">
+															<label for="option">InVision</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="job_type clearfix">
+												<p><a href="#"><span>年紀</span></a></p>
+												<div class="filter_list" style="width: 340px;">
+													<div class="age_filter clearfix">
+														<p>請選擇年齡區間</p>
+														<div class="digital">
+															<input type="text" name="" value="27">
+															<input type="text" name="" value="55">
+														</div>
+													</div>
+													<div class="age_interval">
+														<div class="range_style">
+															<input type="range" multiple min="18" max="99" step="1" value="27,55">
+														</div>
+														<p class="lowest">18</p>
+														<p class="highest">99+</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="job_type clearfix">
+												<p><a href="#"><span>學歷</span></a></p>
+												<div class="filter_list">
+													<ul class="sub_filter">
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="博士">
+															<label for="option">博士</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="碩士">
+															<label for="option">碩士</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="學士">
+															<label for="option">學士</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="技術學院">
+															<label for="option">技術學院</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="專科">
+															<label for="option">專科</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="高中職">
+															<label for="option">高中職</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國中(含)以下">
+															<label for="option">國中(含)以下</label>
+														</li>
+													</ul>
+													<!-- #輸入關鍵字，會自動跳出選項 -->
+													<div class="keywords top_dashed">
+														<input type="text" name="" placeholder="輸入想要搜尋的學校名稱">
+													</div>
+													<ul class="sub_filter">
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國立台灣大學">
+															<label for="option">國立台灣大學</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國立台灣科技大學">
+															<label for="option">國立台灣科技大學</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國立台灣師範大學">
+															<label for="option">國立台灣師範大學</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國立台北科技大學">
+															<label for="option">國立台北科技大學</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國立台灣科技大學">
+															<label for="option">國立台灣科技大學</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國立台北醫學大學">
+															<label for="option">國立台北醫學大學</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國立清華大學">
+															<label for="option">國立清華大學</label>
+														</li>
+														<li class="sub_item">
+															<input id="" type="checkbox" name="" value="國立成功大學">
+															<label for="option">國立成功大學</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class="w50">
+											<div class="searchBox search_all">
+												<input type="text" name="" placeholder="搜尋姓名、關鍵字">
+												<a class="img_default" href="#"></a>
+											</div>
+										</li>
+									</ul>
+									<div class="swicht_box clearfix">
+										<div class="btn_swtich clearfix">
+				                            <div class="swtich_type">
+				                            	<input type="checkbox" id="swtich" checked="">
+				                            	<label class="button" for="swtich"></label>
+				                            </div>
+				                            <p>隱藏已加入招募清單者</p>
+				                        </div>
+				                        <p class="result">此條件共搜尋 11 位 / 共50位求職者</p>
+									</div>
+								</div>
+								<div class="result_content clearfix">
+									<p class="title">條件篩選</p>
+									<div class="field clearfix">
+										<p class="f_text clearfix">
+											<span>25-40歲</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="f_text clearfix">
+											<span>IOS Development</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="f_text clearfix">
+											<span>Objective-C/Swift</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="f_text clearfix">
+											<span>隱藏已加入招募者</span>
+											<a class="delete" href="#"></a>
+										</p><p class="f_text clearfix">
+											<span>25-40歲</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="f_text clearfix">
+											<span>IOS Development</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="f_text clearfix">
+											<span>Objective-C/Swift</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="f_text clearfix">
+											<span>隱藏已加入招募者</span>
+											<a class="delete" href="#"></a>
+										</p><p class="f_text clearfix">
+											<span>25-40歲</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="f_text clearfix">
+											<span>IOS Development</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="f_text clearfix">
+											<span>國立台北醫學大學</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="f_text clearfix">
+											<span>學士</span>
+											<a class="delete" href="#"></a>
+										</p><p class="f_text clearfix">
+											<span>技術學院</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="f_text clearfix">
+											<span>IOS</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="f_text clearfix">
+											<span>Objective-C/Swift</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="f_text clearfix">
+											<span>工作經驗 1-2 年</span>
+											<a class="delete" href="#"></a>
+										</p><p class="f_text clearfix">
+											<span>25-40歲</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="f_text clearfix">
+											<span>illustrator</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="f_text clearfix">
+											<span>photoshop</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="f_text clearfix">
+											<span>隱藏已加入招募者</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="reset"><a href="#">重置</a></p>
+									</div>
+								</div>
+								<div class="top_toolsBox bottom_dashed clearfix">
+									<div class="sort clearfix">
+										<ul class="type clearfix">
+											<li><p><a href="#"><span>最後更新</span></a></p></li>
+											<li class=""><p><a href="#"><span>未讀</span></a></p></li>
+										</ul>
+										<ul class="conditionList clearfix">
+											<li class="sub_item">
+												<div class="job_type clearfix">
+													<p><a href="#"><span>測驗結果排序</span></a></p>
+													<div class="filter_list">
+														<ul class="sub_filter">
+															<li><p>績效預測</p></li>
+															<li><p>團隊精神</p></li>
+															<li><p>創新能力</p></li>
+															<li><p>邏輯分析</p></li>
+															<li><p>社交智商</p></li>
+															<li><p>責任性</p></li>
+															<li><p>外向性</p></li>
+															<li><p>親和性</p></li>
+															<li><p>情緒穩定</p></li>
+															<li><p>經驗開放</p></li>
+														</ul>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="job_seeker_container">
+									<div class="grid_content clearfix">
+										<!-- 狀態 -->
+										<div class="icon_status">
+											<a class="add_animation" href="#"><p class="add_animation img_default">加入<br>招募</p></a>
+										</div>
+										<!-- 個人資訊 -->
+										<div class="user_contents clearfix">
+											<div class="more_info add_animation">
+												<a class="img_default" href="#"><p>完整資訊</p></a>
+											</div>
+											<div class="contact_status">
+												<p class="img_default">已讀</p>
+												<p class="img_default done">未聯絡</p>
+											</div>
+											<div class="user_photo">
+												<div class="avatar">
+													<img src="images/user_photo_01.png" width="100%">
+												</div>
+											</div>
+											<div class="userInfo">
+												<div class="iBox clearfix">
+													<p>王如敏 | 女 | 32</p>
+												</div>
+												<div class="iBox clearfix">
+													<p class="f-s">電話：0936.616666</p>
+												</div>
+												<div class="iBox clearfix">
+													<p class="f-s">信箱：hello@kamo.com.tw </p>
+												</div>
+											</div>
+										</div>
+										<!-- 其他資訊 -->
+										<div class="other_information clearfix">
+											<div class="left_project">
+												<!-- 此為頁籤，可切換內容 -->
+												<ul class="type">
+													<li class="btn_in">
+														<a class="list img_default" href="#">
+														</a>
+													</li>
+													<li>
+														<a class="record img_default" href="#">
+														</a>
+													</li>
+												</ul>
+												<!-- 此為分類 篩選用 -->
+												<ul>
+													<li>
+														<a class="like img_default" href="#">
+														</a>
+													</li>
+													<li>
+														<a class="forbid img_default" href="#">
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="project_contents">
+												<div class="list_infobox">
+													<ul class="resume_detail clearfix">
+														<li class="clearfix">
+															<div class="icon day">
+																<a class="img_default">
+																	<div class="tooltip" style="min-width: 105px;">完成履歷日期</div>
+																</a>
+															</div>
+															<p>2020/04/06</p>
+														</li>
+														<li class="clearfix">
+															<div class="icon year">
+																<a class="img_default">
+																	<div class="tooltip" style="min-width: 105px;">相關工作經驗</div>
+																</a>
+															</div>
+															<p>2-4年</p>
+														</li>
+														<li class="class">
+															<div class="icon source">
+															</div>
+															<p>104</p>
+														</li>
+														<li class="w100 clearfix">
+															<div class="icon school">
+															</div>
+															<p>
+																輔仁大學
+																<span>碩士</span>
+																<span>畢業</span>
+																<span>應用外語學系</span>
+															</p>
+														</li>
+													</ul>
+													<div class="resume_profession clearfix">
+														<p>IOS Development</p>
+														<p>Objective-C/Swift</p>
+														<p>Objective-C/Swift</p>
+														<a class="more img_default" href="#"></a>
+														<div class="sub_popup_info r_p_more_info" style="">
+															<p class="top_title">
+																<span>技能專長</span>
+																<a class="btn_close" href="#">
+										                			<span class="img_default"></span>
+										                		</a>
+															</p>
+															<div class="resume_profession clearfix" style="max-width: 480px;">
+																<p>IOS Development</p>
+																<p>Objective-C/Swift</p>
+																<p>Objective-C/Swift</p>
+																<p>ASP.NET NVC</p>
+																<p>Objective-C/Swift</p>
+																<p>IOS Development</p>
+															</div>
+														</div>
+													</div>
+													<div class="test_results clearfix">
+														<p>測驗結果</p>
+														<ul class="clearfix">
+															<li class="blue">
+																<a>
+																	<div class="tooltip" style="min-width: 105px;">績效預測 78.5</div>
+																</a>
+															</li>
+															<li class="green"></li>
+															<li class="green"></li>
+															<li class="blue"></li>
+															<li class="red line"></li>
+															<li class="green"></li>
+															<li class="green"></li>
+															<li class="blue"></li>
+															<li class="blue"></li>
+															<li class="blue">
+																<a>
+																	<div class="tooltip" style="min-width: 105px;">經驗開放性 78.5</div>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="grid_content clearfix">
+										<!-- 狀態 -->
+										<div class="icon_status">
+											<a class="add_animation" href="#"><p class="add_animation img_default">加入<br>招募</p></a>
+										</div>
+										<!-- 個人資訊 -->
+										<div class="user_contents clearfix">
+											<div class="more_info add_animation">
+												<a class="img_default" href="#"><p>完整資訊</p></a>
+											</div>
+											<div class="contact_status">
+												<p class="img_default">已讀</p>
+												<p class="img_default done">未聯絡</p>
+											</div>
+											<div class="user_photo">
+												<div class="avatar">
+													<img src="images/user_photo_01.png" width="100%">
+												</div>
+											</div>
+											<div class="userInfo">
+												<div class="iBox clearfix">
+													<p>王如敏 | 女 | 32</p>
+												</div>
+												<div class="iBox clearfix">
+													<p class="f-s">電話：0936.616666</p>
+												</div>
+												<div class="iBox clearfix">
+													<p class="f-s">信箱：hello@kamo.com.tw </p>
+												</div>
+											</div>
+										</div>
+										<!-- 其他資訊 -->
+										<div class="other_information clearfix">
+											<div class="left_project">
+												<!-- 此為頁籤，可切換內容 -->
+												<ul class="type">
+													<li class="btn_in">
+														<a class="list img_default" href="#">
+														</a>
+													</li>
+													<li>
+														<a class="record img_default" href="#">
+														</a>
+													</li>
+												</ul>
+												<!-- 此為分類 篩選用 -->
+												<ul>
+													<li>
+														<a class="like img_default" href="#">
+														</a>
+													</li>
+													<li>
+														<a class="forbid img_default" href="#">
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="project_contents">
+												<div class="list_infobox">
+													<a class="paper_plane img_default">
+														<span>13</span>
+													</a>
+													<div class="sub_popup_info paper_plane_info">
+														<p class="top_title">
+															<span>履歷投遞紀錄</span>
+															<span>共 3 筆</span>
+															<a class="btn_close" href="#">
+									                			<span class="img_default"></span>
+									                		</a>
+														</p>
+														<ul>
+															<li>
+																<p>
+																	<span class="day">2020/12/11</span>
+																	<span>投遞 業務經理 職缺一職</span>
+																</p>
+															</li>
+															<li>
+																<p>
+																	<span class="day">2019/11/09</span>
+																	<span>投遞 業務經理 職缺一職</span>
+																</p>
+															</li>
+															<li>
+																<p>
+																	<span class="day">2019/10/09</span>
+																	<span>投遞 業務經理 職缺一職</span>
+																</p>
+															</li>
+														</ul>
+													</div>
+													<ul class="resume_detail clearfix">
+														<li class="clearfix">
+															<div class="icon day">
+																<a class="img_default">
+																</a>
+															</div>
+															<p>2020/04/06</p>
+														</li>
+														<li class="clearfix">
+															<div class="icon year">
+																<a class="img_default">
+																</a>
+															</div>
+															<p>2-4年</p>
+														</li>
+														<li class="class">
+															<div class="icon source">
+															</div>
+															<p>104</p>
+														</li>
+														<li class="w100 clearfix">
+															<div class="icon school">
+															</div>
+															<p>
+																國立臺灣海洋大學
+																<span>學士</span>
+																<span>就學中</span>
+																<span>應用外語學系</span>
+															</p>
+														</li>
+													</ul>
+													<div class="resume_profession clearfix">
+														<p>IOS Development</p>
+														<p>Objective-C/Swift</p>
+														<p>Objective-C/Swift</p>
+														<a class="more img_default" href="#"></a>
+													</div>
+													<div class="test_results clearfix">
+														<p>測驗結果</p>
+														<ul class="clearfix">
+															<li class="">
+																<a>
+																	<div class="tooltip" style="min-width: 105px;">未完成測驗</div>
+																</a>
+															</li>
+															<li class=""></li>
+															<li class=""></li>
+															<li class=""></li>
+															<li class="line"></li>
+															<li class="green"></li>
+															<li class="green"></li>
+															<li class="blue"></li>
+															<li class="blue"></li>
+															<li class="blue">
+																<a>
+																	<div class="tooltip" style="min-width: 105px;">經驗開放性 40.4</div>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="grid_content clearfix">
+										<!-- 狀態 -->
+										<div class="icon_status">
+											<a class="add_animation" href="#"><p class="add_animation img_default">加入<br>招募</p></a>
+										</div>
+										<!-- 個人資訊 -->
+										<div class="user_contents clearfix">
+											<div class="more_info add_animation">
+												<a class="img_default" href="#"><p>完整資訊</p></a>
+											</div>
+											<div class="contact_status">
+												<p class="img_default">已讀</p>
+												<p class="img_default done">未聯絡</p>
+											</div>
+											<div class="user_photo">
+												<div class="avatar">
+													<img src="images/user_photo_01.png" width="100%">
+												</div>
+											</div>
+											<div class="userInfo">
+												<div class="iBox clearfix">
+													<p>王如敏 | 女 | 32</p>
+												</div>
+												<div class="iBox clearfix">
+													<p class="f-s">電話：0936.616666</p>
+												</div>
+												<div class="iBox clearfix">
+													<p class="f-s">信箱：hello@kamo.com.tw </p>
+												</div>
+											</div>
+										</div>
+										<!-- 其他資訊 -->
+										<div class="other_information clearfix">
+											<div class="left_project">
+												<!-- 此為頁籤，可切換內容 -->
+												<ul class="type">
+													<li class="btn_in">
+														<a class="list img_default" href="#">
+														</a>
+													</li>
+													<li>
+														<a class="record img_default" href="#">
+														</a>
+													</li>
+												</ul>
+												<!-- 此為分類 篩選用 -->
+												<ul>
+													<li>
+														<a class="like img_default" href="#">
+														</a>
+													</li>
+													<li>
+														<a class="forbid img_default" href="#">
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="project_contents">
+												<div class="list_infobox">
+													<ul class="resume_detail clearfix">
+														<li class="clearfix">
+															<div class="icon day">
+																<a class="img_default">
+																</a>
+															</div>
+															<p>2020/04/06</p>
+														</li>
+														<li class="clearfix">
+															<div class="icon year">
+																<a class="img_default">
+																</a>
+															</div>
+															<p>2-4年</p>
+														</li>
+														<li class="class">
+															<div class="icon source">
+															</div>
+															<p>104</p>
+														</li>
+														<li class="w100 clearfix">
+															<div class="icon school">
+															</div>
+															<p>
+																輔仁大學
+																<span>碩士</span>
+																<span>畢業</span>
+																<span>應用外語學系</span>
+															</p>
+														</li>
+													</ul>
+													<div class="resume_profession clearfix">
+														<p>IOS Development</p>
+														<p>Objective-C/Swift</p>
+														<p>Objective-C/Swift</p>
+														<a class="more img_default" href="#"></a>
+													</div>
+													<div class="test_results clearfix">
+														<p>測驗結果</p>
+														<ul class="clearfix">
+															<li></li>
+															<li></li>
+															<li></li>
+															<li></li>
+															<li class="line"></li>
+															<li></li>
+															<li></li>
+															<li></li>
+															<li></li>
+															<li></li>
+														</ul>
+														<a class="lock img_default">
+															<div class="tooltip">解鎖報告</div>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="grid_content clearfix">
+										<!-- 狀態 -->
+										<div class="icon_status">
+											<a class="add_animation" href="#"><p class="add_animation img_default">加入<br>招募</p></a>
+										</div>
+										<!-- 個人資訊 -->
+										<div class="user_contents clearfix">
+											<div class="more_info add_animation">
+												<a class="img_default" href="#"><p>完整資訊</p></a>
+											</div>
+											<div class="contact_status">
+												<p class="img_default">已讀</p>
+												<p class="img_default done">未聯絡</p>
+											</div>
+											<div class="user_photo">
+												<div class="avatar">
+													<img src="images/user_photo_01.png" width="100%">
+												</div>
+											</div>
+											<div class="userInfo">
+												<div class="iBox clearfix">
+													<p>王如敏 | 女 | 32</p>
+												</div>
+												<div class="iBox clearfix">
+													<p class="f-s">電話：0936.616666</p>
+												</div>
+												<div class="iBox clearfix">
+													<p class="f-s">信箱：hello@kamo.com.tw </p>
+												</div>
+											</div>
+										</div>
+										<!-- 其他資訊 -->
+										<div class="other_information clearfix">
+											<div class="left_project">
+												<!-- 此為頁籤，可切換內容 -->
+												<ul class="type">
+													<li class="btn_in">
+														<a class="list img_default" href="#">
+														</a>
+													</li>
+													<li>
+														<a class="record img_default" href="#">
+														</a>
+													</li>
+												</ul>
+												<!-- 此為分類 篩選用 -->
+												<ul>
+													<li>
+														<a class="like img_default" href="#">
+														</a>
+													</li>
+													<li>
+														<a class="forbid img_default" href="#">
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="project_contents">
+												<div class="list_infobox">
+													<ul class="resume_detail clearfix">
+														<li class="clearfix">
+															<div class="icon day">
+																<a class="img_default">
+																</a>
+															</div>
+															<p>2020/04/06</p>
+														</li>
+														<li class="clearfix">
+															<div class="icon year">
+																<a class="img_default">
+																</a>
+															</div>
+															<p>2-4年</p>
+														</li>
+														<li class="class">
+															<div class="icon source">
+															</div>
+															<p>104</p>
+														</li>
+														<li class="w100 clearfix">
+															<div class="icon school">
+															</div>
+															<p>
+																輔仁大學
+																<span>碩士</span>
+																<span>畢業</span>
+																<span>應用外語學系</span>
+															</p>
+														</li>
+													</ul>
+													<div class="resume_profession clearfix">
+														<p>IOS Development</p>
+														<p>Objective-C/Swift</p>
+														<p>Objective-C/Swift</p>
+														<a class="more img_default" href="#"></a>
+													</div>
+													<div class="test_results clearfix">
+														<p>測驗結果</p>
+														<ul class="clearfix">
+															<li></li>
+															<li></li>
+															<li></li>
+															<li></li>
+															<li class="line"></li>
+															<li class="red"></li>
+															<li class="red"></li>
+															<li class="red"></li>
+															<li class="red"></li>
+															<li class="red"></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="grid_content clearfix">
+										<!-- 狀態 -->
+										<!-- 已加入招募需 + status_done，按鍵不能按 -->
+										<div class="icon_status status_done">
+											<a class="add_animation"><p class="add_animation img_default">已入<br>招募</p></a>
+										</div>
+										<!-- 個人資訊 -->
+										<div class="user_contents clearfix">
+											<div class="more_info add_animation" style="opacity: 1;">
+												<a class="img_default" href="#"><p>完整資訊</p></a>
+											</div>
+											<!-- hover 下面三樣要 + blur-2rem -->
+											<div class="contact_status blur-2rem">
+												<p class="img_default done">已讀</p>
+												<p class="img_default">未聯絡</p>
+											</div>
+											<div class="user_photo blur-2rem">
+												<div class="avatar">
+													<img src="images/user_photo_01.png" width="100%">
+												</div>
+											</div>
+											<div class="userInfo blur-2rem">
+												<div class="iBox clearfix">
+													<p>王如敏 | 女 | 32</p>
+												</div>
+												<div class="iBox clearfix">
+													<p class="f-s">電話：0936.616666</p>
+												</div>
+												<div class="iBox clearfix">
+													<p class="f-s">信箱：hello@kamokaomkoakkamo.com.tw </p>
+												</div>
+											</div>
+										</div>
+										<!-- 其他資訊 -->
+										<div class="other_information clearfix">
+											<div class="left_project">
+												<!-- 此為頁籤，可切換內容 -->
+												<ul class="type">
+													<li>
+														<a class="list img_default" href="#">
+														</a>
+													</li>
+													<li class="btn_in">
+														<a class="record img_default" href="#">
+															<div class="tooltip">聯絡記錄</div>
+														</a>
+													</li>
+												</ul>
+												<!-- 此為分類 篩選用 -->
+												<ul>
+													<!-- 點選後 + btn_in -->
+													<li class="btn_in">
+														<a class="like img_default" href="#">
+															<div class="tooltip">喜愛名單</div>
+														</a>
+													</li>
+													<li class="btn_in">
+														<a class="forbid img_default" href="#">
+															<div class="tooltip" style="min-width: 75px;">沒興趣名單</div>
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="project_contents">
+												<div class="record_infobox record_not_yet">
+													<p class="top_note">請按下方新增按鍵新增聯絡記錄</p>
+													<p class="bot_btn">
+														<a href="#"><span class="img_default">新增聯絡記錄</span></a>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="grid_content clearfix">
+										<!-- 狀態 -->
+										<!-- 已加入招募需 + status_done，按鍵不能按 -->
+										<div class="icon_status status_done">
+											<a class="add_animation"><p class="add_animation img_default">已入<br>招募</p></a>
+										</div>
+										<!-- 個人資訊 -->
+										<div class="user_contents clearfix">
+											<div class="more_info add_animation">
+												<a class="img_default" href="#"><p>完整資訊</p></a>
+											</div>
+											<div class="contact_status">
+												<p class="img_default done">已讀</p>
+												<p class="img_default done">未聯絡</p>
+											</div>
+											<div class="user_photo">
+												<div class="avatar">
+													<img src="images/user_photo_01.png" width="100%">
+												</div>
+											</div>
+											<div class="userInfo">
+												<div class="iBox clearfix">
+													<p>王如敏 | 女 | 32</p>
+												</div>
+												<div class="iBox clearfix">
+													<p class="f-s">電話：0936.616666</p>
+												</div>
+												<div class="iBox clearfix">
+													<p class="f-s">信箱：hello@kamokaomkoakkamo.com.tw </p>
+												</div>
+											</div>
+										</div>
+										<!-- 其他資訊 -->
+										<div class="other_information clearfix">
+											<div class="left_project">
+												<!-- 此為頁籤，可切換內容 -->
+												<ul class="type">
+													<li>
+														<a class="list img_default" href="#">
+														</a>
+													</li>
+													<li class="btn_in">
+														<a class="record img_default" href="#">
+														</a>
+													</li>
+												</ul>
+												<!-- 此為分類 篩選用 -->
+												<ul>
+													<!-- 點選後 + btn_in -->
+													<li class="btn_in">
+														<a class="like img_default" href="#">
+														</a>
+													</li>
+													<li class="btn_in">
+														<a class="forbid img_default" href="#">
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="project_contents">
+												<div class="record_infobox">
+													<!-- 最新的在最上面 -->
+													<ul class="note_list">
+														<li>
+															<p>
+																2020/04/07 16:30 收到mail回覆，電話聯絡還沒約好時間，需再確認面試官時間，暫定04/15 13:00。Terry
+																<a class="edit img_default"></a>
+																<a class="delete img_default"></a>
+															</p>
+														</li>
+														<li>
+															<p>
+																2020/04/07 13:00 發送email。 Amy
+																<a class="edit img_default"></a>
+																<a class="delete img_default"></a>
+															</p>
+														</li>
+														<li>
+															<p>
+																2020/04/06 13:00 電話聯絡沒連絡上。 Terry
+																<a class="edit img_default"></a>
+																<a class="delete img_default"></a>
+															</p>
+														</li>
+														<li>
+															<p>
+																2020/04/07 16:30 收到mail回覆，電話聯絡還沒約好時間，需再確認面試官時間，暫定04/15 13:00。Terry
+																<a class="edit img_default"></a>
+																<a class="delete img_default"></a>
+															</p>
+														</li>
+													</ul>
+													<p class="bot_btn">
+														<a href="#"><span class="img_default">新增聯絡記錄</span></a>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="company_info clearfix">
+								<p class="info_logo">凱茂股份有限公司<br>
+								www.kamo.com.tw　TEL. 02 8792 5569　FAX. 02 8792 5693</p>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </form>
+    </div>
 
     <!-- popup 履歷連結 -->
     <div id="popup-CV_link" class="white-popup popup-L mfp-hide">

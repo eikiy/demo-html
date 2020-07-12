@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29.228" height="18.878" viewBox="0 0 29.228 18.878">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_2" data-name="Clip 2" d="M0,0H11.018V10.817H0Z" transform="translate(0.536 0.122)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Clip_11" data-name="Clip 11" d="M0,0H14.414V2.282H0Z" transform="translate(0.298 0.183)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_13" data-name="Group 13" transform="translate(0 -0.122)">
+    <g id="Group_3" data-name="Group 3" transform="translate(2.903)">
+      <path id="Clip_2-2" data-name="Clip 2" d="M0,0H11.018V10.817H0Z" transform="translate(0.536 0.122)" fill="none"/>
+      <g id="Group_3-2" data-name="Group 3" clip-path="url(#clip-path)">
+        <path id="Fill_1" data-name="Fill 1" d="M0,5.409a5.46,5.46,0,0,0,5.509,5.409,5.458,5.458,0,0,0,5.508-5.409A5.459,5.459,0,0,0,5.509,0,5.46,5.46,0,0,0,0,5.409" transform="translate(0.536 0.121)" fill="#558c9e"/>
+      </g>
+    </g>
+    <path id="Fill_4" data-name="Fill 4" d="M16.452,7.6H0V5.117A5.11,5.11,0,0,1,5.091,0h6.269a5.11,5.11,0,0,1,5.091,5.117V7.6ZM5.387.54c-.12,0-.24.01-.346.018L6.208,6.721h4.036L11.411.558c-.1-.008-.226-.018-.346-.018Z" transform="translate(0 11.4)" fill="#558c9e"/>
+    <path id="Fill_6" data-name="Fill 6" d="M3.485,1.879,4.056,5.7h.685L5.806.016C5.7.008,5.6,0,5.492,0H.316C.208,0,.1.008,0,.016L1.064,5.7h.685l.573-3.821h.02L1.78.83H4.026L3.465,1.879Z" transform="translate(5.806 12.35)" fill="#558c9e"/>
+    <path id="Fill_8" data-name="Fill 8" d="M1.652,13.966A.967.967,0,0,1,0,13.282V.968a.968.968,0,0,1,1.935,0V13.282a.962.962,0,0,1-.284.684" transform="translate(21.29 2.85)" fill="#558c9e"/>
+    <g id="Group_12" data-name="Group 12" transform="translate(14.516 9.5)">
+      <path id="Clip_11-2" data-name="Clip 11" d="M0,0H14.414V2.282H0Z" transform="translate(0.298 0.183)" fill="none"/>
+      <g id="Group_12-2" data-name="Group 12" clip-path="url(#clip-path-2)">
+        <path id="Fill_10" data-name="Fill 10" d="M14.127,1.947a.913.913,0,0,1-.692.334H.979A1.069,1.069,0,0,1,0,1.141,1.068,1.068,0,0,1,.979,0H13.435a1.069,1.069,0,0,1,.979,1.141,1.236,1.236,0,0,1-.287.807" transform="translate(0.298 0.183)" fill="#558c9e"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -27,7 +27,8 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
   .noPrint { display: none; }
   .noBreak { break-inside: avoid; }
 }
-
+.blur-2rem{ -webkit-filter: blur(0.4rem); -moz-filter: blur(0.2rem); -o-filter: blur(0.2rem); -ms-filter: blur(0.2rem); filter: blur(0.2rem);}
+.add_animation{ transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
 /*===== start ======*/
 .contentsBox{ width: 100%; max-width: 1000px; margin: 0 auto; }
 
@@ -2764,7 +2765,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .talent_contents .job_leaderboard_container ul.leaderboard_data li.status_reported a.the_border{ background-color: #F7F0E6; }
 .talent_contents .job_leaderboard_container ul.leaderboard_data li.status_waiting a.the_border{ background-color: #E7F1EB; }
 
-.job_seeker_list_content .swicht_box{ padding: 15px 0px; }
+.job_seeker_list_content .swicht_box{ padding-top: 15px; }
 .job_seeker_list_content .swicht_box .btn_swtich{display: inline-block; float: left;}
 .job_seeker_list_content .swicht_box .btn_swtich p{float: left; line-height: 24px; margin-left: 10px}
 .job_seeker_list_content .swicht_box .swtich_type{float: left; position: relative;}
@@ -2781,15 +2782,17 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_list_content .sort ul.conditionList li{ width: 100%; padding: 0; }
 
 .job_seeker_list_content .searchBox{ max-width: initial;}
-.job_seeker_list_content .searchBox input{ border: 1px solid #D8D8D8; height: 30px; line-height: 30px; }
-.job_seeker_list_content .searchBox a{ height: 30px; background-size: 33%; z-index: 1;}
+.job_seeker_list_content .searchBox input{ border: 1px solid #D8D8D8; height: 30px; line-height: 30px; font-size: 14px; }
+.job_seeker_list_content .searchBox a{ height: 30px; background-size: 33%; z-index: 1; background-image: url(../images/icon_search_w.png); background-color: #81B6C8;}
 
-.job_seeker_list_content .top_toolsBox{ padding: 20px 35px; background-color: initial; z-index: initial; position: initial; border-bottom:dashed 1px #558C9E;}
+.job_seeker_list_content .top_toolsBox{ padding: 20px 35px; background-color: initial; z-index: initial; position: initial;}
+.job_seeker_list_content .bottom_dashed{ border-bottom:dashed 1px #558C9E;}
+
 .job_seeker_list_content ul.conditionList{ width: 100%; }
 .job_seeker_list_content ul.conditionList li{ width: 25%; float: left; padding: 5px 3.5px; }
 .job_seeker_list_content ul.conditionList li .job_type{background-color: #fff; border-radius: 5px 0 5px 5px;  box-shadow: 0 0 1px rgba(0,0,0,.5); position: relative;}
 .job_seeker_list_content ul.conditionList li .job_type p{ font-size: 14px; text-align: left;}
-.job_seeker_list_content ul.conditionList li .job_type a{ border: none; display: block; min-width: 85px; padding:5px 30px 5px 15px;  position: relative;}
+.job_seeker_list_content ul.conditionList li .job_type a{ border: none; display: block; min-width: 85px; padding:5px 30px 5px 10px;  position: relative;}
 .job_seeker_list_content ul.conditionList li .job_type a::before{ position: absolute; content: ""; width: 0; height: 0; border-style: solid; border-width: 7px 5.5px 0 5.5px; top: 11px; right: 10px; border-color: #558C9E transparent transparent transparent;/* background-color: #81B6C8;*/ }
 .job_seeker_list_content ul.conditionList li .job_type .filter_list{ position: absolute; width: 100%; z-index: 10; top: 34px; border-radius:5px; border: rgba(191, 191, 191, 0.5) 1px solid; padding: 8px 0; background-color: #fff; display: none;box-shadow: 0px 2px 4px rgba(0,0,0,.2);}
 .job_seeker_list_content ul.conditionList li .job_type .filter_list .keywords{ padding: 5px 10px; width: 100%;}
@@ -2832,6 +2835,156 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_list_content .list_not_yet p{ text-align: center; color: #9B9B9B; line-height: 20px; }
 .job_seeker_list_content .list_not_yet p a{ color: #81B6C8; text-decoration: underline; }
 .job_seeker_list_content .list_not_yet p a:hover{ text-decoration: none; }
+
+.job_seeker_list_content .result_content { background-color: #F2F8FA; padding: 15px 35px;}
+.job_seeker_list_content .result_content p{ line-height: 25px;}
+.job_seeker_list_content .result_content p.title{ float: left; padding-right: 10px; }
+.job_seeker_list_content .result_content p.reset{ float: left; font-size: 12px; }
+.job_seeker_list_content .result_content p.reset a{ color: #707475; padding: 0 5px; }
+.job_seeker_list_content .result_content p.reset a:hover{ text-decoration: underline; }
+
+.job_seeker_list_content .result_content .field{ float: left; width: calc(100% - 90px);}
+.job_seeker_list_content .result_content .field p.f_text{ margin:0 5px 5px 0; float: left; overflow: hidden; background-color: #ddeaef; height: 25px; font-size: 13px; border-radius: 5px; }
+.job_seeker_list_content .result_content .field p.f_text span{ float: left; padding: 0 8px; color: #4A4A4A; }
+.job_seeker_list_content .result_content .field p.f_text a.delete{ float: left; width: 25px; height: 23px; display: block; cursor: pointer; height: 100%; background-image: url(../images/svg/close_skyblue.svg); background-position: center center; background-repeat: no-repeat; background-size: 44%;}
+.job_seeker_list_content .result_content .field p.f_text a.delete:hover{ opacity: .5;}
+
+.job_seeker_container{ width: 100%; padding:20px; }
+.job_seeker_container .grid_content{ width: 100%; padding-bottom: 15px; }
+.job_seeker_container .grid_content .icon_status{ float: left; width:44px; height: 142px; background-color: #D1E0E5; border-radius: 10px 0 0 10px; position: relative; margin-right: 5px; }
+.job_seeker_container .grid_content .icon_status a{ width: 100%; height: 100%; display: block; padding-top: 40px; position: relative;}
+.job_seeker_container .grid_content .icon_status a::after{ content: ""; position: absolute; top:60px; left:calc(50% - 15px); width:30px; height: 20px; background-image: url(../images/svg/btn_add_nterviewee.svg); }
+.job_seeker_container .grid_content .icon_status a::before{ opacity: 0; content: "";position: absolute; display: block; top: 0; left: 0; width:calc(100% - 6px); height:calc(100% - 6px); border: #558C9E 3px solid; border-radius: 10px 0 0 10px; }
+.job_seeker_container .grid_content .icon_status p{ color: #558C9E; font-size: 12px; text-align :center; padding-top: 46px; opacity: 0;}
+.job_seeker_container .grid_content .icon_status a:hover p{ opacity: 1; }
+.job_seeker_container .grid_content .icon_status a:hover::before{ opacity: 1; }
+
+.job_seeker_container .grid_content .status_done a{ cursor: default; }
+.job_seeker_container .grid_content .status_done a::after{ background-image: url(../images/svg/btn_add_done.svg); width:24px; top:51px; height: 29px; left:calc(50% - 12px);}
+
+.job_seeker_container .grid_content .user_contents{ float: left; width: 310px; height: 142px; border:1px solid #81B6C8; border-width: 1px 0 1px 1px; padding: 15px 10px 10px 10px; position: relative;}
+.job_seeker_container .grid_content .user_contents .user_photo{ float: left; width: 64px; height: 64px; border: 1px solid #81B6C8; display: block; overflow: hidden; border-radius: 10px;}
+.job_seeker_container .grid_content .user_contents .user_photo .avatar{ width: 64px; height: 64px; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); display: block; overflow: hidden; border-radius: 10px;}
+.job_seeker_container .grid_content .user_contents .user_photo .male{ background: url(../images/user_default_male.png) center center no-repeat #fff; background-size: cover; }
+.job_seeker_container .grid_content .user_contents .user_photo .female{ background: url(../images/user_default_female.png) center center no-repeat #fff; background-size: cover; }
+
+.job_seeker_container .grid_content .user_contents .userInfo{ float: left; width: 200px; padding-left: 20px; }
+.job_seeker_container .grid_content .user_contents .userInfo p{ padding-bottom: 5px; word-break: break-all;}
+.job_seeker_container .grid_content .user_contents .userInfo p.f-s{ font-size: 13px; }
+
+.job_seeker_container .grid_content .user_contents .contact_status{ position: absolute; top:90px; left: 10px; z-index: 0; }
+.job_seeker_container .grid_content .user_contents .contact_status p{ font-size: 12px; color: #707475; margin-bottom: 5px; padding-left: 18px; position: relative;}
+.job_seeker_container .grid_content .user_contents .contact_status p::after{ content: ""; position: absolute; width: 15px; height: 15px; left: 0; top: 1px; display: block; background-image: url(../images/svg/circle_check.svg); }
+.job_seeker_container .grid_content .user_contents .contact_status p.done{ color: #81B6C8; }
+.job_seeker_container .grid_content .user_contents .contact_status p.done::after{ background-image: url(../images/svg/circle_check_blue.svg);}
+
+.job_seeker_container .grid_content .user_contents .more_info{ opacity: 0; z-index: 2; position: absolute; top: 0; left: -0.05px; width:calc(100% + 0.5px); height:calc(100% + 0.5px); background-color:rgba(248,249,249,0.5); border:3px solid #81B6C8; }
+.job_seeker_container .grid_content .user_contents .more_info a{ width: 70px; position: relative; padding-top: 40px; display: block; margin: 65px 0 0 220px; }
+.job_seeker_container .grid_content .user_contents .more_info a::after{content: ""; position: absolute; top: 0; left:calc(50% - 15px); width: 30px; height: 34px; display: block; background-image: url(../images/topStep_icon_01.png); background-size: cover;}
+.job_seeker_container .grid_content .user_contents .more_info a p{ text-align: center; font-size: 13px; color: #81B6C8; }
+.job_seeker_container .grid_content .user_contents .more_info a:hover p{ text-decoration: underline; }
+.job_seeker_container .grid_content .user_contents:hover .more_info{opacity: 1;}
+
+.job_seeker_container .grid_content .other_information{ float: left; width: 528px; height: 142px; border: 1px solid #81B6C8; border-width: 1px 1px 1px 0; border-radius: 0 0 10px 0; }
+.job_seeker_container .grid_content .other_information .left_project{ background-color: #F2F8FA; float: left; width: 30px; height: 100%; display: block; border-right: 1.5px solid #81B6C8;}
+.job_seeker_container .grid_content .other_information .left_project ul li{ width: 100%; height: 35px; }
+.job_seeker_container .grid_content .other_information .left_project ul li a{width: 100%; height: 100%; display: block; position: relative;}
+.job_seeker_container .grid_content .other_information .left_project ul li a::after{content: ""; position: absolute;}
+.job_seeker_container .grid_content .other_information .left_project ul li a.list::after{ width: 14px; height: 10px; top: calc(50% - 5px); left: calc(50% - 7px); background-image: url(../images/svg/project_icon_list.svg); }
+.job_seeker_container .grid_content .other_information .left_project ul li a.record::after{ width: 11px; height: 16px; top: calc(50% - 8px); left: calc(50% - 5.5px);background-image: url(../images/svg/project_icon_record.svg); }
+.job_seeker_container .grid_content .other_information .left_project ul li a.like::after{ width: 17px; height: 15px; top: calc(50% - 7.5px); left: calc(50% - 8.5px);background-image: url(../images/svg/project_icon_like.svg); }
+.job_seeker_container .grid_content .other_information .left_project ul li a.forbid::after{ width: 15px; height: 15px; top: calc(50% - 7.5px); left: calc(50% - 7.5px);background-image: url(../images/svg/project_icon_forbid.svg); }
+.job_seeker_container .grid_content .other_information .left_project ul li a:hover::after{opacity: .8;}
+
+.job_seeker_container .grid_content .other_information .left_project ul li.btn_in a.list::after{ background-image: url(../images/svg/project_icon_list_in.svg); }
+.job_seeker_container .grid_content .other_information .left_project ul li.btn_in a.record::after{ background-image: url(../images/svg/project_icon_record_in.svg); }
+.job_seeker_container .grid_content .other_information .left_project ul li.btn_in a.like::after{ background-image: url(../images/svg/project_icon_like_in.svg); }
+.job_seeker_container .grid_content .other_information .left_project ul li.btn_in a.forbid::after{ background-image: url(../images/svg/project_icon_forbid_in.svg); }
+
+.job_seeker_container .grid_content .other_information .left_project ul li .tooltip { min-width: 70px; left: -5px; top: 30px;}
+.job_seeker_container .grid_content .other_information .left_project ul li .tooltip::after { left:13px;}
+.job_seeker_container .grid_content .other_information .left_project ul.type li.btn_in a{ background-color: #81B6C8; }
+.job_seeker_container .grid_content .other_information .left_project ul.type li.btn_in a.list{ border-radius: 0 0 0 6px;}
+.job_seeker_container .grid_content .other_information .left_project ul.type li.btn_in a.record{ border-radius:6px 0 0 6px; } 
+.job_seeker_container .grid_content .other_information .left_project ul.type li a:hover::after{opacity: .8;}
+.job_seeker_container .grid_content .other_information .left_project ul.type li.btn_in a:hover::after{ opacity: 1; }
+
+.job_seeker_container .grid_content .other_information .project_contents{ float: left; width: 496px; }
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox{ width: 100%; height: 142px; position: relative; }
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox .note_list a{ width: 12px; height: 12px; display: inline-block; margin: 0 4px;}
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox a.edit{ background-image: url(../images/svg/pen_edit.svg); }
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox a.delete{ background-image: url(../images/svg/close_red.svg); }
+
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox ul.note_list{ width: 100%; max-height: 110px; padding: 10px 15px; overflow-y: auto; }
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox ul.note_list li{ width: 100%; padding:2.5px 0; padding-left: 15px; position: relative; }
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox ul.note_list li::before{ content: ""; position: absolute; left: -4px ;top: 7px; width: 8px; height: 8px; display: block; border-radius: 50%; background-color: #81B6C8; }
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox ul.note_list li p{ vertical-align: text-top; color: #707475; font-size: 13px;}
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox ul.note_list li a{ opacity: 0; }
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox ul.note_list li:hover a{ opacity: 1; }
+
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox p.bot_btn{ position: absolute; bottom: 1px; left: 0; font-size: 15px; width: 100%; text-align: center; }
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox p.bot_btn a{ width: 100%; display: block; background-color: #D1E0E5; color: #558C9E; line-height: 32px;border-radius: 0 0 10px 0; }
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox p.bot_btn a span{ line-height: 18px; color: #558C9E; position: relative; padding-left: 25px; }
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox p.bot_btn a span::after{ content: "";position: absolute; width: 17px; height: 17px; top: 0; left: 0; display: block; background-image: url(../images/svg/btn_add_blue.svg);}
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox p.bot_btn a:hover{ background-color: #81B6C8; }
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox p.bot_btn a:hover span{color: #fff;}
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox p.bot_btn a:hover span::after{ background-image: url(../images/svg/btn_add_w.svg); }
+
+.job_seeker_container .grid_content .other_information .project_contents .record_not_yet p.top_note{ color: #9B9B9B; padding: 10px 15px;}
+
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox{ width: 100%; padding: 10px 15px; position: relative; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox a.paper_plane{ position: absolute; right: 10px; top: 19px; width: 23px; height: 13px; display: block; background-image: url(../images/svg/paper_plane.svg); }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox a.paper_plane span{ position: absolute; top: -15px; background-color: #E5AF57; font-size: 12px; color: #fff; text-align: center; display: block; line-height: 18px; width: 18px; height: 18px; border-radius: 50%; }
+
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .sub_popup_info{ position: absolute; min-width: 310px; z-index: 11; top: 36px; right: 10px; border-radius: 5px; background-color: #F8F9F9; box-shadow: 0px 2px 4px rgba(0,0,0,.2); border: rgba(191, 191, 191, 0.5) 1px solid;}
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .sub_popup_info p.top_title{ float: none; border-bottom: 1px solid #81B6C8; position: relative; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .sub_popup_info p.top_title a.btn_close{ position: absolute; top: 0; right: 0; display: block;}
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .sub_popup_info p.top_title a.btn_close span{ width: 30px; height: 30px; position: relative; display: block; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .sub_popup_info p.top_title a.btn_close span::after{ content: ""; position:absolute; top: calc(50% - 6px); left: calc(50% - 6px); opacity: .8; width: 12px; height: 12px; display: block; background-image: url(../images/svg/close_gray.svg); }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .sub_popup_info p span{ font-size: 13px; color: #4A4A4A; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .sub_popup_info p span.day{ min-width: 88px; display: inline-block; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .sub_popup_info ul{ padding: 5px 8px 5px 0; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .sub_popup_info ul li{padding: 2px 0;}
+
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .r_p_more_info{ top:-3px; right: -5px; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .r_p_more_info p.top_title{ border: none; border-radius: 0; padding: 0;}
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .r_p_more_info .resume_profession{ padding:0 10px 5px 10px; }
+
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail{ width: 100%; padding-right: 20px; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li{ float:left; min-width: 130px; padding:0 5px 8px 30px; position: relative; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li p{ line-height: 20px; font-size: 13px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 20px; height: 20px; overflow:hidden;}
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li p span{ color: #4A4A4A; position: relative;}
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li p span::before{ content: ""; position: absolute; left: 2px; top: 5px; width: 4px; height: 4px; display: block; border-radius: 50%; background-color: #81B6C8; }
+
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li.w100{ width: 100%; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li .icon{ position: absolute; left: 0; top: 0; width: 20px; height: 20px; display: block; background-size: contain; background-repeat: no-repeat; background-position: center center; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li .icon a{ position: relative; }
+.job_seeker_container .grid_content .other_information .project_contents .tooltip{ min-width: 70px; left: -10px; top: 26px;}
+.job_seeker_container .grid_content .other_information .project_contents .tooltip::after{ left: 12px; }
+
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li .day{ background-image: url(../images/svg/resume_detail_icon_day.svg); }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li .year{ background-image: url(../images/svg/resume_detail_icon_year.svg); }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li .source{ background-image: url(../images/svg/resume_detail_icon_source.svg); }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li .school{ background-image: url(../images/svg/resume_detail_icon_school.svg); }
+
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .resume_profession{position: relative; padding: 0 30px 0 0}
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .resume_profession a.more{position: absolute; top: 0; right: 0; content: ""; width: 20px; height: 23px; display: block; background-image:url(../images/svg/more.svg); }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .resume_profession p{font-size: 13px; float: left; padding: 3px 8px; border:1px solid #9B9B9B;border-radius: 4px; margin: 0 10px 5px 0; }
+
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results{ padding: 5px 0; position: relative;}
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results p{ float: left; font-size: 13px; padding-right: 10px; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul{ float: left; max-width: calc(100% - 100px);}
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li{ float: left; margin: 2px 5px; width: 14px; height: 14px; display: block; border-radius: 50%; background-color: #D8D8D8; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li a{ position: relative; width: 100%; height: 100%; display: block; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li .tooltip{ left: -12px; top: 19px;}
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li.line{ margin-right: 20px; position: relative; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li.line::after{ content: ""; position: absolute; right: -12px; top: -2px;  height: 18px; width: 1.5px; background-color: #979797; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li.blue{ background-color: #B8D3DC; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li.red{ background-color: #C87D86; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li.green{ background-color: #84BE98; }
+
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results a.lock{ position: absolute; top: 6px; left: 328px; width: 9px; height: 15px; background-image: url(../images/svg/lock.svg); }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results a.lock .tooltip{ top: 21px; left: -14px; }
 
 .CV_link_conrent .all_test_list{ width: 440px; margin: 0 auto; }
 .CV_link_conrent .all_test_list p.t_title{ color: #9B9B9B; padding: 20px 0;}
@@ -3461,6 +3614,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .candidates_management ul.user_list li ul.stepBox li.btn_in_blue a:hover{ background-color: #B8D3DC; }
 
 .candidates_management ul.user_list li .user_contents{ width: 802px; float: left; padding: 18px 0 0px 20px;}
+
 .candidates_management ul.user_list .user_data ul.stepBox{ padding-bottom: 0; height: inherit; float: left;}
 .candidates_management ul.user_list .user_data ul.stepBox li{ height: inherit; }
 .candidates_management ul.user_list .user_data ul.stepBox li::before{ display: none; }
