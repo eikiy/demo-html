@@ -2869,8 +2869,9 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_container .grid_content .user_contents .user_photo .female{ background: url(../images/user_default_female.png) center center no-repeat #fff; background-size: cover; }
 
 .job_seeker_container .grid_content .user_contents .userInfo{ float: left; width: 200px; padding-left: 20px; }
-.job_seeker_container .grid_content .user_contents .userInfo p{ padding-bottom: 5px; word-break: break-all;}
+.job_seeker_container .grid_content .user_contents .userInfo p{ padding-bottom: 5px; word-break: break-all; position: relative;}
 .job_seeker_container .grid_content .user_contents .userInfo p.f-s{ font-size: 13px; }
+.job_seeker_container .grid_content .user_contents .userInfo p span.new{ position: absolute; font-size: 10px; top: 4px; right: -22px; color: #E5AF57; }
 
 .job_seeker_container .grid_content .user_contents .contact_status{ position: absolute; top:90px; left: 10px; z-index: 0; }
 .job_seeker_container .grid_content .user_contents .contact_status p{ font-size: 12px; color: #707475; margin-bottom: 5px; padding-left: 18px; position: relative;}
@@ -3614,7 +3615,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .management_filter_listBox .jobInfo .iBox p.font_s{ font-size: 13px; }
 
 .management_filter_listBox ul.job_management_list .job_typebox{ border: 2px solid #558C9E; width: 304px; background-color: #fff; float: right; border-radius: 5px 0 5px 5px; margin: 8px 0px 0px 0px; overflow: hidden;}
-.management_filter_listBox ul.job_management_list .job_typebox div{ float: left; width: 75px; height: 64px; border-right: 1px solid #81B6C8;}
+.management_filter_listBox ul.job_management_list .job_typebox div{ float: left; width: 75px; height: 64px; border-right: 1px solid #81B6C8; position: relative;}
 .management_filter_listBox ul.job_management_list .job_typebox div:last-child{ border:none;}
 .management_filter_listBox ul.job_management_list .job_typebox p{ text-align: center; color: #558C9E; padding: 5px; font-size: 13px;}
 .management_filter_listBox ul.job_management_list .job_typebox p:first-child{ height: 27px;}
@@ -3623,6 +3624,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .management_filter_listBox ul.job_management_list .job_typebox .checkin{ background-color: #F7F0E6; }
 .management_filter_listBox ul.job_management_list .job_typebox .checkin p{ color: #E5AF57;}
 .management_filter_listBox ul.job_management_list .job_typebox .checkin p.top{ background-color: #E5AF57; color: #fff;}
+.management_filter_listBox ul.job_management_list .job_typebox p.new{ position: absolute; font-size: 10px; top: 17px; right: 6px; color: #E5AF57; }
 
 .management_filter_listBox ul.job_management_list .remarkBox p{ float: right; width: 100%; font-size: 13px; max-width: 321px; }
 .management_filter_listBox ul.job_management_list .remarkBox p.p_red{ font-weight: normal; font-size: 13px;}
