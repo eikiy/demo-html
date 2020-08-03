@@ -66,10 +66,31 @@ $(document).ready(function() {
 			</div>
 			<div class="setting_contents set_registration clearfix">
 				<div class="theBox go_fristBox">
-					<div class="infoBox">
+					<div class="infoBox" style="position: relative;">
 						<div class="conditionBox">
 							<input class="input_condition" type="text" name="" placeholder="請輸入條件設定，例如：已收到身分證影本乙份。">
 							<p class="btn"><a class="add" href="account_registration2.html">新增</a></p>
+						</div>
+						<!-- gray popup  新增報到條件 -->
+						<div class="gray_popup" style="top: 45px; right: 0px; overflow: hidden;">
+							<form>
+								<div class="top_title">
+							        <h4>新增報到條件
+							        	<a class="btn_close" href="#">
+							        		<span class="img_default"></span>
+							        	</a>
+							        </h4>
+							    </div>
+							    <div class="fillin_box" style="padding-top: 10px;">
+							    	<fieldset class="top_both clearfix">
+							    		<label class="l_title" for=""><p>條件名稱</p></label>
+							    		<input class="r_info" id="" name="" type="text" style="width: 340px;">
+							    	</fieldset>
+							    	<p class="btn_s">
+							    		<a href="#">確認儲存</a>
+							    	</p>
+								</div>
+							</form>
 						</div>
 					</div>
 					<div class="owl_message owl_wings">

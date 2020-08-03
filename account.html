@@ -39,7 +39,7 @@ $(document).ready(function() {
 </header>
 
 <main class="mainBox">
-	<div class="contentsBox clearfix">
+	<div class="contentsBox clearfix" style="position: relative;">
 		<section class="side_menu">
 			<h1 class="title">明天<br>
 			企業股份有限公司</h1>
@@ -189,6 +189,410 @@ $(document).ready(function() {
 				</div>
 			</div>
 		</section>
+		<!-- gray popup  付費/加值紀錄 -->
+		<div class="gray_popup" style="top: 45px; right: 0px; overflow: hidden; width: 924px; ">
+			<form>
+				<div class="top_title">
+					<h4>紀錄
+						<a class="btn_close" href="#">
+							<span class="img_default"></span>
+						</a>
+					</h4>
+				</div>
+				<div class="for_system_record">
+					<div class="top_title">
+		                <ul class="top_menu clearfix">
+		                	<li class="btn_in">
+		                		<p><a href="#">付費/加值紀錄</a></p>
+		                	</li>
+		                	<li>
+		                		<p><a href="#">點數使用紀錄</a></p>
+		                	</li>
+		                	<li>
+		                		<p><a href="#">刪除紀錄</a></p>
+		                	</li>
+		                <ul>
+		            </div>
+					<div class="storedValueBox">
+		                <table class="report_value_list" cellpadding="0" cellspacing="0" border="0" width="100%">
+						    <tr>
+						    	<th width="120"><p>日期</p></th>
+						    	<th width="80"><p>時間</p></th>
+						    	<th width="158"><p>付費項目</p></th>
+						    	<th width="96"><p>數量</p></th>
+						    	<th width="98"><p>金額（含稅）</p></th>
+						    	<th width="96"><p>加值點數</p></th>
+						    	<th><p>備註</p></th>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>基礎版</p></td>
+						    	<td><p>一年</p></td>
+						    	<td class="bg_blue"><p>500</p></td>
+						    	<td class="bg_blue"><p>50點</p></td>
+						    	<td></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/15</p></td>
+						    	<td><p>16:30</p></td>
+						    	<td><p>基礎版-點數</p></td>
+						    	<td><p>5點</p></td>
+						    	<td class="bg_blue"><p>500</p></td>
+						    	<td class="bg_blue"><p>5點</p></td>
+						    	<td></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/14</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>基礎版</p></td>
+						    	<td><p>100點</p></td>
+						    	<td class="bg_blue"><p>500</p></td>
+						    	<td class="bg_blue"><p>50點</p></td>
+						    	<td><p>凱茂優惠多贈30點</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/10</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>免費版-點數</p></td>
+						    	<td><p>20點</p></td>
+						    	<td class="bg_blue"><p>2000</p></td>
+						    	<td class="bg_blue"><p>20點</p></td>
+						    	<td></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/02</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>免費版-點數</p></td>
+						    	<td><p>20點</p></td>
+						    	<td class="bg_blue"><p>10000</p></td>
+						    	<td class="bg_blue"><p>2點</p></td>
+						    	<td></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>基礎版-點數</p></td>
+						    	<td><p>一年</p></td>
+						    	<td class="bg_blue"><p>10000</p></td>
+						    	<td class="bg_blue"><p>2點</p></td>
+						    	<td></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/15</p></td>
+						    	<td><p>16:30</p></td>
+						    	<td><p>基礎版-點數</p></td>
+						    	<td><p>5點</p></td>
+						    	<td class="bg_blue"><p>500</p></td>
+						    	<td class="bg_blue"><p>5點</p></td>
+						    	<td></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/14</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>基礎版</p></td>
+						    	<td><p>100點</p></td>
+						    	<td class="bg_blue"><p>500</p></td>
+						    	<td class="bg_blue"><p>50點</p></td>
+						    	<td></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/10</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>免費版-點數</p></td>
+						    	<td><p>20點</p></td>
+						    	<td class="bg_blue"><p>2000</p></td>
+						    	<td class="bg_blue"><p>0點</p></td>
+						    	<td></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/02</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>免費版-點數</p></td>
+						    	<td><p>20點</p></td>
+						    	<td class="bg_blue"><p>2000</p></td>
+						    	<td class="bg_blue"><p>10點</p></td>
+						    	<td></td>
+						    </tr>
+						</table>
+		                <p class="page_nb">
+		                	<a class="btn_in" href="#">1</a>
+		                	<a href="#">2</a>
+		                	<a href="#">3</a>
+		                	<a href="#">4</a>
+		                </p>
+		            </div>
+	            </div>
+			</form>
+		</div>
+		<!-- gray popup  點數使用紀錄 -->
+		<div class="gray_popup" style="top: 45px; right: 0px; overflow: hidden; width: 924px;">
+			<form>
+				<div class="top_title">
+					<h4>紀錄
+						<a class="btn_close" href="#">
+							<span class="img_default"></span>
+						</a>
+					</h4>
+				</div>
+				<div class="for_system_record">
+					<div class="top_title">
+		                <ul class="top_menu clearfix">
+		                	<li>
+		                		<p><a href="#">付費/加值紀錄</a></p>
+		                	</li>
+		                	<li class="btn_in">
+		                		<p><a href="#">點數使用紀錄</a></p>
+		                	</li>
+		                	<li>
+		                		<p><a href="#">刪除紀錄</a></p>
+		                	</li>
+		                <ul>
+		            </div>
+					<div class="storedValueBox">
+		                <table class="report_value_list" cellpadding="0" cellspacing="0" border="0" width="100%">
+						    <tr>
+						    	<th width="144"><p>日期</p></th>
+						    	<th width="100"><p>時間</p></th>
+						    	<th width="165"><p>使用帳號</p></th>
+						    	<th width="300"><p>使用項目</p></th>
+						    	<th><p>使用點數</p></th>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>ANDY</p></td>
+						    	<td><p>劉明明-核心測驗</p></td>
+						    	<td><p>2點</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>14:33</p></td>
+						    	<td><p>ANDY</p></td>
+						    	<td><p>王小明-特質測驗</p></td>
+						    	<td><p>2點</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>RUBY</p></td>
+						    	<td><p>王小明-特質測驗</p></td>
+						    	<td><p>2點</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>09:30</p></td>
+						    	<td><p>NickyWu</p></td>
+						    	<td><p>劉明明-核心測驗</p></td>
+						    	<td><p>2點</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>NickyWu</p></td>
+						    	<td><p>戴秀秀-特質測驗、邏輯測驗</p></td>
+						    	<td><p>2點</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>ANDY</p></td>
+						    	<td><p>劉明明-核心測驗</p></td>
+						    	<td><p>1點</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>ANDY</p></td>
+						    	<td><p>劉明明-核心測驗</p></td>
+						    	<td><p>2點</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>ANDY</p></td>
+						    	<td><p>劉明明-核心測驗</p></td>
+						    	<td><p>0點/免費解鎖</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>ANDY</p></td>
+						    	<td><p>劉明明-核心測驗</p></td>
+						    	<td><p>0點/免費解鎖</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>ANDY</p></td>
+						    	<td><p>劉明明-核心測驗</p></td>
+						    	<td><p>0點/免費解鎖</p></td>
+						    </tr>
+						</table>
+		                <p class="page_nb">
+		                	<a class="prev img_default"></a>
+		                	<a class="btn_in" href="#">1</a>
+		                	<a href="#">2</a>
+		                	<a href="#">3</a>
+		                	<a href="#">4</a>
+		                	<a href="#">5</a>
+		                	<a href="#">6</a>
+		                	<a href="#">7</a>
+		                	<a href="#">8</a>
+		                	<a href="#">9</a>
+		                	<a href="#">10</a>
+		                	<a class="next img_default"></a>
+		                </p>
+		            </div>
+	            </div>
+			</form>
+		</div>
+		<!-- gray popup  刪除紀錄 -->
+		<div class="gray_popup" style="top: 45px; right: 0px; overflow: hidden; width: 924px;">
+			<form>
+				<div class="top_title">
+					<h4>紀錄
+						<a class="btn_close" href="#">
+							<span class="img_default"></span>
+						</a>
+					</h4>
+				</div>
+				<div class="for_system_record">
+					<div class="top_title">
+		                <ul class="top_menu clearfix">
+		                	<li>
+		                		<p><a href="#">付費/加值紀錄</a></p>
+		                	</li>
+		                	<li>
+		                		<p><a href="#">點數使用紀錄</a></p>
+		                	</li>
+		                	<li class="btn_in">
+		                		<p><a href="#">刪除紀錄</a></p>
+		                	</li>
+		                <ul>
+		            </div>
+					<div class="storedValueBox">
+		                <table class="report_value_list" cellpadding="0" cellspacing="0" border="0" width="100%">
+						    <tr>
+						    	<th width="150"><p>日期</p></th>
+						    	<th width="150"><p>時間</p></th>
+						    	<th width="200"><p>刪除帳號</p></th>
+						    	<th><p>刪除項目</p></th>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>ANDY</p></td>
+						    	<td><p>王小明-個人資料</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>14:33</p></td>
+						    	<td><p>ANDY</p></td>
+						    	<td><p>2019/12/04建立的業務職缺</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>RUBY</p></td>
+						    	<td><p>組織設定的業務部</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>09:30</p></td>
+						    	<td><p>NickyWu</p></td>
+						    	<td><p>戴秀穎-面試官ANDY評論</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>NickyWu</p></td>
+						    	<td><p>組織設定的業務部</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>ANDY</p></td>
+						    	<td><p>劉大華-個人資料</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>ANDY</p></td>
+						    	<td><p>李小風-面試官劉天天評論</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>ANDY</p></td>
+						    	<td><p>游明明-個人資料</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>ANDY</p></td>
+						    	<td><p>2019/09/04建立的軟體工程師職缺</p></td>
+						    </tr>
+						    <tr>
+						    	<td><p>2020/01/16</p></td>
+						    	<td><p>16:00</p></td>
+						    	<td><p>ANDY</p></td>
+						    	<td><p>2019/01/12建立的櫃檯人員職缺</p></td>
+						    </tr>
+						</table>
+		                <p class="page_nb">
+		                	<a class="prev img_default"></a>
+		                	<a class="btn_in" href="#">1</a>
+		                	<a href="#">2</a>
+		                	<a href="#">3</a>
+		                	<a href="#">4</a>
+		                	<a href="#">5</a>
+		                	<a href="#">6</a>
+		                	<a href="#">7</a>
+		                	<a href="#">8</a>
+		                	<a href="#">9</a>
+		                	<a href="#">10</a>
+		                	<a class="next img_default"></a>
+		                </p>
+		            </div>
+	            </div>
+			</form>
+		</div>
+		<!-- gray popup  密碼變更 -->
+		<div class="gray_popup" style="top: 258px; left: 182px; overflow: hidden;">
+			<form>
+				<div class="top_title">
+					<h4>密碼變更
+						<a class="btn_close" href="#">
+							<span class="img_default"></span>
+						</a>
+					</h4>
+				</div>
+				<!-- 1:輸入變更資訊 -->
+				<div class="fillin_box pw-w" style="padding-top: 10px;">
+					<fieldset class="the_input input_error lock clearfix">
+						<p class="the_reminder">輸入錯誤</p>
+						<input type="text" name="" placeholder="請輸入您現在的密碼">
+					</fieldset>
+					<fieldset class="the_input lock clearfix">
+						<input type="text" name="" placeholder="請輸入您的新密碼">
+					</fieldset>
+					<fieldset class="the_input lock clearfix">
+						<input type="text" name="" placeholder="請再次輸入您的新密碼">
+					</fieldset>
+					<p class="btn_s">
+						<a class="bg_gary" href="#">取消</a>
+						<a href="#">確認儲存</a>
+					</p>
+				</div>
+				<!-- 2:變更成功才顯示 -->
+				<div class="fillin_box pw-w">
+					<div class="pw_done">
+						<p>密碼變更成功!</p>
+					</div>
+				</div>
+			</form>
+		</div>
 	</div>
 
     <!-- popup 付費/加值紀錄 -->

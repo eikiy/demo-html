@@ -435,7 +435,7 @@
 									<a class="popup-link" href="#popup-preview">預覽</a>
 								</p>
 							</div>
-							<div class="set_box">
+							<div class="set_box" style="position: relative;">
 								<div class="top_check">
 									<h3>
 										<input id="" type="checkbox" name="" value="其他問題" checked="">
@@ -490,11 +490,32 @@
 									</div>
 								</div>
 								<p class="btn no_border">
-									<a class="popup-link" href="#popup-add-issue">+ 新增</a>
+									<a href="#">+ 新增</a>
 								</p>
 								<p class="btn block">
 									<a class="bg_light_gray popup-link" href="#popup-preview">預覽</a>
 								</p>
+								<!-- gray popup  新增問題 -->
+							    <div class="gray_popup popup-add-issue" style="bottom: 100px; right: 22px; overflow: hidden;">
+							        <form>
+							        	<div class="top_title">
+							                <h4>新增問題
+							                	<a class="btn_close" href="#">
+						                			<span class="img_default"></span>
+						                		</a>
+						                	</h4>
+							            </div>
+							            <div class="fillin_box" style="padding-top: 10px;">
+							            	<fieldset>
+							            		<textarea class="r_info" id="" name="" type="text" value="" placeholder="字數限定40字以內。">請簡單描述一下本公司「ＷＷＷ」產品的優缺點請簡單描述一下本公司「ＷＷＷ」產品的優缺點</textarea>
+							            	</fieldset>
+							            	<p class="btn_s">
+								            	<a class="bg_gary" href="#">取消</a>
+								            	<a href="#">確認儲存</a>
+								            </p>
+							            </div>
+							        </form>
+							    </div>
 							</div>
 							<!-- <div class="survey_footer"> -->
 								<!-- 不能點 -->
@@ -518,7 +539,7 @@
 				</section>
 			</div>
 			<!-- popup 新增問題 -->
-			<div id="popup-add-qa" class="white-popup popup-w-s mfp-hide">
+			<div id="popup-add-qa" class=" white-popup popup-w-s mfp-hide">
 		        <form class="setBox">
 		            <div class="top_title">
 		                <h3>新增問題</h3>
@@ -593,7 +614,7 @@
 		            </p>
 		        </div>
 		    </div>
-		    <!-- popup 新增問題 -->
+		    <!-- popup 新增問題 舊畫面 - 尚未移除 -->
 		    <div id="popup-add-issue" class="white-popup popup-w-s mfp-hide popup-padding-top">
 		        <form class="setBox messageBox check_remind ">
 		        	<div class="top_title">
