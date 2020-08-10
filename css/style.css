@@ -422,6 +422,7 @@ p.btn_s a{ min-width: 110px; margin-left:4.5px; padding: 0px 10px; line-height: 
 p.btn_s a:hover{ opacity: 0.9; }
 p.btn_s a.bg_red{ background-color: #C87D86; letter-spacing: 0; }
 p.btn_s a.bg_gary{ background-color: #9B9B9B; }
+p.btn_s a.bg_darkgary{ background-color: #707475; }
 p.btn_s a.bg_darkblue{ background-color: #558C9E; }
 p.btn_s a.bg_yello{ background-color: #E5AF57; letter-spacing: 1px; padding: 5px 15px; }
 p.btn_s a.bg_skyblue{ background-color: #81B6C8; }
@@ -435,6 +436,7 @@ p.btn_s a.btn_org{ background-color: #EB8B70;}
 .setBox p.btn a:hover{ border-color: #fff;}
 .setBox p.btn a.bg_red{ background-color: #C87D86; letter-spacing: 0; }
 .setBox p.btn a.bg_gary{ background-color: #9B9B9B; }
+.setBox p.btn a.bg_darkgary{ background-color: #707475; }
 .setBox p.btn a.bg_darkblue{ background-color: #558C9E; }
 .setBox p.btn a.bg_yello{ background-color: #E5AF57; letter-spacing: 1px; padding: 5px 15px; }
 .setBox p.btn a.bg_skyblue{ background-color: #81B6C8; }
@@ -551,17 +553,27 @@ p.page_nb a.next::after{ background-image:url(../images/svg/arr_right_gray.svg )
 .setBox p.review_comment a:hover{ background-color: #C2D6DD;}
 .setBox p.review_comment a.cursor_none{ background-color:#fff; border-color: #fff; color: #D8D8D8; -webkit-filter: grayscale(1); opacity: 1; cursor: not-allowed;}
 
-.gray_popup{ position: absolute; width: 100%; background: #F8F9F9; border-radius: 5px; width: 480px; box-shadow: 0px 2px 4px rgba(0,0,0,.3); border: rgba(191, 191, 191, 0.5) 1px solid;}
+.gray_popup{ position: absolute; width: 100%; background: #F8F9F9; border-radius: 5px; width: 480px; box-shadow: 0px 2px 4px rgba(0,0,0,.3); border: rgba(191, 191, 191, 0.5) 1px solid; z-index: 100;}
 .gray_popup h4{ width: 100%; font-size: 14px; background-color: #D8D8D8; position: relative; line-height: 30px; text-align: center;}
 .gray_popup h4 a.btn_close{ position: absolute; top: -1px; right: 0; display: block;}
 .gray_popup h4 a.btn_close span{ width: 30px; height: 30px; position: relative; display: block; }
 .gray_popup h4 a.btn_close span::after{ content: ""; position:absolute; top: calc(50% - 6px); left: calc(50% - 6px); width: 12px; height: 12px; display: block; background-image: url(../images/svg/close_w.svg); }
 .gray_popup fieldset{ padding: 2px 0; }
-.gray_popup input, .gray_popup textarea{ border: 1px solid #979797; width:408px; font-size: 13px; height: 30px; border-radius: 5px; padding: 0 10px; line-height: 30px;}
+.gray_popup input, .gray_popup textarea{ border: 1px solid #979797; width:100%; font-size: 13px; height: 30px; border-radius: 5px; padding: 0 10px; line-height: 30px;}
 .gray_popup textarea{ min-height: 70px; line-height: 20px; padding: 5px 10px; }
 .gray_popup input::placeholder, .gray_popup textarea::placeholder{ color: #D8D8D8; }
+.gray_popup .top_title{ position: relative; min-height: 20px; }
+.gray_popup .top_title a.btn_close{ position: absolute; top: 5px; right: 5px; display: block;}
+.gray_popup .top_title a.btn_close span{ width: 30px; height: 30px; position: relative; display: block; }
+.gray_popup .top_title a.btn_close span::after{ content: ""; position:absolute; top: calc(50% - 6px); left: calc(50% - 6px); opacity: .8; width: 12px; height: 12px; display: block; background-image: url(../images/svg/close_gray.svg); }
+
+.gray_popup .red_border{padding: 0; border:1px solid #C87D86; border-radius: 5px; background-color: #fff;}
+.gray_popup .red_border textarea, .gray_popup .red_border input{ border: none; }
+.gray_popup .red_border .fill_in{ margin: 5px 0; }
+.gray_popup .red_border .top_title_centere{ text-align: center; padding: 8px 0; border-bottom:1px solid #C87D86; display: block; }
 
 .gray_popup .fillin_box{ max-width: 405px; margin: 0 auto; }
+.gray_popup .fillin_box .questions{ padding: 20px 0; }
 .gray_popup .pad20{ padding: 20px; }
 .gray_popup .l_title p{ line-height: 30px; color: #808080; }
 .gray_popup .top_both .l_title{ float: left; }
@@ -569,6 +581,7 @@ p.page_nb a.next::after{ background-image:url(../images/svg/arr_right_gray.svg )
 .gray_popup .top_both .r_info p{ text-align: left; line-height: 30px; font-size: 14px; }
 .gray_popup .top_both{ position: relative; }
 .gray_popup .icon_calendar::before{ background-image: url(../images/icon_time_select_01.png); cursor: pointer; z-index: 4; content: ""; top: 7px; right: 6px; position: absolute; width: 25px; height: 19px; display: block;}
+.f_c_red{ color: #C87D86;}
 
 .add_bossBox{ position:absolute; top: -53px; right: -288px; width: 275px; background-color: #558C9E; border-radius: 0px 5px 5px 5px; border:3px solid #558C9E;}
 .add_bossBox h4{ color: #fff; font-size: 14px; padding: 0 10px; line-height: 30px; position: relative; }
@@ -694,7 +707,7 @@ p.page_nb a.next::after{ background-image:url(../images/svg/arr_right_gray.svg )
 
 /*篩選*/
 .filter_pop .chosenBox{ background-color: #fff; width: 100%; min-height: 35px; border-radius: 10px 0 10px 10px; margin-top: 10px; display: block; position: relative; padding: 10px 15px; }
-.filter_pop .chosenBox p span{ color: #C87D86; padding-left: 10px; }
+/*.filter_pop .chosenBox p span{ color: #C87D86; padding-left: 10px; }*/
 .filter_pop .chosenBox p.btn{ position: absolute; top: 7px; line-height: 24px; right: 10px; font-size: 12px;  padding: 0; z-index: 2;}
 .filter_pop .chosenBox p.btn a.delete{ min-width: 60px; margin: 0 3px; padding: 0 5px 0px 25px; background-color: #fff; letter-spacing: 0; text-align: center; background-position: left center; background-repeat: no-repeat; background-size: contain;  display: inline-block; color: #81B6C8; border:1px solid #C87D86; border-radius:3px 0 3px 3px; color: #C87D86; background-image: url(../images/icon_x_s.png);}
 .filter_pop .chosenBox p.btn a.delete:hover{ background-color: #C87D86; color: #fff; background-image: url(../images/icon_x_s_w.png);}
@@ -1997,7 +2010,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 
 .filter_pop .interviewee_info .top_test_menu .tooltip{ width: 380px; top: 54px; }
 .filter_pop .interviewee_info .top_test_menu .tooltip::after{ left: inherit; }
-.filter_pop .interviewee_info .top_test_menu p span{ color: #4A4A4A; }
+/*.filter_pop .interviewee_info .top_test_menu p span{ color: #4A4A4A; }*/
 .filter_pop .interviewee_info .top_test_menu p span.c_green{ color: #84BE98; }
 .interviewee_info .open_content{ margin-bottom: 0; }
 .interviewee_info .open_content ul li a{ border-bottom: none; }
@@ -2981,10 +2994,6 @@ ul.job_management_list p.text_center{ text-align: center; }
 
 .job_seeker_container .grid_content .other_information .project_contents .record_not_yet p.top_note{ color: #9B9B9B; padding: 10px 15px;}
 
-.job_seeker_container .grid_content .other_information .project_contents a.btn_close{ position: absolute; top: 0; right: 0; display: block;}
-.job_seeker_container .grid_content .other_information .project_contents a.btn_close span{ width: 30px; height: 30px; position: relative; display: block; }
-.job_seeker_container .grid_content .other_information .project_contents a.btn_close span::after{ content: ""; position:absolute; top: calc(50% - 6px); left: calc(50% - 6px); opacity: .8; width: 12px; height: 12px; display: block; background-image: url(../images/svg/close_gray.svg); }
-
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox{ width: 100%; padding: 10px 15px; position: relative; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox a.paper_plane{ position: absolute; right: 10px; top: 19px; width: 23px; height: 13px; display: block; background-image: url(../images/svg/paper_plane.svg); }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox a.paper_plane span{ position: absolute; top: -15px; background-color: #E5AF57; font-size: 12px; color: #fff; text-align: center; display: block; line-height: 18px; width: 18px; height: 18px; border-radius: 50%; }
@@ -3037,7 +3046,6 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results a.lock .tooltip{ top: 21px; left: -14px; }
 
 .job_seeker_container .grid_content .add_contact_matters{ width: 452px; position: absolute; top: 0; z-index: 15;}
-.job_seeker_container .grid_content .add_contact_matters .top_title{ position: relative; min-height: 20px; }
 .job_seeker_container .grid_content .add_contact_matters .top_title a.btn_close { top:5px; right: 10px; }
 .job_seeker_container .grid_content .add_contact_matters .l_title p{ font-size: 13px; }
 
@@ -3714,7 +3722,6 @@ ul.job_management_list p.text_center{ text-align: center; }
 .candidates_management .userInfo p{ font-size: 13px}
 .candidates_management .userInfo .iBox{ padding: 3px 0;}
 .candidates_management .userInfo .iBox p{float: left; }
-.candidates_management .userInfo .iBox p.p_red{ color: #C87D86;}
 .candidates_management .userInfo .iBox p:nth-child(2){width: 180px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 17px; height: 17px * 1; overflow:hidden;}
 
 .candidates_management .user_data {float: right; width: 430px; position: relative;}
@@ -3888,15 +3895,18 @@ ul.job_management_list p.text_center{ text-align: center; }
 .u_infoBox ul.attached_link_list li .btn_delete{ float: right; }
 
 /*寄信紀錄*/
-.interviewee_info .mail_status_record{ padding: 0; }
+.interviewee_info .mail_status_record{ padding: 20px 25px 35px 25px;  }
 .interviewee_info .mail_status_record .border_blue{ width: inherit; box-shadow: none; }
+.interviewee_info .mail_status_record .send_ok, .interviewee_info .mail_status_record .send_no{ position: relative;}
+.interviewee_info .mail_status_record table.test_history_list {background-color: #fff;}
+.interviewee_info .mail_status_record table.test_history_list .none_top_line{ border-top: none; }
+.interviewee_info .mail_status_record table.test_history_list td:last-child{ border-right: none; }
 .interviewee_info .mail_status_record table.test_history_list td p{ text-align: left; }
 .interviewee_info .mail_status_record table.test_history_list td p span{ padding: 0px; color: inherit; }
-.interviewee_info .mail_status_record .send_ok, .interviewee_info .mail_status_record .send_no{ position: relative;}
 .interviewee_info .mail_status_record table.test_history_list td p span.send_ok, .interviewee_info .mail_status_record table.test_history_list td p span.send_no{ padding-right: 30px;}
 .interviewee_info .mail_status_record .send_ok::after{ content: ""; position: absolute; top: 0; right: 0; width: 25px; height: 14px; display: block; background-image: url(../images/icon_mail_send_status_done.png); }
 .interviewee_info .mail_status_record .send_no::after{ content: ""; position: absolute; top: 0; right: 0; width: 25px; height: 14px; display: block; background-image: url(../images/icon_mail_send_status_none.png); }
-.interviewee_info .mail_status_record h4.mail_status_title{ font-size: 20px; padding: 5px 5px 10px 5px; }
+.interviewee_info .mail_status_record .mail_status_title{ font-size: 20px; padding: 5px 5px 25px 5px; }
 
 /*更改狀態*/
 .changestatusBox ul.select_item li{ position: relative; font-size: 13px; text-align: left;  max-width:calc(100% - 35px); margin: 8px auto 8px auto; display: block; }
@@ -4226,7 +4236,7 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .interviewee_info .review_report .view_blur .sub_title, .interviewee_info .review_report .view_blur ul.other_item, .interviewee_info .review_report .fill_rating_content .view_blur .the_item {-webkit-filter: blur(0.4rem);-moz-filter: blur(0.4rem); -o-filter: blur(0.4rem);-ms-filter: blur(0.4rem);filter: blur(0.4rem);}
 
 /*lightbox 紙本附件*/
-.setBox ul.annex_download{ width: 100%; padding-left: 38px; }
+.setBox ul.annex_download{ width: 100%; padding:40px 0 40px 35px; }
 .setBox ul.annex_download li{ float: left; padding: 10px 15px;}
 .setBox ul.annex_download li .a_annex{ width: 182px; height: 252px; padding-top: 28px; border-radius: 10px 0 10px 10px; border:2px solid #81B6C8; display: block; position: relative; overflow: hidden; }
 .setBox ul.annex_download li .a_annex p.annex_name{ position: absolute; bottom: 0; left: 0; width: 100%; font-size: 12px; background-color: #81B6C8; color: #fff; padding:5px 10px;}

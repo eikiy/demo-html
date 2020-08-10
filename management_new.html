@@ -1,74 +1,85 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
 <head>
-<meta charset="UTF-8">
-<title>招募管理 - 改版</title>
-<meta name='description' content=""/>
-<meta name='keywords' content=""/>
-<!-- <meta name="MobileOptimized" content="width">
-<meta name="HandheldFriendly" content="true">
-<meta name="viewport" content="width=device-width, initial-scale=1">
- -->
-<link rel="stylesheet" href="css/style.css">
-<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<meta charset="UTF-8">
+	<title>招募管理 - 改版</title>
+	<meta name='description' content=""/>
+	<meta name='keywords' content=""/>
+	<!-- <meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 -->
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 
-<!-- https://loading.io/progress/ -->
-<link rel="stylesheet" type="text/css" href="css/loading-bar.css"/>
-<script type ="text/javascript" src="js/loading-bar.js"></script>
+	<!-- https://loading.io/progress/ -->
+	<link rel="stylesheet" type="text/css" href="css/loading-bar.css"/>
+	<script type ="text/javascript" src="js/loading-bar.js"></script>
 
-<!-- multirange -->
-<link rel="stylesheet" href="css/multirange.css">
-<script src="js/multirange.js"></script>
+	<!-- multirange -->
+	<link rel="stylesheet" href="css/multirange.css">
+	<script src="js/multirange.js"></script>
 
-<!-- Magnific Popup core CSS file -->
-<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-<!-- Magnific Popup core JS file -->
-<script src="magnific-popup/jquery.magnific-popup.js"></script>
-<script type="text/javascript">
-	$(document).ready(function() {
-	    $('.popup-link').magnificPopup({
-	      removalDelay: 300,
-	      mainClass: 'mfp-fade'
-	    });
-	});
-	$(function(){
-	  	$(".job_type P").click(function(){
-	        $(this).next("ul.sub_filter").stop(true, true).fadeToggle(0);
-	    return false;
-	    });
-	 });
-	$(function(){
-	  	$(".job_type P").click(function(){
-	        $(this).next(".filter_list").stop(true, true).fadeToggle(0);
-	    return false;
-	    });
-	 });
-	$(function(){
-	  	$("a.paper_plane").click(function(){
-	        $(this).next(".paper_plane_info").stop(true, true).fadeToggle(0);
-	    return false;
-	    });
-	 });
-	$(function(){
-	  	$(".resume_profession a.more ").click(function(){
-	        $(this).next(".r_p_more_info").stop(true, true).fadeToggle(0);
-	    return false;
-	    });
-	 });
-	$(function(){
-	  	$(".sub_popup_info p a.btn_close").click(function(){
-	        $(this).parent().parent().stop(true, true).fadeOut();
-	    return false;
-	    });
-	 });
-	$(function(){
-	  	$(".show_calendar").click(function(){
-	        $(this).parent().next(".time_select ").stop(true, true).fadeIn();
-	    return false;
-	    });
-	 });
-</script>
-
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+	<!-- Magnific Popup core JS file -->
+	<script src="magnific-popup/jquery.magnific-popup.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('.popup-link').magnificPopup({
+		      removalDelay: 300,
+		      mainClass: 'mfp-fade'
+		    });
+		});
+		$(function(){
+		  	$(".job_type P").click(function(){
+		        $(this).next("ul.sub_filter").stop(true, true).fadeToggle(0);
+		    return false;
+		    });
+		 });
+		$(function(){
+		  	$(".job_type P").click(function(){
+		        $(this).next(".filter_list").stop(true, true).fadeToggle(0);
+		    return false;
+		    });
+		 });
+		$(function(){
+		  	$("a.paper_plane").click(function(){
+		        $(this).next(".paper_plane_info").stop(true, true).fadeToggle(0);
+		    return false;
+		    });
+		 });
+		$(function(){
+		  	$(".resume_profession a.more ").click(function(){
+		        $(this).next(".r_p_more_info").stop(true, true).fadeToggle(0);
+		    return false;
+		    });
+		 });
+		$(function(){
+		  	$(".sub_popup_info p a.btn_close").click(function(){
+		        $(this).parent().parent().stop(true, true).fadeOut();
+		    return false;
+		    });
+		 });
+		$(function(){
+		  	$(".show_calendar").click(function(){
+		        $(this).parent().next(".time_select ").stop(true, true).fadeIn();
+		    return false;
+		    });
+		 });
+		$(function(){
+	    	$("#open-popup-job-over").click(function(){
+				$("#popup-job-over").stop(true, true).fadeToggle(0);
+		  	return false;
+		  });
+	   	});
+	   	$(function(){
+	    	$("#open-popup-status-record").click(function(){
+				$("#popup-status-record").stop(true, true).fadeToggle(0);
+		  	return false;
+		  });
+	   	});
+	</script>
 </head>
 <body>
 
@@ -2291,7 +2302,7 @@
             <div class="chosenBox interviewee_info j_v_ranking">
             	<div class="interviewMainBox interview_officer_Main">
 					<div class="contentsBox">
-						<div class="top_test_menu open_content clearfix">
+						<div class="top_test_menu open_content clearfix" style="position: relative;">
 							<ul>
 								<li class="btn_in"><p><a class="popup-link" href="#popup-job_management_status">應徵者狀態管理</a></p></li>
 								<li><p><a class="popup-link" href="#popup-job_vacancies_ranking"><span class="title_icon_lock img_default">排名表</span></a></p></li>
@@ -2300,12 +2311,109 @@
 								<!-- <li class="none"><p><a href="#">工作職能與專業技能</a></p></li> -->
 							</ul>
 							<p class="btn">
-								<a class="bg_gary remind_greenbox popup-link" href="#popup-job_over">結束職缺
+								<a class="bg_gary remind_greenbox" href="#" id="open-popup-job-over">結束職缺
 									<span class="tooltip">
 			                			<span class="icon_thumbtack">目前尚有求職者狀態為 <span class="c_green">報到排程</span>，請確認其狀態。</span>
 			                		</span>
 		                		</a>
 							</p>
+							<!-- 結束職缺 -->
+							<div class="gray_popup" style="right: 0px; top: 50px; display: none;" id="popup-job-over">
+								<div class="top_title">
+									<a class="btn_close" href="#">
+										<span class="img_default"></span>
+									</a>
+								</div>
+								<!-- 點了 input 出現 next 的日曆 -->
+								<div class="fillin_box">
+									<fieldset class="questions">
+										<p>您尚有 <span class="f_c_red">2個職缺</span> 名額未招滿，請問仍要提前結束職缺嗎？<br>
+											確認結束，排名結果將會記錄在「職缺管理紀錄」。<br>
+											<br>
+											未錄取之求職者全部轉移至招募紀錄並標示未錄取。
+										</p>
+									</fieldset>
+									<fieldset class="red_border">
+										<label class="top_title_centere" for=""><p>備註</p></label>
+										<textarea placeholder="請說明"></textarea>
+									</fieldset>
+									<fieldset class=" clearfix">
+										<p class="btn_s">
+											<a href="#" class="bg_darkgary">取消</a>
+											<a href="#" class="bg_red">確認刪除</a>
+										</p>
+									</fieldset>
+								</div>
+							</div>
+							<!-- 紀錄 -->
+							<div class="gray_popup" style=" width: 924px; top: 64px; right: 2px; display: none;" id="popup-status-record">
+								<h4>紀錄
+									<a class="btn_close" href="#">
+										<span class="img_default"></span>
+									</a>
+								</h4>
+								<div class="r_content_03 mail_status_record">
+									<!-- mail_status_title: 基本資訊：姓名｜性別｜部門｜職位（沒有填直接跳過顯示 -->
+									<h5 class="mail_status_title">林怡文 | 男｜資訊部 | 軟體工程師</h5>
+					                	<table class="test_history_list" cellpadding="0" cellspacing="0" border="0">
+					                		<tr>
+					                			<th class="none_top_line" width="155"><p>日期/時間</p></th>
+					                			<th class="none_top_line"><p>狀態</p></th>
+					                			<th class="none_top_line"><p>備註</p></th>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2018/11/11</p></td>
+					                			<td><p>進入招募系統</p></td>
+					                			<td></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2018/11/11/14:00</p></td>
+					                			<td><p><span class="send_ok img_default">已預約2019/01/11/10:00面試，面試通知信寄出</span></p></td>
+					                			<td><p class="p_green">寄件成功</p></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2018/11/11</p></td>
+					                			<td><p>第一次面試</p></td>
+					                			<td></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2019/01/28/13:34</p></td>
+					                			<td><p><span class="send_no img_default">不錄取，<span class="p_red p_underline">未錄取通知信</span>寄出</span></p></td>
+					                			<td><p>不錄取原因：資格不符，<span class="p_red">寄件未成功</span></p></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2019/01/28/14:00</p></td>
+					                			<td><p><span class="send_ok img_default">不錄取，未錄取通知信寄出</span></p></td>
+					                			<td><p>不錄取原因：資格不符，<span class="p_green">寄件成功</span></p></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2019/01/28</p></td>
+					                			<td><p><span class="send_ok img_default">錄取，錄取報到通知信寄出</span></p></td>
+					                			<td><p><span class="p_green">寄件成功</span></p></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2019/02/03</p></td>
+					                			<td><p>婉拒錄取</p></td>
+					                			<td></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2019/02/03/09:00</p></td>
+					                			<td><p>確認報到，成為現有員工</p></td>
+					                			<td></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2019/05/03</p></td>
+					                			<td><p>停職</p></td>
+					                			<td><p>停職原因：留職停薪，預計留職一年</p></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2019/05/03</p></td>
+					                			<td><p>復職</p></td>
+					                			<td></td>
+					                		</tr>
+					                	</table>
+								</div>
+			        		</div>
 						</div>
 						<div class="test_report new_report managementBox">
 							<h3 class="test_report_title">職缺資訊<a class="go_edit img_default" href="#"></a></h3>
@@ -2456,7 +2564,7 @@
 												</div>
 												<div class="iBox clearfix">
 													<p>信箱：</p>
-													<p class="p_red">尚未設定，無法自動寄信</p>
+													<p class="f_c_red">尚未設定，無法自動寄信</p>
 												</div>
 											</div>
 											<div class="user_data clearfix">
@@ -2554,7 +2662,7 @@
 															</div>
 														</p>
 														<p>
-															<a class="record popup-link img_default" href="#popup-status-record">
+															<a class="record img_default" href="" id="open-popup-status-record">
 																<span class="tooltip">紀錄</span>
 															</a>
 														</p>
@@ -2866,7 +2974,7 @@
 								<!-- <li class="none"><p><a href="#">工作職能與專業技能</a></p></li> -->
 							</ul>
 							<p class="btn">
-								<a class="bg_gary remind_greenbox popup-link" href="#popup-job_over">結束職缺
+								<a class="bg_gary remind_greenbox popup-link" href="#" id="open-popup-job-over">結束職缺
 									<span class="tooltip">
 			                			<span class="icon_thumbtack">目前尚有求職者狀態為 <span class="c_green">報到排程</span>，請確認其狀態。</span>
 			                		</span>
@@ -4366,182 +4474,182 @@
 														<!-- 點了 input 出現 next 的日曆 -->
 														<div class="pad20">
 															<fieldset class="top_both icon_calendar img_default clearfix">
-															<label class="l_title" for=""><p>請選擇聯絡日期與時間</p></label>
-															<input class="r_info show_calendar" id="" name="" type="text" value="2020/07/01">
-														</fieldset>
-														<div class="day time_select more_h img_default clearfix" style="display: none;">
-															<div class="day_selectBox">
-											                	<div class="monthBox">
-																	<div class="top_year_month">
-																		<p><span>2018年11月
-																		<a class="left_arr" href="#"></a>
-																			<a class="right_arr" href="#"></a></span>
-																		</p>
+																<label class="l_title" for=""><p>請選擇聯絡日期與時間</p></label>
+																<input class="r_info show_calendar" id="" name="" type="text" value="2020/07/01">
+															</fieldset>
+															<div class="day time_select more_h img_default clearfix" style="display: none;">
+																<div class="day_selectBox">
+												                	<div class="monthBox">
+																		<div class="top_year_month">
+																			<p><span>2018年11月
+																			<a class="left_arr" href="#"></a>
+																				<a class="right_arr" href="#"></a></span>
+																			</p>
+																		</div>
+																		<div class="dateBox">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tbody><tr>
+																					<th><p>日</p></th>
+																					<th><p>一</p></th>
+																					<th><p>二</p></th>
+																					<th><p>三</p></th>	
+																					<th><p>四</p></th>
+																					<th><p>五</p></th>
+																					<th><p>六</p></th>
+																				</tr>
+																				<tr>
+																					<td></td>
+																					<td></td>
+																					<td></td>
+																					<td></td>
+																					<td>
+																						<p class="btn_in">1</p>
+																						<p class="ring_color">
+																							<span class="green"></span>
+																							<span class="red"></span>
+																							<span class="org"></span>
+																						</p>
+																					</td>
+																					<td><p>2</p></td>
+																					<td><p>3</p></td>
+																				</tr>
+																				<tr>
+																					<td><p>4</p></td>
+																					<td><p>5</p></td>
+																					<td><p>6</p></td>
+																					<td><p>7</p></td>
+																					<td><p>8</p></td>
+																					<td><p>9</p></td>
+																					<td><p>10</p></td>
+																				</tr>
+																				<tr>
+																					<td><p>11</p></td>
+																					<td><p>12</p></td>
+																					<td><p>13</p></td>
+																					<td><p>14</p></td>
+																					<td><p>15</p></td>
+																					<td><p>16</p></td>
+																					<td><p>17</p></td>
+																				</tr>
+																				<tr>
+																					<td><p>18</p></td>
+																					<td><p>19</p></td>
+																					<td><p>20</p></td>
+																					<td><p>21</p></td>
+																					<td><p>22</p></td>
+																					<td>
+																						<p>23</p>
+																						<p class="ring_color">
+																							<span class="red"></span>
+																							<span class="org"></span>
+																						</p>
+																					</td>
+																					<td><p>24</p></td>
+																				</tr>
+																				<tr>
+																					<td><p>25</p></td>
+																					<td><p>26</p></td>
+																					<td><p>27</p></td>
+																					<td><p>28</p></td>
+																					<td><p>29</p></td>
+																					<td>
+																						<p>30</p>
+																						<p class="ring_color">
+																							<span class="green"></span>
+																							<span class="org"></span>
+																						</p>
+																					</td>
+																					<td><p>31</p></td>
+																				</tr>
+																				<tr>
+																					<td>
+																						<p class="btn_in">31</p>
+																						<p class="ring_color">
+																							<span class="red"></span>
+																							<span class="org"></span>
+																						</p>
+																					</td>
+																					<td></td>
+																					<td></td>
+																					<td></td>
+																					<td></td>
+																					<td></td>
+																					<td></td>
+																				</tr>
+																			</tbody></table>
+																		</div>
 																	</div>
-																	<div class="dateBox">
-																		<table width="100%" border="0" cellpadding="0" cellspacing="0">
-																			<tbody><tr>
-																				<th><p>日</p></th>
-																				<th><p>一</p></th>
-																				<th><p>二</p></th>
-																				<th><p>三</p></th>	
-																				<th><p>四</p></th>
-																				<th><p>五</p></th>
-																				<th><p>六</p></th>
-																			</tr>
-																			<tr>
-																				<td></td>
-																				<td></td>
-																				<td></td>
-																				<td></td>
-																				<td>
-																					<p class="btn_in">1</p>
-																					<p class="ring_color">
-																						<span class="green"></span>
-																						<span class="red"></span>
-																						<span class="org"></span>
-																					</p>
-																				</td>
-																				<td><p>2</p></td>
-																				<td><p>3</p></td>
-																			</tr>
-																			<tr>
-																				<td><p>4</p></td>
-																				<td><p>5</p></td>
-																				<td><p>6</p></td>
-																				<td><p>7</p></td>
-																				<td><p>8</p></td>
-																				<td><p>9</p></td>
-																				<td><p>10</p></td>
-																			</tr>
-																			<tr>
-																				<td><p>11</p></td>
-																				<td><p>12</p></td>
-																				<td><p>13</p></td>
-																				<td><p>14</p></td>
-																				<td><p>15</p></td>
-																				<td><p>16</p></td>
-																				<td><p>17</p></td>
-																			</tr>
-																			<tr>
-																				<td><p>18</p></td>
-																				<td><p>19</p></td>
-																				<td><p>20</p></td>
-																				<td><p>21</p></td>
-																				<td><p>22</p></td>
-																				<td>
-																					<p>23</p>
-																					<p class="ring_color">
-																						<span class="red"></span>
-																						<span class="org"></span>
-																					</p>
-																				</td>
-																				<td><p>24</p></td>
-																			</tr>
-																			<tr>
-																				<td><p>25</p></td>
-																				<td><p>26</p></td>
-																				<td><p>27</p></td>
-																				<td><p>28</p></td>
-																				<td><p>29</p></td>
-																				<td>
-																					<p>30</p>
-																					<p class="ring_color">
-																						<span class="green"></span>
-																						<span class="org"></span>
-																					</p>
-																				</td>
-																				<td><p>31</p></td>
-																			</tr>
-																			<tr>
-																				<td>
-																					<p class="btn_in">31</p>
-																					<p class="ring_color">
-																						<span class="red"></span>
-																						<span class="org"></span>
-																					</p>
-																				</td>
-																				<td></td>
-																				<td></td>
-																				<td></td>
-																				<td></td>
-																				<td></td>
-																				<td></td>
-																			</tr>
-																		</tbody></table>
-																	</div>
-																</div>
-											                </div>
-							                				<div class="time_selectBox clearfix">
-											                	<div class="the_time">
-											                		<p class="top_title">點</p>
-											                		<ul>
-											                			<li><p><a href="">1</a></p></li>
-											                			<li><p><a href="">2</a></p></li>
-											                			<li><p><a href="">3</a></p></li>
-											                			<li><p><a href="">4</a></p></li>
-											                			<li><p><a href="">5</a></p></li>
-											                			<li><p><a href="">6</a></p></li>
-											                			<li><p><a class="btn_in" href="">7</a></p></li>
-											                			<li><p><a href="">8</a></p></li>
-											                			<li><p><a href="">9</a></p></li>
-											                			<li><p><a href="">10</a></p></li>
-											                			<li><p><a href="">11</a></p></li>
-											                			<li><p><a href="">12</a></p></li>
-											                			<li><p><a href="">13</a></p></li>
-											                			<li><p><a href="">14</a></p></li>
-											                			<li><p><a href="">15</a></p></li>
-											                			<li><p><a href="">16</a></p></li>
-											                			<li><p><a href="">17</a></p></li>
-											                			<li><p><a href="">18</a></p></li>
-											                			<li><p><a href="">19</a></p></li>
-											                			<li><p><a href="">20</a></p></li>
-											                			<li><p><a href="">21</a></p></li>
-											                			<li><p><a href="">22</a></p></li>
-											                			<li><p><a href="">23</a></p></li>
-											                			<li><p><a href="">24</a></p></li>
-											                		</ul>
-											                	</div>
-											                	<div class="the_time">
-											                		<p class="top_title">分</p>
-											                		<ul>
-											                			<li><p><a href="">00</a></p></li>
-											                			<li><p><a href="">05</a></p></li>
-											                			<li><p><a class="btn_in" href="">10</a></p></li>
-											                			<li><p><a href="">15</a></p></li>
-											                			<li><p><a href="">20</a></p></li>
-											                			<li><p><a href="">25</a></p></li>
-											                			<li><p><a href="">30</a></p></li>
-											                			<li><p><a href="">35</a></p></li>
-											                			<li><p><a href="">40</a></p></li>
-											                			<li><p><a href="">45</a></p></li>
-											                			<li><p><a href="">50</a></p></li>
-											                			<li><p><a href="">55</a></p></li>
-											                		</ul>
-											                	</div>
-											                </div>
+												                </div>
+								                				<div class="time_selectBox clearfix">
+												                	<div class="the_time">
+												                		<p class="top_title">點</p>
+												                		<ul>
+												                			<li><p><a href="">1</a></p></li>
+												                			<li><p><a href="">2</a></p></li>
+												                			<li><p><a href="">3</a></p></li>
+												                			<li><p><a href="">4</a></p></li>
+												                			<li><p><a href="">5</a></p></li>
+												                			<li><p><a href="">6</a></p></li>
+												                			<li><p><a class="btn_in" href="">7</a></p></li>
+												                			<li><p><a href="">8</a></p></li>
+												                			<li><p><a href="">9</a></p></li>
+												                			<li><p><a href="">10</a></p></li>
+												                			<li><p><a href="">11</a></p></li>
+												                			<li><p><a href="">12</a></p></li>
+												                			<li><p><a href="">13</a></p></li>
+												                			<li><p><a href="">14</a></p></li>
+												                			<li><p><a href="">15</a></p></li>
+												                			<li><p><a href="">16</a></p></li>
+												                			<li><p><a href="">17</a></p></li>
+												                			<li><p><a href="">18</a></p></li>
+												                			<li><p><a href="">19</a></p></li>
+												                			<li><p><a href="">20</a></p></li>
+												                			<li><p><a href="">21</a></p></li>
+												                			<li><p><a href="">22</a></p></li>
+												                			<li><p><a href="">23</a></p></li>
+												                			<li><p><a href="">24</a></p></li>
+												                		</ul>
+												                	</div>
+												                	<div class="the_time">
+												                		<p class="top_title">分</p>
+												                		<ul>
+												                			<li><p><a href="">00</a></p></li>
+												                			<li><p><a href="">05</a></p></li>
+												                			<li><p><a class="btn_in" href="">10</a></p></li>
+												                			<li><p><a href="">15</a></p></li>
+												                			<li><p><a href="">20</a></p></li>
+												                			<li><p><a href="">25</a></p></li>
+												                			<li><p><a href="">30</a></p></li>
+												                			<li><p><a href="">35</a></p></li>
+												                			<li><p><a href="">40</a></p></li>
+												                			<li><p><a href="">45</a></p></li>
+												                			<li><p><a href="">50</a></p></li>
+												                			<li><p><a href="">55</a></p></li>
+												                		</ul>
+												                	</div>
+												                </div>
+															</div>
+															<fieldset>
+																<label class="l_title" for=""><p>備忘留言</p></label>
+																<input class="r_info" id="" name="" type="text" placeholder="例如：電話聯絡，沒接聽。">
+															</fieldset>
+															<fieldset>
+																<label class="l_title" for=""><p>留言者</p></label>
+																<input class="r_info" id="" name="" type="text">
+															</fieldset>
+															<fieldset class="swicht_box clearfix">
+																<div class="btn_swtich clearfix">
+								                            		<div class="swtich_type">
+								                            			<input type="checkbox" id="swtich2">
+								                            			<label class="button" for="swtich2"></label>
+								                            		</div>
+								                            		<p>顯示已聯絡</p>
+								                        		</div>
+																<p class="btn_s">
+															    	<a href="#">確認</a>
+															    </p>
+															</fieldset>
 														</div>
-														<fieldset>
-															<label class="l_title" for=""><p>備忘留言</p></label>
-															<input class="r_info" id="" name="" type="text" placeholder="例如：電話聯絡，沒接聽。">
-														</fieldset>
-														<fieldset>
-															<label class="l_title" for=""><p>留言者</p></label>
-															<input class="r_info" id="" name="" type="text">
-														</fieldset>
-														<fieldset class="swicht_box clearfix">
-															<div class="btn_swtich clearfix">
-							                            		<div class="swtich_type">
-							                            			<input type="checkbox" id="swtich2">
-							                            			<label class="button" for="swtich2"></label>
-							                            		</div>
-							                            		<p>顯示已聯絡</p>
-							                        		</div>
-															<p class="btn_s">
-														    	<a href="#">確認</a>
-														    </p>
-														</fieldset>
-													</div>
 													</div>
 												</div>
 											</div>
@@ -4577,13 +4685,44 @@
 								<li class="btn_in"><p><a class="popup-link" href="#popup-CV_link">履歷連結</a></p></li>
 							</ul>
 							<p class="btn">
-								<a class="bg_gary remind_greenbox popup-link" href="#popup-job_over">結束職缺
+								<a class="bg_gary remind_greenbox" href="#" id="open-popup-job-over">結束職缺
 									<span class="tooltip">
 			                			<span class="icon_thumbtack">目前尚有求職者狀態為 <span class="c_green">報到排程</span>，請確認其狀態。</span>
 			                		</span>
 		                		</a>
 							</p>
-						</div>
+							<!-- 結束職缺 -->
+							<div class="gray_popup" style="right: 20px; top: 64px; display: none;" id="popup-job-over">
+									<div class="top_title">
+										<a class="btn_close" href="#">
+											<span class="img_default"></span>
+										</a>
+									</div>
+									<div class="fillin_box">
+										<fieldset class="questions">
+											<!-- 狀態文字1 -->
+											<p>您尚有 <span class="f_c_red">2個職缺</span> 名額未招滿，請問仍要提前結束職缺嗎？<br>
+												確認結束，排名結果將會記錄在「職缺管理紀錄」。<br>
+												<br>未錄取之求職者全部轉移至招募紀錄並標示未錄取。
+											</p>
+											<!-- 狀態文字2 -->
+											<!-- <p>確認結束後，排名結果將會記錄在「職缺管理紀錄」。<br>
+												<br>
+												未錄取之求職者全部轉移至招募紀錄並標示未錄取。
+											</p> -->
+										</fieldset>
+										<fieldset class="red_border">
+											<label class="top_title_centere" for=""><p>備註</p></label>
+											<textarea placeholder="請說明"></textarea>
+										</fieldset>
+										<fieldset class=" clearfix">
+											<p class="btn_s">
+												<a href="#" class="bg_darkgary">取消</a>
+												<a href="#" class="bg_red">確認結束</a>
+											</p>
+										</fieldset>
+									</div>
+								</div>
 						<div class="test_report new_report r_content_01 messageBox check_remind CV_link_conrent">
 							<div class="all_test_list">
 			                	<p class="t_title">請先設定此職缺履歷連結所需顯示之項目</p>

@@ -25,6 +25,30 @@
 	    return false;
 	    });
 	 });
+	$(function(){
+    	$("#open-popup-report-annex").click(function(){
+			$("#popup-report-annex").stop(true, true).fadeToggle(0);
+	  	return false;
+	  });
+   	});
+   	$(function(){
+    	$("#open-popup-report-delete").click(function(){
+			$("#popup-report-delete").stop(true, true).fadeToggle(0);
+	  	return false;
+	  });
+   	});
+   	$(function(){
+    	$("#open-popup-report-delete2").click(function(){
+			$("#popup-report-delete2").stop(true, true).fadeToggle(0);
+	  	return false;
+	  });
+   	});
+   	$(function(){
+    	$("#open-popup-status-record").click(function(){
+			$("#popup-status-record").stop(true, true).fadeToggle(0);
+	  	return false;
+	  });
+   	});
 </script>
 <script type="text/javascript">
 	$(function(){
@@ -8260,7 +8284,7 @@
             <div class="chosenBox interviewee_info">
             	<div class="interviewMainBox interview_officer_Main">
 					<div class="contentsBox">
-						<div class="top_ivBox clearfix">
+						<div class="top_ivBox clearfix" style="position: relative;">
 							<div class="top_interviewer_info clearfix">
 								<div class="left_photo">
 									<div class="the_photo">
@@ -8302,22 +8326,114 @@
 										</a>
 									</p>
 									<div class="btn_delete">
-										<a href="#"><span class="tooltip">刪除</span></a>
+										<a href="" id="open-popup-report-delete2"><span class="tooltip">刪除</span></a>
 									</div>
 									<p class="btn_status_record">
-										<a class="popup-link" href="#popup-status-record">
+										<a class="" href="" id="open-popup-status-record">
 											<span class="img_default">狀態紀錄</span>
 										</a>
 									</p>
 								</div>
 								<div class="embarrassment clearfix">
 									<p><a class="icon_01 popup-link" href="#popup-user-info">個人資料</a></p>
-									<p><a class="icon_05 popup-link" href="#popup-user-file">附件檔案</a></p>
+									<p><a class="icon_05" href="#" id="open-popup-user-file">附件檔案</a></p>
 									<p><a class="icon_02 popup-link" href="#popup-user-info2">應徵問卷</a></p> <!-- btn_none 尚未建立資料，不能點選 -->
 									<p><a class="icon_03 popup-link" href="#popup-test">測驗報告</a></p>
 									<p class="btn_in"><a class="icon_04 popup-link" href="#popup-the-record">面試紀錄</a></p>
 								</div>
 							</div>
+							<!-- 刪除 人員資料 -->
+							<div class="gray_popup" style="right: 20px; top: 64px; display: none;" id="popup-report-delete2">
+								<div class="top_title">
+									<a class="btn_close" href="#">
+										<span class="img_default"></span>
+									</a>
+								</div>
+								<div class="fillin_box">
+									<fieldset class="questions">
+										<p>請問確定要刪除 林怡文 嗎？<br>如確定刪除，此人員資料與記錄會全部清除。</p>
+									</fieldset>
+									<fieldset class="red_border">
+										<label class="top_title_centere" for=""><p>如確定刪除，請輸入密碼</p></label>
+										<input class="fill_in" id="" name="" type="text" placeholder="請輸入密碼">
+									</fieldset>
+									<fieldset class=" clearfix">
+										<p class="btn_s">
+											<a href="#" class="bg_darkgary">取消</a>
+											<a href="#" class="bg_red">確認刪除</a>
+										</p>
+									</fieldset>
+								</div>
+							</div>
+							<!-- 紀錄 -->
+							<div class="gray_popup" style=" width: 924px; top: 64px; right: 2px; display: none;" id="popup-status-record">
+								<h4>紀錄
+									<a class="btn_close" href="#">
+										<span class="img_default"></span>
+									</a>
+								</h4>
+								<div class="r_content_03 mail_status_record">
+									<!-- mail_status_title: 基本資訊：姓名｜性別｜部門｜職位（沒有填直接跳過顯示 -->
+									<h5 class="mail_status_title">林怡文 | 男｜資訊部 | 軟體工程師</h5>
+					                	<table class="test_history_list" cellpadding="0" cellspacing="0" border="0">
+					                		<tr>
+					                			<th class="none_top_line" width="155"><p>日期/時間</p></th>
+					                			<th class="none_top_line"><p>狀態</p></th>
+					                			<th class="none_top_line"><p>備註</p></th>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2018/11/11</p></td>
+					                			<td><p>進入招募系統</p></td>
+					                			<td></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2018/11/11/14:00</p></td>
+					                			<td><p><span class="send_ok img_default">已預約2019/01/11/10:00面試，面試通知信寄出</span></p></td>
+					                			<td><p class="p_green">寄件成功</p></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2018/11/11</p></td>
+					                			<td><p>第一次面試</p></td>
+					                			<td></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2019/01/28/13:34</p></td>
+					                			<td><p><span class="send_no img_default">不錄取，<span class="p_red p_underline">未錄取通知信</span>寄出</span></p></td>
+					                			<td><p>不錄取原因：資格不符，<span class="p_red">寄件未成功</span></p></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2019/01/28/14:00</p></td>
+					                			<td><p><span class="send_ok img_default">不錄取，未錄取通知信寄出</span></p></td>
+					                			<td><p>不錄取原因：資格不符，<span class="p_green">寄件成功</span></p></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2019/01/28</p></td>
+					                			<td><p><span class="send_ok img_default">錄取，錄取報到通知信寄出</span></p></td>
+					                			<td><p><span class="p_green">寄件成功</span></p></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2019/02/03</p></td>
+					                			<td><p>婉拒錄取</p></td>
+					                			<td></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2019/02/03/09:00</p></td>
+					                			<td><p>確認報到，成為現有員工</p></td>
+					                			<td></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2019/05/03</p></td>
+					                			<td><p>停職</p></td>
+					                			<td><p>停職原因：留職停薪，預計留職一年</p></td>
+					                		</tr>
+					                		<tr>
+					                			<td><p>2019/05/03</p></td>
+					                			<td><p>復職</p></td>
+					                			<td></td>
+					                		</tr>
+					                	</table>
+								</div>
+			        		</div>
 						</div>
 						<div class="top_test_menu open_content clearfix"> <!-- 點開了需+open_content -->
 							<ul>
@@ -8325,7 +8441,156 @@
 								<li><p><a class="popup-link" href="#popup-review-report-notes">空白評論表/面試備註</a></p></li>
 							</ul>
 						</div>
-						<div class="test_report review_report clearfix">
+						<div class="test_report review_report clearfix" style="position: relative;">
+							<!-- 紙本附件 -->
+							<div class="gray_popup" style="width: 924px; top: 100px; right: 2px; display: none;" id="popup-report-annex">
+								<h4>紙本附件
+									<a class="btn_close" href="#">
+										<span class="img_default"></span>
+									</a>
+								</h4>
+								<ul class="annex_download clearfix">
+									<li>
+										<a class="a_annex choose_file" href="#">
+											<p class="text img_default">請選擇檔案</p>
+											<p>不可上傳執行檔<br>檔案大小請勿超過 10MB</p>
+										</a>
+									</li>
+									<li>
+										<div class="a_annex">
+											<div class="img_annex">
+												<img src="images/img_annex.jpg" alt="">
+											</div>
+											<div class="tools">
+												<div class="btn crop">
+													<a class="img_default" href="#"></a>
+												</div>
+												<div class="btn download">
+													<a class="img_default" href="#"></a>
+												</div>
+												<div class="btn delete">
+													<a class="img_default" href="#"></a>
+												</div>
+											</div>
+											<p class="annex_name">附件1</p>
+										</div>
+									</li>
+									<li>
+										<div class="a_annex">
+											<div class="img_annex">
+												<img src="images/img_annex.jpg" alt="">
+											</div>
+											<div class="tools">
+												<div class="btn crop">
+													<a class="img_default" href="#"></a>
+												</div>
+												<div class="btn download">
+													<a class="img_default" href="#"></a>
+												</div>
+												<div class="btn delete">
+													<a class="img_default" href="#"></a>
+												</div>
+											</div>
+											<p class="annex_name">附件2</p>
+										</div>
+									</li>
+									<li>
+										<div class="a_annex">
+											<div class="img_annex">
+												<img src="images/img_annex.jpg" alt="">
+											</div>
+											<div class="tools">
+												<div class="btn crop">
+													<a class="img_default" href="#"></a>
+												</div>
+												<div class="btn download">
+													<a class="img_default" href="#"></a>
+												</div>
+												<div class="btn delete">
+													<a class="img_default" href="#"></a>
+												</div>
+											</div>
+											<p class="annex_name">附件3</p>
+										</div>
+									</li>
+									<li>
+										<div class="a_annex">
+											<div class="img_annex">
+												<img src="images/img_annex.jpg" alt="">
+											</div>
+											<div class="tools">
+												<div class="btn crop">
+													<a class="img_default" href="#"></a>
+												</div>
+												<div class="btn download">
+													<a class="img_default" href="#"></a>
+												</div>
+												<div class="btn delete">
+													<a class="img_default" href="#"></a>
+												</div>
+											</div>
+											<p class="annex_name">附件4</p>
+										</div>
+									</li>
+									<li>
+										<div class="a_annex">
+											<div class="img_annex">
+												<img src="images/img_annex.jpg" alt="">
+											</div>
+											<div class="tools">
+												<div class="btn crop">
+													<a class="img_default" href="#"></a>
+												</div>
+												<div class="btn download">
+													<a class="img_default" href="#"></a>
+												</div>
+												<div class="btn delete">
+													<a class="img_default" href="#"></a>
+												</div>
+											</div>
+											<p class="annex_name">附件5</p>
+										</div>
+									</li>
+									<li>
+										<div class="a_annex">
+											<div class="img_annex">
+												<img src="images/img_annex.jpg" alt="">
+											</div>
+											<div class="tools">
+												<div class="btn crop">
+													<a class="img_default" href="#"></a>
+												</div>
+												<div class="btn download">
+													<a class="img_default" href="#"></a>
+												</div>
+												<div class="btn delete">
+													<a class="img_default" href="#"></a>
+												</div>
+											</div>
+											<p class="annex_name">附件6</p>
+										</div>
+									</li>
+									<li>
+										<div class="a_annex">
+											<div class="img_annex">
+												<img src="images/img_annex.jpg" alt="">
+											</div>
+											<div class="tools">
+												<div class="btn crop">
+													<a class="img_default" href="#"></a>
+												</div>
+												<div class="btn download">
+													<a class="img_default" href="#"></a>
+												</div>
+												<div class="btn delete">
+													<a class="img_default" href="#"></a>
+												</div>
+											</div>
+											<p class="annex_name">附件7</p>
+										</div>
+									</li>
+								</ul>
+			        		</div>
 							<!-- left interviewer -->
 							<div class="left_interviewer">
 								<div class="interview_group">
@@ -8345,7 +8610,7 @@
 								</div>
 							</div>
 							<!-- right report data -->
-							<div class="right_report_data">
+							<div class="right_report_data" style="position: relative;">
 								<div class="top_tools">
 									<div class="btn label_in">
 										<a class="img_default" href="#"><span class="tooltip">標籤</span></a>
@@ -8360,7 +8625,7 @@
 										<a class="img_default" href="#"><span class="tooltip">下載</span></a>
 									</div>
 									<div class="btn annex">
-										<a class="img_default popup-link" href="#popup-review-report-annex"><span class="tooltip">附件</span></a>
+										<a class="img_default" href="" id="open-popup-report-annex"><span class="tooltip">附件</span></a>
 									</div>
 									<div class="btn print">
 										<a class="img_default" href="#"><span class="tooltip">列印</span></a>
@@ -8414,7 +8679,30 @@
 										</div>
 									</div>
 									<div class="btn delete">
-										<a class="img_default popup-link" href="#popup-review-report-delete"><span class="tooltip">刪除</span></a>
+										<a class="img_default" href="" id="open-popup-report-delete"><span class="tooltip">刪除</span></a>
+									</div>
+								</div>
+								<!-- 刪除評分 -->
+								<div class="gray_popup" style="right: 20px; top: 64px; display: none;" id="popup-report-delete">
+									<div class="top_title">
+										<a class="btn_close" href="#">
+											<span class="img_default"></span>
+										</a>
+									</div>
+									<div class="fillin_box">
+										<fieldset class="questions">
+											<p>請問確定要刪除 面試官黃宇宙的評分嗎？<br>如確定刪除，此資料紀錄將不做保留。</p>
+										</fieldset>
+										<fieldset class="red_border">
+											<label class="top_title_centere" for=""><p>如確定刪除，請輸入密碼</p></label>
+											<input class="fill_in" id="" name="" type="text" placeholder="請輸入密碼">
+										</fieldset>
+										<fieldset class=" clearfix">
+											<p class="btn_s">
+												<a href="#" class="bg_darkgary">取消</a>
+												<a href="#" class="bg_red">確認刪除</a>
+											</p>
+										</fieldset>
 									</div>
 								</div>
 								<div class="fill_rating_content">
@@ -8751,8 +9039,7 @@
 				                		<th><p>備註</p></th>
 				                	</tr>
 				                	<tr>
-				                		<td><textarea class="the_report_notes" placeholder="直接輸入文字">面試官陸宇宙因臨時請假，沒有找到代理人，故無參與面試
-會再安排複試</textarea></td>
+				                		<td><textarea class="the_report_notes" placeholder="直接輸入文字">面試官陸宇宙因臨時請假，沒有找到代理人，故無參與面試會再安排複試</textarea></td>
 				                	</tr>
 				                </table>
 				            </div>
