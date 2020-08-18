@@ -61,12 +61,12 @@
 		    return false;
 		    });
 		 });
-		$(function(){
-		  	$(".show_calendar").click(function(){
-		        $(this).parent().next(".time_select ").stop(true, true).fadeIn();
-		    return false;
-		    });
-		 });
+		// $(function(){
+		//   	$(".show_calendar").click(function(){
+		//         $(this).parent().next(".time_select ").stop(true, true).fadeIn();
+		//     return false;
+		//     });
+		//  });
 		$(function(){
 	    	$("#open-popup-job-over").click(function(){
 				$("#popup-job-over").stop(true, true).fadeToggle(0);
@@ -131,7 +131,238 @@
 				<li><p><a class="icon_05" href="HR_helper.html">HR小幫手</a></p></li>
 			</ul>
 		</section>
-		<section class="right_contents clearfix">
+		<section class="right_contents clearfix" style="position: relative;">
+
+			<div class="gray_popup add_contact_matters datetime_merge" style=" width: 751px; top: -10px; left: 40px;">
+				<h4>新增職缺
+					<a class="btn_close" href="#">
+						<span class="img_default"></span>
+					</a>
+				</h4>
+			<form class="setBox management_pop messageBox check_remind">
+	            <div class="fillin_interviewe_data">
+	                <ul class="fill_information_info">
+	                    <li class="top_both clearfix">
+	                        <fieldset class="clearfix">
+								<label for="">職缺名稱</label>
+								<input class="f_input" type="text" name="" id="" placeholder="例如：工程部經理">
+							</fieldset>
+							<fieldset class="clearfix">
+								<label for="">需求人數</label>
+								<input class="f_input" type="text" name="" id="" placeholder="請輸入阿拉伯數字">
+							</fieldset>
+	                    </li>
+	                    <li class="top_both clearfix">
+	                        <fieldset class="clearfix">
+								<label for="">所屬部門</label>
+								<div class="f_input f_input_w50 clearfix">
+									<input class="f_input" type="text" name="" id="" placeholder="請選擇">
+									<div class="add">
+										<a class="img_default">選擇</a>
+									</div>
+								</div>
+							</fieldset>
+							<fieldset class="clearfix">
+								<label for="">直屬主管</label>
+								<input class="f_input" type="text" name="" id="" placeholder="請輸入主管姓名">
+							</fieldset>
+	                    </li>
+	                </ul>
+	                <h4 class="bg_skyblue">面試官設定</h4>
+	                <ul class="fill_information_info add_nterviewee_round">
+	                    <li>
+	                        <fieldset class="the_phont clearfix">
+								<label for="">第一輪</label>
+								<div class="f_input clearfix">
+									<input class="fillin_phone" type="text" placeholder="請直接輸入面試官姓名，如新增請按右鍵新增" style="width: 100%;">
+									<div class="add">
+										<a class="img_default"></a>
+									</div>
+								</div>
+							</fieldset>
+	                    </li> 
+	                </ul>
+	                <p class="btn_add remind_greenbox">
+	                	<a href="#">+新增輪次</a>
+	                	<span class="tooltip">
+	                		<span>面試官設定完成後，為求公正，請勿隨意更改。</span>
+	                	</span>
+	                </p>
+	                <!-- 點選輸入框後的狀態 -->
+	                <h4 class="bg_skyblue">面試官設定</h4>
+	                <ul class="fill_information_info add_nterviewee_round">
+	                    <li>
+	                        <fieldset class="the_phont clearfix">
+								<label for="">第一輪</label>
+								<div class="f_input clearfix">
+									<p class="phone_number clearfix">
+										<span>陳怡文</span>
+										<a class="delete" href="#"></a>
+									</p>
+									<p class="phone_number clearfix">
+										<span>奧蘭多布魯</span>
+										<a class="delete" href="#"></a>
+									</p>
+									<p class="phone_number clearfix">
+										<span>陳怡文</span>
+										<a class="delete" href="#"></a>
+									</p>
+									<p class="phone_number clearfix">
+										<span>潔西卡艾芭</span>
+										<a class="delete" href="#"></a>
+									</p>
+									<!-- input 需要計算剩下的寬度 -->
+									<input class="fillin_phone" type="text" placeholder="" style="width: 180px;" value="">
+									<div class="add">
+										<a class="img_default"></a>
+									</div>
+								</div>
+							</fieldset>
+	                    </li>
+	                    <li>
+	                        <fieldset class="the_phont clearfix">
+								<label for="">第二輪</label>
+								<div class="f_input clearfix">
+									<p class="phone_number clearfix">
+										<span>馬克。祖克伯</span>
+										<a class="delete" href="#"></a>
+									</p>
+									<p class="phone_number clearfix">
+										<span>劉豪</span>
+										<a class="delete" href="#"></a>
+									</p>
+									<p class="phone_number clearfix">
+										<span>克里斯</span>
+										<a class="delete" href="#"></a>
+									</p>
+									<!-- input 需要計算剩下的寬度 -->
+									<input class="fillin_phone" type="text" placeholder="" style="width: 80px;" value="">
+									<div class="add">
+										<a class="img_default"></a>
+									</div>
+								</div>
+							</fieldset>
+	                    </li>
+	                </ul>
+	                <p class="btn_add"><a href="#">+新增輪次</a></p>
+	                <h4 class="bg_skyblue">面試需求設定</h4>
+	                <div class="work_complexity clearfix">
+	                    <h5>工作複雜程度</h5>
+	                    <p class="ss">高：開發、研發人員 / 中：一般職員等 / 低：一線員工、作業員等。</p>
+	                    <div class="grade">
+	                        <p>
+	                        	<a class="btn_in" href="#">高</a>
+	                        	<a class="" href="#">中</a>
+	                        	<a class="" href="#">低</a>
+	                        </p>
+	                    </div>
+	                </div>
+	                <h5 class="bg_g_sub_title">
+	                	<span class="title_icon_lock img_default">工作職能</span>
+	                	<a class="popup-link" href="#popup-job_duty">選擇</a>
+	                </h5>
+	                <ul class="job_duty_list clearfix">
+	                	<li>
+	                		<p><span>1</span>有條不紊</p>
+	                	</li>
+	                	<li>
+	                		<p><span>2</span>關係建立</p>
+	                	</li>
+	                	<li>
+	                		<p><span>3</span>指揮命令</p>
+	                	</li>
+	                	<li>
+	                		<p><span>4</span>組織忠誠</p>
+	                	</li>
+	                	<li>
+	                		<p><span>5</span>團隊合作</p>
+	                	</li>
+	                </ul>
+	                <h5 class="bg_g_sub_title">
+	                	<span class="title_icon_lock img_default">專業技能</span>
+	                	<!-- <a class="popup-link add img_default" href="#popup-job_duty"></a> -->
+	                </h5>
+	                <div class="skill_list_select">
+		                <div class="f_input clearfix">
+							<div class="field">
+								<p class="f_text clearfix">
+									<span>Objective-C/Swift</span>
+									<a class="delete" href="#"></a>
+								</p>
+								<p class="f_text clearfix">
+									<span>IOS Development</span>
+									<a class="delete" href="#"></a>
+								</p>
+								<!-- input 需要計算剩下的寬度 -->
+								<input class="fillin_text" type="text" placeholder="" style="width: 120px;" value="il">
+							</div>
+							<div class="add">
+								<a class="img_default"></a>
+							</div>
+							<!-- 要幫他算高度，上面有可能因為內容過多高度拉長 -->
+							<div class="keywords_search" style="top: 35px;">
+								<ul>
+									<li><p>illustrator</p></li>
+									<li><p>InDesign</p></li>
+									<li><p>InVision</p></li>
+								</ul>
+							</div>
+						</div>
+						<div class="related_searches clearfix">
+							<p class="left_title">相關搜尋：</p>
+							<ul class="keywords">
+								<li><p>Photoshop</p></li>
+								<li><p>Event Planning</p></li>
+								<li><p>Final Cut Pro</p></li>
+							</ul>
+						</div>
+					</div>
+	                <h5 class="bg_g_sub_title">
+	                	<span class="title_icon_lock img_default">測驗</span>
+	                	<a class="popup-link" href="#popup-job_duty">選擇</a>
+	                </h5>
+	                <div class="options_select">
+	                	<h4>測驗選項
+	                		<a class="btn_close" href="#">
+	                			<span class="img_default"></span>
+	                		</a>
+	                	</h4>
+	                	<div class="border_green">
+	                		<p>請選擇此職位需要完成之測驗。<br>如需取消請同一個項目再按一次。</p>
+	                	</div>
+	                	<div class="options_list">
+		                	<div class="title">
+		                		<p>核心測驗（建議選取）</p>
+		                	</div>
+		                	<ul>
+		                		<li>
+		                			<p class="btn_in img_default">潛在人格特質測驗（5分鐘）</p>
+		                		</li>
+		                		<li>
+		                			<p>邏輯分析測驗（20分鐘）</p>
+		                		</li>
+		                		<li>
+		                			<p>社交智商測驗（15分鐘）</p>
+		                		</li>
+		                	</ul>
+		                </div>
+	                	<p class="btn"><a class="" href="#">確認</a></p>
+	                </div>
+	                <ul class="job_duty_list clearfix">
+	                	<li>
+	                		<p>邏輯測驗</p>
+	                	</li>
+	                	<li>
+	                		<p>情境測驗</p>
+	                	</li>
+	                </ul>
+	                <br>
+	            </div>
+	        </form>
+			</div>
+
+	        
+
 			<div class="managementBox management_filter_listBox">
 				<div class="top_toolsBox clearfix">
 					<div class="clearfix">
@@ -3597,9 +3828,29 @@
 											    	<label class="l_title" for=""><p>請選擇聯絡日期與時間</p></label>
 											    	<input class="r_info show_calendar" id="" name="" type="text" value="2020/07/01">
 											    </fieldset>
-											    <div class="day time_select more_h img_default clearfix">
-											    	<div class="day_selectBox">
-											    		<div class="monthBox">
+											    <div class=" more_h img_default clearfix">
+												    <ul class="icon_note">
+												    	<li><p class="round round_green">報到 09:00 劉明明  前端工程師</p></li>
+												    	<li><p class="round round_yello">複試 10:00  林以雯  UI</p></li>
+												    	<li><p class="round round_blue">初試 15:30  趙軒軒  軟體工程師 </p></li>
+												    	<li><p class="round round_blue">初試 15:30  蕭小小  前後端工程師 </p></li>
+													</ul>
+												</div>
+												<p class="btn_s">
+											    	<a href="#">確認</a>
+											    </p>
+											</div>
+										</div>
+										<!-- 日曆和時間固定浮在外面 -->
+										<div class="gray_popup add_contact_matters datetime_merge" style="width: 410px; height: 340px; top: 74px; left: 200px;">
+											<h4 class="dark_gray">請選擇日期與時間
+						                		<a class="btn_close" href="#">
+						                			<span class="img_default"></span>
+						                		</a>
+						                	</h4>
+											<div class="day time_select more_h img_default clearfix">
+											    <div class="day_selectBox">
+											    	<div class="monthBox">
 											    			<div class="top_year_month">
 											    				<p><span>2018年11月
 																	<a class="left_arr" href="#"></a>
@@ -3704,9 +3955,9 @@
 																	</tbody>
 																</table>
 															</div>
-														</div>
-												    </div>
-								                	<div class="time_selectBox clearfix">
+													</div>
+												</div>
+								                <div class="time_selectBox clearfix">
 												                	<div class="the_time">
 												                		<p class="top_title">點</p>
 												                		<ul>
@@ -3753,17 +4004,7 @@
 												                			<li><p><a href="">55</a></p></li>
 												                		</ul>
 												                	</div>
-												    </div>
-												    <ul class="icon_note">
-												    	<li><p class="round round_green">報到 09:00 劉明明  前端工程師</p></li>
-												    	<li><p class="round round_yello">複試 10:00  林以雯  UI</p></li>
-												    	<li><p class="round round_blue">初試 15:30  趙軒軒  軟體工程師 </p></li>
-												    	<li><p class="round round_blue">初試 15:30  蕭小小  前後端工程師 </p></li>
-													</ul>
 												</div>
-												<p class="btn_s">
-											    	<a href="#">確認</a>
-											    </p>
 											</div>
 										</div>
 
@@ -3863,7 +4104,7 @@
 														<p>Objective-C/Swift</p>
 														<p>Objective-C/Swift</p>
 														<a class="more img_default" href="#"></a>
-														<div class="sub_popup_info r_p_more_info" style="">
+														<div class="gray_popup sub_popup_info r_p_more_info" style="">
 															<p class="top_title">
 																<span>技能專長</span>
 																<a class="btn_close" href="#">
@@ -3969,7 +4210,7 @@
 													<a class="paper_plane img_default">
 														<span>13</span>
 													</a>
-													<div class="sub_popup_info paper_plane_info">
+													<div class="gray_popup sub_popup_info paper_plane_info">
 														<p class="top_title">
 															<span>履歷投遞紀錄</span>
 															<span>共 3 筆</span>
@@ -4047,11 +4288,11 @@
 															<li class=""></li>
 															<li class=""></li>
 															<li class="line"></li>
+															<li class="darkgreen"></li>
 															<li class="green"></li>
-															<li class="green"></li>
+															<li class="pink"></li>
 															<li class="blue"></li>
-															<li class="blue"></li>
-															<li class="blue">
+															<li class="red">
 																<a>
 																	<div class="tooltip" style="min-width: 105px;">經驗開放性 40.4</div>
 																</a>
@@ -4290,6 +4531,9 @@
 															<li class="red"></li>
 															<li class="red"></li>
 														</ul>
+														<div class="score">
+															<p>經驗開放性<span>77.5</span></p>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -4477,18 +4721,49 @@
 																<label class="l_title" for=""><p>請選擇聯絡日期與時間</p></label>
 																<input class="r_info show_calendar" id="" name="" type="text" value="2020/07/01">
 															</fieldset>
-															<div class="day time_select more_h img_default clearfix" style="display: none;">
-																<div class="day_selectBox">
-												                	<div class="monthBox">
-																		<div class="top_year_month">
-																			<p><span>2018年11月
+															<fieldset>
+																<label class="l_title" for=""><p>備忘留言</p></label>
+																<input class="r_info" id="" name="" type="text" placeholder="例如：電話聯絡，沒接聽。">
+															</fieldset>
+															<fieldset>
+																<label class="l_title" for=""><p>留言者</p></label>
+																<input class="r_info" id="" name="" type="text">
+															</fieldset>
+															<fieldset class="swicht_box clearfix">
+																<div class="btn_swtich clearfix">
+								                            		<div class="swtich_type">
+								                            			<input type="checkbox" id="swtich2">
+								                            			<label class="button" for="swtich2"></label>
+								                            		</div>
+								                            		<p>顯示已聯絡</p>
+								                        		</div>
+																<p class="btn_s">
+															    	<a href="#">確認</a>
+															    </p>
+															</fieldset>
+														</div>
+													</div>
+
+													<!-- 日曆和時間固定浮在外面 -->
+													<div class="gray_popup add_contact_matters datetime_merge" style="width: 410px; height: 340px; top: 74px; left: 160px;">
+														<h4 class="dark_gray">請選擇日期與時間
+									                		<a class="btn_close" href="#">
+									                			<span class="img_default"></span>
+									                		</a>
+									                	</h4>
+														<div class="day time_select more_h img_default clearfix">
+													    	<div class="day_selectBox">
+													    		<div class="monthBox">
+													    			<div class="top_year_month">
+													    				<p><span>2018年11月
 																			<a class="left_arr" href="#"></a>
-																				<a class="right_arr" href="#"></a></span>
-																			</p>
-																		</div>
-																		<div class="dateBox">
-																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
-																				<tbody><tr>
+																			<a class="right_arr" href="#"></a></span>
+																		</p>
+																	</div>
+																	<div class="dateBox">
+																		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																			<tbody>
+																				<tr>
 																					<th><p>日</p></th>
 																					<th><p>一</p></th>
 																					<th><p>二</p></th>
@@ -4502,8 +4777,7 @@
 																					<td></td>
 																					<td></td>
 																					<td></td>
-																					<td>
-																						<p class="btn_in">1</p>
+																					<td><p class="btn_in">1</p>
 																						<p class="ring_color">
 																							<span class="green"></span>
 																							<span class="red"></span>
@@ -4519,12 +4793,25 @@
 																					<td><p>6</p></td>
 																					<td><p>7</p></td>
 																					<td><p>8</p></td>
-																					<td><p>9</p></td>
+																					<td>
+																						<p>9</p>
+																						<p class="ring_color">
+																							<span class="green"></span>
+																							<span class="red"></span>
+																							<span class="org"></span>
+																						</p>
+																					</td>
 																					<td><p>10</p></td>
 																				</tr>
 																				<tr>
 																					<td><p>11</p></td>
-																					<td><p>12</p></td>
+																					<td>
+																						<p>12</p>
+																						<p class="ring_color">
+																							<span class="green"></span>
+																							<span class="red"></span>
+																						</p>
+																					</td>
 																					<td><p>13</p></td>
 																					<td><p>14</p></td>
 																					<td><p>15</p></td>
@@ -4534,16 +4821,15 @@
 																				<tr>
 																					<td><p>18</p></td>
 																					<td><p>19</p></td>
-																					<td><p>20</p></td>
-																					<td><p>21</p></td>
-																					<td><p>22</p></td>
-																					<td>
-																						<p>23</p>
+																					<td><p>20</p>
 																						<p class="ring_color">
 																							<span class="red"></span>
 																							<span class="org"></span>
 																						</p>
 																					</td>
+																					<td><p>21</p></td>
+																					<td><p>22</p></td>
+																					<td><p>23</p></td>
 																					<td><p>24</p></td>
 																				</tr>
 																				<tr>
@@ -4555,20 +4841,13 @@
 																					<td>
 																						<p>30</p>
 																						<p class="ring_color">
-																							<span class="green"></span>
 																							<span class="org"></span>
 																						</p>
 																					</td>
 																					<td><p>31</p></td>
 																				</tr>
 																				<tr>
-																					<td>
-																						<p class="btn_in">31</p>
-																						<p class="ring_color">
-																							<span class="red"></span>
-																							<span class="org"></span>
-																						</p>
-																					</td>
+																					<td><p class="btn_in">31</p></td>
 																					<td></td>
 																					<td></td>
 																					<td></td>
@@ -4576,12 +4855,13 @@
 																					<td></td>
 																					<td></td>
 																				</tr>
-																			</tbody></table>
-																		</div>
+																			</tbody>
+																		</table>
 																	</div>
-												                </div>
-								                				<div class="time_selectBox clearfix">
-												                	<div class="the_time">
+																</div>
+															</div>
+											                <div class="time_selectBox clearfix">
+												                <div class="the_time">
 												                		<p class="top_title">點</p>
 												                		<ul>
 												                			<li><p><a href="">1</a></p></li>
@@ -4609,10 +4889,10 @@
 												                			<li><p><a href="">23</a></p></li>
 												                			<li><p><a href="">24</a></p></li>
 												                		</ul>
-												                	</div>
-												                	<div class="the_time">
-												                		<p class="top_title">分</p>
-												                		<ul>
+												                </div>
+												                <div class="the_time">
+												                	<p class="top_title">分</p>
+												                	<ul>
 												                			<li><p><a href="">00</a></p></li>
 												                			<li><p><a href="">05</a></p></li>
 												                			<li><p><a class="btn_in" href="">10</a></p></li>
@@ -4625,32 +4905,11 @@
 												                			<li><p><a href="">45</a></p></li>
 												                			<li><p><a href="">50</a></p></li>
 												                			<li><p><a href="">55</a></p></li>
-												                		</ul>
-												                	</div>
+												                	</ul>
 												                </div>
-															</div>
-															<fieldset>
-																<label class="l_title" for=""><p>備忘留言</p></label>
-																<input class="r_info" id="" name="" type="text" placeholder="例如：電話聯絡，沒接聽。">
-															</fieldset>
-															<fieldset>
-																<label class="l_title" for=""><p>留言者</p></label>
-																<input class="r_info" id="" name="" type="text">
-															</fieldset>
-															<fieldset class="swicht_box clearfix">
-																<div class="btn_swtich clearfix">
-								                            		<div class="swtich_type">
-								                            			<input type="checkbox" id="swtich2">
-								                            			<label class="button" for="swtich2"></label>
-								                            		</div>
-								                            		<p>顯示已聯絡</p>
-								                        		</div>
-																<p class="btn_s">
-															    	<a href="#">確認</a>
-															    </p>
-															</fieldset>
-														</div>
-													</div>
+											                </div>
+											            </div>
+											        </div>
 												</div>
 											</div>
 										</div>
