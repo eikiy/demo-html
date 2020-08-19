@@ -61,12 +61,12 @@
 		    return false;
 		    });
 		 });
-		$(function(){
-		  	$(".show_calendar").click(function(){
-		        $(this).parent().next(".time_select ").stop(true, true).fadeIn();
-		    return false;
-		    });
-		 });
+		// $(function(){
+		//   	$(".show_calendar").click(function(){
+		//         $(this).parent().next(".time_select ").stop(true, true).fadeIn();
+		//     return false;
+		//     });
+		//  });
 		$(function(){
 	    	$("#open-popup-job-over").click(function(){
 				$("#popup-job-over").stop(true, true).fadeToggle(0);
@@ -3597,9 +3597,29 @@
 											    	<label class="l_title" for=""><p>請選擇聯絡日期與時間</p></label>
 											    	<input class="r_info show_calendar" id="" name="" type="text" value="2020/07/01">
 											    </fieldset>
-											    <div class="day time_select more_h img_default clearfix">
-											    	<div class="day_selectBox">
-											    		<div class="monthBox">
+											    <div class=" more_h img_default clearfix">
+												    <ul class="icon_note">
+												    	<li><p class="round round_green">報到 09:00 劉明明  前端工程師</p></li>
+												    	<li><p class="round round_yello">複試 10:00  林以雯  UI</p></li>
+												    	<li><p class="round round_blue">初試 15:30  趙軒軒  軟體工程師 </p></li>
+												    	<li><p class="round round_blue">初試 15:30  蕭小小  前後端工程師 </p></li>
+													</ul>
+												</div>
+												<p class="btn_s">
+											    	<a href="#">確認</a>
+											    </p>
+											</div>
+										</div>
+										<!-- 日曆和時間固定浮在外面 -->
+										<div class="gray_popup add_contact_matters datetime_merge" style="width: 410px; height: 340px; top: 74px; left: 200px;">
+											<h4 class="dark_gray">請選擇日期與時間
+						                		<a class="btn_close" href="#">
+						                			<span class="img_default"></span>
+						                		</a>
+						                	</h4>
+											<div class="day time_select more_h img_default clearfix">
+											    <div class="day_selectBox">
+											    	<div class="monthBox">
 											    			<div class="top_year_month">
 											    				<p><span>2018年11月
 																	<a class="left_arr" href="#"></a>
@@ -3704,9 +3724,9 @@
 																	</tbody>
 																</table>
 															</div>
-														</div>
-												    </div>
-								                	<div class="time_selectBox clearfix">
+													</div>
+												</div>
+								                <div class="time_selectBox clearfix">
 												                	<div class="the_time">
 												                		<p class="top_title">點</p>
 												                		<ul>
@@ -3753,17 +3773,7 @@
 												                			<li><p><a href="">55</a></p></li>
 												                		</ul>
 												                	</div>
-												    </div>
-												    <ul class="icon_note">
-												    	<li><p class="round round_green">報到 09:00 劉明明  前端工程師</p></li>
-												    	<li><p class="round round_yello">複試 10:00  林以雯  UI</p></li>
-												    	<li><p class="round round_blue">初試 15:30  趙軒軒  軟體工程師 </p></li>
-												    	<li><p class="round round_blue">初試 15:30  蕭小小  前後端工程師 </p></li>
-													</ul>
 												</div>
-												<p class="btn_s">
-											    	<a href="#">確認</a>
-											    </p>
 											</div>
 										</div>
 
@@ -3863,7 +3873,7 @@
 														<p>Objective-C/Swift</p>
 														<p>Objective-C/Swift</p>
 														<a class="more img_default" href="#"></a>
-														<div class="sub_popup_info r_p_more_info" style="">
+														<div class="gray_popup sub_popup_info r_p_more_info" style="">
 															<p class="top_title">
 																<span>技能專長</span>
 																<a class="btn_close" href="#">
@@ -3969,7 +3979,7 @@
 													<a class="paper_plane img_default">
 														<span>13</span>
 													</a>
-													<div class="sub_popup_info paper_plane_info">
+													<div class="gray_popup sub_popup_info paper_plane_info">
 														<p class="top_title">
 															<span>履歷投遞紀錄</span>
 															<span>共 3 筆</span>
@@ -4047,11 +4057,11 @@
 															<li class=""></li>
 															<li class=""></li>
 															<li class="line"></li>
+															<li class="darkgreen"></li>
 															<li class="green"></li>
-															<li class="green"></li>
+															<li class="pink"></li>
 															<li class="blue"></li>
-															<li class="blue"></li>
-															<li class="blue">
+															<li class="red">
 																<a>
 																	<div class="tooltip" style="min-width: 105px;">經驗開放性 40.4</div>
 																</a>
@@ -4290,6 +4300,9 @@
 															<li class="red"></li>
 															<li class="red"></li>
 														</ul>
+														<div class="score">
+															<p>經驗開放性<span>77.5</span></p>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -4477,18 +4490,49 @@
 																<label class="l_title" for=""><p>請選擇聯絡日期與時間</p></label>
 																<input class="r_info show_calendar" id="" name="" type="text" value="2020/07/01">
 															</fieldset>
-															<div class="day time_select more_h img_default clearfix" style="display: none;">
-																<div class="day_selectBox">
-												                	<div class="monthBox">
-																		<div class="top_year_month">
-																			<p><span>2018年11月
+															<fieldset>
+																<label class="l_title" for=""><p>備忘留言</p></label>
+																<input class="r_info" id="" name="" type="text" placeholder="例如：電話聯絡，沒接聽。">
+															</fieldset>
+															<fieldset>
+																<label class="l_title" for=""><p>留言者</p></label>
+																<input class="r_info" id="" name="" type="text">
+															</fieldset>
+															<fieldset class="swicht_box clearfix">
+																<div class="btn_swtich clearfix">
+								                            		<div class="swtich_type">
+								                            			<input type="checkbox" id="swtich2">
+								                            			<label class="button" for="swtich2"></label>
+								                            		</div>
+								                            		<p>顯示已聯絡</p>
+								                        		</div>
+																<p class="btn_s">
+															    	<a href="#">確認</a>
+															    </p>
+															</fieldset>
+														</div>
+													</div>
+
+													<!-- 日曆和時間固定浮在外面 -->
+													<div class="gray_popup add_contact_matters datetime_merge" style="width: 410px; height: 340px; top: 74px; left: 160px;">
+														<h4 class="dark_gray">請選擇日期與時間
+									                		<a class="btn_close" href="#">
+									                			<span class="img_default"></span>
+									                		</a>
+									                	</h4>
+														<div class="day time_select more_h img_default clearfix">
+													    	<div class="day_selectBox">
+													    		<div class="monthBox">
+													    			<div class="top_year_month">
+													    				<p><span>2018年11月
 																			<a class="left_arr" href="#"></a>
-																				<a class="right_arr" href="#"></a></span>
-																			</p>
-																		</div>
-																		<div class="dateBox">
-																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
-																				<tbody><tr>
+																			<a class="right_arr" href="#"></a></span>
+																		</p>
+																	</div>
+																	<div class="dateBox">
+																		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																			<tbody>
+																				<tr>
 																					<th><p>日</p></th>
 																					<th><p>一</p></th>
 																					<th><p>二</p></th>
@@ -4502,8 +4546,7 @@
 																					<td></td>
 																					<td></td>
 																					<td></td>
-																					<td>
-																						<p class="btn_in">1</p>
+																					<td><p class="btn_in">1</p>
 																						<p class="ring_color">
 																							<span class="green"></span>
 																							<span class="red"></span>
@@ -4519,12 +4562,25 @@
 																					<td><p>6</p></td>
 																					<td><p>7</p></td>
 																					<td><p>8</p></td>
-																					<td><p>9</p></td>
+																					<td>
+																						<p>9</p>
+																						<p class="ring_color">
+																							<span class="green"></span>
+																							<span class="red"></span>
+																							<span class="org"></span>
+																						</p>
+																					</td>
 																					<td><p>10</p></td>
 																				</tr>
 																				<tr>
 																					<td><p>11</p></td>
-																					<td><p>12</p></td>
+																					<td>
+																						<p>12</p>
+																						<p class="ring_color">
+																							<span class="green"></span>
+																							<span class="red"></span>
+																						</p>
+																					</td>
 																					<td><p>13</p></td>
 																					<td><p>14</p></td>
 																					<td><p>15</p></td>
@@ -4534,16 +4590,15 @@
 																				<tr>
 																					<td><p>18</p></td>
 																					<td><p>19</p></td>
-																					<td><p>20</p></td>
-																					<td><p>21</p></td>
-																					<td><p>22</p></td>
-																					<td>
-																						<p>23</p>
+																					<td><p>20</p>
 																						<p class="ring_color">
 																							<span class="red"></span>
 																							<span class="org"></span>
 																						</p>
 																					</td>
+																					<td><p>21</p></td>
+																					<td><p>22</p></td>
+																					<td><p>23</p></td>
 																					<td><p>24</p></td>
 																				</tr>
 																				<tr>
@@ -4555,20 +4610,13 @@
 																					<td>
 																						<p>30</p>
 																						<p class="ring_color">
-																							<span class="green"></span>
 																							<span class="org"></span>
 																						</p>
 																					</td>
 																					<td><p>31</p></td>
 																				</tr>
 																				<tr>
-																					<td>
-																						<p class="btn_in">31</p>
-																						<p class="ring_color">
-																							<span class="red"></span>
-																							<span class="org"></span>
-																						</p>
-																					</td>
+																					<td><p class="btn_in">31</p></td>
 																					<td></td>
 																					<td></td>
 																					<td></td>
@@ -4576,12 +4624,13 @@
 																					<td></td>
 																					<td></td>
 																				</tr>
-																			</tbody></table>
-																		</div>
+																			</tbody>
+																		</table>
 																	</div>
-												                </div>
-								                				<div class="time_selectBox clearfix">
-												                	<div class="the_time">
+																</div>
+															</div>
+											                <div class="time_selectBox clearfix">
+												                <div class="the_time">
 												                		<p class="top_title">點</p>
 												                		<ul>
 												                			<li><p><a href="">1</a></p></li>
@@ -4609,10 +4658,10 @@
 												                			<li><p><a href="">23</a></p></li>
 												                			<li><p><a href="">24</a></p></li>
 												                		</ul>
-												                	</div>
-												                	<div class="the_time">
-												                		<p class="top_title">分</p>
-												                		<ul>
+												                </div>
+												                <div class="the_time">
+												                	<p class="top_title">分</p>
+												                	<ul>
 												                			<li><p><a href="">00</a></p></li>
 												                			<li><p><a href="">05</a></p></li>
 												                			<li><p><a class="btn_in" href="">10</a></p></li>
@@ -4625,32 +4674,11 @@
 												                			<li><p><a href="">45</a></p></li>
 												                			<li><p><a href="">50</a></p></li>
 												                			<li><p><a href="">55</a></p></li>
-												                		</ul>
-												                	</div>
+												                	</ul>
 												                </div>
-															</div>
-															<fieldset>
-																<label class="l_title" for=""><p>備忘留言</p></label>
-																<input class="r_info" id="" name="" type="text" placeholder="例如：電話聯絡，沒接聽。">
-															</fieldset>
-															<fieldset>
-																<label class="l_title" for=""><p>留言者</p></label>
-																<input class="r_info" id="" name="" type="text">
-															</fieldset>
-															<fieldset class="swicht_box clearfix">
-																<div class="btn_swtich clearfix">
-								                            		<div class="swtich_type">
-								                            			<input type="checkbox" id="swtich2">
-								                            			<label class="button" for="swtich2"></label>
-								                            		</div>
-								                            		<p>顯示已聯絡</p>
-								                        		</div>
-																<p class="btn_s">
-															    	<a href="#">確認</a>
-															    </p>
-															</fieldset>
-														</div>
-													</div>
+											                </div>
+											            </div>
+											        </div>
 												</div>
 											</div>
 										</div>

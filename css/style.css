@@ -554,16 +554,18 @@ p.page_nb a.next::after{ background-image:url(../images/svg/arr_right_gray.svg )
 .setBox p.review_comment a.cursor_none{ background-color:#fff; border-color: #fff; color: #D8D8D8; -webkit-filter: grayscale(1); opacity: 1; cursor: not-allowed;}
 
 .gray_popup{ position: absolute; width: 100%; background: #F8F9F9; border-radius: 5px; width: 480px; box-shadow: 0px 2px 4px rgba(0,0,0,.3); border: rgba(191, 191, 191, 0.5) 1px solid; z-index: 100;}
-.gray_popup h4{ width: 100%; font-size: 14px; background-color: #D8D8D8; position: relative; line-height: 30px; text-align: center;}
+.gray_popup h4{ width: 100%; font-size: 14px; background-color: #D8D8D8; position: relative; line-height: 30px; text-align: center; border-radius: 5px 5px 0 0;}
 .gray_popup h4 a.btn_close{ position: absolute; top: -1px; right: 0; display: block;}
 .gray_popup h4 a.btn_close span{ width: 30px; height: 30px; position: relative; display: block; }
 .gray_popup h4 a.btn_close span::after{ content: ""; position:absolute; top: calc(50% - 6px); left: calc(50% - 6px); width: 12px; height: 12px; display: block; background-image: url(../images/svg/close_w.svg); }
+.gray_popup h4.dark_gray{ background-color: #9B9B9B; color: #fff; border-bottom: 1px solid #fff; }
+
 .gray_popup fieldset{ padding: 2px 0; }
 .gray_popup input, .gray_popup textarea{ border: 1px solid #979797; width:100%; font-size: 13px; height: 30px; border-radius: 5px; padding: 0 10px; line-height: 30px;}
 .gray_popup textarea{ min-height: 70px; line-height: 20px; padding: 5px 10px; }
 .gray_popup input::placeholder, .gray_popup textarea::placeholder{ color: #D8D8D8; }
 .gray_popup .top_title{ position: relative; min-height: 20px; }
-.gray_popup .top_title a.btn_close{ position: absolute; top: 5px; right: 5px; display: block;}
+.gray_popup .top_title a.btn_close{ position: absolute; top: 0px; right: 5px; display: block;}
 .gray_popup .top_title a.btn_close span{ width: 30px; height: 30px; position: relative; display: block; }
 .gray_popup .top_title a.btn_close span::after{ content: ""; position:absolute; top: calc(50% - 6px); left: calc(50% - 6px); opacity: .8; width: 12px; height: 12px; display: block; background-image: url(../images/svg/close_gray.svg); }
 
@@ -2998,21 +3000,21 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox a.paper_plane{ position: absolute; right: 10px; top: 19px; width: 23px; height: 13px; display: block; background-image: url(../images/svg/paper_plane.svg); }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox a.paper_plane span{ position: absolute; top: -15px; background-color: #E5AF57; font-size: 12px; color: #fff; text-align: center; display: block; line-height: 18px; width: 18px; height: 18px; border-radius: 50%; }
 
-.job_seeker_container .grid_content .other_information .project_contents .list_infobox .top_title{ float: none; border-bottom: 1px solid #81B6C8; position: relative; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .top_title{ float: none; border-bottom: 1px solid #81B6C8; position: relative; padding-left: 15px;}
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .sub_popup_info{ position: absolute; min-width: 310px; z-index: 11; top: 36px; right: 10px; border-radius: 5px; background-color: #F8F9F9; box-shadow: 0px 2px 4px rgba(0,0,0,.2); border: rgba(191, 191, 191, 0.5) 1px solid;}
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .sub_popup_info p span{ font-size: 13px; color: #4A4A4A; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .sub_popup_info p span.day{ min-width: 88px; display: inline-block; }
-.job_seeker_container .grid_content .other_information .project_contents .list_infobox .sub_popup_info ul{ padding: 5px 8px 5px 0; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .sub_popup_info ul{ padding: 10px 15px; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .sub_popup_info ul li{padding: 2px 0;}
 
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .r_p_more_info{ top:-3px; right: -5px; }
-.job_seeker_container .grid_content .other_information .project_contents .list_infobox .r_p_more_info p.top_title{ border: none; border-radius: 0; padding: 0;}
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .r_p_more_info p.top_title{ border: none; border-radius: 0; padding-left: 10px;}
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .r_p_more_info .resume_profession{ padding:0 10px 5px 10px; }
 
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail{ width: 100%; padding-right: 20px; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li{ float:left; min-width: 130px; padding:0 5px 8px 30px; position: relative; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li p{ line-height: 20px; font-size: 13px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 20px; height: 20px; overflow:hidden;}
-.job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li p span{ color: #4A4A4A; position: relative;}
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li p span{ color: #4A4A4A; position: relative; padding-left: 12px;}
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li p span::before{ content: ""; position: absolute; left: 2px; top: 5px; width: 4px; height: 4px; display: block; border-radius: 50%; background-color: #81B6C8; }
 
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox ul.resume_detail li.w100{ width: 100%; }
@@ -3030,20 +3032,26 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .resume_profession a.more{position: absolute; top: 0; right: 0; content: ""; width: 20px; height: 23px; display: block; background-image:url(../images/svg/more.svg); }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .resume_profession p{font-size: 13px; float: left; padding: 3px 8px; border:1px solid #9B9B9B;border-radius: 4px; margin: 0 10px 5px 0; }
 
-.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results{ padding: 5px 0; position: relative;}
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results{ padding:8px 0 5px 0; position: relative;}
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results p{ float: left; font-size: 13px; padding-right: 10px; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul{ float: left; max-width: calc(100% - 100px);}
-.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li{ float: left; margin: 2px 5px; width: 14px; height: 14px; display: block; border-radius: 50%; background-color: #D8D8D8; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li{ float: left; margin: 2px 4px; width: 14px; height: 14px; display: block; border-radius: 50%; background-color: #D8D8D8; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li a{ position: relative; width: 100%; height: 100%; display: block; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li .tooltip{ left: -12px; top: 19px;}
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li.line{ margin-right: 20px; position: relative; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li.line::after{ content: ""; position: absolute; right: -12px; top: -2px;  height: 18px; width: 1.5px; background-color: #979797; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li.blue{ background-color: #B8D3DC; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li.pink{ background-color: #DA99A1; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li.red{ background-color: #C87D86; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li.green{ background-color: #84BE98; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li.darkgreen{ background-color: #69A07C; }
 
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results a.lock{ position: absolute; top: 6px; left: 328px; width: 9px; height: 15px; background-image: url(../images/svg/lock.svg); }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results a.lock .tooltip{ top: 21px; left: -14px; }
+
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results .score{ position: absolute; right: -16px; top: 3px; width: 155px; background: #F2F8FA; padding: 2px 10px; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results .score p{ font-size: 12px; color: #707475;display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results .score p span{ font-size: 20px; padding: 0 5px; }
 
 .job_seeker_container .grid_content .add_contact_matters{ width: 452px; position: absolute; top: 0; z-index: 15;}
 .job_seeker_container .grid_content .add_contact_matters .top_title a.btn_close { top:5px; right: 10px; }
@@ -3052,7 +3060,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_container .grid_content .add_contact_matters p.btn{ position: initial; font-size: 14px;}
 .job_seeker_container .grid_content .add_contact_matters p.btn a{ padding: 1.5px 10px; border-radius: 0 3px 3px 3px;}
 .job_seeker_container .grid_content .add_contact_matters p.btn a:hover{ box-shadow: none; }
-.job_seeker_container .grid_content .add_contact_matters .time_select{ display: inline-block; border: rgba(191, 191, 191, 1) 1px solid; border-radius: 5px; background-color: #fff; overflow: hidden; margin:10px 0 5px 0;}
+.job_seeker_container .grid_content .add_contact_matters .time_select{ display: inline-block; overflow: hidden;}
 .job_seeker_container .grid_content .add_contact_matters .day_selectBox{ position: initial; float: left;}
 .job_seeker_container .grid_content .add_contact_matters .day_selectBox .monthBox{ border: none; padding-bottom: 0;}
 .job_seeker_container .grid_content .add_contact_matters .day_selectBox .monthBox td{ position: relative; }
@@ -3063,7 +3071,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_container .grid_content .add_contact_matters .swicht_box{ padding-top: 20px; }
 .job_seeker_container .grid_content .add_contact_matters .swicht_box p.btn_s{ float: right; padding: 0;}
 
-.job_seeker_container .grid_content .add_contact_matters ul.icon_note{ float: left; width: 408px; padding:15px 20px; border-top:1px solid #979797; }
+.job_seeker_container .grid_content .add_contact_matters ul.icon_note{ float: left; width: 408px; margin-top: 10px; padding:15px; border:1px solid #979797; border-radius: 5px; background-color: #fff; }
 .job_seeker_container .grid_content .add_contact_matters ul li{ padding: 2.5px 0; }
 .job_seeker_container .grid_content .add_contact_matters ul li p{ padding-left: 20px; position: relative; color: #707475;}
 .job_seeker_container .grid_content .add_contact_matters ul li p.round::after{ left: 0; top: 2.5px; }
