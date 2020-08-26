@@ -3060,7 +3060,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_container .grid_content .add_contact_matters p.btn{ position: initial; font-size: 14px;}
 .job_seeker_container .grid_content .add_contact_matters p.btn a{ padding: 1.5px 10px; border-radius: 0 3px 3px 3px;}
 .job_seeker_container .grid_content .add_contact_matters p.btn a:hover{ box-shadow: none; }
-.job_seeker_container .grid_content .add_contact_matters .time_select{ display: inline-block; overflow: hidden;}
+.job_seeker_container .grid_content .add_contact_matters .time_select{ /*display: inline-block;*/ overflow: hidden;}
 .job_seeker_container .grid_content .add_contact_matters .day_selectBox{ position: initial; float: left;}
 .job_seeker_container .grid_content .add_contact_matters .day_selectBox .monthBox{ border: none; padding-bottom: 0;}
 .job_seeker_container .grid_content .add_contact_matters .day_selectBox .monthBox td{ position: relative; }
@@ -3071,7 +3071,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_container .grid_content .add_contact_matters .swicht_box{ padding-top: 20px; }
 .job_seeker_container .grid_content .add_contact_matters .swicht_box p.btn_s{ float: right; padding: 0;}
 
-.job_seeker_container .grid_content .add_contact_matters ul.icon_note{ float: left; width: 408px; margin-top: 10px; padding:15px; border:1px solid #979797; border-radius: 5px; background-color: #fff; }
+.job_seeker_container .grid_content .add_contact_matters ul.icon_note{ float: left; width: 408px; padding:12px 15px; border-top:1px solid #979797;background-color: #fff; }
 .job_seeker_container .grid_content .add_contact_matters ul li{ padding: 2.5px 0; }
 .job_seeker_container .grid_content .add_contact_matters ul li p{ padding-left: 20px; position: relative; color: #707475;}
 .job_seeker_container .grid_content .add_contact_matters ul li p.round::after{ left: 0; top: 2.5px; }
