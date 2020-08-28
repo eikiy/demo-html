@@ -3088,6 +3088,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .CV_link_conrent .all_test_list ul.conditionList{ padding: 0; }
 .CV_link_conrent .all_test_list ul.conditionList li.sub_item{ padding: 0; }
 .CV_link_conrent .all_test_list ul.conditionList li.sub_item .job_type{ float: none; }
+.CV_link_conrent .all_test_list ul.conditionList li.pad_left{ padding-left: 24px; }
 .CV_link_conrent .all_test_list ul.conditionList li .job_type ul.sub_filter{ box-shadow: 0px 2px 4px rgba(0,0,0,.2); }
 
 .CV_link_conrent .recruit_platform{ margin-top: 20px; padding-top: 20px; border-top: 3px solid #81B6C8; }
