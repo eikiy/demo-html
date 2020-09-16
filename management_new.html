@@ -79,6 +79,19 @@
 		  	return false;
 		  });
 	   	});
+
+	   	$(function(){
+	    	$(".add_new_job_vacancies").click(function(){
+				$("#popup-add_job_vacancies").stop(true, true).fadeToggle(0);
+		  	return false;
+		  });
+	   	});
+	   	$(function(){
+	    	$("#demo_open_select_item p").click(function(){
+				$(this).next(".conditionList_tool").stop(true, true).fadeToggle(0);
+		  	return false;
+		  });
+	   	});
 	</script>
 </head>
 <body>
@@ -131,7 +144,237 @@
 				<li><p><a class="icon_05" href="HR_helper.html">HR小幫手</a></p></li>
 			</ul>
 		</section>
-		<section class="right_contents clearfix">
+		<section class="right_contents clearfix" style="position: relative;">
+			<!-- 新增職缺 -->
+			<div class="gray_popup add_contact_matters datetime_merge" id="popup-add_job_vacancies" style=" width: 751px; top: 102px; left:15px; display: none;">
+				<h4>新增職缺
+					<a class="btn_close" href="#">
+						<span class="img_default"></span>
+					</a>
+				</h4>
+				<form class="setBox management_pop messageBox check_remind">
+		            <div class="fillin_interviewe_data">
+		                <ul class="fill_information_info">
+		                    <li class="top_both clearfix">
+		                        <fieldset class="clearfix">
+									<label for="">職缺名稱</label>
+									<input class="f_input" type="text" name="" id="" placeholder="例如：工程部經理">
+								</fieldset>
+								<fieldset class="clearfix">
+									<label for="">需求人數</label>
+									<input class="f_input" type="text" name="" id="" placeholder="請輸入阿拉伯數字">
+								</fieldset>
+		                    </li>
+		                    <li class="top_both clearfix">
+		                        <fieldset class="clearfix">
+									<label for="">所屬部門</label>
+									<div class="f_input f_input_w50 clearfix">
+										<input class="f_input" type="text" name="" id="" placeholder="請選擇">
+										<div class="add">
+											<a class="img_default">選擇</a>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset class="clearfix">
+									<label for="">直屬主管</label>
+									<input class="f_input" type="text" name="" id="" placeholder="請輸入主管姓名">
+								</fieldset>
+		                    </li>
+		                </ul>
+		                <h4 class="bg_skyblue">面試官設定</h4>
+		                <ul class="fill_information_info add_nterviewee_round">
+		                    <li>
+		                        <fieldset class="the_phont clearfix">
+									<label for="">第一輪</label>
+									<div class="f_input clearfix">
+										<input class="fillin_phone" type="text" placeholder="請直接輸入面試官姓名，如新增請按右鍵新增" style="width: 100%;">
+										<div class="add">
+											<a class="img_default"></a>
+										</div>
+									</div>
+								</fieldset>
+		                    </li> 
+		                </ul>
+		                <p class="btn_add remind_greenbox">
+		                	<a href="#">+新增輪次</a>
+		                	<span class="tooltip">
+		                		<span>面試官設定完成後，為求公正，請勿隨意更改。</span>
+		                	</span>
+		                </p>
+		                <!-- 點選輸入框後的狀態 -->
+		                <h4 class="bg_skyblue">面試官設定</h4>
+		                <ul class="fill_information_info add_nterviewee_round">
+		                    <li>
+		                        <fieldset class="the_phont clearfix">
+									<label for="">第一輪</label>
+									<div class="f_input clearfix">
+										<p class="phone_number clearfix">
+											<span>陳怡文</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="phone_number clearfix">
+											<span>奧蘭多布魯</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="phone_number clearfix">
+											<span>陳怡文</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="phone_number clearfix">
+											<span>潔西卡艾芭</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<!-- input 需要計算剩下的寬度 -->
+										<input class="fillin_phone" type="text" placeholder="" style="width: 180px;" value="">
+										<div class="add">
+											<a class="img_default"></a>
+										</div>
+									</div>
+								</fieldset>
+		                    </li>
+		                    <li>
+		                        <fieldset class="the_phont clearfix">
+									<label for="">第二輪</label>
+									<div class="f_input clearfix">
+										<p class="phone_number clearfix">
+											<span>馬克。祖克伯</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="phone_number clearfix">
+											<span>劉豪</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<p class="phone_number clearfix">
+											<span>克里斯</span>
+											<a class="delete" href="#"></a>
+										</p>
+										<!-- input 需要計算剩下的寬度 -->
+										<input class="fillin_phone" type="text" placeholder="" style="width: 80px;" value="">
+										<div class="add">
+											<a class="img_default"></a>
+										</div>
+									</div>
+								</fieldset>
+		                    </li>
+		                </ul>
+		                <p class="btn_add"><a href="#">+新增輪次</a></p>
+		                <h4 class="bg_skyblue">面試需求設定</h4>
+		                <div class="work_complexity clearfix">
+		                    <h5>工作複雜程度</h5>
+		                    <p class="ss">高：開發、研發人員 / 中：一般職員等 / 低：一線員工、作業員等。</p>
+		                    <div class="grade">
+		                        <p>
+		                        	<a class="btn_in" href="#">高</a>
+		                        	<a class="" href="#">中</a>
+		                        	<a class="" href="#">低</a>
+		                        </p>
+		                    </div>
+		                </div>
+		                <h5 class="bg_g_sub_title">
+		                	<span class="title_icon_lock img_default">工作職能</span>
+		                	<a class="popup-link" href="#popup-job_duty">選擇</a>
+		                </h5>
+		                <ul class="job_duty_list clearfix">
+		                	<li>
+		                		<p><span>1</span>有條不紊</p>
+		                	</li>
+		                	<li>
+		                		<p><span>2</span>關係建立</p>
+		                	</li>
+		                	<li>
+		                		<p><span>3</span>指揮命令</p>
+		                	</li>
+		                	<li>
+		                		<p><span>4</span>組織忠誠</p>
+		                	</li>
+		                	<li>
+		                		<p><span>5</span>團隊合作</p>
+		                	</li>
+		                </ul>
+		                <h5 class="bg_g_sub_title">
+		                	<span class="title_icon_lock img_default">專業技能</span>
+		                	<!-- <a class="popup-link add img_default" href="#popup-job_duty"></a> -->
+		                </h5>
+		                <div class="skill_list_select">
+			                <div class="f_input clearfix">
+								<div class="field">
+									<p class="f_text clearfix">
+										<span>Objective-C/Swift</span>
+										<a class="delete" href="#"></a>
+									</p>
+									<p class="f_text clearfix">
+										<span>IOS Development</span>
+										<a class="delete" href="#"></a>
+									</p>
+									<!-- input 需要計算剩下的寬度 -->
+									<input class="fillin_text" type="text" placeholder="" style="width: 120px;" value="il">
+								</div>
+								<div class="add">
+									<a class="img_default"></a>
+								</div>
+								<!-- 要幫他算高度，上面有可能因為內容過多高度拉長 -->
+								<div class="keywords_search" style="top: 35px;">
+									<ul>
+										<li><p>illustrator</p></li>
+										<li><p>InDesign</p></li>
+										<li><p>InVision</p></li>
+									</ul>
+								</div>
+							</div>
+							<div class="related_searches clearfix">
+								<p class="left_title">相關搜尋：</p>
+								<ul class="keywords">
+									<li><p>Photoshop</p></li>
+									<li><p>Event Planning</p></li>
+									<li><p>Final Cut Pro</p></li>
+								</ul>
+							</div>
+						</div>
+		                <h5 class="bg_g_sub_title">
+		                	<span class="title_icon_lock img_default">測驗</span>
+		                	<a class="popup-link" href="#popup-job_duty">選擇</a>
+		                </h5>
+		                <!-- 測驗點選"選擇"按鈕 出現 -->
+		                <!-- 不確定他顯示的位置，可再下座標-->
+		                <div class="options_select" style="">
+		                	<h4>測驗選項
+		                		<a class="btn_close" href="#">
+		                			<span class="img_default"></span>
+		                		</a>
+		                	</h4>
+		                	<div class="border_green">
+		                		<p>請選擇此職位需要完成之測驗。<br>如需取消請同一個項目再按一次。</p>
+		                	</div>
+		                	<div class="options_list">
+			                	<div class="title">
+			                		<p>核心測驗（建議選取）</p>
+			                	</div>
+			                	<ul>
+			                		<li>
+			                			<p class="btn_in img_default">潛在人格特質測驗（5分鐘）</p>
+			                		</li>
+			                		<li>
+			                			<p>邏輯分析測驗（20分鐘）</p>
+			                		</li>
+			                		<li>
+			                			<p>社交智商測驗（15分鐘）</p>
+			                		</li>
+			                	</ul>
+			                </div>
+		                	<p class="btn"><a class="" href="#">確認</a></p>
+		                </div>
+		                <ul class="job_duty_list clearfix">
+		                	<li class="pad_3">
+		                		<p>邏輯測驗</p>
+		                	</li>
+		                	<li class="pad_3">
+		                		<p>情境測驗</p>
+		                	</li>
+		                </ul>
+		                <br>
+		            </div>
+		        </form>
+			</div>
 			<div class="managementBox management_filter_listBox">
 				<div class="top_toolsBox clearfix">
 					<div class="clearfix">
@@ -140,10 +383,53 @@
 							<li><p><a href="#"><span>部門</span></a></p></li>
 							<li><p><a href="#"><span>建立時間</span></a></p></li>
 						</ul>
-						<p class="btn_filter"><a class="btn_in popup-link" href="#popup-btn_filter"><span>篩選(3)</span></a></p>
-						<p class="btn_past_record"><a href="job_management_past_record.html"><span>職缺紀錄</span></a></p>
+						<div class="select_list_style">
+							<div class="select_item" id="demo_open_select_item">
+								<p><a><span>部門篩選</span></a></p>
+								<div class="conditionList_tool" style="width: 340px; display: none;">
+									<div class="search_box">
+										<input type="text" name="" value="生">
+									</div>
+									<ul class="item conditionList">
+										<!-- 子項目填入 sub_item(文字變小) -->
+										<!--  藍色字 + check_in -->
+										<li class="sub_item check_in" style="background-color: #F2F8FA;">
+											<input id="" type="checkbox" name="" value="生產技術處" checked="">
+											<label for="option">生產技術處</label>
+										</li>
+										<!--  藍色字 + check_in -->
+										<!-- 往右推一點 + sub_title1 -->
+										<li class="sub_item check_in sub_title1">
+											<input id="" type="checkbox" name="" value="技術部" checked="">
+											<label for="option">技術部</label>
+										</li>
+										<!-- 不可以點的狀態 + class:check_notyet -->
+										<!-- 往右推更多 + sub_title2 -->
+										<li class="sub_item check_notyet sub_title2">
+											<input id="" type="checkbox" name="" value="生管課" checked="">
+											<label for="option">生管課</label>
+										</li>
+				                		<li class="sub_item check_in sub_title2">
+											<input id="" type="checkbox" name="" value="裝配課" checked="">
+											<label for="option">裝配課</label>
+										</li>
+										<!-- 子項目填入 pad_left(往右推) -->
+										<li class="sub_item pad_left check_in sub_title2">
+											<input id="" type="checkbox" name="" value="電控課" checked="">
+											<label for="option">電控課</label>
+										</li>
+										<li class="sub_item pad_left check_in sub_title1">
+											<input id="" type="checkbox" name="" value="製造部">
+											<label for="option">製造部</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- <p class="btn_filter"><a class="btn_in popup-link" href="#popup-btn_filter"><span>篩選(3)</span></a></p>
+						<p class="btn_past_record"><a href="job_management_past_record.html"><span>職缺紀錄</span></a></p> -->
 					</div>
-					<p class="add_new_btn"><a class="add add_new_job_vacancies popup-link" href="#popup-add_job_vacancies"><span class="title_icon_lock img_default">新增職缺</span></a></p>
+					<p class="add_new_btn"><a class="add add_new_job_vacancies"><span class="title_icon_lock img_default">新增職缺</span></a></p>
 					<div class="recruit_info clearfix">
 						<p class="nb">目前招募人員共 15 位</p>
 					</div>
@@ -481,376 +767,6 @@
 			</div>
 		</section>
 	</div>
-
-	<!-- popup 新增職缺 1-->
-	<div id="popup-add_job_vacancies" class="white-popup popup-w-sm mfp-hide">
-        <form class="setBox management_pop messageBox check_remind">
-            <div class="top_title">
-                <h3 class="dark">新增職缺</h3>
-            </div>
-            <div class="fillin_interviewe_data">
-                <ul class="fill_information_info">
-                    <li class="top_both clearfix">
-                        <fieldset class="clearfix">
-							<label for="">職缺名稱</label>
-							<input class="f_input" type="text" name="" id="" placeholder="例如：工程部經理">
-						</fieldset>
-						<fieldset class="clearfix">
-							<label for="">需求人數</label>
-							<input class="f_input" type="text" name="" id="" placeholder="請輸入阿拉伯數字">
-						</fieldset>
-                    </li>
-                    <li class="top_both clearfix">
-                        <fieldset class="clearfix">
-							<label for="">所屬部門</label>
-							<input class="f_input" type="text" name="" id="" placeholder="請選擇">
-						</fieldset>
-						<fieldset class="clearfix">
-							<label for="">直屬主管</label>
-							<input class="f_input" type="text" name="" id="" placeholder="請輸入主管姓名">
-						</fieldset>
-                    </li>
-                </ul>
-                <h4 class="bg_darkblue">面試官設定</h4>
-                <ul class="fill_information_info add_nterviewee_round">
-                    <li>
-                        <fieldset class="the_phont clearfix">
-							<label for="">第一輪</label>
-							<div class="f_input clearfix">
-								<input class="fillin_phone" type="text" placeholder="請直接輸入面試官姓名，如新增請按右鍵新增" style="width: 100%;">
-								<div class="add">
-									<a class="img_default"></a>
-								</div>
-							</div>
-						</fieldset>
-                    </li> 
-                </ul>
-                <p class="btn_add remind_greenbox">
-                	<a href="#">+新增輪次</a>
-                	<span class="tooltip">
-                		<span>面試官設定完成後，為求公正，請勿隨意更改。</span>
-                	</span>
-                </p>
-                <!-- 點選輸入框後的狀態 -->
-                <h4 class="bg_darkblue">面試官設定</h4>
-                <ul class="fill_information_info add_nterviewee_round">
-                    <li>
-                        <fieldset class="the_phont clearfix">
-							<label for="">第一輪</label>
-							<div class="f_input clearfix">
-								<p class="phone_number clearfix">
-									<span>陳怡文</span>
-									<a class="delete" href="#"></a>
-								</p>
-								<p class="phone_number clearfix">
-									<span>奧蘭多布魯</span>
-									<a class="delete" href="#"></a>
-								</p>
-								<p class="phone_number clearfix">
-									<span>陳怡文</span>
-									<a class="delete" href="#"></a>
-								</p>
-								<p class="phone_number clearfix">
-									<span>潔西卡艾芭</span>
-									<a class="delete" href="#"></a>
-								</p>
-								<!-- input 需要計算剩下的寬度 -->
-								<input class="fillin_phone" type="text" placeholder="" style="width: 180px;" value="">
-								<div class="add">
-									<a class="img_default"></a>
-								</div>
-							</div>
-						</fieldset>
-                    </li>
-                    <li>
-                        <fieldset class="the_phont clearfix">
-							<label for="">第二輪</label>
-							<div class="f_input clearfix">
-								<p class="phone_number clearfix">
-									<span>馬克。祖克伯</span>
-									<a class="delete" href="#"></a>
-								</p>
-								<p class="phone_number clearfix">
-									<span>劉豪</span>
-									<a class="delete" href="#"></a>
-								</p>
-								<p class="phone_number clearfix">
-									<span>克里斯</span>
-									<a class="delete" href="#"></a>
-								</p>
-								<!-- input 需要計算剩下的寬度 -->
-								<input class="fillin_phone" type="text" placeholder="" style="width: 80px;" value="">
-								<div class="add">
-									<a class="img_default"></a>
-								</div>
-							</div>
-						</fieldset>
-                    </li>
-                </ul>
-                <p class="btn_add"><a href="#">+新增輪次</a></p>
-                <h4 class="bg_darkblue">面試需求設定</h4>
-                <div class="work_complexity clearfix">
-                    <h5>工作複雜程度</h5>
-                    <p class="ss">高：開發、研發人員 / 中：一般職員等 / 低：一線員工、作業員等。</p>
-                    <div class="grade">
-                        <p>
-                        	<a class="btn_in" href="#">高</a>
-                        	<a class="" href="#">中</a>
-                        	<a class="" href="#">低</a>
-                        </p>
-                    </div>
-                </div>
-                <h5 class="bg_g_sub_title">
-                	<span class="title_icon_lock img_default">工作職能</span>
-                	<a class="popup-link" href="#popup-job_duty">選擇</a>
-                </h5>
-                <ul class="job_duty_list clearfix">
-                	<li>
-                		<p><span>1</span>有條不紊</p>
-                	</li>
-                	<li>
-                		<p><span>2</span>關係建立</p>
-                	</li>
-                	<li>
-                		<p><span>3</span>指揮命令</p>
-                	</li>
-                	<li>
-                		<p><span>4</span>組織忠誠</p>
-                	</li>
-                	<li>
-                		<p><span>5</span>團隊合作</p>
-                	</li>
-                </ul>
-                <h5 class="bg_g_sub_title">
-                	<span class="title_icon_lock img_default">專業技能</span>
-                	<!-- <a class="popup-link add img_default" href="#popup-job_duty"></a> -->
-                </h5>
-                <div class="skill_list_select">
-	                <div class="f_input clearfix">
-						<div class="field">
-							<p class="f_text clearfix">
-								<span>Objective-C/Swift</span>
-								<a class="delete" href="#"></a>
-							</p>
-							<p class="f_text clearfix">
-								<span>IOS Development</span>
-								<a class="delete" href="#"></a>
-							</p>
-							<!-- input 需要計算剩下的寬度 -->
-							<input class="fillin_text" type="text" placeholder="" style="width: 120px;" value="il">
-						</div>
-						<div class="add">
-							<a class="img_default"></a>
-						</div>
-						<!-- 要幫他算高度，上面有可能因為內容過多高度拉長 -->
-						<div class="keywords_search" style="top: 35px;">
-							<ul>
-								<li><p>illustrator</p></li>
-								<li><p>InDesign</p></li>
-								<li><p>InVision</p></li>
-							</ul>
-						</div>
-					</div>
-					<div class="related_searches clearfix">
-						<p class="left_title">相關搜尋：</p>
-						<ul class="keywords">
-							<li><p>Photoshop</p></li>
-							<li><p>Event Planning</p></li>
-							<li><p>Final Cut Pro</p></li>
-						</ul>
-					</div>
-				</div>
-                <!-- <ul class="professional_skill_list clearfix">
-                	<li>
-                		<p>AutoCAD</p>
-                		<a class="go_edit img_default" href="#"></a>
-                		<a class="go_delete img_default" href="#"></a>
-                	</li>
-                	<li>
-                		<p>視覺設計相關知識</p>
-                		<a class="go_edit img_default" href="#"></a>
-                		<a class="go_delete img_default" href="#"></a>
-                	</li>
-                </ul> -->
-                <h5 class="bg_g_sub_title">
-                	<span class="title_icon_lock img_default">測驗</span>
-                	<a class="popup-link" href="#popup-job_duty">選擇</a>
-                </h5>
-                <div class="options_select">
-                	<h4>測驗選項
-                		<a class="btn_close" href="#">
-                			<span class="img_default"></span>
-                		</a>
-                	</h4>
-                	<div class="border_green">
-                		<p>請選擇此職位需要完成之測驗。<br>如需取消請同一個項目再按一次。</p>
-                	</div>
-                	<div class="options_list">
-	                	<div class="title">
-	                		<p>核心測驗（建議選取）</p>
-	                	</div>
-	                	<ul>
-	                		<li>
-	                			<p class="btn_in img_default">潛在人格特質測驗（5分鐘）</p>
-	                		</li>
-	                		<li>
-	                			<p>邏輯分析測驗（20分鐘）</p>
-	                		</li>
-	                		<li>
-	                			<p>社交智商測驗（15分鐘）</p>
-	                		</li>
-	                	</ul>
-	                </div>
-                	<p class="btn"><a class="" href="#">確認</a></p>
-                </div>
-                <ul class="job_duty_list clearfix">
-                	<li>
-                		<p>邏輯測驗</p>
-                	</li>
-                	<li>
-                		<p>情境測驗</p>
-                	</li>
-                </ul>
-                <br>
-            </div>
-            <p class="btn"><a class="popup-link" href="#popup-add_job_vacancies-2">確認</a></p>
-        </form>
-    </div>
-    <!-- old -->
-    <!-- <div id="popup-add_job_vacancies" class="white-popup popup-w-s mfp-hide">
-        <form class="setBox management_pop messageBox check_remind">
-            <div class="top_title">
-                <h3 class="dark">新增職缺</h3>
-            </div>
-            <div class="fillinBox interview_needs">
-                <ul>
-                    <li>
-                        <label class="l_title" for=""><p>職缺名稱</p></label>
-                        <input class="r_info" id="" name="" type="text" placeholder="例如：軟體工程師">
-                    </li>
-                    <li>
-                        <label class="l_title" for=""><p>需求人數</p></label>
-                        <input class="r_info" id="" name="" type="text" placeholder="請輸入阿拉伯數字">
-                    </li>
-                    <li>
-                        <label class="l_title" for=""><p>所屬部門</p></label>
-                        <p class="btn"><a class="select" href="#">選擇</a></p>
-                    </li>
-                    <li>
-                        <label class="l_title" for=""><p>直屬主管</p></label>
-                        <input class="r_info" id="" name="" type="text">
-                    </li>
-                </ul>
-
-	            <ul class="jobBox">
-                	<li class="sub_title">
-                		<p>面試需求</p>
-                	</li>
-                	<li class="work_complexity">
-                        <label class="l_title" for=""><p>工作複雜程度</p></label>
-                        <div class="grade">
-                        	<p>
-                        		<a class="btn_in" href="#">高</a>
-                        		<a class="" href="#">中</a>
-                        		<a class="" href="#">低</a>
-                        	</p>
-                        </div>
-                    </li>
-                    <li class="height_s">
-                		<p class="ss">高：開發、研發人員 / 中：一般職員等 / 低：一線員工、作業員等。</p>
-                	</li>
-                    <li>
-                        <label class="l_title" for=""><p>工作職能</p></label>
-                        <p class="btn"><a class="select popup-link" href="#popup-job_duty">選擇</a></p>
-                    </li>
-                    <li class="border_no">
-                        <label class="l_title" for=""><p>專業技能</p></label>
-                    </li>
-                    <li class="professional_skill">
-                    	<p class="btn"><a class="select" href="#">選擇</a></p>
-                    </li>
-                </ul>
-
-                <div class="RedBox border_blue border_green">
-	                <p class="info"><span>面試需求</span>請確實填寫，會產生不同的面試問券。<br>
-	                	工作複雜程度標準由各家公司自行斟酌選擇。</p>
-	            </div>
-                <p class="btn"><a class="bg_darkblue popup-link" href="#popup-add_job_vacancies-2">確認</a></p>
-            </div>
-        </form>
-    </div> -->
-    <!-- popup 新增職缺 2 -->
-	<div id="popup-add_job_vacancies-2" class="white-popup popup-w-s mfp-hide">
-        <form class="setBox management_pop messageBox check_remind">
-            <div class="top_title">
-                <h3 class="dark">新增職缺</h3>
-            </div>
-            <div class="fillinBox interview_needs">
-                <ul>
-                    <li>
-                        <label class="l_title" for=""><p>職缺名稱</p></label>
-                        <input class="r_info" id="" name="" type="text" placeholder="例如：軟體工程師">
-                    </li>
-                    <li>
-                        <label class="l_title" for=""><p>需求人數</p></label>
-                        <input class="r_info" id="" name="" type="text" placeholder="請輸入阿拉伯數字">
-                    </li>
-                    <li>
-                        <label class="l_title" for=""><p>所屬部門</p></label>
-                        <p class="btn"><a class="select" href="#">選擇</a></p>
-                    </li>
-                    <li>
-                        <label class="l_title" for=""><p>直屬主管</p></label>
-                        <input class="r_info" id="" name="" type="text">
-                    </li>
-                </ul>
-
-	            <ul class="jobBox">
-                	<li class="sub_title remind_greenbox right_tip">
-                		<p>面試需求<span class="tooltip">
-                			<span class="icon_thumbtack">已有求職者完成職能問卷，為求公平性，此區無法再做修改。</span>
-                		</span></p>
-                		
-                	</li>
-                    <li class="border_no">
-                        <label class="l_title" for=""><p>工作職能</p></label>
-                        <p class="btn"><a class="select popup-link" href="#popup-job_duty">選擇</a></p>
-                    </li>
-                    <li class="job_duty clearfix">
-                        <div class="sequence clearfix">
-                        	<p class="text clearfix"><span class="nb">1</span><span class="line">成就和行動/有條不紊</span></p>
-                        	<p class="text clearfix"><span class="nb">2</span><span class="line">管理/指揮命令</span></p>
-                        	<p class="text clearfix"><span class="nb">3</span><span class="line">管理/團隊合作</span></p>
-                        </div>
-                        <div class="sequence clearfix">
-                        	<p class="text clearfix"><span class="nb">4</span><span class="line">感染與影響/關係建立</span></p>
-                        	<p class="text clearfix"><span class="nb">5</span><span class="line">個人效率/組織忠誠</span></p>
-                        	<p class="text clearfix"><span class="nb">6</span><span class="line">個人效率/自信心</span></p>
-                        </div>
-                    </li>
-                    <li class="border_no">
-                        <label class="l_title" for=""><p>專業技能</p></label>
-                    </li>
-                    <li class="professional_skill">
-                    	<p class="btn"><a class="select add popup-link" href="#popup-add_professional_skill_text">新增</a></p>
-                        <div class="professional_skill_list">
-                        	<div class="fill_text clearfix">
-                        		<p class="text">AutoCAD</p>
-                        		<a class="go_edit" href="#"></a>
-                        		<a class="go_delete popup-link" href="#popup-job_over"></a>
-                        	</div>
-                        	<div class="fill_text clearfix">
-                        		<p class="text">3Dmax</p>
-                        		<a class="go_edit" href="#"></a>
-                        		<a class="go_delete" href="#"></a>
-                        	</div>
-                        </div>
-                    </li>
-                </ul>
-                <p class="btn"><a class="bg_darkblue" href="#">確認</a></p>
-            </div>
-        </form>
-    </div>
 
     <!-- popup： 結束職缺-->
     <div id="popup-job_over" class="white-popup popup-w-s mfp-hide enforcementBox">
@@ -3594,6 +3510,7 @@
 						                	</h4>
 						                	<div class="pad20">
 											    <fieldset class="top_both icon_calendar img_default clearfix">
+											    	<a class="icon"></a>
 											    	<label class="l_title" for=""><p>請選擇聯絡日期與時間</p></label>
 											    	<input class="r_info show_calendar" id="" name="" type="text" value="2020/07/01">
 											    </fieldset>
@@ -3603,7 +3520,7 @@
 											</div>
 										</div>
 										<!-- 日曆和時間固定浮在外面 -->
-										<div class="gray_popup add_contact_matters datetime_merge" style="width: 410px; /*height: 340px;*/ top: 74px; left: 200px;">
+										<div class="gray_popup add_contact_matters datetime_merge" style="width: 410px; /*height: 340px;*/ top: 74px; left: 200px; background-color: #fff;">
 											<h4 class="dark_gray">請選擇日期與時間
 						                		<a class="btn_close" href="#">
 						                			<span class="img_default"></span>
@@ -3767,12 +3684,15 @@
 												                	</div>
 												</div>
 											</div>
-											<ul class="icon_note">
+											<ul class="icon_note dashed_bt_line">
 												<li><p class="round round_green">報到 09:00 劉明明  前端工程師</p></li>
 												<li><p class="round round_yello">複試 10:00  林以雯  UI</p></li>
 												<li><p class="round round_blue">初試 15:30  趙軒軒  軟體工程師 </p></li>
 												<li><p class="round round_blue">初試 15:30  蕭小小  前後端工程師 </p></li>
 											</ul>
+											<p class="btn_s">
+												<a href="#">確認</a>
+											</p>
 										</div>
 
 										<!-- 狀態 -->
@@ -4379,7 +4299,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="grid_content clearfix">
+									<div class="grid_content clearfix" style="background-color: #fafcfd;">
 										<!-- 狀態 -->
 										<!-- 已加入招募需 + status_done，按鍵不能按 -->
 										<div class="icon_status status_done">
@@ -4512,7 +4432,7 @@
 													</div>
 
 													<!-- 日曆和時間固定浮在外面 -->
-													<div class="gray_popup add_contact_matters datetime_merge" style="width: 410px; height: 340px; top: 74px; left: 160px;">
+													<div class="gray_popup add_contact_matters datetime_merge" style="width: 410px; top: 74px; left: 160px; background-color: #fff;">
 														<h4 class="dark_gray">請選擇日期與時間
 									                		<a class="btn_close" href="#">
 									                			<span class="img_default"></span>
@@ -4676,6 +4596,9 @@
 												                </div>
 											                </div>
 											            </div>
+											            <p class="btn_s">
+															<a href="#">確認</a>
+														</p>
 											        </div>
 												</div>
 											</div>
@@ -4770,7 +4693,7 @@
 										<input id="" type="checkbox" name="" value="其他問題" disabled="">
 										<label for="option">其他問題</label>
 									</li>
-									<li class="sub_item check_in">
+			                		<li class="sub_item check_in">
 										<input id="" type="checkbox" name="" value="核心測驗（建議選取）" checked="">
 										<label for="option">核心測驗<span>（建議選取）</span></label>
 									</li>

@@ -565,14 +565,36 @@ p.page_nb a.next::after{ background-image:url(../images/svg/arr_right_gray.svg )
 .gray_popup textarea{ min-height: 70px; line-height: 20px; padding: 5px 10px; }
 .gray_popup input::placeholder, .gray_popup textarea::placeholder{ color: #D8D8D8; }
 .gray_popup .top_title{ position: relative; min-height: 20px; }
-.gray_popup .top_title a.btn_close{ position: absolute; top: 0px; right: 5px; display: block;}
+.gray_popup .top_title a.btn_close{ position: absolute; top: 0px; right: 5px; display: block; z-index:6;}
 .gray_popup .top_title a.btn_close span{ width: 30px; height: 30px; position: relative; display: block; }
 .gray_popup .top_title a.btn_close span::after{ content: ""; position:absolute; top: calc(50% - 6px); left: calc(50% - 6px); opacity: .8; width: 12px; height: 12px; display: block; background-image: url(../images/svg/close_gray.svg); }
 
 .gray_popup .red_border{padding: 0; border:1px solid #C87D86; border-radius: 5px; background-color: #fff;}
-.gray_popup .red_border textarea, .gray_popup .red_border input{ border: none; }
-.gray_popup .red_border .fill_in{ margin: 5px 0; }
+.gray_popup .red_border textarea, .gray_popup .red_border input, .gray_popup .gray_border textarea, .gray_popup .red_border input{ border: none; }
+.gray_popup .red_border .fill_in, .gray_popup .gray_border .fill_in{ margin: 5px 0; }
 .gray_popup .red_border .top_title_centere{ text-align: center; padding: 8px 0; border-bottom:1px solid #C87D86; display: block; }
+
+.gray_popup .dashed_bt_line{border-bottom: 1px dashed #D8D8D8; padding:8px 0;}
+.gray_popup .change_job_type .btn_blue li{ margin-left: 30px; max-width: 235px; }
+.gray_popup .change_job_type .btn_blue input[type=radio]:not(old) + label{ background: none; padding-left: 40px; background-color: #fff; font-size: 14px;}
+.gray_popup .change_job_type .btn_blue input[type=radio]:not(old):checked + label{ background: url(../images/svg/tick_w.svg) 10px center no-repeat; border-color: #81B6C8; background-color: #81B6C8; color: #fff; width: 100%;}
+
+.gray_popup .top_both .select_list_style{ float: left; }
+.select_list_style .select_item{ background-color: #fff; border-radius: 5px; border: 1px solid #9B9B9B; position: relative;}
+.select_list_style .select_item p{font-size: 14px; text-align: left;}
+.select_list_style .select_item a{ display: block; padding:0px 30px 0px 10px; position: relative; color: #4A4A4A;}
+.select_list_style .select_item a::before{ position: absolute; content: ""; width: 0; height: 0; border-style: solid; border-width: 8px 8px 0 8px; top: 11px; right: 10px; border-color: #81B6C8 transparent transparent transparent;/* background-color: #81B6C8;*/ }
+
+.select_list_style .select_item ul.sub_filter{ position: absolute; z-index: 10; border-radius:0 5px 5px 5px; padding: 8px 0; background-color: #fff; display: none; box-shadow: 0px 2px 4px rgba(0,0,0,.3);  border: rgba(191, 191, 191, 0.5) 1px solid;}
+.select_list_style .select_item ul.sub_filter li{min-height: initial; padding: 0 10px;}
+.select_list_style .select_item ul.sub_filter li p{ padding: 0 5px; line-height: 26px; cursor: pointer; }
+.select_list_style .select_item ul.sub_filter li p:hover{ background-color: #81B6C8; color: #fff; }
+.select_list_style .check_notyet p a{ cursor: no-drop; color: #9B9B9B;}
+.select_list_style .check_notyet p a::before{ border-color: #D8D8D8 transparent transparent transparent;  /* background-color: #D8D8D8; */}
+
+
+.gray_popup .gray_border{padding: 0; border:1px solid #979797; border-radius: 5px; background-color: #fff;}
+.gray_popup .gray_border .top_title_centere{ text-align: center; padding: 8px 0; border-bottom:1px solid #979797; display: block; }
 
 .gray_popup .fillin_box{ max-width: 405px; margin: 0 auto; }
 .gray_popup .fillin_box .questions{ padding: 20px 0; }
@@ -582,7 +604,7 @@ p.page_nb a.next::after{ background-image:url(../images/svg/arr_right_gray.svg )
 .gray_popup .top_both .r_info{ float: right; width: 270px; }
 .gray_popup .top_both .r_info p{ text-align: left; line-height: 30px; font-size: 14px; }
 .gray_popup .top_both{ position: relative; }
-.gray_popup .icon_calendar::before{ background-image: url(../images/icon_time_select_01.png); cursor: pointer; z-index: 4; content: ""; top: 7px; right: 6px; position: absolute; width: 25px; height: 19px; display: block;}
+.gray_popup .icon_calendar::before{ background-image: url(../images/icon_time_select_01.png); z-index: 4; content: ""; top: 7px; right: 6px; position: absolute; width: 25px; height: 19px; display: block; pointer-events: none;}
 .f_c_red{ color: #C87D86;}
 
 .add_bossBox{ position:absolute; top: -53px; right: -288px; width: 275px; background-color: #558C9E; border-radius: 0px 5px 5px 5px; border:3px solid #558C9E;}
@@ -1183,6 +1205,21 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .top_toolsBox ul.type li p span::before{ top: initial; bottom: 3px; border-width: 4px 4px 0 4px; border-color: #9B9B9B transparent transparent transparent; _border-color: #9B9B9B #000000 #000000 #000000;}
 .top_toolsBox ul.type li.btn_in p span::after{ border-color: transparent transparent #81B6C8 transparent; _border-color: #000000 #000000 #81B6C8 #000000;}
 .top_toolsBox ul.type li.btn_in_botoom p span::before{ border-color: #81B6C8 transparent transparent transparent; _border-color: #81B6C8 #000000 #000000 #000000;}
+
+.top_toolsBox .select_list_style{ float: right; width: 205px; box-shadow: 0 0 1px rgba(0,0,0,.5); border-radius: 5px; position: relative;}
+.top_toolsBox .select_list_style .select_item{ border: none; }
+.top_toolsBox .select_list_style .select_item a{ height: 30px; line-height: 30px; }
+.top_toolsBox .select_list_style .select_item a::before{border-width: 7px 7px 0 7px; border-color: #558C9E transparent transparent transparent;}
+
+.top_toolsBox .select_list_style .conditionList_tool{ position: absolute; z-index: 5; top: 35px; left: 0; background-color: #fff; border: 1px solid #D8D8D8; border-radius: 5px; box-shadow: 0px 2px 4px rgba(0,0,0,.5); }
+.top_toolsBox .select_list_style .conditionList_tool ul.conditionList{ border-bottom: none; }
+.top_toolsBox .select_list_style .conditionList_tool ul.conditionList li{padding-bottom: 0;}
+.top_toolsBox .select_list_style .conditionList_tool ul.conditionList li.sub_title1{ padding-left: 24px; }
+.top_toolsBox .select_list_style .conditionList_tool ul.conditionList li.sub_title2{ padding-left: 48px; }
+.top_toolsBox .select_list_style .conditionList_tool ul.conditionList li.check_notyet{ color: #9B9B9B;}
+
+.top_toolsBox .select_list_style .conditionList_tool .search_box { width: 100%; padding: 10px 10px 0 10px;}
+.top_toolsBox .select_list_style .conditionList_tool .search_box input{ width: 100%; border:1px solid #9B9B9B; border-radius: 5px; line-height: 22px; padding: 0 10px; }
 
 .right_contents .top_toolsBox .recruit_info_nothing{ border: 3px solid #81B6C8; width: 540px; border-radius: 10px 0 10px 10px; min-height: 103px; margin-top: 10px; padding: 10px; position: relative; background-color: #fff;}
 .right_contents .top_toolsBox .recruit_info_nothing p{ color: #9B9B9B; line-height: 22px; padding:15px 0 0 250px; position: relative;}
@@ -2913,7 +2950,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_list_content .result_content .field p.f_text a.delete:hover{ opacity: .5;}
 
 .job_seeker_container{ width: 100%; padding:20px; }
-.job_seeker_container .grid_content{ width: 100%; padding-bottom: 15px; position: relative; }
+.job_seeker_container .grid_content{ width: 100%; margin-bottom: 15px; position: relative; border-radius: 10px 0 10px 10px; }
 .job_seeker_container .grid_content .icon_status{ float: left; width:44px; height: 142px; background-color: #D1E0E5; border-radius: 10px 0 0 10px; position: relative; margin-right: 5px; }
 .job_seeker_container .grid_content .icon_status a{ width: 100%; height: 100%; display: block; padding-top: 40px; position: relative;}
 .job_seeker_container .grid_content .icon_status a::after{ content: ""; position: absolute; top:60px; left:calc(50% - 15px); width:30px; height: 20px; background-image: url(../images/svg/btn_add_nterviewee.svg); }
@@ -2925,7 +2962,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_container .grid_content .status_done a{ cursor: default; }
 .job_seeker_container .grid_content .status_done a::after{ background-image: url(../images/svg/btn_add_done.svg); width:24px; top:51px; height: 29px; left:calc(50% - 12px);}
 
-.job_seeker_container .grid_content .user_contents{ float: left; width: 310px; height: 142px; border:1px solid #81B6C8; border-width: 1px 0 1px 1px; padding: 15px 10px 10px 10px; position: relative;}
+.job_seeker_container .grid_content .user_contents{ float: left; width: 312px; height: 142px; /*border:1px solid #81B6C8; border-width: 1px 0 1px 1px;*/ padding: 15px 10px 10px 10px; position: relative;}
 .job_seeker_container .grid_content .user_contents .user_photo{ float: left; width: 64px; height: 64px; border: 1px solid #81B6C8; display: block; overflow: hidden; border-radius: 10px;}
 .job_seeker_container .grid_content .user_contents .user_photo .avatar{ width: 64px; height: 64px; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); display: block; overflow: hidden; border-radius: 10px;}
 .job_seeker_container .grid_content .user_contents .user_photo .male{ background: url(../images/user_default_male.png) center center no-repeat #fff; background-size: cover; }
@@ -2949,8 +2986,8 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_container .grid_content .user_contents .more_info a:hover p{ text-decoration: underline; }
 .job_seeker_container .grid_content .user_contents:hover .more_info{opacity: 1;}
 
-.job_seeker_container .grid_content .other_information{ float: left; width: 528px; height: 142px; border: 1px solid #81B6C8; border-width: 1px 1px 1px 0; border-radius: 0 0 10px 0; }
-.job_seeker_container .grid_content .other_information .left_project{ background-color: #F2F8FA; float: left; width: 30px; height: 100%; display: block; border-right: 1.5px solid #81B6C8;}
+.job_seeker_container .grid_content .other_information{ float: left; width: 528px; height: 142px;}
+.job_seeker_container .grid_content .other_information .left_project{ float: left; width: 30px; height: 100%; display: block;}
 .job_seeker_container .grid_content .other_information .left_project ul li{ width: 100%; height: 35px; }
 .job_seeker_container .grid_content .other_information .left_project ul li a{width: 100%; height: 100%; display: block; position: relative;}
 .job_seeker_container .grid_content .other_information .left_project ul li a::after{content: ""; position: absolute;}
@@ -2967,26 +3004,26 @@ ul.job_management_list p.text_center{ text-align: center; }
 
 .job_seeker_container .grid_content .other_information .left_project ul li .tooltip { min-width: 70px; left: -5px; top: 30px;}
 .job_seeker_container .grid_content .other_information .left_project ul li .tooltip::after { left:13px;}
-.job_seeker_container .grid_content .other_information .left_project ul.type li.btn_in a{ background-color: #81B6C8; }
-.job_seeker_container .grid_content .other_information .left_project ul.type li.btn_in a.list{ border-radius: 0 0 0 6px;}
-.job_seeker_container .grid_content .other_information .left_project ul.type li.btn_in a.record{ border-radius:6px 0 0 6px; } 
+
+.job_seeker_container .grid_content .other_information .left_project ul.type li{ border-radius: 4px 0 0 4px; border:2px solid #81B6C8; border-width: 2px 0 2px 2px; margin-bottom: 2px;}
 .job_seeker_container .grid_content .other_information .left_project ul.type li a:hover::after{opacity: .8;}
+.job_seeker_container .grid_content .other_information .left_project ul.type li.btn_in{ background-color: #81B6C8; }
 .job_seeker_container .grid_content .other_information .left_project ul.type li.btn_in a:hover::after{ opacity: 1; }
 
-.job_seeker_container .grid_content .other_information .project_contents{ float: left; width: 496px; }
-.job_seeker_container .grid_content .other_information .project_contents .record_infobox{ width: 100%; height: 142px; position: relative; }
+.job_seeker_container .grid_content .other_information .project_contents{ float: left; width: 498px; border: 2px solid #81B6C8; border-radius: 0 0 10px 0;  }
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox{ width: 100%; height: 138px; position: relative; }
 .job_seeker_container .grid_content .other_information .project_contents .record_infobox .note_list a{ width: 12px; height: 12px; display: inline-block; margin: 0 4px;}
 .job_seeker_container .grid_content .other_information .project_contents .record_infobox a.edit{ background-image: url(../images/svg/pen_edit.svg); }
 .job_seeker_container .grid_content .other_information .project_contents .record_infobox a.delete{ background-image: url(../images/svg/close_red.svg); }
 
-.job_seeker_container .grid_content .other_information .project_contents .record_infobox ul.note_list{ width: 100%; max-height: 110px; padding: 10px 15px; overflow-y: auto; }
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox ul.note_list{ width: 100%; max-height: 108px; padding: 10px 15px; overflow-y: auto; }
 .job_seeker_container .grid_content .other_information .project_contents .record_infobox ul.note_list li{ width: 100%; padding:2.5px 0; padding-left: 15px; position: relative; }
 .job_seeker_container .grid_content .other_information .project_contents .record_infobox ul.note_list li::before{ content: ""; position: absolute; left: -4px ;top: 7px; width: 8px; height: 8px; display: block; border-radius: 50%; background-color: #81B6C8; }
 .job_seeker_container .grid_content .other_information .project_contents .record_infobox ul.note_list li p{ vertical-align: text-top; color: #707475; font-size: 13px;}
 .job_seeker_container .grid_content .other_information .project_contents .record_infobox ul.note_list li a{ opacity: 0; }
 .job_seeker_container .grid_content .other_information .project_contents .record_infobox ul.note_list li:hover a{ opacity: 1; }
 
-.job_seeker_container .grid_content .other_information .project_contents .record_infobox p.bot_btn{ position: absolute; bottom: 1px; left: 0; font-size: 15px; width: 100%; text-align: center; }
+.job_seeker_container .grid_content .other_information .project_contents .record_infobox p.bot_btn{ position: absolute; bottom: -1px; left: 0; font-size: 15px; width: 100%; text-align: center; }
 .job_seeker_container .grid_content .other_information .project_contents .record_infobox p.bot_btn a{ width: 100%; display: block; background-color: #D1E0E5; color: #558C9E; line-height: 32px;border-radius: 0 0 10px 0; }
 .job_seeker_container .grid_content .other_information .project_contents .record_infobox p.bot_btn a span{ line-height: 18px; color: #558C9E; position: relative; padding-left: 25px; }
 .job_seeker_container .grid_content .other_information .project_contents .record_infobox p.bot_btn a span::after{ content: "";position: absolute; width: 17px; height: 17px; top: 0; left: 0; display: block; background-image: url(../images/svg/btn_add_blue.svg);}
@@ -3035,7 +3072,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results{ padding:8px 0 5px 0; position: relative;}
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results p{ float: left; font-size: 13px; padding-right: 10px; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul{ float: left; max-width: calc(100% - 100px);}
-.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li{ float: left; margin: 2px 4px; width: 14px; height: 14px; display: block; border-radius: 50%; background-color: #D8D8D8; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li{ float: left; margin: 2px 3.5px; width: 16px; height: 16px; display: block; border-radius: 50%; background-color: #D8D8D8; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li a{ position: relative; width: 100%; height: 100%; display: block; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li .tooltip{ left: -12px; top: 19px;}
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li.line{ margin-right: 20px; position: relative; }
@@ -3046,10 +3083,10 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li.green{ background-color: #84BE98; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results ul li.darkgreen{ background-color: #69A07C; }
 
-.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results a.lock{ position: absolute; top: 6px; left: 328px; width: 9px; height: 15px; background-image: url(../images/svg/lock.svg); }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results a.lock{ position: absolute; top: 10px; left: 328px; width: 10px; height: 15px; background-image: url(../images/svg/lock.svg); }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results a.lock .tooltip{ top: 21px; left: -14px; }
 
-.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results .score{ position: absolute; right: -16px; top: 3px; width: 155px; background: #F2F8FA; padding: 2px 10px; }
+.job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results .score{ position: absolute; right: -15px; top: 3px; width: 155px; background: #F2F8FA; padding: 2px 10px; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results .score p{ font-size: 12px; color: #707475;display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
 .job_seeker_container .grid_content .other_information .project_contents .list_infobox .test_results .score p span{ font-size: 20px; padding: 0 5px; }
 
@@ -3060,7 +3097,8 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_container .grid_content .add_contact_matters p.btn{ position: initial; font-size: 14px;}
 .job_seeker_container .grid_content .add_contact_matters p.btn a{ padding: 1.5px 10px; border-radius: 0 3px 3px 3px;}
 .job_seeker_container .grid_content .add_contact_matters p.btn a:hover{ box-shadow: none; }
-.job_seeker_container .grid_content .add_contact_matters .time_select{ /*display: inline-block;*/ overflow: hidden;}
+
+.job_seeker_container .grid_content .add_contact_matters .time_select{ /*display: inline-block;*/ overflow: hidden; border-bottom: 1px solid #979797;}
 .job_seeker_container .grid_content .add_contact_matters .day_selectBox{ position: initial; float: left;}
 .job_seeker_container .grid_content .add_contact_matters .day_selectBox .monthBox{ border: none; padding-bottom: 0;}
 .job_seeker_container .grid_content .add_contact_matters .day_selectBox .monthBox td{ position: relative; }
@@ -3071,9 +3109,9 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_container .grid_content .add_contact_matters .swicht_box{ padding-top: 20px; }
 .job_seeker_container .grid_content .add_contact_matters .swicht_box p.btn_s{ float: right; padding: 0;}
 
-.job_seeker_container .grid_content .add_contact_matters ul.icon_note{ float: left; width: 408px; padding:12px 15px; border-top:1px solid #979797;background-color: #fff; }
+.job_seeker_container .grid_content .add_contact_matters ul.icon_note{ width: 408px; padding:12px 15px; background-color: #fff; }
 .job_seeker_container .grid_content .add_contact_matters ul li{ padding: 2.5px 0; }
-.job_seeker_container .grid_content .add_contact_matters ul li p{ padding-left: 20px; position: relative; color: #707475;}
+.job_seeker_container .grid_content .add_contact_matters ul li p{ padding-left: 20px; position: relative; color: #707475; font-size: 13px;}
 .job_seeker_container .grid_content .add_contact_matters ul li p.round::after{ left: 0; top: 2.5px; }
 
 .job_seeker_container .round{ position: relative;}
@@ -4043,7 +4081,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .addQA_fillinBox p.add_new_btn a{ line-height: 38px; border: none;}
 html:root  .addQA_fillinBox textarea{ min-height: 58px;}
 /*新增求職者*/
-.fillin_interviewe_data{ background-color: #fff; border-radius: 10px 0 10px 10px; margin-top: 10px; overflow: hidden; position: relative; }
+.fillin_interviewe_data{ /*background-color: #fff; */border-radius: 10px 0 10px 10px; margin-top: 10px; overflow: hidden; position: relative; }
 .fillin_interviewe_data .top_job_vacancies{ background-color: #F8F9F9; width: 100%;}
 .fillin_interviewe_data .top_job_vacancies tr th, .fillin_interviewe_data .top_job_vacancies tr td{ padding: 5px 10px; vertical-align: middle; }
 .fillin_interviewe_data .top_job_vacancies tr th{ border-bottom: 2px solid #558C9E; border-right: 2px solid #558C9E; }
@@ -4053,15 +4091,20 @@ html:root  .addQA_fillinBox textarea{ min-height: 58px;}
 .fillin_interviewe_data .top_job_vacancies p{ font-size: 15px;}
 .fillin_interviewe_data .top_job_vacancies .both:last-child{border-left: 2px solid #558C9E;}
 
-.fillin_interviewe_data .fill_information_info{ padding:10px 20px; }
+.fillin_interviewe_data .fill_information_info{ padding:10px 20px; max-width: 610px; margin: 0 auto;}
 .fillin_interviewe_data .fill_information_info label{ font-size: 15px; float: left; width: 84px; line-height: 35px; }
-.fillin_interviewe_data .fill_information_info .f_input{ float: left; font-size: 14px; width: calc(100% - 84px); border: 1px solid #979797; border-radius: 5px; height: 35px; line-height: 35px; padding: 0 10px; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+.fillin_interviewe_data .fill_information_info .f_input{ float: left; background-color: #fff; font-size: 14px; width: calc(100% - 84px); border: 1px solid #979797; border-radius: 5px; height: 35px; line-height: 35px; padding: 0 10px; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+.fillin_interviewe_data .fill_information_info .f_input_w50{ padding: 0;}
+.fillin_interviewe_data .fill_information_info .f_input_w50 input{ border: none; height: 33px; line-height: 33px;}
+.fillin_interviewe_data .fill_information_info .f_input_w50 .add a{ text-align: center; border-radius: 0;}
+.fillin_interviewe_data .fill_information_info .f_input_w50 .add a::after{ display: none; }
+
 .fillin_interviewe_data .fill_information_info input::placeholder{ color: #9B9B9B; font-size: 13px; }
 .fillin_interviewe_data .fill_information_info input:focus{ border-color: #81B6C8; }
 .fillin_interviewe_data .fill_information_info .red_error{ border-color: #C87D86; }
 .fillin_interviewe_data .fill_information_info .red_error::placeholder{ color: #C87D86; }
 .fillin_interviewe_data .fill_information_info .styled-select{ max-width: calc(100% - 84px);}
-.fillin_interviewe_data .fill_information_info .fillin_phone{ float: left; font-size: 14px; height: 32px; line-height: 32px; }
+.fillin_interviewe_data .fill_information_info .fillin_phone{ float: left; font-size: 14px; height: 32px; line-height: 32px; border: none; background-color: transparent; }
 
 html:root .fillin_interviewe_data .fill_information_info .styled-select select{ height:33px; padding:2px 10px; }
 
@@ -4072,7 +4115,7 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .fillin_interviewe_data ul.fill_information_info li .the_gender .styled-select{ width: 164px; max-width: inherit;}
 .fillin_interviewe_data ul.fill_information_info li .the_phont .f_input{ position: relative; padding-right: 50px; height: inherit; min-height: 35px; }
 .fillin_interviewe_data ul.fill_information_info li .the_phont .f_input .add{ position: absolute; right: 0; top: 0; height: 100%; }
-.fillin_interviewe_data ul.fill_information_info li .the_phont .f_input .add a{ position: relative; height: 100%; min-height: 33px; width: 50px; display: block; color: #fff; background-color: #81B6C8;}
+.fillin_interviewe_data ul.fill_information_info li .the_phont .f_input .add a{ position: relative; height: 100%; min-height: 33px; width: 50px; display: block; color: #fff; background-color: #81B6C8; border-radius: 0;}
 .fillin_interviewe_data ul.fill_information_info li .the_phont .f_input .add a::after{ content: ""; position: absolute; width:100%; height: 16px; top: calc(50% - 8px); left: 0; background-image: url(../images/svg/plus_w.svg); }
 .fillin_interviewe_data ul.fill_information_info li .the_phont .f_input .add a:hover{ background-color: #558C9E;}
 .fillin_interviewe_data ul.fill_information_info li .the_phont p.phone_number{ margin: 4px 5px 0 0; float: left; overflow: hidden; background-color: #F8F9F9; line-height: 25px; height: 25px; font-size: 14px; border: #979797 solid 1px; border-radius: 5px; }
@@ -4084,15 +4127,16 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .fillin_interviewe_data ul.fill_information_info li.top_both fieldset:first-child{ width: 300px; padding-right: 10px;}
 .fillin_interviewe_data ul.fill_information_info li.top_both label{ width: 75px;}
 
+.fillin_interviewe_data h4.bg_skyblue{ background-color: #D1E0E5; font-size: 15px; padding:0 0 0 88px; text-align: left; }
 .fillin_interviewe_data h4.bg_darkblue{ background-color: #558C9E; font-size: 18px; color: #fff; padding: 5px 20px; }
-.fillin_interviewe_data h5.bg_g_sub_title{background-color: #EBEBEB; font-size: 15px; padding: 0px 20px; position: relative; line-height: 45px;}
+.fillin_interviewe_data h5.bg_g_sub_title{/*background-color: #EBEBEB;*/ max-width: 610px; margin: 0 auto; font-size: 15px; padding: 0px 20px; position: relative; line-height: 45px;}
 .fillin_interviewe_data h5.bg_g_sub_title a{ position: absolute; top: 4px; right: 20px; width: 50px; height: 35px; line-height: 35px; display: block; border-radius: 5px; text-align: center; color: #fff; background-color: #81B6C8; }
 .fillin_interviewe_data h5.bg_g_sub_title a.add{ background-image: url(../images/svg/plus_w.svg); background-size: 30%;}
 .fillin_interviewe_data h5.bg_g_sub_title a:hover{ background-color: #558C9E;}
 .fillin_interviewe_data h5.bg_g_sub_title span.title_icon_lock::after{ background-image: url(../images/svg/lock_gray.svg); }
 
-.fillin_interviewe_data .skill_list_select{ padding: 10px 20px 5px 20px; }
-.fillin_interviewe_data .f_input .field{ border: 1px solid #D8D8D8; width: calc(100% - 10px); padding-left: 5px; border-radius: 5px; min-height: 35px;}
+.fillin_interviewe_data .skill_list_select{ padding: 10px 20px 5px 20px; max-width: 610px; margin: 0 auto; }
+.fillin_interviewe_data .f_input .field{ border: 1px solid #D8D8D8; width: calc(100% - 10px); padding-left: 5px; border-radius: 5px; min-height: 35px; background-color: #fff;}
 .fillin_interviewe_data .f_input{ position: relative; padding-right: 50px;}
 .fillin_interviewe_data .f_input .add{ position: absolute; right: 0; top: 0; height: 100%; }
 .fillin_interviewe_data .f_input .add a{ position: relative; height: 100%; min-height: 33px; width: 50px; display: block; color: #fff; background-color: #81B6C8; border-radius: 5px;}
@@ -4102,7 +4146,7 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .fillin_interviewe_data .f_input p.f_text span{ float: left; padding: 0 8px; }
 .fillin_interviewe_data .f_input p.f_text a.delete{ float: left; width: 25px; height: 23px; display: block; cursor: pointer; height: 100%; background-image: url(../images/svg/close_skyblue.svg); background-position: center center; background-repeat: no-repeat; background-size: 44%;}
 .fillin_interviewe_data .f_input p.f_text a.delete:hover{ opacity: .5;}
-.fillin_interviewe_data .f_input .fillin_text{padding: 0 5px; float: left; font-size: 13px; height: 32px; line-height: 32px; }
+.fillin_interviewe_data .f_input .fillin_text{padding: 0 5px; float: left; font-size: 13px; height: 32px; line-height: 32px; border: none; }
 
 .fillin_interviewe_data .f_input .keywords_search{ position: absolute; left: 0; z-index: 2; width:calc(100% - 60px); background-color: #fff; border:1px solid #D8D8D8; border-radius: 5px; box-shadow: 0px 2px 4px rgba(0,0,0,.5); }
 .fillin_interviewe_data .f_input .keywords_search ul{ width: 100%; padding: 2px 0;  }
@@ -4110,7 +4154,7 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .fillin_interviewe_data .f_input .keywords_search ul li:hover{ background-color: #F2F8FA; }
 .fillin_interviewe_data .f_input .keywords_search ul li p{ line-height: 20px; padding: 0 10px; }
 
-.fillin_interviewe_data .related_searches{ width: 100%; padding:10px 0 5px; }
+.fillin_interviewe_data .related_searches{ width: 100%; padding:10px 0 5px;  border-bottom: 1px dashed #D8D8D8;}
 .fillin_interviewe_data .related_searches p.left_title{ float: left; line-height: 24px; color: #9B9B9B; }
 .fillin_interviewe_data .related_searches ul.keywords{ float: left; max-width: calc(100% - 120px); text-align: left; }
 .fillin_interviewe_data .related_searches ul.keywords li{ display: inline-block; padding:0 2.5px; }
@@ -4126,7 +4170,7 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .fillin_interviewe_data .options_select .border_green p {width: 100%; border:#84BE98 3px solid; border-radius: 10px 0 10px 10px; padding:10px 20px;background-color: #fff;}
 
 .fillin_interviewe_data .options_select .options_list{ padding:0 15px;}
-.fillin_interviewe_data .options_select .options_list p{border:1px solid #9B9B9B; cursor: pointer; display: inline-block; padding: 5px 10px 5px 40px;}
+.fillin_interviewe_data .options_select .options_list p{border:1px solid #9B9B9B; background-color: #fff; cursor: pointer; display: inline-block; padding: 5px 10px 5px 40px;}
 .fillin_interviewe_data .options_select .options_list p.btn_in{ background-color: #81B6C8; border-color: #81B6C8; color: #fff; position: relative;}
 .fillin_interviewe_data .options_select .options_list p.btn_in::after{ content: ""; width: 21px; height: 16px; display: block; position: absolute; top: calc(50% - 8px); left: 10px; background-image: url(../images/svg/tick_w.svg);}
 .fillin_interviewe_data .options_select .options_list .title{ border-top:1px dashed #D8D8D8; padding:10px 15px;}
@@ -4138,12 +4182,12 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .fillin_interviewe_data .options_select p.btn a{ padding: 0px 10px; border-radius: 0 3px 3px 3px;}
 
 .fillin_interviewe_data ul.add_nterviewee_round li{ padding:0 0 10px 0;}
-.fillin_interviewe_data ul.add_nterviewee_round li:last-child{ border-bottom: 1px dashed #979797;}
-.fillin_interviewe_data p.btn_add{ padding: 0px 20px 10px 20px;}
+.fillin_interviewe_data ul.add_nterviewee_round li:last-child{ border-bottom: 1px dashed #D8D8D8;}
+.fillin_interviewe_data p.btn_add{ padding: 0px 20px 10px 20px; max-width: 610px; margin: 0 auto;}
 .fillin_interviewe_data .remind_greenbox { margin-bottom: 0; }
 .fillin_interviewe_data .remind_greenbox .tooltip{ width: 330px; right: 120px; top:0; padding: 5px 13px; border-radius: 5px 0 5px 5px; }
 
-.fillin_interviewe_data .work_complexity { background-color: #EBEBEB; font-size: 15px; text-align: left; padding: 8px 20px; border-bottom: 2px solid #fff;}
+.fillin_interviewe_data .work_complexity { /*background-color: #EBEBEB;*/ font-size: 15px; text-align: left; padding: 8px 0px; border-bottom: 1px dashed #D8D8D8; max-width: 570px; margin: 0 auto;}
 .fillin_interviewe_data .work_complexity h5{ float: left; line-height: 29px; }
 .fillin_interviewe_data .work_complexity p.ss{ float: left; color: #9B9B9B; padding-left: 15px; line-height: 29px; font-size: 11px;}
 .fillin_interviewe_data .work_complexity .grade{ float: right;}
@@ -4151,8 +4195,9 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .fillin_interviewe_data .work_complexity .grade p a{ display: inline-block; text-align: center; font-weight: bold; color: #B9BABA; line-height: 25px; width:27px; height: 27px;border:2px solid #B9BABA; border-radius: 4px;}
 .fillin_interviewe_data .work_complexity .grade p a.btn_in{ color: #81B6C8; border-color: #81B6C8; }
 
-.fillin_interviewe_data ul.job_duty_list{ width: 100%; text-align:left; padding:10px 20px 5px 20px; }
-.fillin_interviewe_data ul.job_duty_list li{ display: inline-block; border: 1px solid #9B9B9B; border-radius: 5px; padding: 0px 10px 0 5px; margin: 0 5px 5px 0; }
+.fillin_interviewe_data ul.job_duty_list{ width: 100%; text-align:left; padding:10px 0px 5px 0px; max-width: 570px; margin: 0 auto;}
+.fillin_interviewe_data ul.job_duty_list li{ display: inline-block; border: 1px solid #9B9B9B; border-radius: 5px; padding: 0px 10px 0 5px; margin: 0 5px 5px 0; background-color: #fff; }
+.fillin_interviewe_data ul.job_duty_list li.pad_3{ padding: 3px 15px; }
 .fillin_interviewe_data ul.job_duty_list li p span{ font-size: 22px; color: #81B6C8; padding: 0 5px; }
 .fillin_interviewe_data ul.professional_skill_list{ width: 100%; text-align:left; padding:15px 20px;}
 .fillin_interviewe_data ul.professional_skill_list li{ display: inline-block; border: 1px solid #808080; min-width: 272px; overflow: hidden; height: 28px; border-radius: 5px; margin: 0 5px 5px 0; position: relative; padding-right: 59px; }
@@ -4325,9 +4370,10 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .setBox .interview_report_round .a_round .right_info a.edit:hover{ opacity: .8; }
 
 .setBox .datetime_merge .day .day_selectBox{ right: inherit; top: 33px; left: 3px;}
-.setBox .datetime_merge .day .day_selectBox p{ line-height: 27px; min-height: 27px; padding: 0 5px; }
+.setBox .datetime_merge .day .day_selectBox p{ border: 2px solid transparent; line-height: 27px; min-height: 27px; padding: 0 5px; }
 .setBox .datetime_merge .day .monthBox{ border-radius: 0 0 0 20px; border: 1px solid #9B9B9B; }
-.setBox .datetime_merge .day .monthBox .top_year_month{ background-color: #9B9B9B; border-radius: 0; padding: 5.5px 0; }
+.setBox .datetime_merge .day .monthBox .top_year_month{ background-color: #9B9B9B; border-radius: 0; padding: 6px 0; }
+.setBox .datetime_merge .day .monthBox .top_year_month p{ border: none; }
 .setBox .datetime_merge .day .monthBox .top_year_month p a{ border-color: transparent #ffffff transparent transparent; _border-color: #000000 #ffffff #000000 #000000;}
 .setBox .datetime_merge .day .monthBox .top_year_month p a.right_arr{ border-color: transparent transparent transparent #ffffff; _border-color: #000000 #000000 #000000 #fff;}
 
@@ -4341,7 +4387,7 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .setBox .datetime_merge .more_h .time_selectBox{ height: 307px;}
 .setBox .datetime_merge .more_h .time_selectBox .the_time ul{ height: 268.5px;}
 .setBox .datetime_merge .more_h p.btn{ bottom: -365px; }
-
+.setBox .datetime_merge .btn_s{ padding: 20px; }
 
 .setBox .interview_report_round p.btn_add{ padding: 2px 8px 14px 0;}
 .setBox .interview_report_round p.btn_view{ width: 100%; text-align: center; font-size: 18px;}
