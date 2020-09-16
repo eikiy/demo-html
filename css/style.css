@@ -2925,6 +2925,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_list_content ul.conditionList li .job_type ul.sub_filter li:hover{ background-color: #F2F8FA; }
 .job_seeker_list_content ul.conditionList li .job_type ul.sub_filter label{ font-size: 14px; }
 .job_seeker_list_content ul.conditionList li .job_type p a span{ color: #4A4A4A; padding-left: 0;}
+.job_seeker_list_content ul.conditionList li.btn_in .job_type p a span{ color: #81B6C8; padding-left: 0;}
 
 .job_seeker_list_content ul.conditionList li.w50{ width: 50%; }
 
