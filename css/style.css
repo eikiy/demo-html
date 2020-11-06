@@ -95,6 +95,12 @@ a .white_tip::after{ border-color: transparent transparent #f8f9f9 transparent;}
 span.title_icon_lock{ position: relative; padding-left: 0 !important;}
 span.title_icon_lock::after{ content: ""; right: -13px; top:calc(50% - 6.5px); position: absolute; width: 9px; height: 13px; display: block; background-image: url(../images/svg/lock_skyblue.svg); }
 
+span.title_icon{ position: relative; padding-left:33px !important;;}
+span.title_icon::before{ content: ""; left:0px; top:calc(50% - 10px); position: absolute; width: 26px; height: 18px; display: block;}
+span.bookmark_01::before{ background-image: url(../images/svg/bookmark_01.svg); }
+span.bookmark_02::before{ background-image: url(../images/svg/bookmark_02.svg); }
+span.bookmark_03::before{ background-image: url(../images/svg/bookmark_03.svg); }
+
 .headerBox ul.tools li .message_listBox{ position: absolute; width: 230px; z-index: 10; background-color: #fff; top: 30px; right: 0; border-radius: 10px 0 10px 10px; border:1px solid #707475;  box-shadow: 2px 3px 5px rgba(0,0,0,.2); overflow: hidden;}
 .headerBox ul.tools li .message_listBox .top_tips{ padding: 0px 10px; border-bottom:1px solid #bdbdbd; position: relative;}
 .headerBox ul.tools li .message_listBox .top_tips p {font-size: 12px;line-height: 30px;} 
@@ -2038,11 +2044,19 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interviewee_info .top_test_menu ul li a{ border: 3px solid #81B6C8; width: 150px; height: 50px; line-height: 50px; color: #81B6C8; display: block; border-radius: 10px 10px 0 0; }
 .interviewee_info .top_test_menu ul li a:hover{background-color: #81B6C8; color: #fff;}
 .interviewee_info .top_test_menu ul li a:hover span.title_icon_lock{background-color: #81B6C8; color: #fff;}
-.interviewee_info .top_test_menu ul li span.title_icon_lock::after{right: -17px;}
+.interviewee_info .top_test_menu ul li a:hover span.bookmark_01::before{ background-image: url(../images/svg/bookmark_01_w.svg); }
+.interviewee_info .top_test_menu ul li a:hover span.bookmark_02::before{ background-image: url(../images/svg/bookmark_02_w.svg); }
+.interviewee_info .top_test_menu ul li a:hover span.bookmark_03::before{ background-image: url(../images/svg/bookmark_03_w.svg); }
 
-.interviewee_info .top_test_menu ul li:nth-child(1) a{ border-color: #558C9E; color: #558C9E; }
-.interviewee_info .top_test_menu ul li:nth-child(1) a:hover{ background-color: #558C9E; color: #fff;}
+.interviewee_info .top_test_menu ul li span.title_icon_lock::after{right: -14px;}
+
+/*.interviewee_info .top_test_menu ul li:nth-child(1) a{ border-color: #558C9E; color: #558C9E; }
+.interviewee_info .top_test_menu ul li:nth-child(1) a:hover{ background-color: #558C9E; color: #fff;}*/
 .interviewee_info .top_test_menu ul li.btn_in a{background-color: #81B6C8; color: #fff;}
+.interviewee_info .top_test_menu ul li.btn_in a span.bookmark_01::before{ background-image: url(../images/svg/bookmark_01_w.svg); }
+.interviewee_info .top_test_menu ul li.btn_in a span.bookmark_02::before{ background-image: url(../images/svg/bookmark_02_w.svg); }
+.interviewee_info .top_test_menu ul li.btn_in a span.bookmark_03::before{ background-image: url(../images/svg/bookmark_03_w.svg); }
+
 .interviewee_info .top_test_menu ul li.btn_in:nth-child(1) a{ background-color: #558C9E; color: #fff;}
 .interviewee_info .top_test_menu ul li.none a{ cursor: no-drop; border-color: #EBEBEB; color: #D8D8D8;}
 .interviewee_info .top_test_menu ul li.none a:hover{ background-color: #fff; color:#EBEBEB; border-color: #EBEBEB; }
@@ -2640,6 +2654,9 @@ ul.job_management_list p.text_center{ text-align: center; }
 .j_v_ranking .new_report p.over_note{ padding: 15px 45px; }
 
 .j_v_ranking .new_report .top_job_information{ padding:15px 15px 10px 15px; position: relative; }
+.j_v_ranking .new_report .top_job_information a.go_edit{ position: absolute; font-size: 14px; padding-left: 25px; line-height: 25px; color: #81B6C8; background-position: left center; height: 25px; right: 20px; top: 10px; z-index: 1; display: block; background-image: url(../images/btn_icon_edit.png);}
+.j_v_ranking .new_report .top_job_information a.go_edit:hover{ text-decoration: underline; }
+
 .j_v_ranking .new_report .jobInfo{ float: left; width:500px;}
 .j_v_ranking .new_report .jobInfo .iBox{ padding: 2px 0;}
 .j_v_ranking .new_report .jobInfo .iBox p{ float: left; color: #4A4A4A; letter-spacing: 1px; line-height: 24px;}
@@ -3704,7 +3721,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .management_filter_listBox .jobInfo .iBox p{ color: #4A4A4A; line-height: 24px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 24px; height: 24px; height: 24px * 1; overflow:hidden; }
 .management_filter_listBox .jobInfo .iBox p.font_s{ font-size: 13px; }
 
-.management_filter_listBox ul.job_management_list .job_typebox{ border: 2px solid #558C9E; width: 304px; background-color: #fff; float: right; border-radius: 5px 0 5px 5px; margin: 8px 0px 0px 0px; overflow: hidden;}
+.management_filter_listBox ul.job_management_list .job_typebox{ border: 2px solid #558C9E; width: 304px; /*background-color: #fff;*/ float: right; border-radius: 5px 0 5px 5px; margin: 8px 0px 0px 0px; overflow: hidden;}
 .management_filter_listBox ul.job_management_list .job_typebox div{ float: left; width: 75px; height: 64px; border-right: 1px solid #81B6C8; position: relative;}
 .management_filter_listBox ul.job_management_list .job_typebox div:last-child{ border:none;}
 .management_filter_listBox ul.job_management_list .job_typebox p{ text-align: center; color: #558C9E; padding: 5px; font-size: 13px;}
