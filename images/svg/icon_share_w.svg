@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14">
+  <g id="Group_2_Copy_6" data-name="Group 2 Copy 6" transform="translate(0.5 0.5)">
+    <ellipse id="Oval" cx="2" cy="1.5" rx="2" ry="1.5" transform="translate(0 5)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+    <ellipse id="Oval_Copy" data-name="Oval Copy" cx="2" cy="1.5" rx="2" ry="1.5" transform="translate(8)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+    <ellipse id="Oval_Copy_9" data-name="Oval Copy 9" cx="2" cy="1.5" rx="2" ry="1.5" transform="translate(8 10)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Line_2" data-name="Line 2" d="M0,4,7.75.25" transform="translate(2 2)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Line_2_Copy" data-name="Line 2 Copy" d="M0-4,7.75-.25" transform="translate(2 11)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>

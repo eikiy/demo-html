@@ -85,6 +85,14 @@
 		  	return false;
 		  });
 	   	});
+	   	// 標題開啟切換
+	   	$(function(){
+	    	$(".toggle_title").click(function(){
+				$(this).next().next(".top_job_information").stop(true, true).fadeToggle(0);
+				$(this).toggleClass( "toggle_off" );
+		  	return false;
+		  });
+	   	});
 	</script>
 </head>
 <body>
@@ -199,6 +207,7 @@
 				</div>
 				<ul class="user_list job_management_list clearfix">
 					<li>
+						<a class="share_link img_default"></a>
 						<a class="icon_edit_job popup-link" href="#popup-add_job_vacancies">
 							<p class="job_title">有可能title也會很長長長的軟體工程師有可能title也會很長長長的軟體工程師有可能title也會很長長長的軟體工程師有可能title也會很長長長的軟體工程師</p>
 						</a>
@@ -242,6 +251,7 @@
 					</li>
 					<!-- ＃有淡藍色底是剛剛有編輯過的記號 -->
 					<li style=" background-color: #F2F8FA;">
+						<a class="share_link img_default"></a>
 						<a class="icon_edit_job popup-link" href="#popup-add_job_vacancies">
 							<p class="job_title">介面設計師</p>
 						</a>
@@ -280,6 +290,7 @@
 						</a>
 					</li>
 					<li>
+						<a class="share_link img_default"></a>
 						<a class="icon_edit_job popup-link" href="#popup-add_job_vacancies">
 							<p class="job_title">前端工程師</p>
 						</a>
@@ -318,6 +329,7 @@
 						</a>
 					</li>
 					<li>
+						<a class="share_link img_default"></a>
 						<a class="icon_edit_job popup-link" href="#popup-add_job_vacancies">
 							<p class="job_title">行銷專員</p>
 						</a>
@@ -3294,7 +3306,7 @@
             </div>
             <div class="chosenBox interviewee_info j_v_ranking">
             	<div class="test_report new_report managementBox" style="margin-bottom: 40px;">
-					<h3 class="test_report_title" style="background-color: #81B6C8;">職缺資訊</h3>
+					<h3 class="test_report_title toggle_title toggle_on img_default">職缺資訊</h3>
 					<ul class="test_report_sub_department clearfix">
 						<li>
 							<p>職缺名稱：<span>軟體工程師</span></p>

@@ -2545,6 +2545,8 @@ p.add_job_vacancies a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 
 .mainBox ul.job_management_list li a.recruit_status_form{ padding-top: 25px; }
 
+.mainBox ul.job_management_list li a.share_link{ position: absolute; right: 00px; top: 0px; width: 30px; max-height: 25px; display: block; z-index: 6; background-size: 42%; background-image:url(../images/svg/icon_share_w.svg);  }
+
 .mainBox ul.list li.add_new_btn{ text-align: center; background-color: #E6F0F4; border:1px dashed #558C9E;} 
 .mainBox ul.list li.add_new_btn a{ height: 138px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .mainBox ul.list li.add_new_btn a p{ color: #558C9E; font-size: 14px; padding:0 5px 0 60px; position: relative; line-height: 36px; display: inline-block;}
@@ -2558,7 +2560,7 @@ p.add_job_vacancies a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .mainBox ul.job_management_list li.add_new_btn:hover a p::before{  background-image: url(../images/btn_add_job_vacancies_w.png); }
 
 ul.job_management_list .icon_edit_job{ width:calc(100% + 6px); margin: -3px 0 0 -3px; position: relative; padding-bottom: 2px;}
-ul.job_management_list .icon_edit_job p.job_title{ width: calc(100% + 20px); color: #fff; font-size: 14.5px; letter-spacing: 1px; padding-right: 20px; padding-bottom:3px; display: block; background-size: contain; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 26px; height: 26px; height: 26px * 1; overflow:hidden;}
+ul.job_management_list .icon_edit_job p.job_title{ width: calc(100% + 20px); color: #fff; font-size: 14.5px; letter-spacing: 1px; padding-right: 35px; padding-bottom:3px; display: block; background-size: contain; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 26px; height: 26px; height: 26px * 1; overflow:hidden;}
 ul.job_management_list .icon_edit_none p.job_title{ background-image: none; }
 
 ul.job_management_list .top_title .department{ width: 100%; padding: 5px 20px 0 20px;}
@@ -2641,6 +2643,11 @@ ul.job_management_list p.text_center{ text-align: center; }
 
 .popup-L .filter_pop .j_v_ranking{ padding-top: 42px; }
 .popup-L .filter_pop .j_v_ranking h3.test_report_title{ padding:5px 15px; position: relative; font-size: 14px; }
+.popup-L .filter_pop .j_v_ranking h3.toggle_title{ color: #fff; background-color: #81B6C8; cursor: pointer;}
+.popup-L .filter_pop .j_v_ranking h3.toggle_title::after{ content:""; position: absolute; right: 10px; top: 13.5px; width: 15px; height: 10px; display: block; }
+.popup-L .filter_pop .j_v_ranking h3.toggle_on::after{ background-image: url(../images/svg/arrow_up_w.svg); }
+.popup-L .filter_pop .j_v_ranking h3.toggle_off::after{ background-image: url(../images/svg/arrow_bottom_w.svg); }
+
 .popup-L .filter_pop .j_v_ranking h3.test_report_title a.go_edit{ position: absolute; width: 25px; height: 25px; right: 10px; top: 5px; z-index: 1; display: block; background-image: url(../images/btn_icon_edit.png);}
 .popup-L .filter_pop .j_v_ranking h3.test_report_title a.go_edit:hover{ background-image: url(../images/btn_icon_edit_w.png); }
 
