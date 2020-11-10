@@ -2947,7 +2947,8 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_list_content ul.conditionList li .job_type ul.sub_filter li{ float: initial; width: 100%;min-height: initial; padding: 2.5px 10px; position: relative;}
 .job_seeker_list_content ul.conditionList li .job_type ul.sub_filter li p{ padding: 0 5px; line-height: 26px; cursor: pointer; }
 .job_seeker_list_content ul.conditionList li .job_type ul.sub_filter li:hover{ background-color: #F2F8FA; }
-.job_seeker_list_content ul.conditionList li .job_type ul.sub_filter label{ font-size: 14px; }
+.job_seeker_list_content ul.conditionList li .job_type ul.sub_filter label{ font-size: 14px; background: url(../images/checks_off.png) no-repeat 0 0;}
+.job_seeker_list_content ul.conditionList li .job_type ul.sub_filter input[type=checkbox]:not(old):checked + label{background: url(../images/checks_on.png) no-repeat 0 0;}
 .job_seeker_list_content ul.conditionList li .job_type p a span{ color: #4A4A4A; padding-left: 0;}
 .job_seeker_list_content ul.conditionList li.btn_in .job_type p a span{ color: #81B6C8; padding-left: 0;}
 
@@ -4123,7 +4124,7 @@ html:root  .addQA_fillinBox textarea{ min-height: 58px;}
 .fillin_interviewe_data .fill_information_info .red_error{ border-color: #C87D86; }
 .fillin_interviewe_data .fill_information_info .red_error::placeholder{ color: #C87D86; }
 .fillin_interviewe_data .fill_information_info .styled-select{ max-width: calc(100% - 84px);}
-.fillin_interviewe_data .fill_information_info .fillin_phone{ float: left; font-size: 14px; height: 32px; line-height: 32px; }
+.fillin_interviewe_data .fill_information_info .fillin_phone{ float: left; font-size: 14px; height: 32px; line-height: 32px; border: none; background-color: transparent;}
 
 html:root .fillin_interviewe_data .fill_information_info .styled-select select{ height:33px; padding:2px 10px; }
 
