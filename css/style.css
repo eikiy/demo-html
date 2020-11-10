@@ -2368,7 +2368,9 @@ table.analysis tr.top_info td .btn_type p a.btn_in{ background-color: #81B6C8; c
 .check_remind .all_test_list ul.conditionList li .left_test_title{ float: left; width: initial; float: left; position: relative; padding-right: 10px;}
 .check_remind .all_test_list ul.conditionList li .job_type{ float: left; background-color: #fff; border-radius: 5px 0 5px 5px;  box-shadow: 0 0 1px rgba(0,0,0,.5); position: relative;}
 .check_remind .all_test_list ul.conditionList li .job_type p{ font-size: 14px; text-align: left;}
+.check_remind .all_test_list ul.conditionList li .job_type span{ color: #4a4a4a;}
 .check_remind .all_test_list ul.conditionList li .job_type a{ border: none; min-width: 85px; padding:5px 30px 5px 15px;  position: relative;}
+.check_remind .all_test_list ul.conditionList li .job_type a:hover{ text-decoration: none; }
 .check_remind .all_test_list ul.conditionList li .job_type a::before{ position: absolute; content: ""; width: 0; height: 0; border-style: solid; border-width: 8px 8px 0 8px; top: 11px; right: 10px; border-color: #81B6C8 transparent transparent transparent;/* background-color: #81B6C8;*/ }
 .check_remind .all_test_list ul.conditionList li .job_type ul.sub_filter{ position: absolute;   z-index: 10; border-radius:0 5px 5px 5px; padding: 8px 0; background-color: #fff; display: none;}
 .check_remind .all_test_list ul.conditionList li .job_type ul.sub_filter li{min-height: initial; padding: 0 10px;}
@@ -4116,9 +4118,14 @@ html:root  .addQA_fillinBox textarea{ min-height: 58px;}
 .fillin_interviewe_data .top_job_vacancies p{ font-size: 15px;}
 .fillin_interviewe_data .top_job_vacancies .both:last-child{border-left: 2px solid #558C9E;}
 
-.fillin_interviewe_data .fill_information_info{ padding:10px 20px; }
+.fillin_interviewe_data .fill_information_info{ padding:10px 20px; max-width: 610px; margin: 0 auto;}
 .fillin_interviewe_data .fill_information_info label{ font-size: 15px; float: left; width: 84px; line-height: 35px; }
-.fillin_interviewe_data .fill_information_info .f_input{ float: left; font-size: 14px; width: calc(100% - 84px); border: 1px solid #979797; border-radius: 5px; height: 35px; line-height: 35px; padding: 0 10px; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+.fillin_interviewe_data .fill_information_info .f_input{ float: left; background-color: #fff; font-size: 14px; width: calc(100% - 84px); border: 1px solid #979797; border-radius: 5px; height: 35px; line-height: 35px; padding: 0 10px; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+.fillin_interviewe_data .fill_information_info .f_input_w50{ padding: 0;}
+.fillin_interviewe_data .fill_information_info .f_input_w50 input{ border: none; height: 33px; line-height: 33px;}
+.fillin_interviewe_data .fill_information_info .f_input_w50 .add a{ text-align: center; border-radius: 0;}
+.fillin_interviewe_data .fill_information_info .f_input_w50 .add a::after{ display: none; }
+
 .fillin_interviewe_data .fill_information_info input::placeholder{ color: #9B9B9B; font-size: 13px; }
 .fillin_interviewe_data .fill_information_info input:focus{ border-color: #81B6C8; }
 .fillin_interviewe_data .fill_information_info .red_error{ border-color: #C87D86; }
@@ -4192,8 +4199,9 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .fillin_interviewe_data .options_select .options_list p{border:1px solid #9B9B9B; cursor: pointer; display: inline-block; padding: 5px 10px 5px 40px;}
 .fillin_interviewe_data .options_select .options_list p.btn_in{ background-color: #81B6C8; border-color: #81B6C8; color: #fff; position: relative;}
 .fillin_interviewe_data .options_select .options_list p.btn_in::after{ content: ""; width: 21px; height: 16px; display: block; position: absolute; top: calc(50% - 8px); left: 10px; background-image: url(../images/svg/tick_w.svg);}
+.fillin_interviewe_data .options_select .options_list p.btn_notyet{ cursor: no-drop; color: #9B9B9B; background-color: #EBEBEB ;border-color: #D8D8D8;}
 .fillin_interviewe_data .options_select .options_list .title{ border-top:1px dashed #D8D8D8; padding:10px 15px;}
-.fillin_interviewe_data .options_select .options_list ul{ border: 1px dashed #D8D8D8; border-width:1px 0 1px 0; padding: 5px 0 5px 45px;}
+.fillin_interviewe_data .options_select .options_list ul{ border: 1px dashed #D8D8D8; border-width:1px 0 1px 0; padding: 5px 0 5px 30px;}
 .fillin_interviewe_data .options_select .options_list ul li{ padding: 5px 0; }
 .fillin_interviewe_data .options_select .options_list ul li p{ min-width: 225px; padding: 3px 10px 3px 40px;}
 
@@ -4224,7 +4232,17 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 .fillin_interviewe_data ul.professional_skill_list li a.go_delete{ background-image: url(../images/icon_x.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: 65%;}
 .fillin_interviewe_data ul.professional_skill_list li a.go_delete:hover{ background-color: #C87D86; background-image: url(../images/icon_x_w.png); }
 .fillin_interviewe_data ul.professional_skill_list li a.go_edit{ right: 27px; background-image: url(../images/btn_icon_edit.png); background-position: center center; background-repeat: no-repeat; background-color: #fff; background-size: contain;}
-.fillin_interviewe_data ul.professional_skill_list li a.go_edit:hover{ background-color: #81B6C8; background-image: url(../images/btn_icon_edit_w.png); }
+
+.fillin_interviewe_data .link_info_set{ padding-left: 10px;}
+.fillin_interviewe_data .link_info_set .options_select{ padding: 10px 12px; margin-top: 15px; float: left; background-color: initial; display: inline-block; width: 50%; position: initial; box-shadow: none; }
+.fillin_interviewe_data .link_info_set .options_select p{ width: 100%; }
+.fillin_interviewe_data .link_info_set .options_select p.f-c-g{ color: #9B9B9B; padding-bottom: 12px; }
+.fillin_interviewe_data .link_info_set .options_select .options_list{padding: 0;}
+.fillin_interviewe_data .link_info_set .options_select .options_list .title{ border: none; padding: 3px 0px; max-width: 200px;} 
+.fillin_interviewe_data .link_info_set .options_select .options_list ul{ border: none; }
+.fillin_interviewe_data .link_info_set .options_select:nth-child(1){ border-right: 1px dashed #D8D8D8; padding-right: 15px;}
+.fillin_interviewe_data .link_info_set .options_select:nth-child(2){ padding-left: 20px; }
+.fillin_interviewe_data .link_info_set .options_select:nth-child(2) .options_list .title{ max-width: 125px; float: left; margin-right: 8px;}
 
 /*面試官評論表*/
 .interviewee_info .review_report{ border-radius: 10px 0 0 0; border-color: #558C9E; position: relative; overflow: hidden;}
