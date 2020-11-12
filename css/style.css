@@ -2719,7 +2719,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .top_open_tools h5.top_title{ color: #558C9E; }
 .top_open_tools h5.top_title::after{ content: ""; display: block; background-image: url(../images/svg/arrow_up.svg); }
 
-.job_leaderboard_container{ margin:0 auto; border-top: 2px solid #81B6C8; padding:40px 0px; }
+.job_leaderboard_container{ margin:0 auto; padding:35px 0px; }
 .job_leaderboard_container .round{ position: relative;}
 .job_leaderboard_container .round::after{ content: ""; width: 10px; height: 10px; display: block; border-radius: 50%; position: absolute; }
 .job_leaderboard_container .round_red::after{ background-color:#C87D86;}
