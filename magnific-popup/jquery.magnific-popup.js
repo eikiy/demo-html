@@ -270,7 +270,7 @@ MagnificPopup.prototype = {
 		if(mfp.fixedContentPos) {
 			mfp.wrap.css({
 				overflow: mfp.st.overflowY,
-				overflowX: 'hidden',
+				overflowX: 'auto',
 				overflowY: mfp.st.overflowY
 			});
 		} else {
