@@ -2564,8 +2564,8 @@ p.add_job_vacancies a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 
 .mainBox ul.job_management_list li{ height: initial; min-height: 152px;}
 .mainBox ul.job_management_list li a{ height: 152px !important;}
-.mainBox ul.job_management_list li a.icon_edit_job{ position: absolute; top: 0px; height: 30px !important; background-color: #81B6C8; width:calc(100% + 6px); z-index: 5; padding: 3px 20px 0px 20px; display: block; border-radius: 10px 0 0 0; }
-.mainBox ul.job_management_list li a.icon_edit_job:hover{ background-color: #b8d3dc;}
+.mainBox ul.job_management_list li .icon_edit_job{ position: absolute; top: 0px; height: 30px !important; background-color: #81B6C8; width:calc(100% + 6px); z-index: 5; padding: 3px 20px 0px 20px; display: block; border-radius: 10px 0 0 0; }
+/*.mainBox ul.job_management_list li a.icon_edit_job:hover{ background-color: #b8d3dc;}*/
 .mainBox ul.job_management_list li a.icon_edit_none:hover{ background-color: #81B6C8;}
 
 .mainBox ul.job_management_list li a.recruit_status_form{ padding-top: 25px; }
@@ -4044,9 +4044,9 @@ ul.job_management_list p.text_center{ text-align: center; }
 :root .changestatusBox .fillinBox ul li ul.select_item li{ min-height: inherit; }
 @media all and (-ms-high-contrast:none){ .changestatusBox .time_select ul li input.r_info, .changestatusBox ul li.new_day input.r_info{height: 30px; min-height: 30px;}}
 
-.mail_content{ position: relative; }
-.mail_content .text_content{ background-color: #EBEBEB; margin: 10px 0; padding: 10px; border-radius: 10px 0 10px 10px; }
+.mail_content h4{ background-color: #E5AF57; }
 .mail_content .top_title{ max-width: 100%; }
+.mail_content .text_content{ background-color: #F8F9F9;}
 .mail_content .text_content .mail_text_box{ border-radius: 10px 0 10px 10px; background-color: #fff; padding: 15px; }
 .mail_content .text_content .mail_text_box p{ line-height: 24px; font-size: 13px; }
 .mail_content .border_green{ position: absolute; left: 0; bottom: 30px; padding: 9px 30px; width: inherit;}
