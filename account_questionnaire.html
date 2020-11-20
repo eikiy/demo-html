@@ -88,7 +88,15 @@
 						</ul>
 					</div>
 					<div class="setting_contents survey_set_contents clearfix">
-						<p class="top_tip">此份為求職者填寫之履歷，請勾選求職者需填寫之項目。如再次修改，會將舊資料刪除，建議請謹慎更改。</p>
+						<div class="top_tip">
+							<p>此份為求職者填寫之履歷，請勾選求職者需填寫之項目。如再次修改，會將舊資料刪除，建議請謹慎更改。</p>
+							<p class="bg_green_note">設定選項
+								<span class="type1 img_default">無法更改項目</span>
+								<span class="type2 img_default">不顯示項目</span>
+								<span class="type3 img_default">顯示項目（點選1下）</span>
+								<span class="type4 img_default">必填項目（點選2下）</span>
+							</p>
+						</div>
 						<div class="theBox">
 							<div class="set_box">
 								<div class="top_check">
@@ -98,153 +106,126 @@
 									</h3>
 									<a class="box_switch arr_up"><span class="img_default"></span></a>
 								</div>
-								<div class="on_block_k">
+								<!-- 黑遮罩 div + on_block_k -->
+								<div class="">
 									<div class="set_all">
 										<div class="main_set_item">
+											<!-- 狀態請看這 -->
+											<!-- 無法更改 : check_nochange -->
+											<!-- 顯示 : check_display -->
+											<!-- 必填 : check_required -->
+											<!-- 無法勾選 : check_not -->
 											<h4>
-												<input id="" type="checkbox" name="" value="個人資料">
-												<label for="option">個人資料</label>
+												<span class="check_type check_display">個人資料</span>
 											</h4>
 											<ul class="sub_set_list clearfix">
-												<!-- 預設無法勾選 + check_preset -->
-												<li class="check_preset">
-													<input id="" type="checkbox" name="" value="中文姓名">
-													<label for="option">中文姓名</label>
+												<li>
+													<span class="check_type check_nochange">中文姓名</span>
 												</li>
-												<li class="check_preset">
-													<input id="" type="checkbox" name="" value="性別">
-													<label for="option">性別</label>
+												<li>
+													<span class="check_type check_nochange">性別</span>
 												</li>
-												<li class="check_preset">
-													<input id="" type="checkbox" name="" value="行動電話">
-													<label for="option">行動電話</label>
+												<li>
+													<span class="check_type check_nochange">行動電話</span>
 												</li>
-												<li class="check_preset remind_greenbox" style="min-width: 300px;">
-													<input id="" type="checkbox" name="" value="E-MAIL">
-													<label for="option">E-MAIL</label>
+												<!-- 如果有提醒語 li 要 + remind_greenbox -->
+												<li class="remind_greenbox" style="min-width: 300px;">
+													<span class="check_type check_nochange">E-MAIL</span>
 													<span class="tooltip" style="min-width: 220px;">
 								                		<span class="icon_thumbtack">此為系統設定，無法取消</span>
 								                	</span>
 												</li>
-
 												<li>
-													<input id="" type="checkbox" name="" value="英文姓名">
-													<label for="option">英文姓名</label>
+													<span class="check_type">英文姓名</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="身分證字號">
-													<label for="option">身分證字號</label>
+													<span class="check_type check_required">身分證字號</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="出生年月日">
-													<label for="option">出生年月日</label>
+													<span class="check_type check_required">出生年月日</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="血型/身高/體重">
-													<label for="option">血型/身高/體重</label>
+													<span class="check_type check_not">血型/身高/體重</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="婚姻狀態/子女幾名">
-													<label for="option">婚姻狀態/子女幾名</label>
+													<span class="check_type check_not">婚姻狀態/子女幾名</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="居住狀況">
-													<label for="option">居住狀況</label>
-												</li>
-
-												<li>
-													<input id="" type="checkbox" name="" value="役別/免役原因">
-													<label for="option">役別/免役原因</label>
+													<span class="check_type check_not">居住狀況</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="交通工具">
-													<label for="option">交通工具</label>
+													<span class="check_type check_display">役別/免役原因</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="駕照種類">
-													<label for="option">駕照種類</label>
+													<span class="check_type check_display">交通工具</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="戶籍/通信地址">
-													<label for="option">戶籍/通信地址</label>
+													<span class="check_type check_not">駕照種類</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="其他/緊急電話">
-													<label for="option">其他/緊急電話</label>
+													<span class="check_type check_not">戶籍/通信地址</span>
+												</li>
+												<li class="check_preset">
+													<span class="check_type check_not">其他/緊急電話</span>
 												</li>
 											</ul>
 										</div>
 										<div class="main_set_item">
 											<h4>
-												<input id="" type="checkbox" name="" value="教育程度">
-												<label for="option">教育程度</label>
+												<span class="check_type check_display">教育程度</span>
 											</h4>
 										</div>
 										<div class="main_set_item">
 											<h4>
-												<input id="" type="checkbox" name="" value="家庭狀況">
-												<label for="option">家庭狀況</label>
+												<span class="check_type check_not">家庭狀況</span>
 											</h4>
 										</div>
 										<div class="main_set_item">
 											<h4>
-												<input id="" type="checkbox" name="" value="工作經驗">
-												<label for="option">工作經驗</label>
+												<span class="check_type check_display">工作經驗</span>
 											</h4>
 										</div>
-										<!-- 未開啟 +  not_open，且 ul li 內的 input 需 + disabled -->
-										<div class="main_set_item not_open">
+										<div class="main_set_item">
 											<h4>
-												<input id="" type="checkbox" name="" value="專業訓練" disabled="">
-												<label for="option">專業訓練</label>
+												<span class="check_type check_not">專業訓練</span>
 											</h4>
 											<ul class="sub_set_list clearfix">
 												<li>
-													<input id="" type="checkbox" name="" value="語文能力" disabled="">
-													<label for="option">語文能力</label>
+													<span class="check_type check_not">語文能力</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="技能專長" disabled="">
-													<label for="option">技能專長</label>
+													<span class="check_type check_not">技能專長</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="課程或證照" disabled="">
-													<label for="option">課程或證照</label>
+													<span class="check_type check_not">課程或證照</span>
 												</li>
 											</ul>
 										</div>
 										<div class="main_set_item">
 											<h4>
-												<input id="" type="checkbox" name="" value="其他問題" checked="">
-												<label for="option">其他問題</label>
+												<span class="check_type check_not">其他問題</span>
 											</h4>
 											<ul class="sub_set_list clearfix">
 												<li>
-													<input id="" type="checkbox" name="" value="是否更改姓名">
-													<label for="option">是否更改姓名</label>
+													<span class="check_type check_not">是否更改姓名</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="是否特殊身份">
-													<label for="option">是否特殊身份</label>
+													<span class="check_type check_not">是否特殊身份</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="是否有案在身">
-													<label for="option">是否有案在身</label>
+													<span class="check_type check_not">是否有案在身</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="如何得知職缺">
-													<label for="option">如何得知職缺</label>
+													<span class="check_type check_not">如何得知職缺</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="列舉2位推薦人">
-													<label for="option">列舉2位推薦人</label>
+													<span class="check_type check_not">列舉2位推薦人</span>
 												</li>
 											</ul>
 										</div>
 										<div class="main_set_item">
 											<h4>
-												<input id="" type="checkbox" name="" value="自傳">
-												<label for="option">自傳</label>
+												<span class="check_type">自傳</span>
 											</h4>
 										</div>
 									</div>
@@ -282,126 +263,98 @@
 									<div class="set_all">
 										<div class="main_set_item not_open">
 											<h4>
-												<input id="" type="checkbox" name="" value="離職因素">
-												<label for="option">離職因素</label>
+												<span class="check_type">離職因素</span>
 											</h4>
 											<ul class="sub_set_list field_for3 clearfix">
 												<li>
-													<input id="" type="checkbox" name="" value="您目前仍服務或最後服務的企業名稱">
-													<label for="option">您目前仍服務或最後服務的企業名稱</label>
+													<span class="check_type">您目前仍服務或最後服務的企業名稱</span>
 												</li>
 												<li style="min-width: 190px;">
-													<input id="" type="checkbox" name="" value="擔任的職務是什麼">
-													<label for="option">擔任的職務是什麼</label>
+													<span class="check_type">擔任的職務是什麼</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="在職期間，最後薪資平均月薪為何 ">
-													<label for="option">在職期間，最後薪資平均月薪為何 </label>
-												</li>
-
-												<li>
-													<input id="" type="checkbox" name="" value="您想要離職的主要原因是什麼">
-													<label for="option">您想要離職的主要原因是什麼</label>
+													<span class="check_type">在職期間，最後薪資平均月薪為何</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="列舉影響去留因素並說明">
-													<label for="option">列舉影響去留因素並說明</label>
+													<span class="check_type">您想要離職的主要原因是什麼</span>
+												</li>
+												<li>
+													<span class="check_type">列舉影響去留因素並說明</span>
 												</li>
 											</ul>
 										</div>
 										<div class="main_set_item">
 											<h4>
-												<input id="" type="checkbox" name="" value="工作描述" checked="">
-												<label for="option">工作描述</label>
+												<span class="check_type">工作描述</span>
 											</h4>
 											<ul class="sub_set_list field_for3 clearfix">
 												<li>
-													<input id="" type="checkbox" name="" value="您負責的工作內容及權重分別是什麼">
-													<label for="option">您負責的工作內容及權重分別是什麼</label>
+													<span class="check_type">您負責的工作內容及權重分別是什麼</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="您受過的專業訓練有哪些">
-													<label for="option">您受過的專業訓練有哪些</label>
+													<span class="check_type">您受過的專業訓練有哪些</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="有哪一些制度或氣氛是讓您懷念的">
-													<label for="option">有哪一些制度或氣氛是讓您懷念的</label>
+													<span class="check_type">有哪一些制度或氣氛是讓您懷念的</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="有哪一些制度、風氣或氣氛是讓您覺得不理想的">
-													<label for="option">有哪一些制度、風氣或氣氛是讓您覺得不理想的</label>
+													<span class="check_type">有哪一些制度、風氣或氣氛是讓您覺得不理想的</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="您最感興趣的工作是哪一項">
-													<label for="option">您最感興趣的工作是哪一項</label>
+													<span class="check_type">您最感興趣的工作是哪一項</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="您最不喜歡的工作是哪一項">
-													<label for="option">您最不喜歡的工作是哪一項</label>
+													<span class="check_type">您最不喜歡的工作是哪一項</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="您最有成就感的工作說明">
-													<label for="option">您最有成就感的工作說明</label>
+													<span class="check_type">您最有成就感的工作說明</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="您遭受挫折感最重的工作說明">
-													<label for="option">您遭受挫折感最重的工作說明</label>
+													<span class="check_type">您遭受挫折感最重的工作說明</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="您曾經與他人發生過最大的衝突事件是什麼">
-													<label for="option">您曾經與他人發生過最大的衝突事件是什麼</label>
+													<span class="check_type">您曾經與他人發生過最大的衝突事件是什麼</span>
+												</li>
+											</ul>
+										</div>
+										<div class="main_set_item">
+											<h4>
+												<span class="check_type check_not">未來規劃</span>
+											</h4>
+											<ul class="sub_set_list field_for3 clearfix">
+												<li>
+													<span class="check_type">職涯規劃短期/中期/長期</span>
+												</li>
+												<li>
+													<span class="check_type">您對本公司這份工作，能接受的最低薪資是多少</span>
+												</li>
+												<li>
+													<span class="check_type">您最快能報到的時間</span>
 												</li>
 											</ul>
 										</div>
 										<div class="main_set_item not_open">
 											<h4>
-												<input id="" type="checkbox" name="" value="未來規劃">
-												<label for="option">未來規劃</label>
-											</h4>
-											<ul class="sub_set_list field_for3 clearfix">
-												<li>
-													<input id="" type="checkbox" name="" value="職涯規劃短期/中期/長期">
-													<label for="option">職涯規劃短期/中期/長期</label>
-												</li>
-												<li>
-													<input id="" type="checkbox" name="" value="您對本公司這份工作，能接受的最低薪資是多少">
-													<label for="option">您對本公司這份工作，能接受的最低薪資是多少</label>
-												</li>
-												<li>
-													<input id="" type="checkbox" name="" value="您最快能報到的時間">
-													<label for="option">您最快能報到的時間</label>
-												</li>
-											</ul>
-										</div>
-										<div class="main_set_item not_open">
-											<h4>
-												<input id="" type="checkbox" name="" value="工作職能">
-												<label for="option">工作職能</label>
+												<span class="check_type check_display">工作職能</span>
 											</h4>
 											<ul class="sub_set_list clearfix">
 												<li>
-													<input id="" type="checkbox" name="" value="職能問題一">
-													<label for="option">職能問題一</label>
+													<span class="check_type">職能問題一</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="職能問題二">
-													<label for="option">職能問題二</label>
+													<span class="check_type">職能問題二</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="職能問題三">
-													<label for="option">職能問題三</label>
+													<span class="check_type">職能問題三</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="職能問題四">
-													<label for="option">職能問題四</label>
+													<span class="check_type">職能問題四</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="職能問題五">
-													<label for="option">職能問題五職能問題五職能問題五職能問題五職能問題五職能問題五</label>
+													<span class="check_type">職能問題五</span>
 												</li>
 												<li>
-													<input id="" type="checkbox" name="" value="職能問題六">
-													<label for="option">職能問題六</label>
+													<span class="check_type">職能問題六</span>
 												</li>
 											</ul>
 										</div>

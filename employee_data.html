@@ -49,6 +49,13 @@
 	  	return false;
 	  });
    	});
+	$(function(){
+		$(".r_title a.box_switch").click(function(){
+			$(this).parent().next("div").stop(true, true).slideToggle();
+			$(this).toggleClass("arr_bottom arr_up")
+			return false;
+		});
+	});
 </script>
 <script type="text/javascript">
 	$(function(){
@@ -6759,96 +6766,117 @@
 								</div>
 							</div> -->
 							<div class="u_infoBox c_desaturated_blue">
-								<h4 class="r_title s_icon_04 bg_dark_blue">潛在人格特質<a class="arr_show_switch" href="#"></a></h4>
-								<table class="potential_personality_trait" cellpadding="0" cellspacing="0" border="0">
-									<tr class="top_title">
-										<th width="160"></th>
-										<th>
-											<ul class="ex clearfix">
-												<li><p>低 0</p></li>
-												<li><p>平均值</p></li>
-												<li><p>高100</p></li>
-											</ul>
-											<div class="img_progress_ex">
-											</div>
-										</th>
-										<th width="160"></th>
-									</tr>
-									<tr>
-										<td><p class="text">大而化之、憑直覺行事、不愛擔責、不喜歡被拘束、行事較無條理</p></td>
-										<td>
-											<div class="progress_box">
-												<h4>盡責性</h4>
-												<!-- 這個箭頭需要另外寫位置控制 他的0位置 -23.2px，  -->
-												<div class="img_progress">
-													<p class="bg_blue" style="left:calc( 40.4% - 23.2px);"><span>40.4</span></p>
-													<p style="left:calc( 82.4% - 23.2px);"><span>82.4</span></p>
+								<div class="answer_info">
+									<table cellpadding="0" cellspacing="0" border="0" >
+										<tr>
+											<th width="104">使用時間</th>
+											<th width="48">答題數</th>
+											<th width="48">總題數</th>
+										</tr>
+										<tr>
+											<td class="t1">4分44秒</td>
+											<td class="t2">58</td>
+											<td class="t3">58</td>
+										</tr>
+									</table>
+								</div>
+								<h4 class="r_title s_icon_04 bg_dark_blue">潛在人格特質
+									<a class="box_switch arr_up" href="#"><span class="img_default"></span></a>
+								</h4>
+								<div>
+									<table class="potential_personality_trait" cellpadding="0" cellspacing="0" border="0">
+										<tr class="top_title">
+											<th width="160"></th>
+											<th>
+												<ul class="ex clearfix">
+													<li><p>低 0</p></li>
+													<li><p>平均值</p></li>
+													<li><p>高100</p></li>
+												</ul>
+												<div class="img_progress_ex">
 												</div>
-											</div>
-										</td>
-										<td><p class="text">自律嚴謹、完美主義、有企圖心、循規蹈矩、處事有原則</p></td>
-									</tr>
-									<tr>
-										<td><p class="text">安於現狀、喜歡等人帶領、行事悠閒、不喜歡表達意見</p></td>
-										<td>
-											<div class="progress_box">
-												<h4>外向性</h4>
-												<div class="img_progress">
-													<p class="bg_blue" style="left:calc( 40.4% - 23.2px);"><span>40.4</span></p>
-													<p style="left:calc( 38.3% - 23.2px);"><span>38.3</span></p>
+											</th>
+											<th width="160"></th>
+										</tr>
+										<tr>
+											<td><p class="text">大而化之、憑直覺行事、不愛擔責、不喜歡被拘束、行事較無條理</p></td>
+											<td>
+												<div class="progress_box">
+													<h4>盡責性</h4>
+													<!-- 這個箭頭需要另外寫位置控制 他的0位置 -23.2px，  -->
+													<div class="img_progress">
+														<p class="bg_blue" style="left:calc( 40.4% - 23.2px);"><span>40.4</span></p>
+														<p style="left:calc( 82.4% - 23.2px);"><span>82.4</span></p>
+													</div>
 												</div>
-											</div>
-										</td>
-										<td><p class="text">精力充沛、喜歡主導、追求挑戰、喜歡團體、堅持意見、正面思考</p></td>
-									</tr>
-									<tr>
-										<td><p class="text">剛正不阿、重視個人成就、有主見、高度評價自己、不喜交際</p></td>
-										<td>
-											<div class="progress_box">
-												<h4>親和性</h4>
-												<div class="img_progress">
-													<p class="bg_blue" style="left:calc( 10% - 23.2px);"><span>10</span></p>
-													<p style="left:calc( 90.4% - 23.2px);"><span>90.4</span></p>
+											</td>
+											<td><p class="text">自律嚴謹、完美主義、有企圖心、循規蹈矩、處事有原則</p></td>
+										</tr>
+										<tr>
+											<td><p class="text">安於現狀、喜歡等人帶領、行事悠閒、不喜歡表達意見</p></td>
+											<td>
+												<div class="progress_box">
+													<h4>外向性</h4>
+													<div class="img_progress">
+														<p class="bg_blue" style="left:calc( 40.4% - 23.2px);"><span>40.4</span></p>
+														<p style="left:calc( 38.3% - 23.2px);"><span>38.3</span></p>
+													</div>
 												</div>
-											</div>
-										</td>
-										<td><p class="text">重視團隊精神、隨和、謙虛、配合、重視他人意見、重視關係建立</p></td>
-									</tr>
-									<tr>
-										<td><p class="text">神經緊繃、容易緊張、情緒反應大、 較悲觀、易怒、鑽牛角尖</p></td>
-										<td>
-											<div class="progress_box">
-												<h4>情緒穩定性</h4>
-												<div class="img_progress">
-													<p class="bg_blue" style="left:calc( 40.4% - 23.2px);"><span>40.4</span></p>
-													<p style="left:calc( 60% - 23.2px);"><span>60</span></p>
+											</td>
+											<td><p class="text">精力充沛、喜歡主導、追求挑戰、喜歡團體、堅持意見、正面思考</p></td>
+										</tr>
+										<tr>
+											<td><p class="text">剛正不阿、重視個人成就、有主見、高度評價自己、不喜交際</p></td>
+											<td>
+												<div class="progress_box">
+													<h4>親和性</h4>
+													<div class="img_progress">
+														<p class="bg_blue" style="left:calc( 10% - 23.2px);"><span>10</span></p>
+														<p style="left:calc( 90.4% - 23.2px);"><span>90.4</span></p>
+													</div>
 												</div>
-											</div>
-										</td>
-										<td><p class="text">思考正向、壓力下可保持冷靜、彈性應變、容易適應新情況</p></td>
-									</tr>
-									<tr>
-										<td><p class="text">重視傳統、想法較實際、小心保守、 心思較不敏感、不喜歡變化</p></td>
-										<td>
-											<div class="progress_box">
-												<h4>經驗開放</h4>
-												<div class="img_progress">
-													<p class="bg_blue" style="left:calc( 70.8% - 23.2px);"><span>70.8</span></p>
-													<p style="left:calc( 30.7% - 23.2px);"><span>30.7</span></p>
+											</td>
+											<td><p class="text">重視團隊精神、隨和、謙虛、配合、重視他人意見、重視關係建立</p></td>
+										</tr>
+										<tr>
+											<td><p class="text">神經緊繃、容易緊張、情緒反應大、 較悲觀、易怒、鑽牛角尖</p></td>
+											<td>
+												<div class="progress_box">
+													<h4>情緒穩定性</h4>
+													<div class="img_progress">
+														<p class="bg_blue" style="left:calc( 40.4% - 23.2px);"><span>40.4</span></p>
+														<p style="left:calc( 60% - 23.2px);"><span>60</span></p>
+													</div>
 												</div>
-											</div>
-										</td>
-										<td><p class="text">追求刺激、喜歡思考、感覺敏銳、態度開放、較有同理心、有創意</p></td>
-									</tr>
-								</table>
-								<div class="note_positive_trait clearfix">
-									<p><span class="blue">藍色</span>台灣職場常模　<span class="white">白色</span>明日股份有限公司常模</p>
-									<p>百分比的解釋 - 假設「盡責性」得百分比68，意指此求職者是比百分之68的人還要有高的盡責性。</p>
+											</td>
+											<td><p class="text">思考正向、壓力下可保持冷靜、彈性應變、容易適應新情況</p></td>
+										</tr>
+										<tr>
+											<td><p class="text">重視傳統、想法較實際、小心保守、 心思較不敏感、不喜歡變化</p></td>
+											<td>
+												<div class="progress_box">
+													<h4>經驗開放</h4>
+													<div class="img_progress">
+														<p class="bg_blue" style="left:calc( 70.8% - 23.2px);"><span>70.8</span></p>
+														<p style="left:calc( 30.7% - 23.2px);"><span>30.7</span></p>
+													</div>
+												</div>
+											</td>
+											<td><p class="text">追求刺激、喜歡思考、感覺敏銳、態度開放、較有同理心、有創意</p></td>
+										</tr>
+									</table>
+									<div class="note_positive_trait clearfix">
+										<p><span class="blue">藍色</span>台灣職場常模　<span class="white">白色</span>明日股份有限公司常模</p>
+										<p>百分比的解釋 - 假設「盡責性」得百分比68，意指此求職者是比百分之68的人還要有高的盡責性。</p>
+									</div>
 								</div>
 							</div>
 
 							<div class="u_infoBox c_desaturated_blue">
-								<h4 class="r_title s_icon_06 bg_dark_blue">邏輯測驗<a class="arr_show_switch" href="#"></a></h4>
+								<h4 class="r_title s_icon_06 bg_dark_blue">邏輯測驗
+									<a class="box_switch arr_up" href="#"><span class="img_default"></span></a>
+								</h4>
+								<div>
 								<table class="suggest" cellpadding="0" cellspacing="0" border="0">
 									<tr class="top_title">
 										<th width="200"></th>
@@ -6882,44 +6910,48 @@
 									<tr>
 										<td><p>會被態度較強勢的人壓制想法!</p></td>
 										<td><p>詢問被壓制時, 要如何確實將自己的想法或建議, 還是明確表達出來<br>
-											<span class="red">確認是否會走後門或背後私語</p></td>
+											<span class="red">確認是否會走後門或背後私語</span></p></td>
 										<td><p>可採取指名回答的方式, 給予充份表達看法的時間</p></td>
 									</tr>
 									<tr>
 										<td><p>思考時間長, 想的很複雜!</p></td>
 										<td><p>請對方將正在想的事情說出來或是直接詢問在考慮或評估什麼<br>
-											<span class="red">瞭解邏輯是否清楚, 能否快速抓對重點</p></td>
+											<span class="red">瞭解邏輯是否清楚, 能否快速抓對重點</span></p></td>
 										<td><p>可以使用對談引導方式, 協助釐清重點, 並做出決策</p></td>
 									</tr>
 									<tr>
 										<td><p>耳根子軟, 意志不堅定!</p></td>
 										<td><p>詢問當理念與其他人不同時, 會採取的做法是什麼, 如何判斷對錯<br>
-											<span class="red">瞭解自我原則和既定目標的堅守能力</p></td>
+											<span class="red">瞭解自我原則和既定目標的堅守能力</span></p></td>
 										<td><p>必須訂定明確的工作原則及目標, 並取得共識, 要求遵守與配合</p></td>
 									</tr>
 									<tr>
 										<td><p>解決問題反應慢, 不知變通!</p></td>
 										<td><p>詢問對方在時間有限的壓力下, 如何讓問題可以更快被解決<br>
-											<span class="red">確認適合獨立作業或是團隊合作</p></td>
+											<span class="red">確認適合獨立作業或是團隊合作</span></p></td>
 										<td><p>適時提供重點、處理方法或是直接給決定, 協助提升工作品質與效率, 但仍由他負擔工作成敗的責任.</p></td>
 									</tr>
 									<tr>
 										<td><p>在意別人的眼光與評價!</p></td>
 										<td><p>設法問出最在意的負面評價或讓自己不舒服的眼光是什麼, 並詢問如何自我調適<br>
-											<span class="red">確認情緒上的穩定與可控性</p></td>
+											<span class="red">確認情緒上的穩定與可控性</span></p></td>
 										<td><p>確定個人對達成最終目標的意願與決心後, 陪同制訂詳細的工作計劃, 同時施予機會教育(例如: 考核與眾人眼光評價無關) , 改變工作觀念. 並承諾給予工作上的協助</p></td>
 									</tr>
 									<tr>
 										<td><p>當所學所知, 不符合預期, 產生消極學習!</p></td>
 										<td><p>確認對方, 當沒有良好的表現時, 將會被阻織淘汰時的想法<br>
-											<span class="red">如認為淘汰無謂時, 請放棄本次甄選</p></td>
+											<span class="red">如認為淘汰無謂時, 請放棄本次甄選</span></p></td>
 										<td><p>以激勵的方式取代差異比較或指責, 給予階段性的指示或任務, 加強學習的意願.</p></td>
 									</tr>
 								</table>
+								</div>
 							</div>
 							
 							<div class="u_infoBox c_desaturated_blue">
-								<h4 class="r_title s_icon_00 bg_dark_blue">特質放大鏡<a class="arr_show_switch" href="#"></a></h4>
+								<h4 class="r_title s_icon_00 bg_dark_blue">特質放大鏡
+									<a class="box_switch arr_up" href="#"><span class="img_default"></span></a>
+								</h4>
+								<div>
 								<ul class="cards">
 									 <li class="card_info" v-for="(card, index) in current_exam.result.cards" :key="index">
 									 	<div class="top_pic" style=" background-image: url(images/card_pic/特質卡片-01.png);"></div>
@@ -6940,10 +6972,27 @@
 									 	<div class="top_pic" style=" background-image: url(images/card_pic/特質卡片-20.png);"></div>
 									 </li>
 								</ul>
+								</div>
 							</div>
 
 							<div class="u_infoBox c_logictest_org">
-								<h4 class="r_title s_icon_07  bg_dark_blue">邏輯測驗<a class="arr_show_switch" href="#"></a></h4>
+								<div class="answer_info">
+									<table cellpadding="0" cellspacing="0" border="0" >
+										<tr>
+											<th width="104">使用時間</th>
+											<th width="48">答題數</th>
+											<th width="48">總題數</th>
+										</tr>
+										<tr>
+											<td class="t1">4分44秒</td>
+											<td class="t2">58</td>
+											<td class="t3">58</td>
+										</tr>
+									</table>
+								</div>
+								<h4 class="r_title s_icon_07  bg_dark_blue">邏輯測驗
+									<a class="box_switch arr_up" href="#"><span class="img_default"></span></a>
+								</h4>
 								<div class="c_logictest_org positive_behavior test_fraction_percentage">
 									<table class="potential_personality_trait" cellpadding="0" cellspacing="0" border="0">
 										<tr class="top_title">
@@ -7010,7 +7059,24 @@
 							</div>
 
 							<div class="u_infoBox c_dark_purple">
-								<h4 class="r_title s_icon_07  bg_dark_blue">社交智商-情境測驗<a class="arr_show_switch" href="#"></a></h4>
+								<div class="answer_info">
+									<table cellpadding="0" cellspacing="0" border="0" >
+										<tr>
+											<th width="104">使用時間</th>
+											<th width="48">答題數</th>
+											<th width="48">總題數</th>
+										</tr>
+										<tr>
+											<td class="t1">4分44秒</td>
+											<td class="t2">58</td>
+											<td class="t3">58</td>
+										</tr>
+									</table>
+								</div>
+								<h4 class="r_title s_icon_07  bg_dark_blue">社交智商-情境測驗
+									<a class="box_switch arr_up" href="#"><span class="img_default"></span></a>
+								</h4>
+								<div>
 								<table class="potential_personality_trait" cellpadding="0" cellspacing="0" border="0">
 									<tr class="top_title">
 										<th width="160"></th>
@@ -7060,6 +7126,7 @@
 											善解人意而又能見機行事的智巧
 										</p>
 									</div>
+								</div>
 								</div>
 								<!-- <div class="u_infoBox positive_behavior test_fraction_percentage">
 									<h4 class="r_title s_icon_05  bg_dark_blue">測驗結果</h4>
