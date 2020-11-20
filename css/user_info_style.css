@@ -74,12 +74,13 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 .personal_information_container .interviewee_data p{ font-size: 20px; }
 .personal_information_container .interviewee_data p span{ color: #9B9B9B; }
 
-.personal_information_container .top_title{ background-color: #81B6C8; padding: 5px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky;  position: -o-sticky;z-index: 2	; top: 0;}
+.personal_information_container .top_title{ background-color: #81B6C8; padding: 5px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky;  position: -o-sticky; z-index:11; top: 0;}
 .personal_information_container .top_title h3{ color: #fff; font-size: 18px; max-width: 900px; margin: 0 auto;}
 .personal_information_container .fill_project{ width: 100%;}
 .personal_information_container .fill_project .top_title{ background-color: #F8F9F9;}
-.personal_information_container .fill_project .top_title h3{ color: #707475; }
+.personal_information_container .fill_project .top_title h3{ color: #707475; position: relative; }
 .personal_information_container .fill_project .top_title h3 span{ font-size: 14px; padding-left: 30px; display: inline-block; }
+.personal_information_container .fill_project .top_title h3 span.text_required{ position: absolute; right: 10px; top: 2px; font-size: 13px; font-weight: bold; color: #C87D86; padding: 0; }
 
 .personal_information_container .sub_title { background-color: #F8F9F9; padding:10px 5px; border-bottom: 1.5px solid #fff;}
 .personal_information_container .sub_title h4{ color: #707475; font-size: 15px; max-width: 900px; margin: 0 auto; position: relative; cursor: pointer;}
@@ -146,6 +147,7 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 
 .personal_information_container .fill_project ul.item li a.remind{ border-color: #4A4A4A; }
 .personal_information_container .fill_project ul.item li a.remind .tooltip{ top: 100px; left: calc(50% - 65px); min-width: 130px; }
+.personal_information_container .fill_project ul.item li.red_error a{ border-color: #C87D86; }
 
 .personal_information_container p.btn{ max-width: 900px; margin: 0 auto; font-size: 18px; padding-top: 10px; }
 .personal_information_container p.btn a{ background-color: #B8D3DC; color: #fff; height: 46px; line-height: 46px; display: block; width: 100%; border-radius: 8px 0 8px 8px; margin: 0 auto; }
@@ -186,6 +188,7 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 .personal_information_container .fillin_list .information_info label{ font-size: 15px; color: #558C9E; padding-top: 2px; padding-bottom: 6px; display: block; width: 100%; position: relative;}
 .personal_information_container .fillin_list .information_info label span.note{ background-color: #81B6C8; color: #fff; font-size: 11.5px; margin-left: 5px; border-radius: 3px; padding: 2px 5px; }
 .personal_information_container .fillin_list .information_info label span.text_tips{ color: #4A4A4A; font-size: 14px; position: absolute; right: 0; top: 1px; }
+.personal_information_container .fillin_list .information_info label span.text_required{ font-size: 12px; font-weight: bold; padding-left: 5px; color: #C87D86;}
 
 .personal_information_container .fillin_list .information_info .setting_item{ background-color: #fff; margin-bottom: 5px; border: 1px solid #979797; border-radius: 5px; min-height: 35px; line-height: 35px; padding: 0; overflow: hidden; text-align: left;}
 .personal_information_container .fillin_list .information_info .setting_item label{ position: absolute; line-height: 35px; color: #9B9B9B; top: 0; left: 0; padding-bottom: 0; padding-top: 0; }
@@ -195,6 +198,7 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 .personal_information_container .fillin_list .information_info .setting_item input[type=radio]:not(old):checked + label{ background-image: url(../images/personal_information/checks_on.png);}
 .personal_information_container .fillin_list .information_info .setting_item input[type=radio]:not(old):checked + label{ background-image: url(../images/personal_information/checks_on.png); background-color: #dfeff5;}
 
+.personal_information_container .fillin_list .information_info .red_error{ border-color: #C87D86; }
 .personal_information_container .fillin_list .information_info ul{ width: 100%; }
 .personal_information_container .fillin_list .information_info ul li.setting_item{ float: left; margin-right: 8px; text-align: left; width:calc(50% - 8px);}
 .personal_information_container .fillin_list .information_info ul li.setting_item:nth-child(2n){ margin-right: 0; margin-left: 8px; }

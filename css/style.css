@@ -1927,11 +1927,25 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .test_report h4.bg_dark_blue::after{ right: initial; left: 10px;}
 .test_report h4.bg_light_blue{ text-align: left; padding-left: 100px; background-color: #D1E0E5; color: #81B6C8;}
 .test_report h4.bg_light_blue::after{ right: initial; left: 10px;}
-.test_report h4.r_title a.arr_show_switch{ position: absolute; top: 5px; right: 15px;z-index: 10; width: 28px; height: 48px; background: url(../images/btn_arr_switch.png) center center no-repeat; background-size: contain; cursor: pointer; }
+/*.test_report h4.r_title a.arr_show_switch{ position: absolute; top: 18px; right: 25px; z-index: 10; width: 24px; height: 18px; background: url(../images/svg/arrow_bottom_w.svg) center center no-repeat; background-size: contain; cursor: pointer; }
+.test_report h4.r_title a.arr_show_switch::after{ content: "";  }*/
+.test_report h4.r_title a.box_switch{ position: absolute; top: 0; right: 0; width: 65px; height: 56px; display: block;}
+.test_report h4.r_title a.box_switch span{ position: relative; width: 100%; height: 56px; display: block;}
+.test_report h4.r_title a.box_switch span::after{ content:""; position: absolute; right: 30px; top: 18px; width: 20px; height: 18px; display: block; z-index: 2;}
+.test_report h4.r_title a.arr_bottom span::after{ background-image: url(../images/svg/arrow_bottom_w.svg); }
+.test_report h4.r_title a.arr_up span::after{ background-image: url(../images/svg/arrow_up_w.svg);}
 
-.test_report .u_infoBox{ margin: 15px; }
+.test_report .u_infoBox{ margin: 15px; position: relative; }
 .test_report .tBox:first-child .u_infoBox{ margin-right: 10px; }
 .test_report .tBox:last-child .u_infoBox{ margin-left: 10px; }
+
+.test_report .answer_info{ position: absolute; right: 88px; top: 5px; z-index: 2;}
+.test_report .answer_info table{ text-align: center;}
+.test_report .answer_info table tr th{ font-size: 12px; color: #fff; padding-bottom: 3px; }
+.test_report .answer_info table tr td{ background-color: #fff; border:1px solid #fff; font-size: 18px;}
+.test_report .answer_info table tr td.t1{border-radius:4px 0 0 4px;}
+.test_report .answer_info table tr td.t2{ background-color: #EBEBEB;}
+.test_report .answer_info table tr td.t3{ background-color: #D8D8D8; border-radius: 0 4px 4px 0;}
 
 .test_report ul.cards{ text-align:  center; padding: 20px 0; }
 .test_report ul.cards li.card_info{ display: inline-flex; margin: 10px; }
@@ -4035,7 +4049,15 @@ ul.job_management_list p.text_center{ text-align: center; }
 
 /*survey set*/
 .survey_set_contents{ padding-top: 15px; }
-.survey_set_contents p.top_tip{ border:3px solid #84BE98; border-radius: 10px 10px 10px 0; padding: 10px; margin:0 10px 10px 65px;}
+.survey_set_contents .top_tip{ border:3px solid #84BE98; border-radius: 10px 10px 0px 10px;margin:0 10px 10px 10px;} 
+.survey_set_contents .top_tip p{ padding: 10px 30px; }
+.survey_set_contents .top_tip p.bg_green_note{ background-color: #E7F1EB; border-radius: 0 0 0 10px; }
+.survey_set_contents .top_tip p.bg_green_note span{ padding-left: 50px; position: relative; }
+.survey_set_contents .top_tip p.bg_green_note span::after{ display: block; position: absolute; left: 28px; top: 0px; width: 15px; height: 15px; content: ""; }
+.survey_set_contents .top_tip p.bg_green_note span.type1::after{ background-color:#4A4A4A; }
+.survey_set_contents .top_tip p.bg_green_note span.type2::after{ background-color:#fff; border:1px solid #9B9B9B; width: 13px; height: 13px; }
+.survey_set_contents .top_tip p.bg_green_note span.type3::after{ background-image: url(../images/svg/survey_type_bgblue_tick.svg);}
+.survey_set_contents .top_tip p.bg_green_note span.type4::after{ background-image: url(../images/svg/survey_type_bgred_ring.svg);}
 
 .survey_set_contents .set_box{ width: 828px; border:1px solid  #81B6C8; border-radius: 10px 0px 10px 10px; margin: 10px auto; }
 .survey_set_contents .set_box .top_check{ position: relative;}
@@ -4054,27 +4076,36 @@ ul.job_management_list p.text_center{ text-align: center; }
 .survey_set_contents .set_box .top_check h3 input[type=checkbox]:not(old) + label{  background-position : center left; color: #fff; background-image: url(../images/checks_on_w.png); background-size: contain;}
 .survey_set_contents .set_box .top_check h3 input[type=checkbox]:not(old):checked + label{ background-image: url(../images/checks_on_green.png);}
 
-.survey_set_contents .set_box .main_set_item h4{ background-color: #E6F0F4; padding: 5px 38px; position: relative;}
+.survey_set_contents .set_box .main_set_item h4{ background-color: #E6F0F4; padding: 5px 38px; position: relative; border-bottom: 2px solid #fff;}
 .survey_set_contents .set_box .main_set_item h4 a.qa_edit{ position: absolute; top: 0; right: 0; width: 40px; height: 34px; background-image: url(../images/user_img_edit_in.png); background-size: contain;}
 .survey_set_contents .set_box .main_set_item h4 a.qa_edit:hover{ opacity: .7; }
 .survey_set_contents .set_box .main_set_item h5{ background-color: #F8F9F9; padding: 8px 44px; font-size: 14px; color: #4A4A4A;}
 
 .survey_set_contents .set_box .main_set_item ul.sub_set_list{ width: 100%; padding: 5px 10px 5px 58px; }
-.survey_set_contents .set_box .main_set_item ul.sub_set_list li{ font-size: 13.5px; min-width: 120px; position: relative; float: left; padding: 2.5px; }
+.survey_set_contents .set_box .main_set_item ul.sub_set_list li{ font-size: 13.5px; min-width: 122px; position: relative; float: left; padding: 2.5px; }
 .survey_set_contents .set_box .main_set_item ul.field_for3 li{ min-width: 280px; }
 .survey_set_contents .set_box .main_set_item ul.field_for1 li{ min-width:100%; }
 
-.survey_set_contents .set_box .main_set_item ul.sub_set_list li.check_preset input{ cursor: not-allowed; }
-.survey_set_contents .set_box .main_set_item ul.sub_set_list li.check_preset input[type=checkbox]:not(old) + label{ background-image: url(../images/checks_k.png); background-position: 0 -73px;}
+/*.survey_set_contents .set_box .main_set_item ul.sub_set_list li.check_preset input{ cursor: not-allowed; }
+.survey_set_contents .set_box .main_set_item ul.sub_set_list li.check_preset input[type=checkbox]:not(old) + label{ background-image: url(../images/checks_k.png); background-position: 0 -73px;}*/
 .survey_set_contents .set_box .main_set_item ul.conditionList{ margin:0 0 0 44px; max-width: 760px;  }
 .survey_set_contents .set_box .main_set_item ul.conditionList li{ position: relative;}
 .survey_set_contents .set_box .main_set_item ul.conditionList li .border{ max-width: 760px; font-size: 13px;}
+
+.survey_set_contents .set_box .main_set_item span.check_type{ padding-left: 22px; position: relative; line-height: 24px; cursor: pointer; }
+.survey_set_contents .set_box .main_set_item span.check_type::after{ content: ""; display: block; position: absolute; left: 0px; top: 0px; background-color:#fff; border:1px solid #9B9B9B; width: 13px; height: 13px; }
+.survey_set_contents .set_box .main_set_item span.check_nochange{ cursor: not-allowed;}
+.survey_set_contents .set_box .main_set_item span.check_nochange::after{ width: 15px; height: 15px; border:none; background-color:#4A4A4A; }
+.survey_set_contents .set_box .main_set_item span.check_display::after{ width: 15px; height: 15px; border: none; background-image: url(../images/svg/survey_type_bgblue_tick.svg); background-size: cover;}
+.survey_set_contents .set_box .main_set_item span.check_required::after{ width: 15px; height: 15px; border: none; background-image: url(../images/svg/survey_type_bgred_ring.svg); background-size: cover;}
+.survey_set_contents .set_box .main_set_item span.check_not{ cursor: not-allowed; color: #999;}
+.survey_set_contents .set_box .main_set_item span.check_not::after{ background-color: #EBEBEB; border:1px solid #D8D8D8;}
 
 .survey_set_contents .set_box .not_open ul.sub_set_list { opacity: .5; }
 
 .survey_set_contents .set_box .remind_greenbox{ margin: 0; z-index: 1;}
 .survey_set_contents .set_box .remind_greenbox .tooltip{ top: 34px; right: -26px; width: inherit; min-width: 240px;}
-.survey_set_contents .set_box ul.sub_set_list li.remind_greenbox .tooltip{ right: initial; top: 32px; left: -146px; }
+.survey_set_contents .set_box ul.sub_set_list li.remind_greenbox .tooltip{ right: initial; top: 32px; left: -154px; }
 .survey_set_contents .set_box ul.sub_set_list li.remind_greenbox .tooltip::after{ position: absolute; content: ""; content: ""; width: 0; height: 0; border-style: solid; line-height: 0px; _border-color: #000000 #000000 #84BE98 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#84BE98'); top: -15px; right: 39px; border-width: 0 14px 15px 14px; border-color: transparent transparent #84BE98 transparent; }
 
 .survey_set_contents .set_box .on_block_k{ position: relative; }
