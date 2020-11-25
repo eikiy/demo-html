@@ -228,6 +228,12 @@ a .tooltip::after{ position: absolute; content: ""; top: -5px; left: calc(50% - 
 .personal_information_container .fillin_list .information_info .keywords_search ul li:hover{ background-color: #F2F8FA; }
 .personal_information_container .fillin_list .information_info .keywords_search ul li p{ line-height: 20px; padding: 0 10px; }
 
+.personal_information_container .fillin_list .information_info .skill_list_select{ position: relative;}
+.personal_information_container .fillin_list .information_info .skill_list_select .field{ border: 1px solid #979797; width:100%; padding-left: 5px; border-radius: 5px; min-height: 35px; background-color: #fff; background: url(../images/icon_arr.png) right center no-repeat #fff; background-size: contain;}
+.personal_information_container .fillin_list .information_info .skill_list_select .keywords_search{ width:100%;}
+.personal_information_container .fillin_list .information_info .fillin_text{padding: 0 5px; width:calc(100% - 5px); font-size: 13px; height: 32px; line-height: 32px; border: none; background: transparent; }
+
+
 .personal_information_container .fillin_list .related_searches{ width: 100%; padding: 5px 0; }
 .personal_information_container .fillin_list .related_searches p.left_title{ float: left; line-height: 24px; color: #9B9B9B; }
 .personal_information_container .fillin_list .related_searches ul.keywords{ float: left; max-width: calc(100% - 120px); text-align: left; }
