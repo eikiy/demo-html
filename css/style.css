@@ -95,7 +95,7 @@ a .white_tip::after{ border-color: transparent transparent #f8f9f9 transparent;}
 span.title_icon_lock{ position: relative; padding-left: 0 !important;}
 span.title_icon_lock::after{ content: ""; right: -13px; top:calc(50% - 6.5px); position: absolute; width: 9px; height: 13px; display: block; background-image: url(../images/svg/lock_skyblue.svg); }
 
-span.title_icon{ position: relative; padding-left:33px !important;;}
+span.title_icon{ position: relative; padding-left:30px !important;;}
 span.title_icon::before{ content: ""; left:0px; top:calc(50% - 10px); position: absolute; width: 26px; height: 18px; display: block;}
 span.bookmark_01::before{ background-image: url(../images/svg/bookmark_01.svg); }
 span.bookmark_02::before{ background-image: url(../images/svg/bookmark_02.svg); }
@@ -801,7 +801,7 @@ p.page_nb a.next::after{ background-image:url(../images/svg/arr_right_gray.svg )
 
 .interviewMainBox, .traitTestBox{ width: 100%; width: 1024px; min-height: 100vh; padding-bottom: 30px; overflow: hidden; margin: 0 auto;}
 .interviewMainBox p.btn, .traitTestBox p.btn{font-size: 18px; text-align: right; line-height: 36px; padding:25px 0 10px 0;}
-.interviewMainBox p.btn a, .traitTestBox p.btn a{ min-width: 110px; margin-left:10px; padding: 5px; letter-spacing: 5px; border:1px solid transparent; text-align: center;  display: inline-block; color: #fff; background-color: #81B6C8; border-radius:10px 0 10px 10px;}
+.interviewMainBox p.btn a, .traitTestBox p.btn a{ min-width: 110px; margin-left:10px; padding: 0px; border:1px solid transparent; letter-spacing: 0; text-align: center;  display: inline-block; color: #fff; background-color: #81B6C8; border-radius:3px;}
 .interviewMainBox p.btn a:hover, .traitTestBox p.btn a:hover{ box-shadow: 0px 2px 4px rgba(0,0,0,.5);}
 .interviewMainBox p.btn a.bg_red{ background-color: #C87D86; letter-spacing: 0; }
 .interviewMainBox p.btn a.bg_gary{ background-color: #9B9B9B; }
@@ -2091,7 +2091,7 @@ input.input_yesNo_no[type=radio]:not(old):checked + label{ background : url('../
 .interviewee_info .top_test_menu ul li.btn_in a span.bookmark_02::before{ background-image: url(../images/svg/bookmark_02_w.svg); }
 .interviewee_info .top_test_menu ul li.btn_in a span.bookmark_03::before{ background-image: url(../images/svg/bookmark_03_w.svg); }
 
-.interviewee_info .top_test_menu ul li.btn_in:nth-child(1) a{ background-color: #558C9E; color: #fff;}
+/*.interviewee_info .top_test_menu ul li.btn_in:nth-child(1) a{ background-color: #558C9E; color: #fff;}*/
 .interviewee_info .top_test_menu ul li.none a{ cursor: no-drop; border-color: #EBEBEB; color: #D8D8D8;}
 .interviewee_info .top_test_menu ul li.none a:hover{ background-color: #fff; color:#EBEBEB; border-color: #EBEBEB; }
 
@@ -2692,7 +2692,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .popup-L .filter_pop .j_v_ranking h3.test_report_title a.go_edit{ position: absolute; width: 25px; height: 25px; right: 10px; top: 5px; z-index: 1; display: block; background-image: url(../images/btn_icon_edit.png);}
 .popup-L .filter_pop .j_v_ranking h3.test_report_title a.go_edit:hover{ background-image: url(../images/btn_icon_edit_w.png); }
 
-.filter_pop .j_v_ranking p.btn{ font-size: 18px; line-height: 32px; top: 2px; right: 2px; }
+.filter_pop .j_v_ranking p.btn{ font-size: 14px; line-height: 32px; top: 2px; right: 20px; }
 .filter_pop .j_v_ranking p.btn a.bg_red{ letter-spacing: 4px; }
 .filter_pop .j_v_ranking p.btn a.bg_red:hover{ box-shadow: none; }
 
@@ -2930,7 +2930,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .talent_contents .job_leaderboard_container ul.leaderboard_data li.status_reported a.the_border{ background-color: #F7F0E6; }
 .talent_contents .job_leaderboard_container ul.leaderboard_data li.status_waiting a.the_border{ background-color: #E7F1EB; }
 
-.job_seeker_list_content .swicht_box{ padding-top: 15px; }
+.job_seeker_list_content .swicht_box{ padding-top: 5px; float: left; }
 .job_seeker_list_content .swicht_box .btn_swtich{display: inline-block; float: left;}
 .job_seeker_list_content .swicht_box .btn_swtich p{float: left; line-height: 24px; margin-left: 10px}
 .job_seeker_list_content .swicht_box .swtich_type{float: left; position: relative;}
@@ -2943,8 +2943,12 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_list_content .swicht_box .btn_swtich input:checked ~ .button:before {background-color:#81B6C8;border: 1px solid #558C9E;}
 .job_seeker_list_content .swicht_box .btn_swtich input:checked ~ .button:after {left: 22px;}
 
+.job_seeker_list_content .sort {float: right;}
 .job_seeker_list_content .sort ul.conditionList{ width: 150px; float: left; }
 .job_seeker_list_content .sort ul.conditionList li{ width: 100%; padding: 0; }
+.job_seeker_list_content .sort a.btn_sort{ float: left; position: relative; width: 30px; height: 30px; cursor: pointer; }
+.job_seeker_list_content .sort a.btn_sort:hover{opacity: .8;}
+.job_seeker_list_content .sort a.btn_sort::after{ content: ""; position: absolute; width: 18px; height: 20px; right: calc(50% - 9px); top:calc(50% - 10px); z-index: 1; display: block; background-image: url(../images/svg/sort_blue.svg);}
 
 .job_seeker_list_content .searchBox{ max-width: initial;}
 .job_seeker_list_content .searchBox input{ border: 1px solid #D8D8D8; height: 30px; line-height: 30px; font-size: 14px; }
@@ -2954,7 +2958,13 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_list_content .bottom_dashed{ border-bottom:dashed 1px #558C9E;}
 
 .job_seeker_list_content ul.conditionList{ width: 100%; }
-.job_seeker_list_content ul.conditionList li{ width: 25%; float: left; padding: 5px 3.5px; }
+.job_seeker_list_content ul.conditionList li{float: left; padding: 5px 3.5px; }
+.job_seeker_list_content ul.conditionList li:nth-child(1){width: 140px;}
+.job_seeker_list_content ul.conditionList li:nth-child(3){width: 150px;}
+.job_seeker_list_content ul.conditionList li:nth-child(5) .job_type .filter_list{ width: 325px; }
+.job_seeker_list_content ul.conditionList li:nth-child(6) .job_type .filter_list{ width: 360px; right: 0; }
+.job_seeker_list_content ul.conditionList li:nth-child(7) .job_type .filter_list{ width: 200px; right: 0; }
+
 .job_seeker_list_content ul.conditionList li .job_type{background-color: #fff; border-radius: 5px 0 5px 5px;  box-shadow: 0 0 1px rgba(0,0,0,.5); position: relative;}
 .job_seeker_list_content ul.conditionList li .job_type p{ font-size: 14px; text-align: left;}
 .job_seeker_list_content ul.conditionList li .job_type a{ border: none; display: block; min-width: 85px; padding:5px 30px 5px 10px;  position: relative;}
@@ -2965,6 +2975,25 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_list_content ul.conditionList li .job_type .filter_list .keywords input::placeholder{ color: #9B9B9B; }
 .job_seeker_list_content ul.conditionList li .job_type .filter_list .top_dashed{ position: relative; padding-top: 10px; margin-top: 5px;}
 .job_seeker_list_content ul.conditionList li .job_type .filter_list .top_dashed::after{ position: absolute; content: ""; top: 0; left: 10px; width:calc(100% - 20px); height: 1px; border-top: dashed 1px #558C9E; }
+
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress{ width: 340px; padding:15px;}
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress span{ color: #9B9B9B; font-size: 14px; display: block; padding-bottom: 10px; }
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress ul.sub_filter li{ width: 20%; float: left; padding: 0; text-align: center; padding-bottom: 6px; border-radius: 10px; position: relative;}
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress ul.sub_filter li:hover{ background-color: initial; }
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress ul.sub_filter li:after{ content: ""; position: absolute; bottom: 28px; width: 100%; z-index: -1; height: 2px; display: block; background-color: #81B6C8; }
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress ul.sub_filter li:nth-child(1):after{ width: 50%; left: 50%; }
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress ul.sub_filter li:nth-child(5):after{ width: 50%; right: 50%; }
+
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress ul.sub_filter label{  background-position: center 0; padding: 35px 0 0 0; }
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress ul.sub_filter input[type=checkbox]:not(old):checked + label{  background-position: center 0; }
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress ul.sub_filter input[type=checkbox]:not(old), input[type=radio ]:not(old){ left: 0; }
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress ul.sub_filter span{ display: block; text-indent: -9999px; width: 45px; height: 45px; background-color: #81B6C8; border-radius: 10px; }
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress ul.sub_filter li:hover span{ background-color: #558C9E;}
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress ul.sub_filter .icon_02{ background-image: url(../images/user_stepBox_02_w.png);}
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress ul.sub_filter .icon_03{ background-image: url(../images/user_stepBox_03_w.png);}
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress ul.sub_filter .icon_04{ background-image: url(../images/user_stepBox_04_w.png);}
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress ul.sub_filter .icon_05{ background-image: url(../images/user_stepBox_05_w.png);}
+.job_seeker_list_content ul.conditionList li .job_type .recruitment_progress ul.sub_filter .icon_06{ background-image: url(../images/user_stepBox_06_w.png);}
 
 .job_seeker_list_content ul.conditionList li .age_filter{ padding: 10px 20px;}
 .job_seeker_list_content ul.conditionList li .age_filter p{ float: left; color: #9B9B9B; line-height: 30px;}
@@ -2994,9 +3023,14 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_list_content ul.conditionList li.btn_in .job_type p a span{ color: #81B6C8; padding-left: 0;}
 
 .job_seeker_list_content ul.conditionList li.w50{ width: 50%; }
+.job_seeker_list_content ul.conditionList li p.result{ text-align: right; color: #707475; line-height: 30px; }
 
 .job_seeker_list_content .top_toolsBox ul.type li p span{ color: #4A4A4A;  }
 .job_seeker_list_content .top_toolsBox ul.type:first-child{ margin-right: 10px; }
+.job_seeker_list_content .top_toolsBox p.add_new_btn{ margin-top: 0;  margin-left: 10px;}
+.job_seeker_list_content .top_toolsBox p.add_new_btn a{ height: 30px; width: 160px; border-radius: 4px; }
+.job_seeker_list_content .top_toolsBox p.add_new_btn a span{ line-height: 30px; padding-left: 18px; }
+.job_seeker_list_content .top_toolsBox p.add_new_btn a span::before{ width: 14px; height: 14px; top: 7px; background-image: url(../images/svg/btn_add_blue.svg);}
 
 .job_seeker_list_content .list_not_yet{ border:3px solid #84BE98; border-radius: 10px 0 10px 10px; max-width: 855px; margin: 15px auto 25px auto; padding:20px 15px; }
 .job_seeker_list_content .list_not_yet p{ text-align: center; color: #9B9B9B; line-height: 20px; }
@@ -3025,6 +3059,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .job_seeker_container .grid_content .icon_status p{ color: #558C9E; font-size: 12px; text-align :center; padding-top: 46px; opacity: 0;}
 .job_seeker_container .grid_content .icon_status a:hover p{ opacity: 1; }
 .job_seeker_container .grid_content .icon_status a:hover::before{ opacity: 1; }
+.job_seeker_container .grid_content .icon_status:hover{ background-color: #fff; }
 
 .job_seeker_container .grid_content .status_done a{ cursor: default; }
 .job_seeker_container .grid_content .status_done a::after{ background-image: url(../images/svg/btn_add_done.svg); width:24px; top:51px; height: 29px; left:calc(50% - 12px);}
@@ -3787,7 +3822,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .management_filter_listBox ul.job_management_list .remarkBox p.p_red{ font-weight: normal; font-size: 13px;}
 
 /*lightbox 應徵者狀態管理*/
-.candidates_management{ padding-bottom: 10px; }
+.candidates_management{ padding: 0px; }
 .candidates_management ul.leaderboard_data .top_add{ padding-bottom: 15px; }
 .candidates_management .top_toolsBox{ width: inherit; float: left; padding: 0 0 0 80px; background-color: inherit; }
 .candidates_management .top_toolsBox ul.type li p span{ color: #3E3E3D; }
@@ -3797,7 +3832,7 @@ ul.job_management_list p.text_center{ text-align: center; }
 .candidates_management .searchBox input{ border: 1px solid #D8D8D8; height: 30px; line-height: 30px; }
 .candidates_management .searchBox a{ height: 30px; background-size: 33%;}
 
-.candidates_management ul.user_list{ width:892px; margin: 0 auto; padding-top: 20px;}
+.candidates_management ul.user_list{ width:892px; margin: 0 auto;}
 .candidates_management ul.user_list li{ margin-bottom: 10px; background-color: #fff;height: 146px; border-radius: 10px 0 10px 10px; border:3px solid #fff; box-shadow: 0 0 1px rgba(0,0,0,.6); position: relative; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
 .candidates_management ul.user_list li:hover{ border-color:#81B6C8; border-width: 3px; }
 .candidates_management ul.user_list li.the_active{ background-color: #F2F8FA; }
@@ -4338,7 +4373,7 @@ html:root .fillin_interviewe_data .fill_information_info .styled-select select{ 
 
 .interviewee_info .review_report .right_report_data{ width:calc(100% - 226px); float: right; }
 
-.interviewee_info .top_tools{ text-align: right; padding:30px 20px 30px 0; }
+.interviewee_info .top_tools{ padding-left:10px;}
 .interviewee_info .top_tools .btn{ display: inline-block; position: relative; width: 28px; height: 28px; background-color: #E6F0F4; border-radius: 50%; margin-left: 8px;}
 .interviewee_info .top_tools .btn a::before{ position: absolute; content: ""; top: calc(50% - 8.5px); left:  calc(50% - 9px); width: 18px; height: 19px; background-image: url(../images/svg/garbage.svg); }
 .interviewee_info .top_tools .btn a:hover::before{ opacity: 0.8;}
